@@ -2734,7 +2734,7 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<name> Line 6 - Haslev - Lundby</name>
+				<name> Line 6 - Haslev - Ny Holsted</name>
 				<styleUrl> #exists</styleUrl>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -2742,7 +2742,67 @@
 						11.9611502,55.3293641,0.0 11.9280624,55.31429860000001,0.0 11.9160461,55.3055057,0.0
 						 11.9047165,55.2892826,0.0 11.894073500000001,55.2738351,0.0 11.8724442,55.267185,0.0
 						 11.843605,55.2587729,0.0 11.8161392,55.24859790000001,0.0 11.7735672,55.2470322,0.0
-						 11.7629242,55.2444879,0.0 11.7618942,55.2376372,0.0 11.7649841,55.2335261,0.0
+						 11.7629242,55.2444879,0.0 11.7629242,55.2419435,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Ny Ellerberg - Hedehuse</name>
+				<styleUrl> #exists</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.5154448,55.6524833,0.0 12.5089645,55.6555098,0.0 12.500038100000001,55.6591898,0.0
+						 12.4873352,55.663644,0.0 12.4801254,55.6638377,0.0 12.4358368,55.6646122,0.0
+						 12.419014,55.6648059,0.0 12.3706055,55.6603518,0.0 12.320480300000002,55.6545413,0.0
+						 12.2888947,55.65066720000001,0.0 12.2597122,55.6473739,0.0 12.2401428,55.6454366,0.0
+						 12.2246933,55.6446616,0.0 12.2078705,55.646599,0.0 12.1879578,55.65027980000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hedehuse-Ringsted</name>
+				<styleUrl> #exists</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.1879578,55.65027980000001,0.0 12.1501923,55.6493112,0.0 12.1285629,55.6471802,0.0
+						 12.1144867,55.646599,0.0 12.1000671,55.6431116,0.0 12.0866776,55.6374924,0.0
+						 12.0729446,55.6314847,0.0 12.0612717,55.6229561,0.0 12.0523453,55.617334,0.0
+						 12.0485687,55.6136501,0.0 12.0427322,55.5996869,0.0 12.035179100000002,55.575045300000006,0.0
+						 12.0355225,55.5637865,0.0 12.0334625,55.5579617,0.0 12.0262527,55.5499998,0.0
+						 12.0066833,55.53795670000001,0.0 11.9867706,55.5262986,0.0 11.9819641,55.5226062,0.0
+						 11.9785309,55.5181359,0.0 11.975441,55.5138595,0.0 11.9726944,55.5031665,0.0
+						 11.9716644,55.4901366,0.0 11.9668579,55.4841064,0.0 11.9572449,55.4774915,0.0
+						 11.9387054,55.468151,0.0 11.922226,55.4597815,0.0 11.907806400000002,55.4529679,0.0
+						 11.8944168,55.4494633,0.0 11.874847400000002,55.4473214,0.0 11.8291855,55.4407004,0.0
+						 11.7869568,55.4379737,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Ringsted - Ny Holsted</name>
+				<styleUrl> #exists</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.7869568,55.4379737,0.0 11.7708206,55.4364156,0.0 11.7615509,55.4321303,0.0
+						 11.7570877,55.4243377,0.0 11.7498779,55.4138153,0.0 11.738205,55.3949069,0.0
+						 11.7358017,55.3915921,0.0 11.7268753,55.3859368,0.0 11.7021561,55.3683809,0.0
+						 11.6942596,55.3619417,0.0 11.6956329,55.354916,0.0 11.7011261,55.3459369,0.0
+						 11.7313385,55.3309021,0.0 11.7375183,55.326410100000004,0.0 11.7423248,55.3205501,0.0
+						 11.7443848,55.3129309,0.0 11.7426682,55.2877185,0.0 11.7430115,55.2775509,0.0
+						 11.7471313,55.268163,0.0 11.7533112,55.2558381,0.0 11.7629242,55.2419435,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Ny Holsted - Lundby</name>
+				<styleUrl> #exists</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.7629242,55.2419435,0.0 11.7618942,55.2376372,0.0 11.7649841,55.2335261,0.0
 						 11.7684174,55.2284357,0.0 11.7763138,55.2231487,0.0 11.7852402,55.2217779,0.0
 						 11.7900467,55.217469400000006,0.0 11.7927933,55.2063042,0.0 11.8034363,55.2012103,0.0
 						 11.8188858,55.1949399,0.0 11.832962,55.1888646,0.0 11.8442917,55.1765151,0.0
@@ -3354,19 +3414,6 @@
 				</description>
 			</Placemark>
 		</Folder>
-		<!--
-		<Style id='plannedHH'><LineStyle><color>FF0045FF</color><width>4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color>FFCBC0FF</color><width>4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color>FF3C14DC</color><width>4</width></LineStyle></Style> <!--CRIMSON-->
-		<Style id='sBRED'><LineStyle><color>FFFFFFE0</color><width>4</width></LineStyle></Style> # existing broad-gauge <!--LIGHT_CYAN-->
-		<Style id='sBREDX'><LineStyle><color>FFF5F0FF</color><width>4</width></LineStyle></Style> # planned broad-gauge <!--LAVENDER_BLUSH-->
-		<Style id='line-009D57-4'><LineStyle><color>FF2FFFAD</color><width>4</width></LineStyle></Style> <!--GREEN_YELLOW-->
-		<Style id='line-F4B400-4'><LineStyle><color>FF00FC7C</color><width>4</width></LineStyle></Style> <!--LAWN_GREEN-->
-		<Style id='sBANA'><LineStyle><color>FF3C14DC</color><width>4</width></LineStyle></Style> # planned standard gauge ** <!--CRIMSON-->
-		<Style id='sBANK'><LineStyle><color>FFD0E040</color><width>4</width></LineStyle></Style> <!--TURQUOISE-->
-		<Style id='sBRO'><LineStyle><color>FFFFFF00</color><width>4</width></LineStyle></Style> <!--CYAN-->
-		<Style id='sTUNNEL'><LineStyle><color>FF00FFFF</color><width>4</width></LineStyle></Style> <!--YELLOW-->
-		-->
 		<Style id='plannedHH'><LineStyle><color>FF0045FF</color><width>4</width></LineStyle></Style> <!--ORANGE_RED-->
 		<Style id='exists'><LineStyle><color>FFCBC0FF</color><width>4</width></LineStyle></Style> <!--PINK-->
 		<Style id='existsHH'><LineStyle><color>FF3C14DC</color><width>4</width></LineStyle></Style> <!--CRIMSON-->
@@ -3378,5 +3425,6 @@
 		<Style id='sBANK'><LineStyle><color>FFD0E040</color><width>4</width></LineStyle></Style> <!--TURQUOISE-->
 		<Style id='sBRO'><LineStyle><color>FFFFFF00</color><width>4</width></LineStyle></Style> <!--CYAN-->
 		<Style id='sTUNNEL'><LineStyle><color>FF00FFFF</color><width>4</width></LineStyle></Style> <!--YELLOW-->
+		
 	</Document>
 </kml>
