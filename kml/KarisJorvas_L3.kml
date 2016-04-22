@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> G1</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Stationer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Karis</name>
+				<Point>
+					<coordinates>
+						23.661460876464844,60.06860939017739,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Karis</b> station</div> <div lang="fi"><b>Karjaan</b> asema</div>
+					 <div lang="en"><b>Karis</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kyrkslätt</name>
+				<Point>
+					<coordinates>
+						24.438743591308594,60.11970437995222,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kyrkslätts</b> station</div> <div lang="fi"><b>Kirkkonummen</b>
+					 asema</div> <div lang="en"><b>Kyrkslätt</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Jorvas</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						24.51272964477539,60.13791508157593,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-red'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-grn-stars'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> KokumaeTallinn</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Untitled layer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Hiiu</name>
+				<Point>
+					<coordinates>
+						24.67052936553955,59.38284055819872,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Hiiu</b> station</div> <div lang="fi"><b>Hiiun</b> asema</div> <div
+					 lang="en"><b>Hiiu</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Tallinn</name>
+				<Point>
+					<coordinates>
+						24.737370014190674,59.440318741378746,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Tallins</b> station</div> <div lang="fi"><b>Tallinnan</b>
+					 asema</div> <div lang="en"><b>Tallinn</b> station</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-red'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

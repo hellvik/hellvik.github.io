@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> G1</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Untitled layer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Stockholm</name>
+				<Point>
+					<coordinates>
+						18.0581975,59.3301249,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Stockholms</b> station eller central</div> <div
+					 lang="fi"><b>Tukholman</b> asema</div> <div lang="en"><b>Stockholm</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Norrtälje</name>
+				<Point>
+					<coordinates>
+						18.6849976,59.741055300000006,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Norrtälje</b> station (nya)<br>(planerad)</div> <div
+					 lang="fi"><b>Norrtäljen</b> asema (uusi)<br>(suunniteltu)</div> <div
+					 lang="en"><b>Norrtälje</b> station (new)<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kapellskär</name>
+				<Point>
+					<coordinates>
+						19.06402587890625,59.71768089889866,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kapellskärs</b> station<br>(planerad)</div> <div
+					 lang="fi"><b>Kapellskärin</b> asema<br>(suunniteltu)</div> <div lang="en"><b>Kapellskär</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-blue</styleUrl>
+				<name> Arlanda</name>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda flygplats
+					 (ARN)</div> <div lang="fi"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda lentokenttä
+					 (ARN)</div> <div lang="en"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda airport
+					 (ARN)</div> ]]>
+				</description>
+				<Point>
+					<coordinates>
+						17.9300681,59.650635300000005,0.0
+					</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-blue'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-red'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

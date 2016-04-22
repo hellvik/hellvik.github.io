@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> G1</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Untitled layer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-A</styleUrl>
+				<name> Algersö</name>
+				<Point>
+					<coordinates>
+						20.63979148864746,60.03428768024356,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Algersö tunnelöppning</b></div> <div lang="fi"><b>Algersö
+					 tunneliaukko</b></div> <div lang="en"><b>Algersö tunnel entrance</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Grillskär</name>
+				<Point>
+					<coordinates>
+						20.687084197998047,60.034244809361645,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Grillskär tunnelöppning</b></div> <div lang="fi"><b>Grillskär
+					 tunneliaukko</b></div> <div lang="en"><b>Grillskär tunnel entrance</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-A'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-B'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

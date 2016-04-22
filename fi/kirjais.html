@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Aloitteita yhdistää Ruotsin, Suomen ja Viron rautatieverkkoja Itämeren ylitse ja alitse käyttäen tunneleita, siltoja ja pengereitä" />
+<meta name="robots" content="none" />
+<title>
+Kirjais
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 10, /* zoom : 7,*/
+					center : new google.maps.LatLng(60.252184363898974,22.073257064819336),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KirjaisÅboCBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer1.setMap(map);
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/Kirjais.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer2.setMap(map);
+
+			}
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="KarisKapellskar.html">Karjaa-Ahvenanmaa-Kapellskär (Ruotsi) </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A45</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Kirjaisten asema ja 
+<span style="color: rgb(0, 0, 204);">
+Turku
+</span>
+</h1>
+<p>
+Saaristoradan yhteys Turkuun ja Luonais Suomeen perustuu laajalti suunniteltuun Kirjaisten asemaan.
+Aloitteissa ei sinänsä ehdotetaan mitään erityistä rautatietä Turkuun vaan yhteys ehdotetaan
+toteutettavaksi autoliikenteenä. Nykyisin on mahdollista autolla ajaa Kirjaisten saarelle esimerkiksi Turun
+tuomiokirkon vierestä (kartassa merkittynä sinisellä ohuella viivalla). Ongelma on että
+tukeudutaan Korsfjärdin lauttaan. Nykyinen matka-aika on noin tunti ja tämän lisäksi lautta.
+Käytännössä jos Kirjaisiin saadaan tämä asema niin viimeistään tässä vaiheessa on myös saatava
+silta Korsfjädenin ylitse.
+</p>
+<p>
+Joitakin käytännön ehdotuksia jotka perustuu uuteen tilanteeseen rautatien myötä
+</p>
+<ul>
+<li>
+Paikallisesti Pargasin kuntaa. Oikeastaan koko Paraisten kunnan liikennöintisuunnitelma
+kääntyy ylös alasin koska tähänasti suunta on ollut Turku mutta radan mukaan vaihtoehtona
+tulee Tukholma.
+<br>
+</li>
+<li>
+Liikennöinti Ruotsiin Turusta muualta Varsinais-Suomesta. Kysymys sillasta Nauvoon,
+eli siis Korsfjärdin silta,
+on välttämättömyys jos auto- ja bussiliikennöintiä halutaan edistää
+<br>
+</li>
+<li>
+Tavarankuljetusta Lounis Suomen alueelle ja alueelta, eli logistiikka alueella,
+on radan myötä muuttunut. Uutena on kuljetuskapasiteetti suur-Tukholman alueelta periaatteella
+JIT (Just-In-Time). Junat kulkevat ajallaan eikä myrskyt ja jää-olosuhteet pitäisi merkittävästi
+häiritä sitä että pysytään aikataulussa.
+<br>
+</li>
+<li>
+Erityisesti olisi syytä harkita nopeatahtista liikennöintiä Tukholmaan suoraan Turusta.
+Nykyisestä laivaliikennöinnistä ei saada nopeatahtista mutta suunnitelma mahdollistaa
+kuljetuksia Tukholman alueelle melkein yhtä nopeasti kun mitä lentorahtina pystytään
+toteuttamaan. Kyseessä on auto-juna ratkaisu.
+<br>
+</li>
+<li>
+Kiinnostavan erikoisuutena Paraisten kohdalla on se seikka että oikeastaan Helsinki ja Tukholma
+on yhtä kaukana ajallisesti. Tällä on eritysesti merkitystä jos ajatellaan tavarantoimituksia.
+Pitäisikö tavaraa todella kuljettaa Helsinki-Turku junarahtina tai olisiko mahdollista
+edes ajatella reittiä Helsinki-Kirjais-Turku juna-auto kuljetuksena ?
+<br>
+</li>
+<li>
+Onko realisesti mahdollista käydä päivittäin töissä Tukholmassa Paraisista ? Jos
+vielä "isketään pöytään" sitä mahdollisuutta että on myös päiviä jossa tehdään
+kotona etätyötä firmalle joka on suur-Tukholman alueella.
+<br>
+</li>
+</ul>
+<p>
+Kirjaisten aseman myötä kannattaa käynnistää bussiyhteys Kirjaisiin Turun bussiasemalta suoraan. Tämän lisäksi
+Tukholma talousalueena tulee ajallisesti huomattavasti lähemmäksi Turkua josta seuraamukset on
+vaikeata ennustaa, on jopa mahdollista että Turusta tulee osaa Suur-Tukholman talousaluetta.
+Ajallisesti yhteys Suur-Tukholmaan on tunti Kirjasten asemalle ja kaksi tunti Stockholm Centraliin, eli Tukholman
+keskusrautatieasemalle. Tällainen kehitys antaisi Turulle täysin uusia kehitysulottuvuuksia jos ja vain jos
+ollaan riittävän ennakkoluulottomia ja valmiita ottamaan vastaan. Suur-Tukholman alueella on merkittävä
+suomenkielinen vähimmistö johoon jopa 
+<span style="font-style: italic;">
+Turusta
+</span>
+olisi syytä harkita miten lähestyä.
+</p>
+<p>
+On myös tarjolla rautatieyhteys Turusta Tukholmaan siten että
+</p>
+<ol>
+<li>juna ajaa ensin Turusta Karjaalle nykyistä rantarataa<br></li>
+<li>vaihdetaan automaattisesti raideleyttä ja ajosuuntaa tai matkustajat vaihtavat toiseen junaan<br></li>
+<li>jatketaan Tukholmaan, Karjaa - Kapellskär rataa käyttäen<br></li>
+</ol>
+<div id="map">
+</div>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

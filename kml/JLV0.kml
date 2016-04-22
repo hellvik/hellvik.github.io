@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> JLV0</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-A</styleUrl>
+				<name> Flötjan</name>
+				<Point>
+					<coordinates>
+						19.781999588012695,59.80855569890911,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Flötjans</b> fyr</div> <div lang="fi"><b>Flötjanin</b>
+					 majakka</div> <div lang="en"><b>Flötjans</b> lighthouse</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Vitkubben</name>
+				<Point>
+					<coordinates>
+						20.085411071777344,59.84671193220135,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-C</styleUrl>
+				<name> Vittensten</name>
+				<Point>
+					<coordinates>
+						20.11824131011963,59.85173434071942,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-D</styleUrl>
+				<name> JungfruskärY</name>
+				<Point>
+					<coordinates>
+						19.853882789611816,59.82721867345455,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Yttre Jungfruskär</b></div> <div lang="fi"><b>Ulkoinen
+					 Jungfruskär</b></div> <div lang="en"><b>Outer Jungfruskär</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-E</styleUrl>
+				<name> JungfruskärI</name>
+				<Point>
+					<coordinates>
+						19.874911308288574,59.82920302229548,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Inre Jungfruskär</b></div> <div lang="fi"><b>Sisäinen
+					 Jungfruskär</b></div> <div lang="en"><b>Inner Jungfruskär</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-A'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-B'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-C'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-D'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-E'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

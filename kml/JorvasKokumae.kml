@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> JorvasKokumae</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Untitled layer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-A</styleUrl>
+				<name> Jorvas</name>
+				<Point>
+					<coordinates>
+						24.51152801513672,60.136803919044944,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Jorvas</b> station</div> <div lang="fi"><b>Jorvaksen</b>
+					 asema</div> <div lang="en"><b>Jorvas</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Porkkala</name>
+				<Point>
+					<coordinates>
+						24.432907104492188,59.98782590710937,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Långkarel</name>
+				<Point>
+					<coordinates>
+						24.511871337890625,59.60561209518106,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Långkarel</b></div> <div lang="fi"><b>Virbi ots</b></div> <div
+					 lang="en"><b>Virbi ots</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-D</styleUrl>
+				<name> Storkärri</name>
+				<Point>
+					<coordinates>
+						24.54620361328125,59.55624396948277,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Storkärri eller Nargö</b> station</div> <div lang="fi"><b>Isosuon
+					 tai Naissaaren</b> asema</div> <div lang="en"><b>Suursoo or Naisaar</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Kvärnkarel</name>
+				<Point>
+					<coordinates>
+						24.541053771972656,59.53762521164926,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kvärnkarel</b></div> <div lang="fi"><b>Veskikari</b></div> <div
+					 lang="en"><b>Veskikari</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Kokumäe</name>
+				<Point>
+					<coordinates>
+						24.577746391296387,59.45709392102103,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-G</styleUrl>
+				<name> Tabasalu</name>
+				<Point>
+					<coordinates>
+						24.588947296142578,59.43447055948029,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Tabasalu</b> station<br>Planerad</div> <div
+					 lang="fi"><b>Tabasalun</b> asema<br>Suunniteltu</div> <div lang="en"><b>Tabasalu</b>
+					 station<br>Planned</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-A'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-D'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-G'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-yellow'><IconStyle>
+		<scale> 0.7</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

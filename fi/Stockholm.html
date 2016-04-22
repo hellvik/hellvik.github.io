@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Rautatie Tukholmasta Ahvenanmaalle ja Suomeen" />
+<meta name="robots" content="nofollow" />
+<title>
+Kapellskär Tukholma
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 9, /* zoom : 7,*/
+					center : new google.maps.LatLng(59.5150838323537,18.5005875778198),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/StoKapBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/StockholmKapellskar.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(map);
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/NorrtäljeArlandaCBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer2.setMap(map);
+var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer3, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer3.setMap(map);
+
+			}
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;">Länteen<br></td>
+<td style="vertical-align: top;text-align: center;"><a href="KarisKapellskar.html">Itään </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A54</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Tukholma - Kapellskär
+</h1>
+<div id="map">
+</div>
+<p>
+Tällä hetkellä rautatieyhteyttä ei ole Ulriksdalin ja Kapellskärin välillä mutta jos saaristomeren rautatie rakennetaan
+niin voidaan olettaa että tämäkin rautatie saadan rakennettua. 
+</p>
+<p>
+Tukholman alueen suomenkielisille avautuu tämän suunnitelman puitteessa paremmat yhteydet Lounais-Suomeen ja erityisesti
+Turkuun. Mahdollisuudet esimerkiksi sairauden sattuessa saada sairaudenhoitoa omalla äidinkielellä Turun keskussairaalassa
+ei ollenkaan ole niin kaukana kun nykyisin, eli kahden tunnin matkan takaa ? Koska myös rahtiliikenne nopeutuu niin
+"tuonti" Suomen Turusta kannattaa edistää, miten olisi päivittäin aamulla lukea Turun Sanomia ? Erityisesti ero
+Suomen ajan ja Ruotsin ajan välilllä mahdollistaa sen että lehti joka painetaan Turussa saadaan Tukholman aamujakoon
+ajallaan. Helsingin lehtien, kuten Hesan, saaminen ajoissa tällä junayhteydellä on kyseenalaisempaa ja jälelle
+jää Hesan kohdalle lentorahti, jollei sitten tyydytään siihen ettei lehti ehdi aamujakoon.
+</p>
+<p>
+Mahdollisuudet päivittäiseen työmatkaan Turun ja Tukholman välillä on mutta matkaika on käytännössä todennäköisesti
+liian pitkä olkoonkin että pystyy olettamaan että löytyy henkilöitä jotka tähän suostuvat.
+</p>
+<p>
+Turun talousalueelle rautatie Ruotsiin avaa mahdollisuuksia Turusta käsin toimia myös Tukholman alueella ja
+käytännössä samoilla ehdoilla kun Tukholman alueen toimitsijat. On jopa mahdollista että Turku enennevässä määrässä tulee olemaan
+osaa suur-Tukholman talousaluetta. Selvää on ettei Turku ole yhtä lähellä Tukholmaa kun Malmö on Kööpenhaminaa mutta
+miten olisi jos vertaa Göteborgia Kööpenhaminaan ? Turusta lennetään maailmalle, miten olisi lähtö Arlandan kentästä jonne
+on noin kahden tunnin bussi-juna-bussi yhteys Turun linja-autoasemasta ?
+</p>
+<p>
+EU kysymyksenä olisi myös huomioitava EU rataverkon suunnitelmia ja tässä tapauksessa suunnitelma
+pikarautatiestä keski-eurooppan eli Europa korridoren. Kyseinen pikarautatie lähteen nykyisten
+suunnitelmien mukaan Tukholmasta olkoonkin että kovasti pohjoisruotsalaiset haluaisivat lajentaa sitä
+Uumajaa myöten. Tässä siis kannattaisi ehdottaa että myös itään eli kohti Helsinkiä. Katso:
+</p>
+<a href="http://www.europakorridoren.se/sv/">
+Europa korridoren suunnitelman pääsivu
+</a>
+<p>
+Ja miksi tyytyä pelkästään Tukholmaan, yhteydet Turkusta paranevat koko keski Ruotsiin!
+</p>
+<p>
+Tukholma on jo Bellmanin ajoilta ollut hyvin merkittävä suomenkielinen kaupunki ja nyt lopulta
+EU liittymisen myötä meillä on mahdollisuus taas kunnolla suomenkielistää tätä meidän Tukholmaa mutta
+jotta homma onnistuisi niin se vaatii yhteistyötä ja erinoimaiset liikenneyhteydet. Tuntuu että
+nykyään molemmin puolin pohjanlahtea tuijotetaan kohti tätä "valtakunnan rajaa" ja vähätellään mahdollisuutta
+palvelua omalla kielellä, olkoonkin että se on sekä taloudellisemmin että paremmin saatavissa
+lahden toiselta puolelta. Tärkeimpinä "verukkeina" käytetään kuljeusmatkat ja "öh" kieliongelmat.
+Onkohan puhuttu suomi toinen kieli Tukholmassa kun se mitä puhutaan Turussa tai Tampereella ?
+Tästä on kaksi hyvää esimerkkiä seuraamuksista kun liikenneyhteydet saadaan kuntoon ja "valtakunnan raja" saadaan
+häivytettyä, toinen löytyy Haaparannan ja Tornion yhteistyöstä ja
+toinen Kööpenhaminan itäiseltä talousalueelta. Joka tapauksessa kyseessä ovat
+<span style="font-weight: bold;">
+ennakkoluulot
+</span>
+puolin ja toisin.
+</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

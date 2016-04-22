@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Förslag för att integrera järnvägsnäten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar över och under Östersjön"/>
+<meta name="robots" content="none" />
+<title>
+Algerso
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 15, /* zoom : 7,*/
+					center : new google.maps.LatLng(60.0342662448026,20.6634378433228),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.SATELLITE, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/G1.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(map);
+
+			}
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="g0.html">västerut </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="./toc1L.html">TOC </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="g2.html">österut </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A24</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Algersö-Grillskär (under Delet)
+<br>
+</h1>
+<div id="map">
+</div>
+<p>
+Algersö - Grillskär är egentligen bara en tunnel, men detta är
+      den ena av de två djupa "sprickorna" i bottnet som banan bör
+      passera (den andra är 
+<a href="g5.html">
+Norrhära djupet
+</a>
+ ).
+      Sjökortet anger ett djup på 47m och egentligen ingenting om hur
+      bottnen egentligen ser ut.
+<br>
+      Höjdskillnader som en järnvägsbana tillåter är mycket begränsade
+      så möjligtvis blir tunneln mycket längre. Det andra problemet är
+      att det rör sig om en djup spricka och vi kan ej anta att vi
+      hittar jämn granit under bottnen, kanske bottnen består av
+      sediment till ett mycket lägre djup. Problemet påminner om
+      situationen vid byggande av metron i Helsingfors vid
+      järnvägsstationen. Byggarna påträffade en sedimentfylld klyfta och
+      sedimentet eller leran måste djupfrysas varefter det blev möjligt
+      att borra igenom sediment zonen. Frågar bara kan detta göras på
+      cirka 50m djup ?
+<br>
+Lösningen som föreslås för 
+<a href="j0.html">
+Ålands hav
+</a>
+med tunnel element är troligen ej möjlig här emedan klyftans väggar är
+för branta.
+</p>
+<h2>
+<a name="DYK">
+</a>
+Vad vi hoppas på både från proffesionella och
+      sport dykare
+</h2>
+<p>
+Kapellskär-Karis banan är planerad att gå till sjöss men
+      skärgården, fjärdarna och havet är i hög grad outforskat
+      territorium (Terra Incognito).
+</p>
+<p>
+Beräkningarna utgår från Skärgårdshavets sjökort men med lodning
+      utanför farlederna beklaglig. Vidare planerar vi bygga på
+      havsbotten där vi ej har ens den blekaste aning om vad för botten.
+      Bottnens beskaffenhet, alltså branter, backar är vi helt okunniga
+      om och detta blir en både dyr och besvärlig, kanske omöjlig,
+      överraskning i det skede vi börjar bygga.
+</p>
+<p>
+På bansträckningen finns grunda fjärdar där bottnen och djupen
+      måste klarläggas, något där alla oberoende av ålder, med dykning
+      som intresse, kan göra oss en värdefull insats.
+<br>
+      Mera avancerad dykning finns det även behov för, tunnlar på över
+      60m djup men vad vet vi egentligen om havsbottnen på detta djup ?
+      Undervattens högryggar men hur långt sträcker de sig och kan man
+      bygga på dessa ? 
+</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

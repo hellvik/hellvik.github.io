@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Standard gauge coastal railway in Nyland" />
+<meta name="robots" content="nofollow" />
+<title>
+Karis Jorvas
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+#pork { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			var pork;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 11, /* zoom : 7,*/
+					center : new google.maps.LatLng(60.1427055927204,24.0867955953125),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarJorBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+
+var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarisJorvas.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer9.setMap(map);
+			} /* InitMap */
+
+			function InitPork()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 9, /* zoom : 7,*/
+					center : new google.maps.LatLng(59.86860939017739,23.661460876464844),/* center : new google.maps.LatLng(60.06860939017739,23.661460876464844), */
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				pork = new google.maps.Map(document.getElementById('pork'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarJorBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer0.setMap(pork);
+
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorHelBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer1.setMap(pork);
+
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/PorkkalaBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer2.setMap(pork);
+
+var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer3, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer3.setMap(pork);
+
+var gLayer5=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorTalBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer5, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer5.setMap(pork);
+
+var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarisJorvas.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer9.setMap(pork);
+			} /* InitPork */
+
+			
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			
+			Utils.addEvent(window,'load',InitMap);
+			Utils.addEvent(window,'load',InitPork);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="KarisKapellskar.html">west </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="jorvas.html">east </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A61</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Jorvas - Karis/Karjaa, new coastal railway
+</h1>
+<div id="pork">
+</div>
+<p><span style="color: rgb(204, 0, 0);">Broad-gauge railway in black!</span></p>
+<p>Above an overview map.</p>
+<p>Below a map of this railway.</p>
+<div id="map">
+</div>
+<p>
+After changing to normal gauge at Esbo, the railway continues to Jorvas. At Jorvas trains destined to Tallinn continues south but trains
+destined to Stockholm continues towards Karis.
+</p>
+<p>
+From an Estonian perspective it is possible to run a train from Tallinn to Jorvas and by only
+changing direction towards west, continue to Karis and to Stockholm Sweden. The question is
+should you use Rail Baltica or these connections. Somewhere between Berlin and Hamburg
+these connections will be faster and shorter than Rail Baltica.
+But the price of the ticket is a big "IF".
+A train from Stockholm towards Tallinn can also use the shortcut at Porkkala penninsula (Express to Reval) and donnot need to change direction.
+</p>
+<img style=" width: 1920px; height: 1080px;" src="../picture/karis.jpg">
+<p>
+at Karis station
+</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

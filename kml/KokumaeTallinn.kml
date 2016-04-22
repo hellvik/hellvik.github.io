@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> KokumaeTallinn</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Untitled layer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-G</styleUrl>
+				<name> Tabasalu</name>
+				<Point>
+					<coordinates>
+						24.588947296142578,59.43447055948029,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Tabasalu</b> station<br>Planerad</div> <div
+					 lang="fi"><b>Tabasalun</b> asema<br>Suunniteltu</div> <div lang="en"><b>Tabasalu</b>
+					 station<br>Planned</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-I</styleUrl>
+				<name> Hiiu</name>
+				<Point>
+					<coordinates>
+						24.67052936553955,59.38284055819872,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Hiiu</b> station</div> <div lang="fi"><b>Hiiun</b> asema</div> <div
+					 lang="en"><b>Hiiu</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-J</styleUrl>
+				<name> Nõmme</name>
+				<Point>
+					<coordinates>
+						24.68700885772705,59.385998711407154,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Nõmme</b> station</div> <div lang="fi"><b>Nõmmen</b> asema</div>
+					 <div lang="en"><b>Nõmme</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-K</styleUrl>
+				<name> Rahumäe</name>
+				<Point>
+					<coordinates>
+						24.702866077423096,59.38874136703184,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Rahumäe</b> station</div> <div lang="fi"><b>Rahumäen</b>
+					 asema</div> <div lang="en"><b>Rahumäe</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-L</styleUrl>
+				<name> Järve</name>
+				<Point>
+					<coordinates>
+						24.725031852722168,59.40095496286774,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Järve</b> station</div> <div lang="fi"><b>Järven</b> asema</div>
+					 <div lang="en"><b>Järve</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-M</styleUrl>
+				<name> Tondi</name>
+				<Point>
+					<coordinates>
+						24.733850955963135,59.41099128667585,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Tondi</b> station</div> <div lang="fi"><b>Tondin</b> asema</div>
+					 <div lang="en"><b>Tondi</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-N</styleUrl>
+				<name> Lilleküle</name>
+				<Point>
+					<coordinates>
+						24.728057384490967,59.42488870412039,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Lilleküle</b> station</div> <div lang="fi"><b>Lillekülen</b>
+					 asema</div> <div lang="en"><b>Lilleküle</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-O</styleUrl>
+				<name> Tallinn</name>
+				<Point>
+					<coordinates>
+						24.737370014190674,59.440318741378746,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Tallins</b> station</div> <div lang="fi"><b>Tallinnan</b>
+					 asema</div> <div lang="en"><b>Tallinn</b> station</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-G'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-H'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-I'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-J'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-K'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-L'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-M'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-N'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/N.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-O'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/O.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Förslag för att integrera järnvägsnäten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar över och under Östersjön"/>
+<meta name="robots" content="none" />
+<title>
+Norrhara djupet
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 13, /* zoom : 7,*/
+					center : new google.maps.LatLng(59.9834335934657,21.1079978942871),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.SATELLITE, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/G5.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(map);
+
+			}
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="g4.html">västerut </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="./toc1L.html">TOC </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="u0.html">österut </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A43</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Örskär-Långkläppen (Norrhära djupet, under Skiftet)
+</h1>
+<div id="map">
+</div>
+<p>
+Två tunnlar (?) varav den senare mellan Norrhära och Långkläppen
+både djupt ner och under 15,3 meters farleden från Åbo. 15.3
+meters farleden genom Norrhära djupet är ej utmärkt på
+satellit bilden men väl på sjökortet.
+</p>
+<ul>
+<li>
+Örskär-Smågaddlägnen tunneln (max djup 20m) under 5.0 och 5.2
+farlderna mot Kökar
+<br>
+</li>
+<li>
+Smågaddlägnen-Norrharun-Långkläppen (max djup kanske ända upp
+till 66m, men sjökortets angivelse oklar och därför en gissning
+på 55m ) under 15.3 meters farleden från Åbo. Detta är
+huvudfarleden in till en av Finlands största hamnar. Djup zonen
+är mellan Norrharun och Långkläppen (Obs. det finns två
+"Långkläppen" på bansträckningen)
+<br>
+</li>
+</ul>
+<p>
+Oberoende av allt det kan väl hända att Norrhära djupet blir den
+punkt på Kapellskär-Karis banan där banan är byggd allra djupast
+ner.
+<br>
+I Skärgårdshavet går via Norrhära djupet en djup spricka tvärs genom
+Skärgårdshavet så det finns ingen möjlighet att komma runt genom att
+ändra sträckningen.
+</p>
+<p>
+Höjdskillnaden blir alltså betydande vilket kan resultera i att
+lösningen måste bli en enhetlig tunnel. Eftersom tunneln går under
+farleden i Norrhära djupet och trafiken ovanom är oljetankers blir
+detta en ännu större utmaning. Problemet med Norrhära djupet är
+troligtvis det samma som sträckan 
+<a href="g1.html">
+Algersö-Grillskär
+</a>
+och tunneln där men djupet här kanske är 66m eftersom sjökortet i
+närheten anger detta, räknar dock med att faktiskt djup är cirka
+56m.
+</p>
+<p>
+Lösningen för banan skulle även kunna vara en undervattens "flytande
+tunnel" på t.ex. 20m djup men ett ankare från en passerande
+oljetankers skulle kanske riva iväg tunnel vid hård sydvästan. Antar
+att det är säkrare att gå lägre ner oberoende av de tilläggsfaror
+som det högra trycket medför.
+</p>
+<p>
+Backen upp till Långkläppen på andra sidan Norrhäradjupet blir
+kanske för brant och det resulterar i att tunneln måste förlängas.
+</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

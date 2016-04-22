@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> JönMal</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Bana</name>
+			<Placemark>
+				<name> Hässleholm-Lund 1</name>
+				<styleUrl> #existsHH</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.7632084,56.157597,0.0 13.7538528,56.143063,0.0 13.7490463,56.1317763,0.0
+						 13.7414932,56.1246965,0.0 13.7384033,56.1201035,0.0 13.7377167,56.1137872,0.0
+						 13.7401199,56.1040237,0.0 13.7408066,56.0940661,0.0 13.7401199,56.08544690000001,0.0
+						 13.7387466,56.0798913,0.0 13.7342834,56.0680111,0.0 13.7270737,56.0620697,0.0
+						 13.7064743,56.0521013,0.0 13.6800385,56.0354176,0.0 13.6645889,56.0265934,0.0
+						 13.6511993,56.0160402,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm-Lund 2</name>
+				<styleUrl> #existsHH</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.6511993,56.0160402,0.0 13.6350632,56.0029885,0.0 13.619957,55.9916607,0.0
+						 13.6100006,55.9866677,0.0 13.597641,55.9832106,0.0 13.5842514,55.979177,0.0
+						 13.5705185,55.9713006,0.0 13.5626221,55.9590026,0.0 13.5581589,55.9484309,0.0
+						 13.5488892,55.9392023,0.0 13.5262299,55.9303561,0.0 13.5059738,55.9226622,0.0
+						 13.4915543,55.91669830000001,0.0 13.468895,55.9165059,0.0 13.4448624,55.9155439,0.0
+						 13.4314728,55.909579,0.0 13.4095001,55.903998,0.0 13.3916473,55.8999561,0.0
+						 13.3744812,55.89495130000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm-Lund 3</name>
+				<styleUrl> #existsHH</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.3744812,55.89495130000001,0.0 13.3610916,55.8901384,0.0 13.347702,55.882629,0.0
+						 13.328819300000001,55.8718438,0.0 13.3222961,55.8681839,0.0 13.316803,55.8581654,0.0
+						 13.3082199,55.8444822,0.0 13.3041,55.8333008,0.0 13.3010101,55.8221161,0.0
+						 13.2907104,55.8082273,0.0 13.2797241,55.7993512,0.0 13.2632446,55.7875777,0.0
+						 13.2484818,55.7804347,0.0 13.2326889,55.774835200000005,0.0 13.217926,55.7696211,0.0
+						 13.2103729,55.7630542,0.0 13.2052231,55.7566795,0.0 13.1932068,55.7402548,0.0
+						 13.1835938,55.7296234,0.0 13.1839371,55.72595,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm-Lund 4</name>
+				<styleUrl> #existsHH</styleUrl>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.1839371,55.72595,0.0 13.1837654,55.7203427,0.0 13.184452100000001,55.7154114,0.0
+						 13.185997,55.712317,0.0 13.1868553,55.70670770000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
+		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
+		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+	</Document>
+</kml>

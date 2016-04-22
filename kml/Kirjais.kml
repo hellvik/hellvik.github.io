@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> U4</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-blue</styleUrl>
+				<name> Kirjais</name>
+				<Point>
+					<coordinates>
+						21.973257064819336,60.122184363898974,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kirjais</b> station</div> <div lang="fi"><b>Kirjaisten</b>
+					 asema</div> <div lang="en"><b>Kirjais</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-purple</styleUrl>
+				<name> Åbo</name>
+				<Point>
+					<coordinates>
+						22.27751,60.45201,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Åbo domkyrka</b><br>Akademigatan</div> <div lang="fi"><b><b>Turun
+					 tuomiokirkko</b><br>Akatemiakatu</div> <div lang="en"><b><b>Aboe cathedral</b><br>Akademi
+					 street</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-blue'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-purple'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

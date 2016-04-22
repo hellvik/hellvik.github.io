@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> K0</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-A</styleUrl>
+				<name> Kapellskär</name>
+				<Point>
+					<coordinates>
+						19.06402587890625,59.71768089889866,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kapellskärs</b> station</div> <div lang="fi"><b>Kapellskärin</b>
+					 asema</div> <div lang="en"><b>Kapellskär</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Plomman</name>
+				<Point>
+					<coordinates>
+						19.12693977355957,59.71365551605304,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-C</styleUrl>
+				<name> Rankarö</name>
+				<Point>
+					<coordinates>
+						19.193716049194336,59.712486765808826,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-A'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-B'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-C'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

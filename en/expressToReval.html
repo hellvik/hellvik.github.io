@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="A railway under the Gulf of Finland" />
+<meta name="robots" content="nofollow" />
+<title>
+Jorvas Tallinn
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+#pork { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			var pork;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 8, /* zoom : 7,*/
+					center : new google.maps.LatLng(59.440318741378746,21.973257064819336),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					/* Tallinn=59.440318741378746 Stockholm=59.3301249*/
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorTalBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorvasKokumae.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(map);
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KokumaeTallinn.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer2.setMap(map);
+
+var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarJorBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer3, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer3.setMap(map);
+var gLayer4=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarisJorvas.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer4, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer4.setMap(map);
+
+var gLayer5=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer5, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer5.setMap(map);
+var gLayer6=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapellskarKaris.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer6, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer6.setMap(map);
+
+var gLayer7=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/StoKapBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer7, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer7.setMap(map);
+var gLayer8=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/StockholmKapellskar.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer8, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer8.setMap(map);
+var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/PorkkalaBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer9.setMap(map);
+			}
+			function InitPork()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 11, /* zoom : 7,*/
+					center : new google.maps.LatLng(60.0350164767239,24.439773559570312),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					/* Tallinn=59.440318741378746 Stockholm=59.3301249*/
+					/* 24.439773559570312,59.99520923897751,0.0  */
+					mapTypeId: google.maps.MapTypeId.SATELLITE, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				pork = new google.maps.Map(document.getElementById('pork'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorTalBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer0.setMap(pork);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorvasKokumae.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(pork);
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KokumaeTallinn.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer2.setMap(pork);
+
+var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarJorBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer3, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer3.setMap(pork);
+var gLayer4=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarisJorvas.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer4, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer4.setMap(pork);
+
+var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/PorkkalaBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer9.setMap(pork);
+			}
+
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			Utils.addEvent(window,'load',InitPork);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top; text-align: center;"><a href="https://sites.google.com/site/rails2jorvas/">rails2jorvas</a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A65</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Express to Reval
+</h1>
+<p>
+The express train to Tallinn starts at Stockholm Central (main railwaystation in Stockholm) and runs as the map above shows. Alltough today it seems
+to be far fetch it is still possible that enough passenger is found to make it cost effective.
+</p>
+<p>
+The length of the journey is 543,2 km and it is possible that Tallinn is reached from Stockholm in about two hours depending on conditions on the railways.
+This should make the <b><u>Express to Reval</u></b> a very attractive alternative to flying from Stockholm to Tallinn.
+</p>
+<div id="map"></div>
+<h2>Business reasons</h2>
+Here some points why this railway should be built
+<ul>
+	<li>Tele-conferencing is works allmost allways, but try to sell something ! You can be present as the seller in about two hours</li>
+	<li>An important international conference tomorrow. Registering starts at 8.00 and keyword session at 9.00</li>
+	<li>All gods cannot be sent through electronic mail, but a delay of two hours is that acceptable</li>
+	<li>To work at home, ok. But be still physically reachable at the shop when needed any day</li>
+	<li>Is our "home market" only Sweden or Estonia, why</li>
+	<li>Transport by train, who is doing that any more</li>
+	<li>Is it reliable, railway</li>
+	<li>&Ouml;sterby, it cannot be in Estonia</li> 	
+</ul>
+<h2>Alternate route, a short cut</h2>
+<p>Note the short cut at Porkkala penninsula, to make the journey quicker. If there is no need for Jorvas and Kyrksl&auml;tt, why should we stop at theese stations ?
+It is really a question of finding a reason to stop at any station on the Finnish mainland.  
+</p>
+<div id="pork"></div>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> U4</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-A</styleUrl>
+				<name> Furuholm</name>
+				<Point>
+					<coordinates>
+						21.738510131835938,60.093096942397366,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Utholm</name>
+				<Point>
+					<coordinates>
+						21.75893783569336,60.094295166897965,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-C</styleUrl>
+				<name> Hummelholm</name>
+				<Point>
+					<coordinates>
+						21.785202026367188,60.10195421549621,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-D</styleUrl>
+				<name> Abborskär</name>
+				<Point>
+					<coordinates>
+						21.814470291137695,60.09643474514679,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-E</styleUrl>
+				<name> Rockelholm</name>
+				<Point>
+					<coordinates>
+						21.87652587890625,60.0987025464209,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Västra Rockelholm</b></div> <div lang="fi"><b>Läntinen
+					 Rockelholm</b></div> <div lang="en"><b>Vest Rockelholm</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-F</styleUrl>
+				<name> Ytterstholm</name>
+				<Point>
+					<coordinates>
+						21.918411254882812,60.11889193079046,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-G</styleUrl>
+				<name> Nötholm</name>
+				<Point>
+					<coordinates>
+						21.93592071533203,60.118250509394436,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-H</styleUrl>
+				<name> Österuddsvägen</name>
+				<Point>
+					<coordinates>
+						21.99711799621582,60.1282125112417,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>bro fästet norr om Österuddsvägen</b></div> <div
+					 lang="fi"><b>sillanpääty Österuddstien pohjoispuolella</b></div> <div lang="en"><b>the end
+					 of bridge north of Österuddsvägen</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-I</styleUrl>
+				<name> Kirjais</name>
+				<Point>
+					<coordinates>
+						21.973257064819336,60.122184363898974,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kirjais</b> station</div> <div lang="fi"><b>Kirjaisten</b>
+					 asema</div> <div lang="en"><b>Kirjais</b> station</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-A'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-B'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-C'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-D'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-E'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-F'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-G'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-H'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-I'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

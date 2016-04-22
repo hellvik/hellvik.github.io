@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> PorkkalaBN</name>
+		<Placemark>
+			<name> PorkkalaBN</name>
+			<styleUrl> #plannedHH</styleUrl>
+			<LineString>
+				<tessellate> 1</tessellate>
+				<coordinates>
+					24.505691528320312,60.044617940473216,0.0 24.4950485,60.0631272,0.0 24.4823456,60.071864,0.0
+					 24.4651794,60.077344800000006,0.0 24.4143677,60.0918987,0.0 24.3776321,60.0987453,0.0
+					 24.3319702,60.1011413,0.0 24.321584701538086,60.103152117942344,0.0
+				</coordinates>
+			</LineString>
+			<description>
+				<![CDATA[ <div lang="sv"><b>Porkkala genväg</b><br>järnväg med standard spårvidd</div> <div
+				 lang="fi"><b></b>Porkkala ohitus<br>normaali raideleveydellä oleva rautatie</div> <div
+				 lang="en"><b>Porkkala short cut</b><br>standard gauge railway</div> ]]>
+			</description>
+		</Placemark>
+		<Style id='sBANA'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
+	</Document>
+</kml>

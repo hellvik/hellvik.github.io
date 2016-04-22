@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Förslag för att integrera järnvägsnäten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar över och under Östersjön"/>
+<meta name="robots" content="none" />
+<title>
+Undervattens ryggen
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 12, /* zoom : 7,*/
+					center : new google.maps.LatLng(59.8301665735752,19.9503993988037),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.SATELLITE, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JLV0.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(map);
+
+			}
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="j0.html">västerut </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="./toc1L.html">TOC </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="vf0.html">österut </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A34</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Flötjan-Lågskär-Vitkubben-Vittensten
+</h1>
+<div id="map">
+</div>
+<p>
+Efter att banan "dyker upp" från Ålands hav, upp vid Flötjan så
+      kommer bana att utnyttja ett naturfenomen, nämligen en
+      undervattens högrygg som på sina ställen t.o.m bilder små öar.
+      Från ytan sett är det svårt att fatta att det är en och samma rygg
+      men på 50m djup är bilden en annan:
+</p>
+<hr style="width: 100%; height: 2px;">
+<img style=" width: 587px;       height: 244px;" alt="" src="../picture/JLV_havsrygg.jpg">
+<hr style="width: 100%; height: 2px;">
+<p>
+    50m kurvan utgörs av den tunna röda linjen, de blå linjerna visar
+    var det är bara 10m. Som små "brödsmulor" i grönt är befintliga öar
+    utritade. På grund av öarnas/kobbarnas litenhet framträder de ej väl
+    på satellit bilden om bilden ej förstoras tillräckligt. På sjökort är
+    dock detta naturfenomen tydligt och öarna, kobbarna med tillhörande
+    grynnor har i årtusenden varit ett problem för sjöfarten.
+</p>
+<p>
+    Om denna högrygg kan utnyttjas som bas för en delvis undervattens
+    järnväg är en fråga som bör utredas, på basen av sjökortet ser det
+    ut som en möjlighet.
+</p>
+<p>
+    Märk även den smala rygg som startar egentligen öster om Vittensten
+    mot Lemland. Detta på basen av sjökortet är första möjliga ställe
+    där en bana kan byggas på ett djup mindre än 50m. Orsaken varför
+    bana Kapellskär-Karis gör efter Vittenstenen en så brant krök är att
+    denna möjlighet utnyttjas.
+</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

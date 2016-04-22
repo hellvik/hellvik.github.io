@@ -1,0 +1,829 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> AllBN</name>
+		<description><![CDATA[ ]]></description>
+		<Folder>
+			<name> Point</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Stockholm</name>
+				<Point>
+					<coordinates>
+						18.0581975,59.3301249,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Stockholms</b> station eller central</div> <div
+					 lang="fi"><b>Tukholman</b> asema</div> <div lang="en"><b>Stockholm</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Norrtälje</name>
+				<Point>
+					<coordinates>
+						18.6849976,59.741055300000006,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Norrtälje</b> station (nya)<br>(planerad)</div> <div
+					 lang="fi"><b>Norrtäljen</b> asema (uusi)<br>(suunniteltu)</div> <div
+					 lang="en"><b>Norrtälje</b> station (new)<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kapellskär</name>
+				<Point>
+					<coordinates>
+						19.06402587890625,59.71768089889866,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kapellskärs</b> station<br>(planerad)</div> <div
+					 lang="fi"><b>Kapellskärin</b> asema<br>(suunniteltu)</div> <div lang="en"><b>Kapellskär</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-blue</styleUrl>
+				<name> Arlanda</name>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda flygplats
+					 (ARN)</div> <div lang="fi"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda lentokenttä
+					 (ARN)</div> <div lang="en"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda airport
+					 (ARN)</div> ]]>
+				</description>
+				<Point>
+					<coordinates>
+						17.9300681,59.650635300000005,0.0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Stocholm</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						18.0563736,59.3314383,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Billsta</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						17.5417328,59.075153900000004,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Vagnshärad</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						17.4976158,58.945758000000005,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Nyköping</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						16.9949913,58.7560041,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Norrköping</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						16.1833763,58.5965288,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Linköping</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						15.626163499999999,58.4162795,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Tranås</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						14.975051900000002,58.0378702,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Skavsta flygplats</name>
+				<styleUrl> #icon-paddle-blue</styleUrl>
+				<Point>
+					<coordinates>
+						16.9253826,58.7836394,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Gripenberg</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						14.853730200000001,57.9911323,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kapellskär</name>
+				<Point>
+					<coordinates>
+						19.06402587890625,59.71768089889866,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kapellskärs</b> station<br>(planned)</div> <div
+					 lang="fi"><b>Kapellskärin</b> asema<br>(planned)</div> <div lang="en"><b>Kapellskär</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Lemland</name>
+				<Point>
+					<coordinates>
+						20.18634796142578,59.97872325452582,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Lemlands</b> station<br>Åland central (planned)</div> <div
+					 lang="fi"><b>Lemlandin</b> asema<br>Ahvenanmaan keskusasema (planned)</div> <div
+					 lang="en"><b>Lemland </b>station<br>Main station at Åland (planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kirjais</name>
+				<Point>
+					<coordinates>
+						21.973257064819336,60.122184363898974,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kirjais</b> station<br>(planerad)</div> <div
+					 lang="fi"><b>Kirjaisten</b> asema<br>(suunniteltu)</div> <div lang="en"><b>Kirjais</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Björkboda</name>
+				<Point>
+					<coordinates>
+						22.561025619506836,60.1016333413731,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Björkboda</b> station<br>(planerad)</div> <div
+					 lang="fi"><b>Björkbodan</b> asema<br>(suunniteltu)</div> <div lang="en"><b>Björkboda</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Karis</name>
+				<Point>
+					<coordinates>
+						23.661460876464844,60.06860939017739,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Karis</b> station</div> <div lang="fi"><b>Karjaan</b> asema</div>
+					 <div lang="en"><b>Karis</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Gripenberg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						14.853730200000001,57.9911323,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Jönköping- Rocksjön</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						14.1965675,57.774563300000004,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Jönköping Central</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						14.1633511,57.7846769,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Københavns Hovedbanegård</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5647116,55.6726962,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ny Ellebjerg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5154448,55.6524833,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Rødbyhavn</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.3557434,54.6556127,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Nykøbing Falster</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.8778515,54.7673251,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Køge</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.1862411,55.4574699,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Puttgarden</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.2268257,54.5011501,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Neustadt</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						10.7955694,54.0962986,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Lübeck, Hauptbahnhof</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						10.670557,53.8670039,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Hamburg, Hauptbahnhof</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						10.0068283,53.5533628,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ørestad</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5788307,55.6285047,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Göteborg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.9726086,57.71010840000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Liseberg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.9952679,57.698208099999995,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Mölndals Nedre station</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.0187426,57.6559178,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Halmstad</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.8647327,56.6691746,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Lund</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						13.1873703,55.70670770000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Karis</name>
+				<Point>
+					<coordinates>
+						23.661460876464844,60.06860939017739,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Karis</b> station</div> <div lang="fi"><b>Karjaan</b> asema</div>
+					 <div lang="en"><b>Karis</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kyrkslätt</name>
+				<Point>
+					<coordinates>
+						24.438743591308594,60.11970437995222,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kyrkslätts</b> station</div> <div lang="fi"><b>Kirkkonummen</b>
+					 asema</div> <div lang="en"><b>Kyrkslätt</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Oslo Sentralstajon</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						10.7524395,59.91110510000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Sarpborg stajon</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.1181641,59.28613990000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Halden stajon</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.383702800000002,59.1204245,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Halden växel</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						11.2751055,59.135971100000006,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Esbo</name>
+				<Point>
+					<coordinates>
+						24.656431674957275,60.20503863659938,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Esbo</b> station<br>Ombyte av tåg om tåget ej klarar spårbredds
+					 växling</div> <div lang="fi"><b>Espoon</b> asema<br>Junanvaihto jollei juna pysty vaihtamaan
+					 kiskoleveyttä</div> <div lang="en"><b>Esbo</b> station<br>Change of train if the train cannot
+					 proceed on other gauge width</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Grankulla</name>
+				<Point>
+					<coordinates>
+						24.731426239013672,60.21193639795478,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Grankulla</b> station</div> <div lang="fi"><b>Kauniaisten</b>
+					 asema</div> <div lang="en"><b>Grankulla</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Helsingfors</name>
+				<Point>
+					<coordinates>
+						24.941883087158203,60.170752209324434,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Helsingfors</b> centralstation</div> <div
+					 lang="fi"><b>Helsingin</b> keskusasema</div> <div lang="en"><b>Helsinki</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Lund</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						13.1868553,55.70670770000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Malmö Central</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.9995728,55.60914170000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Malmö Hyllie</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.9768705,55.56310700000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Kastrup, Københavns Lufthavn</name>
+				<styleUrl> #icon-paddle-blue</styleUrl>
+				<Point>
+					<coordinates>
+						12.6494694,55.6295708,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ørestad</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5788307,55.6285047,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Københavns Hovedbanegård</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5647116,55.6726962,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Hiiu</name>
+				<Point>
+					<coordinates>
+						24.67052936553955,59.38284055819872,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Hiiu</b> station</div> <div lang="fi"><b>Hiiun</b> asema</div> <div
+					 lang="en"><b>Hiiu</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Tallinn</name>
+				<Point>
+					<coordinates>
+						24.737370014190674,59.440318741378746,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Tallins</b> station</div> <div lang="fi"><b>Tallinnan</b>
+					 asema</div> <div lang="en"><b>Tallinn</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						13.7632084,56.157597,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Lund</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						13.1868553,55.70670770000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Halden växel</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						11.2751055,59.135971100000006,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Strömstad växel</name>
+				<description>
+					<![CDATA[ Växel i tunneln mot Strömstad]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.2486267,58.93264990000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Uddevalla</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.9229126,58.3541894,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Göteborg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.9726086,57.71010840000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Liseberg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.9952679,57.698208099999995,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-I'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-J'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-K'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-L'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-M'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-N'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/N.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-O'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/O.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-P'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/P.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-Q'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/Q.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-R'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/R.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-S'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/S.png</href></Icon></IconStyle></Style>
+
+		<Style id='icon-paddle-blue'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-purple'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-green'><IconStyle><scale> 0.7</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-yellow'><IconStyle><scale> 0.7</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

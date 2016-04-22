@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> StoGöt</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Stationer</name>
+			<Placemark>
+				<name> Stockholm</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						18.0580473,59.3302343,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Södertälje Syd</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						17.6453733,59.1623797,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Billsta</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						17.5417328,59.075153900000004,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Katrineholm</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						16.2083101,58.99657119999999,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Hallsberg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						15.110149400000001,59.0670368,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Skövde</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						13.8525581,58.389657099999994,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Falköping</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						13.553009,58.1763603,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Alingsås</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5323105,57.9267907,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Göteborg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.9727802,57.7099708,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-red'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-grn-stars'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

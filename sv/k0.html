@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Förslag för att integrera järnvägsnäten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar över och under Östersjön"/>
+<meta name="robots" content="none" />
+<title>
+Kapellskar-Rankaro
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 13, /* zoom : 7,*/
+					center : new google.maps.LatLng(59.7150838323537,19.1305875778198),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.SATELLITE, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/K0.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(map);
+
+			}
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="kapellskar.html">västerut </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="./toc1L.html">TOC </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="r0.html">österut </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A06</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Kapellskär-Rankarö 
+</h1>
+<div id="map">
+</div>
+<p>
+Starten från Kapellskärs station fortsätter rakt in i tunneln till
+Rankarö under båda farlederna. Havs djupet är antagligen under
+farlederna mellan 20 till 30m men havet måste lodas enligt
+bansträckningen. Vid byggande av banan blir den livliga båttrafiken
+besvärlig men Kapellskär är ändå den mest förmånliga utgångspunkt
+för en fast förbindelse mot öster.
+</p>
+<p>
+Det här endast en visualisering så att frågan om hur järnvägen egentligen skall dras in till och ifrån Kapellskär
+beror på kommande detalj planering. Placeringen av t.ex. stationen är kanske inte så lyckad men kanske en bättre
+lösning vore att placera stationen vid Ångbåtsvägen mitt emot parkerings platsen ?
+</p>
+<p>
+Det är viktigt att resenärerna kan byta till bil så parkering vid stationen måste finnas och resan med bil går på E18.
+Även resenärer som kommer med båt vill kanske byta till tåg och ej som idag till bil eller buss. Om det finns
+passagerar underlag så stannar tåget från Finland eller från Sverige på Kapellskärs station för dessa resenärer.
+</p>
+<h2>
+<a name="TAGRADDNING">
+</a>
+"Tågräddningen"
+</h2>
+<p>
+    Banan Kapellskär-Karis är ingen vanlig tågbana utan en enastående
+    bana som går långt ut till havs. Riskerna är betydliga varför även
+    ovanliga och "dyra" åtgärder måste ingå i planeringen för att kunna
+    garantera resenärernas säkerhet.
+</p>
+<p>
+    En viktig passiv faktor är att banan i regel, även ute till sjöss,
+    är ovan om havsytan.
+</p>
+<p>
+    Havstunnlarna under havsytan är planerade så att de två spåren har
+    sin egen tunnel och med jämna mellanrum finns det vattentäta
+    tryck-dörrar som kan öppnas och stängas i nödsituation. Möjlighet
+    att med dörr stänga av en del av tunneln borde åtminstone planeras,
+    det kan vara enda möjlighet att hindra att hela tunneln fylls med
+    vatten. Idén med dessa dörrar är den samma som finns i
+    skepps konstruktion, vattentäta skott.
+</p>
+<p>
+    Om möjligt är det kanske skäl att bygga nödutgångar från
+    järnvägstunnlarna. Som vi ser av sträckningen för Kapellskär-Rankarö
+    tunneln kan man antagligen bygga en nödutgång/ serviceutgång till
+    Plomman.
+</p>
+<p>
+    Ett av de viktigaste skälen till valet av järnväg som
+    fastförbindelse och icke motorväg var de mindre riskerna för olyckor
+    i tunnlarna. Inte ens järnvägen är dock befriade från olika olycks
+    skenarior. Det gäller bara att i planerings skedet gå igenom olika
+    olyckstyper och se vad som kan göras.
+</p>
+<p>
+    En viktig säkerhetsdetalj är ett heltäckande kommunikationsnät längs
+    hela banan men byggt så att om en "cell" slås ut kan kommunikationen
+    flyttas om så att informationen når fram. Med en "cell" menas till
+    exempel en tunnel, ett banavsnitt, en station. Rasar taket i tunnel
+    X, skall de som bevakar banan genast få information om vad som hänt,
+    så att tåg in i den skadade tunneln kan stoppas. Tågen på banan
+    måste hela tiden vara i realtids kontakt med banövervakningen, det
+    räcker ej med att lokföraren tar kontakt om något sker. 
+</p>
+<br />
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

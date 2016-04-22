@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> G0</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> DegerbyÅL</name>
+				<Point>
+					<coordinates>
+						20.387535095214844,60.029099899592744,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Degerby</b> by</div> <div lang="fi"><b>Degerby</b>kylä</div> <div
+					 lang="en"><b>Degerby</b> village</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> DegerbyST</name>
+				<Point>
+					<coordinates>
+						20.414485931396484,60.026441382281305,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Degerby</b> station</div> <div lang="fi"><b>Degerby</b> asema</div>
+					 <div lang="en"><b>Degerby</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Algersö</name>
+				<Point>
+					<coordinates>
+						20.63979148864746,60.03428768024356,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Algersö tunnelöppning</b></div> <div lang="fi"><b>Algersö
+					 tunneliaukko</b></div> <div lang="en"><b>Algersö tunnel entrance</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-B'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-yellow'><IconStyle>
+		<scale> 0.7</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

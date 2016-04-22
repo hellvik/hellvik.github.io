@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> HFORS Nedlagda</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Untitled layer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Bobäck</name>
+				<Point>
+					<coordinates>
+						24.55023765563965,60.172769421500874,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Bobäcks</b> nedlagda station</div> <div lang="fi"><b>Luoman</b>
+					 poistettu asema</div> <div lang="en"><b>Bobäck</b> former station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Mank</name>
+				<Point>
+					<coordinates>
+						24.581758975982666,60.185328849694564,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Manks</b> nedlagda station</div> <div lang="fi"><b>Mankin</b>
+					 poistettu asema</div> <div lang="en"><b>Mank</b> former station</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-green'><IconStyle>
+		<scale> 0.7</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-yellow'><IconStyle>
+		<scale> 0.7</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

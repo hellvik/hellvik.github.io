@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> G1</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Untitled layer</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-A</styleUrl>
+				<name> Karis</name>
+				<Point>
+					<coordinates>
+						23.661460876464844,60.06860939017739,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Karis</b> station</div> <div lang="fi"><b>Karjaan</b> asema</div>
+					 <div lang="en"><b>Karis</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> DegerbyNY</name>
+				<Point>
+					<coordinates>
+						24.18065071105957,60.082739043608704,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Degerby</b> station<br>Planerad</div> <div
+					 lang="fi"><b>Degerbyn</b> asema<br>Suunniteltu</div> <div lang="en"><b>Degerby</b>
+					 station<br>Planned</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-C</styleUrl>
+				<name> Ingå</name>
+				<Point>
+					<coordinates>
+						24.001522064208984,60.05910058045116,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Ingå</b> station<br>Planerad</div> <div lang="fi"><b>Inkoon</b>
+					 asema<br>Suunniteltu</div> <div lang="en"><b>Ingå</b> station<br>Planned</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-D</styleUrl>
+				<name> Sjundeå</name>
+				<Point>
+					<coordinates>
+						24.229660034179688,60.140821021524935,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Sjundeå</b> station</div> <div lang="fi"><b>Siuntion</b>
+					 asema</div> <div lang="en"><b>Sjundeå</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-E</styleUrl>
+				<name> Kyrkslätt</name>
+				<Point>
+					<coordinates>
+						24.438743591308594,60.11970437995222,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kyrkslätts</b> station</div> <div lang="fi"><b>Kirkkonummen</b>
+					 asema</div> <div lang="en"><b>Kyrkslätt</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-F</styleUrl>
+				<name> Tols</name>
+				<Point>
+					<coordinates>
+						24.47007179260254,60.11752355003811,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Tols</b> station</div> <div lang="fi"><b>Tolsan</b> asema</div>
+					 <div lang="en"><b>Tols</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-G</styleUrl>
+				<name> Jorvas</name>
+				<Point>
+					<coordinates>
+						24.51272964477539,60.13791508157593,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Jorvas</b> station</div> <div lang="fi"><b>Jorvaan</b> asema</div>
+					 <div lang="en"><b>Jorvas</b> station</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-A'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-B'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-C'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-D'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-E'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-F'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-G'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

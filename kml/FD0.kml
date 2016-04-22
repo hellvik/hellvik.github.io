@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> FD0</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> Flaka</name>
+				<Point>
+					<coordinates>
+						20.17192840576172,60.02652714424293,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Flaka</b> by</div> <div lang="fi"><b>Flakan</b> kylä</div> <div
+					 lang="en"><b>Flaka</b> village</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Lemland</name>
+				<Point>
+					<coordinates>
+						20.18634796142578,59.97872325452582,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Lemlands</b> station<br>Åland central (Planerad).</div> <div
+					 lang="fi"><b>Lemlandin</b> asema<br>Ahvenanmaan keskusasema (Suunniteltu)</div> <div
+					 lang="en"><b>Lemland </b>station<br>Main station at Åland (Planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-yellow</styleUrl>
+				<name> DegerbyÅL</name>
+				<Point>
+					<coordinates>
+						20.38890838623047,60.02789930535805,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Degerby</b> by</div> <div lang="fi"><b>Degerby</b> kylä</div> <div
+					 lang="en"><b>Degerby</b> village</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-D</styleUrl>
+				<name> DegerbyST</name>
+				<Point>
+					<coordinates>
+						20.414485931396484,60.026441382281305,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Degerby</b> station<br>Planerad</div> <div lang="fi"><b>Degerby</b>
+					 asema<br>Suunniteltu</div> <div lang="en"><b>Degerby</b> station<br>Planned</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-B'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-D'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-yellow'><IconStyle>
+		<scale> 0.7</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

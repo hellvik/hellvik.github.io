@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> KöpHam</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Stationer</name>
+			<Placemark>
+				<name> Københavns Hovedbanegård</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5647116,55.6726962,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ny Ellebjerg</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5154448,55.6524833,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Rødbyhavn</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.3557434,54.6556127,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Nykøbing Falster</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.8778515,54.7673251,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Køge</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.1862411,55.4574699,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Puttgarden</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.2268257,54.5011501,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Neustadt</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						10.7955694,54.0962986,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Lübeck, Hauptbahnhof</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						10.670557,53.8670039,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Hamburg, Hauptbahnhof</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						10.0068283,53.5533628,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ørestad</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5788307,55.6285047,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Roskilde</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.0894241,55.6387519,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ringsted</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						11.7866993,55.4383633,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ny Holsted</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						11.7629242,55.2419435,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-red'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-grn-stars'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

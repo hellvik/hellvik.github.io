@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Förslag för att integrera järnvägsnäten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar över och under Östersjön"/>
+<meta name="robots" content="none" />
+<title>
+Hannskars fjarden
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 13, /* zoom : 7,*/
+					center : new google.maps.LatLng(60.024199385398,20.7383251190186),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.SATELLITE, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/G2.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer1.setMap(map);
+
+			}
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			Utils.addEvent(window,'load',InitMap);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="g1.html">västerut </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="./toc1L.html">TOC </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="g3.html">österut </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A33</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Grillskär-Långkläppen (Hannskärs fjärden)
+</h1>
+<div id="map">
+</div>
+<p>
+Då och då går banan över små öar och kobbar.
+Genom att havsdjupet är under 10m kan vi kanske bygga sträckan som
+en banvall . Framme vid Trädgårdshäran börjar nästa tunnel.
+</p>
+<h2>
+<a name="VINTER">
+</a>
+Vintertrafik
+<br>
+</h2>
+<p>
+Själva banan måste antagligen täckas på grund av snövirvlar som
+      driver in snö över spåret och på grund av att vid lämplig
+      temperatur förvandlas snön till is. Visst är lösningen en banvall
+      men är det en tunnel på en banvall. Om vi även tar i beaktande att
+      isfältet består av packis som drivs upp mot banvallen kan det
+      hända att på vintern är hela banan omgärdad av packisen.
+<br>
+      Banan på detta avsnitt påverkas direkt av sydvästan och
+      stormcentran från samma håll. Mellan det öppna havet och banan
+      finns inget skydd av öar eller kobbar, en otäckt del isar ner på
+      ett ögonblick och höga vågor kommer lätt in i tunnlarna om det ej
+      åtgärdas.
+</p>
+<p>
+Om banan istället byggs högt ovanom vattnet har vi kvar problemet
+      med nedisning. Pack isen som pressar på mot bropelarna kan få dem
+      att välta eller åtminstone att röra på sig varefter banan blir
+      okörbar. Kraftiga sydväststormar med medföljande nedisning kommer
+      att tynga ner banan så att bropelarna kanske ger efter. Till slut
+      på allt detta har vi ett allvarligt buller problem. Kvar är även
+      ingångarna till tunnlarna i bägge ändorna och frågan om blir
+      backen upp på bron för banan för brant om spåren är nedisade.
+</p>
+<p>
+En "täckt banval" eller ett "rör" behöver dock ej vara mörk
+      eftersom i taket väl kan finnas fönster/ luckor som släpper in
+      solljus om solen syns. Detta arrangemang minskar ej på säkerheten
+      mot snö och is men förbättrar säkerheten på själva banan. I vilken
+      mån får dessa takfönster vara öppna, helt beroende på vad som
+      under stormar och under vintern kan komma in. Temperaturen i
+      "röret" är den samma som ute. Vatten som finns i "röret" fryser
+      till under vintern. Utöver detta finns det även risk för
+      radioaktiv radon gas från tunnelöppningarna. Själva "röret" måste
+      vädras för att få bort både radon gas och övrigt utsläpp. Att köra
+      diseltåg på Kapellskär-Karis banan är definitivt något som bör
+      undvikas.
+</p>
+<p>
+Resultatet av dessa "säkerhetsåtgärder" är att 
+<span style="color: rgb(204, 0, 0);">
+utsikten från tåget i flesta fall är tröstlös
+</span>
+, 
+vill passageraren se Åbolands, Ålands och
+Roslagens skärgårdar föreslås att passageraren bokar plats på
+färjorna i stället. 
+</p>
+<img style=" width: 1669px; height: 1080px;" alt="overfart" src="../picture/overfart.jpg">
+<p>
+<div style="text-align: left;">
+<span style="color: rgb(51, 102, 255);">
+<span style="font-style: italic;">
+Täckt banvall 
+med "fönster", egentligen luckor, för att få in lite ljus. Båda spåren i samma "rör". 
+</span>
+</span>
+</div>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>

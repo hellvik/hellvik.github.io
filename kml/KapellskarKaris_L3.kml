@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> U0</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kapellskär</name>
+				<Point>
+					<coordinates>
+						19.06402587890625,59.71768089889866,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kapellskärs</b> station<br>(planned)</div> <div
+					 lang="fi"><b>Kapellskärin</b> asema<br>(planned)</div> <div lang="en"><b>Kapellskär</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Lemland</name>
+				<Point>
+					<coordinates>
+						20.18634796142578,59.97872325452582,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Lemlands</b> station<br>Åland central (planned)</div> <div
+					 lang="fi"><b>Lemlandin</b> asema<br>Ahvenanmaan keskusasema (planned)</div> <div
+					 lang="en"><b>Lemland </b>station<br>Main station at Åland (planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Kirjais</name>
+				<Point>
+					<coordinates>
+						21.973257064819336,60.122184363898974,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Kirjais</b> station<br>(planerad)</div> <div
+					 lang="fi"><b>Kirjaisten</b> asema<br>(suunniteltu)</div> <div lang="en"><b>Kirjais</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Björkboda</name>
+				<Point>
+					<coordinates>
+						22.561025619506836,60.1016333413731,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Björkboda</b> station<br>(planerad)</div> <div
+					 lang="fi"><b>Björkbodan</b> asema<br>(suunniteltu)</div> <div lang="en"><b>Björkboda</b>
+					 station<br>(planned)</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<name> Karis</name>
+				<Point>
+					<coordinates>
+						23.661460876464844,60.06860939017739,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Karis</b> station</div> <div lang="fi"><b>Karjaan</b> asema</div>
+					 <div lang="en"><b>Karis</b> station</div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-red'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

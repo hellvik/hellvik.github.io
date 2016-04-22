@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> JönMal</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Stationer</name>
+			<Placemark>
+				<name> Lund</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						13.1868553,55.70670770000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Malmö Central</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.9995728,55.60914170000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Malmö Hyllie</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.9768705,55.56310700000001,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Kastrup, Københavns Lufthavn</name>
+				<styleUrl> #icon-paddle-blue</styleUrl>
+				<Point>
+					<coordinates>
+						12.6494694,55.6295708,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Ørestad</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5788307,55.6285047,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<name> Københavns Hovedbanegård</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						12.5647116,55.6726962,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
+			</Placemark>
+		</Folder>
+		<Style id='icon-paddle-red'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+		<Style id='icon-paddle-blue'><IconStyle>
+		<scale> 1.1</scale>
+		<Icon><href>
+		 http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>

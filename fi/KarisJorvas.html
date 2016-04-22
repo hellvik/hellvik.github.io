@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google" content="notranslate" />
+<meta name="Description" CONTENT="Vakioraidelevyinen rata, eli Ruotin raideleveydellä, Uudenmaan rannikko radaksi" />
+<meta name="robots" content="nofollow" />
+<title>
+Karis Jorvas
+</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+#pork { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+</style>
+<!--
+ <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+<!--
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLgFErsJcHKc5N2EJXA8-HSllB7Gb_SCk&sensor=false"></script> -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js">
+</script>
+<script type="text/javascript">
+			var map;
+			var pork;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 11, /* zoom : 7,*/
+					center : new google.maps.LatLng(60.1427055927204,24.0867955953125),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarJorBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+
+var gLayer8=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarisJorvas.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer8, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer8.setMap(map);
+var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarisJorvasNed.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer9.setMap(map);
+			} /* InitMap */
+
+			function InitPork()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 9, /* zoom : 7,*/
+					center : new google.maps.LatLng(60.06860939017739,23.661460876464844),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				pork = new google.maps.Map(document.getElementById('pork'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarJorBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer0.setMap(pork);
+
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorHelBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer1.setMap(pork);
+
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/PorkkalaBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer2.setMap(pork);
+
+var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer3, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer3.setMap(pork);
+
+var gLayer4=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/ELSA_BN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer4, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer4.setMap(pork);
+
+var gLayer5=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorTalBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer5, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer5.setMap(pork);
+
+var gLayer6=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/AboSaloBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer6, 'click', function(kmlEvent) { r2jInfo(kmlEvent,pork);});
+gLayer6.setMap(pork);
+
+
+var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarisJorvas.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer9.setMap(pork);
+			} /* InitPork */
+
+			
+			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			
+			Utils.addEvent(window,'load',InitMap);
+			Utils.addEvent(window,'load',InitPork);
+			//google.maps.event.addDomListener(window, "load", InitMap);
+
+</script>
+
+</head>
+<body>
+<table id="uno" class="menu"><tbody><tr>
+<td style="vertical-align: top;text-align: center;"><a href="KarisKapellskar.html">Länteen </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="jorvas.html">Itään </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A51</span><br></td>
+</tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
+
+<h1>
+Jorvas - Karjaa, uudistettu ja uudelleen kiskottu rantarata
+</h1>
+<div id="pork">
+</div>
+<p>Lounaissuomen rataliikenne kun ottaa huomioon sekä ELSA rata ja uusi rantarata. Tässä näkyy selvästi miten toisaalta 
+yhteydet Turkuun ja Ruotsiin/ Viroon erityvät Espoon kohdalla.</p>
+<p>
+ELSA (Espoo - Lohja - Salo, vaihtoehto seurataan Turun moottoritietä ) ja jatkettuna Salo - Turku, tehostaa 
+ja nopeuttaa Turun liikennettä niinkuin on suunniteltu. Toisaalta liikenne Ruotsiin välttyy turhasta Turun 
+mutkasta. Lisäksi liikenne Viroon järjestyy Suomenlahden kapeikon kautta eli Porkkalan kautta. Tässä näkyy 
+myös "Räävelin pikajunan" ratkaisu Porkkalan niemellä (Tukholma - Tallinna juna).
+</p>
+<p>
+Alla tarkempi kartta kyseessä olevasta radasta
+</p>
+<div id="map">
+</div>
+<p>
+Rata Jorvas - Karjaa on uudistettava, tässä joitakin ehdotuksia
+</p>
+<span style="color: rgb(0, 0, 204);">
+<ol>
+<li>
+Rata on normaalileveyttä joten muutetaan nykyisen rannikkoradan raideleveyttä välillä Karjaa - Inkoo ja lisätään nykyisten ratojen viereen toiset rataparit. 
+Jatketaan Inkoosta suoraan kohti Kirkkonummea normaaliraidelevyisillä tuplaratapareilla.
+Kirkkonummi - Jorvas muutetaan molempien rataparien raideleveyttä normaalileveyteen.
+Tulos on välillä Jorvas - Karjaa on kahdet rataparit normaalevyisinä koko matkalle.
+<br>
+</li>
+<li>
+Rail Baltica suunnitelman mukaan niin raideleveys on normaali eikä leveä ja suunnitelma esittää junaliikennettä Espooseen (Helsinkiin) joten
+on perusteltua olettaa että Jorvakseen sekä idästä että etelässä normaliraidelevyistä rataa on satavilla
+<br>
+</li>
+<li>
+Jos junayhteys saaristomeren yli rakennetaan Karjaalle Ruotsista niin tässäkin päässä on yhteys joka perustuu 
+normaaliraideleveyteen
+<br>
+</li>
+<li>
+Näyttää selvästi siitä että on olemassa Kirkkonummessa "aukko" lähinnä Kelan entisen seisakkeen kohdalla ja jos lähdetään
+uudistamaan Jorvas - Kirkkonummi - Degerby - Inkoo - Karjaa rata niin olisi perusteltavissa että jossakin lähellä
+Kelan entistä seisaketta saadaan tehtyä asemaa joka palvelisi Kantvik/ Pikkala aluetta.
+Mutta jos asemaa ei tule niin käyttäköön Degerbyn tai Kirkkonummen asemia.
+<br>
+</li>
+<li>
+Inkoon nykyinen asema sijaitsee liian kaukana Inkoon keskustasta joten olisi syytä siirtää asemaa jotta 
+raideliikenne voisi paremmin palvella Inkoon keskustataajama. Tämän mahdollistaa rantaradan uusi reitti.
+<br>
+</li>
+<li>
+Degerbyn asema on uusi. Avoimena kysymyksenä on että kannattaako Degerbyhyn rakentaa asemaa, tähän liittyy kysymys 
+miten Degerby tulevaisuudessa kehittyy ja miten paljon matkustajia saadaan Degerbystä. Joka tapauksessa Inkoon 
+Degerby on merkitty suunnitelmaan mahdollisena asemapaikkana.
+<br>
+</li>
+<li>
+Rantaradan suoristaminen on ajateltu lähinnä Ruotsin liikennettä varten jos myös
+ELSA (Espoo - Lohja - Salo) rataa toteutuu niin eriytetään Ruotsin ja Viron liikennettä, liikenteestä Turkuun, Espoossa.
+<br>
+</li>
+</ol>
+</span>
+<p>
+Keskustelu rautatieverkon uudistuksista on juuttunut joten selvästi on aika katsoa asiat uudesta kulmasta.
+Varsinainen kielinahistelu jäätää eteläsuomen rataverkon uudistuksia joten tässä esistetyt ehdotukset
+huomioivat tosiasiaa että etelä-suomessa asuu muitakin kun pelkästään suomea ja ruotsia puhuvia.
+Tärkein huomio on että Suomi on osaa Euroopan Unionia ja on jo aika nähdä myös liikenneratkaisut tässä
+valossa.
+</p>
+<p>
+Rantarata otettiin käyttöön huhtikuun 1. päivänä 1899 ja tuntuu että vieläkin tänä päivänä
+juna puskuttaa tätä samaa reittiä eli mitään merkittävää suoristusta tai tehostusta vuodesta 1899 ei ole
+tehty, ei radalle ole edes tehty toiset kiskoparit. Sitäkin enemmän on näitä pikapaikkoja kyllä tehty.
+Tässä ehdotuksessa rantarata pyritään saamaan nykyaikaan jolloin on otettava huomioon junakehitystä
+viimeisen sadan vuoden aikana ja erityisesti tämä EU asia. Rohkea veto myös ehdottaa rantaradan jatkoa
+ulos saaristomerelle ja Ruotsiin on osaa tätä uusajatelua. Kysymys pitäisikö silti koko Suomen
+rataverkko kiskottaa uusiksi normaalileveydelle olisi todella syytä harkita olkoonkin että
+prosessi on yhtä laaja kun rataverkon sähköistys.
+</p>
+<p>
+Syy junaliikenteen hiipumiselle Suomessa on "
+<span style="font-weight: bold;">
+surkea palvelu
+</span>
+". 
+Käytännössä poistamalla asemia ja
+seisakkeita niin junan käytön edellytykset on tuhottu, eritysesti etelä Suomessa. Tästä on ollut
+seuraksena että sekä valtio että kunnat ovat joutuneet enennemässä määrin suosimaan ainoata
+mahdollista vaihtoehtoa eli autoliikennetä. Hyvä esimerkki tästä näkyy kartassa vihreänä oleva täppä,
+eli Kelan seisake. Kelan seisaketta poistamalla niin luonais Kirkkonummen kehitysedellytykset
+heikennettiin merkittävästi raideliikenteen kannalta ja samaa kärsi myös eteläisin Siuntio eli
+Pikkalan alue. Miksi näin tehtiin, ja tämä todellakin ei ole ainoa esimerkki ? 
+</p>
+<p>
+(Pieninä keltaisilla, asemat, ja vihreillä, Kelan seisake, merkeillä on karttaan merkitty kaikki lopetetut,
+viimeiset Inkoo ja Siuntio lopetaan keväällä 2016) 
+</p>
+<img style=" width: 1920px; height: 1080px;" src="../picture/karis.jpg">
+<p>Juna Turusta Helsinkiin Karjaan asemalla</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>
