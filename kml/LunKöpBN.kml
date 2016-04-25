@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> Lund-Malmö 1</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -22,6 +23,7 @@
 			<Placemark>
 				<name> Lund-Malmö 2</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -34,6 +36,7 @@
 			<Placemark>
 				<name> Malmö-Kastrup 1</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -52,6 +55,7 @@
 			<Placemark>
 				<name> Öresundsbron</name>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -63,6 +67,7 @@
 			<Placemark>
 				<name> Pepparön</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -75,6 +80,7 @@
 			<Placemark>
 				<name> Öresundstunneln</name>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -85,6 +91,7 @@
 			<Placemark>
 				<name> Kastrup-Köpenhamn 1</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -103,6 +110,7 @@
 			<Placemark>
 				<name> Kastrup-Köpenhamn 2</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -113,10 +121,9 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
-		<Style id='sBRO'><LineStyle><color> FFFFFF00</color><width> 4</width></LineStyle></Style> <!--CYAN-->
-		<Style id='sTUNNEL'><LineStyle><color> FF00FFFF</color><width> 4</width></LineStyle></Style> <!--YELLOW-->
+<Style id='exists'><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
+<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
+<Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
+<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

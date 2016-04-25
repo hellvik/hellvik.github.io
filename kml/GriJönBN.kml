@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> Gripenberg-Jönköping 1 US3</name>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -31,10 +32,8 @@
 			</Placemark>
 			<Placemark>
 				<name> Tranås-Jönköping 2 US3</name>
-				<description>
-					<![CDATA[ Jönköping/Rocksjö]]>
-				</description>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -48,8 +47,6 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

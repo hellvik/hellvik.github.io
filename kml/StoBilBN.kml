@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> Stockholm-Billsta 1</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -30,6 +31,7 @@
 			<Placemark>
 				<name> Stockholm-Billsta 2</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -41,6 +43,7 @@
 			<Placemark>
 				<name> Stockholm-Billsta 3</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -54,8 +57,6 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+<Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

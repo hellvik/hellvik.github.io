@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> Billsta-Vagnshärad</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -24,6 +25,7 @@
 			<Placemark>
 				<name> Vagnshärad-Nyköping</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -45,6 +47,7 @@
 			<Placemark>
 				<name> Nyköping-Norrköping 1</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -63,6 +66,7 @@
 			<Placemark>
 				<name> Nyköping-Norrköping 2</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -79,10 +83,8 @@
 			</Placemark>
 			<Placemark>
 				<name> Nyköping-Norrköping 3 US3</name>
-				<description>
-					<![CDATA[ US3]]>
-				</description>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -100,6 +102,7 @@
 			<Placemark>
 				<name> Norrköping-Linköping 1 US3</name>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -120,6 +123,7 @@
 			<Placemark>
 				<name> Norrköping-Linköping 2</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -140,6 +144,7 @@
 			<Placemark>
 				<name> Linköping-Tranås 1</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -156,6 +161,7 @@
 			<Placemark>
 				<name> Linköping-Tranås 3 US3- Tranås 2</name>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -171,6 +177,7 @@
 			<Placemark>
 				<name> Linköping-Tranås 3</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -189,6 +196,7 @@
 			<Placemark>
 				<name> Tranås-Gripenberg</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -203,8 +211,7 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+<Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

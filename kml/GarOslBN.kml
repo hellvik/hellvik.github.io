@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> Oslo-Gardermoen</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -30,8 +31,6 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+<Style id='exists'><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

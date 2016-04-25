@@ -9,12 +9,8 @@
 			<name> JorHelBN</name>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Jorvas-Helsingfors</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>standard
-					 gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -37,12 +33,9 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #FOUR</styleUrl>
+<description><![CDATA[<div lang="sv">standard och bredspår</div><div lang="fi">normaali että leveä raideleveys</div><div lang="en">standard and broad gauge railway</div>]]></description>
 				<name> Jorvas-Helsingfors</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>bredspårig järnväg</b></div> <div lang="fi"><b>leveäraiteinen
-					 rautatie</b></div> <div lang="en"><b>Broad-gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -85,8 +78,7 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='sBANA'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
-		<Style id='sBRED'><LineStyle><color> FFFFFFE0</color><width> 4</width></LineStyle></Style> <!--LIGHT_CYAN-->
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
+<Style id='FOUR'><LineStyle><color>ffA09E5F</color><width>3</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

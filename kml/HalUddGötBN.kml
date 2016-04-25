@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> BK_Halden växel-Strömstad växel</name>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -26,6 +27,7 @@
 			<Placemark>
 				<name> BK_Rabbalshede-Strömstad växel</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -50,6 +52,7 @@
 			<Placemark>
 				<name> BK_PT14-Rabbalshede</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -67,6 +70,7 @@
 			<Placemark>
 				<name> BK_Hede - PT14</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -79,6 +83,7 @@
 			<Placemark>
 				<name> BK_Uddevalla-Hede</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -98,6 +103,7 @@
 			<Placemark>
 				<name> BK_Byn-Uddevalla</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -128,6 +134,7 @@
 			<Placemark>
 				<name> BK_Göteborg-Byn</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -161,8 +168,7 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+<Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

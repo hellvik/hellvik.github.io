@@ -9,6 +9,7 @@
 			<name> KapKarBanan_B</name>
 			<Placemark>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<name> Längs E18 </name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -21,14 +22,10 @@
 						 18.00830841064453,59.37029246288865,0.0 18.003158569335938,59.37903727051661,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>standard
-					 gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Längs E18 </name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -57,15 +54,9 @@
 						 19.06402587890625,59.71768089889866,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>standard
-					 gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 		</Folder>
-		<Style id='sBANA'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+<Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

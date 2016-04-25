@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> Göteborg-Kungsbacka</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -37,6 +38,7 @@
 			<Placemark>
 				<name> Kungsbacka-Varberg</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -63,6 +65,7 @@
 			<Placemark>
 				<name> Varberg -Falkenberg</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -83,6 +86,7 @@
 			<Placemark>
 				<name> Falkenberg-Halmstad</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -104,6 +108,7 @@
 			<Placemark>
 				<name> Halmstad-Ängelholm</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -123,7 +128,8 @@
 			</Placemark>
 			<Placemark>
 				<name> Ängelholm-Kävling ALT 1</name>
-				<styleUrl>  #existsHH</styleUrl>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -135,7 +141,8 @@
 			</Placemark>
 			<Placemark>
 				<name> Ängelholm-Kävling ALT 2</name>
-				<styleUrl>  #existsHH</styleUrl>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -153,6 +160,7 @@
 			<Placemark>
 				<name> Ängelholm-Kävling ALT 3</name>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -162,32 +170,30 @@
 			</Placemark>
 			<Placemark>
 				<name> Ängelholm-Kävling ALT 4</name>
-				<styleUrl>  #existsHH</styleUrl>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
-						13.1121826,55.8514208,0.0 13.109436000000002,55.8338792,0.0 
-						13.1090927,55.817487,0.0
-						13.1097794,55.8066837,0.0
-						13.109436000000002,55.784682,0.0 
+						13.1121826,55.8514208,0.0 13.109436000000002,55.8338792,0.0 13.1090927,55.817487,0.0
+						 13.1097794,55.8066837,0.0 13.109436000000002,55.784682,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
 				<name> Kävlinge-Lund</name>
 				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
-						13.109436000000002,55.784682,0.0 
-						13.1180191,55.7742076,0.0 13.1358719,55.7568726,0.0
+						13.109436000000002,55.784682,0.0 13.1180191,55.7742076,0.0 13.1358719,55.7568726,0.0
 						 13.1557846,55.7381287,0.0 13.1808472,55.7129939,0.0 13.1873703,55.70670770000001,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='existsHH'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
+<Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

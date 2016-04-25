@@ -9,12 +9,8 @@
 			<name> KapKarBN</name>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K00</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K10 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K10 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K10 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -26,11 +22,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Kapellskärstunneln</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K11 järnvägstunnel</b><br>Kapellskärstunneln</div> <div
-					 lang="fi"><b>K11 rautatietunneli</b></div> <div lang="en"><b>K11 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -40,12 +33,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K02</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K12 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K12 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K12 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -56,11 +45,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K03</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K13 bro</b></div> <div lang="fi"><b>K13 silta</b></div> <div
-					 lang="en"><b>K13 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -71,12 +57,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K04</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K14 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K14 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K14 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -86,11 +68,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K05</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K15 bro</b></div> <div lang="fi"><b>K15 silta</b></div> <div
-					 lang="en"><b>K15 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -100,12 +79,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K06</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K16 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K16 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K16 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -115,11 +90,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K07</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K17 bro</b></div> <div lang="fi"><b>K17 silta</b></div> <div
-					 lang="en"><b>K17 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -129,12 +101,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K08</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K18 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K18 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K18 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -144,11 +112,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Ålandstunneln 1</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K19 järnvägstunnel</b><br>Ålandstunneln 1</div> <div
-					 lang="fi"><b>K19 rautatietunneli</b></div> <div lang="en"><b>K19 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -158,11 +123,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Ålandstunneln 2</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K20 järnvägstunnel</b><br>Ålandstunneln 2</div> <div
-					 lang="fi"><b>K20 rautatietunneli</b></div> <div lang="en"><b>K20 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -172,11 +134,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Ålandstunneln 3</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K21 järnvägstunnel</b><br>Ålandstunneln 3</div> <div
-					 lang="fi"><b>K21 rautatietunneli</b></div> <div lang="en"><b>K21 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -186,12 +145,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K12</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K22 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K22 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K22 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -200,14 +155,9 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #line-009D57-4</styleUrl>
+				<styleUrl> #BROTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">tunnel eller bro</div><div lang="fi">tunneli tai silta</div><div lang="en">tunnel or bridge</div>]]></description>
 				<name> K13</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K23 tunnel eller bro</b><br>Oklart vad som är bästa
-					 lösning</div> <div lang="fi"><b>K23 tunneli tai silta</b><br>Ei ole selvää mihin
-					 vaihoehtoon päädytään</div> <div lang="en"><b>K23 tunnel or bridge</b><br>Both are
-					 possibles</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -218,13 +168,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> Lågskärets järnvägsbank</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K24 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå<br>Lågskärets järnvägsbank</div> <div lang="fi"><b>K24 merellinen
-					 rautatiepenger</b><br>Ositain merenpinnan mukaan</div> <div lang="en"><b>K24 railwaybank at
-					 sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -233,14 +178,9 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #line-F4B400-4</styleUrl>
+				<styleUrl> #BANKTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank eller tunnel</div><div lang="fi">rautatiepenger tai tunneli</div><div lang="en">railwaybank or tunnel</div>]]></description>
 				<name> K15</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K25 bank eller tunnel</b><br>Oklart vad som är bästa
-					 lösning</div> <div lang="fi"><b>K25 penger tai tunneli</b><br>Ei ole selvää mihin
-					 vaihoehtoon päädytään</div> <div lang="en"><b>K25 </b>bank or tunnel<br>Both are
-					 possibles</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -250,11 +190,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K16</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K26 järnvägstunnel</b></div> <div lang="fi"><b>K26
-					 rautatietunneli</b></div> <div lang="en"><b>K26 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -263,14 +200,9 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #line-F4B400-4</styleUrl>
+				<styleUrl> #BANKTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank eller tunnel</div><div lang="fi">rautatiepenger tai tunneli</div><div lang="en">railwaybank or tunnel</div>]]></description>
 				<name> K17</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K27 bank eller tunnel</b><br>Oklart vad som är bästa
-					 lösning</div> <div lang="fi"><b>K27 penger tai tunneli</b><br>Ei ole selvää mihin
-					 vaihoehtoon päädytään</div> <div lang="en"><b>K27 </b>bank or tunnel<br>Both are
-					 possibles</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -280,11 +212,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K18</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K28 järnvägstunnel</b></div> <div lang="fi"><b>K28
-					 rautatietunneli</b></div> <div lang="en"><b>K28 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -294,12 +223,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K19</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K29 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K29 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K29 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -310,11 +235,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Vittenstens svängen</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K30 järnvägstunnel</b><br>Vittenstens svängen</div> <div
-					 lang="fi"><b>K30 rautatietunneli</b></div> <div lang="en"><b>K30 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -324,6 +246,7 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K21</name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -331,13 +254,10 @@
 						20.128112564086914,59.85171278693749,0.0 20.14171600341797,59.902024360718436,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K31 järnvägstunnel</b></div> <div lang="fi"><b>K31
-					 rautatietunneli</b></div> <div lang="en"><b>K31 railway tunnel</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #line-F4B400-4</styleUrl>
+				<styleUrl> #BANKTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank eller tunnel</div><div lang="fi">rautatiepenger tai tunneli</div><div lang="en">railwaybank or tunnel</div>]]></description>
 				<name> K22</name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -345,15 +265,10 @@
 						20.14171600341797,59.902024360718436,0.0 20.160598754882812,59.93334443984601,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K32 bank eller tunnel</b><br>Oklart vad som är bästa
-					 lösning</div> <div lang="fi"><b>K32 penger tai tunneli</b><br>Ei ole selvää mihin
-					 vaihoehtoon päädytään</div> <div lang="en"><b>K32 </b>bank or tunnel<br>Both are
-					 possibles</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K23</name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -361,14 +276,10 @@
 						20.160598754882812,59.93334443984601,0.0 20.170555114746094,59.947617961745564,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K33 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K33 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K33 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K24</name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -376,13 +287,10 @@
 						20.170555114746094,59.947617961745564,0.0 20.178451538085938,59.967384376089846,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K34 järnvägstunnel</b></div> <div lang="fi"><b>K34
-					 rautatietunneli</b></div> <div lang="en"><b>K34 railway tunnel</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K25</name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -392,14 +300,10 @@
 						 20.209007263183594,59.984133623376465,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K35 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K35 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K35
-					 standard gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Föglö tunneln</name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -409,13 +313,10 @@
 						 20.293636322021484,59.98653794793639,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K36 järnvägstunnel</b><br>Föglö tunneln</div> <div
-					 lang="fi"><b>K36 rautatietunneli</b></div> <div lang="en"><b>K36 railway tunnel</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K27</name>
 				<LineString>
 					<tessellate> 0</tessellate>
@@ -431,19 +332,11 @@
 						 20.418777465820312,60.029871687136044,0.0 20.448989868164062,60.03021469803518,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K37 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K37 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K37
-					 standard gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K271</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K38 1 bro</b></div> <div lang="fi"><b>K38 silta</b></div> <div
-					 lang="en"><b>K38 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -453,12 +346,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K28</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K39 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K39 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K39
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -468,11 +357,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K29</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K40 bro</b></div> <div lang="fi"><b>K40 silta</b></div> <div
-					 lang="en"><b>K40 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -482,12 +368,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K30</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K41 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K41 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K41
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -497,11 +379,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K31</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K42 bro</b></div> <div lang="fi"><b>K42 silta</b></div> <div
-					 lang="en"><b>K42 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -511,12 +390,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K32</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K43 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K43 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K43
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -526,11 +401,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Delets tunnel</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K44 järnvägstunnel</b><br>Delets tunnel</div> <div
-					 lang="fi"><b>K44 rautatietunneli</b></div> <div lang="en"><b>K44 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -540,12 +412,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K34</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K45 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K45 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K45 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -559,11 +427,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K35</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K46 järnvägstunnel</b></div> <div lang="fi"><b>K46
-					 rautatietunneli</b></div> <div lang="en"><b>K46 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -574,12 +439,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K36</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K47 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K47 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K47 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -590,11 +451,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K37</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K48 järnvägstunnel</b></div> <div lang="fi"><b>K48
-					 rautatietunneli</b></div> <div lang="en"><b>K48 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -605,12 +463,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K38</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K49 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K49 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K49 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -620,11 +474,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Skiftets tunnel</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K50 järnvägstunnel</b><br>Skiftets tunnel</div> <div
-					 lang="fi"><b>K50 rautatietunneli</b></div> <div lang="en"><b>K50 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -634,14 +485,9 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #line-F4B400-4</styleUrl>
+				<styleUrl> #BANKTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank eller tunnel</div><div lang="fi">rautatiepenger tai tunneli</div><div lang="en">railwaybank or tunnel</div>]]></description>
 				<name> K40</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K51 bank eller tunnel</b><br>Oklart vad som är bästa
-					 lösning</div> <div lang="fi"><b>K51 penger tai tunneli</b><br>Ei ole selvää mihin
-					 vaihoehtoon päädytään</div> <div lang="en"><b>K51 </b>bank or tunnel<br>Both are
-					 possibles</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -652,12 +498,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K41</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K52 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K52 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K52 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -667,11 +509,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K42</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K53 järnvägstunnel</b></div> <div lang="fi"><b>K53
-					 rautatietunneli</b></div> <div lang="en"><b>K53 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -681,12 +520,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K43</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K54 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K54 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K54 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -696,11 +531,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K44</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K55 järnvägstunnel</b></div> <div lang="fi"><b>K55
-					 rautatietunneli</b></div> <div lang="en"><b>K55 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -711,11 +543,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K45</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K56 järnvägstunnel</b></div> <div lang="fi"><b>K56
-					 rautatietunneli</b></div> <div lang="en"><b>K56 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -725,12 +554,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K46</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K57 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K57 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K57 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -741,11 +566,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K47</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K58 järnvägstunnel</b></div> <div lang="fi"><b>K58
-					 rautatietunneli</b></div> <div lang="en"><b>K58 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -755,12 +577,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K48</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K59 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K59 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K59 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -770,11 +588,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K49</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K60 bro</b></div> <div lang="fi"><b>K60 silta</b></div> <div
-					 lang="en"><b>K60 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -784,12 +599,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K50</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K61 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K61 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K61 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -800,11 +611,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K51</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K62 järnvägstunnel</b></div> <div lang="fi"><b>K62
-					 rautatietunneli</b></div> <div lang="en"><b>K62 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -815,12 +623,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K52</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K63 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K63 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K63 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -831,11 +635,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K53</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K64 bro</b></div> <div lang="fi"><b>K64 silta</b></div> <div
-					 lang="en"><b>K64 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -845,12 +646,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K54</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K65 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K65 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K65 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -863,11 +660,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K55</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K66 bro</b></div> <div lang="fi"><b>K66 silta</b></div> <div
-					 lang="en"><b>K66 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -877,12 +671,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K56</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K67 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K67 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K67 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -893,12 +683,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K57</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K68 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K68 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K68
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -909,12 +695,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K58</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K69 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K69 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K69
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -926,11 +708,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K59</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K70 bro</b></div> <div lang="fi"><b>K70 silta</b></div> <div
-					 lang="en"><b>K70 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -940,12 +719,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K60</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K71 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K71 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K71 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -957,11 +732,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K61</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K72 bro</b></div> <div lang="fi"><b>K72 silta</b></div> <div
-					 lang="en"><b>K72 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -971,12 +743,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K62</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K73 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K73 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K73 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -987,11 +755,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K63</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K74 bro</b></div> <div lang="fi"><b>K74 silta</b></div> <div
-					 lang="en"><b>K74 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1001,12 +766,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K64</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K75 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K75 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K75 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1016,11 +777,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> K65</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K76 järnvägstunnel</b></div> <div lang="fi"><b>K76
-					 rautatietunneli</b></div> <div lang="en"><b>K76 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1031,12 +789,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBANK</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägs bank till havs</div><div lang="fi">merellinen rautatiepenger</div><div lang="en">railwaybank at sea</div>]]></description>
 				<name> K66</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K77 järnvägs bank till havs</b><br>Delvis nedsänkt till
-					 havsnivå</div> <div lang="fi"><b>K77 merellinen rautatiepenger</b><br>Ositain merenpinnan
-					 mukaan</div> <div lang="en"><b>K77 railwaybank at sea</b><br>Partly at sea level</div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1046,11 +800,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Kimito tunneln</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K78 järnvägstunnel</b><br>Kimito tunneln</div> <div
-					 lang="fi"><b>K78 rautatietunneli</b></div> <div lang="en"><b>K78 railway tunnel</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1060,12 +811,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K68</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K79 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K79 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K79
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1076,11 +823,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K69</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K80 bro</b></div> <div lang="fi"><b>K80 silta</b></div> <div
-					 lang="en"><b>K80 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1090,12 +834,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K70</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K81 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K81 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K81
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1105,11 +845,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K71</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K82 bro</b></div> <div lang="fi"><b>K82 silta</b></div> <div
-					 lang="en"><b>K82 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1119,12 +856,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K72</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K83 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K83 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K83
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1136,12 +869,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K73</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K84 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K84 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K84
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1162,11 +891,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K74</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K85 bro</b></div> <div lang="fi"><b>K85 silta</b></div> <div
-					 lang="en"><b>K85 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1176,12 +902,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K75</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K86 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K86 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K86
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1193,11 +915,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> K76</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K87 bro</b></div> <div lang="fi"><b>K87 silta</b></div> <div
-					 lang="en"><b>K87 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1207,12 +926,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K77</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K88 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K88 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K88
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1227,12 +942,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K78</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K89 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K89 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K89
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1248,12 +959,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K79</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K90 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K90 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K90
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1269,11 +976,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<name> Bro över Pojo viken</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K91 bro</b><br>Bro över Pojo viken</div> <div lang="fi"><b>K91
-					 silta</b></div> <div lang="en"><b>K91 bridge</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1283,12 +987,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K81</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K92 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K92 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K92
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1303,12 +1003,8 @@
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> K82</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K93 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K93 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K93
-					 standard gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -1321,12 +1017,11 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='line-009D57-4'><LineStyle><color> FF2FFFAD</color><width> 4</width></LineStyle></Style> <!--GREEN_YELLOW-->
-		<Style id='line-F4B400-4'><LineStyle><color> FF00FC7C</color><width> 4</width></LineStyle></Style> <!--LAWN_GREEN-->
-		<Style id='sBANA'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
-		<Style id='sBANK'><LineStyle><color> FFD0E040</color><width> 4</width></LineStyle></Style> <!--TURQUOISE-->
-		<Style id='sBRO'><LineStyle><color> FFFFFF00</color><width> 4</width></LineStyle></Style> <!--CYAN-->
-		<Style id='sTUNNEL'><LineStyle><color> FF00FFFF</color><width> 4</width></LineStyle></Style> <!--YELLOW-->
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
+<Style id='sBANK'><LineStyle><color> ffD0E040</color><width> 4</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
+<Style id='BROTUNNEL'><LineStyle><color> ff2FFFAD</color><width> 4</width></LineStyle></Style>
+<Style id='BANKTUNNEL'><LineStyle><color> ff00FC7C</color><width> 4</width></LineStyle></Style>
+<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
+<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

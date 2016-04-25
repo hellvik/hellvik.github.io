@@ -9,6 +9,7 @@
 			<name> JorTalBN</name>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Jorvas-Porkkala-1</name>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -19,14 +20,10 @@
 						 24.51324462890625,60.097889579006136,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K10 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K10 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K10
-					 standard gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Jorvas-Porkkala-2</name>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -38,14 +35,10 @@
 						 24.439773559570312,59.99520923897751,0.0 24.432907104492188,59.98782590710937,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K11 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K11 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K11
-					 standard gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Porkkala-Nargö tunnel</name>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -53,13 +46,10 @@
 						24.432907104492188,59.98782590710937,0.0 24.511871337890625,59.60561209518106,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K12 järnvägstunnel</b><br>Porkkala-Nargö tunnel</div> <div
-					 lang="fi"><b>K12 rautatietunneli</b></div> <div lang="en"><b>K12 railway tunnel</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Nargö</name>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -73,14 +63,10 @@
 						 24.545860290527344,59.54128017205441,0.0 24.541053771972656,59.53762521164926,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K13 järnväg med standard spårvidd</b><br>Nargö banan</div> <div
-					 lang="fi"><b>K13 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K13
-					 standard gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<name> Nargö-Kakumäe tunneln</name>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -88,13 +74,10 @@
 						24.541053771972656,59.53762521164926,0.0 24.577789306640625,59.45694125860139,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K14 järnvägstunnel</b><br>Nargö-Kakumäe tunneln</div> <div
-					 lang="fi"><b>K14 rautatietunneli</b></div> <div lang="en"><b>K14 railway tunnel</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Kakumäe-Tallinn-1</name>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -103,14 +86,10 @@
 						 24.583110809326172,59.450441561932365,0.0 24.586715698242188,59.447518472292344,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K15 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K15 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K15
-					 standard gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Kakumäe-Tabasalu</name>
 				<LineString>
 					<tessellate> 1</tessellate>
@@ -119,16 +98,9 @@
 						 24.588088989257812,59.44027510197383,0.0 24.588947296142578,59.43447055948029,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>K16 järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>K16 normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>K16
-					 standard gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 		</Folder>
-		<Style id='sBANA'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
-		<Style id='sBRED'><LineStyle><color> FFFFFFE0</color><width> 4</width></LineStyle></Style> <!--LIGHT_CYAN-->
-		<Style id='sTUNNEL'><LineStyle><color> FF00FFFF</color><width> 4</width></LineStyle></Style> <!--YELLOW-->
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
+<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

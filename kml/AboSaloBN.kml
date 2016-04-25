@@ -9,7 +9,8 @@
 			<name> Salo layer</name>
 			<Placemark>
 				<name> Littoinen</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #existsBRD</styleUrl>
+<description><![CDATA[<div lang="sv">bredspårig järnväg</div><div lang="fi">leveäraiteinen rautatie</div><div lang="en">broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -31,14 +32,11 @@
 						 22.4608612,60.4338483,0.0 22.4450684,60.4419787,0.0 22.4388885,60.4433336,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>bredspårig järnväg</b></div> <div lang="fi"><b>leveäraiteinen
-					 rautatie</b></div> <div lang="en"><b>Broad-gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Laukkavuori</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #existsBRD</styleUrl>
+<description><![CDATA[<div lang="sv">bredspårig järnväg</div><div lang="fi">leveäraiteinen rautatie</div><div lang="en">broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -50,14 +48,11 @@
 						 22.3322868,60.43782910000001,0.0 22.3247337,60.4391841,0.0 22.3188972,60.440031000000005,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>bredspårig järnväg</b></div> <div lang="fi"><b>leveäraiteinen
-					 rautatie</b></div> <div lang="en"><b>Broad-gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Åbo</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #existsBRD</styleUrl>
+<description><![CDATA[<div lang="sv">bredspårig järnväg</div><div lang="fi">leveäraiteinen rautatie</div><div lang="en">broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -73,12 +68,8 @@
 						 22.2581291,60.4559481,0.0 22.2528934,60.4540436,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>bredspårig järnväg</b></div> <div lang="fi"><b>leveäraiteinen
-					 rautatie</b></div> <div lang="en"><b>Broad-gauge railway</b></div> ]]>
-				</description>
 			</Placemark>
 		</Folder>
-		<Style id='sBRED'><LineStyle><color> FFFFFFE0</color><width> 4</width></LineStyle></Style> <!--LIGHT_CYAN-->
+<Style id='existsBRD'><LineStyle><color> ffFFFFE0</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

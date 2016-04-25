@@ -10,6 +10,7 @@
 			<Placemark>
 				<name> Line 1 - Köpenhamn - Ny Elleberg</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -24,6 +25,7 @@
 			<Placemark>
 				<name> Line 2 - Örestad - Ny Elleberg</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -37,6 +39,7 @@
 			<Placemark>
 				<name> Line 3 - Ny Ellerberg - Köge</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -69,6 +72,7 @@
 			<Placemark>
 				<name> Line 4 - Köge - Tureby</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -83,6 +87,7 @@
 			<Placemark>
 				<name> Line 5 - Tureby - Haslev</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -94,26 +99,21 @@
 			<Placemark>
 				<name> Line 6 - Haslev - Ny Holsted</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
-						11.9611502,55.3293641,0.0 
-						11.9280624,55.31429860000001,0.0 
-						11.9160461,55.3055057,0.0
-						 11.9047165,55.2892826,0.0 
-						 11.894073500000001,55.2738351,0.0 
-						 11.8724442,55.267185,0.0
-						 11.843605,55.2587729,0.0 
-						 11.8161392,55.24859790000001,0.0 
-						 11.7735672,55.2470322,0.0
-						 11.7629242,55.2444879,0.0 
-						 11.7629242,55.2419435,0.0
+						11.9611502,55.3293641,0.0 11.9280624,55.31429860000001,0.0 11.9160461,55.3055057,0.0
+						 11.9047165,55.2892826,0.0 11.894073500000001,55.2738351,0.0 11.8724442,55.267185,0.0
+						 11.843605,55.2587729,0.0 11.8161392,55.24859790000001,0.0 11.7735672,55.2470322,0.0
+						 11.7629242,55.2444879,0.0 11.7629242,55.2419435,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
 				<name> Ny Ellerberg - Hedehuse</name>
-				<styleUrl>  #exists</styleUrl>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -127,7 +127,8 @@
 			</Placemark>
 			<Placemark>
 				<name> Hedehuse-Ringsted</name>
-				<styleUrl>  #exists</styleUrl>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -147,7 +148,8 @@
 			</Placemark>
 			<Placemark>
 				<name> Ringsted - Ny Holsted</name>
-				<styleUrl>  #exists</styleUrl>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -157,40 +159,30 @@
 						 11.6942596,55.3619417,0.0 11.6956329,55.354916,0.0 11.7011261,55.3459369,0.0
 						 11.7313385,55.3309021,0.0 11.7375183,55.326410100000004,0.0 11.7423248,55.3205501,0.0
 						 11.7443848,55.3129309,0.0 11.7426682,55.2877185,0.0 11.7430115,55.2775509,0.0
-						 11.7471313,55.268163,0.0 11.7533112,55.2558381,0.0 
-						 11.7629242,55.2419435,0.0
+						 11.7471313,55.268163,0.0 11.7533112,55.2558381,0.0 11.7629242,55.2419435,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
 				<name> Ny Holsted - Lundby</name>
-				<styleUrl>  #exists</styleUrl>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
-						 11.7629242,55.2419435,0.0
-						 11.7618942,55.2376372,0.0 
-						 11.7649841,55.2335261,0.0
-						 11.7684174,55.2284357,0.0 
-						 11.7763138,55.2231487,0.0 
-						 11.7852402,55.2217779,0.0
-						 11.7900467,55.217469400000006,0.0 
-						 11.7927933,55.2063042,0.0 
-						 11.8034363,55.2012103,0.0
-						 11.8188858,55.1949399,0.0 
-						 11.832962,55.1888646,0.0 
-						 11.8442917,55.1765151,0.0
-						 11.8569946,55.1565125,0.0 
-						 11.857338,55.1484694,0.0 
-						 11.8535614,55.129630500000005,0.0
-						 11.857338,55.1227599,0.0 
-						 11.8692684,55.1106845,0.0
+						11.7629242,55.2419435,0.0 11.7618942,55.2376372,0.0 11.7649841,55.2335261,0.0
+						 11.7684174,55.2284357,0.0 11.7763138,55.2231487,0.0 11.7852402,55.2217779,0.0
+						 11.7900467,55.217469400000006,0.0 11.7927933,55.2063042,0.0 11.8034363,55.2012103,0.0
+						 11.8188858,55.1949399,0.0 11.832962,55.1888646,0.0 11.8442917,55.1765151,0.0
+						 11.8569946,55.1565125,0.0 11.857338,55.1484694,0.0 11.8535614,55.129630500000005,0.0
+						 11.857338,55.1227599,0.0 11.8692684,55.1106845,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
 				<name> Line 7 - Lundby - Falster Nyköping</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -205,6 +197,7 @@
 			<Placemark>
 				<name> Storström bron</name>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -215,6 +208,7 @@
 			<Placemark>
 				<name> Line 7 - Lundby - Falster NyköpingB</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -230,6 +224,7 @@
 			<Placemark>
 				<name> Line 8 - Falster Nyköping - Rödhave</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -240,6 +235,7 @@
 			<Placemark>
 				<name> Guldbrosunds bron</name>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -250,6 +246,7 @@
 			<Placemark>
 				<name> Line 8 - Falster Nyköping - RödhaveB</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -265,6 +262,7 @@
 			<Placemark>
 				<name> Line 9 - Fehmar sund tunneln</name>
 				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -275,6 +273,7 @@
 			<Placemark>
 				<name> Line 11 - Puttgarden - Grossebode</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -287,6 +286,7 @@
 			<Placemark>
 				<name> Fehmarsund bron</name>
 				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -297,6 +297,7 @@
 			<Placemark>
 				<name> Line 11 - Puttgarden - GrossebodeB</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -308,6 +309,7 @@
 			<Placemark>
 				<name> Line 12 - Grossebode - Lensahn</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -327,6 +329,7 @@
 			<Placemark>
 				<name> Line 13 - Lensahn - Scharbeutz</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -342,6 +345,7 @@
 			<Placemark>
 				<name> Line 14 - Scharbeutz - Lubeck</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -356,6 +360,7 @@
 			<Placemark>
 				<name> Line 15 - Lubeck - Bad Oldesloe</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -371,6 +376,7 @@
 			<Placemark>
 				<name> Line 16 - Bad Oldesloe - Hamb.Rahlstedt</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -385,6 +391,7 @@
 			<Placemark>
 				<name> Hamb.Rahlstedt - Hamburg</name>
 				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -398,8 +405,8 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='exists'><LineStyle><color> FFCBC0FF</color><width> 4</width></LineStyle></Style> <!--PINK-->
-		<Style id='sBRO'><LineStyle><color> FFFFFF00</color><width> 4</width></LineStyle></Style> <!--CYAN-->
-		<Style id='sTUNNEL'><LineStyle><color> FF00FFFF</color><width> 4</width></LineStyle></Style> <!--YELLOW-->
+<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
+<Style id='exists'><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
+<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

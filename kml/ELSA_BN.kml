@@ -9,7 +9,8 @@
 			<name> ELSA layer</name>
 			<Placemark>
 				<name> Esbo - Gumbölevägen</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #plannedBRD</styleUrl>
+<description><![CDATA[<div lang="sv">planerad bredspårig järnväg</div><div lang="fi">suunniteltu leveäraiteinen rautatie</div><div lang="en">planned broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -18,15 +19,11 @@
 						 24.6207047,60.2227652,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>ELSA banan</b><br>bredspårig planerad järnväg</div> <div
-					 lang="fi"><b>ELSA rata</b><br>suunniteltu leveäraiteinen rautatie</div> <div
-					 lang="en"><b>ELSA railway</b><br>planned broad-gauge railway</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Ämmänsuo</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #plannedBRD</styleUrl>
+<description><![CDATA[<div lang="sv">planerad bredspårig järnväg</div><div lang="fi">suunniteltu leveäraiteinen rautatie</div><div lang="en">planned broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -36,15 +33,11 @@
 						 24.5559883,60.2449232,0.0 24.545002,60.24696780000001,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>ELSA banan</b><br>bredspårig planerad järnväg</div> <div
-					 lang="fi"><b>ELSA rata</b><br>suunniteltu leveäraiteinen rautatie</div> <div
-					 lang="en"><b>ELSA railway</b><br>planned broad-gauge railway</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Palojärvi</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #plannedBRD</styleUrl>
+<description><![CDATA[<div lang="sv">planerad bredspårig järnväg</div><div lang="fi">suunniteltu leveäraiteinen rautatie</div><div lang="en">planned broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -54,15 +47,11 @@
 						 24.4210625,60.286046299999995,0.0 24.4083595,60.2900452,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>ELSA banan</b><br>bredspårig planerad järnväg</div> <div
-					 lang="fi"><b>ELSA rata</b><br>suunniteltu leveäraiteinen rautatie</div> <div
-					 lang="en"><b>ELSA railway</b><br>planned broad-gauge railway</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Nummenkylä</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #plannedBRD</styleUrl>
+<description><![CDATA[<div lang="sv">planerad bredspårig järnväg</div><div lang="fi">suunniteltu leveäraiteinen rautatie</div><div lang="en">planned broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -72,15 +61,11 @@
 						 24.262619,60.30884180000001,0.0 24.2415047,60.3081615,0.0 24.2349815,60.3073963,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>ELSA banan</b><br>bredspårig planerad järnväg</div> <div
-					 lang="fi"><b>ELSA rata</b><br>suunniteltu leveäraiteinen rautatie</div> <div
-					 lang="en"><b>ELSA railway</b><br>planned broad-gauge railway</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Lojo</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #plannedBRD</styleUrl>
+<description><![CDATA[<div lang="sv">planerad bredspårig järnväg</div><div lang="fi">suunniteltu leveäraiteinen rautatie</div><div lang="en">planned broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -90,15 +75,11 @@
 						 24.0969658,60.284174300000004,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>ELSA banan</b><br>bredspårig planerad järnväg</div> <div
-					 lang="fi"><b>ELSA rata</b><br>suunniteltu leveäraiteinen rautatie</div> <div
-					 lang="en"><b>ELSA railway</b><br>planned broad-gauge railway</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Muurla</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #plannedBRD</styleUrl>
+<description><![CDATA[<div lang="sv">planerad bredspårig järnväg</div><div lang="fi">suunniteltu leveäraiteinen rautatie</div><div lang="en">planned broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -114,15 +95,11 @@
 						 23.3308411,60.37857530000001,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>ELSA banan</b><br>bredspårig planerad järnväg</div> <div
-					 lang="fi"><b>ELSA rata</b><br>suunniteltu leveäraiteinen rautatie</div> <div
-					 lang="en"><b>ELSA railway</b><br>planned broad-gauge railway</div> ]]>
-				</description>
 			</Placemark>
 			<Placemark>
 				<name> Salo</name>
-				<styleUrl> #sBRED</styleUrl>
+				<styleUrl> #plannedBRD</styleUrl>
+<description><![CDATA[<div lang="sv">planerad bredspårig järnväg</div><div lang="fi">suunniteltu leveäraiteinen rautatie</div><div lang="en">planned broad-gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -131,13 +108,8 @@
 						 23.1215858,60.38472610000001,0.0 23.1166077,60.3873981,0.0
 					</coordinates>
 				</LineString>
-				<description>
-					<![CDATA[ <div lang="sv"><b>ELSA banan</b><br>bredspårig planerad järnväg</div> <div
-					 lang="fi"><b>ELSA rata</b><br>suunniteltu leveäraiteinen rautatie</div> <div
-					 lang="en"><b>ELSA railway</b><br>planned broad-gauge railway</div> ]]>
-				</description>
 			</Placemark>
 		</Folder>
-		<Style id='sBREDX'><LineStyle><color> FFF5F0FF</color><width> 4</width></LineStyle></Style> <!--LAVENDER_BLUSH-->
+<Style id='plannedBRD'><LineStyle><color> ffF5F0FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

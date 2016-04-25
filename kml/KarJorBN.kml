@@ -9,12 +9,8 @@
 			<name> KarJorBN</name>
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Karis-Degerby-Pikkala-Jorvas</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>järnväg med standard spårvidd</b></div> <div
-					 lang="fi"><b>normaali raideleveydellä oleva rautatie</b></div> <div lang="en"><b>standard
-					 gauge railway</b></div> ]]>
-				</description>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -82,7 +78,6 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-		<Style id='sBANA'><LineStyle><color> FF3C14DC</color><width> 4</width></LineStyle></Style> <!--CRIMSON-->
-		<Style id='plannedHH'><LineStyle><color> FF0045FF</color><width> 4</width></LineStyle></Style> <!--ORANGE_RED-->
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>
