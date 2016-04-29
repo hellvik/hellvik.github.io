@@ -345,6 +345,5 @@
 			</Placemark>
 		</Folder>
 <Style id='CAR'><LineStyle><color>ffB48246</color><width>3</width></LineStyle></Style>
-		<Style id='CAR'><LineStyle><color> FFFF00FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

@@ -16,7 +16,7 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>Tukholma</b></div> <div
 					 lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
@@ -29,8 +29,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Södertälje Syd</b></div> <div lang="fi"><b>Södertälje
+					 etelä</b></div> <div lang="en"><b>Södertälje south</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -41,10 +41,7 @@
 						17.5417328,59.075153900000004,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Katrineholm</name>
@@ -54,10 +51,7 @@
 						16.2083101,58.99657119999999,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Hallsberg</name>
@@ -67,10 +61,7 @@
 						15.110149400000001,59.0670368,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Skövde</name>
@@ -80,10 +71,7 @@
 						13.8525581,58.389657099999994,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Falköping</name>
@@ -93,10 +81,7 @@
 						13.553009,58.1763603,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Alingsås</name>
@@ -106,10 +91,7 @@
 						12.5323105,57.9267907,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Göteborg</name>
@@ -121,17 +103,11 @@
 				</Point>
 				<description>
 					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
+					 lang="en"><b>Gothenburg</b></div> ]]>
 				</description>
 			</Placemark>
 		</Folder>
-		<Style id='icon-paddle-red'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-grn-stars'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

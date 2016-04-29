@@ -231,62 +231,22 @@
 				</description>
 			</Placemark>
 		</Folder>
-		<Style id='icon-paddle-A'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-B'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-C'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-D'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-E'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-F'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-G'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-H'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-I'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-J'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-K'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-L'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-M'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-N'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/N.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-O'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/O.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-P'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/P.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-Q'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/Q.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-R'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/R.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-S'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/S.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-K'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-M'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-I'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-S'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/S.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-R'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/R.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-O'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/O.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-J'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-N'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/N.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-L'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

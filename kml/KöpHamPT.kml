@@ -16,8 +16,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Köpemhamns centralstation</b></div> <div
+					 lang="fi"><b>Kööpenhaminan keskusasema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -28,10 +28,7 @@
 						12.5154448,55.6524833,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Rødbyhavn</name>
@@ -42,7 +39,7 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					<![CDATA[ <div lang="sv"><b>Rödbyhamn</b></div> <div lang="fi"><b>?[name]</b></div> <div
 					 lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
@@ -55,8 +52,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Nyköping Falster</b></div> <div lang="fi"><b>Nyköping
+					 Falster</b></div> <div lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -68,7 +65,7 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					<![CDATA[ <div lang="sv"><b>Köge</b></div> <div lang="fi"><b>Köge</b></div> <div
 					 lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
@@ -80,10 +77,7 @@
 						11.2268257,54.5011501,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Neustadt</name>
@@ -93,10 +87,7 @@
 						10.7955694,54.0962986,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Lübeck, Hauptbahnhof</name>
@@ -107,8 +98,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Lübecks centralstation</b></div> <div lang="fi"><b>Lyypekin
+					 kekusasema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -120,8 +111,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Hamburgs centralstation</b></div> <div lang="fi"><b>Hampurin
+					 keskusasema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -133,7 +124,7 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					<![CDATA[ <div lang="sv"><b>Örestad</b></div> <div lang="fi"><b>Örestad</b></div> <div
 					 lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
@@ -145,10 +136,7 @@
 						12.0894241,55.6387519,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Ringsted</name>
@@ -158,10 +146,7 @@
 						11.7866993,55.4383633,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Ny Holsted</name>
@@ -171,19 +156,10 @@
 						11.7629242,55.2419435,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 		</Folder>
-		<Style id='icon-paddle-red'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-grn-stars'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

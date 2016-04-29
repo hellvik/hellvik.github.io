@@ -15,10 +15,7 @@
 						21.196317672729492,59.974858163955766,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-B</styleUrl>
@@ -28,10 +25,7 @@
 						21.142845153808594,59.97094966918809,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-C</styleUrl>
@@ -41,10 +35,7 @@
 						21.256999969482422,59.98014034135802,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-D</styleUrl>
@@ -54,10 +45,7 @@
 						21.316137313842773,59.98224438869767,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-E</styleUrl>
@@ -67,10 +55,7 @@
 						21.288156509399414,59.97623247007178,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-F</styleUrl>
@@ -80,10 +65,7 @@
 						21.28652572631836,59.97842265255143,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-G</styleUrl>
@@ -93,10 +75,7 @@
 						21.239233016967773,59.97567416509145,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-H</styleUrl>
@@ -106,35 +85,16 @@
 						21.234512329101562,59.98151442823944,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 		</Folder>
-		<Style id='icon-paddle-A'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-B'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-C'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-D'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-E'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-F'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-G'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-H'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

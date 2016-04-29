@@ -6,399 +6,51 @@
 <Folder>
 <name> Bana</name>
 			<Placemark>
-				<name> Line 1 - Köpenhamn - Ny Elleberg</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<name> Stockholm-Billsta 1</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
-						12.5649261,55.6726478,0.0 12.5661278,55.6695983,0.0 12.5638962,55.6668391,0.0
-						 12.559433,55.6648059,0.0 12.5453568,55.6628694,0.0 12.5418377,55.6614654,0.0
-						 12.5396061,55.6576404,0.0 12.537546200000001,55.6544445,0.0 12.5312805,55.6520716,0.0
-						 12.5256157,55.6511031,0.0 12.5213242,55.6511031,0.0 12.5172043,55.6520716,0.0
-						 12.5154448,55.6524833,0.0
+						18.0563736,59.3314383,0.0 18.0596352,59.328154600000005,0.0 18.063755,59.3259654,0.0
+						 18.0665874,59.32342560000001,0.0 18.0686474,59.3193091,0.0 18.0689049,59.3163309,0.0
+						 18.0671883,59.3148417,0.0 18.0640984,59.3136591,0.0 18.0533695,59.3121259,0.0
+						 18.0462456,59.3110746,0.0 18.0426407,59.309628999999994,0.0 18.0383492,59.305992700000004,0.0
+						 18.0339718,59.30165499999999,0.0 18.0281353,59.2995517,0.0 18.0231571,59.29701,0.0
+						 18.0200672,59.292539600000005,0.0 18.0183506,59.282851799999996,0.0 18.0150032,59.2803089,0.0
+						 18.0075359,59.27688880000001,0.0 18.000412,59.2719772,0.0 17.9977512,59.2700913,0.0
+						 17.9962063,59.266187699999996,0.0 17.9980946,59.25530770000001,0.0
+						 17.9951763,59.252499400000005,0.0 17.9920006,59.247628199999994,0.0
+						 17.9899406,59.24481930000001,0.0 17.9865932,59.241615100000004,0.0 17.9817867,59.2385423,0.0
+						 17.9799843,59.23713750000001,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<name> Line 2 - Örestad - Ny Elleberg</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<name> Stockholm-Billsta 2</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
-						12.5788736,55.6284321,0.0 12.5691319,55.6294981,0.0 12.5618362,55.6318239,0.0
-						 12.554884,55.6354092,0.0 12.5502491,55.6395754,0.0 12.546644200000001,55.6423366,0.0
-						 12.5414085,55.6433538,0.0 12.5335979,55.64243340000001,0.0 12.5271606,55.6433053,0.0
-						 12.5225258,55.64572720000001,0.0 12.5196075,55.6491175,0.0 12.5154448,55.6524833,0.0
+						17.9799843,59.23713750000001,0.0 17.9750919,59.23393250000001,0.0 17.9588699,59.2264239,0.0
+						 17.9538059,59.223437499999996,0.0 17.9458237,59.2177715,0.0 17.9376698,59.213246899999994,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<name> Line 3 - Ny Ellerberg - Köge</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<name> Stockholm-Billsta 3</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
-						12.5154448,55.6524833,0.0 12.5129128,55.6516358,0.0 12.5093937,55.6486816,0.0
-						 12.5039864,55.6437897,0.0 12.5002098,55.6401083,0.0 12.4965191,55.6368141,0.0
-						 12.4930859,55.6337135,0.0 12.4904251,55.6313393,0.0 12.4876785,55.6302734,0.0
-						 12.4827433,55.6290378,0.0 12.4763489,55.6276083,0.0 12.4723148,55.6269299,0.0
-						 12.46562,55.6267845,0.0 12.4601269,55.62625150000001,0.0 12.4503422,55.6245554,0.0
-						 12.445364,55.623053,0.0 12.438669200000001,55.6213568,0.0 12.4306011,55.62033900000001,0.0
-						 12.4215031,55.6210175,0.0 12.413692500000002,55.6214537,0.0 12.401247,55.6236831,0.0
-						 12.395668,55.6236346,0.0 12.3875999,55.6232469,0.0 12.380476,55.62315,0.0
-						 12.3725796,55.6222292,0.0 12.3679447,55.6208237,0.0 12.3634815,55.6184488,0.0
-						 12.3607349,55.6151528,0.0 12.357645,55.6131653,0.0 12.3543835,55.6102082,0.0
-						 12.3513794,55.6072024,0.0 12.348547,55.6049722,0.0 12.341423,55.60240240000001,0.0
-						 12.3342133,55.5982321,0.0 12.3316383,55.59590440000001,0.0 12.3245144,55.5909574,0.0
-						 12.3199654,55.5897933,0.0 12.3088932,55.5884837,0.0 12.304945,55.58678590000001,0.0
-						 12.3013401,55.5839724,0.0 12.2894955,55.5784417,0.0 12.2856331,55.5755305,0.0
-						 12.281599,55.5708721,0.0 12.2768784,55.568106,0.0 12.2718143,55.5666986,0.0
-						 12.2570515,55.56233040000001,0.0 12.2506142,55.55990340000001,0.0 12.240057,55.5507766,0.0
-						 12.2327614,55.5456783,0.0 12.2259808,55.5418905,0.0 12.2210884,55.5373253,0.0
-						 12.217741,55.5326624,0.0 12.2115612,55.5252784,0.0 12.2072697,55.51896200000001,0.0
-						 12.2043514,55.5162893,0.0 12.198772400000001,55.51254740000001,0.0 12.1773148,55.5009304,0.0
-						 12.173795700000001,55.4979162,0.0 12.1717358,55.4927138,0.0 12.1702766,55.4890182,0.0
-						 12.1720791,55.4828418,0.0 12.1776581,55.4786589,0.0 12.1813488,55.4768591,0.0
-						 12.184267,55.470291700000004,0.0 12.186327000000002,55.464599,0.0 12.1878719,55.461874,0.0
-						 12.1862411,55.4574699,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 4 - Köge - Tureby</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						12.1862411,55.4574699,0.0 12.1827221,55.447078,0.0 12.1780014,55.4423557,0.0
-						 12.1718216,55.43928840000001,0.0 12.1483898,55.42652950000001,0.0 12.1434116,55.4234123,0.0
-						 12.1396351,55.4202947,0.0 12.131738700000001,55.412987,0.0 12.1135426,55.3959793,0.0
-						 12.1053028,55.388667100000006,0.0 12.0969772,55.3846692,0.0 12.0854759,55.3784277,0.0
-						 12.0761633,55.3732583,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 5 - Tureby - Haslev</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						12.0761633,55.3732583,0.0 12.0614433,55.3658444,0.0 11.9869423,55.3389084,0.0
-						 11.9611502,55.3293641,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 6 - Haslev - Ny Holsted</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.9611502,55.3293641,0.0 11.9280624,55.31429860000001,0.0 11.9160461,55.3055057,0.0
-						 11.9047165,55.2892826,0.0 11.894073500000001,55.2738351,0.0 11.8724442,55.267185,0.0
-						 11.843605,55.2587729,0.0 11.8161392,55.24859790000001,0.0 11.7735672,55.2470322,0.0
-						 11.7629242,55.2444879,0.0 11.7629242,55.2419435,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Ny Ellerberg - Hedehuse</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						12.5154448,55.6524833,0.0 12.5089645,55.6555098,0.0 12.500038100000001,55.6591898,0.0
-						 12.4873352,55.663644,0.0 12.4801254,55.6638377,0.0 12.4358368,55.6646122,0.0
-						 12.419014,55.6648059,0.0 12.3706055,55.6603518,0.0 12.320480300000002,55.6545413,0.0
-						 12.2888947,55.65066720000001,0.0 12.2597122,55.6473739,0.0 12.2401428,55.6454366,0.0
-						 12.2246933,55.6446616,0.0 12.2078705,55.646599,0.0 12.1879578,55.65027980000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Hedehuse-Ringsted</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						12.1879578,55.65027980000001,0.0 12.1501923,55.6493112,0.0 12.1285629,55.6471802,0.0
-						 12.1144867,55.646599,0.0 12.1000671,55.6431116,0.0 12.0866776,55.6374924,0.0
-						 12.0729446,55.6314847,0.0 12.0612717,55.6229561,0.0 12.0523453,55.617334,0.0
-						 12.0485687,55.6136501,0.0 12.0427322,55.5996869,0.0 12.035179100000002,55.575045300000006,0.0
-						 12.0355225,55.5637865,0.0 12.0334625,55.5579617,0.0 12.0262527,55.5499998,0.0
-						 12.0066833,55.53795670000001,0.0 11.9867706,55.5262986,0.0 11.9819641,55.5226062,0.0
-						 11.9785309,55.5181359,0.0 11.975441,55.5138595,0.0 11.9726944,55.5031665,0.0
-						 11.9716644,55.4901366,0.0 11.9668579,55.4841064,0.0 11.9572449,55.4774915,0.0
-						 11.9387054,55.468151,0.0 11.922226,55.4597815,0.0 11.907806400000002,55.4529679,0.0
-						 11.8944168,55.4494633,0.0 11.874847400000002,55.4473214,0.0 11.8291855,55.4407004,0.0
-						 11.7869568,55.4379737,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Ringsted - Ny Holsted</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.7869568,55.4379737,0.0 11.7708206,55.4364156,0.0 11.7615509,55.4321303,0.0
-						 11.7570877,55.4243377,0.0 11.7498779,55.4138153,0.0 11.738205,55.3949069,0.0
-						 11.7358017,55.3915921,0.0 11.7268753,55.3859368,0.0 11.7021561,55.3683809,0.0
-						 11.6942596,55.3619417,0.0 11.6956329,55.354916,0.0 11.7011261,55.3459369,0.0
-						 11.7313385,55.3309021,0.0 11.7375183,55.326410100000004,0.0 11.7423248,55.3205501,0.0
-						 11.7443848,55.3129309,0.0 11.7426682,55.2877185,0.0 11.7430115,55.2775509,0.0
-						 11.7471313,55.268163,0.0 11.7533112,55.2558381,0.0 11.7629242,55.2419435,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Ny Holsted - Lundby</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.7629242,55.2419435,0.0 11.7618942,55.2376372,0.0 11.7649841,55.2335261,0.0
-						 11.7684174,55.2284357,0.0 11.7763138,55.2231487,0.0 11.7852402,55.2217779,0.0
-						 11.7900467,55.217469400000006,0.0 11.7927933,55.2063042,0.0 11.8034363,55.2012103,0.0
-						 11.8188858,55.1949399,0.0 11.832962,55.1888646,0.0 11.8442917,55.1765151,0.0
-						 11.8569946,55.1565125,0.0 11.857338,55.1484694,0.0 11.8535614,55.129630500000005,0.0
-						 11.857338,55.1227599,0.0 11.8692684,55.1106845,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 7 - Lundby - Falster Nyköping</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.8692684,55.1106845,0.0 11.876564,55.1001769,0.0 11.8762207,55.0921225,0.0
-						 11.8724442,55.0608716,0.0 11.8751907,55.0443519,0.0 11.8851471,55.0368764,0.0
-						 11.9023132,55.0213309,0.0 11.9019699,55.0156228,0.0 11.8971634,55.0053855,0.0
-						 11.8927002,54.99770590000001,0.0 11.888237,54.9945548,0.0 11.8844604,54.9892369,0.0
-						 11.8899536,54.9843122,0.0 11.8961334,54.980175,0.0 11.8963051,54.9775152,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Storström bron</name>
-				<styleUrl> #sBRO</styleUrl>
-<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.8963051,54.9775152,0.0 11.8947601,54.9750522,0.0 11.8672943,54.9510056,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 7 - Lundby - Falster NyköpingB</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.8672943,54.9510056,0.0 11.8655777,54.9456818,0.0 11.8683243,54.9344405,0.0
-						 11.8779373,54.9220123,0.0 11.886177100000001,54.9125405,0.0 11.8865204,54.9014874,0.0
-						 11.886177100000001,54.8606038,0.0 11.8865204,54.8546752,0.0 11.8827438,54.847362,0.0
-						 11.8837738,54.8279857,0.0 11.886177100000001,54.81275490000001,0.0 11.889267,54.805632,0.0
-						 11.888237,54.795935,0.0 11.8865204,54.781088100000005,0.0 11.8830872,54.7715832,0.0
-						 11.8778515,54.7673251,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 8 - Falster Nyköping - Rödhave</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.8778515,54.7673251,0.0 11.867981,54.7593276,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Guldbrosunds bron</name>
-				<styleUrl> #sBRO</styleUrl>
-<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.867981,54.7593276,0.0 11.8637753,54.7581637,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 8 - Falster Nyköping - RödhaveB</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.8637753,54.7581637,0.0 11.8425751,54.7535575,0.0 11.7993164,54.7495947,0.0
-						 11.747818,54.740082400000006,0.0 11.6746044,54.7254628,0.0 11.6386414,54.7170852,0.0
-						 11.6173553,54.7103422,0.0 11.5885162,54.7028045,0.0 11.542511,54.6932812,0.0
-						 11.478653,54.6893125,0.0 11.4498138,54.68494650000001,0.0 11.3969421,54.6710516,0.0
-						 11.3742828,54.6635066,0.0 11.3557434,54.6556127,0.0 11.3557434,54.6556127,0.0
-						 11.3533401,54.65278240000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 9 - Fehmar sund tunneln</name>
-				<styleUrl> #sTUNNEL</styleUrl>
-<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.3533401,54.65278240000001,0.0 11.3426971,54.646426,0.0 11.228714,54.5027449,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 11 - Puttgarden - Grossebode</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.228714,54.5027449,0.0 11.2268257,54.5011501,0.0 11.2263107,54.49995390000001,0.0
-						 11.1923218,54.4572667,0.0 11.1833954,54.4510793,0.0 11.1651993,54.4418964,0.0
-						 11.137046800000002,54.42831780000001,0.0 11.1281204,54.4207278,0.0 11.1142159,54.4043196,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Fehmarsund bron</name>
-				<styleUrl> #sBRO</styleUrl>
-<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.1142159,54.4043196,0.0 11.1092377,54.3968501,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 11 - Puttgarden - GrossebodeB</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.1092377,54.3968501,0.0 11.0941315,54.3739585,0.0 11.089325000000002,54.3699586,0.0
-						 11.0810423,54.3662834,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 12 - Grossebode - Lensahn</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.0810423,54.3662834,0.0 11.0656357,54.3601573,0.0 11.0501862,54.35715650000001,0.0
-						 11.0433197,54.350954,0.0 11.0443497,54.3449507,0.0 11.0433197,54.335744,0.0
-						 11.0378265,54.3301388,0.0 11.0271835,54.3251336,0.0 11.0206604,54.3199276,0.0
-						 11.0168839,54.3135192,0.0 11.0158539,54.3055073,0.0 11.0041809,54.3031035,0.0
-						 10.9859848,54.2940877,0.0 10.9612656,54.2880761,0.0 10.9389496,54.2874749,0.0
-						 10.9252167,54.2876753,0.0 10.9111404,54.2902805,0.0 10.899467500000002,54.2908816,0.0
-						 10.8908844,54.2890781,0.0 10.8877945,54.2884769,0.0 10.8827305,54.283942700000004,0.0
-						 10.8898544,54.27625080000001,0.0 10.8877945,54.2690336,0.0 10.8860779,54.2551973,0.0
-						 10.8840179,54.251587,0.0 10.8874512,54.2463716,0.0 10.8877945,54.2437637,0.0
-						 10.885734600000001,54.234133,0.0 10.8888245,54.228514,0.0 10.890369400000003,54.2193314,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 13 - Lensahn - Scharbeutz</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.890369400000003,54.2193314,0.0 10.881958,54.2002069,0.0 10.874404900000002,54.1869501,0.0
-						 10.8647919,54.1732872,0.0 10.8654785,54.164444,0.0 10.8558655,54.15198,0.0
-						 10.8194733,54.1415235,0.0 10.806427,54.1242241,0.0 10.8009338,54.111748000000006,0.0
-						 10.7899475,54.0904092,0.0 10.7858276,54.0759086,0.0 10.7631683,54.0674476,0.0
-						 10.7460022,54.0565666,0.0 10.7302094,54.0424574,0.0 10.7377625,54.0279401,0.0
-						 10.7457447,54.018712900000004,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 14 - Scharbeutz - Lubeck</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.7457447,54.018712900000004,0.0 10.7573318,54.0029262,0.0 10.764198300000002,53.9920283,0.0
-						 10.760765100000002,53.9766858,0.0 10.7576752,53.9698201,0.0 10.7387924,53.9453775,0.0
-						 10.7209396,53.9334539,0.0 10.7027006,53.9162447,0.0 10.694847100000002,53.9097989,0.0
-						 10.6941605,53.8966514,0.0 10.6903839,53.8861305,0.0 10.6852341,53.8810714,0.0
-						 10.6783676,53.8735828,0.0 10.670557,53.8670039,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 15 - Lubeck - Bad Oldesloe</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.670557,53.8670039,0.0 10.6567383,53.8626511,0.0 10.656395,53.8525266,0.0
-						 10.6567383,53.8440201,0.0 10.6533051,53.8387534,0.0 10.6278992,53.8363223,0.0
-						 10.5643845,53.8304467,0.0 10.5509949,53.8328781,0.0 10.5341721,53.8367275,0.0
-						 10.5211258,53.8397663,0.0 10.5094528,53.8375379,0.0 10.4945183,53.830624,0.0
-						 10.4847336,53.8274073,0.0 10.4304886,53.8195038,0.0 10.4122925,53.8144366,0.0
-						 10.3920364,53.8101797,0.0 10.387916600000002,53.809977,0.0 10.3819513,53.8054916,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Line 16 - Bad Oldesloe - Hamb.Rahlstedt</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.3819513,53.8054916,0.0 10.3542709,53.7769206,0.0 10.3340149,53.7665724,0.0
-						 10.2735901,53.7326694,0.0 10.2691269,53.7279726,0.0 10.2478409,53.6786118,0.0
-						 10.2413177,53.67007,0.0 10.2362967,53.66923100000001,0.0 10.2186584,53.6603059,0.0
-						 10.2131653,53.6558299,0.0 10.200119,53.6366998,0.0 10.1898193,53.6277424,0.0
-						 10.1740265,53.6220412,0.0 10.1599503,53.6096181,0.0 10.1542854,53.6047293,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Hamb.Rahlstedt - Hamburg</name>
-				<styleUrl> #exists</styleUrl>
-<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.1542854,53.6047293,0.0 10.1067352,53.5765058,0.0 10.1003838,53.575180800000005,0.0
-						 10.0883675,53.5732441,0.0 10.0754929,53.5694725,0.0 10.0575542,53.5650123,0.0
-						 10.0433922,53.5627439,0.0 10.0344658,53.559787,0.0 10.026741,53.5560142,0.0
-						 10.0243378,53.5529549,0.0 10.0215912,53.5514251,0.0 10.0174713,53.5499973,0.0
-						 10.0136948,53.5495894,0.0 10.0097466,53.5503033,0.0 10.0078583,53.5515271,0.0
-						 10.0068283,53.5533628,0.0
+						17.9376698,59.213246899999994,0.0 17.9207611,59.1917574,0.0 17.8960419,59.1843714,0.0
+						 17.8699493,59.1699465,0.0 17.8342438,59.15903579999999,0.0 17.7992249,59.14812160000001,0.0
+						 17.7539063,59.1544593,0.0 17.7133942,59.16325969999999,0.0 17.6907349,59.1681869,0.0
+						 17.6701355,59.1681869,0.0 17.6529694,59.1639636,0.0 17.641983,59.15727569999999,0.0
+						 17.6378632,59.14565660000001,0.0 17.6241302,59.1269875,0.0 17.5952911,59.110070900000004,0.0
+						 17.5815582,59.0966726,0.0 17.5534058,59.086444099999994,0.0 17.5417328,59.075153900000004,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
@@ -606,147 +258,6 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
-				<name> Stockholm-Billsta 1</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						18.0563736,59.3314383,0.0 18.0596352,59.328154600000005,0.0 18.063755,59.3259654,0.0
-						 18.0665874,59.32342560000001,0.0 18.0686474,59.3193091,0.0 18.0689049,59.3163309,0.0
-						 18.0671883,59.3148417,0.0 18.0640984,59.3136591,0.0 18.0533695,59.3121259,0.0
-						 18.0462456,59.3110746,0.0 18.0426407,59.309628999999994,0.0 18.0383492,59.305992700000004,0.0
-						 18.0339718,59.30165499999999,0.0 18.0281353,59.2995517,0.0 18.0231571,59.29701,0.0
-						 18.0200672,59.292539600000005,0.0 18.0183506,59.282851799999996,0.0 18.0150032,59.2803089,0.0
-						 18.0075359,59.27688880000001,0.0 18.000412,59.2719772,0.0 17.9977512,59.2700913,0.0
-						 17.9962063,59.266187699999996,0.0 17.9980946,59.25530770000001,0.0
-						 17.9951763,59.252499400000005,0.0 17.9920006,59.247628199999994,0.0
-						 17.9899406,59.24481930000001,0.0 17.9865932,59.241615100000004,0.0 17.9817867,59.2385423,0.0
-						 17.9799843,59.23713750000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Stockholm-Billsta 2</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						17.9799843,59.23713750000001,0.0 17.9750919,59.23393250000001,0.0 17.9588699,59.2264239,0.0
-						 17.9538059,59.223437499999996,0.0 17.9458237,59.2177715,0.0 17.9376698,59.213246899999994,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Stockholm-Billsta 3</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						17.9376698,59.213246899999994,0.0 17.9207611,59.1917574,0.0 17.8960419,59.1843714,0.0
-						 17.8699493,59.1699465,0.0 17.8342438,59.15903579999999,0.0 17.7992249,59.14812160000001,0.0
-						 17.7539063,59.1544593,0.0 17.7133942,59.16325969999999,0.0 17.6907349,59.1681869,0.0
-						 17.6701355,59.1681869,0.0 17.6529694,59.1639636,0.0 17.641983,59.15727569999999,0.0
-						 17.6378632,59.14565660000001,0.0 17.6241302,59.1269875,0.0 17.5952911,59.110070900000004,0.0
-						 17.5815582,59.0966726,0.0 17.5534058,59.086444099999994,0.0 17.5417328,59.075153900000004,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Jorvas-Porkkala-1</name>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.51272964477539,60.13791508157593,0.0 24.51152801513672,60.136803919044944,0.0
-						 24.508094787597656,60.13278632597922,0.0 24.505348205566406,60.123894588800724,0.0
-						 24.50672149658203,60.11671104705587,0.0 24.511184692382812,60.107814966212544,0.0
-						 24.51324462890625,60.097889579006136,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Jorvas-Porkkala-2</name>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.51324462890625,60.097889579006136,0.0 24.511184692382812,60.07991359721104,0.0
-						 24.50775146484375,60.05867219118629,0.0 24.505691528320312,60.044617940473216,0.0
-						 24.498825073242188,60.0350164767239,0.0 24.487152099609375,60.02060904669113,0.0
-						 24.467926025390625,60.009627740135464,0.0 24.44732666015625,60.00070274244648,0.0
-						 24.439773559570312,59.99520923897751,0.0 24.432907104492188,59.98782590710937,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #sTUNNEL</styleUrl>
-<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
-				<name> Porkkala-Nargö tunnel</name>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.432907104492188,59.98782590710937,0.0 24.511871337890625,59.60561209518106,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Nargö</name>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.511871337890625,59.60561209518106,0.0 24.516334533691406,59.595970145930615,0.0
-						 24.523372650146484,59.58684683738787,0.0 24.53144073486328,59.579024888380054,0.0
-						 24.537792205810547,59.571896640090394,0.0 24.540538787841797,59.56676684431294,0.0
-						 24.541397094726562,59.564332091378034,0.0 24.544658660888672,59.55998388024402,0.0
-						 24.54620361328125,59.55624396948277,0.0 24.548778533935547,59.551111787992426,0.0
-						 24.549121856689453,59.545630798513294,0.0 24.547748565673828,59.54328153000181,0.0
-						 24.545860290527344,59.54128017205441,0.0 24.541053771972656,59.53762521164926,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #sTUNNEL</styleUrl>
-<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
-				<name> Nargö-Kakumäe tunneln</name>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.541053771972656,59.53762521164926,0.0 24.577789306640625,59.45694125860139,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Kakumäe-Tallinn-1</name>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.577789306640625,59.45694125860139,0.0 24.58087921142578,59.45345164390584,0.0
-						 24.583110809326172,59.450441561932365,0.0 24.586715698242188,59.447518472292344,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Kakumäe-Tabasalu</name>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.586715698242188,59.447518472292344,0.0 24.58740234375,59.4453368974807,0.0
-						 24.588088989257812,59.44027510197383,0.0 24.588947296142578,59.43447055948029,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
 				<name> Göteborg-Kungsbacka</name>
 				<styleUrl> #existsHH</styleUrl>
 <description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
@@ -932,6 +443,199 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
+				<name> Gripenberg-Jönköping 1 US3</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.853730200000001,57.9911323,0.0 14.8521423,57.98990400000001,0.0
+						 14.826736500000003,57.9811676,0.0 14.803390500000003,57.976434600000005,0.0
+						 14.7786713,57.966238100000005,0.0 14.771804800000002,57.95822460000001,0.0
+						 14.7642517,57.952759799999995,0.0 14.770431500000003,57.938547500000006,0.0
+						 14.7601318,57.9276111,0.0 14.724426299999998,57.918494900000006,0.0
+						 14.690780600000002,57.9174008,0.0 14.658508299999998,57.90718760000001,0.0
+						 14.632415799999999,57.89989070000001,0.0 14.5987701,57.88565740000001,0.0
+						 14.5568848,57.879451399999994,0.0 14.5307922,57.872148800000005,0.0 14.5067596,57.8633838,0.0
+						 14.489593500000002,57.8520591,0.0 14.4683075,57.839634399999994,0.0
+						 14.4573212,57.82793670000001,0.0 14.4429016,57.8085539,0.0 14.4264221,57.79794389999999,0.0
+						 14.4099426,57.785134500000005,0.0 14.3797302,57.77451750000001,0.0
+						 14.350204500000002,57.7679261,0.0 14.3138123,57.76206609999999,0.0
+						 14.297332800000001,57.76682749999999,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Tranås-Jönköping 2 US3</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.297332800000001,57.76682749999999,0.0 14.27845,57.7695741,0.0 14.2748451,57.7736021,0.0
+						 14.271240200000001,57.77744669999999,0.0 14.266777,57.78092470000001,0.0
+						 14.264373800000001,57.782389,0.0 14.257164,57.7829381,0.0
+						 14.241714500000002,57.78275510000001,0.0 14.2296982,57.7812908,0.0
+						 14.2202568,57.780192500000005,0.0 14.2161369,57.777629700000006,0.0
+						 14.2115021,57.775890600000004,0.0 14.2071247,57.7757075,0.0 14.1979408,57.77479220000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm-Lund 1</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.7632084,56.157597,0.0 13.7538528,56.143063,0.0 13.7490463,56.1317763,0.0
+						 13.7414932,56.1246965,0.0 13.7384033,56.1201035,0.0 13.7377167,56.1137872,0.0
+						 13.7401199,56.1040237,0.0 13.7408066,56.0940661,0.0 13.7401199,56.08544690000001,0.0
+						 13.7387466,56.0798913,0.0 13.7342834,56.0680111,0.0 13.7270737,56.0620697,0.0
+						 13.7064743,56.0521013,0.0 13.6800385,56.0354176,0.0 13.6645889,56.0265934,0.0
+						 13.6511993,56.0160402,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm-Lund 2</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.6511993,56.0160402,0.0 13.6350632,56.0029885,0.0 13.619957,55.9916607,0.0
+						 13.6100006,55.9866677,0.0 13.597641,55.9832106,0.0 13.5842514,55.979177,0.0
+						 13.5705185,55.9713006,0.0 13.5626221,55.9590026,0.0 13.5581589,55.9484309,0.0
+						 13.5488892,55.9392023,0.0 13.5262299,55.9303561,0.0 13.5059738,55.9226622,0.0
+						 13.4915543,55.91669830000001,0.0 13.468895,55.9165059,0.0 13.4448624,55.9155439,0.0
+						 13.4314728,55.909579,0.0 13.4095001,55.903998,0.0 13.3916473,55.8999561,0.0
+						 13.3744812,55.89495130000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm-Lund 3</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.3744812,55.89495130000001,0.0 13.3610916,55.8901384,0.0 13.347702,55.882629,0.0
+						 13.328819300000001,55.8718438,0.0 13.3222961,55.8681839,0.0 13.316803,55.8581654,0.0
+						 13.3082199,55.8444822,0.0 13.3041,55.8333008,0.0 13.3010101,55.8221161,0.0
+						 13.2907104,55.8082273,0.0 13.2797241,55.7993512,0.0 13.2632446,55.7875777,0.0
+						 13.2484818,55.7804347,0.0 13.2326889,55.774835200000005,0.0 13.217926,55.7696211,0.0
+						 13.2103729,55.7630542,0.0 13.2052231,55.7566795,0.0 13.1932068,55.7402548,0.0
+						 13.1835938,55.7296234,0.0 13.1839371,55.72595,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hässleholm-Lund 4</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.1839371,55.72595,0.0 13.1837654,55.7203427,0.0 13.184452100000001,55.7154114,0.0
+						 13.185997,55.712317,0.0 13.1868553,55.70670770000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<name> Jorvas-Porkkala-1</name>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.51272964477539,60.13791508157593,0.0 24.51152801513672,60.136803919044944,0.0
+						 24.508094787597656,60.13278632597922,0.0 24.505348205566406,60.123894588800724,0.0
+						 24.50672149658203,60.11671104705587,0.0 24.511184692382812,60.107814966212544,0.0
+						 24.51324462890625,60.097889579006136,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<name> Jorvas-Porkkala-2</name>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.51324462890625,60.097889579006136,0.0 24.511184692382812,60.07991359721104,0.0
+						 24.50775146484375,60.05867219118629,0.0 24.505691528320312,60.044617940473216,0.0
+						 24.498825073242188,60.0350164767239,0.0 24.487152099609375,60.02060904669113,0.0
+						 24.467926025390625,60.009627740135464,0.0 24.44732666015625,60.00070274244648,0.0
+						 24.439773559570312,59.99520923897751,0.0 24.432907104492188,59.98782590710937,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
+				<name> Porkkala-Nargö tunnel</name>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.432907104492188,59.98782590710937,0.0 24.511871337890625,59.60561209518106,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<name> Nargö</name>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.511871337890625,59.60561209518106,0.0 24.516334533691406,59.595970145930615,0.0
+						 24.523372650146484,59.58684683738787,0.0 24.53144073486328,59.579024888380054,0.0
+						 24.537792205810547,59.571896640090394,0.0 24.540538787841797,59.56676684431294,0.0
+						 24.541397094726562,59.564332091378034,0.0 24.544658660888672,59.55998388024402,0.0
+						 24.54620361328125,59.55624396948277,0.0 24.548778533935547,59.551111787992426,0.0
+						 24.549121856689453,59.545630798513294,0.0 24.547748565673828,59.54328153000181,0.0
+						 24.545860290527344,59.54128017205441,0.0 24.541053771972656,59.53762521164926,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
+				<name> Nargö-Kakumäe tunneln</name>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.541053771972656,59.53762521164926,0.0 24.577789306640625,59.45694125860139,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<name> Kakumäe-Tallinn-1</name>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.577789306640625,59.45694125860139,0.0 24.58087921142578,59.45345164390584,0.0
+						 24.583110809326172,59.450441561932365,0.0 24.586715698242188,59.447518472292344,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<name> Kakumäe-Tabasalu</name>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.586715698242188,59.447518472292344,0.0 24.58740234375,59.4453368974807,0.0
+						 24.588088989257812,59.44027510197383,0.0 24.588947296142578,59.43447055948029,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
 <description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Karis-Degerby-Pikkala-Jorvas</name>
@@ -998,185 +702,6 @@
 						 24.497880935668945,60.13171773459217,0.0 24.502172470092773,60.13338472199736,0.0
 						 24.50577735900879,60.13509436493971,0.0 24.50972557067871,60.13667570556851,0.0
 						 24.51272964477539,60.13791508157593,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<name> Längs E18 </name>
-				<LineString>
-					<tessellate> 0</tessellate>
-					<coordinates>
-						18.063926696777344,59.32635945142338,0.0 18.055343627929688,59.32986217428469,0.0
-						 18.051223754882812,59.33511558164012,0.0 18.043670654296875,59.33634125981278,0.0
-						 18.029937744140625,59.33931772269955,0.0 18.026161193847656,59.34281910984511,0.0
-						 18.0230712890625,59.343869455602906,0.0 18.01586151123047,59.35017084799535,0.0
-						 18.012771606445312,59.35682104919336,0.0 18.01105499267578,59.3641697560028,0.0
-						 18.00830841064453,59.37029246288865,0.0 18.003158569335938,59.37903727051661,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Längs E18 </name>
-				<LineString>
-					<tessellate> 0</tessellate>
-					<coordinates>
-						18.0002618,59.380720399999994,0.0 17.992172241210938,59.38690566989341,0.0
-						 17.9901123046875,59.3975688075355,0.0 17.994918823242188,59.405957115062684,0.0
-						 18.008995056152344,59.41469272727614,0.0 18.023757934570312,59.422902148630186,0.0
-						 18.046417236328125,59.4295380980236,0.0 18.060150146484375,59.43722020374139,0.0
-						 18.071823120117188,59.442806094407075,0.0 18.080406188964844,59.444551496101006,0.0
-						 18.094825744628906,59.447692992198434,0.0 18.102035522460938,59.44804202930895,0.0
-						 18.107528686523438,59.451008699312,0.0 18.116455078125,59.45240468926274,0.0
-						 18.138771057128906,59.45432408134585,0.0 18.164520263671875,59.47019851001045,0.0
-						 18.167266845703125,59.482753215246895,0.0 18.172760009765625,59.50157652597656,0.0
-						 18.202972412109375,59.530836376199375,0.0 18.233184814453125,59.54545678424146,0.0
-						 18.238677978515625,59.56981003783852,0.0 18.270263671875,59.58858480128287,0.0
-						 18.28948974609375,59.60943336371317,0.0 18.33343505859375,59.62888035850546,0.0
-						 18.365020751953125,59.65039782939571,0.0 18.392486572265625,59.66565992490267,0.0
-						 18.42681884765625,59.68022181066172,0.0 18.461151123046875,59.68715381856602,0.0
-						 18.499603271484375,59.70101353199732,0.0 18.52294921875,59.70309199431277,0.0
-						 18.543548583984375,59.708633929655335,0.0 18.571014404296875,59.730100263991396,0.0
-						 18.6163330078125,59.7397902233294,0.0 18.678131103515625,59.74186627782944,0.0
-						 18.71246337890625,59.7377140398859,0.0 18.766021728515625,59.733561286147385,0.0
-						 18.8140869140625,59.726638883590645,0.0 18.863525390625,59.72386952131737,0.0
-						 18.907470703125,59.71902258556691,0.0 18.97064208984375,59.716945112398264,0.0
-						 19.046173095703125,59.72386952131737,0.0 19.062652587890625,59.71833010884389,0.0
-						 19.06402587890625,59.71768089889866,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Oslo-Holmlia</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.7524395,59.91110510000001,0.0 10.763855,59.908221899999994,0.0 10.7655716,59.9049511,0.0
-						 10.7624817,59.90142180000001,0.0 10.7557869,59.8983225,0.0 10.7564735,59.89617009999999,0.0
-						 10.7612801,59.8902287,0.0 10.7690048,59.885492,0.0 10.773468,59.88092689999999,0.0
-						 10.7791328,59.87429349999999,0.0 10.783596,59.8686067,0.0 10.785656,59.8640393,0.0
-						 10.7878876,59.8604194,0.0 10.7866859,59.858005899999995,0.0 10.786171,59.8540405,0.0
-						 10.7849693,59.852402500000004,0.0 10.785656,59.8502471,0.0 10.7894325,59.8489538,0.0
-						 10.7945824,59.849471099999995,0.0 10.8000755,59.8492987,0.0 10.8019638,59.848264,0.0
-						 10.8029938,59.8469706,0.0 10.8023071,59.8442112,0.0 10.7983589,59.8420553,0.0
-						 10.7973289,59.84015800000001,0.0 10.797157300000002,59.83472410000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Holmlia-Langhus</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.797157300000002,59.83472410000001,0.0 10.7978439,59.828771700000004,0.0
-						 10.7980156,59.8229045,0.0 10.7975006,59.8179856,0.0 10.7975006,59.8153964,0.0
-						 10.8011055,59.810735400000006,0.0 10.8062553,59.807714000000004,0.0 10.8035088,59.8027065,0.0
-						 10.805053700000002,59.800116200000005,0.0 10.8024788,59.7972665,0.0 10.8024788,59.7943303,0.0
-						 10.8004189,59.79156650000001,0.0 10.8000755,59.7893208,0.0 10.800848,59.78590880000001,0.0
-						 10.8017921,59.7812004,0.0 10.8024788,59.7777443,0.0 10.8067703,59.7722138,0.0
-						 10.8115768,59.769534699999994,0.0 10.8131218,59.7650401,0.0 10.816383400000001,59.7632248,0.0
-						 10.8210182,59.7636571,0.0 10.8242798,59.76210110000001,0.0 10.8270264,59.7595075,0.0
-						 10.8325195,59.7590753,0.0 10.8356094,59.7582972,0.0 10.8380127,59.75583300000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Langhus-Ski</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.8380127,59.75583300000001,0.0 10.838356,59.752677,0.0 10.8361244,59.74852609999999,0.0
-						 10.8369827,59.7454126,0.0 10.8385277,59.7421258,0.0 10.8395576,59.7378871,0.0
-						 10.841445900000002,59.7314847,0.0 10.839901,59.7272447,0.0 10.8361244,59.7222251,0.0
-						 10.8344936,59.719368800000005,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Ski-Vestby</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.8344936,59.719368800000005,0.0 10.831146200000001,59.710192400000004,0.0
-						 10.8215332,59.7029188,0.0 10.808486900000002,59.6956436,0.0 10.8005905,59.6883668,0.0
-						 10.7961273,59.675021900000004,0.0 10.7930374,59.665139700000005,0.0
-						 10.7978439,59.656989100000004,0.0 10.7995605,59.65091820000001,0.0
-						 10.7978439,59.64623420000001,0.0 10.7858276,59.63165759999999,0.0 10.7758713,59.6224572,0.0
-						 10.7700348,59.61325420000001,0.0 10.7576752,59.6078702,0.0 10.748148,59.6035276,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Vastby-Kambo</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.748148,59.6035276,0.0 10.7370758,59.586499200000006,0.0 10.7295227,59.57224440000001,0.0
-						 10.7254028,59.56146230000001,0.0 10.7336426,59.539887900000004,0.0
-						 10.730896,59.520389300000005,0.0 10.7247162,59.5120294,0.0 10.7082367,59.496000300000006,0.0
-						 10.7013702,59.4872857,0.0 10.6922722,59.4773919,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Kambo-Råde</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						10.6922722,59.4773919,0.0 10.6876373,59.45833700000001,0.0 10.6890106,59.4471694,0.0
-						 10.6773376,59.44053689999999,0.0 10.6571674,59.4319171,0.0 10.6601715,59.422378200000004,0.0
-						 10.6574249,59.4091022,0.0 10.6615448,59.403510700000005,0.0 10.6807709,59.399316500000005,0.0
-						 10.7164764,59.3937235,0.0 10.7460022,59.37833779999999,0.0 10.7652283,59.3706423,0.0
-						 10.7796478,59.3629451,0.0 10.8325195,59.3499958,0.0 10.841445900000002,59.3475454,0.0
-						 10.865221,59.3475892,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_Fy-2</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.1181641,59.28613990000001,0.0 11.1116409,59.28990970000001,0.0
-						 11.1044312,59.290786399999995,0.0 11.082458500000001,59.29289030000001,0.0
-						 11.065979,59.29604580000001,0.0 11.0443497,59.30358300000001,0.0
-						 11.0309601,59.311468899999994,0.0 11.0206604,59.31602430000001,0.0 10.9804916,59.3169003,0.0
-						 10.9705353,59.3212799,0.0 10.9622955,59.324958300000006,0.0 10.9489059,59.325834,0.0
-						 10.9410095,59.3277606,0.0 10.9296799,59.34264399999999,0.0 10.9193802,59.3450948,0.0
-						 10.8823013,59.34877060000001,0.0 10.865221,59.3475892,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Sarpsborg-Halden växel</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.1181641,59.28613990000001,0.0 11.1325836,59.277108000000005,0.0
-						 11.1463165,59.26588060000001,0.0 11.1614227,59.2500859,0.0 11.1689758,59.2384984,0.0
-						 11.1827087,59.2279609,0.0 11.1916351,59.21671729999999,0.0 11.1985016,59.199845,0.0
-						 11.2019348,59.1917574,0.0 11.2046814,59.180501899999996,0.0 11.2149811,59.1790947,0.0
-						 11.2342072,59.17029839999999,0.0 11.2451935,59.15481129999999,0.0
-						 11.2589264,59.148473700000004,0.0 11.2751055,59.135971100000006,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
@@ -1290,494 +815,6 @@
 						12.5444984,55.6626757,0.0 12.5502491,55.663644,0.0 12.5585747,55.6645638,0.0
 						 12.5597763,55.6649511,0.0 12.5632954,55.6664034,0.0 12.566041900000002,55.6685818,0.0
 						 12.5665569,55.6702276,0.0 12.5662136,55.6714377,0.0 12.5647116,55.6726962,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Gripenberg-Jönköping 1 US3</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.853730200000001,57.9911323,0.0 14.8521423,57.98990400000001,0.0
-						 14.826736500000003,57.9811676,0.0 14.803390500000003,57.976434600000005,0.0
-						 14.7786713,57.966238100000005,0.0 14.771804800000002,57.95822460000001,0.0
-						 14.7642517,57.952759799999995,0.0 14.770431500000003,57.938547500000006,0.0
-						 14.7601318,57.9276111,0.0 14.724426299999998,57.918494900000006,0.0
-						 14.690780600000002,57.9174008,0.0 14.658508299999998,57.90718760000001,0.0
-						 14.632415799999999,57.89989070000001,0.0 14.5987701,57.88565740000001,0.0
-						 14.5568848,57.879451399999994,0.0 14.5307922,57.872148800000005,0.0 14.5067596,57.8633838,0.0
-						 14.489593500000002,57.8520591,0.0 14.4683075,57.839634399999994,0.0
-						 14.4573212,57.82793670000001,0.0 14.4429016,57.8085539,0.0 14.4264221,57.79794389999999,0.0
-						 14.4099426,57.785134500000005,0.0 14.3797302,57.77451750000001,0.0
-						 14.350204500000002,57.7679261,0.0 14.3138123,57.76206609999999,0.0
-						 14.297332800000001,57.76682749999999,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Tranås-Jönköping 2 US3</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.297332800000001,57.76682749999999,0.0 14.27845,57.7695741,0.0 14.2748451,57.7736021,0.0
-						 14.271240200000001,57.77744669999999,0.0 14.266777,57.78092470000001,0.0
-						 14.264373800000001,57.782389,0.0 14.257164,57.7829381,0.0
-						 14.241714500000002,57.78275510000001,0.0 14.2296982,57.7812908,0.0
-						 14.2202568,57.780192500000005,0.0 14.2161369,57.777629700000006,0.0
-						 14.2115021,57.775890600000004,0.0 14.2071247,57.7757075,0.0 14.1979408,57.77479220000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_Halden växel-Strömstad växel</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.2486267,58.93264990000001,0.0 11.2541199,58.9452267,0.0 11.2469101,58.9569137,0.0
-						 11.2342072,58.9668268,0.0 11.2352371,58.9970796,0.0 11.2407303,59.0124612,0.0
-						 11.2410736,59.0248322,0.0 11.2561798,59.0377286,0.0 11.260643,59.046205900000004,0.0
-						 11.2517166,59.0566229,0.0 11.2475967,59.0675662,0.0 11.2520599,59.07885889999999,0.0
-						 11.2541199,59.089089699999995,0.0 11.2537766,59.0966726,0.0 11.2527466,59.1014331,0.0
-						 11.258583100000001,59.109365800000006,0.0 11.2726593,59.120644799999994,0.0
-						 11.275749200000002,59.1291015,0.0 11.2751055,59.135971100000006,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_Rabbalshede-Strömstad växel</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.4707565,58.61003250000001,0.0 11.4697266,58.6162014,0.0 11.4635468,58.6217435,0.0
-						 11.4511871,58.62603349999999,0.0 11.4384842,58.636577700000004,0.0 11.4371109,58.6439031,0.0
-						 11.4216614,58.64979799999999,0.0 11.4089584,58.656763500000004,0.0
-						 11.3897324,58.65640629999999,0.0 11.3814926,58.65890650000001,0.0 11.3773727,58.6639061,0.0
-						 11.3660431,58.66854810000001,0.0 11.3533401,58.67211840000001,0.0
-						 11.3433838,58.67051179999999,0.0 11.3327408,58.6731894,0.0 11.3217545,58.681399400000004,0.0
-						 11.314888,58.6896075,0.0 11.2956619,58.713150500000005,0.0 11.2857056,58.722955299999995,0.0
-						 11.2685394,58.746832000000005,0.0 11.2524033,58.7630374,0.0 11.2482834,58.7737181,0.0
-						 11.2503433,58.7863528,0.0 11.2537766,58.796492799999996,0.0 11.2496567,58.812675,0.0
-						 11.250686600000002,58.82422919999999,0.0 11.2551498,58.8350688,0.0 11.2633896,58.8475035,0.0
-						 11.2589264,58.857980700000006,0.0 11.2647629,58.863306900000005,0.0 11.2699127,58.8682773,0.0
-						 11.2870789,58.87573150000001,0.0 11.2911987,58.8810549,0.0 11.2898254,58.8858453,0.0
-						 11.291542100000001,58.89081250000001,0.0 11.2891388,58.89968060000001,0.0
-						 11.2747192,58.9097874,0.0 11.2675095,58.9151056,0.0 11.2568665,58.92963790000001,0.0
-						 11.2486267,58.93264990000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_PT14-Rabbalshede</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.617527,58.51306559999999,0.0 11.6039658,58.521582200000005,0.0 11.5981293,58.5224786,0.0
-						 11.590576200000001,58.523733500000006,0.0 11.5821648,58.5276771,0.0 11.5763283,58.531889,0.0
-						 11.57341,58.53771330000001,0.0 11.5711784,58.5469405,0.0 11.5674019,58.5520458,0.0
-						 11.5660286,58.5542847,0.0 11.5553856,58.55840400000001,0.0 11.553154,58.5618065,0.0
-						 11.551609,58.569058,0.0 11.5442276,58.578277,0.0 11.5330696,58.5804248,0.0
-						 11.5263748,58.5815881,0.0 11.5213966,58.587762,0.0 11.5145302,58.59035639999999,0.0
-						 11.498909,58.595813199999995,0.0 11.4836311,58.6010902,0.0 11.4801979,58.60296830000001,0.0
-						 11.4729881,58.605204,0.0 11.4707565,58.606992399999996,0.0 11.4707565,58.61003250000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_Hede - PT14</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.6777802,58.4648854,0.0 11.672802,58.46874590000001,0.0 11.6736603,58.4723366,0.0
-						 11.6755486,58.477722,0.0 11.6736603,58.4810426,0.0 11.6633606,58.486965,0.0
-						 11.6455078,58.4961159,0.0 11.6254234,58.508134,0.0 11.617527,58.51306559999999,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_Uddevalla-Hede</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.9229126,58.3541894,0.0 11.9098663,58.355990600000005,0.0 11.9028282,58.3553602,0.0
-						 11.891841900000001,58.3524781,0.0 11.8848038,58.3524781,0.0 11.8784523,58.353739,0.0
-						 11.8712425,58.35400920000001,0.0 11.8631744,58.3554502,0.0 11.855793,58.3587824,0.0
-						 11.8508148,58.3613038,0.0 11.8466949,58.36373499999999,0.0 11.8427467,58.36454530000001,0.0
-						 11.8387985,58.3642752,0.0 11.8324471,58.3632847,0.0 11.8252373,58.363464799999996,0.0
-						 11.8197441,58.3640051,0.0 11.813736,58.366976300000005,0.0 11.8058395,58.3698572,0.0
-						 11.795196500000001,58.373278000000006,0.0 11.7890167,58.37705849999999,0.0
-						 11.741809800000002,58.4084568,0.0 11.7342567,58.41286290000001,0.0
-						 11.7227554,58.428504700000005,0.0 11.7172623,58.4316502,0.0 11.6885948,58.4524035,0.0
-						 11.683788300000002,58.4556366,0.0 11.6825867,58.4620123,0.0 11.6777802,58.4648854,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_Byn-Uddevalla</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						11.8484116,58.100017,0.0 11.8571663,58.1021033,0.0 11.8710709,58.1082708,0.0
-						 11.878109,58.10981259999999,0.0 11.8870354,58.11035669999999,0.0
-						 11.891841900000001,58.1124424,0.0 11.9029999,58.112351700000005,0.0
-						 11.9124413,58.11652279999999,0.0 11.9297791,58.121781299999995,0.0
-						 11.9363022,58.12459160000001,0.0 11.9375038,58.1280361,0.0 11.9400787,58.13220530000001,0.0
-						 11.9402504,58.1386395,0.0 11.9383621,58.1427169,0.0 11.9359589,58.145072500000005,0.0
-						 11.927204100000003,58.153406600000004,0.0 11.9260025,58.1589313,0.0 11.9246292,58.162282,0.0
-						 11.9246292,58.1681675,0.0 11.9177628,58.175500400000004,0.0 11.9131279,58.18446079999999,0.0
-						 11.9143295,58.1891663,0.0 11.920166,58.1944141,0.0 11.919651,58.1987565,0.0
-						 11.9163895,58.20083699999999,0.0 11.9150162,58.20635440000001,0.0
-						 11.9146729,58.21024320000001,0.0 11.9182777,58.214674099999996,0.0 11.9208527,58.2196469,0.0
-						 11.921196,58.2243478,0.0 11.9174194,58.22995190000001,0.0 11.9131279,58.236639499999995,0.0
-						 11.911068,58.242061,0.0 11.9081497,58.2473913,0.0 11.9059181,58.2629259,0.0
-						 11.8959618,58.2678016,0.0 11.887722,58.2756555,0.0 11.8820572,58.281432099999996,0.0
-						 11.8762207,58.2886514,0.0 11.8779373,58.2915387,0.0 11.8863487,58.2946964,0.0
-						 11.9119263,58.3049796,0.0 11.9163895,58.308947800000006,0.0 11.9289207,58.31192360000001,0.0
-						 11.9380188,58.315800800000005,0.0 11.9400787,58.3180548,0.0 11.9369888,58.32220180000001,0.0
-						 11.9314957,58.32562720000001,0.0 11.9225693,58.32941279999999,0.0 11.9163895,58.3322968,0.0
-						 11.9148445,58.3359915,0.0 11.9187927,58.3403166,0.0 11.9266891,58.34148789999999,0.0
-						 11.9436836,58.3457222,0.0 11.9469452,58.3482446,0.0 11.9443703,58.350946900000004,0.0
-						 11.938533800000002,58.3531086,0.0 11.9261742,58.35382909999999,0.0 11.9229126,58.3541894,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> BK_Göteborg-Byn</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						12.0030785,57.7250527,0.0 11.9998169,57.7279858,0.0 11.9955254,57.7288107,0.0
-						 11.9888306,57.7296356,0.0 11.9833374,57.7278942,0.0 11.9769859,57.725694399999995,0.0
-						 11.9720078,57.725694399999995,0.0 11.9613647,57.72780250000001,0.0
-						 11.9575882,57.732201800000006,0.0 11.944198600000002,57.762524,0.0
-						 11.9440269,57.772778300000006,0.0 11.9447136,57.7773551,0.0 11.9400787,57.78449390000001,0.0
-						 11.9342422,57.7893438,0.0 11.9265175,57.7929122,0.0 11.9107246,57.80434689999999,0.0
-						 11.9019699,57.819069500000005,0.0 11.902141600000002,57.82364050000001,0.0
-						 11.9048882,57.8296733,0.0 11.909008,57.8395431,0.0 11.9141579,57.8487706,0.0
-						 11.9155312,57.8587265,0.0 11.9174194,57.8623793,0.0 11.9227409,57.870414200000006,0.0
-						 11.921196,57.8771695,0.0 11.909008,57.88392350000001,0.0 11.9066048,57.88693500000001,0.0
-						 11.9093513,57.891223600000004,0.0 11.909008,57.894781900000005,0.0
-						 11.9062614,57.897883699999994,0.0 11.8914986,57.90746120000001,0.0
-						 11.8878937,57.912203399999996,0.0 11.8820572,57.9148478,0.0 11.877079000000002,57.9209565,0.0
-						 11.8762207,57.92606150000001,0.0 11.8698692,57.9309835,0.0 11.8681526,57.9349935,0.0
-						 11.8609428,57.938729800000004,0.0 11.8556213,57.940278799999994,0.0 11.8515015,57.9442878,0.0
-						 11.8460083,57.950846999999996,0.0 11.845665,57.9538529,0.0 11.8460083,57.9572228,0.0
-						 11.8382835,57.96651129999999,0.0 11.8322754,57.975888399999995,0.0
-						 11.8351936,57.98171369999999,0.0 11.8322754,57.98862999999999,0.0 11.8284988,57.9976375,0.0
-						 11.8269539,58.00009360000001,0.0 11.8309021,58.0086435,0.0 11.8341637,58.0158274,0.0
-						 11.8387985,58.02537339999999,0.0 11.8370819,58.0284639,0.0 11.8317604,58.0306453,0.0
-						 11.8242073,58.035553,0.0 11.8211174,58.0380974,0.0 11.8204308,58.04227720000001,0.0
-						 11.8169975,58.0452754,0.0 11.8166542,58.047364900000005,0.0 11.816825900000001,58.049091,0.0
-						 11.8216324,58.05408690000001,0.0 11.8230057,58.0567209,0.0 11.8209457,58.0603536,0.0
-						 11.8175125,58.063713500000006,0.0 11.8200874,58.06698240000001,0.0 11.8252373,58.0736099,0.0
-						 11.8284988,58.076423899999995,0.0 11.8303871,58.07978239999999,0.0 11.8312454,58.0841388,0.0
-						 11.8336487,58.091307500000006,0.0 11.8360519,58.0955718,0.0 11.8484116,58.100017,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Jönköping-Värnamo 1</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.19837,57.77520410000001,0.0 14.192276,57.771222,0.0 14.1854095,57.7661865,0.0
-						 14.1785431,57.764538400000006,0.0 14.1677284,57.7632565,0.0 14.1538239,57.762524,0.0
-						 14.1490173,57.76096720000001,0.0 14.1455841,57.75638829999999,0.0 14.1397476,57.7517172,0.0
-						 14.1368294,57.7481447,0.0 14.1308212,57.7443887,0.0 14.1306496,57.73934950000001,0.0
-						 14.126873000000002,57.7366922,0.0 14.1251564,57.7349511,0.0 14.1206932,57.732568400000005,0.0
-						 14.1191483,57.72826080000001,0.0 14.118976600000002,57.7250527,0.0 14.115715,57.722761,0.0
-						 14.1170883,57.71936910000001,0.0 14.1206932,57.7169854,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Jönköping-Värnamo 2</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.1206932,57.7169854,0.0 14.1205215,57.71240079999999,0.0 14.1186333,57.71075030000001,0.0
-						 14.115715,57.70809090000001,0.0 14.1152,57.7024046,0.0 14.1107368,57.70029490000001,0.0
-						 14.1062737,57.69515779999999,0.0 14.1028404,57.6899283,0.0 14.105072,57.6859827,0.0
-						 14.1028404,57.6839638,0.0 14.0928841,57.6807518,0.0 14.0870476,57.6787327,0.0
-						 14.0824127,57.6758873,0.0 14.0800095,57.67368429999999,0.0 14.0758896,57.6726746,0.0
-						 14.073486300000003,57.670012400000005,0.0 14.0703964,57.6690025,0.0 14.0683365,57.6669827,0.0
-						 14.0676498,57.663585600000005,0.0 14.067821500000003,57.66092270000001,0.0
-						 14.0686798,57.6583514,0.0 14.069023100000003,57.6555045,0.0 14.0705681,57.6545861,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Jönköping-Värnamo 3</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.0705681,57.6545861,0.0 14.069023100000003,57.6555045,0.0 14.073486300000003,57.6426446,0.0
-						 14.0844727,57.6356616,0.0 14.0940857,57.6281258,0.0 14.1033554,57.6148884,0.0
-						 14.1150284,57.5948393,0.0 14.1294479,57.57183349999999,0.0 14.137001,57.5576548,0.0
-						 14.1418076,57.551208,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Jönköping-Värnamo 4</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.1418076,57.551208,0.0 14.146270800000002,57.542917700000004,0.0
-						 14.1442108,57.53222960000001,0.0 14.1407776,57.52688439999999,0.0
-						 14.1414642,57.51674479999999,0.0 14.1421509,57.5101064,0.0 14.1517639,57.501991200000006,0.0
-						 14.1445541,57.4966416,0.0 14.1342545,57.4916601,0.0 14.1160583,57.4850172,0.0
-						 14.0992355,57.4761581,0.0 14.0930557,57.468589200000004,0.0 14.0909958,57.4543702,0.0
-						 14.0872192,57.444210399999996,0.0 14.084816000000002,57.43626540000001,0.0
-						 14.0913391,57.4281337,0.0 14.096489,57.4194457,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Jönköping-Värnamo 5</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.096489,57.4194457,0.0 14.1006088,57.4111254,0.0 14.0978622,57.4018784,0.0
-						 14.0978622,57.39040899999999,0.0 14.0975189,57.3846729,0.0 14.0975189,57.376159599999994,0.0
-						 14.0992355,57.364496900000006,0.0 14.0975189,57.3532009,0.0 14.0975189,57.34208670000001,0.0
-						 14.0947723,57.331895800000005,0.0 14.0913391,57.3181798,0.0 14.073143,57.2970399,0.0
-						 14.0600967,57.278486,0.0 14.0515137,57.2675349,0.0 14.0546036,57.2593658,0.0
-						 14.0470505,57.2511949,0.0 14.042244,57.2428364,0.0 14.0388107,57.2233259,0.0
-						 14.0367508,57.2140316,0.0 14.033660900000001,57.2069663,0.0 14.0340042,57.2004577,0.0
-						 14.0343475,57.1952499,0.0 14.0340042,57.1915296,0.0 14.035892500000001,57.1865066,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Värnamo-Hässleholm 1</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						14.035892500000001,57.1865066,0.0 14.0384674,57.1723642,0.0 14.0340042,57.1585888,0.0
-						 14.0257645,57.1438769,0.0 14.007568400000002,57.1204003,0.0 14.0031052,57.1127578,0.0
-						 14.0020752,57.1066055,0.0 13.9917755,57.0993332,0.0 13.9890289,57.0887019,0.0
-						 13.9845657,57.0845977,0.0 13.974609400000002,57.0771345,0.0 13.964309700000001,57.0674301,0.0
-						 13.9584732,57.0595901,0.0 13.9553833,57.05417570000001,0.0 13.95504,57.0455859,0.0
-						 13.9516068,57.0405431,0.0 13.9505768,57.0340051,0.0 13.9516068,57.0297081,0.0
-						 13.9553833,57.0267185,0.0 13.95401,57.0235419,0.0 13.952980000000002,57.01438420000001,0.0
-						 13.9454269,57.0050373,0.0 13.9440536,56.9962491,0.0 13.9440536,56.9863364,0.0
-						 13.9488602,56.9734274,0.0 13.9526367,56.9659418,0.0 13.9591599,56.9547106,0.0
-						 13.9632797,56.9481575,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Värnamo-Hässleholm 2</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						13.9632797,56.9481575,0.0 13.9649963,56.8985039,0.0 13.9595032,56.869243,0.0
-						 13.9389038,56.8429636,0.0 13.9100647,56.8249329,0.0 13.8853455,56.7587457,0.0
-						 13.8633728,56.7406744,0.0 13.8427734,56.6818825,0.0 13.8194275,56.6547168,0.0
-						 13.7864685,56.61166430000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Värnamo-Hässleholm 3</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						13.7864685,56.61166430000001,0.0 13.7658691,56.5700759,0.0 13.7576294,56.509502,0.0
-						 13.7466431,56.4806954,0.0 13.7452698,56.4298515,0.0 13.7493896,56.372856,0.0
-						 13.7521362,56.3142518,0.0 13.7617493,56.2654732,0.0 13.7631226,56.2151051,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Värnamo-Hässleholm 4</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						13.7631226,56.2151051,0.0 13.7632942,56.2035531,0.0 13.7651825,56.1947674,0.0
-						 13.7668991,56.1833048,0.0 13.7691307,56.1698318,0.0 13.7658691,56.1634281,0.0
-						 13.7632084,56.157597,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> PorkkalaBN</name>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						24.505691528320312,60.044617940473216,0.0 24.4950485,60.0631272,0.0 24.4823456,60.071864,0.0
-						 24.4651794,60.077344800000006,0.0 24.4143677,60.0918987,0.0 24.3776321,60.0987453,0.0
-						 24.3319702,60.1011413,0.0 24.321584701538086,60.103152117942344,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #plannedHH</styleUrl>
-<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Jorvas-Helsingfors</name>
-				<LineString>
-					<tessellate> 0</tessellate>
-					<coordinates>
-						24.51272964477539,60.13791508157593,0.0 24.517879486083984,60.14013729404422,0.0
-						 24.520111083984375,60.14201751041804,0.0 24.524059295654297,60.14509399629047,0.0
-						 24.527835845947266,60.149110086411994,0.0 24.53298568725586,60.15261308363538,0.0
-						 24.536762237548828,60.15603028224013,0.0 24.53899383544922,60.15790959006859,0.0
-						 24.540023803710938,60.16004503672782,0.0 24.543113708496094,60.16440091772243,0.0
-						 24.546890258789062,60.16995169397236,0.0 24.54998016357422,60.17268403936901,0.0
-						 24.55495834350586,60.1757576563078,0.0 24.55821990966797,60.177977311904286,0.0
-						 24.565258026123047,60.18198938558969,0.0 24.56920623779297,60.18395256218136,0.0
-						 24.574527740478516,60.18480608061214,0.0 24.578990936279297,60.1852328315075,0.0
-						 24.587230682373047,60.185574228230195,0.0 24.59066390991211,60.18634235787727,0.0
-						 24.59735870361328,60.188049248309405,0.0 24.600963592529297,60.18958537382462,0.0
-						 24.612979888916016,60.194107992669515,0.0 24.620189666748047,60.19717960481925,0.0
-						 24.62636947631836,60.1994831252801,0.0 24.629974365234375,60.20067747963953,0.0
-						 24.638385772705078,60.20161587042499,0.0 24.648513793945312,60.20357787352943,0.0
-						 24.656431674957275,60.20457787352943,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #FOUR</styleUrl>
-<description><![CDATA[<div lang="sv">standard och bredspår</div><div lang="fi">normaali että leveä raideleveys</div><div lang="en">standard and broad gauge railway</div>]]></description>
-				<name> Jorvas-Helsingfors</name>
-				<LineString>
-					<tessellate> 0</tessellate>
-					<coordinates>
-						24.656431674957275,60.20457787352943,0.0 24.661216735839844,60.20588094486246,0.0
-						 24.671688079833984,60.207672110792586,0.0 24.67632293701172,60.20724565158466,0.0
-						 24.68027114868164,60.20622212686548,0.0 24.684219360351562,60.20588094486246,0.0
-						 24.688854217529297,60.20656330532016,0.0 24.694690704345703,60.20750152777472,0.0
-						 24.698638916015625,60.20724565158466,0.0 24.702930450439453,60.20690448022655,0.0
-						 24.705848693847656,60.2067338932169,0.0 24.70928192138672,60.2067338932169,0.0
-						 24.712371826171875,60.20750152777472,0.0 24.715118408203125,60.208610301534875,0.0
-						 24.718379974365234,60.20988960930411,0.0 24.72301483154297,60.21125414926312,0.0
-						 24.727821350097656,60.21168055635852,0.0 24.731426239013672,60.21193639795478,0.0
-						 24.73794937133789,60.21253335391842,0.0 24.74567413330078,60.21330085276344,0.0
-						 24.749107360839844,60.214324156617835,0.0 24.752197265625,60.21568851208886,0.0
-						 24.756832122802734,60.21671174144189,0.0 24.75992202758789,60.21730861048657,0.0
-						 24.76541519165039,60.21705281079775,0.0 24.77588653564453,60.21730861048657,0.0
-						 24.779834747314453,60.21730861048657,0.0 24.783611297607422,60.21816126170426,0.0
-						 24.788761138916016,60.218758104364504,0.0 24.794769287109375,60.21926967514075,0.0
-						 24.80266571044922,60.21926967514075,0.0 24.80936050415039,60.21952545753577,0.0
-						 24.817256927490234,60.21926967514075,0.0 24.823265075683594,60.218758104364504,0.0
-						 24.828758239746094,60.218417052746055,0.0 24.835453033447266,60.21884336671482,0.0
-						 24.839916229248047,60.21978123793541,0.0 24.843177795410156,60.22106011000314,0.0
-						 24.84781265258789,60.22293569880318,0.0 24.853134155273438,60.22370295420386,0.0
-						 24.856395721435547,60.22370295420386,0.0 24.860858917236328,60.22319145259862,0.0
-						 24.866352081298828,60.22242418522648,0.0 24.87133026123047,60.2219979178159,0.0
-						 24.87527847290039,60.2219979178159,0.0 24.878711700439453,60.22208317174142,0.0
-						 24.881458282470703,60.22191266366871,0.0 24.88454818725586,60.22157164486288,0.0
-						 24.89175796508789,60.219013890750325,0.0 24.89398956298828,60.21816126170426,0.0
-						 24.897937774658203,60.21662647354862,0.0 24.901199340820312,60.21585905253163,0.0
-						 24.904460906982422,60.2150916135548,0.0 24.908409118652344,60.213983058880785,0.0
-						 24.911327362060547,60.212448075160275,0.0 24.915618896484375,60.210486602521335,0.0
-						 24.918880462646484,60.208951455152,0.0 24.924373626708984,60.20656330532016,0.0
-						 24.927291870117188,60.20426028189062,0.0 24.930038452148438,60.2028954509742,0.0
-						 24.932270050048828,60.20110402423253,0.0 24.933300018310547,60.19905655961626,0.0
-						 24.93398666381836,60.19581447935469,0.0 24.9334716796875,60.19334004471315,0.0
-						 24.933643341064453,60.19120676166746,0.0 24.93570327758789,60.18762253402097,0.0
-						 24.93896484375,60.180196817497446,0.0 24.94068145751953,60.1750746551758,0.0
-						 24.941883087158203,60.17063480162678,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Hässleholm-Lund 1</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						13.7632084,56.157597,0.0 13.7538528,56.143063,0.0 13.7490463,56.1317763,0.0
-						 13.7414932,56.1246965,0.0 13.7384033,56.1201035,0.0 13.7377167,56.1137872,0.0
-						 13.7401199,56.1040237,0.0 13.7408066,56.0940661,0.0 13.7401199,56.08544690000001,0.0
-						 13.7387466,56.0798913,0.0 13.7342834,56.0680111,0.0 13.7270737,56.0620697,0.0
-						 13.7064743,56.0521013,0.0 13.6800385,56.0354176,0.0 13.6645889,56.0265934,0.0
-						 13.6511993,56.0160402,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Hässleholm-Lund 2</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						13.6511993,56.0160402,0.0 13.6350632,56.0029885,0.0 13.619957,55.9916607,0.0
-						 13.6100006,55.9866677,0.0 13.597641,55.9832106,0.0 13.5842514,55.979177,0.0
-						 13.5705185,55.9713006,0.0 13.5626221,55.9590026,0.0 13.5581589,55.9484309,0.0
-						 13.5488892,55.9392023,0.0 13.5262299,55.9303561,0.0 13.5059738,55.9226622,0.0
-						 13.4915543,55.91669830000001,0.0 13.468895,55.9165059,0.0 13.4448624,55.9155439,0.0
-						 13.4314728,55.909579,0.0 13.4095001,55.903998,0.0 13.3916473,55.8999561,0.0
-						 13.3744812,55.89495130000001,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Hässleholm-Lund 3</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						13.3744812,55.89495130000001,0.0 13.3610916,55.8901384,0.0 13.347702,55.882629,0.0
-						 13.328819300000001,55.8718438,0.0 13.3222961,55.8681839,0.0 13.316803,55.8581654,0.0
-						 13.3082199,55.8444822,0.0 13.3041,55.8333008,0.0 13.3010101,55.8221161,0.0
-						 13.2907104,55.8082273,0.0 13.2797241,55.7993512,0.0 13.2632446,55.7875777,0.0
-						 13.2484818,55.7804347,0.0 13.2326889,55.774835200000005,0.0 13.217926,55.7696211,0.0
-						 13.2103729,55.7630542,0.0 13.2052231,55.7566795,0.0 13.1932068,55.7402548,0.0
-						 13.1835938,55.7296234,0.0 13.1839371,55.72595,0.0
-					</coordinates>
-				</LineString>
-			</Placemark>
-			<Placemark>
-				<name> Hässleholm-Lund 4</name>
-				<styleUrl> #existsHH</styleUrl>
-<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
-				<LineString>
-					<tessellate> 1</tessellate>
-					<coordinates>
-						13.1839371,55.72595,0.0 13.1837654,55.7203427,0.0 13.184452100000001,55.7154114,0.0
-						 13.185997,55.712317,0.0 13.1868553,55.70670770000001,0.0
 					</coordinates>
 				</LineString>
 			</Placemark>
@@ -2971,6 +2008,67 @@
 				</LineString>
 			</Placemark>
 			<Placemark>
+				<name> PorkkalaBN</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.505691528320312,60.044617940473216,0.0 24.4950485,60.0631272,0.0 24.4823456,60.071864,0.0
+						 24.4651794,60.077344800000006,0.0 24.4143677,60.0918987,0.0 24.3776321,60.0987453,0.0
+						 24.3319702,60.1011413,0.0 24.321584701538086,60.103152117942344,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<name> Längs E18 </name>
+				<LineString>
+					<tessellate> 0</tessellate>
+					<coordinates>
+						18.063926696777344,59.32635945142338,0.0 18.055343627929688,59.32986217428469,0.0
+						 18.051223754882812,59.33511558164012,0.0 18.043670654296875,59.33634125981278,0.0
+						 18.029937744140625,59.33931772269955,0.0 18.026161193847656,59.34281910984511,0.0
+						 18.0230712890625,59.343869455602906,0.0 18.01586151123047,59.35017084799535,0.0
+						 18.012771606445312,59.35682104919336,0.0 18.01105499267578,59.3641697560028,0.0
+						 18.00830841064453,59.37029246288865,0.0 18.003158569335938,59.37903727051661,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<name> Längs E18 </name>
+				<LineString>
+					<tessellate> 0</tessellate>
+					<coordinates>
+						18.0002618,59.380720399999994,0.0 17.992172241210938,59.38690566989341,0.0
+						 17.9901123046875,59.3975688075355,0.0 17.994918823242188,59.405957115062684,0.0
+						 18.008995056152344,59.41469272727614,0.0 18.023757934570312,59.422902148630186,0.0
+						 18.046417236328125,59.4295380980236,0.0 18.060150146484375,59.43722020374139,0.0
+						 18.071823120117188,59.442806094407075,0.0 18.080406188964844,59.444551496101006,0.0
+						 18.094825744628906,59.447692992198434,0.0 18.102035522460938,59.44804202930895,0.0
+						 18.107528686523438,59.451008699312,0.0 18.116455078125,59.45240468926274,0.0
+						 18.138771057128906,59.45432408134585,0.0 18.164520263671875,59.47019851001045,0.0
+						 18.167266845703125,59.482753215246895,0.0 18.172760009765625,59.50157652597656,0.0
+						 18.202972412109375,59.530836376199375,0.0 18.233184814453125,59.54545678424146,0.0
+						 18.238677978515625,59.56981003783852,0.0 18.270263671875,59.58858480128287,0.0
+						 18.28948974609375,59.60943336371317,0.0 18.33343505859375,59.62888035850546,0.0
+						 18.365020751953125,59.65039782939571,0.0 18.392486572265625,59.66565992490267,0.0
+						 18.42681884765625,59.68022181066172,0.0 18.461151123046875,59.68715381856602,0.0
+						 18.499603271484375,59.70101353199732,0.0 18.52294921875,59.70309199431277,0.0
+						 18.543548583984375,59.708633929655335,0.0 18.571014404296875,59.730100263991396,0.0
+						 18.6163330078125,59.7397902233294,0.0 18.678131103515625,59.74186627782944,0.0
+						 18.71246337890625,59.7377140398859,0.0 18.766021728515625,59.733561286147385,0.0
+						 18.8140869140625,59.726638883590645,0.0 18.863525390625,59.72386952131737,0.0
+						 18.907470703125,59.71902258556691,0.0 18.97064208984375,59.716945112398264,0.0
+						 19.046173095703125,59.72386952131737,0.0 19.062652587890625,59.71833010884389,0.0
+						 19.06402587890625,59.71768089889866,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
 <description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
 				<name> Jorvas-Porkkala-1</name>
@@ -3115,15 +2213,917 @@
 					</coordinates>
 				</LineString>
 			</Placemark>
+			<Placemark>
+				<name> Jönköping-Värnamo 1</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.19837,57.77520410000001,0.0 14.192276,57.771222,0.0 14.1854095,57.7661865,0.0
+						 14.1785431,57.764538400000006,0.0 14.1677284,57.7632565,0.0 14.1538239,57.762524,0.0
+						 14.1490173,57.76096720000001,0.0 14.1455841,57.75638829999999,0.0 14.1397476,57.7517172,0.0
+						 14.1368294,57.7481447,0.0 14.1308212,57.7443887,0.0 14.1306496,57.73934950000001,0.0
+						 14.126873000000002,57.7366922,0.0 14.1251564,57.7349511,0.0 14.1206932,57.732568400000005,0.0
+						 14.1191483,57.72826080000001,0.0 14.118976600000002,57.7250527,0.0 14.115715,57.722761,0.0
+						 14.1170883,57.71936910000001,0.0 14.1206932,57.7169854,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Jönköping-Värnamo 2</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.1206932,57.7169854,0.0 14.1205215,57.71240079999999,0.0 14.1186333,57.71075030000001,0.0
+						 14.115715,57.70809090000001,0.0 14.1152,57.7024046,0.0 14.1107368,57.70029490000001,0.0
+						 14.1062737,57.69515779999999,0.0 14.1028404,57.6899283,0.0 14.105072,57.6859827,0.0
+						 14.1028404,57.6839638,0.0 14.0928841,57.6807518,0.0 14.0870476,57.6787327,0.0
+						 14.0824127,57.6758873,0.0 14.0800095,57.67368429999999,0.0 14.0758896,57.6726746,0.0
+						 14.073486300000003,57.670012400000005,0.0 14.0703964,57.6690025,0.0 14.0683365,57.6669827,0.0
+						 14.0676498,57.663585600000005,0.0 14.067821500000003,57.66092270000001,0.0
+						 14.0686798,57.6583514,0.0 14.069023100000003,57.6555045,0.0 14.0705681,57.6545861,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Jönköping-Värnamo 3</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.0705681,57.6545861,0.0 14.069023100000003,57.6555045,0.0 14.073486300000003,57.6426446,0.0
+						 14.0844727,57.6356616,0.0 14.0940857,57.6281258,0.0 14.1033554,57.6148884,0.0
+						 14.1150284,57.5948393,0.0 14.1294479,57.57183349999999,0.0 14.137001,57.5576548,0.0
+						 14.1418076,57.551208,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Jönköping-Värnamo 4</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.1418076,57.551208,0.0 14.146270800000002,57.542917700000004,0.0
+						 14.1442108,57.53222960000001,0.0 14.1407776,57.52688439999999,0.0
+						 14.1414642,57.51674479999999,0.0 14.1421509,57.5101064,0.0 14.1517639,57.501991200000006,0.0
+						 14.1445541,57.4966416,0.0 14.1342545,57.4916601,0.0 14.1160583,57.4850172,0.0
+						 14.0992355,57.4761581,0.0 14.0930557,57.468589200000004,0.0 14.0909958,57.4543702,0.0
+						 14.0872192,57.444210399999996,0.0 14.084816000000002,57.43626540000001,0.0
+						 14.0913391,57.4281337,0.0 14.096489,57.4194457,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Jönköping-Värnamo 5</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.096489,57.4194457,0.0 14.1006088,57.4111254,0.0 14.0978622,57.4018784,0.0
+						 14.0978622,57.39040899999999,0.0 14.0975189,57.3846729,0.0 14.0975189,57.376159599999994,0.0
+						 14.0992355,57.364496900000006,0.0 14.0975189,57.3532009,0.0 14.0975189,57.34208670000001,0.0
+						 14.0947723,57.331895800000005,0.0 14.0913391,57.3181798,0.0 14.073143,57.2970399,0.0
+						 14.0600967,57.278486,0.0 14.0515137,57.2675349,0.0 14.0546036,57.2593658,0.0
+						 14.0470505,57.2511949,0.0 14.042244,57.2428364,0.0 14.0388107,57.2233259,0.0
+						 14.0367508,57.2140316,0.0 14.033660900000001,57.2069663,0.0 14.0340042,57.2004577,0.0
+						 14.0343475,57.1952499,0.0 14.0340042,57.1915296,0.0 14.035892500000001,57.1865066,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Värnamo-Hässleholm 1</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						14.035892500000001,57.1865066,0.0 14.0384674,57.1723642,0.0 14.0340042,57.1585888,0.0
+						 14.0257645,57.1438769,0.0 14.007568400000002,57.1204003,0.0 14.0031052,57.1127578,0.0
+						 14.0020752,57.1066055,0.0 13.9917755,57.0993332,0.0 13.9890289,57.0887019,0.0
+						 13.9845657,57.0845977,0.0 13.974609400000002,57.0771345,0.0 13.964309700000001,57.0674301,0.0
+						 13.9584732,57.0595901,0.0 13.9553833,57.05417570000001,0.0 13.95504,57.0455859,0.0
+						 13.9516068,57.0405431,0.0 13.9505768,57.0340051,0.0 13.9516068,57.0297081,0.0
+						 13.9553833,57.0267185,0.0 13.95401,57.0235419,0.0 13.952980000000002,57.01438420000001,0.0
+						 13.9454269,57.0050373,0.0 13.9440536,56.9962491,0.0 13.9440536,56.9863364,0.0
+						 13.9488602,56.9734274,0.0 13.9526367,56.9659418,0.0 13.9591599,56.9547106,0.0
+						 13.9632797,56.9481575,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Värnamo-Hässleholm 2</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.9632797,56.9481575,0.0 13.9649963,56.8985039,0.0 13.9595032,56.869243,0.0
+						 13.9389038,56.8429636,0.0 13.9100647,56.8249329,0.0 13.8853455,56.7587457,0.0
+						 13.8633728,56.7406744,0.0 13.8427734,56.6818825,0.0 13.8194275,56.6547168,0.0
+						 13.7864685,56.61166430000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Värnamo-Hässleholm 3</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.7864685,56.61166430000001,0.0 13.7658691,56.5700759,0.0 13.7576294,56.509502,0.0
+						 13.7466431,56.4806954,0.0 13.7452698,56.4298515,0.0 13.7493896,56.372856,0.0
+						 13.7521362,56.3142518,0.0 13.7617493,56.2654732,0.0 13.7631226,56.2151051,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Värnamo-Hässleholm 4</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						13.7631226,56.2151051,0.0 13.7632942,56.2035531,0.0 13.7651825,56.1947674,0.0
+						 13.7668991,56.1833048,0.0 13.7691307,56.1698318,0.0 13.7658691,56.1634281,0.0
+						 13.7632084,56.157597,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<name> Jorvas-Helsingfors</name>
+				<LineString>
+					<tessellate> 0</tessellate>
+					<coordinates>
+						24.51272964477539,60.13791508157593,0.0 24.517879486083984,60.14013729404422,0.0
+						 24.520111083984375,60.14201751041804,0.0 24.524059295654297,60.14509399629047,0.0
+						 24.527835845947266,60.149110086411994,0.0 24.53298568725586,60.15261308363538,0.0
+						 24.536762237548828,60.15603028224013,0.0 24.53899383544922,60.15790959006859,0.0
+						 24.540023803710938,60.16004503672782,0.0 24.543113708496094,60.16440091772243,0.0
+						 24.546890258789062,60.16995169397236,0.0 24.54998016357422,60.17268403936901,0.0
+						 24.55495834350586,60.1757576563078,0.0 24.55821990966797,60.177977311904286,0.0
+						 24.565258026123047,60.18198938558969,0.0 24.56920623779297,60.18395256218136,0.0
+						 24.574527740478516,60.18480608061214,0.0 24.578990936279297,60.1852328315075,0.0
+						 24.587230682373047,60.185574228230195,0.0 24.59066390991211,60.18634235787727,0.0
+						 24.59735870361328,60.188049248309405,0.0 24.600963592529297,60.18958537382462,0.0
+						 24.612979888916016,60.194107992669515,0.0 24.620189666748047,60.19717960481925,0.0
+						 24.62636947631836,60.1994831252801,0.0 24.629974365234375,60.20067747963953,0.0
+						 24.638385772705078,60.20161587042499,0.0 24.648513793945312,60.20357787352943,0.0
+						 24.656431674957275,60.20457787352943,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #FOUR</styleUrl>
+<description><![CDATA[<div lang="sv">standard och bredspår</div><div lang="fi">normaali että leveä raideleveys</div><div lang="en">standard and broad gauge railway</div>]]></description>
+				<name> Jorvas-Helsingfors</name>
+				<LineString>
+					<tessellate> 0</tessellate>
+					<coordinates>
+						24.656431674957275,60.20457787352943,0.0 24.661216735839844,60.20588094486246,0.0
+						 24.671688079833984,60.207672110792586,0.0 24.67632293701172,60.20724565158466,0.0
+						 24.68027114868164,60.20622212686548,0.0 24.684219360351562,60.20588094486246,0.0
+						 24.688854217529297,60.20656330532016,0.0 24.694690704345703,60.20750152777472,0.0
+						 24.698638916015625,60.20724565158466,0.0 24.702930450439453,60.20690448022655,0.0
+						 24.705848693847656,60.2067338932169,0.0 24.70928192138672,60.2067338932169,0.0
+						 24.712371826171875,60.20750152777472,0.0 24.715118408203125,60.208610301534875,0.0
+						 24.718379974365234,60.20988960930411,0.0 24.72301483154297,60.21125414926312,0.0
+						 24.727821350097656,60.21168055635852,0.0 24.731426239013672,60.21193639795478,0.0
+						 24.73794937133789,60.21253335391842,0.0 24.74567413330078,60.21330085276344,0.0
+						 24.749107360839844,60.214324156617835,0.0 24.752197265625,60.21568851208886,0.0
+						 24.756832122802734,60.21671174144189,0.0 24.75992202758789,60.21730861048657,0.0
+						 24.76541519165039,60.21705281079775,0.0 24.77588653564453,60.21730861048657,0.0
+						 24.779834747314453,60.21730861048657,0.0 24.783611297607422,60.21816126170426,0.0
+						 24.788761138916016,60.218758104364504,0.0 24.794769287109375,60.21926967514075,0.0
+						 24.80266571044922,60.21926967514075,0.0 24.80936050415039,60.21952545753577,0.0
+						 24.817256927490234,60.21926967514075,0.0 24.823265075683594,60.218758104364504,0.0
+						 24.828758239746094,60.218417052746055,0.0 24.835453033447266,60.21884336671482,0.0
+						 24.839916229248047,60.21978123793541,0.0 24.843177795410156,60.22106011000314,0.0
+						 24.84781265258789,60.22293569880318,0.0 24.853134155273438,60.22370295420386,0.0
+						 24.856395721435547,60.22370295420386,0.0 24.860858917236328,60.22319145259862,0.0
+						 24.866352081298828,60.22242418522648,0.0 24.87133026123047,60.2219979178159,0.0
+						 24.87527847290039,60.2219979178159,0.0 24.878711700439453,60.22208317174142,0.0
+						 24.881458282470703,60.22191266366871,0.0 24.88454818725586,60.22157164486288,0.0
+						 24.89175796508789,60.219013890750325,0.0 24.89398956298828,60.21816126170426,0.0
+						 24.897937774658203,60.21662647354862,0.0 24.901199340820312,60.21585905253163,0.0
+						 24.904460906982422,60.2150916135548,0.0 24.908409118652344,60.213983058880785,0.0
+						 24.911327362060547,60.212448075160275,0.0 24.915618896484375,60.210486602521335,0.0
+						 24.918880462646484,60.208951455152,0.0 24.924373626708984,60.20656330532016,0.0
+						 24.927291870117188,60.20426028189062,0.0 24.930038452148438,60.2028954509742,0.0
+						 24.932270050048828,60.20110402423253,0.0 24.933300018310547,60.19905655961626,0.0
+						 24.93398666381836,60.19581447935469,0.0 24.9334716796875,60.19334004471315,0.0
+						 24.933643341064453,60.19120676166746,0.0 24.93570327758789,60.18762253402097,0.0
+						 24.93896484375,60.180196817497446,0.0 24.94068145751953,60.1750746551758,0.0
+						 24.941883087158203,60.17063480162678,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Oslo-Holmlia</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.7524395,59.91110510000001,0.0 10.763855,59.908221899999994,0.0 10.7655716,59.9049511,0.0
+						 10.7624817,59.90142180000001,0.0 10.7557869,59.8983225,0.0 10.7564735,59.89617009999999,0.0
+						 10.7612801,59.8902287,0.0 10.7690048,59.885492,0.0 10.773468,59.88092689999999,0.0
+						 10.7791328,59.87429349999999,0.0 10.783596,59.8686067,0.0 10.785656,59.8640393,0.0
+						 10.7878876,59.8604194,0.0 10.7866859,59.858005899999995,0.0 10.786171,59.8540405,0.0
+						 10.7849693,59.852402500000004,0.0 10.785656,59.8502471,0.0 10.7894325,59.8489538,0.0
+						 10.7945824,59.849471099999995,0.0 10.8000755,59.8492987,0.0 10.8019638,59.848264,0.0
+						 10.8029938,59.8469706,0.0 10.8023071,59.8442112,0.0 10.7983589,59.8420553,0.0
+						 10.7973289,59.84015800000001,0.0 10.797157300000002,59.83472410000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Holmlia-Langhus</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.797157300000002,59.83472410000001,0.0 10.7978439,59.828771700000004,0.0
+						 10.7980156,59.8229045,0.0 10.7975006,59.8179856,0.0 10.7975006,59.8153964,0.0
+						 10.8011055,59.810735400000006,0.0 10.8062553,59.807714000000004,0.0 10.8035088,59.8027065,0.0
+						 10.805053700000002,59.800116200000005,0.0 10.8024788,59.7972665,0.0 10.8024788,59.7943303,0.0
+						 10.8004189,59.79156650000001,0.0 10.8000755,59.7893208,0.0 10.800848,59.78590880000001,0.0
+						 10.8017921,59.7812004,0.0 10.8024788,59.7777443,0.0 10.8067703,59.7722138,0.0
+						 10.8115768,59.769534699999994,0.0 10.8131218,59.7650401,0.0 10.816383400000001,59.7632248,0.0
+						 10.8210182,59.7636571,0.0 10.8242798,59.76210110000001,0.0 10.8270264,59.7595075,0.0
+						 10.8325195,59.7590753,0.0 10.8356094,59.7582972,0.0 10.8380127,59.75583300000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Langhus-Ski</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.8380127,59.75583300000001,0.0 10.838356,59.752677,0.0 10.8361244,59.74852609999999,0.0
+						 10.8369827,59.7454126,0.0 10.8385277,59.7421258,0.0 10.8395576,59.7378871,0.0
+						 10.841445900000002,59.7314847,0.0 10.839901,59.7272447,0.0 10.8361244,59.7222251,0.0
+						 10.8344936,59.719368800000005,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Ski-Vestby</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.8344936,59.719368800000005,0.0 10.831146200000001,59.710192400000004,0.0
+						 10.8215332,59.7029188,0.0 10.808486900000002,59.6956436,0.0 10.8005905,59.6883668,0.0
+						 10.7961273,59.675021900000004,0.0 10.7930374,59.665139700000005,0.0
+						 10.7978439,59.656989100000004,0.0 10.7995605,59.65091820000001,0.0
+						 10.7978439,59.64623420000001,0.0 10.7858276,59.63165759999999,0.0 10.7758713,59.6224572,0.0
+						 10.7700348,59.61325420000001,0.0 10.7576752,59.6078702,0.0 10.748148,59.6035276,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Vastby-Kambo</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.748148,59.6035276,0.0 10.7370758,59.586499200000006,0.0 10.7295227,59.57224440000001,0.0
+						 10.7254028,59.56146230000001,0.0 10.7336426,59.539887900000004,0.0
+						 10.730896,59.520389300000005,0.0 10.7247162,59.5120294,0.0 10.7082367,59.496000300000006,0.0
+						 10.7013702,59.4872857,0.0 10.6922722,59.4773919,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Kambo-Råde</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.6922722,59.4773919,0.0 10.6876373,59.45833700000001,0.0 10.6890106,59.4471694,0.0
+						 10.6773376,59.44053689999999,0.0 10.6571674,59.4319171,0.0 10.6601715,59.422378200000004,0.0
+						 10.6574249,59.4091022,0.0 10.6615448,59.403510700000005,0.0 10.6807709,59.399316500000005,0.0
+						 10.7164764,59.3937235,0.0 10.7460022,59.37833779999999,0.0 10.7652283,59.3706423,0.0
+						 10.7796478,59.3629451,0.0 10.8325195,59.3499958,0.0 10.841445900000002,59.3475454,0.0
+						 10.865221,59.3475892,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_Fy-2</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.1181641,59.28613990000001,0.0 11.1116409,59.28990970000001,0.0
+						 11.1044312,59.290786399999995,0.0 11.082458500000001,59.29289030000001,0.0
+						 11.065979,59.29604580000001,0.0 11.0443497,59.30358300000001,0.0
+						 11.0309601,59.311468899999994,0.0 11.0206604,59.31602430000001,0.0 10.9804916,59.3169003,0.0
+						 10.9705353,59.3212799,0.0 10.9622955,59.324958300000006,0.0 10.9489059,59.325834,0.0
+						 10.9410095,59.3277606,0.0 10.9296799,59.34264399999999,0.0 10.9193802,59.3450948,0.0
+						 10.8823013,59.34877060000001,0.0 10.865221,59.3475892,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Sarpsborg-Halden växel</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.1181641,59.28613990000001,0.0 11.1325836,59.277108000000005,0.0
+						 11.1463165,59.26588060000001,0.0 11.1614227,59.2500859,0.0 11.1689758,59.2384984,0.0
+						 11.1827087,59.2279609,0.0 11.1916351,59.21671729999999,0.0 11.1985016,59.199845,0.0
+						 11.2019348,59.1917574,0.0 11.2046814,59.180501899999996,0.0 11.2149811,59.1790947,0.0
+						 11.2342072,59.17029839999999,0.0 11.2451935,59.15481129999999,0.0
+						 11.2589264,59.148473700000004,0.0 11.2751055,59.135971100000006,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_Halden växel-Strömstad växel</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.2486267,58.93264990000001,0.0 11.2541199,58.9452267,0.0 11.2469101,58.9569137,0.0
+						 11.2342072,58.9668268,0.0 11.2352371,58.9970796,0.0 11.2407303,59.0124612,0.0
+						 11.2410736,59.0248322,0.0 11.2561798,59.0377286,0.0 11.260643,59.046205900000004,0.0
+						 11.2517166,59.0566229,0.0 11.2475967,59.0675662,0.0 11.2520599,59.07885889999999,0.0
+						 11.2541199,59.089089699999995,0.0 11.2537766,59.0966726,0.0 11.2527466,59.1014331,0.0
+						 11.258583100000001,59.109365800000006,0.0 11.2726593,59.120644799999994,0.0
+						 11.275749200000002,59.1291015,0.0 11.2751055,59.135971100000006,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_Rabbalshede-Strömstad växel</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.4707565,58.61003250000001,0.0 11.4697266,58.6162014,0.0 11.4635468,58.6217435,0.0
+						 11.4511871,58.62603349999999,0.0 11.4384842,58.636577700000004,0.0 11.4371109,58.6439031,0.0
+						 11.4216614,58.64979799999999,0.0 11.4089584,58.656763500000004,0.0
+						 11.3897324,58.65640629999999,0.0 11.3814926,58.65890650000001,0.0 11.3773727,58.6639061,0.0
+						 11.3660431,58.66854810000001,0.0 11.3533401,58.67211840000001,0.0
+						 11.3433838,58.67051179999999,0.0 11.3327408,58.6731894,0.0 11.3217545,58.681399400000004,0.0
+						 11.314888,58.6896075,0.0 11.2956619,58.713150500000005,0.0 11.2857056,58.722955299999995,0.0
+						 11.2685394,58.746832000000005,0.0 11.2524033,58.7630374,0.0 11.2482834,58.7737181,0.0
+						 11.2503433,58.7863528,0.0 11.2537766,58.796492799999996,0.0 11.2496567,58.812675,0.0
+						 11.250686600000002,58.82422919999999,0.0 11.2551498,58.8350688,0.0 11.2633896,58.8475035,0.0
+						 11.2589264,58.857980700000006,0.0 11.2647629,58.863306900000005,0.0 11.2699127,58.8682773,0.0
+						 11.2870789,58.87573150000001,0.0 11.2911987,58.8810549,0.0 11.2898254,58.8858453,0.0
+						 11.291542100000001,58.89081250000001,0.0 11.2891388,58.89968060000001,0.0
+						 11.2747192,58.9097874,0.0 11.2675095,58.9151056,0.0 11.2568665,58.92963790000001,0.0
+						 11.2486267,58.93264990000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_PT14-Rabbalshede</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.617527,58.51306559999999,0.0 11.6039658,58.521582200000005,0.0 11.5981293,58.5224786,0.0
+						 11.590576200000001,58.523733500000006,0.0 11.5821648,58.5276771,0.0 11.5763283,58.531889,0.0
+						 11.57341,58.53771330000001,0.0 11.5711784,58.5469405,0.0 11.5674019,58.5520458,0.0
+						 11.5660286,58.5542847,0.0 11.5553856,58.55840400000001,0.0 11.553154,58.5618065,0.0
+						 11.551609,58.569058,0.0 11.5442276,58.578277,0.0 11.5330696,58.5804248,0.0
+						 11.5263748,58.5815881,0.0 11.5213966,58.587762,0.0 11.5145302,58.59035639999999,0.0
+						 11.498909,58.595813199999995,0.0 11.4836311,58.6010902,0.0 11.4801979,58.60296830000001,0.0
+						 11.4729881,58.605204,0.0 11.4707565,58.606992399999996,0.0 11.4707565,58.61003250000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_Hede - PT14</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.6777802,58.4648854,0.0 11.672802,58.46874590000001,0.0 11.6736603,58.4723366,0.0
+						 11.6755486,58.477722,0.0 11.6736603,58.4810426,0.0 11.6633606,58.486965,0.0
+						 11.6455078,58.4961159,0.0 11.6254234,58.508134,0.0 11.617527,58.51306559999999,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_Uddevalla-Hede</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.9229126,58.3541894,0.0 11.9098663,58.355990600000005,0.0 11.9028282,58.3553602,0.0
+						 11.891841900000001,58.3524781,0.0 11.8848038,58.3524781,0.0 11.8784523,58.353739,0.0
+						 11.8712425,58.35400920000001,0.0 11.8631744,58.3554502,0.0 11.855793,58.3587824,0.0
+						 11.8508148,58.3613038,0.0 11.8466949,58.36373499999999,0.0 11.8427467,58.36454530000001,0.0
+						 11.8387985,58.3642752,0.0 11.8324471,58.3632847,0.0 11.8252373,58.363464799999996,0.0
+						 11.8197441,58.3640051,0.0 11.813736,58.366976300000005,0.0 11.8058395,58.3698572,0.0
+						 11.795196500000001,58.373278000000006,0.0 11.7890167,58.37705849999999,0.0
+						 11.741809800000002,58.4084568,0.0 11.7342567,58.41286290000001,0.0
+						 11.7227554,58.428504700000005,0.0 11.7172623,58.4316502,0.0 11.6885948,58.4524035,0.0
+						 11.683788300000002,58.4556366,0.0 11.6825867,58.4620123,0.0 11.6777802,58.4648854,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_Byn-Uddevalla</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.8484116,58.100017,0.0 11.8571663,58.1021033,0.0 11.8710709,58.1082708,0.0
+						 11.878109,58.10981259999999,0.0 11.8870354,58.11035669999999,0.0
+						 11.891841900000001,58.1124424,0.0 11.9029999,58.112351700000005,0.0
+						 11.9124413,58.11652279999999,0.0 11.9297791,58.121781299999995,0.0
+						 11.9363022,58.12459160000001,0.0 11.9375038,58.1280361,0.0 11.9400787,58.13220530000001,0.0
+						 11.9402504,58.1386395,0.0 11.9383621,58.1427169,0.0 11.9359589,58.145072500000005,0.0
+						 11.927204100000003,58.153406600000004,0.0 11.9260025,58.1589313,0.0 11.9246292,58.162282,0.0
+						 11.9246292,58.1681675,0.0 11.9177628,58.175500400000004,0.0 11.9131279,58.18446079999999,0.0
+						 11.9143295,58.1891663,0.0 11.920166,58.1944141,0.0 11.919651,58.1987565,0.0
+						 11.9163895,58.20083699999999,0.0 11.9150162,58.20635440000001,0.0
+						 11.9146729,58.21024320000001,0.0 11.9182777,58.214674099999996,0.0 11.9208527,58.2196469,0.0
+						 11.921196,58.2243478,0.0 11.9174194,58.22995190000001,0.0 11.9131279,58.236639499999995,0.0
+						 11.911068,58.242061,0.0 11.9081497,58.2473913,0.0 11.9059181,58.2629259,0.0
+						 11.8959618,58.2678016,0.0 11.887722,58.2756555,0.0 11.8820572,58.281432099999996,0.0
+						 11.8762207,58.2886514,0.0 11.8779373,58.2915387,0.0 11.8863487,58.2946964,0.0
+						 11.9119263,58.3049796,0.0 11.9163895,58.308947800000006,0.0 11.9289207,58.31192360000001,0.0
+						 11.9380188,58.315800800000005,0.0 11.9400787,58.3180548,0.0 11.9369888,58.32220180000001,0.0
+						 11.9314957,58.32562720000001,0.0 11.9225693,58.32941279999999,0.0 11.9163895,58.3322968,0.0
+						 11.9148445,58.3359915,0.0 11.9187927,58.3403166,0.0 11.9266891,58.34148789999999,0.0
+						 11.9436836,58.3457222,0.0 11.9469452,58.3482446,0.0 11.9443703,58.350946900000004,0.0
+						 11.938533800000002,58.3531086,0.0 11.9261742,58.35382909999999,0.0 11.9229126,58.3541894,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> BK_Göteborg-Byn</name>
+				<styleUrl> #existsHH</styleUrl>
+<description><![CDATA[<div lang="sv">omvandlas till HH bana</div><div lang="fi">muutetaan KN radaksi</div><div lang="en">changes to HSR</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.0030785,57.7250527,0.0 11.9998169,57.7279858,0.0 11.9955254,57.7288107,0.0
+						 11.9888306,57.7296356,0.0 11.9833374,57.7278942,0.0 11.9769859,57.725694399999995,0.0
+						 11.9720078,57.725694399999995,0.0 11.9613647,57.72780250000001,0.0
+						 11.9575882,57.732201800000006,0.0 11.944198600000002,57.762524,0.0
+						 11.9440269,57.772778300000006,0.0 11.9447136,57.7773551,0.0 11.9400787,57.78449390000001,0.0
+						 11.9342422,57.7893438,0.0 11.9265175,57.7929122,0.0 11.9107246,57.80434689999999,0.0
+						 11.9019699,57.819069500000005,0.0 11.902141600000002,57.82364050000001,0.0
+						 11.9048882,57.8296733,0.0 11.909008,57.8395431,0.0 11.9141579,57.8487706,0.0
+						 11.9155312,57.8587265,0.0 11.9174194,57.8623793,0.0 11.9227409,57.870414200000006,0.0
+						 11.921196,57.8771695,0.0 11.909008,57.88392350000001,0.0 11.9066048,57.88693500000001,0.0
+						 11.9093513,57.891223600000004,0.0 11.909008,57.894781900000005,0.0
+						 11.9062614,57.897883699999994,0.0 11.8914986,57.90746120000001,0.0
+						 11.8878937,57.912203399999996,0.0 11.8820572,57.9148478,0.0 11.877079000000002,57.9209565,0.0
+						 11.8762207,57.92606150000001,0.0 11.8698692,57.9309835,0.0 11.8681526,57.9349935,0.0
+						 11.8609428,57.938729800000004,0.0 11.8556213,57.940278799999994,0.0 11.8515015,57.9442878,0.0
+						 11.8460083,57.950846999999996,0.0 11.845665,57.9538529,0.0 11.8460083,57.9572228,0.0
+						 11.8382835,57.96651129999999,0.0 11.8322754,57.975888399999995,0.0
+						 11.8351936,57.98171369999999,0.0 11.8322754,57.98862999999999,0.0 11.8284988,57.9976375,0.0
+						 11.8269539,58.00009360000001,0.0 11.8309021,58.0086435,0.0 11.8341637,58.0158274,0.0
+						 11.8387985,58.02537339999999,0.0 11.8370819,58.0284639,0.0 11.8317604,58.0306453,0.0
+						 11.8242073,58.035553,0.0 11.8211174,58.0380974,0.0 11.8204308,58.04227720000001,0.0
+						 11.8169975,58.0452754,0.0 11.8166542,58.047364900000005,0.0 11.816825900000001,58.049091,0.0
+						 11.8216324,58.05408690000001,0.0 11.8230057,58.0567209,0.0 11.8209457,58.0603536,0.0
+						 11.8175125,58.063713500000006,0.0 11.8200874,58.06698240000001,0.0 11.8252373,58.0736099,0.0
+						 11.8284988,58.076423899999995,0.0 11.8303871,58.07978239999999,0.0 11.8312454,58.0841388,0.0
+						 11.8336487,58.091307500000006,0.0 11.8360519,58.0955718,0.0 11.8484116,58.100017,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 1 - Köpenhamn - Ny Elleberg</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.5649261,55.6726478,0.0 12.5661278,55.6695983,0.0 12.5638962,55.6668391,0.0
+						 12.559433,55.6648059,0.0 12.5453568,55.6628694,0.0 12.5418377,55.6614654,0.0
+						 12.5396061,55.6576404,0.0 12.537546200000001,55.6544445,0.0 12.5312805,55.6520716,0.0
+						 12.5256157,55.6511031,0.0 12.5213242,55.6511031,0.0 12.5172043,55.6520716,0.0
+						 12.5154448,55.6524833,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 2 - Örestad - Ny Elleberg</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.5788736,55.6284321,0.0 12.5691319,55.6294981,0.0 12.5618362,55.6318239,0.0
+						 12.554884,55.6354092,0.0 12.5502491,55.6395754,0.0 12.546644200000001,55.6423366,0.0
+						 12.5414085,55.6433538,0.0 12.5335979,55.64243340000001,0.0 12.5271606,55.6433053,0.0
+						 12.5225258,55.64572720000001,0.0 12.5196075,55.6491175,0.0 12.5154448,55.6524833,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 3 - Ny Ellerberg - Köge</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.5154448,55.6524833,0.0 12.5129128,55.6516358,0.0 12.5093937,55.6486816,0.0
+						 12.5039864,55.6437897,0.0 12.5002098,55.6401083,0.0 12.4965191,55.6368141,0.0
+						 12.4930859,55.6337135,0.0 12.4904251,55.6313393,0.0 12.4876785,55.6302734,0.0
+						 12.4827433,55.6290378,0.0 12.4763489,55.6276083,0.0 12.4723148,55.6269299,0.0
+						 12.46562,55.6267845,0.0 12.4601269,55.62625150000001,0.0 12.4503422,55.6245554,0.0
+						 12.445364,55.623053,0.0 12.438669200000001,55.6213568,0.0 12.4306011,55.62033900000001,0.0
+						 12.4215031,55.6210175,0.0 12.413692500000002,55.6214537,0.0 12.401247,55.6236831,0.0
+						 12.395668,55.6236346,0.0 12.3875999,55.6232469,0.0 12.380476,55.62315,0.0
+						 12.3725796,55.6222292,0.0 12.3679447,55.6208237,0.0 12.3634815,55.6184488,0.0
+						 12.3607349,55.6151528,0.0 12.357645,55.6131653,0.0 12.3543835,55.6102082,0.0
+						 12.3513794,55.6072024,0.0 12.348547,55.6049722,0.0 12.341423,55.60240240000001,0.0
+						 12.3342133,55.5982321,0.0 12.3316383,55.59590440000001,0.0 12.3245144,55.5909574,0.0
+						 12.3199654,55.5897933,0.0 12.3088932,55.5884837,0.0 12.304945,55.58678590000001,0.0
+						 12.3013401,55.5839724,0.0 12.2894955,55.5784417,0.0 12.2856331,55.5755305,0.0
+						 12.281599,55.5708721,0.0 12.2768784,55.568106,0.0 12.2718143,55.5666986,0.0
+						 12.2570515,55.56233040000001,0.0 12.2506142,55.55990340000001,0.0 12.240057,55.5507766,0.0
+						 12.2327614,55.5456783,0.0 12.2259808,55.5418905,0.0 12.2210884,55.5373253,0.0
+						 12.217741,55.5326624,0.0 12.2115612,55.5252784,0.0 12.2072697,55.51896200000001,0.0
+						 12.2043514,55.5162893,0.0 12.198772400000001,55.51254740000001,0.0 12.1773148,55.5009304,0.0
+						 12.173795700000001,55.4979162,0.0 12.1717358,55.4927138,0.0 12.1702766,55.4890182,0.0
+						 12.1720791,55.4828418,0.0 12.1776581,55.4786589,0.0 12.1813488,55.4768591,0.0
+						 12.184267,55.470291700000004,0.0 12.186327000000002,55.464599,0.0 12.1878719,55.461874,0.0
+						 12.1862411,55.4574699,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 4 - Köge - Tureby</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.1862411,55.4574699,0.0 12.1827221,55.447078,0.0 12.1780014,55.4423557,0.0
+						 12.1718216,55.43928840000001,0.0 12.1483898,55.42652950000001,0.0 12.1434116,55.4234123,0.0
+						 12.1396351,55.4202947,0.0 12.131738700000001,55.412987,0.0 12.1135426,55.3959793,0.0
+						 12.1053028,55.388667100000006,0.0 12.0969772,55.3846692,0.0 12.0854759,55.3784277,0.0
+						 12.0761633,55.3732583,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 5 - Tureby - Haslev</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.0761633,55.3732583,0.0 12.0614433,55.3658444,0.0 11.9869423,55.3389084,0.0
+						 11.9611502,55.3293641,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 6 - Haslev - Ny Holsted</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.9611502,55.3293641,0.0 11.9280624,55.31429860000001,0.0 11.9160461,55.3055057,0.0
+						 11.9047165,55.2892826,0.0 11.894073500000001,55.2738351,0.0 11.8724442,55.267185,0.0
+						 11.843605,55.2587729,0.0 11.8161392,55.24859790000001,0.0 11.7735672,55.2470322,0.0
+						 11.7629242,55.2444879,0.0 11.7629242,55.2419435,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Ny Ellerberg - Hedehuse</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.5154448,55.6524833,0.0 12.5089645,55.6555098,0.0 12.500038100000001,55.6591898,0.0
+						 12.4873352,55.663644,0.0 12.4801254,55.6638377,0.0 12.4358368,55.6646122,0.0
+						 12.419014,55.6648059,0.0 12.3706055,55.6603518,0.0 12.320480300000002,55.6545413,0.0
+						 12.2888947,55.65066720000001,0.0 12.2597122,55.6473739,0.0 12.2401428,55.6454366,0.0
+						 12.2246933,55.6446616,0.0 12.2078705,55.646599,0.0 12.1879578,55.65027980000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hedehuse-Ringsted</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						12.1879578,55.65027980000001,0.0 12.1501923,55.6493112,0.0 12.1285629,55.6471802,0.0
+						 12.1144867,55.646599,0.0 12.1000671,55.6431116,0.0 12.0866776,55.6374924,0.0
+						 12.0729446,55.6314847,0.0 12.0612717,55.6229561,0.0 12.0523453,55.617334,0.0
+						 12.0485687,55.6136501,0.0 12.0427322,55.5996869,0.0 12.035179100000002,55.575045300000006,0.0
+						 12.0355225,55.5637865,0.0 12.0334625,55.5579617,0.0 12.0262527,55.5499998,0.0
+						 12.0066833,55.53795670000001,0.0 11.9867706,55.5262986,0.0 11.9819641,55.5226062,0.0
+						 11.9785309,55.5181359,0.0 11.975441,55.5138595,0.0 11.9726944,55.5031665,0.0
+						 11.9716644,55.4901366,0.0 11.9668579,55.4841064,0.0 11.9572449,55.4774915,0.0
+						 11.9387054,55.468151,0.0 11.922226,55.4597815,0.0 11.907806400000002,55.4529679,0.0
+						 11.8944168,55.4494633,0.0 11.874847400000002,55.4473214,0.0 11.8291855,55.4407004,0.0
+						 11.7869568,55.4379737,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Ringsted - Ny Holsted</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.7869568,55.4379737,0.0 11.7708206,55.4364156,0.0 11.7615509,55.4321303,0.0
+						 11.7570877,55.4243377,0.0 11.7498779,55.4138153,0.0 11.738205,55.3949069,0.0
+						 11.7358017,55.3915921,0.0 11.7268753,55.3859368,0.0 11.7021561,55.3683809,0.0
+						 11.6942596,55.3619417,0.0 11.6956329,55.354916,0.0 11.7011261,55.3459369,0.0
+						 11.7313385,55.3309021,0.0 11.7375183,55.326410100000004,0.0 11.7423248,55.3205501,0.0
+						 11.7443848,55.3129309,0.0 11.7426682,55.2877185,0.0 11.7430115,55.2775509,0.0
+						 11.7471313,55.268163,0.0 11.7533112,55.2558381,0.0 11.7629242,55.2419435,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Ny Holsted - Lundby</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.7629242,55.2419435,0.0 11.7618942,55.2376372,0.0 11.7649841,55.2335261,0.0
+						 11.7684174,55.2284357,0.0 11.7763138,55.2231487,0.0 11.7852402,55.2217779,0.0
+						 11.7900467,55.217469400000006,0.0 11.7927933,55.2063042,0.0 11.8034363,55.2012103,0.0
+						 11.8188858,55.1949399,0.0 11.832962,55.1888646,0.0 11.8442917,55.1765151,0.0
+						 11.8569946,55.1565125,0.0 11.857338,55.1484694,0.0 11.8535614,55.129630500000005,0.0
+						 11.857338,55.1227599,0.0 11.8692684,55.1106845,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 7 - Lundby - Falster Nyköping</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.8692684,55.1106845,0.0 11.876564,55.1001769,0.0 11.8762207,55.0921225,0.0
+						 11.8724442,55.0608716,0.0 11.8751907,55.0443519,0.0 11.8851471,55.0368764,0.0
+						 11.9023132,55.0213309,0.0 11.9019699,55.0156228,0.0 11.8971634,55.0053855,0.0
+						 11.8927002,54.99770590000001,0.0 11.888237,54.9945548,0.0 11.8844604,54.9892369,0.0
+						 11.8899536,54.9843122,0.0 11.8961334,54.980175,0.0 11.8963051,54.9775152,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Storström bron</name>
+				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.8963051,54.9775152,0.0 11.8947601,54.9750522,0.0 11.8672943,54.9510056,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 7 - Lundby - Falster NyköpingB</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.8672943,54.9510056,0.0 11.8655777,54.9456818,0.0 11.8683243,54.9344405,0.0
+						 11.8779373,54.9220123,0.0 11.886177100000001,54.9125405,0.0 11.8865204,54.9014874,0.0
+						 11.886177100000001,54.8606038,0.0 11.8865204,54.8546752,0.0 11.8827438,54.847362,0.0
+						 11.8837738,54.8279857,0.0 11.886177100000001,54.81275490000001,0.0 11.889267,54.805632,0.0
+						 11.888237,54.795935,0.0 11.8865204,54.781088100000005,0.0 11.8830872,54.7715832,0.0
+						 11.8778515,54.7673251,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 8 - Falster Nyköping - Rödhave</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.8778515,54.7673251,0.0 11.867981,54.7593276,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Guldbrosunds bron</name>
+				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.867981,54.7593276,0.0 11.8637753,54.7581637,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 8 - Falster Nyköping - RödhaveB</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.8637753,54.7581637,0.0 11.8425751,54.7535575,0.0 11.7993164,54.7495947,0.0
+						 11.747818,54.740082400000006,0.0 11.6746044,54.7254628,0.0 11.6386414,54.7170852,0.0
+						 11.6173553,54.7103422,0.0 11.5885162,54.7028045,0.0 11.542511,54.6932812,0.0
+						 11.478653,54.6893125,0.0 11.4498138,54.68494650000001,0.0 11.3969421,54.6710516,0.0
+						 11.3742828,54.6635066,0.0 11.3557434,54.6556127,0.0 11.3557434,54.6556127,0.0
+						 11.3533401,54.65278240000001,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 9 - Fehmar sund tunneln</name>
+				<styleUrl> #sTUNNEL</styleUrl>
+<description><![CDATA[<div lang="sv">järnvägstunnel</div><div lang="fi">rautatietunneli</div><div lang="en">railway tunnel</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.3533401,54.65278240000001,0.0 11.3426971,54.646426,0.0 11.228714,54.5027449,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 11 - Puttgarden - Grossebode</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.228714,54.5027449,0.0 11.2268257,54.5011501,0.0 11.2263107,54.49995390000001,0.0
+						 11.1923218,54.4572667,0.0 11.1833954,54.4510793,0.0 11.1651993,54.4418964,0.0
+						 11.137046800000002,54.42831780000001,0.0 11.1281204,54.4207278,0.0 11.1142159,54.4043196,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Fehmarsund bron</name>
+				<styleUrl> #sBRO</styleUrl>
+<description><![CDATA[<div lang="sv">bro</div><div lang="fi">silta</div><div lang="en">bridge</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.1142159,54.4043196,0.0 11.1092377,54.3968501,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 11 - Puttgarden - GrossebodeB</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.1092377,54.3968501,0.0 11.0941315,54.3739585,0.0 11.089325000000002,54.3699586,0.0
+						 11.0810423,54.3662834,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 12 - Grossebode - Lensahn</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						11.0810423,54.3662834,0.0 11.0656357,54.3601573,0.0 11.0501862,54.35715650000001,0.0
+						 11.0433197,54.350954,0.0 11.0443497,54.3449507,0.0 11.0433197,54.335744,0.0
+						 11.0378265,54.3301388,0.0 11.0271835,54.3251336,0.0 11.0206604,54.3199276,0.0
+						 11.0168839,54.3135192,0.0 11.0158539,54.3055073,0.0 11.0041809,54.3031035,0.0
+						 10.9859848,54.2940877,0.0 10.9612656,54.2880761,0.0 10.9389496,54.2874749,0.0
+						 10.9252167,54.2876753,0.0 10.9111404,54.2902805,0.0 10.899467500000002,54.2908816,0.0
+						 10.8908844,54.2890781,0.0 10.8877945,54.2884769,0.0 10.8827305,54.283942700000004,0.0
+						 10.8898544,54.27625080000001,0.0 10.8877945,54.2690336,0.0 10.8860779,54.2551973,0.0
+						 10.8840179,54.251587,0.0 10.8874512,54.2463716,0.0 10.8877945,54.2437637,0.0
+						 10.885734600000001,54.234133,0.0 10.8888245,54.228514,0.0 10.890369400000003,54.2193314,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 13 - Lensahn - Scharbeutz</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.890369400000003,54.2193314,0.0 10.881958,54.2002069,0.0 10.874404900000002,54.1869501,0.0
+						 10.8647919,54.1732872,0.0 10.8654785,54.164444,0.0 10.8558655,54.15198,0.0
+						 10.8194733,54.1415235,0.0 10.806427,54.1242241,0.0 10.8009338,54.111748000000006,0.0
+						 10.7899475,54.0904092,0.0 10.7858276,54.0759086,0.0 10.7631683,54.0674476,0.0
+						 10.7460022,54.0565666,0.0 10.7302094,54.0424574,0.0 10.7377625,54.0279401,0.0
+						 10.7457447,54.018712900000004,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 14 - Scharbeutz - Lubeck</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.7457447,54.018712900000004,0.0 10.7573318,54.0029262,0.0 10.764198300000002,53.9920283,0.0
+						 10.760765100000002,53.9766858,0.0 10.7576752,53.9698201,0.0 10.7387924,53.9453775,0.0
+						 10.7209396,53.9334539,0.0 10.7027006,53.9162447,0.0 10.694847100000002,53.9097989,0.0
+						 10.6941605,53.8966514,0.0 10.6903839,53.8861305,0.0 10.6852341,53.8810714,0.0
+						 10.6783676,53.8735828,0.0 10.670557,53.8670039,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 15 - Lubeck - Bad Oldesloe</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.670557,53.8670039,0.0 10.6567383,53.8626511,0.0 10.656395,53.8525266,0.0
+						 10.6567383,53.8440201,0.0 10.6533051,53.8387534,0.0 10.6278992,53.8363223,0.0
+						 10.5643845,53.8304467,0.0 10.5509949,53.8328781,0.0 10.5341721,53.8367275,0.0
+						 10.5211258,53.8397663,0.0 10.5094528,53.8375379,0.0 10.4945183,53.830624,0.0
+						 10.4847336,53.8274073,0.0 10.4304886,53.8195038,0.0 10.4122925,53.8144366,0.0
+						 10.3920364,53.8101797,0.0 10.387916600000002,53.809977,0.0 10.3819513,53.8054916,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Line 16 - Bad Oldesloe - Hamb.Rahlstedt</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.3819513,53.8054916,0.0 10.3542709,53.7769206,0.0 10.3340149,53.7665724,0.0
+						 10.2735901,53.7326694,0.0 10.2691269,53.7279726,0.0 10.2478409,53.6786118,0.0
+						 10.2413177,53.67007,0.0 10.2362967,53.66923100000001,0.0 10.2186584,53.6603059,0.0
+						 10.2131653,53.6558299,0.0 10.200119,53.6366998,0.0 10.1898193,53.6277424,0.0
+						 10.1740265,53.6220412,0.0 10.1599503,53.6096181,0.0 10.1542854,53.6047293,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+			<Placemark>
+				<name> Hamb.Rahlstedt - Hamburg</name>
+				<styleUrl> #exists</styleUrl>
+<description><![CDATA[<div lang="sv">standard spårvidd</div><div lang="fi">normaali raideleveys</div><div lang="en">standard gauge railway</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						10.1542854,53.6047293,0.0 10.1067352,53.5765058,0.0 10.1003838,53.575180800000005,0.0
+						 10.0883675,53.5732441,0.0 10.0754929,53.5694725,0.0 10.0575542,53.5650123,0.0
+						 10.0433922,53.5627439,0.0 10.0344658,53.559787,0.0 10.026741,53.5560142,0.0
+						 10.0243378,53.5529549,0.0 10.0215912,53.5514251,0.0 10.0174713,53.5499973,0.0
+						 10.0136948,53.5495894,0.0 10.0097466,53.5503033,0.0 10.0078583,53.5515271,0.0
+						 10.0068283,53.5533628,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
 </Folder>
-<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
-<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
-<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
-<Style id='FOUR'><LineStyle><color>ffA09E5F</color><width>3</width></LineStyle></Style>
-<Style id='BROTUNNEL'><LineStyle><color> ff2FFFAD</color><width> 4</width></LineStyle></Style>
-<Style id='sBANK'><LineStyle><color> ffD0E040</color><width> 4</width></LineStyle></Style>
-<Style id='exists'><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
 <Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
 <Style id='BANKTUNNEL'><LineStyle><color> ff00FC7C</color><width> 4</width></LineStyle></Style>
+<Style id='BROTUNNEL'><LineStyle><color> ff2FFFAD</color><width> 4</width></LineStyle></Style>
+<Style id='FOUR'><LineStyle><color>ffA09E5F</color><width>3</width></LineStyle></Style>
+<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
+<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
+<Style id='exists'><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
+<Style id='sBANK'><LineStyle><color> ffD0E040</color><width> 4</width></LineStyle></Style>
 </Document>
 </kml>

@@ -29,10 +29,7 @@
 						24.432907104492188,59.98782590710937,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-yellow</styleUrl>
@@ -83,8 +80,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
-					 lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Kakumäe (Ugglebacka)</b></div> <div
+					 lang="fi"><b>Kakumäki</b></div> <div lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -102,21 +99,8 @@
 				</description>
 			</Placemark>
 		</Folder>
-		<Style id='icon-paddle-yellow'><IconStyle>
-		<scale> 0.7</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-green'><IconStyle>
-		<scale> 0.7</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-purple'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-red'><IconStyle>
-		<scale> 1.1</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-purple'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-yellow'><IconStyle><scale> 0.7</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

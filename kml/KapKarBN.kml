@@ -1017,11 +1017,11 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-<Style id='sBANK'><LineStyle><color> ffD0E040</color><width> 4</width></LineStyle></Style>
-<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
-<Style id='BROTUNNEL'><LineStyle><color> ff2FFFAD</color><width> 4</width></LineStyle></Style>
-<Style id='BANKTUNNEL'><LineStyle><color> ff00FC7C</color><width> 4</width></LineStyle></Style>
-<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
 <Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
+<Style id='BROTUNNEL'><LineStyle><color> ff2FFFAD</color><width> 4</width></LineStyle></Style>
+<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
+<Style id='sBANK'><LineStyle><color> ffD0E040</color><width> 4</width></LineStyle></Style>
+<Style id='BANKTUNNEL'><LineStyle><color> ff00FC7C</color><width> 4</width></LineStyle></Style>
+<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

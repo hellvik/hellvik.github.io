@@ -34,13 +34,6 @@
 				</description>
 			</Placemark>
 		</Folder>
-		<Style id='icon-paddle-green'><IconStyle>
-		<scale> 0.7</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href></Icon></IconStyle></Style>
-		<Style id='icon-paddle-yellow'><IconStyle>
-		<scale> 0.7</scale>
-		<Icon><href>
-		 http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-yellow'><IconStyle><scale> 0.7</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>
