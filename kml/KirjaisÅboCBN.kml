@@ -372,6 +372,6 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-<Style id='CAR'><LineStyle><color>ffB48246</color><width>3</width></LineStyle></Style>
+<Style id="CAR"><LineStyle><color>ffB48246</color><width>3</width></LineStyle></Style>
 	</Document>
 </kml>

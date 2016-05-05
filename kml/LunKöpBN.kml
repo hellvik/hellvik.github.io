@@ -121,9 +121,9 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-<Style id='existsHH'><LineStyle><color> ff3C14DC</color><width> 4</width></LineStyle></Style>
-<Style id='sBRO'><LineStyle><color> ffFFFF00</color><width> 4</width></LineStyle></Style>
-<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
-<Style id='exists'><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
+<Style id="existsHH"><LineStyle><color> ff008CFF</color><width> 4</width></LineStyle></Style>
+<Style id="sBRO"><LineStyle><color> ff7AA0FF</color><width> 4</width></LineStyle></Style>
+<Style id="sTUNNEL"><LineStyle><color> ff00A5FF</color><width> 4</width></LineStyle></Style>
+<Style id="exists"><LineStyle><color> ff0000FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

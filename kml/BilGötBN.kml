@@ -156,6 +156,6 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-<Style id='exists'><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
+<Style id="exists"><LineStyle><color> ff0000FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

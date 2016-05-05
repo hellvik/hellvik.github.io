@@ -100,7 +100,7 @@
 				</LineString>
 			</Placemark>
 		</Folder>
-<Style id='sTUNNEL'><LineStyle><color> ff00FFFF</color><width> 4</width></LineStyle></Style>
-<Style id='plannedHH'><LineStyle><color> ff0045FF</color><width> 4</width></LineStyle></Style>
+<Style id="sTUNNEL"><LineStyle><color> ff00A5FF</color><width> 4</width></LineStyle></Style>
+<Style id="plannedHH"><LineStyle><color> ffFF00FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

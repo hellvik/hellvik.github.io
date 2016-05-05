@@ -100,7 +100,7 @@
 			</Placemark>
 		</Folder>
 <Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-purple'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-yellow'><IconStyle><scale> 0.7</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-purple'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>
