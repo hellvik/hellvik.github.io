@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="sv" dir="ltr">
+<html lang="fi" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
 <meta name="pubdate" content="20160524" />
 <meta name="google" content="notranslate" />
-<meta name="Description" CONTENT="Höghastighets järnvägsnätet för Norden"/>
+<meta name="Description" CONTENT="Pohjolan korkeanopeuden rautatieverkko"/>
 <meta name="robots" content="nofollow" />
 <title>
-Oslo
+Jönköping
 </title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
 <style type="text/css">
@@ -52,7 +52,7 @@ width:100%;
 					zoom : 8, /* zoom : 7,*/
 
 					/*center : new google.maps.LatLng(59.974858163955766,21.196317672729492),*//* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
-					center :oslo,
+					center :jonkoping,
 
 					/*mapTypeId: google.maps.MapTypeId.SATELLITE,*/
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -84,10 +84,10 @@ width:100%;
 var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/All3BN.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
 gLayer0.setMap(map);
-var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/GarOslBN.kml',suppressInfoWindows: true});
+var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/NäsHäsBN.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
 gLayer9.setMap(map);
-var gLayer8=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/HalTroGötBN.kml',suppressInfoWindows: true});
+var gLayer8=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/GriNäsBN.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer8, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
 gLayer8.setMap(map);
 /*
@@ -95,18 +95,24 @@ var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvi
 google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
 gLayer1.setMap(map);
 */
-var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/GarOslPT.kml',suppressInfoWindows: true});
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/GriJönPT.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
 gLayer1.setMap(map);
-var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/OslHalPT.kml',suppressInfoWindows: true});
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JönGötPT.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
 gLayer2.setMap(map);
-var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/HalTroGötPT.kml',suppressInfoWindows: true});
+var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JönHäsPT.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer3, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
 gLayer3.setMap(map);
-var gLayer4=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/HalUddGötPT.kml',suppressInfoWindows: true});
+var gLayer4=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/NäsHäsPT.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer4, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
 gLayer4.setMap(map);
+var gLayer5=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/GriNäsPT.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer5, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer5.setMap(map);
+var gLayer6=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/StoTraGriPT.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer6, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
+gLayer6.setMap(map);
 			}
 			/* A utility object for simple event handling */
 			var Utils = { };
@@ -152,34 +158,35 @@ gLayer4.setMap(map);
 </head>
 <body>
 <table id="uno" class="menu"><tbody><tr>
-<!--td style="vertical-align: top;text-align: center;"><a href="../index.html">västerut </a><br></td-->
-<td style="vertical-align: top;text-align: center;"><a href="nGoteborg.html">söderut </a><br></td>
-<!--td style="vertical-align: top;text-align: center;"><a href="../index.html">norrut </a><br></td-->
-<td style="vertical-align: top;text-align: center;"><a href="nHallsberg.html">österut </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="nGoteborg.html">länteen </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="nKopenhamn.html">etelään </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="nHallsberg.html">pohjoiseen </a><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="nStockholm.html">itään </a><br></td>
 <td style="vertical-align: top; text-align: center;"><a href="toc3L.html">TOC</a><br></td>
-<td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
-<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A77</span><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">indeksi</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A82</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
 
 <h1>
-Oslo
+Jönköping
 </h1>
 <br>
 <div id="map">
 </div>
-<p>map center :oslo<p/>
-<h2>Kommentarer</h2>
-<p>Vid digitaliceringen av bansträckorna kom följande synpunkter fram:
+<p>map center :Jönköping<p/>
+<p>
+Tässä on näkyy seuraamukset <b>Sverige förhandlingen</b> selvityksestä. Lyhin matka Tukholmasta Köpikseen kulkee Alvestan kautta mutta silti on
+valittu Jönköping. Nykyinen päärata Tukholmasta etelään on tämä Alvestan kautta kulkeva ja rata sinänsä on kohtalaisen suora kartalle merkityltä Gripenbergistä etelään
+(Gripenberg on pieni paikkakunta lähellä Tranåsia). Tästä päätöksestä Växjössä on yriteet valittaa koska Alvesta sijaitsee Växjön kunnassa.  
 </p>
-<ul>
-	<li>Oslo - Gardermoen är utritad. HH-bana kanske i framtiden<br></li>
-	<li>Vid Sarpsborg är den tänkta HH-banan uträtad så att kröken ner till Fredrikstad ej är med<br></li>
-	<li>Väster om Halden (grön paddel med stjärna) är inritad en växel för den nya HH-banan mot Strömstads hållet och Göteborg,
-	alltså mot Bohusbanan. Bohusbanan måste utvecklas till tvåspårig HH-bana på grund av detta.<br></li>
-	<li>Kröken Halden - Erikstad - Öxnered - Trollhättan - Göteborg är ritad som vanlig bana, alltså nuvarande existerande bana blir kvar men
-	byggs ej om till HH-bana varför Öxnered ej är station på HH-banan<br></li>
-	<li>Här antas att Bohusbanans tunnel vid Strömstad har en ny växel för planerade HH-banan som vänder mot norr.<br></li>
-</ul>
+<p>
+Toisaalta myös KN-rata Göteborgin ja Tukholman kautta on päätetty yhdistää Jönköpingissä etelään vievän KN-rataan. Nykyinen päärata kulkeen Vättern järven pohjoispuolella
+ja uusi kulkisi saman järven eteläpuolella, ero valintojen välillä ei ole kovinkaan suuri. Lyhin matka olisi linjata rataa Vättern järjen yli tai alitse mutta tämä
+ei varmaankaan ole taloudellista. Miten rata Jönköping - Göteborg todella toteutetaan ei ole tietoa joten linjaus on laajalti arvausta ja perustuu valtatie 40 linjaukseen.
+</p>
+<p>
+Jönköpingin keskusrautatieasema sijaitsee KN-ratojen nähden hullusti joten esityksissä on valittu Jönköpingin Rocksjö asema lähtökohdaksi (ja myös paremman rokkaavan nimen takia).
+</p>
 <br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
 </body>
 </html>

@@ -6,10 +6,10 @@
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
 <meta name="pubdate" content="20160524" />
 <meta name="google" content="notranslate" />
-<meta name="description" CONTENT="Aloitteita yhdistää Ruotsin, Suomen ja Viron rautatieverkkoja Itämeren ylitse ja alitse käyttäen tunneleita, siltoja ja pengereitä"/>
+<meta name="description" CONTENT="Aloitteita yhdistää Ruotsin, Suomen ja Viron rautatieverkkoja Itämeren ylitse ja alitse käyttäen tunneleita, siltoja ja pengereitä" />
 <!--meta name="pubdate" content="20160416"-->
 <title>
-indeksi
+TOC level 2
 </title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <style type="text/css">
@@ -39,10 +39,9 @@ body { height: 100%; margin: 0; padding: 0 }
 			function InitMap()
 			{
 				/* Set all options for the map */
-				var alvesta=new google.maps.LatLng(56.8987149,14.5578289); //14.5578289,56.8987149,0.0
 				var options = {
-					zoom : 6, /* zoom : 7,*/
-					center : alvesta, /*new google.maps.LatLng(59.7527055927204,21.5025655953125), center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					zoom : 7, /* zoom : 7,*/
+					center : new google.maps.LatLng(59.7527055927204,21.5025655953125),/* center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
 					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
 					mapTypeControl: true,
 					mapTypeControlOptions: {
@@ -69,10 +68,21 @@ body { height: 100%; margin: 0; padding: 0 }
 				};
 				/* Create a new Map for the application */
 				map = new google.maps.Map(document.getElementById('map'),options);
-
-var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/All3BN.kml',suppressInfoWindows: true});
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorHelBN.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
 gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/JorTalBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer1.setMap(map);
+var gLayer2=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KapKarBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer2, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer2.setMap(map);
+var gLayer3=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/KarJorBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer3, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer3.setMap(map);
+var gLayer4=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/StoKapBN.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer4, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer4.setMap(map);
 
 			}
 			/* A utility object for simple event handling */
@@ -119,31 +129,60 @@ gLayer0.setMap(map);
 </head>
 <body>
 <table id="uno" class="menu"><tbody><tr>
-<td style="vertical-align: top; text-align: left;"><a href="../index.html">root page</a></td>
-<td style="vertical-align: top;text-align: center;"><a href="../sv/index.html"><img src="../picture/sverige.png" height="10" width="16"> &nbsp;ruotsiksi </a><br></td>
-<td style="vertical-align: top;text-align: center;"><a href="../en/index.html"><img src="../picture/england.png" height="10" width="16"> &nbsp;in&nbsp;english </a><br></td>
-<!-- td style="vertical-align: top; text-align: center;"><a href="../index.html">index</a><br></td -->
-<td style="vertical-align: top; text-align: center;"><a href="https://sites.google.com/site/rails2jorvasfi/">rails2jorvasFI</a><br></td>
-<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A46</span><br></td>
+<td style="vertical-align: top;text-align: center;"><a href="nBjorkboda.html">Level 3 (Björkboda) </a><br></td>
+<td style="vertical-align: top; text-align: center;"><a href="index.html">indeksi</a><br></td>
+<td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A88</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
 
 <small>[esitys muutettu 2016-05-24]</small>
 <h1>
-Aloitussivu (indeksi)&nbsp;&nbsp; 
-<img alt="fi" src="../picture/finland.png" height="20" width="32">
+TOC Level 2 - Kapellskär &amp; Helsinki &amp; Tallinna
 </h1>
 <p>
-Suunnitelma selostetaan kolmessa tasossa, olkoonkin ettei taso 1 ole suomenkielisenä. Tasoille on annettu nimi "level 2" ja "level 3", joten
-maantieteellisesti kattavin on "level 3" ja tätä suppeampi on "level 2".
+Tässä esitetään seuraavat aloitteet
 </p>
-<ul>
-<!--li>level - <a href="toc1L.html">Kapellskär - Karis</a>. specialbehandlar trafiken över Åland och behandlar detta problemkomplex i detalj.<br></li-->
-<li>2 level - <a href="toc2L.html">Kapellskär x Helsinki x Tallinna</a>. Keskittyy Suomen x Ruotsin x Viron liikenteeseen seitsemänä aloitteena.<br></li>
-<li>3 level - <a href="toc3L.html">Pohjolan korkeanopeuden (KN) rautatieverkko</a>. 
-Käsittele korkeanopeuden (KN) rautatieverkon suunnitelmia tänään erityisesti Ruotsissa mutta laajentaa sillä KN-radalla jota norjalaiset ajavat. KN-rata Tukholmasta itään
-kohti sekä Helsinkiä että Tallinnaa on sama kun edellisellä tasolla. Tavoite on antaa KN-ratojen kohdalla yleiskuvaa Pohjolan tasolla<br></li>
-</ul>
-<p><font color="#ff3333"><b>Huom</b> Valitsemalla indeksi sivun keltaisella yläpalkilla pääset tälle sivulle</font></p>
+<ol>
+<li>
+Sukkulaa
+<a href="JorvasTallinnBIL.html">
+Jorvaksesta (Suomi) Tabasaluun (Viro)
+</a>
+ autokuljetusta
+        varten
+</li>
+<li>
+Sukkulaa 
+<a href="KarisKapellskarBIL.html">
+Karjaalta (Suomi) Lemlantiin (Ahvenanmaa) ja
+        Kapellskäriin (Ruotsi)
+</a>
+ autokuljetusta varten
+<br>
+</li>
+<li>
+Rautatietä Suomenlahden alitse 
+<a href="JorvasTallinn.html">Jorvaksesta Tallinnaan</a>
+</li>
+<li>
+Vakiolevyinen, eli Ruotsin kiskoleveyden mukainen, rautatie 
+<a href="Helsingfors.html">Espoosta Jorvakseen</a>
+mutta nykyinen kiskoleveys Espoosta Helsinkiin, eli Espoo - Helsinki väliä ei muuteta.
+</li>
+<li>
+Uusi vakiolevyinen rannikkorautatie 
+<a href="KarisJorvas.html">Jorvaksen ja Karjaan välille</a>
+</li>
+<li>
+Rautatie Ruotsiin 
+<a href="KarisKapellskar.html">Karjaalta Kapellskäriin</a>
+ Ahvenanmaan ja Turun saariston kautta
+</li>
+<li>
+Rautatie 
+<a href="Stockholm.html">
+Kapellskärin ja Tukholman</a>
+välille</li>
+</ol>
 <div id="map">
 </div>
 <!--${COLORMAPfi}-->
@@ -162,21 +201,35 @@ kohti sekä Helsinkiä että Tallinnaa on sama kun edellisellä tasolla. Tavoite
 <tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>rautatietunneli</small></td></tr>
 </tbody></table>
 <p>
-Tällä hetkellä minulla ei ole selvää mitä tai miten suomeksi sanotaan "höghastighetståg". 
-Ongelma on että pikajuna ja vastaavat on varattu alle 250 km/h kulkeville junille. 
-VR käyttää myös termiä "Pendolino" ja "InterCity" mutta kyseessä on tavaramerkki. 
-Termi "korkeanopeuksinen" on aika kömpelö mutta saa kelvata. Lyhenne "KN" tulee tästä termistä. 
+Aloitteet yhdistävät maaliikennettä pohjoisen Itämeren kohdalta
+ja samalla yhdistävät EU projekit 
+<a href="http://www.rail-baltica.com/pub/">
+Rail Baltica
+</a>
+ ja 
+<a href="http://europakorridoren.se/eng/">
+Europakorridoren
+</a>
+.
 </p>
 <p>
-KN-rata on sinänsä tavallinen junarata mutta erikoisvarustettuna ja mutkissa kaltevuutta on korostettu jotta rataa pystytään ajamaan 300 - 320 km/h. Lisäksi on radalle
-joukon lisävaatimuksia. EU puhuu EU 1 radoista eli nämä KN-radata ja EU 2 ja EU 3 radoista, eli muut.
+Aloitteissa on pyritty painottamaan taloudellisuutta ja
+turvallisuutta. Taloudellissuudella tarkoitetaan että valittu
+linjaus ei tee turhia mutkia eikä perustu tekniikaan joka ei tällä
+hetkellä olisi ostettavissa tai helposti kehitetävissä nykyisen
+tietotaidon puitteessa. Turvallisuus painotetaan siten että
+pyritään pitämään merenalaiset tunnelit niin lyhyinä kun suinkin on
+mahdollista. Onnettomuuden sattuessa nousee välttämättä esiin
+kysymykset jotka liittyvät ihmisten pelastamiseen merenalaisista
+tunneleista.
 </p>
 <p>
-Junat jotka pystyvät tähän 300 - 320 km/h vauhtiin ovat erikoisjunia. Tässä esityksessä oletetaan silti että KN-radalla voidaan ajaa myös perinteisempää liikennettä
-ja tämä tulee olemaan haaste liikenneohjausjärjestelmille.
-Koska jotkut junat kulkevat 300 - 320km/h niin radat on eristettävä hirveistä, peuroista, autoista ja ihmisistä ja luonnollisesti radalla ei saa olla tasoristeyksiä.
-Tässä siis kauniit periaatteet mutta on oletettavaa että kompromissejä joudutaan tekemään, toivottavasti ei liikaa näitä kompromissejä jotta matkustusaikasuunnitelmat
-todellakin käytännössä toteutuisi.
+Esityksissä painottuu myös merkitävästi vihreät arvot jos näitä
+aloitteiden seuraamukset vertaa nykytilaan. Vähäpäästöisin
+liikennemuoto on rautatie ja tämä on keskeinen kuljetusväline.
+Autoliikenne on mukana johtuen lähinnä nykyisistä realiteetteistä
+kaikissa kolmessa EU-maissa. Missään ei rautatien kattavuus ole
+edes lähellä sitä mitä tieverkko tarjoaa.
 </p>
 <!--${TAGS}-->
 <hr/><p><span style="font-style: italic;">Tags:</span><br>
