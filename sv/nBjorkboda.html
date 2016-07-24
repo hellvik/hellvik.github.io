@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="Description" CONTENT="Höghastighets järnvägsnätet för Norden"/>
+<meta name="pubdate" content="20160723" />
+
+<meta name="Description" CONTENT="Hoghastighets jarnvagsnatet for Norden"/>
+
 <meta name="robots" content="nofollow" />
-<title>
-Björkboda
-</title>
+<title>Björkboda</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
 <style type="text/css">
 html { height: 100% }
@@ -30,6 +31,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 </style>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
@@ -108,7 +110,7 @@ google.maps.event.addListener(gLayer5, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer5.setMap(map);
 */
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -145,9 +147,10 @@ gLayer5.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -181,6 +184,8 @@ Gullkrona fjärden med omnejd (Level 3)
 <li>Vid Jorvas (utmärkt med grön paddel med stjärna) Finns växeln mot Tallinn från Helsingfors hållet, lite västerut finns växeln till Tallinn från Stockholms hållet och
 ute på Porkkala udde förenas banorna för underfarten till Estland<br></li>
 </ul>
+<br>
 <br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+
 </body>
 </html>

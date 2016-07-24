@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="description" CONTENT="Aloitteita yhdistää Ruotsin, Suomen ja Viron rautatieverkkoja Itämeren ylitse ja alitse käyttäen tunneleita, siltoja ja pengereitä" />
-<!--meta name="pubdate" content="20160416"-->
-<title>
-TOC level 2
-</title>
+<meta name="pubdate" content="20160723" />
+
+<meta name="Description" CONTENT="Aloitteita yhdistaa Ruotsin, Suomen ja Viron rautatieverkkoja Itameren ylitse ja alitse kayttaen tunneleita, siltoja ja pengereita"/>
+<title>TOC level 2</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <style type="text/css">
 .menu {
@@ -27,6 +26,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
 #map { height: 80% }
@@ -85,7 +85,7 @@ google.maps.event.addListener(gLayer4, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer4.setMap(map);
 
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -122,9 +122,10 @@ gLayer4.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -134,7 +135,7 @@ gLayer4.setMap(map);
 <td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A88</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
 
-<small>[esitys muutettu 2016-05-24]</small>
+<small>[esitys muutettu 2016-07-23]</small>
 <h1>
 TOC Level 2 - Kapellskär &amp; Helsinki &amp; Tallinna
 </h1>
@@ -185,21 +186,21 @@ välille</li>
 </ol>
 <div id="map">
 </div>
-<!--${COLORMAPfi}-->
 <table border="1"><tbody>
 <caption><small>Viivojen värikooditus</small></caption><tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>muutetaan KN radaksi</small></td></tr>
-<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>suunniteltu leveäraiteinen rautatie</small></td></tr>
-<tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>normaali että leveä raideleveys</small></td></tr>
-<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunneli tai silta</small></td></tr>
-<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>merellinen rautatiepenger</small></td></tr>
-<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Suunniteltu KN rata</small></td></tr>
-<tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>leveäraiteinen rautatie</small></td></tr>
 <tr><td style="background: #4682B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>STEEL_BLUE</small></small></td><td><small>auto matka</small></td></tr>
-<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>rautatiepenger tai tunneli</small></td></tr>
-<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>silta</small></td></tr>
+<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Suunniteltu KN rata</small></td></tr>
 <tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>rautatietunneli</small></td></tr>
+<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>silta</small></td></tr>
+<tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>leveäraiteinen rautatie</small></td></tr>
+<tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>normaali että leveä raideleveys</small></td></tr>
+<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>merellinen rautatiepenger</small></td></tr>
+<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunneli tai silta</small></td></tr>
 <tr><td style="background: #FF0000"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>RED</small></small></td><td><small>normaali raideleveys</small></td></tr>
+<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>rautatiepenger tai tunneli</small></td></tr>
+<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>suunniteltu leveäraiteinen rautatie</small></td></tr>
 </tbody></table>
+
 <p>
 Aloitteet yhdistävät maaliikennettä pohjoisen Itämeren kohdalta
 ja samalla yhdistävät EU projekit 
@@ -231,8 +232,44 @@ Autoliikenne on mukana johtuen lähinnä nykyisistä realiteetteistä
 kaikissa kolmessa EU-maissa. Missään ei rautatien kattavuus ole
 edes lähellä sitä mitä tieverkko tarjoaa.
 </p>
-<!--${TAGS}-->
-<hr/><p><span style="font-style: italic;">Tags:</span><br>
- <strong>korkeanopeusjuna</strong> <strong>korkeanopeusrata</strong> <strong>korkeanopeusrautatie</strong> kiinteä&nbsp;yhteys ahvenanmaa rannikkorata rautatietmatkailu rautatietunneli rautatie rautatieyhteys sukkulaliikenne tavaraliikenne vedenalainen viro juna pikajuna junaliikenne suomenlahti itämeri turun&nbsp;saaristo roslagen pikajuna luotijuna</p><br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+<h2>Aloitteiden taustat</h2>
+<ul>
+<li><span style="line-height:1.5;background-color:transparent">
+Aloitteet 1 ja 3 on aloite jossa esitetään rautatietunnelia Helsingin ja Tallinnan välille siten että varsinainen tunneli
+alittaa suomenlahtea Porkkalan ja Naissaaren välillä (42,8 km) ja toinen lyhempi tunneli on Naissaaresta Kokumäkiniemeen (9,2 km).
+Kyseessä on siis Suomenlahden kapeikon alittamista tunnelilla. Tätä ratkaisua ehdotetaan vaihtoehdoksi tunnelille joka lähtisi
+Helsingin kaivopuistosta suoraan Tallinnaa ja Piritaa kohti. Syy ehdotukseen on ilmeinen, merenalainen tunneli on paljon lyhempi. Lisäksi
+hyödynnetään Naissaarta jotta selvitään vielä lyhyemmillä tunnelilla.
+</span></li>
+<li><span style="line-height:1.5;background-color:transparent">
+Aloitteet 2 ja 6 ovat vaihtoehto, lähinnä rautatievaihtoehto, tiesuunnitelmalle <b>Lännentie</b>&nbsp;mutta kokemuksesta viisastettuna jatketaan
+suoraan Tukholmaan. Ahvenamaa - Tukholma ratkaisu ehdotettiin lehdistössä jo 60-luvulla joten aloitteet tässä kohdassa eivät
+ehdota mitään uutta. Uutta aloitteissa on linjaus Karjaa - Lemland (Ahvenanmaa), joka on huomattavasti eteläisempi kun mitä <b>Lännentie</b>&nbsp;tiesuunnitelmassa ehdotettiin. Päältäpäin linjaus Karjaa - Lemland näyttää mahdottomalta koska rautatie pitäisi rakentaa
+suoraan avomereen mutta näin ei ole jos vaivautuu tutkimaan Saaristomeren merikorttia. 
+</span></li>
+<li><span style="line-height:1.5;background-color:transparent">
+Aloitteet 4 ja 5 on aloitteita jossa pyritään nykyaikastamaan ja suoristamaan rantarataa. Varsinaisesti rantarataa ei ole yritettykään
+suoristaa rakentamisen jälkeen olkoonkin että pieniä oikaisuja on silti tehty.
+</span></li>
+<li><span style="line-height:1.5;background-color:transparent">
+Aloite 7 kohdistuu Ruotsiin. Tarkoitus aloitteella herättää Ruotsin viranomaiset että idästä tulee junia. Lisäksi aloite pyrkii
+edistämään Tukholman alueen keskustelua julkisesta liikenteestä, keskustelu joka Ruotsissa käydään koodinimellä <b><i>koillinen</i></b>&nbsp;(Nordost) 
+</span></li>
+</ul>
+<p>
+Ongelmaan mihin hankkeet on, vuosien aikana, kariutuneet on <i>kustannukset</i>. Miksi nämä kustannukset ja hyötylaskelmat
+kariuttavat hankkeet, on että hankkeet on nähty erillisinä eikä koko pakettia ole nähty ja laskettu koko paketin
+kustannuksia ja hyötyjä. Lisäksi on lyömäasena käytetty sekä kieltä että vätettä että toinen osapuoli ei pidä hanketta riittävän
+kiinnostavana. Kartan tekijät ovat myös paljon syyllisiä koska on yllättävän vaikeata löytää hyvää karttaa paketin
+koko aluelta ja riittävän suuressa skaalassa. Myös se tosiasia että merikartat ovat erillään maakrapujen kartoista ei helpota asiaa.
+Jopa Suomen säätieteilijät syyllistyvät, siten että sääkartat televisiossa ei kata edes Tukholman aluetta vaikka Suomen
+etelärannikolla sää Itämerellä, ja koko Itämerellä, olisi oleellista nähdä. Poikkeuksena oli, ja on, SWT World lähetysten sääkartat jossa näkyy Itämeri Juutinraumaa myöten.</p>
+</p>
+<p>Kyse on myös mielikuvituksen puutteesta. Tällä hetkellä EU:ssa ja jopa Ruotsissa keskustellaan vakavasti 300 - 320 km/h junanopeuksista. Matka Helsinki - Tukholma, noin 477,3 km ja Tallinna - Tukholma noin 543,2 km, näiden aloitteiden pohjalta, eli molemmissa tapauksissa <b>matka-aika pari tuntia !?</b><span style="line-height:1.5;background-color:transparent">&nbsp;Tosin mikään juna ei saada kulkemaan koko matkan huippunopeudella joten matka-aikaan on lisättävä jotakin, mutta oikein suunniteltua ei silti enemmän kuin &nbsp;puoli tuntia.</span></p>
+<p><span style="font-style: italic;">Tags:</span><br>
+<hr/> <strong>korkeanopeusjuna</strong> <strong>korkeanopeusrata</strong> <strong>korkeanopeusrautatie</strong> kiinteä&nbsp;yhteys ahvenanmaa rannikkorata rautatietmatkailu rautatietunneli rautatie rautatieyhteys sukkulaliikenne tavaraliikenne vedenalainen viro juna pikajuna junaliikenne suomenlahti itämeri turun&nbsp;saaristo roslagen pikajuna luotijuna</p>
+<br>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+
 </body>
 </html>

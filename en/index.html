@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="description" CONTENT="Proposals for building of tunnels, bridges and banks to connect Sweden, Finland and Estonia by railway over and under the Baltic Sea" />
-<!--meta name="pubdate" content="20160416"-->
-<title>
-index
-</title>
+<meta name="pubdate" content="20160723" />
+
+<meta name="Description" CONTENT="Nordic High Speed Railways"/>
+<title>index</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <style type="text/css">
 .menu {
@@ -27,6 +26,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
 #map { height: 80% }
@@ -85,7 +85,7 @@ google.maps.event.addListener(gLayer4, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer4.setMap(map);
 
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -122,9 +122,10 @@ gLayer4.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -137,7 +138,7 @@ gLayer4.setMap(map);
 <td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A57</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
 
-<small>[presentation changed 2016-05-24]</small>
+<small>[presentation changed 2016-07-23]</small>
 <h1>
 Main page (index)&nbsp;&nbsp; 
 <img alt="en" src="../picture/england.png" height="20" width="32">
@@ -199,21 +200,21 @@ Stockholm to Kapellskär
 </ol>
 <div id="map">
 </div>
-<!--${COLORMAPen}-->
 <table border="1"><tbody>
-<caption><small>Color code for lines</small></caption><tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>railwaybank or tunnel</small></td></tr>
-<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Planned HSR</small></td></tr>
-<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>railwaybank at sea</small></td></tr>
-<tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>changes to HSR</small></td></tr>
+<caption><small>Color code for lines</small></caption><tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>changes to HSR</small></td></tr>
 <tr><td style="background: #4682B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>STEEL_BLUE</small></small></td><td><small>car route</small></td></tr>
-<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>planned broad-gauge railway</small></td></tr>
-<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunnel or bridge</small></td></tr>
+<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Planned HSR</small></td></tr>
+<tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>railway tunnel</small></td></tr>
+<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>bridge</small></td></tr>
 <tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>broad-gauge railway</small></td></tr>
 <tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>standard and broad gauge railway</small></td></tr>
+<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>railwaybank at sea</small></td></tr>
+<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunnel or bridge</small></td></tr>
 <tr><td style="background: #FF0000"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>RED</small></small></td><td><small>standard gauge railway</small></td></tr>
-<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>bridge</small></td></tr>
-<tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>railway tunnel</small></td></tr>
+<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>railwaybank or tunnel</small></td></tr>
+<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>planned broad-gauge railway</small></td></tr>
 </tbody></table>
+
 <p>
 These proposals will connect the traffic by land in the northern part of the Baltic. These proposals will also connect 
 <a href="http://www.rail-baltica.com/pub/">
@@ -229,8 +230,48 @@ Europakorridoren
 Outside these proposals are the possibility to use the connection around the Gulf of Bothnia or to transport through Sankt Petersburg, Russia, around
 the Gulf of Finland. There are also proposals to build a connection at Kvarken, from Umeå to Vasa, in the middle of the Gulf of Bothnia.
 </p>
-<!--${TAGS}-->
-<hr/><p><span style="font-style: italic;">Tags:</span><br>
- <strong>highspeed&nbsp;railway</strong> <strong>highspeed&nbsp;rail</strong> <strong>highspeed&nbsp;train</strong> broad-gauge business coastal communications rail railway railwaybank railwaystation shuttle shuttle-transport station train train-connection åland archipelago express&nbsp;train baltic baltic&nbsp;sea aland</p><br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+<table border="1">
+<caption><span style="font-weight: bold;">Distance and travel times</span></caption>
+<tbody>
+<tr><th>Distance</th><th>km</th><th>120km/h</th><th>242km/h</th><th>300km/h</th><th>1000km/h</th><th>Comment<br></th></tr>
+<tr><td>Stockholm - Helsinki</td><td>452</td><td><span style="color: #DC143C;">3:46</span></td><td><span style="color: #FFD700;font-weight: bold;">1:52</span></td><td><span style="color: #FFD700;font-weight: bold;">1:30</span></td><td><span style="color: #2E8B57;">27</span></td><td>296.6 miles<br></td></tr>
+<tr><td>Stockholm - Tallinn</td><td>508</td><td><span style="color: #DC143C;">4:14</span></td><td><span style="color: #DC143C;">2:5</span></td><td><span style="color: #FFD700;font-weight: bold;">1:41</span></td><td><span style="color: #2E8B57;">30</span></td><td>337.5 miles<br></td></tr>
+<tr><td>Tallinn - Helsinki</td><td>129</td><td><span style="color: #FFD700;font-weight: bold;">1:4</span></td><td><span style="color: #2E8B57;">31</span></td><td><span style="color: #2E8B57;">25</span></td><td><span style="color: #4682B4;font-weight: bold;">7</span></td><td>80.4 miles<br></td></tr>
+<tr><td>Naisaar - Kakumäe tunnel</td><td>8.7</td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td><span style="color: #4682B4;font-weight: bold;">2</span></td><td><span style="color: #4682B4;font-weight: bold;">1</span></td><td><span style="color: #4682B4;font-weight: bold;">0.522</span></td><td>railway tunnel II under the Gulf of Finland (5.4 miles)<br></td></tr>
+<tr><td>Porkkala - Naissaar tunnel</td><td>42.7</td><td><span style="color: #2E8B57;">21</span></td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">8</span></td><td><span style="color: #4682B4;font-weight: bold;">2</span></td><td>railway tunnel I under the Gulf of Finland (26.5 miles)<br></td></tr>
+<tr><td>Åland tunnel</td><td>21.66</td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">5</span></td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td><span style="color: #4682B4;font-weight: bold;">1</span></td><td>railway tunnel under the Sea of Åland (13.5 miles)<br></td></tr>
+</tbody>
+</table>
+<ul>
+<li><span style="color: #DC143C;">Too long for commuting to work daily</span>. <br></li>
+<li><span style="color: #FFD700;font-weight: bold;">Commuting possible</span>. <br></li>
+<li><span style="color: #2E8B57;">Commuting friendly</span>. <br></li>
+<li><span style="color: #4682B4;font-weight: bold;">A very short jump</span>. <br></li>
+</ul>
+
+Average speed columns in the table
+<ul>
+<li><b>120km/h or 74 miles/h</b> - 
+Highest speed limit in nordic countries on roads
+<br></li>
+<li><b>242km/h or 150 miles/h</b> - 
+Based on target for a journey from Stockholm to Malmö. THis is the official
+target proposed by the Swedesh authorities.
+<br></li>
+<li><b>300km/h or 186 miles/h</b> - 
+Possible average speed for a proposed high speed train in Sweden
+<br></li>
+<li><b>1000km/h or 621 miles/h</b> - 
+Hyperloop speed
+as proposed by Elon Musk.
+(Hyperloop is tradename and a registered trademark of the Space Exploration Technologies Corporation (SpaceX)) 
+<br></li>
+</ul>
+
+<p><span style="font-style: italic;">Tags:</span><br>
+<hr/> <strong>highspeed&nbsp;railway</strong> <strong>highspeed&nbsp;rail</strong> <strong>highspeed&nbsp;train</strong> broad-gauge business coastal communications rail railway railwaybank railwaystation shuttle shuttle-transport station train train-connection åland archipelago express&nbsp;train baltic baltic&nbsp;sea aland</p>
+<br>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+
 </body>
 </html>

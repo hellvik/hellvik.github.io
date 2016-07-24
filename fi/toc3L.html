@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
+<meta name="pubdate" content="20160723" />
+
 <meta name="Description" CONTENT="Pohjolan korkeanopeuden rautatieverkko"/>
-<!--meta name="pubdate" content="20160416"-->
-<title>
-TOC Level 3
-</title>
+<title>TOC Level 3</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
 <style type="text/css">
 html { height: 100% }
@@ -30,6 +29,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 </style>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
@@ -90,7 +90,7 @@ google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer1.setMap(map);
 */
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -127,9 +127,10 @@ gLayer1.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -141,28 +142,28 @@ gLayer1.setMap(map);
 <td style="vertical-align: top; text-align: center;"><a href="index.html">indeksi</a><br></td>
 <td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A87</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
-<small>[esitys muutettu 2016-05-24]</small>
+<small>[esitys muutettu 2016-07-23]</small>
 <h1>
 TOC Level 3 - Pohjolan korkeanopeuden rautatieverkko
 </h1>
 <br>
 <div id="map">
 </div>
-<!--${COLORMAPfi}-->
 <table border="1"><tbody>
 <caption><small>Viivojen värikooditus</small></caption><tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>muutetaan KN radaksi</small></td></tr>
-<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>suunniteltu leveäraiteinen rautatie</small></td></tr>
-<tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>normaali että leveä raideleveys</small></td></tr>
-<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunneli tai silta</small></td></tr>
-<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>merellinen rautatiepenger</small></td></tr>
-<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Suunniteltu KN rata</small></td></tr>
-<tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>leveäraiteinen rautatie</small></td></tr>
 <tr><td style="background: #4682B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>STEEL_BLUE</small></small></td><td><small>auto matka</small></td></tr>
-<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>rautatiepenger tai tunneli</small></td></tr>
-<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>silta</small></td></tr>
+<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Suunniteltu KN rata</small></td></tr>
 <tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>rautatietunneli</small></td></tr>
+<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>silta</small></td></tr>
+<tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>leveäraiteinen rautatie</small></td></tr>
+<tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>normaali että leveä raideleveys</small></td></tr>
+<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>merellinen rautatiepenger</small></td></tr>
+<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunneli tai silta</small></td></tr>
 <tr><td style="background: #FF0000"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>RED</small></small></td><td><small>normaali raideleveys</small></td></tr>
+<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>rautatiepenger tai tunneli</small></td></tr>
+<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>suunniteltu leveäraiteinen rautatie</small></td></tr>
 </tbody></table>
+
 <p>map center :alvesta<p/>
 <p>Korkeanopeusradat (KN-radat) on piirretty alla olevilla sivuille. Huomaa että KN-radoilla liikkuvat junat paljon nopeammin kuin perinteisillä
 suurnopeusradoilla tai pikaradoilla. Tässä nimitetään siksi radata KN-radoiksi (Korkeanopeusradoiksi) erona suurnopeusradoista. KN-radalla korkeuanopeusjuna liikkuu
@@ -190,8 +191,10 @@ tämä on tärkeätä jotta pystyttäisiin palvelemaan täysmittaisesti sekä He
 käyttävät KN-henkilöjunien lisäksi myös KN-tavarajunat, tavarajunat ja paikallisjunat. Kysymys on lähinnä luoda liikenteelle sopivat aikataulut ja rakentaa
 liikenneohjaus joka tähän pystyy. 
 </p>
-<!--${TAGS}-->
-<hr/><p><span style="font-style: italic;">Tags:</span><br>
- <strong>korkeanopeusjuna</strong> <strong>korkeanopeusrata</strong> <strong>korkeanopeusrautatie</strong> kiinteä&nbsp;yhteys ahvenanmaa rannikkorata rautatietmatkailu rautatietunneli rautatie rautatieyhteys sukkulaliikenne tavaraliikenne vedenalainen viro juna pikajuna junaliikenne suomenlahti itämeri turun&nbsp;saaristo roslagen pikajuna luotijuna</p><br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+<p><span style="font-style: italic;">Tags:</span><br>
+<hr/> <strong>korkeanopeusjuna</strong> <strong>korkeanopeusrata</strong> <strong>korkeanopeusrautatie</strong> kiinteä&nbsp;yhteys ahvenanmaa rannikkorata rautatietmatkailu rautatietunneli rautatie rautatieyhteys sukkulaliikenne tavaraliikenne vedenalainen viro juna pikajuna junaliikenne suomenlahti itämeri turun&nbsp;saaristo roslagen pikajuna luotijuna</p>
+<br>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+
 </body>
 </html>

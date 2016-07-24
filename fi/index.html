@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="description" CONTENT="Aloitteita yhdistää Ruotsin, Suomen ja Viron rautatieverkkoja Itämeren ylitse ja alitse käyttäen tunneleita, siltoja ja pengereitä"/>
-<!--meta name="pubdate" content="20160416"-->
-<title>
-indeksi
-</title>
+<meta name="pubdate" content="20160723" />
+
+<meta name="Description" CONTENT="Pohjolan korkeanopeuden rautatieverkko"/>
+<title>indeksi</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <style type="text/css">
 .menu {
@@ -27,6 +26,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
 #map { height: 80% }
@@ -75,7 +75,7 @@ google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer0.setMap(map);
 
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -112,9 +112,10 @@ gLayer0.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -127,7 +128,7 @@ gLayer0.setMap(map);
 <td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A46</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
 
-<small>[esitys muutettu 2016-05-24]</small>
+<small>[esitys muutettu 2016-07-23]</small>
 <h1>
 Aloitussivu (indeksi)&nbsp;&nbsp; 
 <img alt="fi" src="../picture/finland.png" height="20" width="32">
@@ -146,21 +147,21 @@ kohti sekä Helsinkiä että Tallinnaa on sama kun edellisellä tasolla. Tavoite
 <p><font color="#ff3333"><b>Huom</b> Valitsemalla indeksi sivun keltaisella yläpalkilla pääset tälle sivulle</font></p>
 <div id="map">
 </div>
-<!--${COLORMAPfi}-->
 <table border="1"><tbody>
 <caption><small>Viivojen värikooditus</small></caption><tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>muutetaan KN radaksi</small></td></tr>
-<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>suunniteltu leveäraiteinen rautatie</small></td></tr>
-<tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>normaali että leveä raideleveys</small></td></tr>
-<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunneli tai silta</small></td></tr>
-<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>merellinen rautatiepenger</small></td></tr>
-<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Suunniteltu KN rata</small></td></tr>
-<tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>leveäraiteinen rautatie</small></td></tr>
 <tr><td style="background: #4682B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>STEEL_BLUE</small></small></td><td><small>auto matka</small></td></tr>
-<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>rautatiepenger tai tunneli</small></td></tr>
-<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>silta</small></td></tr>
+<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Suunniteltu KN rata</small></td></tr>
 <tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>rautatietunneli</small></td></tr>
+<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>silta</small></td></tr>
+<tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>leveäraiteinen rautatie</small></td></tr>
+<tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>normaali että leveä raideleveys</small></td></tr>
+<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>merellinen rautatiepenger</small></td></tr>
+<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunneli tai silta</small></td></tr>
 <tr><td style="background: #FF0000"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>RED</small></small></td><td><small>normaali raideleveys</small></td></tr>
+<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>rautatiepenger tai tunneli</small></td></tr>
+<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>suunniteltu leveäraiteinen rautatie</small></td></tr>
 </tbody></table>
+
 <p>
 Tällä hetkellä minulla ei ole selvää mitä tai miten suomeksi sanotaan "höghastighetståg". 
 Ongelma on että pikajuna ja vastaavat on varattu alle 250 km/h kulkeville junille. 
@@ -178,8 +179,85 @@ Koska jotkut junat kulkevat 300 - 320km/h niin radat on eristettävä hirveistä
 Tässä siis kauniit periaatteet mutta on oletettavaa että kompromissejä joudutaan tekemään, toivottavasti ei liikaa näitä kompromissejä jotta matkustusaikasuunnitelmat
 todellakin käytännössä toteutuisi.
 </p>
-<!--${TAGS}-->
-<hr/><p><span style="font-style: italic;">Tags:</span><br>
- <strong>korkeanopeusjuna</strong> <strong>korkeanopeusrata</strong> <strong>korkeanopeusrautatie</strong> kiinteä&nbsp;yhteys ahvenanmaa rannikkorata rautatietmatkailu rautatietunneli rautatie rautatieyhteys sukkulaliikenne tavaraliikenne vedenalainen viro juna pikajuna junaliikenne suomenlahti itämeri turun&nbsp;saaristo roslagen pikajuna luotijuna</p><br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+<table border="1">
+<caption><span style="font-weight: bold;">Matka ja matka-aika keskinopeuden perusteella</span></caption>
+<tbody>
+<tr><th>Matka</th><th>km</th><th>120km/h</th><th>242km/h</th><th>300km/h</th><th>1000km/h</th><th>Huom<br></th></tr>
+<tr><td>Björkboda - Helsinki</td><td>144</td><td><span style="color: #FFD700;font-weight: bold;">1:12</span></td><td><span style="color: #2E8B57;">35</span></td><td><span style="color: #2E8B57;">28</span></td><td><span style="color: #4682B4;font-weight: bold;">8</span></td><td>Björkboda on Kemiön saarella<br></td></tr>
+<tr><td>Björkboda - Tukholma(Ruotsi)</td><td>308</td><td><span style="color: #DC143C;">2:34</span></td><td><span style="color: #FFD700;font-weight: bold;">1:16</span></td><td><span style="color: #FFD700;font-weight: bold;">1:1</span></td><td><span style="color: #2E8B57;">18</span></td><td>Björkboda on Kemiön saarella<br></td></tr>
+<tr><td>Degerby(Ahvenanmaa) - Degerby(Uusimaa)</td><td>217</td><td><span style="color: #FFD700;font-weight: bold;">1:48</span></td><td><span style="color: #2E8B57;">53</span></td><td><span style="color: #2E8B57;">43</span></td><td><span style="color: #2E8B57;">13</span></td><td>(Häh)<br></td></tr>
+<tr><td>Helsinki - Lemland(Ahvenanmaa)</td><td>287</td><td><span style="color: #DC143C;">2:23</span></td><td><span style="color: #FFD700;font-weight: bold;">1:11</span></td><td><span style="color: #2E8B57;">57</span></td><td><span style="color: #2E8B57;">17</span></td><td>ja jatkoyhteys bussilla Maarianhaminaa<br></td></tr>
+<tr><td>Karjaa - Helsinki</td><td>82.3</td><td><span style="color: #2E8B57;">41</span></td><td><span style="color: #2E8B57;">20</span></td><td><span style="color: #2E8B57;">16</span></td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td>Uusi Y-junan, jos reitti on kannattava<br></td></tr>
+<tr><td>Karjaa - Jorvas</td><td>50.4</td><td><span style="color: #2E8B57;">25</span></td><td><span style="color: #2E8B57;">12</span></td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">3</span></td><td><br></td></tr>
+<tr><td>Karjaa - Tukholma(Ruotsi)</td><td>370</td><td><span style="color: #DC143C;">3:5</span></td><td><span style="color: #FFD700;font-weight: bold;">1:31</span></td><td><span style="color: #FFD700;font-weight: bold;">1:14</span></td><td><span style="color: #2E8B57;">22</span></td><td>meren ylitse ja alitse<br></td></tr>
+<tr><td>Kirjais - Helsinki</td><td>179</td><td><span style="color: #FFD700;font-weight: bold;">1:29</span></td><td><span style="color: #2E8B57;">44</span></td><td><span style="color: #2E8B57;">35</span></td><td><span style="color: #2E8B57;">10</span></td><td>Yhteys bussilla Turusta Kirjaisiin Nauvon eteläpuolelle<br></td></tr>
+<tr><td>Norrtälje(Ruotsi) - Lemland(Ahvenanmaa)</td><td>97.8</td><td><span style="color: #2E8B57;">48</span></td><td><span style="color: #2E8B57;">24</span></td><td><span style="color: #2E8B57;">19</span></td><td><span style="color: #4682B4;font-weight: bold;">5</span></td><td>ja jatkoyhteys bussilla Maarianhaminaa<br></td></tr>
+<tr><td>Tukholma(Ruotsi) - Degerby(Ahvenanmaa)</td><td>183</td><td><span style="color: #FFD700;font-weight: bold;">1:31</span></td><td><span style="color: #2E8B57;">45</span></td><td><span style="color: #2E8B57;">36</span></td><td><span style="color: #2E8B57;">10</span></td><td><br></td></tr>
+<tr><td>Tukholma(Ruotsi) - Helsinki</td><td>452</td><td><span style="color: #DC143C;">3:46</span></td><td><span style="color: #FFD700;font-weight: bold;">1:52</span></td><td><span style="color: #FFD700;font-weight: bold;">1:30</span></td><td><span style="color: #2E8B57;">27</span></td><td>Suora yhteys keskustasta keskustaan<br></td></tr>
+<tr><td>Tukholma(Ruotsi) - Kirjais</td><td>274</td><td><span style="color: #DC143C;">2:17</span></td><td><span style="color: #FFD700;font-weight: bold;">1:7</span></td><td><span style="color: #2E8B57;">54</span></td><td><span style="color: #2E8B57;">16</span></td><td>ja jatkoyhteys bussilla Turkuun<br></td></tr>
+<tr><td>Norrtälje(Ruotsi) - Lemland(Ahvenanmaa)</td><td>165</td><td><span style="color: #FFD700;font-weight: bold;">1:22</span></td><td><span style="color: #2E8B57;">40</span></td><td><span style="color: #2E8B57;">33</span></td><td><span style="color: #4682B4;font-weight: bold;">9</span></td><td>ja jatkoyhteys bussilla Maarianhaminaan<br></td></tr>
+<tr><td>Hiiu - Jorvas</td><td>88.9</td><td><span style="color: #2E8B57;">44</span></td><td><span style="color: #2E8B57;">22</span></td><td><span style="color: #2E8B57;">17</span></td><td><span style="color: #4682B4;font-weight: bold;">5</span></td><td>Hiiu Virossa<br></td></tr>
+<tr><td>Tukholma(Ruotsi) - Tallinna(Viro)</td><td>508</td><td><span style="color: #DC143C;">4:14</span></td><td><span style="color: #DC143C;">2:5</span></td><td><span style="color: #FFD700;font-weight: bold;">1:41</span></td><td><span style="color: #2E8B57;">30</span></td><td>Suora yhteys keskustasta keskustaan<br></td></tr>
+<tr><td>Tallinna(Viro) - Helsinki</td><td>129</td><td><span style="color: #FFD700;font-weight: bold;">1:4</span></td><td><span style="color: #2E8B57;">31</span></td><td><span style="color: #2E8B57;">25</span></td><td><span style="color: #4682B4;font-weight: bold;">7</span></td><td>Suora yhteys keskustasta keskustaan<br></td></tr>
+<tr><td>Tukholma - Göteborg</td><td>482</td><td><span style="color: #DC143C;">4:1</span></td><td><span style="color: #FFD700;font-weight: bold;">1:59</span></td><td><span style="color: #FFD700;font-weight: bold;">1:36</span></td><td><span style="color: #2E8B57;">28</span></td><td>Käyttäen korkea nopeus rataa<br></td></tr>
+<tr><td>Helsinki - Hampuri</td><td>1447</td><td><span style="color: #DC143C;">12:3</span></td><td><span style="color: #DC143C;">5:58</span></td><td><span style="color: #DC143C;">4:49</span></td><td><span style="color: #FFD700;font-weight: bold;">1:26</span></td><td>(Saksaan)<br></td></tr>
+<tr><td>Naissaari - Kakumäki</td><td>8.7</td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td><span style="color: #4682B4;font-weight: bold;">2</span></td><td><span style="color: #4682B4;font-weight: bold;">1</span></td><td><span style="color: #4682B4;font-weight: bold;">0.522</span></td><td>Mantereelle (Pöllömäen niemelle)<br></td></tr>
+<tr><td>Porkkala - Naisaari</td><td>42.7</td><td><span style="color: #2E8B57;">21</span></td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">8</span></td><td><span style="color: #4682B4;font-weight: bold;">2</span></td><td>Suomenlahden kapeikko<br></td></tr>
+<tr><td>Ålandstunneln</td><td>21.66</td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">5</span></td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td><span style="color: #4682B4;font-weight: bold;">1</span></td><td>Ahvenanmeren alitse<br></td></tr>
+</tbody>
+</table>
+<ul>
+<li><span style="color: #DC143C;">Ei sovellu päivittäiseen työmatkailuun</span>. <br></li>
+<li><span style="color: #FFD700;font-weight: bold;">Pitkähkö työmatka</span>. <br></li>
+<li><span style="color: #2E8B57;">Työmatka</span>. <br></li>
+<li><span style="color: #4682B4;font-weight: bold;">Nopea pyrähdys</span>. Siirtyminen ajoneuvoon ja siitä pois vie enemmän aikaa kun varsinainen matka.<br></li>
+</ul>
+
+Keskinopeuksista puheen ollen jotka esiintyvät yllä olevassa
+taulukossa seuraavaa
+<ul>
+<li><b>120km/h</b> -
+Suurin (sallittu) ajonpeus autoilla maanteillä.
+Mukana lähinnä vertailun vuoksi tässä taulukossa.
+<br></li>
+<li><b>242km/h</b> - 
+Ruotsissa asetettu minimi tavoite korkea nopeus junille
+matkalla Tukholma - Malmö. Rutsissa on päädytty että
+tämä välimatka on toteuduttava kahdessa ja puolessa
+tunnissa. Lakemalla toisinpäin kun tidetään miten pitkä
+matka on niin saadaan tämä keskinopeus. Toisaalta koska
+nopeus alitta 250 km/h niin myös Suomessa olevat
+pikajunat selviytyisivät matkasta tavoite ajassa. Miksi
+ei tällä hetkellä selvitä pikajunilla johtuu
+nopeusrajoituksista, hidastelevista muusta liikenteestä,
+väärin suunnitteluista asemista ja "modernista
+liikenteen ohjauksesta".
+<br></li>
+<li><b>300km/h</b> -
+Korkea nopeusjuna pitäisi EU standardin mukaan savuttaaa
+nopeutta joka ylittää 250 km/h eli vähintäin olla
+luokassa 300 - 320km/h. Pästään vielä korkeampiin
+nopeuksiin käyttämällä Mag.lev ratkaisuja mutta
+Ruotsissa on päädytty tähän korkea nopeus junien suhteen.
+Koska kyseessä on keskinopeus niin junan on ylitettävä
+tätä rajaa. 
+<br></li>
+<li><b>1000km/h (1Mm/h)</b> -
+Jos vaihdettaisiin juna Hyperloop sukkulaan niin
+päästään 1 - 1.3Mm/h vauhtiin putken sisällä
+(1 Mm vastaa siis 1000 km). Matkalle Tukholma - Helsinki
+on läynnissä keskustelu tästä.
+(Hyperloop is tradename and a registered trademark of the Space Exploration Technologies Corporation (SpaceX)) 
+<br></li>
+</ul>
+Matkat ovat sitä tulosta mitä Google Map antaa piirretylle viivalle. Google Map tukeutuu silti Mercator projektioon
+joka aiheuttaa matkojen pidnnystä pohjoisilla ja eteläisillä leveysasteilla. Oletetaan että matkojen mittaustuloksissa
+tätä on huomioitu. Matkojen mittauksissa erilliset viivat on yhdistetty yhdeksi jatkuvaksi viivaksi
+päästä päähän.
+<p><span style="font-style: italic;">Tags:</span><br>
+<hr/> <strong>korkeanopeusjuna</strong> <strong>korkeanopeusrata</strong> <strong>korkeanopeusrautatie</strong> kiinteä&nbsp;yhteys ahvenanmaa rannikkorata rautatietmatkailu rautatietunneli rautatie rautatieyhteys sukkulaliikenne tavaraliikenne vedenalainen viro juna pikajuna junaliikenne suomenlahti itämeri turun&nbsp;saaristo roslagen pikajuna luotijuna</p>
+<br>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+
 </body>
 </html>

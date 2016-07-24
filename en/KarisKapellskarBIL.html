@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="Description" CONTENT="Railway transport of cars, Karis(Finland) - Lemland(Åland) -Kapellskär(Sweden)" />
+<meta name="pubdate" content="20160723" />
+
+<meta name="Description" CONTENT="Proposals for building of tunnels, bridges and banks to connect Sweden, Finland and Estonia by railway over and under the Baltic Sea"/>
+
 <meta name="robots" content="nofollow" />
-<title>
-Car transport Karis - Lemland - Kapellskär
-</title>
+<title>Car transport Karis - Lemland - Kapellskär</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
 <style type="text/css">
 html { height: 100% }
@@ -30,6 +31,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 </style>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
@@ -76,7 +78,7 @@ google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer1.setMap(map);
 
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -113,9 +115,10 @@ gLayer1.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -148,6 +151,8 @@ European route E18
 </a>
 )
 </p>
+<br>
 <br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+
 </body>
 </html>

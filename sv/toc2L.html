@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="description" CONTENT="Förslag för att integrera järnvägsnäten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar över och under Östersjön"/>
-<!--meta name="pubdate" content="20160416"-->
-<title>
-TOC Level 2
-</title>
+<meta name="pubdate" content="20160723" />
+
+<meta name="Description" CONTENT="Forslag for att integrera jarnvagsnaten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar over och under Ostersjon"/>
+<title>TOC Level 2</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <style type="text/css">
 .menu {
@@ -27,6 +26,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
 #map { height: 80% }
@@ -90,7 +90,7 @@ google.maps.event.addListener(gLayer5, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer5.setMap(map);
 
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -127,9 +127,10 @@ gLayer5.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -140,7 +141,7 @@ gLayer5.setMap(map);
 <td style="vertical-align: top; text-align: center;"><a href="index.html">index</a><br></td>
 <td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A69</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
-<small>[presentationen ändrad 2016-05-24]</small>
+<small>[presentationen ändrad 2016-07-23]</small>
 <h1>
 TOC Level 2 - Kapellskär &amp; Helsingfors &amp; Tallinn 
 </h1>
@@ -158,21 +159,21 @@ Riket (Finland), Åland och Sverige som beskrivs i <a href="toc1L.html">Level 1<
 </ul>
 <div id="map">
 </div>
-<!--${COLORMAPsv}-->
 <table border="1"><tbody>
-<caption><small>Färgkod för linjerna</small></caption><tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>järnvägs bank eller tunnel</small></td></tr>
-<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Planerad HH bana</small></td></tr>
-<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>järnvägs bank till havs</small></td></tr>
-<tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>omvandlas till HH bana</small></td></tr>
+<caption><small>Färgkod för linjerna</small></caption><tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>omvandlas till HH bana</small></td></tr>
 <tr><td style="background: #4682B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>STEEL_BLUE</small></small></td><td><small>bil rutt</small></td></tr>
-<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>planerad bredspårig järnväg</small></td></tr>
-<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunnel eller bro</small></td></tr>
+<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Planerad HH bana</small></td></tr>
+<tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>järnvägstunnel</small></td></tr>
+<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>bro</small></td></tr>
 <tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>bredspårig järnväg</small></td></tr>
 <tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>standard och bredspår</small></td></tr>
+<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>järnvägs bank till havs</small></td></tr>
+<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunnel eller bro</small></td></tr>
 <tr><td style="background: #FF0000"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>RED</small></small></td><td><small>standard spårvidd</small></td></tr>
-<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>bro</small></td></tr>
-<tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>järnvägstunnel</small></td></tr>
+<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>järnvägs bank eller tunnel</small></td></tr>
+<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>planerad bredspårig järnväg</small></td></tr>
 </tbody></table>
+
 <ol>
 <li>
 Skyttel transport av bilar från 
@@ -219,36 +220,20 @@ Stockholm till Kapellskär
 <p>
 Dessa initiativ är delar i planen att samman koppla lands trafiken i norra Österjön och även att sammankoppla EU projekten 
 <a href="http://www.rail-baltica.com/pub/">Rail Baltica</a> och <a href="http://europakorridoren.se/eng/">Europakorridoren</a>.</p>
+<h2>De olika initiativen har varierande bakgrund</h2>
+<ul>
+<li><span style="line-height:1.5;background-color:transparent">Initiativ 1 och 3 är alltså en tunnel mellan Helsingfors och Tallinn och här via Jorvas och Kokumäe. Projektet med järnvägstunnel är gammalt men har på senare tid fått fart. Lösningen att utnyttja Porkkala-Nargö-Kokumäe i stället för direkt dragning från Helsingfors till Tallinn är en del i detta initiativ och egentligen inget nytt.&nbsp;</span></li>
+<li><span style="line-height:1.5;background-color:transparent">initiativ 2 och 6 är en fast förbindelse över Åland mellan södra Finland och Uppland/ Stockholm. Här något nytt, dragningen Karis - Kirjais - Föglö är ny eftersom tidigare initiativ har baserat sig på dragning av väg över Brändö, Kumlinge från Gustavs eller Korpo ("Lännentie"). Men Skärgårdshavets sjökort ger ett annan möjlighet och även en kortare sträckning. För att förstå sträckningen, som ser ut att gå direkt ut i havet, behöver man en karta med alla små öar utritade och med utmärkning av havsdjup. Stäckningen Lemland - Vittenstenen-Lågskär-Flötjan-Söderarm-Kapellskär presenterades redan på 60-talet i pressen så där inget nytt. &nbsp;</span></li>
+<li><span style="line-height:1.5;background-color:transparent">initiativ 4 och 5 är en utveckling och uträtning av kustbanan, alltså Helsingfors - Jorvas - Karis. Kustbanan har egentligen aldrig rätas ut sedan den byggdes på 1800-talet. I Finland har kommunikationerna från Helsingfors norrut haft hög prioritet men västerut betydligt lägre. Här bör dock påpekas att två viktiga satsningar västerut har genomförts, nämligen Jorvas vägen och senast motorvägen ända till Kyrkslätt. För att höja prioriteten för kustbanan bör det finnas något att vinna. I flera år har det framförts att banan borde "rätas ut" genom att bygga en järnväg mellan Esbo och Salo och kanske den byggs. Men i detta initiativ satsar vi på Karis och Raseborg och bjuder på en fortsättning direkt till Stockholm och vidare mot Bryssel via initiativen 2 och 6. &nbsp;</span></li>
+<li><span style="line-height:1.5;background-color:transparent">initiativ 7 är en utveckling av kommunikationen innom Stockholms regionen, även kallad för "Nordost". &nbsp;I och med att järnvägen till Norrtälje lades ner finns det ej järnväg men detta beslut häver vi med vårt initiativ, för med i beräkningen kommer Finlands och Estlands trafiken. Utöver detta även lokaltrafiken från Mariehamn. Idag har vi båtarna till Kapellskär men med initiativen 2 och 6 har vi järnväg. Som parentes finns även Arlanda trafiken från Norrtälje.</span></li>
+</ul>
+<p>
+<span style="line-height:1.5;background-color:transparent"><font color="#351c75"><i>Pröva med Google Streetview, det finns bilder på flesta existerande och planerade stationer. Ända undantag är stationen på Nargö och man kommer bara nästan fram till Kirjais station</i></font>.</span>
+</p>
+<p><span style="font-style: italic;">Tags:</span><br>
+<hr/> <strong>höghastighetståg</strong> <strong>höghastighetsbana</strong> <strong>höghastighetsjärnväg</strong> fastförbindelse åland kustbana järnvägsförbindelse järnvägslinjen järnvägsnät järnvägstransport järnväg pendling pendla persontågtrafik persontrafikmarknaden tågbana tågtunnel tåg arbetsresa jobresa tjänsteresa godstransport finska&nbsp;viken östersjön åbo&nbsp;skärgård roslagen expresståg snälltåg</p>
+<br>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
 
-<!--${TAGS}-->
-<hr/><p><span style="font-style: italic;">Tags:</span><br>
- <strong>höghastighetståg</strong>
- <strong>höghastighetsbana</strong>
- <strong>höghastighetsjärnväg</strong>
- fastförbindelse
- åland
- kustbana
- järnvägsförbindelse
- järnvägslinjen
- järnvägsnät
- järnvägstransport
- järnväg
- pendling
- pendla
- persontågtrafik
- persontrafikmarknaden
- tågbana
- tågtunnel
- tåg
- arbetsresa
- jobresa
- tjänsteresa
- godstransport
- finska&nbsp;viken
- östersjön
- åbo&nbsp;skärgård
- roslagen
- expresståg
- snälltåg</p><br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
 </body>
 </html>

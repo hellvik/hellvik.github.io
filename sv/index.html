@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <link rel="author" content="John-Eric Soderman" />
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
-<meta name="pubdate" content="20160524" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="description" CONTENT="Förslag för att integrera järnvägsnäten i Sverige, Finland och Estland genom att bygga tunnlar, broar och bankar över och under Östersjön"/>
-<!--meta name="pubdate" content="20160416"-->
-<title>
-index
-</title>
+<meta name="pubdate" content="20160723" />
+
+<meta name="Description" CONTENT="Hoghastighets jarnvagsnatet for Norden"/>
+<title>index</title>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <style type="text/css">
 .menu {
@@ -27,6 +26,7 @@ background-color: yellow;
 border: 0px none transparent;
 width:100%;
 }
+
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
 #map { height: 80% }
@@ -75,7 +75,7 @@ google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kml
 gLayer0.setMap(map);
 
 			}
-			/* A utility object for simple event handling */
+			/*RC*/			/* A utility object for simple event handling */
 			var Utils = { };
 			Utils.addEvent = (function()
 			{
@@ -112,9 +112,10 @@ gLayer0.setMap(map);
 					}
 				};
 			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
 			Utils.addEvent(window,'load',InitMap);
-			//google.maps.event.addDomListener(window, "load", InitMap);
-
+			Utils.addEvent(window,'load',InitPork);
 </script>
 </head>
 <body>
@@ -127,7 +128,7 @@ gLayer0.setMap(map);
 <td style="vertical-align: top; text-align: right;"><span style="color: rgb(204, 0, 0);">A12</span><br></td>
 </tr></tbody></table><table id="uno2" class="menu2"><tbody><tr><td style="vertical-align: top;"><br></td></tr></tbody></table>
 
-<small>[presentationen ändrad 2016-05-24]</small>
+<small>[presentationen ändrad 2016-07-23]</small>
 <h1>
 Startsidan (index)&nbsp;&nbsp; 
 <img alt="sv" src="../picture/sverige.png" height="20" width="32">
@@ -142,53 +143,87 @@ HH-bana till Helsingfors och Tallinn. Genom att här på samma forum beskriva de
 <p><font color="#ff3333"><b>OBS</b> Genom att välja "index" på den gula balken högst upp på sidorna kommer du alltid hit</font></p>
 <div id="map">
 </div>
-<!--${COLORMAPsv}-->
 <table border="1"><tbody>
-<caption><small>Färgkod för linjerna</small></caption><tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>järnvägs bank eller tunnel</small></td></tr>
-<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Planerad HH bana</small></td></tr>
-<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>järnvägs bank till havs</small></td></tr>
-<tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>omvandlas till HH bana</small></td></tr>
+<caption><small>Färgkod för linjerna</small></caption><tr><td style="background: #DC143C"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CRIMSON</small></small></td><td><small>omvandlas till HH bana</small></td></tr>
 <tr><td style="background: #4682B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>STEEL_BLUE</small></small></td><td><small>bil rutt</small></td></tr>
-<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>planerad bredspårig järnväg</small></td></tr>
-<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunnel eller bro</small></td></tr>
+<tr><td style="background: #FF00FF"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>FUCHSIA</small></small></td><td><small>Planerad HH bana</small></td></tr>
+<tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>järnvägstunnel</small></td></tr>
+<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>bro</small></td></tr>
 <tr><td style="background: #FFC0CB"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>PINK</small></small></td><td><small>bredspårig järnväg</small></td></tr>
 <tr><td style="background: #FF69B4"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>HOT_PINK</small></small></td><td><small>standard och bredspår</small></td></tr>
+<tr><td style="background: #FF6347"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>TOMATO</small></small></td><td><small>järnvägs bank till havs</small></td></tr>
+<tr><td style="background: #FF7F50"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>CORAL</small></small></td><td><small>tunnel eller bro</small></td></tr>
 <tr><td style="background: #FF0000"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>RED</small></small></td><td><small>standard spårvidd</small></td></tr>
-<tr><td style="background: #FFA07A"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_SALMON</small></small></td><td><small>bro</small></td></tr>
-<tr><td style="background: #FFA500"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>ORANGE</small></small></td><td><small>järnvägstunnel</small></td></tr>
+<tr><td style="background: #FF1493"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>DEEP_PINK</small></small></td><td><small>järnvägs bank eller tunnel</small></td></tr>
+<tr><td style="background: #FFB6C1"><small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</small></td><td><small><small>LIGHT_PINK</small></small></td><td><small>planerad bredspårig järnväg</small></td></tr>
 </tbody></table>
+
 <p>Höghastighetsbana (HH-bana) är egentligen vanlig järnväg med vanliga järnvägsspår men special förstärkt och med lutning i kurvor så att ett tåg kan köra upp till 300 - 320 km/h.
 Idag är i top-hastigheten cirka 250 km/h för snabb-/ snälltåg. Utöver de lutade kurvorna ser järnvägen ut som vanlig järnväg men på grund av de höga hastigheterna på rälsen
 måste rälsen skyddas från älgar, hjortar, bilar och människor. Särskilt måste trafik control systemen utvecklas för att klara HH-tåg (Höghastighetståg) trafiken.
-<!--${TAGS}-->
-<hr/><p><span style="font-style: italic;">Tags:</span><br>
- <strong>höghastighetståg</strong>
- <strong>höghastighetsbana</strong>
- <strong>höghastighetsjärnväg</strong>
- fastförbindelse
- åland
- kustbana
- järnvägsförbindelse
- järnvägslinjen
- järnvägsnät
- järnvägstransport
- järnväg
- pendling
- pendla
- persontågtrafik
- persontrafikmarknaden
- tågbana
- tågtunnel
- tåg
- arbetsresa
- jobresa
- tjänsteresa
- godstransport
- finska&nbsp;viken
- östersjön
- åbo&nbsp;skärgård
- roslagen
- expresståg
- snälltåg</p><br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+<table border="1">
+<caption><span style="font-weight: bold;">Distans och restid med medelhastighet</span></caption>
+<tbody>
+<tr><th>Sträcka</th><th>km</th><th>120km/h</th><th>242km/h</th><th>300km/h</th><th>1000km/h</th><th>Kommentar<br></th></tr>
+<tr><td>Björkboda - Helsingfors</td><td>144</td><td><span style="color: #FFD700;font-weight: bold;">1:12</span></td><td><span style="color: #2E8B57;">35</span></td><td><span style="color: #2E8B57;">28</span></td><td><span style="color: #4682B4;font-weight: bold;">8</span></td><td>Björkboda på Kimito ön<br></td></tr>
+<tr><td>Björkboda - Stockholm</td><td>308</td><td><span style="color: #DC143C;">2:34</span></td><td><span style="color: #FFD700;font-weight: bold;">1:16</span></td><td><span style="color: #FFD700;font-weight: bold;">1:1</span></td><td><span style="color: #2E8B57;">18</span></td><td>Björkboda på Kimito ön<br></td></tr>
+<tr><td>Degerby(ÅL) - Degerby(NY)</td><td>217</td><td><span style="color: #FFD700;font-weight: bold;">1:48</span></td><td><span style="color: #2E8B57;">53</span></td><td><span style="color: #2E8B57;">43</span></td><td><span style="color: #2E8B57;">13</span></td><td>By till by<br></td></tr>
+<tr><td>Helsingfors - Lemland</td><td>287</td><td><span style="color: #DC143C;">2:23</span></td><td><span style="color: #FFD700;font-weight: bold;">1:11</span></td><td><span style="color: #2E8B57;">57</span></td><td><span style="color: #2E8B57;">17</span></td><td>Bussförbindelse till Mariehamn, ej medräknad<br></td></tr>
+<tr><td>Karis - Helsingfors</td><td>82.3</td><td><span style="color: #2E8B57;">41</span></td><td><span style="color: #2E8B57;">20</span></td><td><span style="color: #2E8B57;">16</span></td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td>Nya Y-tåget, om det är lönsamt<br></td></tr>
+<tr><td>Karis - Jorvas</td><td>50.4</td><td><span style="color: #2E8B57;">25</span></td><td><span style="color: #2E8B57;">12</span></td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">3</span></td><td><br></td></tr>
+<tr><td>Karis - Stockholm</td><td>370</td><td><span style="color: #DC143C;">3:5</span></td><td><span style="color: #FFD700;font-weight: bold;">1:31</span></td><td><span style="color: #FFD700;font-weight: bold;">1:14</span></td><td><span style="color: #2E8B57;">22</span></td><td>Via skärgården och under havet<br></td></tr>
+<tr><td>Kirjais - Helsingfors</td><td>179</td><td><span style="color: #FFD700;font-weight: bold;">1:29</span></td><td><span style="color: #2E8B57;">44</span></td><td><span style="color: #2E8B57;">35</span></td><td><span style="color: #2E8B57;">10</span></td><td>Bussförbindelse från Åbo, ej medräknad<br></td></tr>
+<tr><td>Lemland - Norrtälje</td><td>97.8</td><td><span style="color: #2E8B57;">48</span></td><td><span style="color: #2E8B57;">24</span></td><td><span style="color: #2E8B57;">19</span></td><td><span style="color: #4682B4;font-weight: bold;">5</span></td><td>Åland till Sverige<br></td></tr>
+<tr><td>Stockholm - Degerby(ÅL)</td><td>183</td><td><span style="color: #FFD700;font-weight: bold;">1:31</span></td><td><span style="color: #2E8B57;">45</span></td><td><span style="color: #2E8B57;">36</span></td><td><span style="color: #2E8B57;">10</span></td><td>Degerby på Föglö<br></td></tr>
+<tr><td>Stockholm - Helsingfors</td><td>452</td><td><span style="color: #DC143C;">3:46</span></td><td><span style="color: #FFD700;font-weight: bold;">1:52</span></td><td><span style="color: #FFD700;font-weight: bold;">1:30</span></td><td><span style="color: #2E8B57;">27</span></td><td>Central stationen till central station<br></td></tr>
+<tr><td>Stockholm - Kirjais</td><td>274</td><td><span style="color: #DC143C;">2:17</span></td><td><span style="color: #FFD700;font-weight: bold;">1:7</span></td><td><span style="color: #2E8B57;">54</span></td><td><span style="color: #2E8B57;">16</span></td><td>Bussförbindelse till Åbo, ej medräknad<br></td></tr>
+<tr><td>Stockholm - Lemland</td><td>165</td><td><span style="color: #FFD700;font-weight: bold;">1:22</span></td><td><span style="color: #2E8B57;">40</span></td><td><span style="color: #2E8B57;">33</span></td><td><span style="color: #4682B4;font-weight: bold;">9</span></td><td>Bussförbindelse till Mariehamn, ej medräknad<br></td></tr>
+<tr><td>Hiiu - Jorvas</td><td>88.9</td><td><span style="color: #2E8B57;">44</span></td><td><span style="color: #2E8B57;">22</span></td><td><span style="color: #2E8B57;">17</span></td><td><span style="color: #4682B4;font-weight: bold;">5</span></td><td>Hiiu i Estland<br></td></tr>
+<tr><td>Stockholm - Tallinn</td><td>508</td><td><span style="color: #DC143C;">4:14</span></td><td><span style="color: #DC143C;">2:5</span></td><td><span style="color: #FFD700;font-weight: bold;">1:41</span></td><td><span style="color: #2E8B57;">30</span></td><td>Central stationen till central station<br></td></tr>
+<tr><td>Tallinn - Helsingfors</td><td>129</td><td><span style="color: #FFD700;font-weight: bold;">1:4</span></td><td><span style="color: #2E8B57;">31</span></td><td><span style="color: #2E8B57;">25</span></td><td><span style="color: #4682B4;font-weight: bold;">7</span></td><td>Central stationen till central station<br></td></tr>
+<tr><td>Stockholm - Göteborg</td><td>482</td><td><span style="color: #DC143C;">4:1</span></td><td><span style="color: #FFD700;font-weight: bold;">1:59</span></td><td><span style="color: #FFD700;font-weight: bold;">1:36</span></td><td><span style="color: #2E8B57;">28</span></td><td>Via Jönköping<br></td></tr>
+<tr><td>Stockholm - Malmö</td><td>605</td><td><span style="color: #DC143C;">5:2</span></td><td><span style="color: #DC143C;">2:30</span></td><td><span style="color: #DC143C;">2:1</span></td><td><span style="color: #2E8B57;">36</span></td><td>HH-bana, 2t 30 min som maximi restids mål<br></td></tr>
+<tr><td>Stockholm - Norrtälje</td><td>67.4</td><td><span style="color: #2E8B57;">33</span></td><td><span style="color: #2E8B57;">16</span></td><td><span style="color: #2E8B57;">13</span></td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td><br></td></tr>
+<tr><td>Göteborg - Hamburg</td><td>676</td><td><span style="color: #DC143C;">5:38</span></td><td><span style="color: #DC143C;">2:47</span></td><td><span style="color: #DC143C;">2:15</span></td><td><span style="color: #2E8B57;">40</span></td><td><br></td></tr>
+<tr><td>Helsingfors - Hamburg</td><td>1447</td><td><span style="color: #DC143C;">12:3</span></td><td><span style="color: #DC143C;">5:58</span></td><td><span style="color: #DC143C;">4:49</span></td><td><span style="color: #FFD700;font-weight: bold;">1:26</span></td><td><br></td></tr>
+<tr><td>Malmö - Hamburg</td><td>390</td><td><span style="color: #DC143C;">3:15</span></td><td><span style="color: #FFD700;font-weight: bold;">1:36</span></td><td><span style="color: #FFD700;font-weight: bold;">1:18</span></td><td><span style="color: #2E8B57;">23</span></td><td><br></td></tr>
+<tr><td>Oslo - Köpenhamn</td><td>634</td><td><span style="color: #DC143C;">5:17</span></td><td><span style="color: #DC143C;">2:37</span></td><td><span style="color: #DC143C;">2:6</span></td><td><span style="color: #2E8B57;">38</span></td><td>til Tivoli<br></td></tr>
+<tr><td>Stockholm - Köpenhamn</td><td>644</td><td><span style="color: #DC143C;">5:22</span></td><td><span style="color: #DC143C;">2:39</span></td><td><span style="color: #DC143C;">2:8</span></td><td><span style="color: #2E8B57;">38</span></td><td><br></td></tr>
+<tr><td>Porkkala-Nargö tunnel</td><td>42.7</td><td><span style="color: #2E8B57;">21</span></td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">8</span></td><td><span style="color: #4682B4;font-weight: bold;">2</span></td><td>Porkkala udde mot Estland<br></td></tr>
+<tr><td>Ålandstunneln</td><td>21.66</td><td><span style="color: #2E8B57;">10</span></td><td><span style="color: #4682B4;font-weight: bold;">5</span></td><td><span style="color: #4682B4;font-weight: bold;">4</span></td><td><span style="color: #4682B4;font-weight: bold;">1</span></td><td>Söderarm - Flötjan<br></td></tr>
+</tbody>
+</table>
+<ul>
+<li><span style="color: #DC143C;">Olämplig för job pendling</span>. <br></li>
+<li><span style="color: #FFD700;font-weight: bold;">Lång pendling</span>. <br></li>
+<li><span style="color: #2E8B57;">Job pendlings vänlig</span>. <br></li>
+<li><span style="color: #4682B4;font-weight: bold;">Ett hopp</span>. Det tar längre tid för att komma till och av fordonet än själva resan.<br></li>
+</ul>
+
+Angående medelhastigheterna i ovanstående tabell
+<ul>
+<li><b>120km/h</b> - högsta (legala) top hastighet för bil<br></li>
+<li><b>242km/h</b> - baserar sig på det officiella målet i Sverige, maximi restiden för
+HH-tåg på sträckan Stockholm - Malmö. Intresant faktum är att med detta mål skulle ett
+vanligt snälltåg även klara målet emedan maximi hastgheten för snälltåg är 250km/h. Problemet idag är
+dock att tågen försinkas genom fartbegränsningar, felbyggda stationer, övriga
+långsamma tåg och ett "toppen modernt" signal och lednings system
+<br></li>
+<li><b>300km/h</b> - planerade HH-tågs maximi hastighet, eftersom vi syftar på medelhastigheter
+måste tågen klara hastighet ovan detta<br></li>
+<li><b>1000km/h (1Mm/h)</b> - om vi byter ut HH-tåg lösningen mot Hyperloop
+(Hyperloop is tradename and a registered trademark of the Space Exploration Technologies Corporation (SpaceX)) 
+<br></li>
+</ul>
+Distanserna är det resultat som Google Map ger för den ritade linjen på kartorna. Google Map
+använder dock Mercator projektion som förlänger sträckor väst-östlig riktning på nordliga
+(och sydliga) latituder
+men antagligen har detta beaktats vid distans beräkningarna. Vid uträckning av distans har
+de olika sträckorna kopplats samman till en fortgående linje från start till mål.
+<p><span style="font-style: italic;">Tags:</span><br>
+<hr/> <strong>höghastighetståg</strong> <strong>höghastighetsbana</strong> <strong>höghastighetsjärnväg</strong> fastförbindelse åland kustbana järnvägsförbindelse järnvägslinjen järnvägsnät järnvägstransport järnväg pendling pendla persontågtrafik persontrafikmarknaden tågbana tågtunnel tåg arbetsresa jobresa tjänsteresa godstransport finska&nbsp;viken östersjön åbo&nbsp;skärgård roslagen expresståg snälltåg</p>
+<br>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+
 </body>
 </html>
