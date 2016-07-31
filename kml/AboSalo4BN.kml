@@ -50,8 +50,8 @@
 			</Placemark>
 			<Placemark>
 				<name> Åbo</name>
-				<styleUrl> #existsBRD</styleUrl>
-<description><![CDATA[<div lang="sv">bredspårig järnväg</div><div lang="fi">leveäraiteinen rautatie</div><div lang="en">broad-gauge railway</div>]]></description>
+				<styleUrl> #FOUR</styleUrl>
+<description><![CDATA[<div lang="sv">standard och bredspår</div><div lang="fi">normaali että leveä raideleveys</div><div lang="en">standard and broad gauge railway</div>]]></description>
 				<LineString>
 					<tessellate> 1</tessellate>
 					<coordinates>
@@ -70,6 +70,7 @@
 				</LineString>
 			</Placemark>
 		</Folder>
+<Style id="FOUR"><LineStyle><color>ffB469FF</color><width>3</width></LineStyle></Style>
 <Style id="existsBRD"><LineStyle><color> ffCBC0FF</color><width> 4</width></LineStyle></Style>
 	</Document>
 </kml>

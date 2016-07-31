@@ -10,7 +10,7 @@
 			<Placemark>
 				<styleUrl> #plannedHH</styleUrl>
 <description><![CDATA[<div lang="sv">Planerad HH bana</div><div lang="fi">Suunniteltu KN rata</div><div lang="en">Planned HSR</div>]]></description>
-				<name> Jorvas-Helsingfors</name>
+				<name> Jorvas-Esbo</name>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
@@ -35,7 +35,7 @@
 			<Placemark>
 				<styleUrl> #FOUR</styleUrl>
 <description><![CDATA[<div lang="sv">standard och bredspår</div><div lang="fi">normaali että leveä raideleveys</div><div lang="en">standard and broad gauge railway</div>]]></description>
-				<name> Jorvas-Helsingfors</name>
+				<name> Esbo-Helsingfors</name>
 				<LineString>
 					<tessellate> 0</tessellate>
 					<coordinates>
