@@ -68,16 +68,6 @@
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
-				<name> Jorvas</name>
-				<styleUrl> #icon-paddle-F</styleUrl>
-				<Point>
-					<coordinates>
-						24.51272964477539,60.13791508157593,0.0
-					</coordinates>
-				</Point>
-<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
-			</Placemark>
-			<Placemark>
 				<styleUrl> #icon-paddle-G</styleUrl>
 				<name> Esbo</name>
 				<Point>
@@ -129,7 +119,7 @@
 			</Placemark>
 			<Placemark>
 				<name> Pargas</name>
-				<styleUrl> #icon-paddle-K</styleUrl>
+				<styleUrl> #icon-paddle-L</styleUrl>
 				<Point>
 					<coordinates>
 						22.2881699,60.3048452,0.0
@@ -139,7 +129,7 @@
 			</Placemark>
 			<Placemark>
 				<name> Åbo</name>
-				<styleUrl> #icon-paddle-L</styleUrl>
+				<styleUrl> #icon-paddle-M</styleUrl>
 				<Point>
 					<coordinates>
 						22.2533226,60.4537473,0.0
@@ -158,18 +148,18 @@
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 		</Folder>
+<Style id='icon-paddle-I'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-M'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-L'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-K'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-J'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-L'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-I'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>
