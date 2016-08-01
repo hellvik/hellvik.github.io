@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> U0</name>
+		<description>
+			<![CDATA[ Kapellskär-Karis]]>
+		</description>
+		<Folder>
+			<name> Pi</name>
+			<Placemark>
+				<styleUrl> #icon-paddle-A</styleUrl>
+				<name> Stockholm</name>
+				<Point>
+					<coordinates>
+						18.0581975,59.3301249,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Norrtälje</name>
+				<Point>
+					<coordinates>
+						18.6849976,59.741055300000006,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-C</styleUrl>
+				<name> Lemland</name>
+				<Point>
+					<coordinates>
+						20.18634796142578,59.97872325452582,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<name> Kirjais växel</name>
+				<Point>
+					<coordinates>
+						21.973257064819336,60.122184363898974,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-D</styleUrl>
+				<name> Karis</name>
+				<Point>
+					<coordinates>
+						23.661460876464844,60.06860939017739,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-E</styleUrl>
+				<name> Kyrkslätt</name>
+				<Point>
+					<coordinates>
+						24.438743591308594,60.11970437995222,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-G</styleUrl>
+				<name> Esbo</name>
+				<Point>
+					<coordinates>
+						24.656431674957275,60.20503863659938,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-H</styleUrl>
+				<name> Alberga</name>
+				<Point>
+					<coordinates>
+						24.814445972442627,60.21935493616081,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-I</styleUrl>
+				<name> Hoplax</name>
+				<Point>
+					<coordinates>
+						24.893689155578613,60.218278499512785,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-J</styleUrl>
+				<name> Helsingfors</name>
+				<Point>
+					<coordinates>
+						24.941883087158203,60.170752209324434,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-K</styleUrl>
+				<name> Salo</name>
+				<Point>
+					<coordinates>
+						23.1166077,60.3873981,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Pargas</name>
+				<styleUrl> #icon-paddle-L</styleUrl>
+				<Point>
+					<coordinates>
+						22.2881699,60.3048452,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Åbo</name>
+				<styleUrl> #icon-paddle-M</styleUrl>
+				<Point>
+					<coordinates>
+						22.2533226,60.4537473,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Laustis växel</name>
+				<styleUrl> #icon-paddle-grn-stars</styleUrl>
+				<Point>
+					<coordinates>
+						22.3455048,60.4372362,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+		</Folder>
+<Style id='icon-paddle-I'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-M'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-L'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-K'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-J'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>
