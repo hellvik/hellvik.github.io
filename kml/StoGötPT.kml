@@ -41,7 +41,12 @@
 						17.5417328,59.075153900000004,0.0
 					</coordinates>
 				</Point>
-<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Billsta</b> ligger söder om Järna. Järna är den nordligaste
+					 punkten för Sverige förhandlingens HH-bana. Sträckan Järna - Stockholm använder i
+					 förhandlingsresultatet den gamla banan </div> <div lang="fi"><b>Billsta</b></div> <div
+					 lang="en"><b>Billsta</b></div> ]]>
+				</description>
 			</Placemark>
 			<Placemark>
 				<name> Katrineholm</name>
