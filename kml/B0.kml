@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <kml xmlns='http://www.opengis.net/kml/2.2'>
 	<Document>
-		<name> B1</name>
+		<name> B0</name>
 		<description>
 			<![CDATA[ Kapellskär-Karis]]>
 		</description>
@@ -9,84 +9,102 @@
 			<name> Pi</name>
 			<Placemark>
 				<styleUrl> #icon-paddle-A</styleUrl>
-				<name> Långskäret</name>
+				<name> Kirjais</name>
 				<Point>
 					<coordinates>
-						22.117538452148438,60.133299237518216,0.0
-					</coordinates>
-				</Point>
-<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
-			</Placemark>
-			<Placemark>
-				<styleUrl> #icon-paddle-B</styleUrl>
-				<name> LillaKnapuin</name>
-				<Point>
-					<coordinates>
-						22.164273262023926,60.13056361691419,0.0
+						21.972570419311523,60.12256917224928,0.0
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Lilla Knapuin</b></div> <div lang="fi"><b>Lilla Knapuin</b></div>
-					 <div lang="en"><b>Lilla Knapuin</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Kirjais</b> station</div> <div lang="fi"><b>Kirjaisten</b>
+					 asema</div> <div lang="en"><b>Kirjais</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Österuddsvägen</name>
+				<Point>
+					<coordinates>
+						21.99737548828125,60.128084264283004,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>bro fästet norr om Österuddsvägen</b></div> <div
+					 lang="fi"><b>sillanpääty Österuddstien pohjoispuolella</b></div> <div lang="en"><b>the end
+					 of bridge north of Österuddsvägen</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-C</styleUrl>
-				<name> Knapuinön</name>
+				<name> Småholm</name>
 				<Point>
 					<coordinates>
-						22.17916488647461,60.12539096269888,0.0
+						22.027759552001953,60.13300004009217,0.0
 					</coordinates>
 				</Point>
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-D</styleUrl>
-				<name> Lökholmen</name>
+				<name> Skagsudden</name>
 				<Point>
 					<coordinates>
-						22.188820838928223,60.132423008801396,0.0
+						22.0180606842041,60.133470206254394,0.0
 					</coordinates>
 				</Point>
-<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Skagsudden på Sommarö</b></div> <div lang="fi"><b>Sommarön
+					 Skaggsniemi</b></div> <div lang="en"><b>Skagscape at Sommarö</b></div> ]]>
+				</description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-E</styleUrl>
-				<name> Långgrunden</name>
+				<name> Björkholm</name>
 				<Point>
 					<coordinates>
-						22.209720611572266,60.12814838782483,0.0
+						22.040247917175293,60.1370176070619,0.0
 					</coordinates>
 				</Point>
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-F</styleUrl>
-				<name> Skagholm</name>
+				<name> Svinö</name>
 				<Point>
 					<coordinates>
-						22.254695892333984,60.12451452338387,0.0
+						22.085437774658203,60.13552176179437,0.0
 					</coordinates>
 				</Point>
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-G</styleUrl>
-				<name> Skutskär</name>
+				<name> Häraholm</name>
 				<Point>
 					<coordinates>
-						22.243623733520508,60.12150024905751,0.0
+						22.11101531982422,60.13614147737142,0.0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-H</styleUrl>
+				<name> Långskäret</name>
+				<Point>
+					<coordinates>
+						22.117838859558105,60.13349157728397,0.0
 					</coordinates>
 				</Point>
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 		</Folder>
-<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

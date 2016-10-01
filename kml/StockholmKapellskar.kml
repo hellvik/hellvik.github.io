@@ -8,7 +8,7 @@
 		<Folder>
 			<name> Untitled layer</name>
 			<Placemark>
-				<styleUrl> #icon-paddle-red</styleUrl>
+				<styleUrl> #icon-paddle-A</styleUrl>
 				<name> Stockholm</name>
 				<Point>
 					<coordinates>
@@ -29,7 +29,59 @@
 				</description>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #icon-paddle-red</styleUrl>
+				<styleUrl> #icon-paddle-B</styleUrl>
+				<name> Karlsberg</name>
+				<Point>
+					<coordinates>
+						18.0297875,59.339667899999995,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Karlsbergs</b> station</div> <div lang="fi"><b>Karlsbergin</b>
+					 asema</div> <div lang="en"><b>Karlsberg</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-C</styleUrl>
+				<name> Solna</name>
+				<Point>
+					<coordinates>
+						18.0101109,59.3650773,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Solna</b> station</div> <div lang="fi"><b>Solnan</b> asema</div>
+					 <div lang="en"><b>Solna</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-D</styleUrl>
+				<name> Ulriksdal</name>
+				<Point>
+					<coordinates>
+						18.0002618,59.380720399999994,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Ulriksdals</b> station</div> <div lang="fi"><b>Ulriksdalin</b>
+					 asema</div> <div lang="en"><b>Ulriksdal</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-E</styleUrl>
+				<name> Hägernäs </name>
+				<Point>
+					<coordinates>
+						18.1238794,59.4512705,0.0
+					</coordinates>
+				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"><b>Hägernäs</b> station</div> <div lang="fi"><b>Hägernäsin</b>
+					 asema</div> <div lang="en"><b>Hägernäs</b> station</div> ]]>
+				</description>
+			</Placemark>
+			<Placemark>
+				<styleUrl> #icon-paddle-F</styleUrl>
 				<name> Norrtälje</name>
 				<Point>
 					<coordinates>
@@ -43,7 +95,7 @@
 				</description>
 			</Placemark>
 			<Placemark>
-				<styleUrl> #icon-paddle-red</styleUrl>
+				<styleUrl> #icon-paddle-G</styleUrl>
 				<name> Kapellskär</name>
 				<Point>
 					<coordinates>
@@ -77,7 +129,13 @@
 				</description>
 			</Placemark>
 		</Folder>
+<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-blue'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>
