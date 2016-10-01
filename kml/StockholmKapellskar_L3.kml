@@ -16,8 +16,16 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Stockholms</b> station eller central</div> <div
-					 lang="fi"><b>Tukholman</b> asema</div> <div lang="en"><b>Stockholm</b> station</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Stockholms</b> station eller central. Förändrinngarna <ol>
+					 <li>Finlands HHtågena mot Åland och Helsingfors</li> <li>Estlands HHtågena via Åland till
+					 Tallinn, kanske även Riga</li> <li>Moskva tåget</li> </ol> Om Hyperloop blir av så skyttel
+					 via Arlanda till Norrtälje, Åland, Åbo<br> och Helsingfors </div> <div lang="fi">
+					 <b>Tukholman</b> keskusasema. Muutokset <ol> <li>Finlands HHtågena kohti Ahvenanmaata ja
+					 Helsinkiä</li> <li>Estlands HHtågena Ahvenanmaan kautta kohti Tallinnaa,<br> mahdollisesti
+					 myös Riika</li> <li>Juna määränpäänä Tampere, juna pystyy vaihtamaan kiskoleveyttä<br>
+					 Karjaalla, kuten jo nykyään automaattisesti tehdään Espanjassa</li> </ol> Jos Hyperloop
+					 suunnitelma toteutuu niin sukkula kohti Arlanda, Norrtälje,<br> Ahvenanmaata, Turkua ja
+					 Helsinkiä </div> <div lang="en"> <b>Stockholm</b> main railway station </div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -51,20 +59,25 @@
 			<Placemark>
 				<styleUrl> #icon-paddle-blue</styleUrl>
 				<name> Arlanda</name>
-				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda flygplats
-					 (ARN)</div> <div lang="fi"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda lentokenttä
-					 (ARN)</div> <div lang="en"><b>?[name]</b>Arlanda terminal 5, Stockholm Arlanda airport
-					 (ARN)</div> ]]>
-				</description>
 				<Point>
 					<coordinates>
 						17.9300681,59.650635300000005,0.0
 					</coordinates>
 				</Point>
+				<description>
+					<![CDATA[ <div lang="sv"> <b>Arlanda</b>. Buss från Norrtälje till Arlanda terminal 5,<br>
+					 Stockholm Arlanda flygplats (ARN)<br> Om Hyperloop blir av sker följande <ol> <li>Arlanda
+					 expressen ersätts med skyttel både från Stockholm Central<br> och Uppsala Central</li>
+					 <li>Ny skyttel från Norrtälje</li> <li>Syttel mellan flygfältena Arlanda och
+					 Helsingfors-Vanda</li> </ol> </div> <div lang="fi"> <b>Arlanda</b>. Bussi Norrtäljestä
+					 Arlanda terminal 5,<br> Stockholm Arlanda lentokenttä (ARN)<br> Jos Hyperloop toteutuu niin
+					 Norrtäljestä matka jatkuu suoraan lentokentälle<br> ja tästä sukkula kääntyy kohti
+					 etelää ja Tukholmaa </div> <div lang="en"> <b>Arlanda</b>. Bus from Norrtälje to Arlanda
+					 terminal 5,<br> Stockholm Arlanda airport (ARN) </div> ]]>
+				</description>
 			</Placemark>
 		</Folder>
-<Style id='icon-paddle-blue'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-blue'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

@@ -60,9 +60,16 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Lemlands</b> station<br>Åland central</div> <div
-					 lang="fi"><b>Lemlandin</b> asema<br>Ahvenanmaan keskusasema</div> <div lang="en"><b>Lemland
-					 </b>station<br>Main station at Åland</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Lemlands</b> station eller Åland central (Planerad). Belägen ute
+					 på<br> sydligaste udden av Lemland utgör den stationen på Åland. I denna<br> pesentation
+					 är det en järnvägsstation men i FS Links Hyperloop planer<br> är den en Hyperloop station.
+					 För att unvika för stora förskutningar i<br> banan på höjd läge kan det visa sig att
+					 stationen är hellt eller<br> delvis under mark- och havsnivå men med hiss och rulltrappor
+					 upp till<br> marknivå. </div> <div lang="fi"> <b>Lemlandin</b> asema tai Ahvenanmaan
+					 keskusasema (Suunniteltu).<br> Mahdolisesti aseman laiturit ovat sekä maan että merenpinnan
+					 alla<br> mutta asaemasta pääsee maapinnalle sekä hisseillä että rullaportailla.<br> Syy
+					 rakaisuun on että pyritään välttämään radan nousut ja laskut.<br> </div> <div
+					 lang="en"> <b>Lemland </b>station or main station at Åland (Planned) </div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -79,11 +86,11 @@
 				</description>
 			</Placemark>
 		</Folder>
-<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

@@ -16,10 +16,16 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Esbo</b> station<br>Ombyte av tåg om tåget ej klarar spårbredds
-					 växling</div> <div lang="fi"><b>Espoon</b> asema<br>Junanvaihto jollei juna pysty vaihtamaan
-					 kiskoleveyttä</div> <div lang="en"><b>Esbo</b> station<br>Change of train if the train cannot
-					 proceed on other gauge width</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Esbo</b> station. Ombyte av tåg om tåget ej klarar spårbredds
+					 växling.<br> Med fyrspårslösningen behövs inget ombyte ute tågen kör vidare.<br> Om ELSA
+					 banan och banan mot Tallinn blir bygda så kan passagerarna från<br> Åbo, Salo och Lojo byta
+					 till Tallinn tåget här.<br> Esbo är även en planerad Hyperloop station. </div> <div
+					 lang="fi"> <b>Espoon</b> asema. Junanvaihto jollei juna pysty vaihtamaan kiskoleveyttä.<br>
+					 Neliraideratkaisussa junat jatkavat suoraan.<br> Jos ELSA rata saadaan rakennettua niin
+					 matkustajat Turusta, Salosta ja Lohjalta<br> vaihtavat Tallinnan junaan Espoossa.<br> Espoo on
+					 myös suunnitellun Hyperloop radan asema. </div> <div lang="en"> <b>Esbo</b> station. Change
+					 of train if the train cannot proceed on<br> other gauge width, but if fourtrack solution is
+					 used then no change<br> of train is needed. </div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -44,8 +50,15 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Helsingfors</b> centralstation</div> <div
-					 lang="fi"><b>Helsingin</b> keskusasema</div> <div lang="en"><b>Helsinki</b> station</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Helsingfors</b> centralstation. Föfrändrinngarna<br> <ol> <li>C
+					 och Q lokaltågen går mot Tallinn</li> <li>HHtågen mot Stockholm, Köpenhamn, Hamburg,
+					 Bryssel</li> <li>Åbo tåget längs ELSA banan </ol> Ifall Hyperloop byggs så avgår
+					 hyperloop skyttlar mot<br> Helsingfors-Vanda flygfält men även mot Arlanda och Stockholm
+					 </div> <div lang="fi"> <b>Helsingin</b> keskusasema. Muutokset<br> <ol> <li>C ja Q
+					 paikallisjunat määränpäänä Tallinna</li> <li>KNjunat kohti Tukholmaa, Kööpenhaminaa,
+					 Hampuria ja Brysseliä</li> <li>Turun junat käyttävät ELSA rataa</li> </ol> Jos Hyperloop
+					 niin sukkulat kohti Helsinki-Vantaa lentoasemaa mutta<br> myös kohti Arlandaa ja Tukholmaa
+					 </div> <div lang="en"> <b>Helsinki</b> main railway station. </div> ]]>
 				</description>
 			</Placemark>
 		</Folder>

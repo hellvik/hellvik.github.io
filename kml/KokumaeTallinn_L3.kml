@@ -29,8 +29,17 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Tallins</b> station</div> <div lang="fi"><b>Tallinnan</b>
-					 asema</div> <div lang="en"><b>Tallinn</b> station</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Tallins</b> station. I denna presentation är detta ändpunkten
+					 för<br> Revals expressen från Stockholm och C- och Q-lokaltågena från Helsingfors.<br> I
+					 och med att skenbredden mot Finland är standard bredd kan även<br> tåg från t.ex. Hamburg
+					 nå stationen. Om Rail Baltica blir verklighet<br> kan tågena från norr även fortsätta
+					 söderut mot Riga. </div> <div lang="fi"> <b>Tallinnan</b> asema. Tässä esityksessä tämä
+					 asema toimii pääteasemana<br> sekä C- ja Q-paikallisjunille Helsingistä ja Räävelin
+					 pikajunalle<br> Tukholmasta. Koska raideleveys on vakio leveyinen niin päästään<br>
+					 matkaamaan sekä pohjoiseen (Suomen kautta) ja etelään (Rail Baltica).<br> Juna joka pystyy
+					 vaihtamaan raidelevettä, kuten esimerkiksi tehdään<br> Espanjassa, pystyisi kulkemaan
+					 suoraan Oulusta Tarttuaan Tallinnan kautta. </div> <div lang="en"> <b>Tallinn</b> station
+					 </div> ]]>
 				</description>
 			</Placemark>
 		</Folder>

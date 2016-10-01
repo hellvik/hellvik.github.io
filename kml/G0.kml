@@ -16,7 +16,7 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Degerby</b> by</div> <div lang="fi"><b>Degerby</b>kylä</div> <div
+					<![CDATA[ <div lang="sv"><b>Degerby</b> by</div> <div lang="fi"><b>Degerby</b> kylä</div> <div
 					 lang="en"><b>Degerby</b> village</div> ]]>
 				</description>
 			</Placemark>
@@ -29,8 +29,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Degerby</b> station</div> <div lang="fi"><b>Degerby</b> asema</div>
-					 <div lang="en"><b>Degerby</b> station</div> ]]>
+					<![CDATA[ <div lang="sv"><b>Degerby</b> station<br>Planerad</div> <div lang="fi"><b>Degerby</b>
+					 asema<br>Suunniteltu</div> <div lang="en"><b>Degerby</b> station<br>Planned</div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>

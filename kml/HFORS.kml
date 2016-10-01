@@ -55,10 +55,16 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Esbo</b> station<br>Ombyte av tåg om tåget ej klarar spårbredds
-					 växling</div> <div lang="fi"><b>Espoon</b> asema<br>Junanvaihto jollei juna pysty vaihtamaan
-					 kiskoleveyttä</div> <div lang="en"><b>Esbo</b> station<br>Change of train if the train cannot
-					 proceed on other gauge width</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Esbo</b> station. Ombyte av tåg om tåget ej klarar spårbredds
+					 växling.<br> Med fyrspårslösningen behövs inget ombyte ute tågen kör vidare.<br> Om ELSA
+					 banan och banan mot Tallinn blir bygda så kan passagerarna från<br> Åbo, Salo och Lojo byta
+					 till Tallinn tåget här.<br> Esbo är även en planerad Hyperloop station. </div> <div
+					 lang="fi"> <b>Espoon</b> asema. Junanvaihto jollei juna pysty vaihtamaan kiskoleveyttä.<br>
+					 Neliraideratkaisussa junat jatkavat suoraan.<br> Jos ELSA rata saadaan rakennettua niin
+					 matkustajat Turusta, Salosta ja Lohjalta<br> vaihtavat Tallinnan junaan Espoossa.<br> Espoo on
+					 myös suunnitellun Hyperloop radan asema. </div> <div lang="en"> <b>Esbo</b> station. Change
+					 of train if the train cannot proceed on<br> other gauge width, but if fourtrack solution is
+					 used then no change<br> of train is needed. </div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -226,27 +232,34 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Helsingfors</b> centralstation</div> <div
-					 lang="fi"><b>Helsingin</b> keskusasema</div> <div lang="en"><b>Helsinki</b> station</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Helsingfors</b> centralstation. Föfrändrinngarna<br> <ol> <li>C
+					 och Q lokaltågen går mot Tallinn</li> <li>HHtågen mot Stockholm, Köpenhamn, Hamburg,
+					 Bryssel</li> <li>Åbo tåget längs ELSA banan </ol> Ifall Hyperloop byggs så avgår
+					 hyperloop skyttlar mot<br> Helsingfors-Vanda flygfält men även mot Arlanda och Stockholm
+					 </div> <div lang="fi"> <b>Helsingin</b> keskusasema. Muutokset<br> <ol> <li>C ja Q
+					 paikallisjunat määränpäänä Tallinna</li> <li>KNjunat kohti Tukholmaa, Kööpenhaminaa,
+					 Hampuria ja Brysseliä</li> <li>Turun junat käyttävät ELSA rataa</li> </ol> Jos Hyperloop
+					 niin sukkulat kohti Helsinki-Vantaa lentoasemaa mutta<br> myös kohti Arlandaa ja Tukholmaa
+					 </div> <div lang="en"> <b>Helsinki</b> main railway station. </div> ]]>
 				</description>
 			</Placemark>
 		</Folder>
-<Style id='icon-paddle-L'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-S'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/S.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-R'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/R.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-J'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-L'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/L.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-M'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-G'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/G.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-F'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/F.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-H'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/H.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-I'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-M'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/M.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-O'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/O.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-J'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/J.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-K'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-N'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/N.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-K'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/K.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-E'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/E.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-I'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/I.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-D'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/D.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-O'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/O.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

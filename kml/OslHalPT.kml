@@ -16,8 +16,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Oslo centralstation</b></div> <div lang="fi"><b>Oslon
-					 keskusasema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -30,7 +30,7 @@
 				</Point>
 				<description>
 					<![CDATA[ <div lang="sv"><b>Sarpsborg station</b></div> <div lang="fi"><b>Sarpsborgin
-					 asema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
+					 asema</b></div> <div lang="en"><b>Sarpsborg railway station</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -41,10 +41,7 @@
 						11.383702800000002,59.1204245,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>Halden station</b></div> <div lang="fi"><b>Haldenin asema</b></div>
-					 <div lang="en"><b>?[name]</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<name> Halden växel</name>
@@ -55,7 +52,7 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>Haldenin vaihde</b></div> <div
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
 					 lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>

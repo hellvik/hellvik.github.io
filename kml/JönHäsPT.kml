@@ -25,7 +25,13 @@
 						14.163265200000001,57.7845397,0.0
 					</coordinates>
 				</Point>
-<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+				<description>
+					<![CDATA[ <div lang="sv"> <b>Jönköping</b> central. Stationen ligger olämpligt till<br> i
+					 förhållande tll banorna. Problemet kunde lösas som i Malmö<br> genom tunnel under staden,
+					 men det är mera ekonomiskt att<br> utnyttja Rocksjö station. </div> <div lang="fi">
+					 <b>Jönköping</b> keskusasema. </div> <div lang="en"> <b>Jönköping</b> main station. </div>
+					 ]]>
+				</description>
 			</Placemark>
 			<Placemark>
 				<name> Värnamo</name>

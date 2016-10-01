@@ -42,13 +42,21 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Esbo</b> station</div> <div lang="fi"><b>Espoon</b> asema</div>
-					 <div lang="en"><b>Esbo</b> station</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Esbo</b> station. Ombyte av tåg om tåget ej klarar spårbredds
+					 växling.<br> Med fyrspårslösningen behövs inget ombyte ute tågen kör vidare.<br> Om ELSA
+					 banan och banan mot Tallinn blir bygda så kan passagerarna från<br> Åbo, Salo och Lojo byta
+					 till Tallinn tåget här.<br> Esbo är även en planerad Hyperloop station. </div> <div
+					 lang="fi"> <b>Espoon</b> asema. Junanvaihto jollei juna pysty vaihtamaan kiskoleveyttä.<br>
+					 Neliraideratkaisussa junat jatkavat suoraan.<br> Jos ELSA rata saadaan rakennettua niin
+					 matkustajat Turusta, Salosta ja Lohjalta<br> vaihtavat Tallinnan junaan Espoossa.<br> Espoo on
+					 myös suunnitellun Hyperloop radan asema. </div> <div lang="en"> <b>Esbo</b> station. Change
+					 of train if the train cannot proceed on<br> other gauge width, but if fourtrack solution is
+					 used then no change<br> of train is needed. </div> ]]>
 				</description>
 			</Placemark>
 		</Folder>
 <Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

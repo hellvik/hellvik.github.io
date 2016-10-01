@@ -16,8 +16,8 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Köpemhamns centralstation</b></div> <div
-					 lang="fi"><b>Kööpenhaminan keskusasema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"><b>Köpenhamns centralstation</b></div> <div
+					 lang="fi"><b>Köpenhaminan keskusasema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -90,7 +90,7 @@
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
-				<name> Lübeck, Hauptbahnhof</name>
+				<name> Lübeck Hauptbahnhof</name>
 				<styleUrl> #icon-paddle-red</styleUrl>
 				<Point>
 					<coordinates>
@@ -103,7 +103,7 @@
 				</description>
 			</Placemark>
 			<Placemark>
-				<name> Hamburg, Hauptbahnhof</name>
+				<name> Hamburg Hauptbahnhof</name>
 				<styleUrl> #icon-paddle-red</styleUrl>
 				<Point>
 					<coordinates>
@@ -111,8 +111,11 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Hamburgs centralstation</b></div> <div lang="fi"><b>Hampurin
-					 keskusasema</b></div> <div lang="en"><b>?[name]</b></div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Hamburg</b> central (Hauptbahnhof). i SJ's och Trafikverkets
+					 visioner<br> är detta en ändpunkt för banan över Öresund från Malmö.<br> Fastän det i
+					 presentationen är fråga om det nordiska HH-ban nätet<br> är det kanske ändå nödvändigt
+					 att märka in Hamburg. </div> <div lang="fi"> <b>Hampurin</b> keskusasema (Hauptbahnhof).
+					 </div> <div lang="en"> <b>Hamburg</b> Hauptbahnhof or main railway station. </div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -159,7 +162,7 @@
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 		</Folder>
-<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-grn-stars'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/grn-stars.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

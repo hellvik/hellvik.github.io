@@ -6,7 +6,7 @@
 <link rel="copyright" href="http://hellvik.github.io/license.html" />
 <meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
 <meta name="google" content="notranslate" />
-<meta name="pubdate" content="20160918" />
+<meta name="pubdate" content="20161001" />
 
 <meta name="Description" CONTENT="Pohjolan korkeanopeuden rautatieverkko"/>
 
@@ -89,11 +89,6 @@ gLayer0.setMap(map);
 var gLayer9=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/BilGötBN.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer9, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
 gLayer9.setMap(map);
-/*
-var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/All3PT.kml',suppressInfoWindows: true});
-google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
-gLayer1.setMap(map);
-*/
 var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/StoGötPT.kml',suppressInfoWindows: true});
 google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map,{ footer : '<small> coord ?[lat] : ?[lng]</small>' });});
 gLayer1.setMap(map);

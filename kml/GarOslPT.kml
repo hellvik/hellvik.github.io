@@ -15,7 +15,10 @@
 						10.7524395,59.91110510000001,0.0
 					</coordinates>
 				</Point>
-<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
 			</Placemark>
 			<Placemark>
 				<name> Gardermoen, Oslo Lufthavn</name>

@@ -93,14 +93,18 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Tabasalu</b> station<br>Biltransport till Finland</div> <div
-					 lang="fi"><b>Tabasalun</b> asema<br>Autokuljetus Suomeen</div> <div lang="en"><b>Tabasalu</b>
-					 station<br>Car transporting capacity to Finland</div> ]]>
+					<![CDATA[ <div lang="sv"> <b>Tabasalu</b> station. Biltransport till Finland. Tabasalu utgör
+					 den<br> andra ändpunkten för biltransporten från Jorvas i Finland. Denna lösning<br> är
+					 med för att ersätta bristen att biltunnel ej är byggd under finska viken. </div> <div
+					 lang="fi"> <b>Tabasalun</b> asema. Autokuljetus Suomeen. Tabasalu on Jorvaksesta<br> tulevan
+					 autokuljetuksen viron puoleinen päätepiste. Ratkaisu pyrkii<br> korvamaan autotunnelin puute
+					 suomenlahden alitse. </div> <div lang="en"> <b>Tabasalu</b> station. Car transporting capacity
+					 to Finland </div> ]]>
 				</description>
 			</Placemark>
 		</Folder>
-<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-yellow'><IconStyle><scale> 0.7</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle></Style>
+<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-purple'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

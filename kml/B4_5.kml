@@ -150,10 +150,7 @@
 						23.637428283691406,60.063127167731004,0.0
 					</coordinates>
 				</Point>
-				<description>
-					<![CDATA[ <div lang="sv"><b>Haga</b></div> <div lang="fi"><b>Haga</b></div> <div
-					 lang="en"><b>Haga</b></div> ]]>
-				</description>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 			<Placemark>
 				<styleUrl> #icon-paddle-N</styleUrl>

@@ -16,8 +16,9 @@
 					</coordinates>
 				</Point>
 				<description>
-					<![CDATA[ <div lang="sv"><b>Kapellskärs</b> station</div> <div lang="fi"><b>Kapellskärin</b>
-					 asema</div> <div lang="en"><b>Kapellskär</b> station</div> ]]>
+					<![CDATA[ <div lang="sv"><b>Kapellskärs</b> station<br>(planerad)</div> <div
+					 lang="fi"><b>Kapellskärin</b> asema<br>(suunniteltu)</div> <div lang="en"><b>Kapellskär</b>
+					 station<br>(planned)</div> ]]>
 				</description>
 			</Placemark>
 			<Placemark>
@@ -41,8 +42,8 @@
 <description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
 			</Placemark>
 		</Folder>
+<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-A'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/A.png</href></Icon></IconStyle></Style>
 <Style id='icon-paddle-C'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/C.png</href></Icon></IconStyle></Style>
-<Style id='icon-paddle-B'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/B.png</href></Icon></IconStyle></Style>
 	</Document>
 </kml>

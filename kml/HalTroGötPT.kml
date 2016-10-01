@@ -15,7 +15,10 @@
 						11.2751055,59.135971100000006,0.0
 					</coordinates>
 				</Point>
-<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+				<description>
+					<![CDATA[ <div lang="sv"><b>?[name]</b></div> <div lang="fi"><b>?[name]</b></div> <div
+					 lang="en"><b>?[name]</b></div> ]]>
+				</description>
 			</Placemark>
 			<Placemark>
 				<name> Halden stajon</name>
