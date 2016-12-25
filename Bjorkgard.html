@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
+<meta name="google" content="notranslate" />
+<meta name="pubdate" content="20161001" />
+
+<meta name="Description" CONTENT="Forslag for Hyperloop"/>
+
+<meta name="robots" content="nofollow" />
+<title>Helsinfors metropol</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 12, /* zoom : 7,*/
+					/*center : new google.maps.LatLng(60.1991312090077,24.933278560638428),// center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					center : new google.maps.LatLng(60.1991312090077,24.782066345214844),
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/BjorkgardHYP.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/BjorkgardPT.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer1.setMap(map);
+
+			}
+			/*RC*/			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
+			Utils.addEvent(window,'load',InitMap);
+			Utils.addEvent(window,'load',InitPork);
+</script>
+</head>
+<body>
+
+<h1>
+Med Hyperloop till Helsingfors metropol område /
+Hyperloop sukkulalla Helsingin metropoli alueelle 
+</h1>
+<div id="map">
+</div>
+<p>
+FS Link på Åland planerar en Hyperloop mellan Stockholm och Helsingfors (Hyperloop teknik som Elon Musk har fört fram, ett nästan lufttomt rör där en skyttel 
+kan köra med en hastighet av c. 1000 km/timmen).
+</p><p>
+Är i kontakt med ålänningarna och särskilt i den där Helsingfors delen. Märkte att planen tycks vara att bygga röret vid Åboleden 
+från Åbo hållet in till H:fors. Problemet är dock att man ej bygger rör in till Helsingfors så lätt, vi har ju erfarenhet från väst-metron.
+Det intressanta, ur min synpunkt. är att röret väl kan byggas till Björkgård station på gränsen mellan Esbo och Grankulla utan att 
+egentligen byggas under jorden eller genom tätbyggd. Ålänningarna hade föreslagit Esbo centum men Google Maps visar att det inte finns plats för ett rör ovan jord här.
+Tog alltså tåget till Björkgård och promenerade från Björkgård till Grankulla. Kunde samtidigt verifiera att plats för Hyperloop station finns 
+runt Björkgård station och vid Åboledens övergång av järnvägen.
+</p>
+<ol>
+<li>A - Björkgård / Kouvuhovi<br></li>
+<li>C - Otnäs / Otanniemi<br></li>
+<li>D - Helsingfors / Helsinki<br></li>
+</ol>
+Långsikts fördelar är
+<ol>
+<li>Top modern "rymdteknik" (Elon Musk -> SpaceX -> Mars resa men även Elon Musk -> Tesla -> automatstyrd bil)<br></li>
+<li>Planen är att nå Stockholm på 30 minuter, vilket betyder att man kan jobb pendla härifrån till Stockholm (om man kan svenska)<br></li>
+<li>Om planen lyckas så går röret under jord i Mankans på följande sett Mankans -> Otnäs -> Kampen -> Järnvägsstationen. 
+Alltså under Bredviken och kanske vi får i Esbo en Hyperloop station till, i Otnäs, under f.d. Tekniska Högskolans 
+huvudbyggnad och i anslutning till väst-metro stationen i Otnäs<br></li>
+</ol>
+OCH fördelar för nästa år och framåt  
+<ol>
+<li>Intresse för kommunikantion och teknik bland 30 +/- åringar
+<li>Björkgård station gör det ännu mera lönsamt att bygga ut stadsbanan Alberga - Köklax som planerat
+<li>Start av nytänkade för planeringen Esbo interna allmänna komunikation (typ Hur kommer vi till Hyperloop stationen ?) 
+</ol>
+<p>
+Utöver detta har vi här en ny lösning för jobb pendling från Åbo, Salo, Lojo mot Helsingfors regionen. Byte till / från Hyperloop i Björkgård
+bör göras så smidig som möjligt till lokaltåg för pendlare till Alberga, Sockenbacka, Haga. Byte av kominikation Metro - Hyperloop blir
+betydande i Otnäs och ger nya business och arbetsmöjligheter för hela södra Esbo.
+</p>
+<p>
+Om det visar sig att sträckan Otnäs - Helsingors ej kan byggas så har vi som reserplan lösningen att bygga bara till Otnäs
+och låta passagerarna byta till Metro i Otnäs.
+Stäckan Mankans - Otnäs måste antagligen byggas helt eller delvis under jord vilket gör den dyrare per meter än övriga delar av Hyperloop banan.
+Stäckan Otnäs - Helsingfors bör byggas under jord och under Bredviken vilket antagligen ökar kostnaderna. Dock får Hyperloop projektet
+nödvändig efrarenhet att bygga under havet som även kan utnyttjas i fas III (Åbo - Norrtälje).
+</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>
