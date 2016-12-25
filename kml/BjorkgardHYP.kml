@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name> Bjorkgard</name>
+		<description>
+			<![CDATA[ ]]>
+		</description>
+		<Folder>
+			<name> Björkgård layer</name>
+			<Placemark>
+				<name> Björkgård - Helsingfors</name>
+				<styleUrl> #plannedHH</styleUrl>
+<description><![CDATA[<div lang="sv">Planerad bana</div><div lang="fi">Suunniteltu rata</div><div lang="en">Planned</div>]]></description>
+				<LineString>
+					<tessellate> 1</tessellate>
+					<coordinates>
+						24.692717,60.206968,0.0 24.69984,60.203151,0.0 24.710484,60.199995,0.0 24.729881,60.197308,0.0
+						 24.761124,60.193425,0.0 24.803009,60.187665,0.0 24.82893,60.183995,0.0 24.86352,60.180368,0.0
+						 24.914589,60.172001,0.0 24.941454,60.170806,0.0
+					</coordinates>
+				</LineString>
+			</Placemark>
+		</Folder>
+<Style id="plannedHH"><LineStyle><color> ffFF00FF</color><width> 4</width></LineStyle></Style>
+	</Document>
+</kml>
