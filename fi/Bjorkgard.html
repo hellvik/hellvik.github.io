@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="author" content="John-Eric Soderman" />
+<link rel="copyright" href="http://hellvik.github.io/license.html" />
+<meta name="google-site-verification" content="hDdsHFoaYou3frWs_mK7d0yPu5fFc5paClDexCI8RU8" />
+<meta name="google" content="notranslate" />
+<meta name="pubdate" content="20161001" />
+
+<meta name="Description" CONTENT="Forslag for Hyperloop"/>
+
+<meta name="robots" content="nofollow" />
+<title>Hyperloop Koivuhovi</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<style type="text/css">
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map { height: 80% }
+.menu {
+position: fixed;
+left: 0;
+top: 0;
+width:100%;
+text-align: left;
+border-collapse: collapse;
+z-index : 1;
+background-color: yellow;
+}
+.menu2 {
+border: 0px none transparent;
+width:100%;
+}
+
+</style>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://hellvik.github.io/js/R2J.js"></script>
+<script type="text/javascript">
+			var map;
+			/* This is called one the page has loaded */
+			function InitMap()
+			{
+				/* Set all options for the map */
+				var options = {
+					zoom : 12, /* zoom : 7,*/
+					/*center : new google.maps.LatLng(60.1991312090077,24.933278560638428),// center : new google.maps.LatLng(59.7527055927204,21.5025655953125), */
+					center : new google.maps.LatLng(60.1991312090077,24.782066345214844),
+					mapTypeId: google.maps.MapTypeId.ROADMAP, /* mapTypeId: google.maps.MapTypeId.ROADMAP, */
+					mapTypeControl: true,
+					mapTypeControlOptions: {
+						style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+						position: google.maps.ControlPosition.BOTTOM_CENTER
+					},
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					zoomControl: true,
+					zoomControlOptions: {
+						style: google.maps.ZoomControlStyle.LARGE,
+						position: google.maps.ControlPosition.LEFT_CENTER
+					},
+					scaleControl: true,
+					scaleControlOptions: {
+						position: google.maps.ControlPosition.BOTTOM_LEFT
+					},
+					streetViewControl: true,
+					streetViewControlOptions: {
+						position: google.maps.ControlPosition.LEFT_TOP
+					}
+				};
+				/* Create a new Map for the application */
+				map = new google.maps.Map(document.getElementById('map'),options);
+var gLayer0=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/BjorkgardHYP3.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer0, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer0.setMap(map);
+var gLayer1=new google.maps.KmlLayer({preserveViewport: true,url: 'http://hellvik.github.io/kml/BjorkgardPT.kml',suppressInfoWindows: true});
+google.maps.event.addListener(gLayer1, 'click', function(kmlEvent) { r2jInfo(kmlEvent,map);});
+gLayer1.setMap(map);
+
+			}
+			/*RC*/			/* A utility object for simple event handling */
+			var Utils = { };
+			Utils.addEvent = (function()
+			{
+				return function addEvent(eventObj,event,eventHandler)
+				{
+					if (eventObj.addEventListener)
+					{
+						eventObj.addEventListener(event,eventHandler,false);
+					}
+					else if (eventObj.attachEvent)
+					{
+						event = 'on' + event;
+						eventObj.attachEvent(event, eventHandler);
+					}
+					else
+					{
+						eventObj['on' + event] = function() { eventHandler() };
+					}
+				};
+			}());
+			Utils.removeEvent = (function()
+			{
+				return function removeEvent(event)
+				{
+					if(event.preventDefault)
+					{
+						event.preventDefault();
+						event.stopPropagation();
+					}
+					else
+					{
+						event.returnValue = false;
+						event.cancelBubble = true;
+					}
+				};
+			}());
+			//----Utils.addEvent(window,'load',Utils.addEvent(window,'load',InitMap););
+			//----google.maps.event.addDomListener(window, "load", Utils.addEvent(window,'load',InitMap););
+			Utils.addEvent(window,'load',InitMap);
+</script>
+</head>
+<body>
+<a href="../sv/Bjorkgard.html"><img src="../picture/sverige.png" height="10" width="16"> &nbsp;ruotsiksi</a>
+<h1>Hyperloop sukkulalla Helsingin metropoli alueelle</h1>
+<div id="map">
+</div>
+<p>
+Ahvenanmaalainen yhtiö FS Links
+(<a href="http://www.fsl.ax/files.html">FS Links Ab, Hyperloop</a> pre-feasibility study) 
+suunnittelee Hyperloop rataa Tukholman ja Helsingin välillä
+(Elon Musk'n Hyperloop tekniikka perustuu ideaan että ajetaan sukkulaa melkein tyhjiössä olevassa putkessa noin 1Mm vauhdilla).
+</p><p>
+Olen ollut yhteydessä Ahvenanmaalaisiin asiassa ja erityisesti kun kyseessä on Helsingin alue.
+Huomasin että suunnitelmassa putki vedetään Turusta kohti Helsinkiä Turunväylän viereen, mutta ongelmaksi nousee eteen
+ettei putkea noin vain voi rakentaa Helsingin keskustaan, ei edes maan alla.
+Kiinnostavaa on että putkea ei kannata rakentaa Espoon keskustaan mitä ahvenanmaalaiset esittää vaan on parempi
+seurata Turunväylää Koivuhovin asemalle, eli paikkaan jossa rautatie alittaa Turunväylää. Syy valintaan piilee tosiassa että
+Espoon keskustassa on liian vähän rakentamatonta maata putkea varten.
+</p>
+<ol>
+<li>A - Kouvuhovi<br></li>
+<li>C - Otaniemi<br></li>
+<li>D - Helsinki<br></li>
+</ol>
+<p>
+Lisäksi putki pystytään rakentaaan maan päällä aina Mankkaan asti. Putki Mankaasta Helsinkiin on rakennettava maanalisessa
+tunnelissa. Mahdollisuus rakentaa maan päällä mahdollistaa saman tekniikan käyttöä jota tällä hetkellä
+suunnitellaan Hyperloop putkelle Los Angeles - San Fransisco välille. Tällä tavalla säästetään myös rakennuskustannuksia.
+Matka Mankkaa - Otaniemi - Helsinki on maan alla ja vaatii sekä Otaniemen että Helsingin kohdalle maanalista asemaa,
+tosin sekä Otaniemessä että Helsingissä asemat ovat Metro-aseman vieressä. Sunnittelussa tarvitaan ratkaisu jossa
+Hyperloop ja Metro nähdään yhdistettynä asemana.
+</p>
+<h2>Pitkän aikavälin edut</h2>
+<ol>
+<li>Huippu modernia "avaruustekniikkaa" (Elon Musk -&gt; SpaceX -&gt; matka Marsiin, 
+mutta myös Elon Musk -&gt; Tesla -&gt; itsestään ohjaavaa autoa)<br></li>
+<li>Suunnitelma on matkustaa Tukholmaan alle puolen tunnin.
+Tästä seuraa että on mahdollista olla töissä Tukholmassa mutta asua Helsingin seudulla, eli Hyperloop matka on osana
+jokapäivästä työmatkaa<br></li>
+<li>Jos suunnitelma onnistuu niin Otaniemen Metroasema on myös Hyperloop asema ja täten etelä Espoosta ja Tapiolasta
+päästään kätevästi sekä Tukholmaan että Turkuun ja päinvastoin. Otaniemen Hyperloop asema on vielä avoin kysymys eikä
+ole mukana alkuperäisessä Ahvenanmaalisten suunnitelmassa.<br></li>
+</ol>
+<h2>Edut tälle vuodelle ja -&gt;</h2>
+<p>Vaikka varsinainen suunnittelu ja rakentaminen vielä kestää niin joitakin etuja saadaan silti jopa tälle vuodelle, 2017 
+<ol>
+<li>Ikäpolvissa 30 +/- kiinnostus liikenteeseen ja tekniikkaan paranee koska tarjolla täysin uusia haasteita<br></li>
+<li>Koivuhovin asema uusi asemointi ja käyttö tekee kaupunkiradan rakentamisen entistä kannataavaksi. Erityisesti kun
+ottaa huomioon työmatkaliikenne Lohjalta, Salosta ja Turusta. Kyseinen liikenne käynnistyy Hyperloop suunnitelman ensimmäisessä vaiheessa
+jolloin ei vielä mitään putkea ole Turusta kohti Ruotsia.<br></li>
+<li>Uusajattelu erityisesti Espoon sisäisen liikenteen kohdalta. Miten eri puolilta Espoota päästään
+sekä Koivuhovin että Otaniemen Hyperloop asemille riitävän tehokaasti. Haasteena on sekä Läni-Metro mutta myös
+kaupunkirata ja erityisesti Kehä III.<br></li>
+</ol>
+<p>
+Varasuunnitelmana voidaan myös toteuttaa Hyperloop mutta ilman matkaa Otaniemi - Helsinki, jos osoittautuu että
+uusi tunneli Helsingin rautatieasemalle ja asema ei ole toteutettavissa. Tällöin matkustajat Tukholmaan
+käyttävät Läni-Metroa Otaniemeen, josta tulee Helsingin pään liikenne "Hub".
+</p>
+<p>
+Suunnitelmaa on myös tehtävä lentomatkustajia varten Helsinki Vantaa lentoasema&lt;-&gt;Helsinki&lt;-&gt;Otaniemi.
+Alkuperäisessä Ahvenanmaalaisten suunitelmassa myös lentoasema oli Hyperloop asema ja jollei tämäkään toteudu
+niin tätä korvaavaa suunnitelmaa kannattaa selvittää.
+</p>
+<h2>Yhteiskunnalliset vaikutukset, Helsingin alueella ja myös koko etelä Suomessa ?</h2>
+<p>
+Nopea ja myös edullinnen liikkuminen Helsingin työvoima-alueen ja Tukholman työvoima-alueen välillä mullistaa
+taloutta monin verroin mutta myös palvelut. Työnsaanti laajenee kuten on arvattavissa mutta muutos näkyy
+myös SOTE alueella kuten on mahdollista sekä käydä lääkärissä ja saada sairauspalveluja maan rajan toiselta
+puolelta. Tämä SOTE vaikutus vaatii silti laajemman selvityksen ja myös uusajattelua.
+</p>Kuljetustekiikka ja erityisesti kuljetustekniikan integrointi yhteiskunnan muuhun liikenteeseen on
+haaste johon ei olla törmätty sen jälkeen kun ensimmäinen rautatie saatiin Helsinkiin. Tässä tulee mieleen
+termi "juntti" joka tarkoittaa "junalla tullut", saadaanko nyt uusi vastaava tämän tyyppinen termi ?
+</p>
+<p>
+<b>Pitäisikö ensimmäisen Hyperloop putken lisäksi rakentaa muita, etelään, pohjoiseen ?</b> 
+</p>
+<br><footer><small><small><a rel="license" href="../license.html">license</a> Railway Stockholm - Helsinki - Tallinn</small></small></footer>
+</body>
+</html>
