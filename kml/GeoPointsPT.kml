@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+	<Document>
+		<name> cHYPER</name>
+		<description/>
+		<Folder>
+			<name> Points</name>
+			<Placemark>
+				<name> Stockholm</name>
+				<description>
+					<![CDATA[ Stockholms station eller central <br>Tukholman asema <br>Stockholm station]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						18.058198,59.330125,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Ulriksdal</name>
+				<description>
+					<![CDATA[ Ulriksdals station <br>Ulriksdalin 					 asema <br>Ulriksdal station]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						18.000262,59.38072,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Norrtälje</name>
+				<description>
+					<![CDATA[ Norrtälje station (nya)<br>(planerad) <br>Norrtäljen asema (uusi)<br>(suunniteltu)
+					 <br>Norrtälje station (new)<br>(planned)]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						18.684998,59.741055,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Arlanda</name>
+				<description>
+					<![CDATA[ ?[name]Arlanda terminal 5, Stockholm Arlanda flygplats 					 (ARN) <br>?[name]Arlanda
+					 terminal 5, Stockholm Arlanda lentokenttä 					 (ARN) <br>?[name]Arlanda terminal 5,
+					 Stockholm Arlanda airport 					 (ARN)]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						17.930068,59.650635,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Kapellskär</name>
+				<description>
+					<![CDATA[ Kapellskärs station<br>(planned) <br>Kapellskärin asema<br>(planned)
+					 <br>Kapellskär 					 station<br>(planned)]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						19.064026,59.717681,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Lemland</name>
+				<description>
+					<![CDATA[ Lemlands station<br>Åland central (planned) <br>Lemlandin asema<br>Ahvenanmaan
+					 keskusasema (planned) <br>Lemland station<br>Main station at Åland (planned)]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						20.186348,59.978723,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> DegerbyST</name>
+				<description>
+					<![CDATA[ Degerby station<br>(planerad) <br>Degerby asema<br>(suunniteltu) <br>Degerby
+					 					 station<br>(planned)]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						20.414486,60.026441,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Norrhära</name>
+				<description>
+					<![CDATA[ ?[name] <br>?[name] <br>?[name]]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						21.142845,59.97095,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Kirjais</name>
+				<description>
+					<![CDATA[ Kirjais station <br>Kirjaisten 					 asema <br>Kirjais station]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						21.973257,60.122184,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Karis</name>
+				<description>
+					<![CDATA[ Karis station <br>Karjaan asema 					 <br>Karis station]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						23.661461,60.068609,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Jorvas</name>
+				<description>
+					<![CDATA[ Jorvas station <br>Jorvaksen 					 asema <br>Jorvas station]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						24.51273,60.137915,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Helsingfors</name>
+				<description>
+					<![CDATA[ Helsingfors centralstation <br>Helsingin keskusasema <br>Helsinki station]]>
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						24.941883,60.170752,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Salo</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						23.1481934,60.4158864,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Lojo</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						24.1218567,60.2793237,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Björkgård</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						24.6947765,60.2068192,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Otnäs</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						24.8296165,60.1841873,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Åbo</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						22.2988129,60.4399463,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Kista</name>
+				<description>
+					Science Park
+				</description>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						17.9448795,59.4062192,0
+					</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name> Vittenstenen</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						20.1185417,59.8518852,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Sackholm</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						21.8978119,60.1209872,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Pargas</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						22.3036194,60.2987219,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> St Karins</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						22.3860168,60.4091057,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Ekenäs</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						23.4558105,59.9756312,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Hangö</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						22.9888916,59.8310147,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Kakumäe</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						24.5791626,59.4562434,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+			<Placemark>
+				<name> Storklobben</name>
+				<styleUrl> #icon-paddle-red</styleUrl>
+				<Point>
+					<coordinates>
+						20.2723932,59.9664178,0
+					</coordinates>
+				</Point>
+<description><![CDATA[<div lang="sv"><b>?[name]</b></div><div lang="fi"><b>?[name]</b></div><div lang="en"><b>?[name]</b></div>]]></description>
+			</Placemark>
+		</Folder>
+<Style id='icon-paddle-red'><IconStyle><scale> 1.1</scale><Icon><href> http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle></Style>
+	</Document>
+</kml>
