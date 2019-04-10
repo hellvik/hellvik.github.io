@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Regex.MatchPack</title>
+  </head>
+  <body>
+    <h1>Y2018.Text.Regex.MatchPack</h1>
+    <h2>Type</h2>
+    <p>
+	type Match is tagged private<br>
+	type Match_AC is access Match<br>
+	type Unbounded_Wide_Wide_String_AC is access all Ada.Strings.Wide_Wide_Unbounded.Unbounded_Wide_Wide_String<br>
+	type Unbounded_Wide_Wide_String_AA is array (Integer range &lt;&gt;) of Unbounded_Wide_Wide_String_AC<br>
+    </p>
+    <h2>Function</h2>
+    <p>
+	function new_Match(jAC:Y2018.Text.Jets.MatchPack.Match_AC;us : Ada.Strings.Wide_Wide_Unbounded.Unbounded_Wide_Wide_String) return Match_AC<br>
+      <font color="#993300"><i>
+      (internal use)
+      </i></font>
+	</p><p>
+	function getMatch(matchValue:Match_AC;mid:Integer) return Wide_Wide_String<br>
+      <font color="#993300"><i>
+      Retreive a specific match result by giving the parentes expression number
+      </i></font><br>
+	function getMatch(matchValue:Match_AC) return Unbounded_Wide_Wide_String_AA<br>
+      <font color="#993300"><i>
+      Retreive all results of the match
+      </i></font>
+	</p><p>
+	function hasMatch(matchValue:Match_AC;mid:Integer) return Boolean<br>
+      <font color="#993300"><i>
+      Query existence of a specific parentes value
+      </i></font>
+	</p><p>
+	function count(matchValue:Match_AC) return Integer<br>
+      <font color="#993300"><i>
+      Get number of parentes values. Result one if no capturing paranteses exists
+      in the regular expression
+      </i></font>
+    </p>
+<br><footer><small><small><a rel="license" href="license.html">license</a> Y2018-Text-project</small></small></footer>
+  </body>
+</html>

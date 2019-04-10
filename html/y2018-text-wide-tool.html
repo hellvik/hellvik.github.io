@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Wide.Tool</title>
+  </head>
+  <body>
+    <h1>y2018.Text.Wide.Tool</h1>
+    <h2>Type</h2>
+    type M_AAAC is access all
+    Y2018.Text.Regex.MatchPack.Unbounded_Wide_Wide_String_AA;
+    <h2>Function</h2>
+    <p>
+      function To_Hex8(v:Wide_Wide_Character) return String<br>
+      function To_Hex8(v:Character) return String<br>
+      function To_Hex8(v:Integer) return String<br>
+      <font color="#993300"><i>Return a 8 character wide string with
+          corresponding hexadecimal value and padded to left by
+          underscores</i></font><br>
+    </p><p>
+      function To_Hex8W(v:Wide_Wide_Character) return Wide_Wide_String<br>
+      function To_Hex8W(v:Character) return Wide_Wide_String<br>
+      function To_Hex8W(v:Integer) return Wide_Wide_String<br>
+      <font color="#993300"><i>Return a 8 wide_wide_character string
+          with corresponding hexadecimal value and padded to left by
+          underscores</i></font><br>
+    </p><p>
+      function To_HexX(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function To_HexX(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function To_HexU(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function To_HexU(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function To_HexV(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function To_HexV(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function To_HexY(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function To_HexY(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      <font color="#993300"><i>
+      Split input string character by character, convert all characters to hexadecimal values
+      and return these hexadecimal values as a string and an underscore character as a separator.
+      Length of the hexadecimal value depends on the used function.
+      HexX hexa value length 2,   
+      HexU hexa value length 4,   
+      HexV hexa value length 6,   
+      HexY hexa value length 8.   
+      </i></font>
+    </p><p>
+    function Is_Valid(s:<font color="#ff0000"><u>STRING</u></font>)
+    return Boolean<br>
+    <font color="#993300"><i>Valid UTF encoded string returns TRUE</i></font>
+    </p><p>
+    function Substr(s:<font color="#ff0000"><u>STRING</u></font>;pos:Integer;len:Integer)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function Substr(s:<font color="#ff0000"><u>STRING</u></font>;pos:Integer)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      <font color="#993300"><i>
+      Create a substring from a string starting from "pos" with "len" number of characters or
+      to the end of the string
+      </i></font>
+    </p><p>
+      function ReIndex(s:<font color="#ff0000"><u>STRING</u></font>;rfirst:Integer)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      <font color="#993300"><i>
+      Reindex a string to string'First as value rfirst
+      </i></font>
+      </p><p>
+      function CmpS(first:<font color="#ff0000"><u>STRING</u></font>;second:<font color="#ff0000"><u>STRING</u></font>) return Integer<br>
+      <font color="#993300"><i>
+      Compare two strings to each other by blank extending the shorter string. If first is greater then
+      return 1, if second is greater then return -1 else return 0 (zero)
+      </i></font>
+    </p><p>
+      function Right(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font>
+    <br>
+      function Left(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font>
+    <br>
+      function Center(S:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font>
+    <br>  
+      <font color="#993300"><i>
+      Shift string to right, left or center. Pad string with padding or cut string to length 
+      </i></font>
+    </p><p>
+      function LeftStrip(S:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function RightStrip(S:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      function Strip(S:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+      return <font color="#ff0000"><u>STRING</u></font><br>
+      <font color="#993300"><i>
+      Strip padding from string to right, left or both 
+      </i></font>
+    </p><p>
+    function To8(v:Boolean) return String<br>
+      function To32(v:Boolean) return Wide_Wide_String<br>
+      function To8(v:Integer) return String<br>
+      function To32(v:Integer) return Wide_Wide_String<br>
+      <font color="#993300"><i>
+      Convert a boolean or an integer to a string 
+      </i></font>
+    </p><p>
+      function Get_GC(c:Wide_Wide_Character) return Wide_Wide_String<br>
+      <font color="#993300"><i>
+      Get Unicode general character code for this character 
+      </i></font><br>
+      function Get_UC(c:Wide_Wide_Character) return Wide_Wide_Character<br>
+      <font color="#993300"><i>
+      Get uppercase of this character 
+      </i></font><br>
+      function Get_LC(c:Wide_Wide_Character) return Wide_Wide_Character<br>
+      <font color="#993300"><i>
+      Get lowercase of this character 
+      </i></font><br>
+      function Get_TC(c:Wide_Wide_Character) return Wide_Wide_Character<br>
+      <font color="#993300"><i>
+      Get titlecase of this character 
+      </i></font><br>
+      function To_UC(instr:<font color="#ff0000"><u>STRING</u></font>) return <font color="#ff0000"><u>STRING</u></font><br>
+      <font color="#993300"><i>
+      Convert to uppercase 
+      </i></font><br>
+      function To_LC(instr:<font color="#ff0000"><u>STRING</u></font>) return <font color="#ff0000"><u>STRING</u></font><br>
+      <font color="#993300"><i>
+      Convert to lowercase 
+      </i></font><br>
+      function To_TC(instr:<font color="#ff0000"><u>STRING</u></font>)return <font color="#ff0000"><u>STRING</u></font><br>
+      <font color="#993300"><i>
+      Convert to titlecase 
+      </i></font>
+    </p>
+    <p>
+      function matchTo(s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_AC;option:Y2018.Text.Regex.PatternPack.G_Option)
+      return Boolean<br>
+      function matchTo(s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_AC)
+      return Boolean<br>
+      function matchTo(s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_AC;m:out
+      M_AAAC;option:Y2018.Text.Regex.PatternPack.G_Option) return
+      Boolean<br>
+      function matchTo(s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_AC;m:out
+      M_AAAC) return Boolean<br>
+      <font color="#993300"><i>
+      Match string "s" to pattern "p" and return TRUE if matching else return FALSE.<br>
+      "m" - return matching result in a M_AAAC type variable<br>
+      "option" - match option
+      </i></font>
+    </p>
+<table border="4" cellspacing="2" cellpadding="2" width="100%">
+<tbody>
+<tr>
+<td valign="top">
+<font color="#ff0000"><u>STRING</u></font>
+<font color="#993300"><i>can be any of String, Wide_Wide_String, Unbounded_String or Unbounded_Wide_Wide_String.</i></font>
+<br>
+</td>
+</tr>
+</tbody>
+</table>
+<br><footer><small><small><a rel="license" href="license.html">license</a> Y2018-Text-project</small></small></footer>
+  </body>
+</html>

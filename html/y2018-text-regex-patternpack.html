@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Regex.PatternPack</title>
+  </head>
+  <body>
+    <h1>Y2018.Text.Regex.PatternPack</h1>
+    <h2>Type</h2>
+    <p>
+	type Pattern is tagged private<br>
+	type Pattern_AC is access Pattern<br>
+	type G_Cursor is private<br>
+	type G_Option is (G_NONE,G_UPPERCASE)<br>
+    </p>
+    <h2>Constant</h2>
+    <p>
+	G_No_Element : constant G_Cursor<br>
+    </p>
+    <h2>Function</h2>
+    <p>
+   function has_Element (Position : G_Cursor) return Boolean<br>	
+      <font color="#993300"><i>
+      Do cursor have an element
+      </i></font><br>
+	function matches (ptc:Pattern_AC;s : Wide_Wide_String) return G_Cursor<br>
+      <font color="#993300"><i>
+      Match a string to a pattern and get the cursor for the first match
+      </i></font><br>
+	function next (Position : G_Cursor) return G_Cursor<br>
+      <font color="#993300"><i>
+      Move the cursor to next match
+      </i></font><br>
+	function element (Position : G_Cursor) return Y2018.Text.Regex.MatchPack.Match_AC<br>
+      <font color="#993300"><i>
+      Retreive the element pointed by cursor
+      </i></font><br>
+	function source (Position : G_Cursor) return Wide_Wide_String<br>
+      <font color="#993300"><i>
+      Retreive text which is not yet matched by the cursor
+      </i></font><br>
+	function compile(s : Wide_Wide_String) return Pattern_AC<br>
+	function compile(s : Wide_Wide_String;option :  G_Option) return Pattern_AC<br>
+      <font color="#993300"><i>
+      Compile a regular expression string and return the pattern. If no
+      option is given then G_NONE is used
+      </i></font>
+	</p><p>
+	function toString(ptc:Pattern_AC) return Wide_Wide_String<br>
+      <font color="#993300"><i>
+      Return pattern as a string
+      </i></font><br>
+	function QuoteMeta(s:Wide_Wide_String) return Wide_Wide_String<br>
+      <font color="#993300"><i>
+      Quote all metacharacters (and slash)
+      </i></font><br>
+	function ParseString(s:Wide_Wide_String) return Boolean<br>
+      <font color="#993300"><i>
+      Check if a string is a valid regular expression
+      </i></font>
+    </p>
+<br><footer><small><small><a rel="license" href="license.html">license</a> Y2018-Text-project</small></small></footer>
+  </body>
+</html>

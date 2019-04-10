@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>RE_Elem</title>
+  </head>
+  <body>
+    <h1>RE_Elem</h1>
+type RE_Elem (V : REQ_TY) is<br>
+	record<br>
+&nbsp; id : RE_ID;<br>
+&nbsp; left : RE_Elem_AC;<br>
+&nbsp; right : RE_Elem_AC;<br>
+&nbsp; case V is<br>
+&nbsp;&nbsp; when REQ_BEGIN =><br>
+&nbsp;&nbsp;&nbsp; begin_circumflex : Boolean;<br>
+&nbsp;&nbsp;&nbsp; begin_dollar : Boolean;<br>
+&nbsp;&nbsp;&nbsp; begin_up : RE_Elem_AC; -- null if on base line<br>
+&nbsp;&nbsp;&nbsp; begin_down : RE_Elem_AC;<br>
+&nbsp;&nbsp;&nbsp; begin_trackcount: Integer;<br>
+&nbsp;&nbsp; when REQ_CHAR =><br>
+&nbsp;&nbsp;&nbsp; char_value : Wide_Wide_Character;<br>
+&nbsp;&nbsp;&nbsp; char_negative : Boolean;<br>
+&nbsp;&nbsp;&nbsp; char_min : Integer; -- 0:Integer'Last<br>
+&nbsp;&nbsp;&nbsp; char_max : Integer;<br>
+&nbsp;&nbsp;&nbsp; char_greedy : Boolean;<br>
+&nbsp;&nbsp; when REQ_PERIOD =><br>
+&nbsp;&nbsp;&nbsp; period_min : Integer; -- 0:Integer'Last<br>
+&nbsp;&nbsp;&nbsp; period_max : Integer;<br>
+&nbsp;&nbsp;&nbsp; period_greedy : Boolean;<br>
+&nbsp;&nbsp; when REQ_CLASS_ELEM => -- Do not exists in RegexPattern<br>
+&nbsp;&nbsp;&nbsp; class_elem_min : Integer; -- 0:Integer'Last<br>
+&nbsp;&nbsp;&nbsp; class_elem_max : Integer;<br>
+&nbsp;&nbsp;&nbsp; class_elem_greedy : Boolean;<br>
+&nbsp;&nbsp;&nbsp; class_elem_pos : RE_Elem_AC;<br>
+&nbsp;&nbsp;&nbsp; class_elem_neg : RE_Elem_AC;<br>
+&nbsp;&nbsp; when REQ_CLASS => -- Exists only in RegexPattern<br>
+&nbsp;&nbsp;&nbsp; class_min : Integer; -- 0:Integer'Last<br>
+&nbsp;&nbsp;&nbsp; class_max : Integer;<br>
+&nbsp;&nbsp;&nbsp; class_greedy : Boolean;<br>
+&nbsp;&nbsp;&nbsp; class_pos : RangeVectorPack.RangeVector;<br>
+&nbsp;&nbsp;&nbsp; class_neg : RangeVectorPack.RangeVector;<br>
+&nbsp;&nbsp; when REQ_CLASS_CHAR => -- Do not exists in RegexPattern<br>
+&nbsp;&nbsp;&nbsp; class_char_negative : Boolean;<br>
+&nbsp;&nbsp;&nbsp; class_char_value : Wide_Wide_Character; -- no meta characters<br>
+&nbsp;&nbsp; when REQ_CLASS_RANGE => -- Do not exists in RegexPattern<br>
+&nbsp;&nbsp;&nbsp; class_range_negative : Boolean;<br>
+&nbsp;&nbsp;&nbsp; class_range_first : Wide_Wide_Character;<br>
+&nbsp;&nbsp;&nbsp; class_range_last : Wide_Wide_Character;<br>
+&nbsp;&nbsp; when REQ_CLASS_GC => -- Do not exists in RegexPattern<br>
+&nbsp;&nbsp;&nbsp; class_gc_negative : Boolean;<br>
+&nbsp;&nbsp;&nbsp; class_gc_value : Wide_Wide_String(1..2);<br>
+&nbsp;&nbsp; when REQ_CLASS_GCU => -- Do not exists in RegexPattern<br>
+&nbsp;&nbsp;&nbsp; class_gcu_negative : Boolean;<br>
+&nbsp;&nbsp;&nbsp; class_gcu_value : Wide_Wide_Character;<br>
+&nbsp;&nbsp; when REQ_CLASS_OTHER => -- Do not exists in RegexPattern<br>
+&nbsp;&nbsp;&nbsp; class_other_negative : Boolean;<br>
+&nbsp;&nbsp;&nbsp; class_other_value : Wide_Wide_Character;<br>
+&nbsp;&nbsp; when REQ_PALCAP => -- ( )<br>
+&nbsp;&nbsp;&nbsp; palcap_min : Integer; -- 0:Integer'Last<br>
+&nbsp;&nbsp;&nbsp; palcap_max : Integer;<br>
+&nbsp;&nbsp;&nbsp; palcap_greedy : Boolean;<br>
+&nbsp;&nbsp;&nbsp; palcap_up : RE_Elem_AC; -- null if on base line<br>
+&nbsp;&nbsp;&nbsp; palcap_down : RE_Elem_AC;<br>
+&nbsp;&nbsp;&nbsp; palcap_trackcount: Integer;<br>
+&nbsp;&nbsp;&nbsp; palcap_begin: RE_Elem_AC;<br>
+&nbsp;&nbsp; when REQ_PAL => -- (?: )<br>
+&nbsp;&nbsp;&nbsp; pal_dummy: Boolean;<br>
+&nbsp;&nbsp;&nbsp; pal_min : Integer; -- 0:Integer'Last<br>
+&nbsp;&nbsp;&nbsp; pal_max : Integer;<br>
+&nbsp;&nbsp;&nbsp; pal_greedy : Boolean;<br>
+&nbsp;&nbsp;&nbsp; pal_up : RE_Elem_AC; -- null if on base line<br>
+&nbsp;&nbsp;&nbsp; pal_down : RE_Elem_AC;<br>
+&nbsp;&nbsp; when REQ_UPDOWN =><br>
+&nbsp;&nbsp;&nbsp; updown_up : RE_Elem_AC; -- null if on base line<br>
+&nbsp;&nbsp;&nbsp; updown_down : RE_Elem_AC;<br>
+&nbsp;&nbsp; when REQ_POS =><br>
+&nbsp;&nbsp;&nbsp; pos_up : RE_Elem_AC; -- null if on base line<br>
+&nbsp;&nbsp;&nbsp; pos_down : RE_Elem_AC;<br>
+&nbsp;&nbsp; when REQ_NEG =><br>
+&nbsp;&nbsp;&nbsp; neg_up : RE_Elem_AC; -- null if on base line<br>
+&nbsp;&nbsp;&nbsp; neg_down : RE_Elem_AC;<br>
+&nbsp;&nbsp; when REQ_NULL => -- ** Do not exists **<br>
+&nbsp;&nbsp;&nbsp; null_dummy: Boolean;<br>
+&nbsp; end case;<br>
+	end record;<br>
+<br><footer><small><small><a rel="license" href="license.html">license</a> Y2018-Text-project</small></small></footer>
+  </body>
+</html>

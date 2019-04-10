@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Jets.RangeVectorPack</title>
+  </head>
+  <body>
+    <h1>Y2018.Text.Jets.RangeVectorPack</h1>
+    <h2>Subpackage</h2>
+    <p>
+    </p>
+    <h2>Type</h2>
+    <p>
+	type RangeVector is tagged private<br>
+	type RangeVector_AC is access RangeVector<br>
+	type Velem is<br>
+	record<br>
+	f: Integer;<br>
+	l: Integer;<br>
+	end record<br>
+    </p>
+    <h2>Constant</h2>
+    <p>
+	null_velem:constant Velem:=(f=&gt;0,l=&gt;0)<br>
+    </p>
+    <h2>Function</h2>
+    <p>
+	procedure put(rvA:in out RangeVector;f:Wide_Wide_Character;l:Wide_Wide_Character)<br>
+	procedure put(rvA:in out RangeVector;val:Wide_Wide_Character)<br>
+	procedure putGC(rvA:in out RangeVector;val:Wide_Wide_String)<br> 
+	procedure putGC(rvA:in out RangeVector;val:Wide_Wide_Character)<br> 
+	function exists(rvA:RangeVector;val:Wide_Wide_Character) return Boolean<br>
+	function length(rvA:RangeVector) return Integer<br>
+procedure merge(rvA:in out RangeVector;force:Boolean)<br>
+function equal (f,l:RangeVector) return Boolean<br>
+function less (f,l:RangeVector) return Boolean<br>
+    </p>
+<br><footer><small><small><a rel="license" href="license.html">license</a> Y2018-Text-project</small></small></footer>
+  </body>
+</html>

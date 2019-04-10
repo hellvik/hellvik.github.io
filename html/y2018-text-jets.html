@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Jets</title>
+  </head>
+  <body>
+    <h1>Y2018.Text.Jets</h1>
+    <h2>Subpackage</h2>
+    <p>
+      <a href="y2018-text-jets-matchpack.html">Y2018.Text.Jets.Matchpack</a><br>
+      <a href="y2018-text-jets-patternpack.html">Y2018.Text.Jets.Patternpack</a><br>
+      <a href="y2018-text-jets-rangevectorpack.html">Y2018.Text.Jets.Rangevectorpack</a><br>
+      <a href="y2018-text-jets-regextool.html">Y2018.Text.Jets.Regextool</a><br>
+    </p>
+    <h2>Type</h2>
+    <p>
+      type TRINITY is (GOOD,BAD,UGLY)<br>
+      type I_A is array (1..2) of Integer<br>
+      type MCHAR_AR is Array(Integer range &lt;&gt;) of
+      Wide_Wide_Character<br>
+      type REQ_TY is (REQ_BEGIN, REQ_CHAR, REQ_PERIOD, REQ_CLASS_ELEM,
+      REQ_CLASS, REQ_PALCAP, REQ_PAL, REQ_UPDOWN, REQ_CLASS_CHAR,
+      REQ_CLASS_RANGE, REQ_CLASS_GC, REQ_CLASS_GCU, REQ_CLASS_OTHER,
+      REQ_POS, REQ_NEG, REQ_NULL)<br>
+    </p>
+    <h2>Constant</h2>
+    <p> MvertLine : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#7C#); -- |<br>
+      MleftPal : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#28#); -- (<br>
+      MrightPal : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#29#); -- )<br>
+      MleftSquare : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#5B#); -- [<br>
+      MrightSquare : constant
+      Wide_Wide_Character:=Wide_Wide_Character'Val(16#5D#); -- ]<br>
+      MleftCurly : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#7B#); -- {<br>
+      MrightCurly : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#7D#); -- }<br>
+      Mcircumflex : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#5E#); -- ^<br>
+      Mdollar : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#24#); -- $<br>
+      Masterix : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#2A#); -- *<br>
+      Mplus : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#2B#); -- +<br>
+      Mquestion : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#3F#); -- ?<br>
+      Mperiod : constant Wide_Wide_Character
+      :=Wide_Wide_Character'Val(16#2E#); -- .<br>
+      Mlc_d: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#64#); --d<br>
+      Muc_d: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#44#); --D<br>
+      Mlc_s: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#73#); --s<br>
+      Muc_s: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#53#); --S<br>
+      Mlc_w: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#77#); --w<br>
+      Muc_w: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#57#); --W<br>
+      Mlc_p: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#70#); --p<br>
+      Muc_p: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#50#); --P<br>
+      backSlash: constant Wide_Wide_Character:=
+      Wide_Wide_Character'Val(16#5C#); --\<br>
+      I_A_NO_ELEMENT : constant I_A:=(-1,0)<br>
+      MCHAR:constant
+MCHAR_AR:=(MvertLine, MleftPal, MrightPal, MleftSquare, MrightSquare, MleftCurly, MrightCurly, Mcircumflex, Mdollar, Masterix, Mplus, Mquestion, Mperiod)<br>
+    </p>
+<br><footer><small><small><a rel="license" href="license.html">license</a> Y2018-Text-project</small></small></footer>
+  </body>
+</html>
