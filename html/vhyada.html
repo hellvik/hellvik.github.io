@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Why ADA</title>
+  </head>
+  <body>
+    <h1>Why ADA ?</h1>
+    <p>The <font color="#ff0000"><b><i><font size="+3">engine of text
+              processing is Regular expression</font></i></b></font>
+      based on UTF-32. There are other regular expression
+      implementations in standard libraries of ADA but are based on a
+      "character" (8-bit entity, ASCII). A character as € (euro) is in
+      UTF-8 3*8 bits but in UTF-32 one 32 bit character.<br>
+    </p>
+    <p>Best Regular expression support is in Perl script and in this
+      implementation the Perl implementation is used as a model all
+      tough some features can not be implemented in ADA or are too
+      complicated to be implemented. Some features in our implementation
+      has no corresponding feature in Perl because of UTF-32 or the ADA
+      language.<br>
+    </p>
+    <p>Design Patterns for the use of our regular expression is
+      presented in the <a href="../Y2018-Text.pdf">documentation</a>
+      (Chapter 1 and 4.4.1). The biggest difference from Perl is that we
+      do not have a way to specify a line and an "end of line".
+      Meta-characters "^" and "$" are always "start-of-data" and
+      "end-of-data" (same as Perl search pattern with modifier "s").
+      Patterns can have modifiers, but only Uppercase is here
+      implemented. <br>
+    </p>
+    <p> Following features and goals gives Ada an edge in text
+      processing</p>
+    <ol>
+      <li>Strong typing - makes it possible to process text stored as
+        ASCII and EBCDIC on different code pages.</li>
+      <li>Smooth transmission between different storage methods.</li>
+      <li>No virtual machine level, direct access to the native platform</li>
+      <li>Unicode support&nbsp; <br>
+      </li>
+    </ol>
+    To achieve a base for these goals we needed a way to fix the literal
+    problem, the '&amp;'-operator problem, the Wide_Wide_String and
+    -character problem and to solve to function-selector problem. With
+    the Y2018Text preprocessor this is done, <i>although the
+      preprocessor is not in-line with ADA ideology</i>.<br>
+    <h3>[1] Strong typing - makes it possible to process text stored as
+      ASCII and EBCDIC on different code pages</h3>
+    It is important that ASCII or EBCDIC text is not defined as
+    Character or String. A specific enumeration type and corresponding
+    array type must be used. Character and String are for UTF-8 only
+    (Wide_Wide_Character and Wide_Wide_String for UTF-32).<br>
+    ASCII and EBCDIC are both defined for 128/256 characters and for
+    both exits a hugh amount of different "code pages". Unicode has only
+    one code page, but is defined for 2**21 code points and with five
+    different storage methods (UTF-8, UTF-16BE, UTF-16LE, UTF-32BE,
+    UTF-32LE).<br>
+    <h3>[2] Smooth transmission between different character storage
+      methods</h3>
+    <p>It is important to make it possible to concatenate text of
+      different storage methods. By using "+"-operator (as a stand-in
+      for "&amp;") and overloading conversions between UTF-8 and UTF-32
+      is (almost) invisible.</p>
+    <p>New Wide_Wide_String literal notation with hexadecimal values and
+      some control characters (BS, HT, LF, CR and FF).</p>
+    <p>Unbounded_String and Unbounded_Wide_Wide_String can be
+      concatenated directly with String and Wide_Wide_String with the
+      "+"-operator (see examples and Sample in Y2018-Text project).<br>
+    </p>
+    <h3>[3] No virtual machine level, direct access to the native
+      platform </h3>
+    <p>No JVM or anything else like it.<br>
+    </p>
+    <h3>[4] Unicode support </h3>
+    Most computer languages support only UTF-8 and UTF-16, but here the
+    support is based on UTF-32. As a backup to this support is a regular
+    expression implementation based on UTF-32. The support still lacks
+    features as language based collation sequence, normalization of text
+    and support for specific scripts. What is supported is upper-,
+    lower- and tittle case transformation and general character classes.
+    All Unicode code-points are supported at Unicode standard version
+    12. <br>
+    <h2>Solved</h2>
+    The main problem for text processing is in the ADA 2012/2016
+    standard, in following chapters:<br>
+    <hr size="2" width="100%">
+    <h3><font size="-1">2.5 Character Literals</font></h3>
+    <font size="-1">1&nbsp;&nbsp; [A character_literal is formed by
+      enclosing a graphic character between<br>
+      two apostrophe characters.]<br>
+    </font>
+    <h3><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+        Syntax</font></h3>
+    <font size="-1">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      character_literal ::= 'graphic_character'<br>
+    </font>
+    <h3><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOTES</font></h3>
+    <font size="-1">3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp; A
+      character_literal is an enumeration literal of a character type.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; See 3.5.2.<br>
+    </font>
+    <h3><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+        Examples</font></h3>
+    <font size="-1">4&nbsp;&nbsp; Examples of character literals:<br>
+      <br>
+      5/2&nbsp;&nbsp;&nbsp;&nbsp; {AI95-00433-01}
+      'A'&nbsp;&nbsp;&nbsp;&nbsp; '*'&nbsp;&nbsp;&nbsp;&nbsp;
+      '''&nbsp;&nbsp;&nbsp;&nbsp; ' '<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      'L'&nbsp;&nbsp;&nbsp;&nbsp;
+      '&lt;Unicode-1051&gt;'&nbsp;&nbsp;&nbsp;&nbsp;
+      '&lt;Unicode-923&gt;'&nbsp;&nbsp;&nbsp; -- Various els.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      '&lt;Unicode-8734&gt;'&nbsp;&nbsp;&nbsp;&nbsp;
+      '&lt;Unicode-1488&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      -- Big numbers - infinity and aleph.</font><font size="-1"><br>
+    </font>
+    <h3><font size="-1">2.6 String Literals</font></h3>
+    <font size="-1">1&nbsp;&nbsp; [A string_literal is formed by a
+      sequence of graphic characters (possibly<br>
+      none) enclosed between two quotation marks used as string
+      brackets. They are<br>
+      used to represent operator_symbols (see 6.1), values of a string
+      type (see<br>
+      4.2), and array subaggregates (see 4.3.3). ]<br>
+    </font>
+    <h3><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+        Syntax</font></h3>
+    <font size="-1">2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string_literal
+      ::= "{string_element}"<br>
+      <br>
+      3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string_element ::= "" |
+      non_quotation_mark_graphic_character<br>
+      <br>
+      4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A string_element is either a
+      pair of quotation marks (""), or a single<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; graphic_character other
+      than a quotation mark.<br>
+    </font>
+    <h3><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+        Static Semantics</font></h3>
+    <font size="-1">5&nbsp;&nbsp; The sequence of characters of a
+      string_literal is formed from the sequence<br>
+      of string_elements between the bracketing quotation marks, in the
+      given order,<br>
+      with a string_element that is "" becoming a single quotation mark
+      in the<br>
+      sequence of characters, and any other string_element being
+      reproduced in the<br>
+      sequence.<br>
+      <br>
+      6&nbsp;&nbsp; A null string literal is a string_literal with no
+      string_elements between<br>
+      the quotation marks.<br>
+    </font>
+    <h3><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOTES</font></h3>
+    <font size="-1">7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp; An end
+      of line cannot appear in a string_literal.<br>
+      <br>
+      7.1/2&nbsp;&nbsp; 6&nbsp; {AI95-00285-01} No transformation is
+      performed on the sequence of<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; characters of a
+      string_literal.<br>
+    </font>
+    <h3><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+        Examples</font></h3>
+    <font size="-1">8&nbsp;&nbsp; Examples of string literals:<br>
+      <br>
+      9/2&nbsp;&nbsp;&nbsp;&nbsp; {AI95-00433-01} "Message of the day:"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ""&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+      --&nbsp; a null string literal<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " "&nbsp;&nbsp;
+      "A"&nbsp;&nbsp; """"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --&nbsp; three
+      string literals of length 1<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Characters such as $,
+      %, and } are allowed in string literals"<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Archimedes said
+      ""&lt;Unicode-917&gt;&lt;Unicode-973&gt;&lt;Unicode-961&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &lt;Unicode-951&gt;&lt;Unicode-954&gt;&lt;Unicode-945&gt;"""<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Volume of cylinder
+      (PIr²h) = "</font><br>
+    <hr size="2" width="100%">In Y2018.Text project is to get around
+    these problems, and the result is successful. The&nbsp; proposed
+    changes to the standard as a <a href="../RM_JES.pdf">PDF</a> (<i>and
+      what <font color="#ff0000">you get now</font> by using Y2018.Text</i>)<br>
+<br><footer><small><small><a rel="license" href="license.html">license</a> Y2018-Text-project</small></small></footer>
+  </body>
+</html>
