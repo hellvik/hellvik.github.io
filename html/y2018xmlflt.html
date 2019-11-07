@@ -3,27 +3,27 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Y2018XMLflt</title>
+    <title>XMLfilter</title>
   </head>
   <body>
-    <h1>Y2018XMLflt</h1>
-    Y2018XMLflt, retrieve from a XML-file tags, comments, data.
-    Y2018XMLflt should be used as a filter in a (shell-) command. Input
+    <h1>XMLfilter</h1>
+    XMLfilter, retrieve from a XML-file tags, comments, data.
+    XMLfilter should be used as a filter in a (shell-) command. Input
     is from standard in (STDIN) and output is to standard out (STDOUT).<br>
     <ul>
       <li><a href="#INITIATE">Initiate</a> - how to set up program<br>
       </li>
-      <li><a href="#COMPILE">Compile</a> - how to compile<br>
+      <li><a href="#COMPILE">Make</a> - how to compile<br>
       </li>
       <li><a href="#RUN">Run</a> - how to run<br>
       </li>
-      <li><a href="#OPTIONS">Options</a> - of Y2018XMLflt<br>
+      <li><a href="#OPTIONS">Options</a> - of XMLfilter<br>
       </li>
       <li><a href="#INPUT_AND_OUTPUT">Input and output</a> - handling of
         standard input and standard output<br>
       </li>
       <li><a href="#PROPERTIES">Properties</a> - Supported properties of
-        program Y2018XMLflt</li>
+        program XMLfilter</li>
       <li><a href="#PTY">P_ty values</a> - output</li>
     </ul>
     <br>
@@ -35,12 +35,12 @@
         for the project and the makefile of the project has been
         executed. Lets call this directory "<font color="#ff0000"><b>vp</b></font>"
         (<font color="#006600">$vp</font>) on this page.</li>
-      <li>Create a new directory for Y2018XMLflt. Lets call it "<font
+      <li>Create a new directory for XMLfilter. Lets call it "<font
           color="#ff0000"><b>xmlfltdir</b></font>" directory (<font
           color="#006600">$xmlfltdir</font>).</li>
       <li> xmlflt.tar in <a href="../xmlflt.tar">tar archive</a> and
-        corresponding <a href="../xmlflt.sign">SHA-256</a>. Download and
-        verify.<br>
+        corresponding <a href="../xmlflt.sign">SHA-256</a>. Download
+        and verify.<br>
       </li>
       <li>Explode xmlflt.tar file in xmlfltdir (cd xmlfltdir;tar x -f
         ../xmlflt.tar)</li>
@@ -49,41 +49,30 @@
           color="#006600">$tmp</font>)<br>
       </li>
     </ul>
-    After exploding xmlflt.tar the directory contains <i><b>html.properties</b></i>
-    and <i><b>y2018xmlflt.adb</b></i> files. File html.properties has
-    properties for HTML data. File y2018xmlflt.adb is source code which
-    should be compiled by y2018text and gnatmake.<br>
-    <h2 id="COMPILE">Compile</h2>
-    Compile Y2018XMLflt.adb with command<br>
-    <font color="#009900"><code>export
-        LD_LIBRARY_PATH=$vp/lib;$vp/bin/y2018text
-        $xmlfltdir/Y2018XMLflt.adb $tmp</code></font><br>
-    Note directories are specified as variables (<font color="#006600">$vp</font>,
-    <font color="#006600">$xmlflt</font> and <font color="#006600">$tmp</font>),
-
-    and correct values must be substituted before execution<br>
-    <br>
-    After successful preprocessor compilation (y2018text compilation)
-    the result in <font color="#ff0000"><b>tmp</b></font> must be
-    compiled with <i><b>gnatmake</b></i> :<br>
-    <code><font color="#009900">cd $tmp;gnatmake -aI$vp/ads -aO$vp/ali
-        Y2018XMLflt.adb -largs -ly2018text -L$vp/lib</font> </code><br>
-    Note again that directories are specified as variables <font
-      color="#006600">($tmp</font> and <font color="#006600">$vp</font>)<br>
-    <br>
-    In <font color="#cc0000"><b>tmp</b></font> directory after a
-    successful gnatmake compilation the executable is here named '<b>y2018xmlflt</b>'.<br>
-    <br>
-    <i><b>Test run ?</b></i><br>
-    Execute './y2018xmlflt -help' in <font color="#cc0000"><b>tmp</b></font>
-    directory (<font color="#006600">$tmp</font>). The executable will
-    print a help on standard error (STDERR). <br>
+    After exploding in xmlfltdir directory we have<br>
+    html.properties -- input for 'make run'<br>
+    license.txt --<br>
+    makefile_proto.txt -- prototype for makefile<br>
+    pre -- a directory with file xmlfilter.adb<br>
+    sync.properties --<br>
+    test_in.html -- input for 'make run'<br>
+    &nbsp;<br>
+    <h2 id="COMPILE">Make</h2>
+    Make utility can be used after we modify 'makefile_proto.txt' and
+    save it under the name 'makefile'.<br>
+    The modification means replacing text '&lt;DIR&gt;' with the path of
+    "<font color="#ff0000"><b>vp</b></font>".<br>
+    <i>Write after <b>makefile</b> is created "</i><b>make</b><i>" on
+      the console</i>.<br>
     <h2 id="RUN">Run</h2>
-    Syntax: y2018xmlflt {options}* &lt;{input-file} &gt;{output-file}<br>
-    Standard error (STDERR) is used for error and info messages.<br>
-    Example: <font color="#006600">$tmp</font>/y2018xmlflt <font
-      color="#006600">$xmlfltdir</font>/html.properties
-    &lt;y2018xmlflt.html &gt;y2018xmlflt.txt<br>
+    Write on the console "make run".<br>
+    <br>
+    From the make file we get the command (note instead of &lt;DIR&gt;
+    there should be "<font color="#ff0000"><b>vp</b></font>" path)<br>
+    <pre>&nbsp;&nbsp;&nbsp; export LD_LIBRARY_PATH="&lt;DIR&gt;lib";./xmlfilter html.properties &lt;test_in.html</pre>
+    Output is routed to STDOUT (Standard out) but this is merged with
+    linecounter and message data from STDERR (Standard error) (<i>The
+      solution here is only for test purposes</i>).
     <h4 id="OPTIONS">Options</h4>
     Three types of options supported<br>
     <ol>
@@ -99,6 +88,8 @@
     where every line has following syntax:<br>
     <ul>
       <li>"P_ty" value or continue marker ('...') (see <a href="#PTY">P_ty
+
+
           values</a>)<br>
       </li>
       <li>zero or more parameters separated by space<br>
@@ -120,17 +111,6 @@
             script tag. &lt;script&gt; tag contains code and this code
             may interfer with the analyzing process. Value "1" change to
             process to only seek &lt;/script&gt; tag in the input stream<br>
-          </td>
-        </tr>
-        <tr>
-          <td valign="top">-linecount<br>
-          </td>
-          <td valign="top">modulo value for message generating when
-            counting input lines. Reason for this property is when the
-            inputdata contains a huge amount of lines then the process
-            seems to be not working but by setting this value to 1000 or
-            something else we get a linecount message to standard error
-            &nbsp; <br>
           </td>
         </tr>
         <tr>
