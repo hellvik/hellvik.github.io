@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Wide</title>
+  </head>
+  <body>
+    <h1>Y2018.Text.Wide</h1>
+    <h2>Subpackage Y2018.Text.Wide.STR</h2>
+    <p>function "+"(left:String;right:<font color="#ff0000"><u>STRING</u></font>)
+      return String ;<br>
+      function "+"(left:Wide_Wide_String;right:<font color="#ff0000"><u>STRING</u></font>)
+      return Wide_Wide_String ;<br>
+      function "+"(left:Unbounded_Wide_Wide_String;right:<font
+        color="#ff0000"><u>STRING</u></font>) return
+      Unbounded_Wide_Wide_String ;<br>
+      function "+"(left:Unbounded_String;right:<font color="#ff0000"><u>STRING</u></font>)
+      return Unbounded_String ;<br>
+      function "+"(left:Character;right:<font color="#ff0000"><u>STRING</u></font>)
+      return String ;<br>
+      function "+"(left:Wide_Wide_Character;right:<font color="#ff0000"><u>STRING</u></font>)
+      return Wide_Wide_String ;<br>
+    </p>
+    <table border="4" cellspacing="2" cellpadding="2" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top"> <font color="#ff0000"><u>STRING</u></font>
+            <font color="#993300"><i>can be any of String,
+                Wide_Wide_String, Unbounded_String,
+                Unbounded_Wide_Wide_String, Character or
+                Wide_Wide_Character .</i></font> <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Subpackage Y2018.Text.Wide.UTF</h2>
+    <p>function To32 (s : String) return Wide_Wide_String; -- convert to
+      UTF-32<br>
+      function To8 (s : Wide_Wide_String) return String; -- convert to
+      UTF-8<br>
+      function To32 (s : Unbounded_String) return
+      Unbounded_Wide_Wide_String; -- convert to UTF-32<br>
+      function To8 (s : Unbounded_Wide_Wide_String) return
+      Unbounded_String; -- convert to UTF-8<br>
+    </p>
+    <h2>Subpackage Y2018.Text.Wide.Tool</h2>
+    <p>function To_Hex8(v:Wide_Wide_Character) return String; -- return
+      hexadecimal string of length 8<br>
+      function To_Hex8(v:Character) return String; -- return hexadecimal
+      string of length 8<br>
+      function To_Hex8(v:Integer) return String; -- return hexadecimal
+      string of length 8<br>
+      function To_Hex8W(v:Wide_Wide_Character) return Wide_Wide_String;
+      -- return hexadecimal wide_wide_string of length 8<br>
+      function To_Hex8W(v:Character) return Wide_Wide_String; -- return
+      hexadecimal wide_wide_string of length 8<br>
+      function To_Hex8W(v:Integer) return Wide_Wide_String; -- return
+      hexadecimal wide_wide_string of length 8 </p>
+    <p> function To_HexX(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- Two
+      hexadecimal characters for every found <br>
+      function To_HexX(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- Two
+      hexadecimal characters for every found<br>
+      function To_HexU(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- Four
+      hexadecimal characters for every found<br>
+      function To_HexU(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- Four
+      hexadecimal characters for every found<br>
+      function To_HexV(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- Six
+      hexadecimal characters for every found<br>
+      function To_HexV(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- Six
+      hexadecimal characters for every found<br>
+      function To_HexY(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- Eight
+      hexadecimal characters for every found<br>
+      function To_HexY(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- Eighthexa
+      decimal characters for every found</p>
+    <p> function Right(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- right
+      shifted <br>
+      function RightStrip(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+return
+
+
+
+
+
+
+
+
+
+      <font color="#ff0000"><u>STRING</u></font>; -- right stripped<br>
+      function Left(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
+return
+
+
+
+
+
+
+
+
+
+      <font color="#ff0000"><u>STRING</u></font>; -- left shifted<br>
+      function LeftStrip(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- left
+      stripped<br>
+      function Strip(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- strip from
+      both ends<br>
+      function Center(s:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
+
+
+
+
+
+
+
+
+
+
+      return <font color="#ff0000"><u>STRING</u></font>; -- center
+      string</p>
+    <p> function Rev(s:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- reverse
+      string</p>
+    <p> function Substr(s:<font color="#ff0000"><u>STRING</u></font>;pos:Integer;len:Integer)
+      return <font color="#ff0000"><u>STRING</u></font>; -- create a
+      new string starting from position pos with a length of len and
+      indexed from 1<br>
+      function Substr(s:<font color="#ff0000"><u>STRING</u></font>;pos:Integer)
+      return <font color="#ff0000"><u>STRING</u></font>; -- create a
+      new string starting from position pos to the end and indexed from
+      1</p>
+    <p>
+      function Is_Valid(s:<font color="#ff0000"><u>STRING</u></font>)
+      return Boolean; -- Valid Unicode string<br>
+      <br>
+      function To8(v:Boolean) return String; -- return as a string<br>
+      function To32(v:Boolean) return Wide_Wide_String; -- return as a
+      wide_wide_string<br>
+      function To8(v:Integer) return String; -- return as a string<br>
+      function To32(v:Integer) return Wide_Wide_String; -- return as a
+      wide_wide_string<br>
+    </p>
+    <p> function To_LC(instr:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- To lower
+      case<br>
+      function To_TC(instr:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- To title
+      case<br>
+      function To_UC(instr:<font color="#ff0000"><u>STRING</u></font>)
+      return <font color="#ff0000"><u>STRING</u></font>; -- To upper
+      case<br>
+    </p>
+    <table border="4" cellspacing="2" cellpadding="2" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top"> <font color="#ff0000"><u>STRING</u></font>
+            <font color="#993300"><i>can be any of String,
+                Wide_Wide_String, Unbounded_String,
+                Unbounded_Wide_Wide_String. But result must be the same
+                as first parameter.</i></font> <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p> function matchTo(s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_TY)
+
+
+
+
+
+
+
+
+      return Boolean;<br>
+      function matchTo(s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_TY;m:out
+
+
+
+
+
+
+
+
+      Y2018.Text.Wide.Unbounded_Wide_Wide_String_AA) return Boolean;<br>
+    </p>
+    <table border="4" cellspacing="2" cellpadding="2" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top"> <font color="#ff0000"><u>STRING</u></font>
+            <font color="#993300"><i>can be any of String,
+                Wide_Wide_String, Unbounded_String,
+                Unbounded_Wide_Wide_String</i></font> <br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <hr size="2" width="100%"><font color="#663366">from package
+      Y2018.Text.Wide</font><br>
+    <p>&nbsp;&nbsp;&nbsp; NUS:constant
+      Ada.Strings.Unbounded.Unbounded_String:=Null_Unbounded_String;<br>
+      &nbsp;&nbsp;&nbsp; NUW:constant
+Ada.Strings.Wide_Wide_Unbounded.Unbounded_Wide_Wide_String:=Null_Unbounded_Wide_Wide_String;<br>
+      &nbsp;&nbsp;&nbsp; type Unbounded_Wide_Wide_String_AA is array
+      (Integer range &lt;&gt;) of
+      Ada.Strings.Wide_Wide_Unbounded.Unbounded_Wide_Wide_String; <br>
+      <br>
+    </p>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

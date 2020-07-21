@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>What is Wide</title>
+  </head>
+  <body>
+    <h1>What is Wide ?<br>
+    </h1>
+    A package named Y2018.Text.Wide and it's subpackages specifies in
+    Ada-GNAT what "Wide" is. But more important is the extension to
+    Ada-GNAT text handling capabilities. The idea is that "String",
+    "Wide_Wide_String", "Unbounded_String",
+    "Unbounded_Wide_Wide_String", "Character" and "Wide_Wide_Character"
+    are converted under the hood. When needed in a string-expression
+    conversion between UTF-8 and UTF-32 is done. Columns for expression
+    before +-operator and rows for expression after +-operator, the
+    result type is in the boxes,&nbsp; see table below.<br>
+    <table cellspacing="0" cellpadding="4" width="100%">
+      <colgroup><col width="15*"> <col width="15*"> <col width="15*">
+        <col width="15*"> <col width="15*"> <col width="15*"> <col
+          width="15*"> </colgroup><thead> <tr valign="top">
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>left\right</b></font></p>
+            <p><font style="font-size: 8pt" size="2"><b>argument</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Wide_Wide_String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Unbounded_<br>
+                  Wide_Wide_String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Unbounded_<br>
+                  String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Character</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Wide_Wide_<br>
+                  Character</b></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">1<br>
+                String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">2 <b>[UTF-8]<br>
+                </b>String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">3 <b>[UTF-8]<br>
+                </b>String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">4<br>
+                String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">5<br>
+                String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">6 <b>[UTF-8]<br>
+                </b>String</font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Wide_Wide_String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">7 <b>[UTF-32]<br>
+                </b>Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">8<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">9<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">10 <b>[UTF-32]</b><br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">11<b> </b><b>[UTF-32]<br>
+                </b>Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">12<br>
+                Wide_Wide_String</font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Unbounded_<br>
+                  Wide_Wide_String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">13<b> </b><b>[UTF-32]<br>
+                </b>Unbounded_<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">14<br>
+                Unbounded_<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">15<br>
+                Unbounded_<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">16 <b>[UTF-32]</b><br>
+                Unbounded_<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">17 <b>[UTF-32]<br>
+                </b>Unbounded_<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">18<br>
+                Unbounded_<br>
+                Wide_Wide_String</font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Unbounded_<br>
+                  String</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">19<br>
+                Unbounded_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">20 <b>[UTF-8]</b><br>
+                Unbounded_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">21 <b>[UTF-8]</b><br>
+                Unbounded_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">22<br>
+                Unbounded_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">23<br>
+                Unbounded_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">24 <b>[UTF-8]</b><br>
+                Unbounded_String</font></p>
+          </td>
+        </tr>
+      </thead> <tbody>
+        <tr valign="top">
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Character</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">25<br>
+                String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">26<b> </b><b>[UTF-8]<br>
+                </b>String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">27<b> </b><b>[UTF-8]<br>
+                </b>String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">28<br>
+                String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">29<br>
+                String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">30 <b>[UTF-8]<br>
+                </b>String</font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2"><b>Wide_Wide_<br>
+                  Character</b></font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">31<b> </b><b>[UTF-32]<br>
+                </b>Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">32<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">33<br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">34 <b>[UTF-32]</b><br>
+                Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p style="font-weight: normal"><font style="font-size: 8pt"
+                size="2">35<b> </b><b>[UTF-32]<br>
+                </b>Wide_Wide_String</font></p>
+          </td>
+          <td style="background: #ffffcc" bgcolor="#ffffcc" width="14%">
+            <p><font style="font-size: 8pt" size="2">36<br>
+                Wide_Wide_String</font></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    Look at row 12 with "Put_Line". Instead of using &amp;-operator we
+    are using an overloaded +-operator.<br>
+    Look at rows 5 and 10, A special string constant with the syntax
+    "..."W as a wide_wide_string constant.<br>
+    <code> 01| <b>procedure</b> Sample <b>is</b><br>
+      02|&nbsp; EXODUS:<b>constant</b> String:="Och detta är namnen på
+      ";<br>
+      03|&nbsp; p:Pattern_TY;<br>
+      04| <b>begin</b><br>
+      05|&nbsp; Pattern(p,"^.*?(I[\w]+).*?([\w]+)"W);<br>
+      06|&nbsp; Put_Line ("--- Begin of Sample ---");<br>
+      07|&nbsp; <b>declare</b><br>
+      08|&nbsp;&nbsp; r:Unbounded_Wide_Wide_String_AA(0 .. (size(p) -
+      1));<br>
+      09|&nbsp; <b>begin</b><br>
+      10|&nbsp;&nbsp; <b>if</b> matchTo(EXODUS + "Israels söner"W,p,r)
+      <b>then</b><br>
+      11|&nbsp;&nbsp;&nbsp; <b>for</b> i <b>in</b> r'First .. r'Last <b>loop</b><br>
+      12|&nbsp;&nbsp;&nbsp;&nbsp; Put_Line ("&gt;" + Integer'Image(i) +
+      "=" + r(i) + "&lt;");<br>
+      13|&nbsp;&nbsp;&nbsp; <b>end</b> <b>loop</b>;<br>
+      14|&nbsp;&nbsp; <b>end</b> <b>if</b>;<br>
+      15|&nbsp; <b>end</b>;<br>
+      16|&nbsp; Put_Line ("*** End of Sample ***");<br>
+      17| <b>end</b> Sample;</code><br>
+    Ada-GNAT uses unicode for character coding but unicode has five
+    different character storage methods (UTF-8, UTF-16BE, UTF-16LE,
+    UTF-32BE and UTF-32LE). In Ada-GNAT little endian is not supported.
+    The Wide solution supports UTF-8 and UTF-32BE as two different
+    character types with corresponding constant notation.<br>
+    By not using &amp;-operator and replace this with then overloaded
+    +-operator it is possible to mix unbounded and fixed strings in the
+    same expression.<br>
+    Assigning a character variable can not be overloaded, but the
+    expression can be converted to the correct type by 'adding' a null
+    length constant at the beginning, one of "", ""W, NUS (constant
+    Null_Unbounded_String) or NUW (constant
+    Null_Unbounded_Wide_Wide_String).<br>
+    <br>
+    The Wide solution supports Regular Expression:<br>
+    &nbsp; &nbsp; &nbsp; <br>
+    <code> 01| with Ada.Text_IO; use Ada.Text_IO;<br>
+      02| with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;<br>
+      03| with Ada.Strings.Wide_Wide_Unbounded; use
+      Ada.Strings.Wide_Wide_Unbounded;<br>
+      04| with Y2018.Text.Wide; use Y2018.Text.Wide;<br>
+      05| with Y2018.Text.Wide.STR; use Y2018.Text.Wide.STR;<br>
+      06| with Y2018.Text.Wide.Tool; use Y2018.Text.Wide.Tool;<br>
+      07| with Y2018.Text.Regex; use Y2018.Text.Regex;<br>
+      08| with Y2018.Text.Regex.PatternPack;<br>
+      09| -- with DSECT;<br>
+      10| procedure Star is<br>
+      11|&nbsp; pstring:Wide_Wide_String:="(..)(.*)"W;<br>
+      12|&nbsp; p:PatternPack.Pattern_TY;<br>
+      13| begin<br>
+      14|&nbsp; Y2018.Text.Regex.PatternPack.Pattern(p,pstring);<br>
+      15|&nbsp; declare<br>
+      16|&nbsp;&nbsp; r:Unbounded_Wide_Wide_String_AA(0 ..
+      (PatternPack.size(p) - 1));<br>
+      17|&nbsp; begin<br>
+      18|&nbsp;&nbsp; if Tool.matchTo("AZsome text",p,r) then<br>
+      19|&nbsp;&nbsp;&nbsp; for i in r'First .. r'Last loop<br>
+      20|&nbsp;&nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("[" +
+      Integer'Image(i) + "=" + r(i) + "]");<br>
+      21|&nbsp;&nbsp;&nbsp; end loop;<br>
+      22|&nbsp;&nbsp; end if;<br>
+      23|&nbsp; end;<br>
+      24| end Star;<br>
+    </code> <br>
+    Lines 1 .. 8 with-statements.<br>
+    Line 9 a special comment for the preprocessor.<br>
+    Line 11 defines a Wide_Wide_String constant specifying how the
+    regular expression pattern should be built<br>
+    Line 12 a varible of pattern type<br>
+    Line 14 construction of the pattern into variable p. The pattern is
+    three structure.<br>
+    Line 16 an unbounded wide wide string array with a dimension
+    depending on number of capture expressions in the pattern and plus
+    one, for the whole found expression. Indexing as in Perl language,
+    index zero for all, and index from one uppward for capture
+    expressions<br>
+    Line 18 match the text "AZsome text" to the pattern and return the
+    result into the r-variable when a match is found.<br>
+    Line 20 Show the result<br>
+    and when the procedure star is running we get following result<br>
+    <code>01| [ 0=AZsome text]<br>
+      02| [ 1=AZ]<br>
+      03| [ 2=some text]<br>
+    </code> resultline 1 : the expression<br>
+    resultline 2 : first capture expression<br>
+    resultline 3 : second capture expression<br>
+    <br>
+    <h2>'with' statements of Y2018.Text.Wide</h2>
+    <p>The package Y2018.Text.Wide cannot be translated, but must first
+      be preprocessed with y2018text processor. <br>
+    </p>
+    <ul>
+      <li>Y2018.Text.Wide [04] - (contains constants NUS and NUW)<br>
+      </li>
+      <li>Y2018.Text.Wide.STR [05] - "+" operator overloading. If
+        overloaded +-operator is not used then no with-statement is
+        needed. <i>This solution makes it possible to overload
+          +-operator differently</i>. <br>
+      </li>
+      <li>Y2018.Text.Wide.Tool [06] - tools for string processing<br>
+      </li>
+      <li>Y2018.Text.Wide.UTF - conversion between UTF-8 and UTF-32
+        storage methods</li>
+    </ul>
+    Y2018.Text.Wide is responsible for the smooth casting between
+    different string types, and casting to specific string-type for the
+    result can be made with prefixing it with a null-constant and the
+    +-operator<br>
+    <ul>
+      <li>"" + :cast to fixed String</li>
+      <li>""W + :cast to fixed Wide_Wide_String</li>
+      <li>NUS + :cast to Unbounded_String</li>
+      <li>NUW + :cast to Unbounded_Wide_Wide_String</li>
+    </ul>
+    In Y2018.Text.Wide.Tool support for all four string-types exists.<br>
+    <ul>
+    </ul>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

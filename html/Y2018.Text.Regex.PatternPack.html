@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Regex.PatternPack</title>
+  </head>
+  <body>
+    <h1>Y2018.Text.Regex.PatternPack</h1>
+    <p>type Pattern_TY is tagged limited private;<br>
+      procedure Pattern(p:in out
+      Y2018.Text.Regex.PatternPack.Pattern_TY;s : Wide_Wide_String);<br>
+      procedure Pattern(p:in out
+      Y2018.Text.Regex.PatternPack.Pattern_TY;s :
+      Wide_Wide_String;option :&nbsp; Y2018.Text.Regex.G_Option);<br>
+      function ToString(p:Pattern_TY) return Wide_Wide_String;<br>
+      function QuoteMeta(s:Wide_Wide_String) return Wide_Wide_String;<br>
+      function ParseString(s:Wide_Wide_String) return Boolean;<br>
+      function size(p:Pattern_TY) return Integer;<br>
+      function option(p:Pattern_TY) return Y2018.Text.Regex.G_Option;</p>
+    <p><font color="#663366"><i>from package Y2018.Text.Regex</i></font><br>
+      &nbsp;&nbsp;&nbsp; type G_Option is (G_NONE,G_UPPERCASE);</p>
+      <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

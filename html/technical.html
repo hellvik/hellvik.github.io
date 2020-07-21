@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Technical</title>
+  </head>
+  <body>
+    <h1>Application Program and Programmers Interface</h1>
+    <p>API<br>
+    </p>
+    <h2>Installing Y2018-Text</h2>
+    <ul>
+      <li>Choose or create an empty directory. <font color="#cc0000">This
+
+
+
+          directory will here be named as the directory where <b><font
+              color="#330033">make</font></b> was done</font>. <br>
+      </li>
+      <li>Explode&nbsp; tar file of "Y2018-Text&nbsp; make" in the
+        chosen directory (<i>tar x -f Y2018-Text-make.tar</i>)</li>
+      <li>Run make utility (<i>make</i>) &nbsp; </li>
+    </ul>
+    The result can be tested by giving command '<i>make run</i>'. A
+    successfull test:<br>
+    <font color="#6600cc"><code>export
+        LD_LIBRARY_PATH="lib";./sample&nbsp;&nbsp;&nbsp; <br>
+        --- Begin of Sample ---<br>
+        &gt; 0=Och detta är namnen på Israels söner&lt;<br>
+        &gt; 1=Israels&lt;<br>
+        &gt; 2=söner&lt;<br>
+        *** End of Sample ***</code></font><br>
+    Passage from the beginning of Exodus in Sweedish. <br>
+    <h2>About the implementation of regular expression</h2>
+    Regular expression here follows regular expression rules of Perl but
+    with following changes and limitations<br>
+    <ul>
+      <li>line breaks are not honored</li>
+      <li>meta character "\w" is not limited to ASCII but consider all
+        word characters in unicode and underscore '_', characters in
+        categors L and N</li>
+      <li>notation "\p{&lt;g&gt;}" supports as &lt;g&gt; only unicode
+        general category i.e.</li>
+      <ul>
+        <li>Lu, Ll, Lt, Lm, Lo and L</li>
+        <li>Mn, Mc, Me and M</li>
+        <li>Nd, Nl, No and N</li>
+        <li>Pc, Pd, Ps, Pe, Pi, Pf, Po and P</li>
+        <li>Sm, Sc, Sk, So and S</li>
+        <li>Zs, Zl, Zp and Z</li>
+        <li>Cc, Cf, Cs, Co, Cn and C</li>
+      </ul>
+      <li>character "/" is not used as a meta symbol and should not be
+        escaped</li>
+      <li>comments inside a regular expression is not supported</li>
+      <li>variables in regular expression is not supported</li>
+      <li>code inserts in regular expression is not supported</li>
+    </ul>
+    <h2>Design Pattern for use of PatternPack</h2>
+    To search one or more strings from a source (&lt;source&gt;) <br>
+    <code><br>
+      10| p:PatternPack.Pattern_TY;<font color="#cc0000">-- declare p as
+        PatternTY</font><br>
+      ...&nbsp; ...<br>
+      20| Y2018.Text.Regex.PatternPack.Pattern(p,&lt;pattern&gt;);<font
+        color="#cc0000">-- build the pattern in p</font><br>
+      21| Declare<br>
+      22| &nbsp;&nbsp;&nbsp; r:Unbounded_Wide_Wide_String_AA(0 ..
+      (PatternPack.size(p) - 1));<font color="#cc0000">-- declare an
+        array for the result strings</font><br>
+      23| Begin<br>
+      24| &nbsp;&nbsp;&nbsp; if Tool.matchTo(&lt;suorce&gt;,p,r) then <font
+        color="#cc0000">-- match source to the pattern and retreive the
+        result i.e. "r"</font><br>
+      ... &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ... <font
+        color="#cc0000">-- process the result strings</font><br>
+      30| &nbsp;&nbsp;&nbsp; else<br>
+      ... &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ... <font
+        color="#cc0000">-- the source do not match</font><br>
+      40| &nbsp;&nbsp;&nbsp; end if;<br>
+      41| End;<br>
+    </code>
+    <p>notes about the code<br>
+    </p>
+    <ul>
+      <li>[20] build the pattern from the regular expression in the <font
+          color="#cc0000">wide_wide_string</font> &lt;pattern&gt;. The
+        third parameter is defulted to G_NONE. If we want a pattern
+        which is independent of case, specify as third parameter
+        G_UPPERCASE.</li>
+      <li>[22] An array of Unbounded_Wide_Wide_String variables. The
+        dimension of the array is set to 0 .. size. The value of
+        size&nbsp; we get from pattern variable 'p'. The reason to start
+        from zero is that the first string is all what is found, all
+        other strings are capture strings&nbsp; <br>
+      </li>
+      <li> [24] match a string (&lt;source&gt;) to pattern "p" and if
+        match is successfull return the result. In this case index zero
+        contains all what is found, index 1 contains the first captured
+        string, index 2 ... If we only whant to match but we are not
+        interested in the match result the third parameter is not needed<br>
+      </li>
+    </ul>
+    Note that &lt;source&gt; can be a String, a Wide_Wide_String,
+    Unbounded_String or Unbounded_Wide_Wide_String. <br>
+    <h2>Wide_Wide_String constant characters<br>
+    </h2>
+    <p> Package Y2018.Text.Regex contains an implementation of Regular
+      expression in ADA. Following meta symbols is used in patterns for
+      regular expression<br>
+    </p>
+    <table cellspacing="0" cellpadding="4" width="260">
+      <colgroup><col width="20"> <col width="10"> </colgroup><tbody>
+        <tr valign="top">
+          <td style="border-top: 1px solid #000000; border-bottom: 1px
+            solid #000000; border-left: 1px solid #000000; border-right:
+            none; padding-top: 0.04in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0in" width="20">
+            <p>name<br>
+            </p>
+          </td>
+          <td style="border: 1px solid #000000; padding: 0.04in"
+            width="10">
+            <p>symbol</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">verticalline</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">|</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">left palenteses</font></font>
+            </p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">(</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">right palenteses</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">)</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">left square</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">[</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">right suare</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">]</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">left curly</font></font>
+            </p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">{</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">right curly</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">}</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">circumflex</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">^</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">dollar</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">$</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">asterix</font></font>
+            </p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">*</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">plus</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">+</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">question</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">?</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">period</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">.</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">letter d</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\d</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2"><font face="DejaVu
+                    Sans Mono, monospace"><font style="font-size: 9pt"
+                      size="2">letter</font></font> D</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\D</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2"><font face="DejaVu
+                    Sans Mono, monospace"><font style="font-size: 9pt"
+                      size="2">letter</font></font> s</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\s</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2"><font face="DejaVu
+                    Sans Mono, monospace"><font style="font-size: 9pt"
+                      size="2">letter</font></font> S</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\S</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2"><font face="DejaVu
+                    Sans Mono, monospace"><font style="font-size: 9pt"
+                      size="2">letter</font></font> w</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\w</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2"><font face="DejaVu
+                    Sans Mono, monospace"><font style="font-size: 9pt"
+                      size="2">letter</font></font> W</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\W</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2"><font face="DejaVu
+                    Sans Mono, monospace"><font style="font-size: 9pt"
+                      size="2">letter</font></font> p</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\p</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2"><font face="DejaVu
+                    Sans Mono, monospace"><font style="font-size: 9pt"
+                      size="2">letter</font></font> P</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">\P</font></font></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    In the preprocessor implementation we added Wide_Wide_String
+    constant, “A String”W . <font color="#3333ff">My_variable:Wide_Wide_String:="</font><font
+      color="#cc0000">A String</font><font color="#3333ff">"W;</font>
+    generated as:
+    <p style="margin-left: 0.49in; margin-bottom: 0in; line-height:
+      100%"> <font color="#006633"><font style="font-size: 10pt"
+          size="2">My_variable:Wide_Wide_String:=(Wide_Wide_Character'Val(16#41#),
+Wide_Wide_Character'Val(16#20#),Wide_Wide_Character'Val(16#53#),
+Wide_Wide_Character'Val(16#74#),Wide_Wide_Character'Val(16#72#),
+Wide_Wide_Character'Val(16#69#),Wide_Wide_Character'Val(16#6E#),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Wide_Wide_Character'Val(16#67#));</font></font></p>
+    <p>Characters in a Wide_Wide_String literal is extended by escaping
+      a character with a back slash</p>
+    <table cellspacing="0" cellpadding="0" width="643">
+      <colgroup><col width="125"> <col width="257"> <col width="261">
+      </colgroup><tbody>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\\</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>(16#5C#)</p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>back slash as back slash</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\b</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>BS : 16#08#</p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>backspace</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\f</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>FF : 16#0C#</p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>formfeed</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\n</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>LF : 16#0A#</p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>linefeed</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\r</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>CR : 16#0D#</p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>carriage return</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\t</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>HT : 16#09#</p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>horisontal tabulation</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\x88</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>Character as hexadecimal </p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>two hexadecimal digits</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\u8888</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>Character as hexadecimal </p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>four hexadecimal digits</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\v888888</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>Character as hexadecimal </p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>six hexadecimal digits</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border: none; padding: 0in" width="125">
+            <p>\y88888888</p>
+          </td>
+          <td style="border: none; padding: 0in" width="257">
+            <p>Character as hexadecimal </p>
+          </td>
+          <td style="border: none; padding: 0in" width="261">
+            <p>eight hexadecimal digits</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>To escape other characters than those above, regular expression
+      meta character or non letter meta symbols with back slash is not
+      allowed by the preprocessor.</p>
+    <h2>Preprocessing</h2>
+    The Wide solution needs preprocessing of the Ada code. All string
+    constant of type "..." must be replaced with a Character array
+    constant.
+    <ol>
+      <li>All Wide_Wide_String constant of type "..."W must be replaced
+        by a named Wide_Wide_Character array constant and all escaped
+        values in a Wide_Wide_String constant must be replaced by
+        corresponding hexadecimal value (see above)<br>
+      </li>
+      <li>An extra with-statement must be inserted in the original code.
+        If special comment '-- with DSECT;' is found before any Package
+        or Procedure statement the this comment is replaced by the extra
+        with-statement.</li>
+      <li>All character constants of type '.' must be replaced by named
+        Character constants.</li>
+      <li>All Wide_Wide_Character constants of type '.'W must be
+        replaced by named Wide_Wide_Character constants</li>
+      <li>Strings of type "..." which are not String constants must be
+        marked in the code by an extra s-letter. Example "+"s for the
+        +-operator in the plus operator oveloading funktion. The
+        preprocessor will remove this extra s-letter.&nbsp; <br>
+      </li>
+    </ol>
+    Standard Ada cannot see the difference between a string constant and
+    wide_wide_string constant in overloading, except if the value is a <b>named</b>
+    string or wide_wide_string constant.<br>
+    For proprocessing use following command, subsitute the star (<font
+      color="#993300">*</font>) with the path where the make has been
+    done.<br>
+    <code><font color="#cc0000">export LD_LIBRARY_PATH="<font
+          color="#993300">*</font>/lib/";<font color="#993300">*</font>/bin/y2018text
+
+
+
+
+
+
+        source targetDirectory</font> </code> <br>
+    "source" is refering to Ada-sorce code and "targetDirectory" is a
+    directory into which preprocessor writes the modified Ada source
+    code.<br>
+    <h2>Compiling and running a procedure</h2>
+    An example with a Perl script of compiling and running the
+    sample.adb<br>
+    <font color="#cc0000"> <code>#!/usr/bin/perl -w<br>
+        &nbsp;&nbsp;&nbsp; use Env qw(HOME);<br>
+        &nbsp;&nbsp;&nbsp; $vp=$HOME.'/vp'; # Should be the directory
+        where <b><font color="#330033">make</font></b> is done<br>
+        &nbsp;&nbsp;&nbsp; system('cd '.$vp.'/tmp;rm *&gt;/dev/null'); #
+        clear tmp directory<br>
+        &nbsp;&nbsp;&nbsp; system('export
+        LD_LIBRARY_PATH="'.$vp.'/lib/";'.$vp.'/bin/y2018text sample.adb
+        '.$vp.'/tmp/'); # preprocessing<br>
+        &nbsp;&nbsp;&nbsp; system('cd '.$vp.'/tmp;gnatmake
+        -aI'.$vp.'/ads -aO'.$vp.'/ali sample.adb -largs -ly2018text
+        -L'.$vp.'/lib'); # compiling<br>
+        &nbsp;&nbsp;&nbsp; system('cd '.$vp.'/tmp;export
+        LD_LIBRARY_PATH="'.$vp.'/lib";./sample'); # run<br>
+        <br>
+      </code></font> This solution works if the code contains only
+    packages from Ada standard (-largs) and Y2018-Text (-ly2018text)
+    libraries. Source code for sample.adb can be found in the directory
+    where make was done at subdirectory '/pre/sample.adb'. Copy the
+    sample.adb to another directory !&nbsp; <br>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>
