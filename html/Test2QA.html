@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Test2QA</title>
+  </head>
+  <body>
+    <h1>Test to Quality Assurance (QA)</h1>
+    <h2> Used model for software production</h2>
+    Software production in this model has three states<br>
+    <ol>
+      <li>Test state, software containing possibly debug code and test
+        examples for testing the validity of the code<br>
+      </li>
+      <li>Quality Assurance or QA state, software without debug code.
+        Contains also QA-tools for verifying QA code.<br>
+      </li>
+      <li>Production state, in our case the file Y2018-Text-make.tar<br>
+      </li>
+    </ol>
+    Transition between state are supported with various tools and
+    methods. In our case <b>Test&gt;QA</b>: <a
+      href="file:///home/alfa/u/project/GnatB/src/html/Y2018CodeReWrite.html">Y2018CodeReWrite</a>
+    utility and <b>QA&gt;Production:</b> by generating the make file
+    Y2018-Text-make.tar.
+    <h3>Debug<br>
+    </h3>
+    This debug solution has two files for every&nbsp; task. The file
+    name has the syntax:<br>
+    <ul>
+      <li>q&lt;task name&gt;.lst -- q-list file<br>
+      </li>
+      <li>q&lt;task name&gt;_alt.lst -- alternate q-list file<br>
+      </li>
+    </ul>
+    The solution is built for multiprocessing and has two debug file
+    solutions, <u>q-lis</u>t and <u>alternate q-list</u> files. <br>
+    A debug is always appended to the q-list file, the file is opened
+    before writing and again close after the writing to make sure that
+    nothing is lost after a crash.<br>
+    <br>
+    To clean-up a Qinit call should be done at start-up in the main
+    task.<br>
+    <br>
+    <i>This solution for writing debug code is historical but it is
+      still a workable solution as Pythagoras of Samos well known
+      theorem. First major computer language which supported reducible
+      debug code was Cobol, by specifying a special column on the punch
+      card for marking reducible code lines (column 7 mark 'D')</i>.&nbsp;
+
+
+    <h2>Test</h2>
+    Code written for Test environment contains debug-code from packages
+    Y2018.Text.TestQ and Y2018.Text.TestR. Debug code is printed to an
+    actual q-list file. If a new task is started first line which is
+    written to the q-list will create a new actual q-file for this task.<br>
+    To make q-list more readable lines can be marked by an ANKA prefix.<br>
+    <ul>
+      <li>KALLE - (no prefix) Used for important debug data <br>
+      </li>
+      <li>FNATTE - normal debug line<br>
+      </li>
+      <li>KNATTE - line from listings or semi-normal information<br>
+      </li>
+      <li>TJATTE - not very important info <br>
+      </li>
+      <li>KAJSA - import results from an operation or maybe warning type
+        info<br>
+      </li>
+      <li>KNASE - results which should be removed from the debug after
+        this function or procedure is working&nbsp; </li>
+    </ul>
+    <h2>QA</h2>
+    QA environment should not contain any debug code, and this code is
+    removed by <a
+      href="file:///home/alfa/u/project/GnatB/src/html/Y2018CodeReWrite.html">Y2018CodeReWrite</a>
+    utility.<br>
+    <hr size="2" width="100%">type ANKA is
+    (KALLE,KNATTE,TJATTE,FNATTE,KAJSA,KNASE,BITTAN); -- defined in
+    Y2018.Text.TestQ package<br>
+    <ul>
+      <li>KALLE - prepend with "". Default is ANKA is omitted<br>
+      </li>
+      <li>FNATTE - prepend with on TAB</li>
+      <li>KNATTE - prepend with two TAB's</li>
+      <li>TJATTE - prepend with three TAB's</li>
+      <li>KAJSA - prepend with "!]" and one TAB<br>
+      </li>
+      <li>KNASE - prepend with ".]" and one TAB<br>
+      </li>
+      <li>BITTAN - (Do not use this value)</li>
+    </ul>
+    (TAB or horizontal tabulation is '09'x)<br>
+    <h2><a name="TESTQ"></a>package Y2018.Text.TestQ</h2>
+    procedure Qinit(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String); -- remove all files from actual
+    directory which name correspond to pattern q[^\/]*?\.lst. Put in a
+    block the s-string as a heading in a q-list file with a timestamp<br>
+    <br>
+    procedure QBlock(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String); -- write a block to the actual
+    q-list file with s-string as a heading<br>
+    <br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer;i2:Integer);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;b:Boolean);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer;s1:String);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer;i2:Integer;s2:String);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;wws:Wide_Wide_String);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;c:Wide_Wide_Character;wws:Wide_Wide_String;f:Integer;l:Integer);<br>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;c:Wide_Wide_Character);<br>
+    -- write a line to the&nbsp; actual q-list file <br>
+    <br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer;i2:Integer);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;b:Boolean);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer;s1:String);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;i1:Integer;i2:Integer;s2:String);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;wws:Wide_Wide_String);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;c:Wide_Wide_Character;wws:Wide_Wide_String;f:Integer;l:Integer);<br>
+    procedure Qappend_alt(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>s:String;c:Wide_Wide_Character); <br>
+    -- write a line to the&nbsp; actual alternate q-list file <br>
+    <h2><a name="TESTR"></a>package Y2018.Text.TestR</h2>
+    procedure Qappend(<font color="#3333ff">{</font>a:ANKA;<font
+      color="#3333ff">}</font>head:String;s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_TY);
+
+
+
+
+
+
+    <br>
+    -- write a line to the&nbsp; actual q-list file<br>
+    <table border="4" cellspacing="2" cellpadding="2" width="100%">
+      <tbody>
+        <tr>
+          <td valign="top"> <font color="#ff0000"><u>STRING</u></font>
+            <font color="#993300"><i>can be any of String,
+                Wide_Wide_String, Unbounded_String,
+                Unbounded_Wide_Wide_String.<br>
+              </i></font>Notation <font color="#3333ff">{</font> ... <font
+              color="#3333ff">}</font> specifies part which can be
+            defaulted<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

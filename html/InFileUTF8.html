@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>InFileUTF8</title>
+  </head>
+  <body>
+    <h1> package Y2018.Text.Wide.InFileUTF8</h1>
+    Utility package for reading UTF-8 files.<br>
+    <h2>Open &amp; Close </h2>
+    procedure open(base:in out
+    Y2018.Text.Wide.InFileUTF8.self;infilename:String)<br>
+    procedure close(base:in out Y2018.Text.Wide.InFileUTF8.self)<br>
+    <ul>
+      <li>base:Y2018.Text.Wide.InFileUTF8.self - a private type
+        containing the needed controls for reading</li>
+      <li>infilename:String - name and path of the file to read<br>
+      </li>
+    </ul>
+    <h2> Read</h2>
+    function read(base:in out Y2018.Text.Wide.InFileUTF8.self;result:out
+    Unbounded_String;replace:String;action:Boolean) return RS_TY<br>
+    <blockquote>read one legal unicode character from the file and
+      return this character in UTF-8 mode, 1..4 bytes.<br>
+    </blockquote>
+    <ul>
+      <li>base</li>
+      <li>result:out Unbounded_String - output is directed to this
+        variable<br>
+      </li>
+      <li>replace:String - character value to use if a byte is not a
+        possible UTF-8 byte. Defaulted to unicode replacement character
+        '�'<br>
+      </li>
+      <li>action:Boolean - if true raise exception. Default FALSE, do
+        nothing<br>
+      </li>
+      <li>return RS_TY - return a result value (RS_TY defined in package
+        Y2018.Text.Wide)<br>
+      </li>
+    </ul>
+    &nbsp;&nbsp;&nbsp; type RS_TY is (<br>
+    &nbsp;&nbsp;&nbsp; &nbsp; RS_NONE, -- OK<br>
+    &nbsp;&nbsp;&nbsp; &nbsp; RS_MISS, -- Last UTF-8 character in a file
+    is missing bytes<br>
+    &nbsp;&nbsp;&nbsp; &nbsp; RS_ILLEGAL, -- Value in a byte cannot be
+    an UTF-8 character or a part of an UTF-8 character<br>
+    &nbsp;&nbsp;&nbsp; &nbsp; RS_EOF -- End of File reached<br>
+    &nbsp;&nbsp;&nbsp; );<br>
+    <h2>Manage</h2>
+    function eof(base:Y2018.Text.Wide.InFileUTF8.self) return Boolean<br>
+    <blockquote>True if end of file encountered<br>
+    </blockquote>
+    function reason(base:in out Y2018.Text.Wide.InFileUTF8.self) return
+    RS_TY<br>
+    <blockquote>Get last reason value<br>
+    </blockquote>
+    function utf8cnt(base:in out Y2018.Text.Wide.InFileUTF8.self) return
+    Long_Long_Integer<br>
+    <blockquote>Get number of read unicode characters<br>
+    </blockquote>
+    function bytecnt(base:in out Y2018.Text.Wide.InFileUTF8.self) return
+    Long_Long_Integer<br>
+    <blockquote>Get number of read bytes<br>
+    </blockquote>
+    <h2>Example</h2>
+    See source code for <a href="Y2018Chess.html">Y2018Chess</a><br>
+    <br>
+    <br>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

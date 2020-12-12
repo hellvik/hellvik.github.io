@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018Chess</title>
+  </head>
+  <body>
+    <h1> Y2018Chess</h1>
+    Utility for listing an UTF-8 file as a file dump where every line
+    has a fixed amount of (unicode) characters and every character is of
+    equal size. Control characters, undefined characters or illegal
+    characters are replaced with a chess symbol.<br>
+    ♔&nbsp;&nbsp; WHITE KING (null) '00'<br>
+    ♕&nbsp;&nbsp; WHITE QUEEN (backspace) '08'x<br>
+    ♖&nbsp;&nbsp; WHITE ROOK (form feed) '0C'x<br>
+    ♗&nbsp;&nbsp; WHITE BISHOP (line feed) '0A'x<br>
+    ♘&nbsp;&nbsp; WHITE KNIGHT (horizontal tabulation) '09'x<br>
+    ♙&nbsp;&nbsp; WHITE PAWN (carriage return) '0D'x<br>
+    ♟&nbsp;&nbsp; BLACK PAWN (next line) '85'x<br>
+    ♚&nbsp;&nbsp; BLACK KING (control) Unicode general category Cc<br>
+    ♛&nbsp;&nbsp; BLACK QUEEN (format) Unicode general category Cf<br>
+    ♜&nbsp;&nbsp; BLACK ROOK (surrogate) Unicode general category Cs<br>
+    ♝&nbsp;&nbsp; BLACK BISHOP (not assigned) Unicode general category
+    Cn<br>
+    ♞&nbsp; BLACK KNIGHT (illegal byte)<br>
+    �&nbsp; Unicode replacement character<br>
+    Listing of this binary (y2018chess) with a row length of 50 results
+    in following output (only ten first rows):<br>
+    <hr size="2" width="100%"> <code> ♚ELF♚♚♚♔♔♔♔♔♔♔♔♔♚♔&gt;♔♚♔♔♔
+      Y♔♔♔♔♔♔@♔♔♔♔♔♔♔♞♚♔♔♔♔♔♔♔♔<br>
+      ♔@♔8♔♘♔@♔♚♔♚♔♚♔♔♔♚♔♔♔@♔♔♔♔♔♔♔@♔♔♔♔♔♔♔@♔♔♔♔♔♔♔♞♚♔♔♔<br>
+      ♔♔♔♞♚♔♔♔♔♔♔♕♔♔♔♔♔♔♔♚♔♔♔♚♔♔♔8♚♔♔♔♔♔♔8♚♔♔♔♔♔♔8♚♔♔♔♔♔<br>
+      ♔♚♔♔♔♔♔♔♔♚♔♔♔♔♔♔♔♚♔♔♔♔♔♔♔♚♔♔♔♚♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔<br>
+      ♔♔♔♔♔♔♔♞♔♔♔♔♔♔♞♔♔♔♔♔♔♔♔ ♔♔♔♔♔♚♔♔♔♚♔♔♔♔♞♔♔♔♔♔♔♞♔♔♔♔<br>
+      ♔♔♞♔♔♔♔♔(♚♔♔♔♔♔♔♞♚♔♔♔♔♔♔♔♔ ♔♔♔♔♔♚♔♔♔♚♔♔♔♚♞♔♔♔♔♔♚♞♔<br>
+      ♔♔♔♔♚♞♔♔♔♔♔0♚♔♔♔♔♔♔0♚♔♔♔♔♔♔♕♔♔♔♔♔♔♔♚♔♔♔♚♔♔♔T♚♔♔♔♔♔<br>
+      ♔T♚♔♔♔♔♔♔T♚♔♔♔♔♔♔D♔♔♔♔♔♔♔D♔♔♔♔♔♔♔♚♔♔♔♔♔♔♔P♞d♚♔♔♔p♞<br>
+      ♔♔♔♔♔p♞♔♔♔♔♔p♞♔♔♔♔♔♞♔♔♔♔♔♔♞♔♔♔♔♔♔♚♔♔♔♔♔♔♔Q♞d♚♔♔♔♔♔<br>
+      ♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♚♔♔♔♔♔♔♔R♞d♚<br>
+    </code>
+    <hr size="2" width="100%"><code> </code> On Linux platforms the
+    utlity name is y2018chess, the utility is depending on
+    lib/liby2018text.so. The full command will be:<br>
+    <font color="#663333">export LD_LIBRARY_PATH="<font color="#ff0000">&lt;&gt;</font>/lib";<font
+        color="#ff0000">&lt;&gt;</font>/bin/y2018chess</font> <br>
+    where <font color="#ff0000">&lt;&gt;</font> is the name of the path
+    where the tar file has been exploded and where 'make' was given.<br>
+    <br>
+    By only giving the utlity name as a command we get<br>
+    <font color="#993399">&nbsp; All control characters are replaced by
+      CHESS symbols.<br>
+      &nbsp; Line length is fixed to the value of -blk parameter
+      (default 50),<br>
+      &nbsp; 'line length' is the number of UTF-8 characters on a single
+      line.<br>
+      &nbsp; All non-UTF8 characters are replaced by BLACK KNIGHT
+      symbol.<br>
+      &nbsp; ♔&nbsp;&nbsp; ♕&nbsp;&nbsp; ♖&nbsp;&nbsp; ♗&nbsp;&nbsp;
+      ♘&nbsp;&nbsp; ♙&nbsp;&nbsp; ♟&nbsp;&nbsp; ♚&nbsp;&nbsp;
+      ♛&nbsp;&nbsp; ♜&nbsp;&nbsp; ♝&nbsp;&nbsp; ♞<br>
+      &nbsp; Syntax:<br>
+      &nbsp;&nbsp;&nbsp; Y2018Chess {&lt;option&gt;}* &lt;input_file&gt;
+      {&lt;output_file&gt;}<br>
+      &nbsp; if no &lt;output_file&gt; then name of &lt;output_file&gt;
+      is chess.lst<br>
+      &nbsp; Options:<br>
+      &nbsp;&nbsp;&nbsp; -blk:&lt;line length&gt; -- length of line in
+      output<br>
+      &nbsp;&nbsp;&nbsp; -g -- use greek characters not chess symbols<br>
+      &nbsp;&nbsp;&nbsp; -r -- replace characters with a code value over
+      16#FFFF#<br>
+    </font>on the command screen.<br>
+    About the options<br>
+    <ul>
+      <li>-blk, the row length. Depending on the editor you are using a
+        value of 50 is probably too small <br>
+      </li>
+      <li>-g, an alternate solution if chess symbols cannot be used</li>
+      <li>-r, to solve problems with output for tools which do not
+        recognize UTF-8 values greater than 16#FFFF#. Theese values are
+        legal UTF-8 values but...</li>
+    </ul>
+    After a successfull execution of a command a report is displayed on
+    the command screen<br>
+    <blockquote> input z.jpg <i><font color="#009900">&lt;= name of
+          input file</font></i><br>
+      output z.lst <i><font color="#009900">&lt;= name of output file</font></i><br>
+      lines 1113 <i><font color="#009900">&lt;= number of lines in
+          output</font></i><br>
+      nul null 2969 ♔ <i><font color="#009900">&lt;= null character
+          count</font></i><br>
+      \b backspace 525 ♕ <i><font color="#009900">&lt;= backspace
+          character count</font></i><br>
+      \f form_feed 533 ♖ <i><font color="#009900">&lt;= form_feed
+          character count</font></i><br>
+      \n line_feed 477 ♗ <i><font color="#009900">&lt;= line_feed
+          character count</font></i><br>
+      \t horizontal_tabulation 462 ♘ <i><font color="#009900">&lt;=
+          horizontal_tabulation character count</font></i><br>
+      \r carriage_return 449 ♙ <i><font color="#009900">&lt;=
+          carriage_return character count</font></i><br>
+      nel next_line 2 ♟ <i><font color="#009900">&lt;= next_line
+          character count</font></i><br>
+      Cc control 19309 ♚ <i><font color="#009900">&lt;= control
+          character count</font></i><br>
+      Cf format 23 ♛ <i><font color="#009900">&lt;= format character
+          count</font></i><br>
+      Cs surrogate 0 ♜ <i><font color="#009900">&lt;= surrogate
+          character count</font></i><br>
+      Cn not_assigned 172 ♝ <i><font color="#009900">&lt;= not_assigned
+          character count</font></i><br>
+      Replaced 22 � <i><font color="#ff0000">&lt;= replaced character
+          count (only if -r option)</font></i><br>
+      ** WARNING, not an UTF-8 file** 60816 ♞ <i><font color="#ff0000">&lt;=
+
+
+
+
+
+
+
+
+          illegal bytes count (only if non utf-8)</font></i><br>
+      <br>
+    </blockquote>
+    and this page, first ten rows, looks like
+    <hr size="2" width="100%"><br>
+    <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01
+      Transitional//EN"&gt;♗&lt;!--?xml version="1.0"
+      ?--&gt;♗&lt;html&gt;♗ &lt;head&gt;♗ &lt;meta ht</code><code><br>
+    </code><code> tp-equiv="content-type" content="text/html;
+      charset=UTF-8"&gt;♗ &lt;title&gt;Y2018Chess&lt;/title&gt;♗
+      &lt;/head&gt;♗ &lt;body&gt;♗ &lt;h1&gt; Y2</code><code><br>
+    </code><code> 018Chess&lt;/h1&gt;♗ Utility for listing an UTF-8 file
+      as a file dump where every line♗ has a fixed amount of (unicode) </code><code><br>
+    </code><code> characters and every character is of♗ equal size.
+      Control characters, undefined characters or illegal♗ characters </code><code><br>
+    </code><code> are replaced with a chess symbol.&lt;br&gt;♗
+      ♔&amp;nbsp;&amp;nbsp; WHITE KING (null) '00'&lt;br&gt;♗
+      ♕&amp;nbsp;&amp;nbsp; WHITE QUEEN (backsp</code><code><br>
+    </code><code> ace) '08'x&lt;br&gt;♗ ♖&amp;nbsp;&amp;nbsp; WHITE ROOK
+      (form feed) '0C'x&lt;br&gt;♗ ♗&amp;nbsp;&amp;nbsp; WHITE BISHOP
+      (line feed) '0A'x&lt;br&gt;♗ </code><code><br>
+    </code><code> ♘&amp;nbsp;&amp;nbsp; WHITE KNIGHT (horizontal
+      tabulation) '09'x&lt;br&gt;♗ ♙&amp;nbsp;&amp;nbsp; WHITE PAWN
+      (carriage return) '0D'x&lt;br&gt;</code><code><br>
+    </code><code> ♗ ♟&amp;nbsp;&amp;nbsp; BLACK PAWN (next line)
+      '85'x&lt;br&gt;♗ ♚&amp;nbsp;&amp;nbsp; BLACK KING (control)
+      Unicode general category Cc&lt;b</code><code><br>
+    </code><code> r&gt;♗ ♛&amp;nbsp;&amp;nbsp; BLACK QUEEN (format)
+      Unicode general category Cf&lt;br&gt;♗ ♜&amp;nbsp;&amp;nbsp; BLACK
+      ROOK (surrogate) Unico</code><code><br>
+    </code><code> de general category Cs&lt;br&gt;♗
+      ♝&amp;nbsp;&amp;nbsp; BLACK BISHOP (not assigned) Unicode general
+      category♗ Cn&lt;br&gt;♗ ♞&amp;nbsp;</code>
+    <hr size="2" width="100%">Option -blk:120 in use, but it seems that
+    rows are of different length but they are not.<br>
+    <br>
+    <br>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

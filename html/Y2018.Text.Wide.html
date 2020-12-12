@@ -56,171 +56,61 @@
       hexadecimal wide_wide_string of length 8<br>
       function To_Hex8W(v:Integer) return Wide_Wide_String; -- return
       hexadecimal wide_wide_string of length 8 </p>
-    <p> function To_HexX(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- Two
-      hexadecimal characters for every found <br>
-      function To_HexX(s:<font color="#ff0000"><u>STRING</u></font>)
-      return <font color="#ff0000"><u>STRING</u></font>; -- Two
-      hexadecimal characters for every found<br>
-      function To_HexU(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- Four
-      hexadecimal characters for every found<br>
-      function To_HexU(s:<font color="#ff0000"><u>STRING</u></font>)
-      return <font color="#ff0000"><u>STRING</u></font>; -- Four
-      hexadecimal characters for every found<br>
-      function To_HexV(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- Six
-      hexadecimal characters for every found<br>
-      function To_HexV(s:<font color="#ff0000"><u>STRING</u></font>)
-      return <font color="#ff0000"><u>STRING</u></font>; -- Six
-      hexadecimal characters for every found<br>
-      function To_HexY(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- Eight
-      hexadecimal characters for every found<br>
-      function To_HexY(s:<font color="#ff0000"><u>STRING</u></font>)
-      return <font color="#ff0000"><u>STRING</u></font>; -- Eighthexa
-      decimal characters for every found</p>
-    <p> function Right(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- right
-      shifted <br>
-      function RightStrip(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
-return
-
-
-
-
-
-
-
-
-
-      <font color="#ff0000"><u>STRING</u></font>; -- right stripped<br>
-      function Left(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
-return
-
-
-
-
-
-
-
-
-
-      <font color="#ff0000"><u>STRING</u></font>; -- left shifted<br>
-      function LeftStrip(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- left
-      stripped<br>
-      function Strip(s:<font color="#ff0000"><u>STRING</u></font>;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- strip from
-      both ends<br>
-      function Center(s:<font color="#ff0000"><u>STRING</u></font>;length:Integer;padding:Wide_Wide_Character)
-
-
-
-
-
-
-
-
-
-
-      return <font color="#ff0000"><u>STRING</u></font>; -- center
-      string</p>
+    <p> function To_HexX(s:<font color="#ff0000"><u>STRING</u></font><font
+        color="#3333ff">{</font>;padding:Wide_Wide_Character<font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- Two hexadecimal characters for every found. Padding defaults to
+      blank <br>
+      function To_HexU(s:<font color="#ff0000"><u>STRING</u></font><font
+        color="#3333ff">{</font>;padding:Wide_Wide_Character<font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- Four hexadecimal characters for every found. Padding defaults
+      to blank<br>
+      function To_HexV(s:<font color="#ff0000"><u>STRING</u></font><font
+        color="#3333ff">{</font>;padding:Wide_Wide_Character<font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- Six hexadecimal characters for every found. Padding defaults to
+      blank<br>
+      function To_HexY(s:<font color="#ff0000"><u>STRING</u></font><font
+        color="#3333ff">{</font>;padding:Wide_Wide_Character<font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- Eight hexadecimal characters for every found. Padding defaults
+      to blank<br>
+      <br>
+      function Right(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer<font
+        color="#3333ff">{</font>;padding:<font color="#ff0000"><u>CHAR</u></font><font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- right shifted. Padding defaults to blank <br>
+      function RightStrip(s:<font color="#ff0000"><u>STRING</u></font><font
+        color="#3333ff">{</font>;padding:<font color="#ff0000"><u>CHAR</u></font><font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- right stripped. Padding defaults to blank<br>
+      function Left(source:<font color="#ff0000"><u>STRING</u></font>;length:Integer<font
+        color="#3333ff">{</font>;padding:<u><font color="#ff0000">CHAR</font></u><font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- left shifted. Padding defaults to blank<br>
+      function LeftStrip(s:<font color="#ff0000"><u>STRING</u></font><font
+        color="#3333ff">{</font>;padding:<font color="#ff0000"><u>CHAR</u></font><font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- left stripped. Padding defaults to blank<br>
+      function Strip(s:<font color="#ff0000"><u>STRING</u></font><font
+        color="#3333ff">{</font>;padding:<u><font color="#ff0000">CHAR</font></u><font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- strip from both ends. Padding defaults to blank<br>
+      function Center(s:<font color="#ff0000"><u>STRING</u></font>;length:Integer<font
+        color="#3333ff">{</font>;padding:<font color="#ff0000"><u>CHAR</u></font><font
+        color="#3333ff">}</font>) return <font color="#ff0000"><u>STRING</u></font>;
+      -- center string. Padding defaults to blank</p>
     <p> function Rev(s:<font color="#ff0000"><u>STRING</u></font>)
       return <font color="#ff0000"><u>STRING</u></font>; -- reverse
       string</p>
-    <p> function Substr(s:<font color="#ff0000"><u>STRING</u></font>;pos:Integer;len:Integer)
+    <p> function Substr(s:<font color="#ff0000"><u>STRING</u></font>;pos:Integer<font
+        color="#3333ff">{</font>;len:Integer<font color="#3333ff">}</font>)
       return <font color="#ff0000"><u>STRING</u></font>; -- create a
       new string starting from position pos with a length of len and
-      indexed from 1<br>
-      function Substr(s:<font color="#ff0000"><u>STRING</u></font>;pos:Integer)
-      return <font color="#ff0000"><u>STRING</u></font>; -- create a
-      new string starting from position pos to the end and indexed from
-      1</p>
-    <p>
-      function Is_Valid(s:<font color="#ff0000"><u>STRING</u></font>)
+      indexed from 1. Length defaults to the end of the string<br>
+    </p>
+    <p>function Is_Valid(s:<font color="#ff0000"><u>STRING</u></font>)
       return Boolean; -- Valid Unicode string<br>
       <br>
       function To8(v:Boolean) return String; -- return as a string<br>
@@ -247,7 +137,12 @@ return
             <font color="#993300"><i>can be any of String,
                 Wide_Wide_String, Unbounded_String,
                 Unbounded_Wide_Wide_String. But result must be the same
-                as first parameter.</i></font> <br>
+                as first parameter.<br>
+                <font color="#ff0000"><u>CHAR</u></font> can be
+                Character or Wide_Wide_Character.<br>
+              </i></font>Notation <font color="#3333ff">{</font> ... <font
+              color="#3333ff">}</font> specifies part which can be
+            defaulted<br>
           </td>
         </tr>
       </tbody>
@@ -261,8 +156,18 @@ return
 
 
 
+
+
+
+
+
       return Boolean;<br>
       function matchTo(s:<font color="#ff0000"><u>STRING</u></font>;p:Y2018.Text.Regex.PatternPack.Pattern_TY;m:out
+
+
+
+
+
 
 
 
@@ -285,8 +190,11 @@ return
       </tbody>
     </table>
     <br>
-    <hr size="2" width="100%"><font color="#663366">from package
-      Y2018.Text.Wide</font><br>
+    <h2>Subpackage Y2018.Text.Wide.InFileUTF8</h2>
+    <p>See page <a href="InFileUTF8.html">InFileUTF8</a><br>
+    </p>
+    <hr size="2" width="100%">
+    <h2><font color="#663366">from package Y2018.Text.Wide</font></h2>
     <p>&nbsp;&nbsp;&nbsp; NUS:constant
       Ada.Strings.Unbounded.Unbounded_String:=Null_Unbounded_String;<br>
       &nbsp;&nbsp;&nbsp; NUW:constant
