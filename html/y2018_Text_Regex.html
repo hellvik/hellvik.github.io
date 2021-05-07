@@ -1,0 +1,984 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Implementation of Regex</title>
+  </head>
+  <body>
+    <h1>Implementation of Regular Expression in Y2018.Text<br>
+    </h1>
+    Some specifics about this implementation<br>
+    <ul>
+      <li>&nbsp;the solution is based on wide_wide_string (32 bit). To
+        make it nicely function the preprocessor is needed. All
+        references to hexadecimal values in standard regular expression
+        is removed and the preprocessor is used to generate these
+        characters</li>
+      <li>the notation of 'new line' is not supported. The reason is
+        that 'new line' varies depending on the platform and OS</li>
+      <li>this is a implementation for Unicode UTF32 character base, all
+        references to ASCII features are replaced&nbsp; with UTF32
+        &nbsp; </li>
+    </ul>
+    <h2> Usage of META character sequences in regular expression of
+      Y2018.Text implementation</h2>
+    <table cellspacing="2" cellpadding="2" width="100%" border="1">
+      <thead> <tr>
+          <th>Meta char seq<br>
+          </th>
+          <th>info<br>
+          </th>
+          <th>support<br>
+          </th>
+        </tr>
+      </thead> <tbody>
+        <tr>
+          <td valign="top">\a<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              BELL, \u0007</span></td>
+          <td valign="top"><font color="#ff0000">preprocessor</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\A<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              at the beginning of the input. <br>
+              Differs from ^ in that \A will not match <br>
+              after a new line within the input.</span></td>
+          <td valign="top">No support (*7)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\b<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              if the current position is a <br>
+              word boundary. Boundaries occur at the <br>
+              transitions between word (\w) and <br>
+              non-word (\W) characters, with combining <br>
+              marks ignored</span></td>
+          <td valign="top"><font color="#3333ff">(*8)</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\B<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              if the current position is not a word boundary</span></td>
+          <td valign="top"><font color="#3333ff">(*8)</font> </td>
+        </tr>
+        <tr>
+          <td valign="top">\cX<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              control-X character</span></td>
+          <td valign="top"><font color="#ff0000">use preprosessor</font>
+            (*2)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\d<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              any character with the <br>
+              Unicode General Category of Nd (Number, Decimal Digit.)</span></td>
+          <td valign="top">supported<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\D<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              any character that is not a decimal digit.</span></td>
+          <td valign="top">supported</td>
+        </tr>
+        <tr>
+          <td valign="top">\e<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              an ESCAPE, \u001B.</span></td>
+          <td valign="top"><font color="#ff0000">preprocessor</font></td>
+        </tr>
+        <tr>
+          <td valign="top">\E<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Terminates
+
+
+
+
+
+
+
+
+
+
+
+
+              a \Q … \E quoted sequence.</span></td>
+          <td valign="top">No support (*6)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\f<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              FORM FEED, \u000C.</span></td>
+          <td valign="top"><font color="#ff0000">preprocessor</font></td>
+        </tr>
+        <tr>
+          <td valign="top">\G<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              if the current position is at the end of <br>
+              the previous match.</span></td>
+          <td valign="top">No support (*3)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\h<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              Horizontal White Space character.</span></td>
+          <td valign="top">(*4)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\H<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              non-Horizontal White Space character</span></td>
+          <td valign="top">(*4)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\k<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Named
+              Capture Back Reference.</span></td>
+          <td valign="top"><font color="#3333ff">(*8)</font> </td>
+        </tr>
+        <tr>
+          <td valign="top">\n<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              LINE FEED, \u000A.</span></td>
+          <td valign="top"><font color="#ff0000">preprocessor</font></td>
+        </tr>
+        <tr>
+          <td valign="top">\N{}<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              the named character.</span></td>
+          <td valign="top">No support (*5)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\p{}<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              any character with the specified <br>
+              Unicode Property.</span></td>
+          <td valign="top">supported(*1)</td>
+        </tr>
+        <tr>
+          <td valign="top">\P{}<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              any character not having the <br>
+              specified Unicode Property.</span></td>
+          <td valign="top">supported(*1)</td>
+        </tr>
+        <tr>
+          <td valign="top">\Q<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Quotes
+              all following characters until \E.</span></td>
+          <td valign="top">No support (*6)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\r<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              CARRIAGE RETURN, \u000D.</span></td>
+          <td valign="top"><font color="#ff0000">preprocessor</font></td>
+        </tr>
+        <tr>
+          <td valign="top">\R<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              new line character, or the <br>
+              sequence CR LF</span></td>
+          <td valign="top">No support (*7)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\s<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              white space character.</span></td>
+          <td valign="top">supported</td>
+        </tr>
+        <tr>
+          <td valign="top">\S<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              non-white space character</span></td>
+          <td valign="top">supported</td>
+        </tr>
+        <tr>
+          <td valign="top">\t<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              HORIZONTAL TABULATION</span></td>
+          <td valign="top"><font color="#ff0000">preprocessor</font></td>
+        </tr>
+        <tr>
+          <td valign="top">\uHHHH<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              the character with the <br>
+              hex value hhhh</span></td>
+          <td valign="top"><font color="#ff0000">preprocessor</font></td>
+        </tr>
+        <tr>
+          <td valign="top">\UHHHHHHHH<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              the character with the <br>
+              hex value hhhhhhhh</span></td>
+          <td valign="top"><font color="#ff0000">use preprosessor</font>
+            (*2)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\v<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              new line character.</span></td>
+          <td valign="top">No support (*7)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\V<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              non-new line character.</span></td>
+          <td valign="top">No support (*7)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\w<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              word character.</span></td>
+          <td valign="top">supported</td>
+        </tr>
+        <tr>
+          <td valign="top">\W<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              non-word character.</span></td>
+          <td valign="top">supported</td>
+        </tr>
+        <tr>
+          <td valign="top">\x{HHHH}<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              the character with <br>
+              hex value hhhh</span></td>
+          <td valign="top"><font color="#ff0000">use preprosessor</font>
+            (*2)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\xHH<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              the character with two digit <br>
+              hex value hh</span></td>
+          <td valign="top"><font color="#ff0000">use preprosessor</font>
+            (*2)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\x<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match a
+              Grapheme Cluster<br>
+            </span></td>
+          <td valign="top"><font color="#3366ff"><font color="#3333ff">(*8)</font>
+            </font></td>
+        </tr>
+        <tr>
+          <td valign="top">\Z<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              if the current position is at <br>
+              the end of input, but before the final line <br>
+              terminator, if one exists</span></td>
+          <td valign="top">No support (*7)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\z<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              if the current position is at the <br>
+              end of input</span></td>
+          <td valign="top">No support (*7)<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\&lt;digits&gt;<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Back
+              Reference</span></td>
+          <td valign="top"><font color="#3333ff">(*8)</font> </td>
+        </tr>
+        <tr>
+          <td valign="top">\Oooo<br>
+          </td>
+          <td valign="top">
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            <span style="color: rgb(92, 89, 98); font-family: system-ui,
+              -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,
+              Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+              font-size: 14px; font-style: normal;
+              font-variant-ligatures: normal; font-variant-caps: normal;
+              font-weight: 400; letter-spacing: normal; orphans: 2;
+              text-align: left; text-indent: 0px; text-transform: none;
+              white-space: normal; widows: 2; word-spacing: 0px;
+              -webkit-text-stroke-width: 0px; background-color: rgb(255,
+              255, 255); text-decoration-thickness: initial;
+              text-decoration-style: initial; text-decoration-color:
+              initial; display: inline !important; float: none;">Match
+              an Octal character.</span></td>
+          <td valign="top">No support (*6)<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    Comments :<br>
+    <ol>
+      <li>Note the difference between Java/C++ implementation and
+        Y2018.Text. \p{&lt;id&gt;} (\P{&lt;id&gt;}) is always an
+        identifier but can be GC identifier or <a href="cgroup.html">URV</a>
+        identifier<br>
+      </li>
+      <li> No regular expression support, use preprocessor hexadecimal
+        notation</li>
+      <li>No regular expression support, but the same feature can be
+        achieved through cursor use of Toil package</li>
+      <li>Use a user defined group</li>
+      <li>Use hexadecimal notation</li>
+      <li>No support for this</li>
+      <li>Y2018.Text do not support line breaks<br>
+      </li>
+      <li><font color="#3333ff">Future consideration</font></li>
+    </ol>
+    <h2 id="split"> Split ?</h2>
+    <p>Split function do not exists but you can write it. Here as an
+      example <b>Splity</b> :</p>
+    <hr> <code><br>
+      with Ada.Strings.Wide_Wide_Unbounded; use
+      Ada.Strings.Wide_Wide_Unbounded;<br>
+      with Ada.Text_IO;<br>
+      with Y2018.Text.Wide; use Y2018.Text.Wide;<br>
+      with Y2018.Text.Wide.STR; use Y2018.Text.Wide.STR;<br>
+      with Y2018.Text.Wide.Tool; use Y2018.Text.Wide.Tool; <br>
+      with Y2018.Text.Regex.PatternPack; <br>
+      with Y2018.Text.Regex.ToilPack; <br>
+      <br>
+      procedure Splity is<br>
+      &nbsp;&nbsp;&nbsp; myPattern:constant
+      Wide_Wide_String:="^(.*?),[\\s]*"W;<br>
+      &nbsp;&nbsp;&nbsp; p:Y2018.Text.Regex.PatternPack.Pattern_TY;<br>
+      &nbsp;&nbsp;&nbsp; myData:Unbounded_Wide_Wide_String:=NUW + "Huey,
+      Dewey, Louie, Duck"W;<br>
+      &nbsp;&nbsp;&nbsp; v:Y2018.Text.Regex.G_Vector.Vector;<br>
+      &nbsp;&nbsp;&nbsp; i:Integer:=0;<br>
+      &nbsp;&nbsp;&nbsp; c:Y2018.Text.Regex.G_Vector.Cursor;<br>
+      &nbsp;&nbsp;&nbsp; j:Y2018.Text.Regex.G_Element;<br>
+      begin<br>
+      &nbsp;&nbsp;&nbsp;
+      Y2018.Text.Regex.PatternPack.Pattern(p,myPattern);<br>
+      &nbsp;&nbsp;&nbsp; loop<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; declare<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      t:Y2018.Text.Regex.ToilPack.Toil_TY; -- it is important to get a
+      new instance of 't'<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; begin<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      Y2018.Text.Regex.PatternPack.Toil(t,p,""W + myData);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if
+      Y2018.Text.Regex.ToilPack.has_toil(t) then<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; v:=Y2018.Text.Regex.ToilPack.Match(t);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; i:=0;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; for c in Y2018.Text.Regex.G_Vector.Iterate(v)
+      loop<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      j:=Y2018.Text.Regex.G_Vector.Element(c);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if j.exists then<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if i&gt;0
+      then -- i=0 is always then orginal input, and we do not care about
+      it <br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("&gt; " + j.v);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end if;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if i&gt;0
+      then<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("&gt; NO VALUE");<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end if;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end if;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; i:=i+1;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; end loop;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; myData:=NUW +
+      Y2018.Text.Regex.ToilPack.Tail(t);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("Tail" + "=" + myData);
+      -- for tracing only<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; exit;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end if;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end;<br>
+      &nbsp;&nbsp;&nbsp; end loop;<br>
+      &nbsp;&nbsp; Ada.Text_IO.Put_Line ("*** End of Splity ***");<br>
+      end Splity;<br>
+    </code>
+    <hr>
+    <p>The reason why we do not have a "split" in Y2018.Text is that
+      dynamic tables in Ada are vectors and, as you can see above, not
+      so easy to handle.<br>
+    </p>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

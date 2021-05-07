@@ -6,11 +6,19 @@
   </head>
   <body>
     <h1>Application Program and Programmers Interface</h1>
-    <p>API<br>
+    <p>Y2018-Text is an enlargement to Gnat ADA through use of a
+      preprocessor.<br>
     </p>
     <h2>Installing Y2018-Text</h2>
     <ul>
       <li>Choose or create an empty directory. <font color="#cc0000">This
+
+
+
+
+
+
+
 
 
 
@@ -39,16 +47,11 @@
       <li>meta character "\w" is not limited to ASCII but consider all
         word characters in unicode and underscore '_', characters in
         categors L and N</li>
-      <li>notation "\p{&lt;g&gt;}" supports as &lt;g&gt; only unicode
-        general category i.e.</li>
+      <li>notation "\p{&lt;g&gt;}" supports as &lt;g&gt; unicode general
+        category, but also something called <a href="cgroup.html">URV</a>
+        or see <a href="cgroup.html#expo">Expo</a> example.<br>
+      </li>
       <ul>
-        <li>Lu, Ll, Lt, Lm, Lo and L</li>
-        <li>Mn, Mc, Me and M</li>
-        <li>Nd, Nl, No and N</li>
-        <li>Pc, Pd, Ps, Pe, Pi, Pf, Po and P</li>
-        <li>Sm, Sc, Sk, So and S</li>
-        <li>Zs, Zl, Zp and Z</li>
-        <li>Cc, Cf, Cs, Co, Cn and C</li>
       </ul>
       <li>character "/" is not used as a meta symbol and should not be
         escaped</li>
@@ -102,7 +105,10 @@
       </li>
     </ul>
     Note that &lt;source&gt; can be a String, a Wide_Wide_String,
-    Unbounded_String or Unbounded_Wide_Wide_String. <br>
+    Unbounded_String or Unbounded_Wide_Wide_String. <i><font
+        color="#ff6666">But some like it hot</font></i>, <a
+      href="y2018_Text_Regex.html#split">alternative solution</a>.&nbsp;
+    <br>
     <h2>Wide_Wide_String constant characters<br>
     </h2>
     <p> Package Y2018.Text.Regex contains an implementation of Regular
@@ -130,7 +136,7 @@
             padding-top: 0in; padding-bottom: 0.04in; padding-left:
             0.04in; padding-right: 0in" width="20">
             <p><font face="DejaVu Sans Mono, monospace"><font
-                  style="font-size: 9pt" size="2">verticalline</font></font></p>
+                  style="font-size: 9pt" size="2">vertical line</font></font></p>
           </td>
           <td style="border-top: none; border-bottom: 1px solid #000000;
             border-left: 1px solid #000000; border-right: 1px solid
@@ -195,7 +201,7 @@
             padding-top: 0in; padding-bottom: 0.04in; padding-left:
             0.04in; padding-right: 0in" width="20">
             <p><font face="DejaVu Sans Mono, monospace"><font
-                  style="font-size: 9pt" size="2">right suare</font></font></p>
+                  style="font-size: 9pt" size="2">right square</font></font></p>
           </td>
           <td style="border-top: none; border-bottom: 1px solid #000000;
             border-left: 1px solid #000000; border-right: 1px solid
@@ -301,6 +307,22 @@
             padding-left: 0.04in; padding-right: 0.04in" width="10">
             <p><font face="DejaVu Sans Mono, monospace"><font
                   style="font-size: 9pt" size="2">+</font></font></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: none;
+            padding-top: 0in; padding-bottom: 0.04in; padding-left:
+            0.04in; padding-right: 0in" width="20">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">minus</font></font></p>
+          </td>
+          <td style="border-top: none; border-bottom: 1px solid #000000;
+            border-left: 1px solid #000000; border-right: 1px solid
+            #000000; padding-top: 0in; padding-bottom: 0.04in;
+            padding-left: 0.04in; padding-right: 0.04in" width="10">
+            <p><font face="DejaVu Sans Mono, monospace"><font
+                  style="font-size: 9pt" size="2">-</font></font></p>
           </td>
         </tr>
         <tr valign="top">
@@ -511,6 +533,13 @@ Wide_Wide_Character'Val(16#69#),Wide_Wide_Character'Val(16#6E#),
 
 
 
+
+
+
+
+
+
+
           Wide_Wide_Character'Val(16#67#));</font></font></p>
     <p>Characters in a Wide_Wide_String literal is extended by escaping
       a character with a back slash</p>
@@ -664,6 +693,13 @@ Wide_Wide_Character'Val(16#69#),Wide_Wide_Character'Val(16#6E#),
     done.<br>
     <code><font color="#cc0000">export LD_LIBRARY_PATH="<font
           color="#993300">*</font>/lib/";<font color="#993300">*</font>/bin/y2018text
+
+
+
+
+
+
+
 
 
 

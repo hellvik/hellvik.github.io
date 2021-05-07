@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Character group</title>
+  </head>
+  <body>
+    <h1>Character groups in Y2018-Text project</h1>
+    Character groups is specfied in Regular expressions with \p{} (must
+    be in this group) or \P{} (must <font color="#ff0000">not</font> be
+    in this group) expression. Following Unicode General Category
+    identifiers are reserved groups of general category:<br>
+    <ul>
+      <li>L with Lu, Ll, Lm, Lo&nbsp; and Lt</li>
+      <li>M with Mn, Mc and Me</li>
+      <li>N with Nd, Nl and No</li>
+      <li>Z with Zs, Zl and Zp</li>
+      <li>C with Cc, Cf, Cs, Co and Cn</li>
+      <li>P with Pc, Pd, Ps, Pe, Pi, Pf and Po</li>
+      <li>S with Sm, Sc, Sk and So</li>
+    </ul>
+    Inside \p (or \P) bracket is an identifier for a character group.
+    Note this differs from the solutions in Java or C++. In Y2018-Text
+    regular expression if an identifier is not one of Unicode GC then
+    the identifier must be found in the <font color="#993399"><u>Y2018.Text.Jets.RangeVectorPack.UserRangeVectorMap_TY.Map</u></font>
+    given in the Pattern call. The
+    Y2018.Text.Jets.RangeVectorPack.UserRangeVectorMap_TY.Map looks like
+    a library of groups where the key of the map is this group
+    identifier.<br>
+    The reason for this solution is that contruction of a map item is
+    rather time consuming on a small computer and may involve reading
+    through Unicode UCD data file or files.<br>
+    <h2>Y2018.Text.M.UrvPack utilities</h2>
+    URV's for Patter call. URV's can be stored in external files and
+    loaded from external files.<br>
+    <blockquote>
+      <hr> <font color="#006600">This is the structure of an element</font><br>
+      type <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Velem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      is<br>
+      record<br>
+      &nbsp; f: Integer; -- first character value of this range<br>
+      &nbsp; l: Integer; -- last character value of this range<br>
+      end record;<br>
+      <br>
+      <font color="#006600">This is the structure refered as a URV_Set.
+        An URV_Set can be stored or loaded from an external file </font><br>
+      package <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Set_TY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      is new Ada.Containers.Ordered_Sets(<br>
+      &nbsp; Element_type =&gt; <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Velem,<br>
+      &nbsp; "&lt;" =&gt; less,<br>
+      &nbsp; "=" =&gt; equal<br>
+      );<br>
+      <br>
+      <font color="#006600">This is the structure for the Pattern call.
+        A 'library' of URV_Sets.</font><br>
+      package <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>UserRangeVectorMap_TY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      is new Ada.Containers.Ordered_Maps(<br>
+      &nbsp; Key_Type=&gt; Unbounded_Wide_Wide_String, -- the name or
+      identifier of an URV_Set<br>
+      &nbsp; Element_Type=&gt; <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Set_TY.Set,<br>
+      &nbsp; "&lt;"=&gt; lessUR,<br>
+      &nbsp; "="=&gt; equalUR<br>
+      );<br>
+      <br>
+      The <b>MapPool</b> is a private type of Y2018.Text.M.UrvPack and
+      contains a map of type UserRangeVectorMap_TY.<br>
+      <hr> </blockquote>
+    Copy the urv for a pattern call:<br>
+    &nbsp;<br>
+    function urv(mp:in out <b>MapPool</b>) return <font
+      color="#009900">Jets.RangeVectorPack.UserRangeVectorMap_TY.Map</font><br>
+    <h3>URV-Set utilties </h3>
+    <p>A new URV_Set must be created (and named) with the 'newURV_Set'
+      function. You cannot create a new URV_Set with 'putURV_Set'. The
+      URV_Set is 'the library' of elements (<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      MapPool is the private type of UrvPack, and in the same MapPool it
+      is possible to store many named URV_Sets.<br>
+    </p>
+    procedure newURV_Set(mp:in out <b>MapPool</b>;key:Wide_Wide_String)<br>
+    function queryURV_Set(mp:in out <b>MapPool</b>;key:Wide_Wide_String)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    return Boolean<br>
+    procedure dropURV_Set(mp:in out <b>MapPool</b>;key:Wide_Wide_String)<br>
+    procedure listURV(mp:in out <b>MapPool</b>)<br>
+    function getURV_Set(mp:in out <b>MapPool</b>;key:Wide_Wide_String)
+    <br>
+    return Jets.RangeVectorPack.Set_TY.Set<br>
+    procedure putURV_Set(mp:in out <b>MapPool</b>;key:Wide_Wide_String;value:<font
+      color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>)<br>
+    function URV_SetNames(mp:in out <b>MapPool</b>) <br>
+    return UWWS_Set.Set<br>
+    <h3>element utlities<br>
+    </h3>
+    An element (<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>)
+    contains a list of character value ranges.<br>
+    <ul>
+      <li>add - add one element to another<br>
+      </li>
+      <li>sub - remove character ranges which exists in the second
+        element from the first<br>
+      </li>
+      <li>slice - remove character ranges from the first which donnot
+        exists in the second</li>
+      <li>compress - pack the character ranges in the element<br>
+      </li>
+    </ul>
+    function compress(inSet:<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>)
+    <br>
+    return <font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font><br>
+    function add(alfaSet:<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>;betaSet:<font
+      color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>) <br>
+    return <font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font><br>
+    function sub(alfaSet:<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>;betaSet:<font
+      color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>) <br>
+    return <font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font><br>
+    function slice(alfaSet:<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>;betaSet:<font
+      color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>) <br>
+    return <font color="#990000">Jets.RangeVectorPack.Set_TY.Set<br>
+      <br>
+    </font> function toURV_Set(s:Wide_Wide_String) <br>
+    return <font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>
+    -- this is a short cut solution for converting a Wide_Wide_String to
+    an element set<br>
+    <br>
+    List an element to STDOUT or to an external file<br>
+    <br>
+    procedure listSet(elementSet:<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>;s:Wide_Wide_String;cntMax:Integer:=2097152;path:String:=EmptyString;lse:LSE_TY:=LSENONE)<br>
+    <ul>
+      <li>LSENONE</li>
+      <li> LSESIZE - number of characters in range<br>
+      </li>
+      <li>LSECOMP - range first .. last value <br>
+      </li>
+    </ul>
+    <h3>storing and loading an URV_Set from an external file<br>
+    </h3>
+    procedure load(mp:in out <b>MapPool</b>;key:Wide_Wide_String;path:String)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -- read from external file<br>
+    procedure store(mp:in out <b>MapPool</b>;key:Wide_Wide_String;path:String)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -- write to external file<br>
+    <br>
+    <h3>utilities based on UCD.zip</h3>
+    Get the UCD.zip file from Unicode.org (<a
+      href="https://www.unicode.org/Public/zipped/13.0.0/">https://www.unicode.org/Public/zipped/13.0.0/</a>)
+    and unzip this to a directory. Lets call the directory for the
+    UCD-directory.<br>
+    <h4><font color="#33cc00">scanning unicodedata.txt for an element</font></h4>
+    The UCD-directory will contain a file named "UnicodeData.txt",&nbsp;
+    this is the input for this utility. All parameters except the first
+    are considered to be regular expressions for fields in the
+    unicodedata.txt (field separator is ';'). Default value is WWEmpty
+    (i.e. ""W) which stands for do not consider this field. If the field
+    in unicodedata.txt is a match of the regular expression then this
+    character value is added to the element. Note you should compress
+    the element before use.<br>
+    <br>
+    function UnicodeData(<br>
+    <blockquote>filename:String; -- path an file name of UnicodeData.txt<br>
+      Character_name:Wide_Wide_String:=WWEmpty; <br>
+      General_Category:Wide_Wide_String:=WWEmpty; <br>
+      Canonical_Combining:Wide_Wide_String:=WWEmpty; <br>
+      Bidirectional_Category:Wide_Wide_String:=WWEmpty; <br>
+      Character_Decomposition:Wide_Wide_String:=WWEmpty; <br>
+      Decimal_digit:Wide_Wide_String:=WWEmpty; <br>
+      Digit_value:Wide_Wide_String:=WWEmpty; <br>
+      Numeric_value:Wide_Wide_String:=WWEmpty; <br>
+      Mirrored:Wide_Wide_String:=WWEmpty; <br>
+      Old_name:Wide_Wide_String:=WWEmpty; <br>
+      Comment:Wide_Wide_String:=WWEmpty; <br>
+      Uppercase:Wide_Wide_String:=WWEmpty; <br>
+      Lowercase:Wide_Wide_String:=WWEmpty; <br>
+      Titlecase:Wide_Wide_String:=WWEmpty <br>
+    </blockquote>
+    ) return <font color="#990000"> Jets.RangeVectorPack.Set_TY.Set</font>
+    <h3 id="expo"><font color="#990000">Example</font></h3>
+    <p>Procedure Expo reads through UnicodeData.txt searching for
+      anything starting with "DIGIT" in the second column. The GC1 is
+      created for the pattern matching and a search is done.<br>
+    </p>
+    <hr> <code> <br>
+      with Ada.Text_IO; use&nbsp; Ada.Text_IO;<br>
+      with Ada.Command_Line;<br>
+      with Ada.Containers.Ordered_Sets;<br>
+      with Y2018.Text.M.UrvPack;<br>
+      with Y2018.Text.Jets.RangeVectorPack;<br>
+      with Y2018.Text.Regex;<br>
+      with Y2018.Text.Regex.PatternPack; use
+      Y2018.Text.Regex.PatternPack;<br>
+      with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;<br>
+      with Ada.Strings.Wide_Wide_Unbounded; use
+      Ada.Strings.Wide_Wide_Unbounded;<br>
+      with Y2018.Text.Wide; use Y2018.Text.Wide;<br>
+      with Y2018.Text.Wide.STR; use Y2018.Text.Wide.STR;<br>
+      with Y2018.Text.Wide.Tool; use Y2018.Text.Wide.Tool; <br>
+      procedure Expo is<br>
+      begin<br>
+      &nbsp;&nbsp;&nbsp; declare<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      mp:Y2018.Text.M.UrvPack.MapPool;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      uval:Y2018.Text.Jets.RangeVectorPack.Set_TY.Set;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      unicodeDataFile:String:="/mnt/Kratte/A/doc/UniCodeData13/UnicodeData.txt";
+
+
+
+
+
+
+
+
+
+
+
+
+
+      -- <font color="#33cc00">Change path to your UCD-directory</font><br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      p:Y2018.Text.Regex.PatternPack.Pattern_TY;<br>
+      &nbsp;&nbsp;&nbsp; begin<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      Y2018.Text.M.UrvPack.newURV_Set(mp,"GC1"W);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      uval:=Y2018.Text.M.UrvPack.UnicodeData(unicodeDataFile,"^DIGIT"W);<br>
+    </code><code><code>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        uval:=Y2018.Text.M.UrvPack.Compress(uval);<br>
+      </code>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      Y2018.Text.M.UrvPack.putURV_Set(mp,"GC1"W,uval);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      Y2018.Text.M.UrvPack.ListURV(mp);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+Y2018.Text.Regex.PatternPack.Pattern(p,"^.*?\\p{GC1}.*"W,Y2018.Text.M.UrvPack.urv(mp));<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; declare<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      r:Unbounded_Wide_Wide_String_AA(0 .. (size(p) - 1));<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; begin<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if
+      matchTo("_1 I have been found"W,p,r) then<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("FOUND " + r(0));<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("NOP");<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end if;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end;<br>
+      &nbsp;&nbsp;&nbsp; end;<br>
+      &nbsp;&nbsp; Ada.Text_IO.Put_Line ("*** End of Expo ***");<br>
+      end Expo;<br>
+      <br>
+    </code>
+    <hr><font color="#33cc00"><br>
+      scanning block.txt for an element</font><br>
+    <br>
+    The UCD-directory will contain a file named "Blocks.txt",&nbsp; this
+    is the input for this utility. All parameters except the first are
+    considered to be regular expressions for fields in the
+    unicodedata.txt (field separator is ';'). Default value is WWEmpty
+    (i.e. ""W) which stands for donnot consider this field. If the field
+    in block.txt is a match of the regular expression then this
+    character value is added to the element. Note you should compress
+    the element before use.<br>
+    <br>
+    function Block(<br>
+    <blockquote>filename:String; -- path and file name of Blocks.txt<br>
+      Block_name:Wide_Wide_String:=WWEmpty <br>
+    </blockquote>
+    ) return <font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font><br>
+    <br>
+    <h3 id="expob"><font color="#990000">Example</font></h3>
+    Procedure ExpoB reads through Blocks.txt searching for anything
+    starting with "Supplement" in the second column. The GC1 is created
+    for the pattern matching and a search is done. <i>Note the
+      peculiarity of Blocks.txt that the second column always starts
+      with a blank</i>. <br>
+    <hr> <code><br>
+      with Ada.Text_IO; use&nbsp; Ada.Text_IO;<br>
+      with Ada.Command_Line;<br>
+      with Ada.Containers.Ordered_Sets;<br>
+      with Y2018.Text.M.UrvPack;<br>
+      with Y2018.Text.Jets.RangeVectorPack;<br>
+      with Y2018.Text.Regex;<br>
+      with Y2018.Text.Regex.PatternPack; use
+      Y2018.Text.Regex.PatternPack;<br>
+      with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;<br>
+      with Ada.Strings.Wide_Wide_Unbounded; use
+      Ada.Strings.Wide_Wide_Unbounded;<br>
+      with Y2018.Text.Wide; use Y2018.Text.Wide;<br>
+      with Y2018.Text.Wide.STR; use Y2018.Text.Wide.STR;<br>
+      with Y2018.Text.Wide.Tool; use Y2018.Text.Wide.Tool; <br>
+      procedure ExpoB is<br>
+      begin<br>
+      &nbsp;&nbsp;&nbsp; declare<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      mp:Y2018.Text.M.UrvPack.MapPool;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      uval:Y2018.Text.Jets.RangeVectorPack.Set_TY.Set;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      blocksFile:String:="/mnt/Kratte/A/doc/UniCodeData13/Blocks.txt"; </code><code><code>--
+        <font color="#33cc00">Change path to your UCD-directory<br>
+        </font></code>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+      p:Y2018.Text.Regex.PatternPack.Pattern_TY;<br>
+      &nbsp;&nbsp;&nbsp; begin<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      Y2018.Text.M.UrvPack.newURV_Set(mp,"GC1"W);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      uval:=Y2018.Text.M.UrvPack.Block(blocksFile,"^.*?Supplement"W);<br>
+    </code><code><code>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        uval:=Y2018.Text.M.UrvPack.Compress(uval);<br>
+      </code> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      Y2018.Text.M.UrvPack.putURV_Set(mp,"GC1"W,uval);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      Y2018.Text.M.UrvPack.ListURV(mp);<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+Y2018.Text.Regex.PatternPack.Pattern(p,"^.*?\\p{GC1}.*"W,Y2018.Text.M.UrvPack.urv(mp));<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; declare<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      r:Unbounded_Wide_Wide_String_AA(0 .. (size(p) - 1));<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; begin<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if
+      matchTo("_Å I have been found"W,p,r) then<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("FOUND " + r(0));<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp; Ada.Text_IO.Put_Line ("NOP");<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end if;<br>
+      &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; end;<br>
+      &nbsp;&nbsp;&nbsp; end;<br>
+      &nbsp;&nbsp; Ada.Text_IO.Put_Line ("*** End of ExpoB ***");<br>
+      end ExpoB; </code><br>
+    <hr>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

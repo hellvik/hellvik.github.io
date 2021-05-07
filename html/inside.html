@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Inside</title>
+  </head>
+  <body>
+    <h1>Inside Y2018.Text<br>
+    </h1>
+    ...<br>
+    <h2>Package dependencies</h2>
+    <p>Basic dependencies of packages in Y2018.Text<br>
+    </p>
+    <ol>
+      <li><font color="#ff0000">Core</font> : depends only on Ada
+        standard packages <br>
+      </li>
+      <li>(Testq,) <font color="#66cccc">Jets, Regex</font> : depends
+        on Core, and must be constructed in this order <br>
+      </li>
+      <li><font color="#ff0000"><font color="#3333ff">Comp</font><font
+            color="#000000"> : precompiler Y2018Text, depends on Jets
+            and Regex</font></font><br>
+      </li>
+      <li><font color="#ffcc00">Wide</font>, (Testr) : must be
+        precompiled and depends on Jets and Regex<br>
+      </li>
+      <li><font color="#33cc00">M and anything else</font>&nbsp; :
+        depends on Wide and must be precompiled</li>
+    </ol>
+    <img src="../H.jpg" alt="Hierarchy" width="415" height="413"><br>
+    <br>
+    A quick look at some packages<br>
+    <ul>
+      <li> <a href="Y2018.Text.Wide.html">Package Y2018.Text.Wide</a></li>
+      <li> <a href="Y2018.Text.Regex.PatternPack.html">Package
+          Y2018.Text.Regex.PatternPack</a></li>
+    </ul>
+    Reader who want a more comprehensive knowledge about project
+    packages can study the source code.<br>
+    <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
+  </body>
+</html>

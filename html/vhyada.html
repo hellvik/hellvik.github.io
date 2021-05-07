@@ -14,21 +14,8 @@
       "character" (8-bit entity, ASCII). A character as € (euro) is in
       UTF-8 3*8 bits but in UTF-32 one 32 bit character.<br>
     </p>
-    <p>Best Regular expression support is in Perl script and in this
-      implementation the Perl implementation is used as a model all
-      tough some features can not be implemented in ADA or are too
-      complicated to be implemented. Some features in our implementation
-      has no corresponding feature in Perl because of UTF-32 or the ADA
-      language.<br>
-    </p>
-    <p>The biggest difference from Perl is that we do not have a way to
-      specify a line and an "end of line". Meta-characters "^" and "$"
-      are always "start-of-data" and "end-of-data" (same as Perl search
-      pattern with modifier "s"). Patterns can have modifiers, but only
-      Uppercase is here implemented. <br>
-    </p>
-    <p> Following features and goals gives Ada an edge in text
-      processing</p>
+    Following features and goals gives Y2018.Text an edge in text
+    processing
     <ol>
       <li>Strong typing - makes it possible to process text stored as
         UTF-8 or UTF-32.</li>
@@ -64,9 +51,9 @@
     expression implementation based on UTF-32. The support still lacks
     features as language based collation sequence, normalization of text
     and support for specific scripts. What is supported is upper-,
-    lower- and tittle case transformation and general character classes.
-    All Unicode code-points are supported at Unicode standard version
-    12. <br>
+    lower- and tittle case simple transformation and general character
+    classes. All Unicode code-points are supported at Unicode standard.
+    <br>
     <br>
     <footer><small><small><a rel="license" href="license.html">license</a>Y2018-Text-project</small></small></footer>
   </body>
