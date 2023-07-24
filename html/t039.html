@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExSigma</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t040.html">Prev</a> <a href="t029.html">Next</a> <font color="#999999">Up</font> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExSigma</h1>
+    <p>Building a RangeVector<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> --with Y2018.Text.Core.UTF;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">005|</font> with
+    Y2018.Text.jets.RangeVectorPack; use
+    Y2018.Text.jets.RangeVectorPack;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.JetsTool; use
+    Y2018.Text.Jets.JetsTool;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">008|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">009|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">010|</font> --with DSECT;<br>
+    <font color="#999900">011|</font> procedure ExSigma is<br>
+    <font color="#999900">012|</font> __Cmap:CList.map;<br>
+    <font color="#999900">013|</font> __rv:RangeVector;<br>
+    <font color="#999900">014|</font> __this:Clist.Cursor;<br>
+    <font color="#999900">015|</font> __val:Celem;<br>
+    <font color="#999900">016|</font> begin<br>
+    <font color="#999900">017|</font> __<font color="#cc0000">putC(rv,'A'c,'C'c);</font><br>
+    <font color="#999900">018|</font> __<font color="#cc0000">putC(rv,'E'c,'G'c);</font><br>
+    <font color="#999900">019|</font> __<font color="#cc0000">putC(rv,'I'c,'K'c);</font><br>
+    <font color="#999900">020|</font> __<font color="#cc0000">putC(rv,'M'c,'O'c);</font><br>
+    <font color="#999900">021|</font> __<font color="#cc0000">putC(rv,'Q'c,'S'c);</font><br>
+    <font color="#999900">022|</font> __<font color="#cc0000">putC(rv,'U'c,'W'c);</font><br>
+    <font color="#999900">023|</font> __To_CList(Cmap,rv);<br>
+    <font color="#999900">024|</font> __this:=CList.First(Cmap);<br>
+    <font color="#999900">025|</font> __while Clist.Has_Element(this)
+    loop<br>
+    <font color="#999900">026|</font> _____val:=CList.Element(this);<br>
+    <font color="#999900">027|</font> _____Ada.Text_IO.Put_Line
+    (To_String(val.s));<br>
+    <font color="#999900">028|</font> _____Clist.Next(this);<br>
+    <font color="#999900">029|</font> __end loop;<br>
+    <font color="#999900">030|</font> __if exists(rv,'F'c) then<br>
+    <font color="#999900">031|</font> _____Ada.Text_IO.Put_Line ("F
+    CodePoint'Val(16#46#) exists");<br>
+    <font color="#999900">032|</font> __else<br>
+    <font color="#999900">033|</font> _____Ada.Text_IO.Put_Line ("F
+    CodePoint'Val(16#46#) donnot exists");<br>
+    <font color="#999900">034|</font> __end if;<br>
+    <font color="#999900">035|</font> __if exists(rv,'N'c) then<br>
+    <font color="#999900">036|</font> _____Ada.Text_IO.Put_Line ("N
+    CodePoint'Val(16#48#) exists");<br>
+    <font color="#999900">037|</font> __else<br>
+    <font color="#999900">038|</font> _____Ada.Text_IO.Put_Line ("N
+    CodePoint'Val(16#48#) donnot exists");<br>
+    <font color="#999900">039|</font> __end if;<br>
+    <font color="#999900">040|</font> __CList.Clear(Cmap);<br>
+    <font color="#999900">041|</font> __Clear(rv);<br>
+    <font color="#999900">042|</font> __<font color="#cc0000">putGC(rv,'C'c);</font>
+    -- 16#43# = C <br>
+    <font color="#999900">043|</font> __To_CList(Cmap,rv,"Control
+    category",cntMax=&gt;10);<br>
+    <font color="#999900">044|</font> __this:=CList.First(Cmap);<br>
+    <font color="#999900">045|</font> __while Clist.Has_Element(this)
+    loop<br>
+    <font color="#999900">046|</font> _____val:=CList.Element(this);<br>
+    <font color="#999900">047|</font> _____Ada.Text_IO.Put_Line
+    (To_String(val.s));<br>
+    <font color="#999900">048|</font> _____Clist.Next(this);<br>
+    <font color="#999900">049|</font> __end loop;<br>
+    <font color="#999900">050|</font> __Ada.Text_IO.Put_Line ("length
+    of" &amp; Integer'Image(length(rv)) &amp; " Cmap");<br>
+    <font color="#999900">051|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExSigma ***");<br>
+    <font color="#999900">052|</font> end ExSigma;<br>
+    <hr width="100%" size="2">
+    <h2>after precompilation</h2>
+    Values or Codepoints are inserted in the rv Rangevector at lines
+    017..022 and <a href="t003.html">General Category</a> 'C' is
+    inserted at line 042.<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> --with Y2018.Text.Core.UTF;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">005|</font> with
+    Y2018.Text.jets.RangeVectorPack; use
+    Y2018.Text.jets.RangeVectorPack;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.JetsTool; use
+    Y2018.Text.Jets.JetsTool;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">008|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">009|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">010|</font> --with DSECT;<br>
+    <font color="#999900">011|</font> procedure ExSigma is<br>
+    <font color="#999900">012|</font> __Cmap:CList.map;<br>
+    <font color="#999900">013|</font> __rv:RangeVector;<br>
+    <font color="#999900">014|</font> __this:Clist.Cursor;<br>
+    <font color="#999900">015|</font> __val:Celem;<br>
+    <font color="#999900">016|</font> begin<br>
+    <font color="#999900">017|</font> __<font color="#cc0000">putC(rv,CodePoint'Val(16#41#),CodePoint'Val(16#43#));</font><br>
+    <font color="#999900">018|</font> __<font color="#cc0000">putC(rv,CodePoint'Val(16#45#),CodePoint'Val(16#47#));</font><br>
+    <font color="#999900">019|</font> __<font color="#cc0000">putC(rv,CodePoint'Val(16#49#),CodePoint'Val(16#4B#));</font><br>
+    <font color="#999900">020|</font> __<font color="#cc0000">putC(rv,CodePoint'Val(16#4D#),CodePoint'Val(16#4F#));</font><br>
+    <font color="#999900">021|</font> __<font color="#cc0000">putC(rv,CodePoint'Val(16#51#),CodePoint'Val(16#53#));</font><br>
+    <font color="#999900">022|</font> __<font color="#cc0000">putC(rv,CodePoint'Val(16#55#),CodePoint'Val(16#57#));</font><br>
+    <font color="#999900">023|</font> __To_CList(Cmap,rv);<br>
+    <font color="#999900">024|</font> __this:=CList.First(Cmap);<br>
+    <font color="#999900">025|</font> __while Clist.Has_Element(this)
+    loop<br>
+    <font color="#999900">026|</font> _____val:=CList.Element(this);<br>
+    <font color="#999900">027|</font> _____Ada.Text_IO.Put_Line
+    (To_String(val.s));<br>
+    <font color="#999900">028|</font> _____Clist.Next(this);<br>
+    <font color="#999900">029|</font> __end loop;<br>
+    <font color="#999900">030|</font> __if
+    exists(rv,CodePoint'Val(16#46#)) then<br>
+    <font color="#999900">031|</font> _____Ada.Text_IO.Put_Line ("F
+    CodePoint'Val(16#46#) exists");<br>
+    <font color="#999900">032|</font> __else<br>
+    <font color="#999900">033|</font> _____Ada.Text_IO.Put_Line ("F
+    CodePoint'Val(16#46#) donnot exists");<br>
+    <font color="#999900">034|</font> __end if;<br>
+    <font color="#999900">035|</font> __if
+    exists(rv,CodePoint'Val(16#4E#)) then<br>
+    <font color="#999900">036|</font> _____Ada.Text_IO.Put_Line ("N
+    CodePoint'Val(16#48#) exists");<br>
+    <font color="#999900">037|</font> __else<br>
+    <font color="#999900">038|</font> _____Ada.Text_IO.Put_Line ("N
+    CodePoint'Val(16#48#) donnot exists");<br>
+    <font color="#999900">039|</font> __end if;<br>
+    <font color="#999900">040|</font> __CList.Clear(Cmap);<br>
+    <font color="#999900">041|</font> __Clear(rv);<br>
+    <font color="#999900">042|</font> __<font color="#cc0000">putGC(rv,CodePoint'Val(16#43#));</font>
+    -- 16#43# = C <br>
+    <font color="#999900">043|</font> __To_CList(Cmap,rv,"Control
+    category",cntMax=&gt;10);<br>
+    <font color="#999900">044|</font> __this:=CList.First(Cmap);<br>
+    <font color="#999900">045|</font> __while Clist.Has_Element(this)
+    loop<br>
+    <font color="#999900">046|</font> _____val:=CList.Element(this);<br>
+    <font color="#999900">047|</font> _____Ada.Text_IO.Put_Line
+    (To_String(val.s));<br>
+    <font color="#999900">048|</font> _____Clist.Next(this);<br>
+    <font color="#999900">049|</font> __end loop;<br>
+    <font color="#999900">050|</font> __Ada.Text_IO.Put_Line ("length
+    of" &amp; Integer'Image(length(rv)) &amp; " Cmap");<br>
+    <font color="#999900">051|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExSigma ***");<br>
+    <font color="#999900">052|</font> end ExSigma;<br>
+    <hr width="100%" size="2">
+    <h2>Result</h2>
+    <p>Running <u>export </u><u>LD_LIBRARY_PATH=lib;bin/exsigma</u> in
+      TEST directory.<br>
+    </p>
+    <hr width="100%" size="2"><font color="#999900">001|</font> ______41
+    .. ______43<br>
+    <font color="#999900">002|</font> ______45 .. ______47<br>
+    <font color="#999900">003|</font> ______49 .. ______4B<br>
+    <font color="#999900">004|</font> ______4D .. ______4F<br>
+    <font color="#999900">005|</font> ______51 .. ______53<br>
+    <font color="#999900">006|</font> ______55 .. ______57<br>
+    <font color="#999900">007|</font> CodePoint'Val(16#46#) exists<br>
+    <font color="#999900">008|</font> CodePoint'Val(16#48#) donnot
+    exists<br>
+    <font color="#999900">009|</font> Control category<br>
+    <font color="#999900">010|</font> _______0 .. ______1F<br>
+    <font color="#999900">011|</font> ______7F .. ______9F<br>
+    <font color="#999900">012|</font> ______AD .. ______AD<br>
+    <font color="#999900">013|</font> _____600 .. _____605<br>
+    <font color="#999900">014|</font> _____61C .. _____61C<br>
+    <font color="#999900">015|</font> _____6DD .. _____6DD<br>
+    <font color="#999900">016|</font> _____70F .. _____70F<br>
+    <font color="#999900">017|</font> _____8E2 .. _____8E2<br>
+    <font color="#999900">018|</font> ____180E .. ____180E<br>
+    <font color="#999900">019|</font> ____200B .. ____200F<br>
+    <font color="#999900">020|</font> length of 26 Cmap<br>
+    <font color="#999900">021|</font> *** End of ExSigma ***<br>
+    <hr width="100%" size="2">The result is listing everything only as
+    hexadecimal values ranges but by viewing to precompilation result it
+    should be obvious.<br>
+    <span style="background: transparent">Note that a row defines a
+      number of CodePoint characters, 41 .. 43 is a notation of 16#41#,
+      16#42# ,16#43# or as characters ‘A’, ‘B’, ‘C’. “length of 26”
+      stands for 26 rows where first row is 16#0# to 16#1F# or ‘NUL’ to
+      ‘US’. </span><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

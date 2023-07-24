@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CmakeGC_URV</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t047.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>CmakeGC_URV</h1>
+    <p>Make General Category URV-maps from Unicodedata.txt.<br>
+      Syntax: <font color="#999900">./CmakeGC_URV {-v} &lt;UCD file&gt;
+        &lt;DATfile&gt;</font><br>
+      The pattern structure applied to every row of the given UCD-file<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font>
+    p_C:CFix:="^"c &amp;<br>
+    <font color="#999900">002|</font> _"([0123456789ABCDEF]{4:6});"c
+    &amp; --1 Code value. Code value in 4-digit hexadecimal format.<br>
+    <font color="#999900">003|</font> _"([^;]*);"c &amp; --2 Character
+    name<br>
+    <font color="#999900">004|</font> _"([^;]*);"c &amp; --3 General
+    Category<br>
+    <font color="#999900">005|</font> _"([^;]*);"c &amp; --4 Canonical
+    Combining Classes<br>
+    <font color="#999900">006|</font> _"([^;]*);"c &amp; --5
+    Bidirectional Category<br>
+    <font color="#999900">007|</font> _"([^;]*);"c &amp; --6 Character
+    Decomposition Mapping<br>
+    <font color="#999900">008|</font> _"([^;]*);"c &amp; --7 Decimal
+    digit value normative This is a numeric field<br>
+    <font color="#999900">009|</font> _"([^;]*);"c &amp; --8 Digit value
+    This is a numeric field<br>
+    <font color="#999900">010|</font> _"([^;]*);"c &amp; --9 Numeric
+    value This is a numeric field<br>
+    <font color="#999900">011|</font> _"([^;]*);"c &amp; --10 Mirrored
+    This field has the value "Y" otherwise "N".<br>
+    <font color="#999900">012|</font> _"([^;]*);"c &amp; --11 Unicode
+    1.0 Name. This is the old name<br>
+    <font color="#999900">013|</font> _"([^;]*);"c &amp; --12 10646
+    comment field<br>
+    <font color="#999900">014|</font> _"([^;]*);"c &amp; --13 Uppercase
+    Mapping<br>
+    <font color="#999900">015|</font> _"([^;]*);"c &amp; --14 Lowercase
+    Mapping<br>
+    <font color="#999900">016|</font> _"([^;]*)"c &amp; --15 Titlecase
+    Mapping<br>
+    <font color="#999900">017|</font> _"$"c;<br>
+    <hr width="100%" size="2">As an example, one row of the UCD-file<br>
+    <font color="#999900">0041;LATIN CAPITAL LETTER
+      A;Lu;0;L;;;;;N;;;;0061;</font><br>
+    <br>
+    Usually as input, UCD-file, is not the whole unicodedata.txt but a
+    part of it.<br>
+    The result of the run is in a DAT-file. A DAT-file is in binary
+    format and has a name ending with ".dat".<br>
+    The program is building an URV with codepoints belonging to a
+    specific General Category, if the whole unicodedata.txt is the input
+    you get codepoints for all General Categories in the DAT-file.
+    &nbsp; <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

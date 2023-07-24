@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Jets.MatchPack</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_jets_jestool.html">Prev</a> <a href="y2018_text_jets_patternpack.html">Next</a> <a href="t019.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Jets.MatchPack</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Containers;<br>
+    <font color="#999900">002|</font> with Ada.Containers.Ordered_Maps;<br>
+    <font color="#999900">003|</font> with Ada.Finalization; use
+    Ada.Finalization;<br>
+    <font color="#999900">004|</font> with
+    Y2018.Text.Jets.RangeVectorPack; use
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets.JetsTool; use
+    Y2018.Text.Jets.JetsTool;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">008|</font> with Ada.Containers.Vectors;<br>
+    <font color="#999900">009|</font> package Y2018.Text.Jets.MatchPack
+    is<br>
+    <font color="#999900">010|</font> __type Match_TY is tagged private;<br>
+    <font color="#999900">011|</font> __type MatchID2RE_ID_Elem_TY is
+    record<br>
+    <font color="#999900">012|</font> _____mid:MatchID; -- KEY<br>
+    <font color="#999900">013|</font> _____re:RE_Elem_AC;<br>
+    <font color="#999900">014|</font> _____ia:I_A;<br>
+    <font color="#999900">015|</font> _____val_J:Integer;<br>
+    <font color="#999900">016|</font> __end record;<br>
+    <font color="#999900">017|</font> __function
+    MatchID2RE_ID_less(Left, Right : MatchID) return Boolean;<br>
+    <font color="#999900">018|</font> __function
+    MatchID2RE_ID_equal(Left, Right : MatchID2RE_ID_Elem_TY) return
+    Boolean;<br>
+    <font color="#999900">019|</font> __package MatchID2RE_ID_TY is new
+    Ada.Containers.Ordered_Maps(<br>
+    <font color="#999900">020|</font> _____Key_Type=&gt; MatchID,<br>
+    <font color="#999900">021|</font> _____Element_Type=&gt;
+    MatchID2RE_ID_Elem_TY,<br>
+    <font color="#999900">022|</font> _____"&lt;" =&gt;
+    MatchID2RE_ID_less,<br>
+    <font color="#999900">023|</font> _____"=" =&gt;
+    MatchID2RE_ID_equal);<br>
+    <font color="#999900">024|</font> _____<br>
+    <font color="#999900">025|</font> __procedure insert(match:in out
+    Match_TY;f:Integer;l:Integer;re:RE_Elem_AC);<br>
+    <font color="#999900">026|</font> __procedure
+    getMatch(match:Match_TY;q:in out I_A_ARRAY);<br>
+    <font color="#999900">027|</font> __function
+    getMatch(match:Match_TY) return I_A_ARRAY;<br>
+    <font color="#999900">028|</font> __function
+    getCList(match:Match_TY;s : CFix:=Null_CFix) return CList.map;<br>
+    <font color="#999900">029|</font> __function
+    hasMatch(match:Match_TY;mid:MatchID:=0) return Boolean;<br>
+    <font color="#999900">030|</font> __function
+    firstMap(match:Match_TY) return MatchID2RE_ID_TY.Cursor;<br>
+    <font color="#999900">031|</font> __function size(match:Match_TY)
+    return Integer;<br>
+    <font color="#999900">032|</font> __procedure Initialize (match:in
+    out Match_TY);<br>
+    <font color="#999900">033|</font> __private type Match_TY is tagged<br>
+    <font color="#999900">034|</font> __record<br>
+    <font color="#999900">035|</font> _____map:MatchID2RE_ID_TY.map;<br>
+    <font color="#999900">036|</font> _____id:MatchID;<br>
+    <font color="#999900">037|</font> __end record;<br>
+    <font color="#999900">038|</font> end Y2018.Text.Jets.MatchPack;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

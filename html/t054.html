@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExIota</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <a href="t052.html">Next</a> <a href="t053.html">Up</a> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExIota<br>
+    </h1>
+    <p>Example of grouping and capturing, and one failure pattern 30.<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets; <br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">008|</font> --with DSECT;<br>
+    <font color="#999900">009|</font> procedure ExIota is<br>
+    <font color="#999900">010|</font> __p:PatternPack.Pattern_AC;<br>
+    <font color="#999900">011|</font> __m : MatchPack.Match_TY;<br>
+    <font color="#999900">012|</font> __line:CFix:="abcdefghijk"c;<br>
+    <font color="#999900">013|</font> __nextPos:Integer;<br>
+    <font color="#999900">014|</font> __found:Boolean;<br>
+    <font color="#999900">015|</font> begin<br>
+    <font color="#999900">016|</font> __for j in 1 .. 30 loop<br>
+    <font color="#999900">017|</font> _____found:=TRUE;<br>
+    <font color="#999900">018|</font> _____case j is<br>
+    <font color="#999900">019|</font> ________when 1 =&gt;<br>
+    <font color="#999900">020|</font>
+    ___________p:=PatternPack.compileM("^(.)"c);<br>
+    <font color="#999900">021|</font> ________when 2 =&gt;<br>
+    <font color="#999900">022|</font>
+    ___________p:=PatternPack.compileM("^(?:.)"c); -- non capture<br>
+    <font color="#999900">023|</font> ________when 3 =&gt;<br>
+    <font color="#999900">024|</font>
+    ___________p:=PatternPack.compileM("^(.*)"c);<br>
+    <font color="#999900">025|</font> ________when 4 =&gt;<br>
+    <font color="#999900">026|</font>
+    ___________p:=PatternPack.compileM("^(?:.*)"c); -- non capture<br>
+    <font color="#999900">027|</font> ________when 5 =&gt;<br>
+    <font color="#999900">028|</font>
+    ___________p:=PatternPack.compileM("^(.*?)g"c);<br>
+    <font color="#999900">029|</font> ________when 6 =&gt;<br>
+    <font color="#999900">030|</font>
+    ___________p:=PatternPack.compileM("^(?:.*?)g"c); -- non capture<br>
+    <font color="#999900">031|</font> ________when 7 =&gt;<br>
+    <font color="#999900">032|</font>
+    ___________p:=PatternPack.compileM("^(.?)"c); <br>
+    <font color="#999900">033|</font> ________when 8 =&gt;<br>
+    <font color="#999900">034|</font>
+    ___________p:=PatternPack.compileM("^(?:.?)"c); -- non capture<br>
+    <font color="#999900">035|</font> ________when 9 =&gt;<br>
+    <font color="#999900">036|</font>
+    ___________p:=PatternPack.compileM("^(.+?)g"c);<br>
+    <font color="#999900">037|</font> ________when 10 =&gt;<br>
+    <font color="#999900">038|</font>
+    ___________p:=PatternPack.compileM("^(.*?)g"c);<br>
+    <font color="#999900">039|</font> ________when 11 =&gt;<br>
+    <font color="#999900">040|</font>
+    ___________p:=PatternPack.compileM("^(.{5}).*"c);<br>
+    <font color="#999900">041|</font> ________when 12 =&gt;<br>
+    <font color="#999900">042|</font>
+    ___________p:=PatternPack.compileM("([b-f]{5}?).*"c);<br>
+    <font color="#999900">043|</font> ________when 13 =&gt;<br>
+    <font color="#999900">044|</font>
+    ___________p:=PatternPack.compileM("([b-f]{5})"c);<br>
+    <font color="#999900">045|</font> ________when 14 =&gt;<br>
+    <font color="#999900">046|</font>
+    ___________p:=PatternPack.compileM("^([m-n]{4}?).*"c);<br>
+    <font color="#999900">047|</font> ________when 15 =&gt;<br>
+    <font color="#999900">048|</font>
+    ___________p:=PatternPack.compileM("^(.{5:6}).*"c);<br>
+    <font color="#999900">049|</font> ________when 16 =&gt;<br>
+    <font color="#999900">050|</font>
+    ___________p:=PatternPack.compileM("^([a-e]{5:6}).*"c);<br>
+    <font color="#999900">051|</font> ________when 17 =&gt;<br>
+    <font color="#999900">052|</font>
+    ___________p:=PatternPack.compileM("^([a-f]{5:6}).*"c);<br>
+    <font color="#999900">053|</font> ________when 18 =&gt;<br>
+    <font color="#999900">054|</font>
+    ___________p:=PatternPack.compileM("^([a-j]{5,6}).*"c);<br>
+    <font color="#999900">055|</font> ________when 19 =&gt;<br>
+    <font color="#999900">056|</font>
+    ___________p:=PatternPack.compileM("^([a-f]{:6}).*"c);<br>
+    <font color="#999900">057|</font> ________when 20 =&gt;<br>
+    <font color="#999900">058|</font>
+    ___________p:=PatternPack.compileM("^([m-n]{:6}).*"c);<br>
+    <font color="#999900">059|</font> ________when 21 =&gt;<br>
+    <font color="#999900">060|</font>
+    ___________p:=PatternPack.compileM("^([a-c]{1:}).*"c);<br>
+    <font color="#999900">061|</font> ________when 22 =&gt;<br>
+    <font color="#999900">062|</font>
+    ___________p:=PatternPack.compileM("^([a-f]{:6}?).*"c);<br>
+    <font color="#999900">063|</font> ________when 23 =&gt;<br>
+    <font color="#999900">064|</font>
+    ___________p:=PatternPack.compileM("^.*?(g[m-n]{:6}?.).*"c);<br>
+    <font color="#999900">065|</font> ________when 24 =&gt;<br>
+    <font color="#999900">066|</font>
+    ___________p:=PatternPack.compileM("^.*?(g[m-n]{1:6}?.).*"c);<br>
+    <font color="#999900">067|</font> ________when 30 =&gt;<br>
+    <font color="#999900">068|</font>
+    ___________p:=PatternPack.compileM("^([m-n]{1})"c); -- FAIL<br>
+    <font color="#999900">069|</font> ________when others =&gt;<br>
+    <font color="#999900">070|</font> ___________found:=FALSE;<br>
+    <font color="#999900">071|</font> _____end case;<br>
+    <font color="#999900">072|</font> _____if found = FALSE then<br>
+    <font color="#999900">073|</font> ________null;<br>
+    <font color="#999900">074|</font> _____elsif
+    PatternPack.matches(p,1,nextPos,line,m) then<br>
+    <font color="#999900">075|</font> ________declare<br>
+    <font color="#999900">076|</font>
+    ___________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">077|</font> ________begin<br>
+    <font color="#999900">078|</font>
+    ___________Ada.Text_IO.Put_Line(Integer'Image(j) &amp; " =" &amp;
+    subIA(line,r(0)) &amp; "&lt;");<br>
+    <font color="#999900">079|</font> ___________if r'length(1) &gt; 1
+    then<br>
+    <font color="#999900">080|</font>
+    ______________Ada.Text_IO.Put_Line(Integer'Image(j) &amp; " &gt;"
+    &amp; subIA(line,r(1)) &amp; "&lt;");<br>
+    <font color="#999900">081|</font> ___________else<br>
+    <font color="#999900">082|</font>
+    ______________Ada.Text_IO.Put_Line(Integer'Image(j) &amp; " no
+    capture");<br>
+    <font color="#999900">083|</font> ___________end if;<br>
+    <font color="#999900">084|</font> ________end;<br>
+    <font color="#999900">085|</font> _____else<br>
+    <font color="#999900">086|</font>
+    ________Ada.Text_IO.Put_Line(Integer'Image(j) &amp; " FAIL");<br>
+    <font color="#999900">087|</font>
+    ________Ada.Text_IO.Put_Line(Integer'Image(j) &amp; " ....");<br>
+    <font color="#999900">088|</font> _____end if;<br>
+    <font color="#999900">089|</font> __end loop;<br>
+    <font color="#999900">090|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExIota ***");<br>
+    <font color="#999900">091|</font> end ExIota;<br>
+    <hr width="100%" size="2">
+    <h2> Result</h2>
+    Running <u>export LD_LIBRARY_PATH=lib;bin/exiota</u> in TEST
+    directory.<br>
+    Note the result number 30 at lines <font color="#999900">049</font>
+    and <font color="#999900">050</font> is the result of a 'no match'.
+    The text 'no capture' is shown for results without a capture
+    parenteses.<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> 1
+    =a&lt;<br>
+    <font color="#999900">002|</font> 1 &gt;a&lt;<br>
+    <font color="#999900">003|</font> 2 =a&lt;<br>
+    <font color="#999900">004|</font> 2 no capture<br>
+    <font color="#999900">005|</font> 3 =abcdefghijk&lt;<br>
+    <font color="#999900">006|</font> 3 &gt;abcdefghijk&lt;<br>
+    <font color="#999900">007|</font> 4 =abcdefghijk&lt;<br>
+    <font color="#999900">008|</font> 4 no capture<br>
+    <font color="#999900">009|</font> 5 =abcdefg&lt;<br>
+    <font color="#999900">010|</font> 5 &gt;abcdef&lt;<br>
+    <font color="#999900">011|</font> 6 =abcdefg&lt;<br>
+    <font color="#999900">012|</font> 6 no capture<br>
+    <font color="#999900">013|</font> 7 =a&lt;<br>
+    <font color="#999900">014|</font> 7 &gt;a&lt;<br>
+    <font color="#999900">015|</font> 8 =a&lt;<br>
+    <font color="#999900">016|</font> 8 no capture<br>
+    <font color="#999900">017|</font> 9 =abcdefg&lt;<br>
+    <font color="#999900">018|</font> 9 &gt;abcdef&lt;<br>
+    <font color="#999900">019|</font> 10 =abcdefg&lt;<br>
+    <font color="#999900">020|</font> 10 &gt;abcdef&lt;<br>
+    <font color="#999900">021|</font> 11 =abcdefghijk&lt;<br>
+    <font color="#999900">022|</font> 11 &gt;abcde&lt;<br>
+    <font color="#999900">023|</font> 12 =bcdefghijk&lt;<br>
+    <font color="#999900">024|</font> 12 &gt;bcdef&lt;<br>
+    <font color="#999900">025|</font> 13 =bcdef&lt;<br>
+    <font color="#999900">026|</font> 13 &gt;bcdef&lt;<br>
+    <font color="#999900">027|</font> 14 =abcdefghijk&lt;<br>
+    <font color="#999900">028|</font> 14 &gt;&lt;<br>
+    <font color="#999900">029|</font> 15 =abcdefghijk&lt;<br>
+    <font color="#999900">030|</font> 15 &gt;abcdef&lt;<br>
+    <font color="#999900">031|</font> 16 =abcdefghijk&lt;<br>
+    <font color="#999900">032|</font> 16 &gt;abcde&lt;<br>
+    <font color="#999900">033|</font> 17 =abcdefghijk&lt;<br>
+    <font color="#999900">034|</font> 17 &gt;abcdef&lt;<br>
+    <font color="#999900">035|</font> 18 =abcdefghijk&lt;<br>
+    <font color="#999900">036|</font> 18 &gt;abcdef&lt;<br>
+    <font color="#999900">037|</font> 19 =abcdefghijk&lt;<br>
+    <font color="#999900">038|</font> 19 &gt;abcdef&lt;<br>
+    <font color="#999900">039|</font> 20 =abcdefghijk&lt;<br>
+    <font color="#999900">040|</font> 20 &gt;&lt;<br>
+    <font color="#999900">041|</font> 21 =abcdefghijk&lt;<br>
+    <font color="#999900">042|</font> 21 &gt;abc&lt;<br>
+    <font color="#999900">043|</font> 22 =abcdefghijk&lt;<br>
+    <font color="#999900">044|</font> 22 &gt;&lt;<br>
+    <font color="#999900">045|</font> 23 =abcdefghijk&lt;<br>
+    <font color="#999900">046|</font> 23 &gt;gh&lt;<br>
+    <font color="#999900">047|</font> 24 =abcdefghijk&lt;<br>
+    <font color="#999900">048|</font> 24 &gt;gh&lt;<br>
+    <font color="#999900">049|</font> 30 FAIL<br>
+    <font color="#999900">050|</font> 30 ....<br>
+    <font color="#999900">051|</font> *** End of ExIota ***<br>
+    <hr width="100%" size="2">
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

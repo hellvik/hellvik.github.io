@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Chesslist</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t020.html">Up</a> <a href="t030.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>Chesslist</h1>
+    Utility for listing an UTF-8 file as a file dump where every line
+    has a fixed amount of (unicode) characters and every character is of
+    equal size. Control characters, undefined characters or illegal
+    characters are replaced with a chess symbol.<br>
+    ♔&nbsp;&nbsp; WHITE KING (null) '00'<br>
+    ♕&nbsp;&nbsp; WHITE QUEEN (backspace) '08'x<br>
+    ♖&nbsp;&nbsp; WHITE ROOK (form feed) '0C'x<br>
+    ♗&nbsp;&nbsp; WHITE BISHOP (line feed) '0A'x<br>
+    ♘&nbsp;&nbsp; WHITE KNIGHT (horizontal tabulation) '09'x<br>
+    ♙&nbsp;&nbsp; WHITE PAWN (carriage return) '0D'x<br>
+    ♟&nbsp;&nbsp; BLACK PAWN (next line) '85'x<br>
+    ♚&nbsp;&nbsp; BLACK KING (control) Unicode general category Cc<br>
+    ♛&nbsp;&nbsp; BLACK QUEEN (format) Unicode general category Cf<br>
+    ♜&nbsp;&nbsp; BLACK ROOK (surrogate) Unicode general category Cs<br>
+    ♝&nbsp;&nbsp; BLACK BISHOP (not assigned) Unicode general category
+    Cn<br>
+    ♞&nbsp; BLACK KNIGHT (illegal byte)<br>
+    �&nbsp; Unicode replacement character<br>
+    <br>
+    Running <b>export </b><b>LD_LIBRARY_PATH=lib;bin/chesslist <font
+        color="#993399">-r</font> bin/chesslist </b>in <a
+      href="t050.html">TEST directory</a>.<br>
+    <p> Output on console<br>
+    </p>
+    <hr width="100%" size="2">
+    <p>input bin/chesslist<br>
+      output chess.lst<br>
+      lines 1893<br>
+      null 34078 ♔<br>
+      backspace 273 ♕<br>
+      form_feed 91 ♖<br>
+      line_feed 40 ♗<br>
+      horizontal_tabulation 78 ♘<br>
+      carriage_return 81 ♙<br>
+      next_line 0 ♟<br>
+      Cc control 40976 ♚<br>
+      Cf format 0 ♛<br>
+      Cs surrogate 0 ♜<br>
+      Cn not_assigned 3 ♝<br>
+      <font color="#993399">Replaced&nbsp; 0 �</font><br>
+      ** WARNING, not an UTF-8 file** 22056 ♞<br>
+    </p>
+    <hr width="100%" size="2"><br>
+    and the beginning of file chess.lst (20 first of 1893 lines). -blk
+    50, defaulted, but here line length seems to vary because of
+    variable length font characters.<br>
+    <hr width="100%" size="2">♚ELF♚♚♚♔♔♔♔♔♔♔♔♔♚♔&gt;♔♚♔♔♔
+    Y♔♔♔♔♔♔@♔♔♔♔♔♔♔♞♞♚♔♔♔♔♔♔♔<br>
+    ♔♔@♔8♔♙♔@♔♚♔♚♔♚♔♔♔♚♔♔♔@♔♔♔♔♔♔♔@♔♔♔♔♔♔♔@♔♔♔♔♔♔♔♞♔♔♔<br>
+    ♔♔♔♞♔♔♔♔♔♔♕♔♔♔♔♔♔♔♚♔♔♔♚♔♔♔♚♚♔♔♔♔♔♔♚♚♔♔♔♔♔♔♚♚♔♔♔♔♔♔<br>
+    ♚♔♔♔♔♔♔♔♚♔♔♔♔♔♔♔♚♔♔♔♔♔♔♔♚♔♔♔♚♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔<br>
+    ♔♔♔♔♔♔♞O♔♔♔♔♔♔♞O♔♔♔♔♔♔♔♚♔♔♔♔♔♔♚♔♔♔♚♔♔♔♔P♔♔♔♔♔♔♔P♔♔<br>
+    ♔♔♔♔♔P♔♔♔♔♔♔q♞♔♔♔♔♔♔q♞♔♔♔♔♔♔♔♚♔♔♔♔♔♔♚♔♔♔♚♔♔♔♔♞♔♔♔♔<br>
+    ♔♔♞♔♔♔♔♔♔♞♔♔♔♔♔♞♔♔♔♔♔♔♞♔♔♔♔♔♔♔♚♔♔♔♔♔♔♚♔♔♔♚♔♔♔♕♘♚♔♔<br>
+    ♔♔♔♕♚♚♔♔♔♔♔♕♚♚♔♔♔♔♔ ♚♔♔♔♔♔♔♞4♔♔♔♔♔♔♔♚♔♔♔♔♔♔♚♔♔♔♚♔♔<br>
+    ♔♚♘♚♔♔♔♔♔♚♚♚♔♔♔♔♔♚♚♚♔♔♔♔♔0♚♔♔♔♔♔♔0♚♔♔♔♔♔♔♕♔♔♔♔♔♔♔♚<br>
+    ♔♔♔♚♔♔♔8♚♔♔♔♔♔♔8♚♔♔♔♔♔♔8♚♔♔♔♔♔♔ ♔♔♔♔♔♔♔ ♔♔♔♔♔♔♔♕♔♔<br>
+    ♔♔♔♔♔♚♔♔♔♚♔♔♔X♚♔♔♔♔♔♔X♚♔♔♔♔♔♔X♚♔♔♔♔♔♔D♔♔♔♔♔♔♔D♔♔♔♔<br>
+    ♔♔♔♚♔♔♔♔♔♔♔S♞d♚♔♔♔8♚♔♔♔♔♔♔8♚♔♔♔♔♔♔8♚♔♔♔♔♔♔ ♔♔♔♔♔♔♔<br>
+    &nbsp;♔♔♔♔♔♔♔♕♔♔♔♔♔♔♔P♞d♚♔♔♔♞♔♔♔♔♔♔♞♔♔♔♔♔♔♞♔♔♔♔♔♔L♚♔♔♔♔<br>
+    ♔♔L♚♔♔♔♔♔♔♚♔♔♔♔♔♔♔Q♞d♚♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔<br>
+    ♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♚♔♔♔♔♔♔♔R♞d♚♔♔♔♕♘♚♔♔♔♔♔♕♚♚♔♔♔♔♔♕♚♚♔<br>
+    ♔♔♔♔♞♚♔♔♔♔♔♔♞♚♔♔♔♔♔♔♚♔♔♔♔♔♔♔/lib64/ld-linux-x86-64<br>
+    .so.2♔♔♔♔♔♚♔♔♔♚♔♔♔♚♔♔♔GNU♔♚♞♔♞♚♔♔♔♚♔♔♔♔♔♔♔♚♔♔♔♚♔♔♔<br>
+    ♚♔♔♔GNU♔߇♞q♞Ԡ♚♞+♞♞Ѐ♞♞♞♚♔♔♔♚♔♔♔♚♔♔♔GNU♔♔♔♔♔♚♔♔♔♚♔♔♔<br>
+    ♔♔♔♔♔♔♔♔C♔♔♔♞♔♔♔♕♔♔♔♘♔♔♔ ♞♙c♚♔($@♚♚♔@I@ ♞♞♚♔♚♞p♞♚♞<br>
+    ♕♚♞♞♔P♞♕)♞T@H♚♚♞♞♚I♔♞♞da♞♘♞L2¡♞♗@♞♔♔♔♔♔♔♔♔♔♞♔♔♔♞♔♔<br>
+    <hr width="100%" size="2"> By only giving the utlity name as a
+    command (export LD_LIBRARY_PATH=lib;bin/chesslist) we get<br>
+    <font color="#993399"><br>
+      List any file to an editor friendly list file.<br>
+      All control characters are replaced by CHESS symbols.<br>
+      Line length is fixed to the value of -blk parameter (default 50),<br>
+      'line length' is the number of UTF-8 characters on a single line.<br>
+      All non-UTF8 characters are replaced by BLACK KNIGHT symbol.<br>
+      ♔&nbsp;&nbsp; ♕&nbsp;&nbsp; ♖&nbsp;&nbsp; ♗&nbsp;&nbsp;
+      ♘&nbsp;&nbsp; ♙&nbsp;&nbsp; ♟&nbsp;&nbsp; ♚&nbsp;&nbsp;
+      ♛&nbsp;&nbsp; ♜&nbsp;&nbsp; ♝&nbsp;&nbsp; ♞<br>
+      Syntax:<br>
+      &nbsp; Chesslist {&lt;option&gt;}* &lt;input_file&gt;
+      {&lt;output_file&gt;}<br>
+      if no &lt;output_file&gt; then name of &lt;output_file&gt; is
+      chess.lst<br>
+      Options:<br>
+      &nbsp; -blk:&lt;line length&gt; -- length of line in output<br>
+      &nbsp; -r -- replace characters with a code value over 16#FFFF#<br>
+      <br>
+    </font>on the console.<br>
+    About the options<br>
+    <ul>
+      <li>-blk, the row length. Depending on the editor you are using a
+        value of 50 is probably too small<br>
+      </li>
+      <li>-r, to solve problems with output for tools which do not
+        recognize UTF-8 values greater than 16#FFFF#. Theese values are
+        legal UTF-8 values but...</li>
+    </ul>
+    Source code of <a href="t030.html">Chesslist</a><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

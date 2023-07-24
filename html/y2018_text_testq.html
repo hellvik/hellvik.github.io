@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.TestQ</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_jets_rangevectorpack.html">Prev</a> <a href="y2018_text_util.html">Next</a> <a href="t015.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.TestQ</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> package Y2018.Text.TestQ is<br>
+    <font color="#999900">005|</font> type ANKA is
+    (KALLE,KNATTE,TJATTE,FNATTE,KAJSA,KNASE,BITTAN);<br>
+    <font color="#999900">006|</font> procedure Qinit(s:String);<br>
+    <font color="#999900">007|</font> procedure QBlock(s:String);<br>
+    <font color="#999900">008|</font> procedure Qappend(s:String);<br>
+    <font color="#999900">009|</font> procedure
+    Qappend(a:ANKA;s:String);<br>
+    <font color="#999900">010|</font> procedure
+    Qappend(s:String;i1:Integer);<br>
+    <font color="#999900">011|</font> procedure
+    Qappend(a:ANKA;s:String;i1:Integer);<br>
+    <font color="#999900">012|</font> procedure
+    Qappend(s:String;i1:Integer;i2:Integer);<br>
+    <font color="#999900">013|</font> procedure
+    Qappend(a:ANKA;s:String;i1:Integer;i2:Integer);<br>
+    <font color="#999900">014|</font> procedure
+    Qappend(s:String;b:Boolean);<br>
+    <font color="#999900">015|</font> procedure
+    Qappend(a:ANKA;s:String;b:Boolean);<br>
+    <font color="#999900">016|</font> procedure
+    Qappend(s:String;i1:Integer;s1:String);<br>
+    <font color="#999900">017|</font> procedure
+    Qappend(a:ANKA;s:String;i1:Integer;s1:String);<br>
+    <font color="#999900">018|</font> procedure
+    Qappend(s:String;i1:Integer;i2:Integer;s2:String);<br>
+    <font color="#999900">019|</font> procedure
+    Qappend(a:ANKA;s:String;i1:Integer;i2:Integer;s2:String);<br>
+    <font color="#999900">020|</font> procedure
+    Qappend(s:String;wws:CFix);<br>
+    <font color="#999900">021|</font> procedure
+    Qappend(a:ANKA;s:String;wws:CFix);<br>
+    <font color="#999900">022|</font> procedure
+    Qappend(s:String;c:CodePoint;wws:CFix;f:Integer;l:Integer);<br>
+    <font color="#999900">023|</font> procedure
+    Qappend(a:ANKA;s:String;c:CodePoint;wws:CFix;f:Integer;l:Integer);<br>
+    <font color="#999900">024|</font> procedure
+    Qappend(s:String;c:CodePoint); <br>
+    <font color="#999900">025|</font> procedure
+    Qappend(a:ANKA;s:String;c:CodePoint);<br>
+    <font color="#999900">026|</font> procedure Qappend(map:in out
+Y2018.Text.Core.Str.Clist.Map;startRow:String:="";endRow:String:="";rowPrefix:String:="";keep:Boolean:=FALSE);<br>
+    <font color="#999900">027|</font> procedure Qappend(a:ANKA;map:in
+    out
+Y2018.Text.Core.Str.Clist.Map;startRow:String:="";endRow:String:="";rowPrefix:String:="";keep:Boolean:=FALSE);<br>
+    <font color="#999900">028|</font> __--=====--<br>
+    <font color="#999900">029|</font> __-- ALT --<br>
+    <font color="#999900">030|</font> __--=====--<br>
+    <font color="#999900">031|</font> procedure Qappend_alt(s:String);<br>
+    <font color="#999900">032|</font> procedure
+    Qappend_alt(a:ANKA;s:String);<br>
+    <font color="#999900">033|</font> procedure
+    Qappend_alt(s:String;i1:Integer);<br>
+    <font color="#999900">034|</font> procedure
+    Qappend_alt(a:ANKA;s:String;i1:Integer);<br>
+    <font color="#999900">035|</font> procedure
+    Qappend_alt(s:String;i1:Integer;i2:Integer);<br>
+    <font color="#999900">036|</font> procedure
+    Qappend_alt(a:ANKA;s:String;i1:Integer;i2:Integer);<br>
+    <font color="#999900">037|</font> procedure
+    Qappend_alt(s:String;b:Boolean);<br>
+    <font color="#999900">038|</font> procedure
+    Qappend_alt(a:ANKA;s:String;b:Boolean);<br>
+    <font color="#999900">039|</font> procedure
+    Qappend_alt(s:String;i1:Integer;s1:String);<br>
+    <font color="#999900">040|</font> procedure
+    Qappend_alt(a:ANKA;s:String;i1:Integer;s1:String);<br>
+    <font color="#999900">041|</font> procedure
+    Qappend_alt(s:String;i1:Integer;i2:Integer;s2:String);<br>
+    <font color="#999900">042|</font> procedure
+    Qappend_alt(a:ANKA;s:String;i1:Integer;i2:Integer;s2:String);<br>
+    <font color="#999900">043|</font> procedure
+    Qappend_alt(s:String;wws:CFix);<br>
+    <font color="#999900">044|</font> procedure
+    Qappend_alt(a:ANKA;s:String;wws:CFix);<br>
+    <font color="#999900">045|</font> procedure
+    Qappend_alt(s:String;c:CodePoint;wws:CFix;f:Integer;l:Integer);<br>
+    <font color="#999900">046|</font> procedure
+    Qappend_alt(a:ANKA;s:String;c:CodePoint;wws:CFix;f:Integer;l:Integer);<br>
+    <font color="#999900">047|</font> procedure
+    Qappend_alt(s:String;c:CodePoint); <br>
+    <font color="#999900">048|</font> procedure
+    Qappend_alt(a:ANKA;s:String;c:CodePoint); <br>
+    <font color="#999900">049|</font> procedure Qappend_alt(map:in out
+Y2018.Text.Core.Str.Clist.Map;startRow:String:="";endRow:String:="";rowPrefix:String:="";keep:Boolean:=FALSE);<br>
+    <font color="#999900">050|</font> procedure
+    Qappend_alt(a:ANKA;map:in out
+Y2018.Text.Core.Str.Clist.Map;startRow:String:="";endRow:String:="";rowPrefix:String:="";keep:Boolean:=FALSE);<br>
+    <font color="#999900">051|</font> end Y2018.Text.TestQ;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

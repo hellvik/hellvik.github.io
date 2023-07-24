@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Node or type RE_ELEM</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t014.html">Up</a> <a href="y2018_text_jets_jestool.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>The type RE_Elem</h1>
+    <p> </p>
+    <p>RE_Elem is a tree like structure with nodes. When the compiler in
+      package <a href="y2018_text_jets_compiler.html">Y2018-Text-Jets-Compiler</a>
+      compiles the regular expression the result is a linked list with
+      nodes of type RE_Elem, in this paper this is called the ‘syntax
+      tree’. After the compilation the syntax tree is cleaned up and and
+      nodes marked as only in the translation are converted to REQ_CLASS
+      nodes. </p>
+    <p>The fixed part of RE_Elem</p>
+    <ul>
+      <li> id : RE_ID – identifier of a node </li>
+      <li> <font color="#5983b0">left</font> : RE_Elem_AC – left link </li>
+      <li> <font color="#5983b0">right</font> : RE_Elem_AC – right link
+      </li>
+      <li> V : REQ_TY – identifier of the variable part </li>
+    </ul>
+    <p>The variable part consists of one of</p>
+    <ul>
+      <li> <b>REQ_BEGIN</b>
+        <ul>
+          <li> begin_circumflex : Boolean - if expression starts with
+            ^-character <br>
+          </li>
+          <li> begin_dollar : Boolean - if expression ends with
+            $-character <br>
+          </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CHAR</b>
+        <ul>
+          <li> char_value : CodePoint </li>
+          <li> char_negative : Boolean - not this value <br>
+          </li>
+          <li> char_min : Integer – 0:Integer'Last </li>
+          <li> char_max : Integer </li>
+          <li> char_greedy : Boolean </li>
+          <li>char_maxORG : Integer - orginal char_max value from
+            compilation<br>
+          </li>
+          <li>char_greedy : Boolean<br>
+          </li>
+        </ul>
+      </li>
+      <li> <b>REQ_PERIOD</b>
+        <ul>
+          <li> period_min : Integer – 0:Integer'Last </li>
+          <li> period_max : Integer </li>
+          <li>period_maxORG: Integer - orginal period_max value from
+            compilation </li>
+          <li> period_greedy : Boolean </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS_ELEM</b> <font color="#c9211e">(Exists only
+          during translation)</font>
+        <ul>
+          <li> class_elem_min : Integer – 0:Integer'Last </li>
+          <li> class_elem_max : Integer </li>
+          <li> class_elem_greedy : Boolean </li>
+          <li> <font color="#5983b0">class_elem_pos</font> : RE_Elem_AC
+          </li>
+          <li> <font color="#5983b0">class_elem_neg</font> : RE_Elem_AC
+          </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS</b> <font color="#158466">(Created after
+          translation)</font>
+        <ul>
+          <li> class_min : Integer – 0:Integer'Last </li>
+          <li> class_max : Integer </li>
+          <li>class_maxORG : Integer - orginal class_max value from
+            compilation </li>
+          <li> class_greedy : Boolean </li>
+          <li> class_pos : RangeVectorPack.RangeVector </li>
+          <li> class_neg : RangeVectorPack.RangeVector </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS_CHAR</b> <font color="#c9211e">(Exists only
+          during translation)</font>
+        <ul>
+          <li> class_char_negative : Boolean </li>
+          <li> class_char_value : CodePoint – no meta characters </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS_RANGE</b> <font color="#c9211e">(Exists only
+          during translation)</font>
+        <ul>
+          <li> class_range_negative : Boolean </li>
+          <li> class_range_first : CodePoint </li>
+          <li> class_range_last : CodePoint </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS_GC</b> <font color="#c9211e">(Exists only
+          during translation)</font>
+        <ul>
+          <li> class_gc_negative : Boolean </li>
+          <li> class_gc_value : CFix(1..2) </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS_GCU</b> <font color="#c9211e">(Exists only
+          during translation)</font>
+        <ul>
+          <li> class_gcu_negative : Boolean </li>
+          <li> class_gcu_value : CodePoint </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS_SET </b><font color="#c9211e">(Exists only
+          during translation)</font>
+        <ul>
+          <li> class_set_negative : Boolean </li>
+          <li> class_set_value : CVar </li>
+        </ul>
+      </li>
+      <li> <b>REQ_CLASS_OTHER</b> <font color="#c9211e">(Exists only
+          during translation)</font>
+        <ul>
+          <li> class_other_negative : Boolean </li>
+          <li> class_other_value : CodePoint </li>
+        </ul>
+      </li>
+      <li> <b>REQ_PALCAP</b>
+        <ul>
+          <li> palcap_min : Integer – 0:Integer'Last </li>
+          <li> palcap_max : Integer </li>
+          <li> palcap_greedy : Boolean </li>
+          <li> <font color="#5983b0">palcap_up</font> : RE_Elem_AC –
+            null if on base line </li>
+          <li> <font color="#5983b0">palcap_down</font> : RE_Elem_AC </li>
+          <li>palcap_ia: I_A - index in c4match, i.e. index from the
+            CFix array which is searched<br>
+          </li>
+        </ul>
+      </li>
+      <li> <b>REQ_PAL</b>
+        <ul>
+          <li> pal_dummy: Boolean </li>
+          <li> pal_min : Integer – 0:Integer'Last </li>
+          <li> pal_max : Integer </li>
+          <li> pal_greedy : Boolean </li>
+          <li> <font color="#5983b0">pal_up</font> : RE_Elem_AC – null
+            if on base line </li>
+          <li> <font color="#5983b0">pal_down</font> : RE_Elem_AC </li>
+        </ul>
+      </li>
+      <li> <b>REQ_UPDOWN</b>
+        <ul>
+          <li> <font color="#5983b0">updown_up</font> : RE_Elem_AC –
+            null if on base line </li>
+          <li> <font color="#5983b0">updown_down</font> : RE_Elem_AC </li>
+        </ul>
+      </li>
+      <li> <b>REQ_POS</b>
+        <ul>
+          <li> <font color="#5983b0">pos_up</font> : RE_Elem_AC – null
+            if on base line </li>
+          <li> <font color="#5983b0">pos_down</font> : RE_Elem_AC </li>
+        </ul>
+      </li>
+      <li> <b>REQ_NEG</b>
+        <ul>
+          <li> <font color="#5983b0">neg_up</font> : RE_Elem_AC – null
+            if on base line </li>
+          <li> <font color="#5983b0">neg_down</font> : RE_Elem_AC </li>
+        </ul>
+      </li>
+      <li> <b>REQ_NULL</b> <font color="#b47804">(Dummy)</font>
+        <ul>
+          <li> null_dummy: Boolean </li>
+        </ul>
+      </li>
+    </ul>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

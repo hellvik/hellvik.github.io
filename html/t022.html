@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>META character sequences</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t047.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>META character sequences</h1>
+    <p>This shows META character sequences in Regular expressions and
+      what the <a href="t032.html">preprocessor</a> consider to be meta
+      character sequences. In <a href="t018.html">Functions in JesTool</a>
+      all used META characters are listed.<br>
+    </p>
+    <table border="1" width="100%" cellspacing="2" cellpadding="2">
+      <thead> <tr>
+          <th>Meta char seq<br>
+          </th>
+          <th>info.<br>
+          </th>
+          <th>support<br>
+          </th>
+        </tr>
+      </thead> <tbody>
+        <tr>
+          <td valign="top">\a<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a BELL, \u0007</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\A<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              at the beginning of the input. <br>
+              Differs from ^ in that \A will not match <br>
+              after a new line within the input.</span></td>
+          <td valign="top">No support</td>
+        </tr>
+        <tr>
+          <td valign="top">\b<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a BACK SPACE, \u0008 </span><br>
+          </td>
+          <td valign="top"><font color="#ff0000">backspace</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\B<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              if the current position is not a word boundary</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\cX<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a control-X character</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\d<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              digits 0 - 9&nbsp; <br>
+            </span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\D<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              any character that is not a digit 0 - 9</span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\e<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              an ESCAPE, \u001B.</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\E<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Terminates
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              \Q&nbsp; to \E quoted sequence.</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\f<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a FORM FEED, \u000C.</span></td>
+          <td valign="top"><font color="#ff0000">form feed</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\G<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              if the current position is at the end of <br>
+              the previous match.</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\h<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a Horizontal White Space character.</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\H<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a non-Horizontal White Space character</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\k<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Named
+              Capture Back Reference.</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\n<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a LINE FEED, \u000A.</span></td>
+          <td valign="top"><font color="#ff0000">line feed</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\N{}<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              the named character.</span></td>
+          <td valign="top">No support <br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\p{}<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              any character with the specified Unicode Property, or is
+              in the specified group (</span><span style="color: rgb(92,
+              89, 98);"> <a href="t042.html">URV</a> ).<br>
+            </span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\P{}<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              any character not having the specified Unicode Property or
+              in the specified group</span><span style="color: rgb(92,
+              89, 98);"><span style="color: rgb(92, 89, 98);"> (</span><span
+                style="color: rgb(92, 89, 98);"> <a href="t042.html">URV</a>
+                )</span>.</span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\Q<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Quotes
+
+
+
+
+
+
+
+
+
+
+
+all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              following characters until \E.</span></td>
+          <td valign="top">No Support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\r<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a CARRIAGE RETURN, \u000D.</span></td>
+          <td valign="top"><font color="#ff0000">carriage return</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\R<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a new line character, or the <br>
+              sequence CR LF</span></td>
+          <td valign="top">No Support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\s<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a white space character.</span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\S<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a non-white space character</span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\t<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a HORIZONTAL TABULATION</span></td>
+          <td valign="top"><font color="#ff0000">horizontal tabulation</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\uHHHH<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              the character with the <br>
+              hex value hhhh</span></td>
+          <td valign="top"><font color="#ff0000">hexadecimal value</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\U<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);"></span><br>
+          </td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\vHHHHHH<br>
+          </td>
+          <td valign="top"><span style="color: rgb(92, 89, 98);"><span
+                style="color: rgb(92, 89, 98);">Match the character with
+                the <br>
+                hex value hhhhhh but nust be smaller or equal to
+                \v1FFFFF<br>
+              </span></span></td>
+          <td valign="top"><font color="#ff0000">hexadecimal value</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\V<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a non-new line character.</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\w<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a word character. A character in general category L or N,
+              and character '_'<br>
+            </span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\W<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              a non-word character.</span><span style="color: rgb(92,
+              89, 98);"><span style="color: rgb(92, 89, 98);"> A
+                character which is not in general category L or N, and
+                not character '_'</span></span></td>
+          <td valign="top"><font color="#009900">Support</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\xHH<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              the character with <br>
+              hex value hh</span></td>
+          <td valign="top"><font color="#ff0000">hexadecimal value</font><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\Z<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              if the current position is at <br>
+              the end of input, but before the final line <br>
+              terminator, if one exists</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\z<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              if the current position is at the <br>
+              end of input</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\&lt;digits&gt;<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Back
+              Reference</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">\Oooo<br>
+          </td>
+          <td valign="top"> <span style="color: rgb(92, 89, 98);">Match
+              an Octal character.</span></td>
+          <td valign="top">No support<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    Comments :<br>
+    <ol>
+      <li>Note the difference between Java/C++ implementation and this,
+        <u>\p{&lt;id&gt;}</u> ( <u>\P{&lt;id&gt;}</u> ) is always an
+        identifier but can be <a href="t003.html">GC</a> identifier or
+        Set identifier (Jets.RangeVectorPack.Set_TY.Set see <a
+          href="t042.html">URV's, Classes and MapPools</a>)<br>
+      </li>
+      <li>Color <font color="#ff0000">xxx</font> refers to what the
+        preprocessor is changing (example <a href="t029.html">ExTau</a>)<br>
+      </li>
+    </ol>
+    Most backslash values are not supported. Only <font color="#009900">green
+      values</font> are supported by this <u>regular expression</u>
+    implementation.<br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

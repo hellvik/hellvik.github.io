@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Functions in JesTool</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t004.html">Up</a> <a href="y2018_text_jets_jestool.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>Functions in JesTool</h1>
+    <p><b>function To_String(currRE: RE_Elem_AC) return String;</b></p>
+    <p> list the node to a string (short version of this function is
+      'Who')<br>
+    </p>
+    <p><b>function Who(currRE: RE_Elem_AC) return String</b><br>
+    </p>
+    identify a node (type (REQ_TY) and id number)&nbsp;
+    <p><b>procedure To_CList(Qmap:in out
+        CList.map;y:RE_Elem_AC;level:Integer;cntMax:Integer:=10);</b> </p>
+    <p> list nodes to a multirow list. Links are used.<br>
+    </p>
+    <b>function isInMCHAR(c:CodePoint) return Boolean;</b>
+    <p> check if this codepoint is used as a meta-character</p>
+    <p><b>function ParseStringM(s:CFix) return Integer;</b></p>
+    <p> count characters in a string when backslash quoted characters
+      (d, D, s, S, w, W, p, P, |, (, ), [, ], {, }, ^, $, *, +, ?, ., -,
+      \) are considered as one character.</p>
+    <p><b>function QuoteMetaM(s:CFix) return CFix;</b></p>
+    <p> quote all meta-characters with backslash found in string. Meta
+      characters are <font color="#999900">|</font>, <font
+        color="#999900">(</font>, <font color="#999900">)</font>, <font
+        color="#999900">[</font>, <font color="#999900">]</font>, <font
+        color="#999900">{</font>, <font color="#999900">}</font>, <font
+        color="#999900">^</font>, <font color="#999900">$</font>, <font
+        color="#999900">*</font>, <font color="#999900">+</font>, <font
+        color="#999900">?</font>, <font color="#999900">.</font>, <font
+        color="#999900">-</font> and <font color="#999900">\</font> .
+      Note in a regular expression if you want to write a backslash and
+      if you use the preprocessor you have to write "\\\\", one pair for
+      one backslash for the preprocessor and two pairs for quoting the
+      backslash in the regular expression, reslut <font color="#006600"><i>four
+          for one and one for four</i></font>. META character sequences
+      <a href="t022.html">explained here</a>. <br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

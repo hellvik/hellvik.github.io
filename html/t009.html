@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>LeftC</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t008.html">Prev</a> <a href="t010.html">Next</a> <a href="t020.html">Up</a> <a href="y2018_text_core_str.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>LeftC </h1>
+    <p>Push the result to left. Because we are working with 21-bit
+      characters and all indexing is based on these 21-bit characters.</p>
+    <p><b>function leftC(value:CFix;length:Integer;pad:CFix:=CFix_Space)
+        return CFix;</b></p>
+    <p><b>function leftC(value:String;length:Integer;pad:String:=" ")
+        return String;</b></p>
+    <p><b>function leftC(value:CVar;length:Integer;pad:CFix:=CFix_Space)
+        return CVar;</b> </p>
+    <p> Examples:</p>
+    <font color="#999900">001|</font> v10:String:="1234567890";<br>
+    <font color="#999900">002|</font>
+    w:String:=(3=&gt;'3',4=&gt;'4',5=&gt;'5');<br>
+    <font color="#999900">003|</font> x8:String:=" ABC ";<br>
+    <font color="#999900">004|</font> y14:String:="abcdefghijklmn";<br>
+    <font color="#999900">005|</font> y15:String:="abcdefghijklmnU";<br>
+    <font color="#999900">006|</font> z:String(1 .. 0);<br>
+    <hr> <font color="#999900">[1]</font> Ada.Text_IO.Put_Line (
+    "leftC(y14,10).&gt;" &amp; leftC(y14,10) &amp; "&lt;");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">leftC(y14,10).&gt;efghijklmn&lt;</font>
+    <br>
+    <font color="#999900">[2]</font> Ada.Text_IO.Put_Line (
+    "leftC(y14,14).&gt;" &amp; leftC(y14,14) &amp; "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">leftC(y14,14).&gt;abcdefghijklmn&lt;</font>
+    <br>
+    <font color="#999900">[3]</font> Ada.Text_IO.Put_Line (
+    "leftC("""",10,"""").&gt;" &amp; leftC("",10,"") &amp; "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">leftC("",10,"").&gt;����������&lt;</font>
+    <br>
+    <font color="#999900">[4]</font> Ada.Text_IO.Put_Line (
+    "leftC(y14,15).&gt;" &amp; leftC(y14,15) &amp; "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">leftC(y14,15).&gt;abcdefghijklmn
+      &lt;</font> <br>
+    <font color="#999900">[5]</font> Ada.Text_IO.Put_Line (
+    "leftC(y14,18,"" !"")&gt;" &amp; leftC(y14,18," !") &amp; "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">leftC(y14,18,"
+      !")&gt;abcdefghijklmn !&lt;</font> <br>
+    &nbsp;&nbsp;<font color="#000000">The first unit in the pad maybe
+      duplicated to get the result length, in this case it is the space.</font>
+    <br>
+    &nbsp;&nbsp;Store data in a way to keep the first unit of value as
+    the first unit. <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

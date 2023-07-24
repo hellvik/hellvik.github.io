@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExMy</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t051.html">Prev</a> <a href="t046.html">Next</a> <a href="t015.html">Up</a> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExMy<br>
+    </h1>
+    <p>Debug listing example<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Y2018.Text.Core; use Y2018.Text.Core; <br>
+    <font color="#999900">002|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">003|</font> with Y2018.Text.TestQ; use
+    Y2018.Text.TestQ;<br>
+    <font color="#999900">004|</font> --with DSECT;<br>
+    <font color="#999900">005|</font> procedure ExMy is<br>
+    <font color="#999900">006|</font> __Qmap:CList.map;<br>
+    <font color="#999900">007|</font> begin<br>
+    <font color="#999900">008|</font> __Qinit("ExMy");<br>
+    <font color="#999900">009|</font> __Qappend(KALLE,"version Kalle");<br>
+    <font color="#999900">010|</font> __Qappend(FNATTE,"version
+    Fnatte",Integer(1));<font color="#009900"> -- This version of ADA
+      compiler cannot differentiate between Integer and Codepoint in a
+      call</font><br>
+    <font color="#999900">011|</font> __Qappend(KNATTE,"version
+    Knatte",1,2);<br>
+    <font color="#999900">012|</font> __Qappend(TJATTE,"version
+    Tjatte",TRUE);<br>
+    <font color="#999900">013|</font> __Qappend(KNASE,"version
+    Knase",25,"esanK");<br>
+    <font color="#999900">014|</font> __Qappend(KAJSA,"version
+    Kajsa",35,36,"asjaK");<br>
+    <font color="#999900">015|</font> __Qappend("versionC Anka","No
+    TAB"c);<br>
+    <font color="#999900">016|</font> __Qappend(KAJSA,"versionC
+    Kajsa2",'_'c,"asjaK"c,2,10);<br>
+    <font color="#999900">017|</font> __Qappend(KAJSA,"versionC
+    Kajsa3",'M'c); <font color="#009900">-- This works !</font> <br>
+    <font color="#999900">018|</font> <br>
+    <font color="#999900">019|</font> __Insert(Qmap,"Kalle");<font
+      color="#999900"> -- create contents for Qmap</font><br>
+    <font color="#999900">020|</font> __Insert(Qmap,"Fnatte");<font
+      color="#999900"> -- create contents for Qmap</font><br>
+    <font color="#999900">021|</font> __Insert(Qmap,"Knatte");<font
+      color="#999900"> -- create contents for Qmap</font><br>
+    <font color="#999900">022|</font> __Insert(Qmap,"Tjatte");<font
+      color="#999900"> -- create contents for Qmap</font><br>
+    <font color="#999900">023|</font> __Insert(Qmap,"Knase");<font
+      color="#999900"> -- create contents for Qmap</font><br>
+    <font color="#999900">024|</font> __Insert(Qmap,"Kajsa");<font
+      color="#999900"> -- create contents for Qmap</font><br>
+    <font color="#999900">025|</font> __Insert(Qmap,"Bittan");<font
+      color="#999900"> -- create contents for Qmap</font><br>
+    <font color="#999900">026|</font> __<br>
+    <font color="#999900">027|</font> __Qappend(KALLE,Qmap,"--- Top
+    ---","--- Bottom ---","...");<br>
+    <font color="#999900">028|</font> end ExMy;<br>
+    <hr width="100%" size="2">
+    <h2>Result</h2>
+    Running <u>export LD_LIBRARY_PATH=lib;bin/exmy</u> in TEST
+    directory.<br>
+    Output in q____.lst file. TAB's at the beginning of a row in for
+    listing purposes converted to underscores.<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font>
+    TIMESTAMP 2023-06-30 12:29:41.00<br>
+    <font color="#999900">002|</font>
+    --------------------------------------------------<br>
+    <font color="#999900">003|</font> |
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br>
+    <font color="#999900">004|</font> |
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ExMy<br>
+    <font color="#999900">005|</font> |
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br>
+    <font color="#999900">006|</font>
+    --------------------------------------------------<br>
+    <font color="#999900">007|</font> version Kalle<br>
+    <font color="#999900">008|</font> <font color="#990000">__</font>version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Fnatte=1<br>
+    <font color="#999900">009|</font> <font color="#990000">__</font>___version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Knatte [1:2]<br>
+    <font color="#999900">010|</font> <font color="#990000">__</font>___<font
+      color="#333399">___</font>version Tjatte=TRUE<br>
+    <font color="#999900">011|</font> .] version Knase =25 :esanK<br>
+    <font color="#999900">012|</font> !] version Kajsa [35:36] asjaK<br>
+    <font color="#999900">013|</font> versionC Anka=No TAB<br>
+    <font color="#999900">014|</font> !] versionC Kajsa2=sjaK_____<br>
+    <font color="#999900">015|</font> !] versionC Kajsa3=M<br>
+    <font color="#999900">016|</font> --- Top ---<br>
+    <font color="#999900">017|</font> ...Kalle<br>
+    <font color="#999900">018|</font> ...Fnatte<br>
+    <font color="#999900">019|</font> ...Knatte<br>
+    <font color="#999900">020|</font> ...Tjatte<br>
+    <font color="#999900">021|</font> ...Knase<br>
+    <font color="#999900">022|</font> ...Kajsa<br>
+    <font color="#999900">023|</font> ...Bittan<br>
+    <font color="#999900">024|</font> --- Bottom ---<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

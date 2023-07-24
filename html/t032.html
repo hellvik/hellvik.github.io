@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CCompile preprocessor</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t014.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>CCompile preprocessor</h1>
+    <p>In this release of ADA without 21-bit constant support we have to
+      choose between<br>
+    </p>
+    <ol>
+      <li>Write the constant (<font color="#993399">constant
+CFix:=(CodePoint'Val(16#53#),CodePoint'Val(16#4F#),CodePoint'Val(16#55#),CodePoint'Val(16#52#),CodePoint'Val(16#43#),CodePoint'Val(16#45#));</font><br>
+        ) <br>
+      </li>
+      <li>Use at run-time a conversion UTF.To21("SOURCE")</li>
+      <li>Run the preprocessor CCompile&nbsp; <br>
+      </li>
+    </ol>
+    <p>for the <font color="#993399">"SOURCE"c</font> value. <br>
+    </p>
+    <h2> What is it</h2>
+    Based on the input there are three different possibilities of how a
+    ?-SECT file can be generated &nbsp; &nbsp; <br>
+    <ol>
+      <li><u>package </u><u><font color="#999900">name</font></u><u>_PSECT</u>
+        is to be generated, a procedure definition is found
+        (CODE_PROCEDURE)<br>
+      </li>
+      <li><u>package </u><u><font color="#999900">name</font></u><u>_HSECT</u>
+        is to be generated, a package definition is found without 'body'
+        term (CODE_PACKAGEHEAD)<br>
+      </li>
+      <li><u>package </u><u><font color="#999900">name</font></u><u>_BSECT</u>
+        is to be generated, a package definition is found with the
+        'body' term (CODE_PACKAGEBODY)<br>
+      </li>
+    </ol>
+    If a need exists for a ?-SECT file then one of these is generated
+    with the named constants. The secret about the "<i>-- with DSECT;</i>"
+    comment is that the preprocessor has to insert one new line in the
+    original code for the with-statement needed to reference ?-SECT
+    generated ads-file. This will disturb the line number in most
+    raise-statemets. The&nbsp; "<i>-- with DSECT;</i>" comment reserves
+    a place for this with-statement in the original code and the problem
+    with the line numbering is solved.
+    <h2>How to replace</h2>
+    The preprocessor uses backslash as first character in a <a
+      href="t022.html">Meta character sequence</a> for replacing values
+    <font color="#999900">\b (BS)</font>, <font color="#999900">\f (FF)</font>,
+    <font color="#999900">\n (LF)</font>, <font color="#999900">\d (CR)</font>
+    and <font color="#999900">\t (HT or TAB)</font> and hexadecimal
+    values in 'Codepoint'-strings by writing <font color="#999900">\xHH</font>,
+    <font color="#999900">\uHHHH</font> or <font color="#999900">\vHHHHHH</font>
+    (where '<font color="#999900">H</font>' stands for a hexadecimal
+    digit <font color="#009900">0123456789ABCDEF</font>). But we have
+    to escape backslash (<font color="#999900">\</font>) with an extra
+    backslash. <br>
+    By applying following pattern to every line the preprocessor
+    retrieves what to replace <br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> <font
+      color="#993399">patternLineSimple_C</font>:constant
+    CFix:=Y2018.Text.Core.UTF.To21(<br>
+    <font color="#999900">002|</font> __"^(.*?)(" &amp; <br>
+    <font color="#999900">003|</font> __"--|" &amp; <font
+      color="#999900">--[U1]</font><br>
+    <font color="#999900">004|</font> __"""(?:[^""]|"""")*"".|" &amp; <font
+      color="#999900"> --[U2]</font><br>
+    <font color="#999900">005|</font> __"'\\[BFNRT]'C|" &amp; <font
+      color="#999900">--[U13] &lt;&lt;</font><br>
+    <font color="#999900">006|</font> __"'.'C" &amp; <font
+      color="#999900">--[U3] &lt;&lt;</font><br>
+    <font color="#999900">007|</font> __")"); <br>
+    <hr width="100%" size="2">if none of these is found then copy the
+    line as it is to output.<br>
+    <ul>
+      <li>U1 - rest of the line is a comment</li>
+      <li>U2 - do we have a CFix constant ?</li>
+      <li>U13 and U3 - static codepoint. Static codepoint values are
+        replaced as CodePoint'Val() values (Example: <font
+          color="#999900">'\t'c</font> -&gt; <font color="#999900">CodePoint'Val(16#09#)</font>).<br>
+      </li>
+    </ul>
+    if [U1] is found then copy the line to output. if [U2] is found
+    check for the 'c' or 'C', if not found copy what has been found to
+    output and apply pattern again to the line. If 'c' or 'C' is found
+    then we have a CFix constant and a constant should be generated in
+    corresponding ?-SECT file and the name of the constant should be
+    replaced here in output. If U3 or U13 replace the value with
+    CodePoint'Val() value, and apply pattern again to the line.<br>
+    If no CFix constant is found then the output is complete and no
+    generated ?-SECT file is generated for this code file.<br>
+    <h2>Examples</h2>
+    <ul>
+      <li> <a href="t024.html">ExPsi.adb</a></li>
+      <li> <a href="t029.html">ExTau.adb</a><br>
+      </li>
+    </ul>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

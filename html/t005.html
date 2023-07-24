@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Hexadecimal support</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t002.html">Prev</a> <a href="t006.html">Next</a> <a href="t020.html">Up</a> <a href="y2018_text_core_str.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>Hexadecimal support </h1>
+    <b>function CodePoint2Hex8String(v :CodePoint) return String ;</b><br>
+    <b>function Character2Hex8String(v :Character) return String ;</b><br>
+    <b>function CodePoint2Hex8CFix(v :CodePoint) return CFix ;</b><br>
+    <b>function Character2Hex8CFix(v :Character) return CFix ;</b><br>
+    <b>function To_Hex8String(v :Integer) return String ;</b><br>
+    <b>function To_Hex8CFix(v :Integer) return CFix ;</b><br>
+    <b>function Hex2Integer(s:CFix;padding:CFix:=CFix_Space) return
+      Integer ;</b><br>
+    <b>function Hex2Integer(s:String;padding:String:=” ”) return Integer
+      ;</b><br>
+    <b>function Hex2Integer(s:CVar;padding:CFix:=CFix_Space) return
+      Integer ;</b><br>
+    <p> Examples:</p>
+    <font color="#999900">[1]</font>
+    CodePoint2Hex8String(CodePoint'Val(16#39#)) <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">______39</font><br>
+    &nbsp;&nbsp;CodePoint2Hex8String – convert to String with 8
+    hexadecimal digits and ‘_‘ as padding<br>
+    <font color="#999900">[2]</font> Character2Hex8String('8') <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">______38</font><br>
+    &nbsp;&nbsp;Character2Hex8String – convert to String with 8
+    hexadecimal digits and ‘_‘ as padding<br>
+    <font color="#999900">[3]</font> (No example) CodePoint2Hex8CFix –
+    convert to CFix with 8 hexadecimal digits and ‘_‘ as padding<br>
+    <font color="#999900">[4]</font> (No example) Character2Hex8CFix –
+    convert to CFix with 8 hexadecimal digits and ‘_‘ as padding<br>
+    <font color="#999900">[5]</font> To_Hex8String(16#37#) <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">______37</font><br>
+    &nbsp;&nbsp;To_Hex8String – convert to String with 8 hexadecimal
+    digits. The second parameter defines possible filler characters.
+    Default is space.<br>
+    <font color="#999900">[6]</font> To_Hex8String(16#37#) <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">______37</font><br>
+    &nbsp;&nbsp;<font color="#000000">(see above)</font><br>
+    <font color="#999900">[7]</font> To_Hex8String(-1)<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">FFFFFFFF</font><br>
+    &nbsp;&nbsp;<font color="#000000">(see above)</font><br>
+    <font color="#999900">[8]</font> To_Hex8String(-3)<br>
+    &nbsp;&nbsp;result: <font color="#ff8000"><span style="background:
+        transparent">FFFFFFFD</span></font><br>
+    &nbsp;&nbsp;<font color="#000000"><span style="background:
+        transparent">(see above)</span></font><br>
+    <font color="#999900">[9]</font> (No example) To_Hex8CFix – convert
+    to CFix with 8 hexadecimal digits. The second parameter defines
+    possible filler characters. Default is space.<br>
+    <font color="#999900">[10]</font> Integer'Image(Hex2Integer("31")) <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">49</font><br>
+    &nbsp;&nbsp;<font color="#000000">Hex2Integer – convert to an
+      Integer. The second parameter defines possible filler characters.
+      Default is space. By giving second parameter as an empty string is
+      interpreted as no filler or pad in the value is allowed </font> <br>
+    <font color="#999900">[11]</font> Integer'Image(Hex2Integer("32
+    33"))<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">12851</font><br>
+    &nbsp;&nbsp;<font color="#000000">(see above)</font><br>
+    <font color="#999900">[12]</font>
+    Integer'Image(Hex2Integer("34:35:36",":")) <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">3421494</font><br>
+    &nbsp;&nbsp;<font color="#000000">(see above)</font><br>
+    <font color="#000000"><font color="#999900">[13]</font>
+      Integer'Image(Hex2Integer("FFFFFFFF"))</font><br>
+    &nbsp;&nbsp;<font color="#000000">result: <font color="#ff8000">-1</font></font><br>
+    &nbsp;&nbsp;<font color="#000000">(see above) </font><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

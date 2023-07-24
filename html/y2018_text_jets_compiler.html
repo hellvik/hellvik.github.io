@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.text.jets.compiler</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_jets.html">Prev</a> <a href="y2018_text_jets_jestool.html">Next</a> <a href="t004.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Jets.Compiler</h1>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <p style="line-height: 100%; margin-bottom: 0in"> This is the
+      compiler for the Regex expression<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Y2018.Text.Jets.RangeVectorPack; --use
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Jets.JetsTool; use
+    Y2018.Text.Jets.JetsTool;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Jets.MatchPack;
+    --use Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">005|</font> package Y2018.Text.Jets.Compiler
+    is<br>
+    <font color="#999900">006|</font> __type PST_TY is (PST_NONE,
+    PST_MATCH, PST_FAIL);<br>
+    <font color="#999900">007|</font> __type CompileResult is <br>
+    <font color="#999900">008|</font> _____record<br>
+    <font color="#999900">009|</font> ________state: PST_TY;<br>
+    <font color="#999900">010|</font> ________top: RE_Elem_AC;<br>
+    <font color="#999900">011|</font> ________current:RE_ID;<br>
+    <font color="#999900">012|</font>
+    ________map:MatchPack.MatchID2RE_ID_TY.Map; -- mapping of MatchID's
+    to RE id's. Key is MatchID.<br>
+    <font color="#999900">013|</font> ________pool:JetsTool.Pool_TY;<br>
+    <font color="#999900">014|</font> _____end record;<br>
+    <font color="#999900">015|</font> __procedure compileP(s :
+    CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map;ptc:out
+
+
+
+
+
+    CompileResult);<br>
+    <font color="#999900">016|</font> end Y2018.Text.Jets.Compiler;<br>
+    <hr width="100%" size="2">One procedure ‘compileP’ with:
+    <ul>
+      <li> s :CFix – the regular expression to compile </li>
+      <li> urv :RangeVectorPack.Map_TY.Map – a map for defined classes
+        of characters </li>
+      <li> ptc :CompileResult – output value as result from the
+        compilation </li>
+    </ul>
+    <p>The compilator is a state engine with 30 states and after that is
+      a clean up process to get rid of nodes of type:</p>
+    <ul>
+      <li> REQ_CLASS_ELEM</li>
+      <li> REQ_CLASS_CHAR</li>
+      <li> REQ_CLASS_RANGE</li>
+      <li> REG_CLASS_GC</li>
+      <li> REQ_CLASS_GCU</li>
+      <li> REQ_CLASS_SET</li>
+      <li> REQ_CLASS_OTHER</li>
+    </ul>
+    <p>and replace theese with a node of type REQ_CLASS.</p>
+    <p>CompileP procedure is called by <a
+        href="y2018_text_jets_patternpack.html">Y2018-Text-Jets-Patternpack</a>
+      CompileM for connecting the result to a pattern object. The result
+      is a node tree cooresponding to the regular expression in the
+      parameters ‘s’.</p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

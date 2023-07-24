@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Source code of Chesslist</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t028.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Source code of Chesslist</h1>
+    <p><font color="#ff0000">(Must be precompiled before compiled with
+        gnatmake)</font></p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Ada.Strings.Unbounded; use
+    Ada.Strings.Unbounded;<br>
+    <font color="#999900">003|</font> with Ada.Command_Line;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Core.STR; use
+    Y2018.Text.Core.STR;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core.UTF; use
+    Y2018.Text.Core.UTF;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Util; use
+    Y2018.Text.Util;<br>
+    <font color="#999900">008|</font> with Y2018.Text.Util.InFileUTF8; <br>
+    <font color="#999900">009|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets;<br>
+    <font color="#999900">010|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">011|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">012|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">013|</font> with GNAT.Source_Info;<br>
+    <font color="#999900">014|</font> -- with DSECT;<br>
+    <font color="#999900">015|</font> procedure Chesslist is<br>
+    <font color="#999900">016|</font>
+    __gblk:Y2018.Text.Util.InFileUTF8.self;<br>
+    <font color="#999900">017|</font> __r:CVar;<br>
+    <font color="#999900">018|</font> __lncnt:Integer:=0;<br>
+    <font color="#999900">019|</font> __blklen:Integer:=50;<br>
+    <font color="#999900">020|</font> __gc:CFix:=" "c;<br>
+    <font color="#999900">021|</font> __i:Integer:=1;<br>
+    <font color="#999900">022|</font> __in_name:Unbounded_String;<br>
+    <font color="#999900">023|</font> __ut_name:Unbounded_String;<br>
+    <font color="#999900">024|</font> __m :
+    Y2018.Text.Jets.MatchPack.Match_TY;<br>
+    <font color="#999900">025|</font> __p0:PatternPack.Pattern_AC:=new
+    PatternPack.Pattern;<br>
+    <font color="#999900">026|</font> __p1n:PatternPack.Pattern_AC:=new
+    PatternPack.Pattern;<br>
+    <font color="#999900">027|</font> __p0_C:CFix:="^(-[\w]+)$"c;<br>
+    <font color="#999900">028|</font>
+    __p1n_C:CFix:="^(-[\w]+):([\d]+)$"c;<br>
+    <font color="#999900">029|</font> <br>
+    <font color="#999900">030|</font> __ut : File_Type;<br>
+    <font color="#999900">031|</font> __c:CodePoint;<br>
+    <font color="#999900">032|</font>
+    __c_nul:CodePoint:=CodePoint'Val(16#2654#); i_nul:Integer:=0; --
+    WHITE KING <br>
+    <font color="#999900">033|</font> __c_b:CodePoint:=
+    CodePoint'Val(16#2655#); i_b:Integer:=0; -- WHITE QUEEN<br>
+    <font color="#999900">034|</font> __c_f:CodePoint:=
+    CodePoint'Val(16#2656#); i_f:Integer:=0; -- WHITE ROOK<br>
+    <font color="#999900">035|</font> __c_n:CodePoint:=
+    CodePoint'Val(16#2657#); i_n:Integer:=0; -- WHITE BISHOP<br>
+    <font color="#999900">036|</font> __c_t:CodePoint:=
+    CodePoint'Val(16#2658#); i_t:Integer:=0; -- WHITE KNIGHT<br>
+    <font color="#999900">037|</font> __c_r:CodePoint:=
+    CodePoint'Val(16#2659#); i_r:Integer:=0; -- WHITE PAWN<br>
+    <font color="#999900">038|</font>
+    __c_nel:CodePoint:=CodePoint'Val(16#265F#); i_nel:Integer:=0; --
+    BLACK PAWN<br>
+    <font color="#999900">039|</font> __c_cc:CodePoint:=
+    CodePoint'Val(16#265A#); i_cc:Integer:=0; -- BLACK KING<br>
+    <font color="#999900">040|</font> __c_cf:CodePoint:=
+    CodePoint'Val(16#265B#); i_cf:Integer:=0; -- BLACK QUEEN<br>
+    <font color="#999900">041|</font> __c_cs:CodePoint:=
+    CodePoint'Val(16#265C#); i_cs:Integer:=0; -- BLACK ROOK<br>
+    <font color="#999900">042|</font> __c_cn:CodePoint:=
+    CodePoint'Val(16#265D#); i_cn:Integer:=0; -- BLACK BISHOP<br>
+    <font color="#999900">043|</font> __c_xx:CodePoint:=
+    CodePoint'Val(16#265E#); warn:Integer:=0; -- BLACK KNIGHT<br>
+    <font color="#999900">044|</font> __c_rc:CodePoint:=
+    CodePoint'Val(16#FFFD#); i_rc:Integer:=0; -- REPLACEMENT CHARACTER<br>
+    <font color="#999900">045|</font> __rcy:Boolean:=FALSE;<br>
+    <font color="#999900">046|</font> __NUS:constant
+    Ada.Strings.Unbounded.Unbounded_String:=Null_Unbounded_String;<br>
+    <font color="#999900">047|</font> __nextPos:Integer;<br>
+    <font color="#999900">048|</font> __cnt:Integer;<br>
+    <font color="#999900">049|</font> begin<br>
+    <font color="#999900">050|</font> __if
+    Ada.Command_Line.Argument_Count = 0 then<br>
+    <font color="#999900">051|</font> _____Put_line(" List any file to
+    an editor friendly list file.");<br>
+    <font color="#999900">052|</font> _____Put_line(" All control
+    characters are replaced by CHESS symbols.");<br>
+    <font color="#999900">053|</font> _____Put_line(" Line length is
+    fixed to the value of -blk parameter (default 50),");<br>
+    <font color="#999900">054|</font> _____Put_line(" 'line length' is
+    the number of UTF-8 characters on a single line.");<br>
+    <font color="#999900">055|</font> _____Put_line(" All non-UTF8
+    characters are replaced by BLACK KNIGHT symbol.");<br>
+    <font color="#999900">056|</font> _____Put_line(" " &amp; c_nul
+    &amp;" "&amp; c_b &amp;" "&amp; c_f &amp;" "&amp; c_n &amp;" "&amp;
+    c_t &amp;" "&amp; c_r &amp;" "&amp; c_nel &amp;" "&amp; c_cc &amp;"
+    "&amp; c_cf &amp;" "&amp; c_cs &amp;" "&amp; c_cn &amp;" "&amp;
+    c_xx);<br>
+    <font color="#999900">057|</font> _____Put_line(" Syntax:");<br>
+    <font color="#999900">058|</font> _____Put_line(" Chesslist
+    {&lt;option&gt;}* &lt;input_file&gt; {&lt;output_file&gt;}");<br>
+    <font color="#999900">059|</font> _____Put_line(" if no
+    &lt;output_file&gt; then name of &lt;output_file&gt; is chess.lst");<br>
+    <font color="#999900">060|</font> _____Put_line(" Options:");<br>
+    <font color="#999900">061|</font> _____Put_line(" -blk:&lt;line
+    length&gt; -- length of line in output");<br>
+    <font color="#999900">062|</font> _____Put_line(" -r -- replace
+    characters with a code value over 16#FFFF#");<br>
+    <font color="#999900">063|</font> _____return;<br>
+    <font color="#999900">064|</font> __end if;<br>
+    <font color="#999900">065|</font> __PatternPack.compileM(p0,p0_C);<br>
+    <font color="#999900">066|</font> __PatternPack.compileM(p1n,p1n_C);<br>
+    <font color="#999900">067|</font> __while i &lt;=
+    Ada.Command_Line.Argument_Count loop<br>
+    <font color="#999900">068|</font> _____declare<br>
+    <font color="#999900">069|</font>
+    ________argCF:CFix:=UTF.To21(Ada.Command_Line.Argument(i));<br>
+    <font color="#999900">070|</font> _____begin<br>
+    <font color="#999900">071|</font> ________if
+    PatternPack.matches(p0,1,nextPos,argCF,m) then<br>
+    <font color="#999900">072|</font>
+    ___________cnt:=Y2018.Text.Jets.MatchPack.size(m);<br>
+    <font color="#999900">073|</font> ___________declare<br>
+    <font color="#999900">074|</font>
+    ______________r:Y2018.Text.Jets.I_A_ARRAY(0 .. cnt - 1);<br>
+    <font color="#999900">075|</font> ___________begin<br>
+    <font color="#999900">076|</font>
+    ______________Y2018.Text.Jets.MatchPack.getMatch(m,r);<br>
+    <font color="#999900">077|</font> ______________if subIA(argCF,r(1))
+    = "-r"c then<br>
+    <font color="#999900">078|</font> _________________rcy:=TRUE;<br>
+    <font color="#999900">079|</font> ______________else<br>
+    <font color="#999900">080|</font> _________________raise
+    Program_Error with GNAT.Source_Info.Source_Location &amp; " " &amp;
+    GNAT.Source_Info.Enclosing_Entity &amp; ": Unknown arg :" &amp;
+    argCF;<br>
+    <font color="#999900">081|</font> ______________end if;<br>
+    <font color="#999900">082|</font> ___________end;<br>
+    <font color="#999900">083|</font> ________elsif
+    PatternPack.matches(p1n,1,nextPos,argCF,m) then<br>
+    <font color="#999900">084|</font>
+    ___________cnt:=Y2018.Text.Jets.MatchPack.size(m);<br>
+    <font color="#999900">085|</font> ___________declare<br>
+    <font color="#999900">086|</font>
+    ______________r:Y2018.Text.Jets.I_A_ARRAY(0 .. cnt - 1);<br>
+    <font color="#999900">087|</font> ___________begin<br>
+    <font color="#999900">088|</font>
+    ______________Y2018.Text.Jets.MatchPack.getMatch(m,r);<br>
+    <font color="#999900">089|</font> ______________if subIA(argCF,r(1))
+    = "-blk"c then<br>
+    <font color="#999900">090|</font>
+    _________________blklen:=Integer'Value("" &amp; subIA(argCF,r(2)));<br>
+    <font color="#999900">091|</font> _________________if blklen &lt; 1
+    then<br>
+    <font color="#999900">092|</font> ____________________raise
+    Program_Error with GNAT.Source_Info.Source_Location &amp; " " &amp;
+    GNAT.Source_Info.Enclosing_Entity &amp; ": Invalid -blk value";<br>
+    <font color="#999900">093|</font> _________________end if;<br>
+    <font color="#999900">094|</font> ______________else<br>
+    <font color="#999900">095|</font> _________________raise
+    Program_Error with GNAT.Source_Info.Source_Location &amp; " " &amp;
+    GNAT.Source_Info.Enclosing_Entity &amp; ": Unknown arg :" &amp;
+    argCF;<br>
+    <font color="#999900">096|</font> ______________end if;<br>
+    <font color="#999900">097|</font> ___________end;<br>
+    <font color="#999900">098|</font> ________elsif Length(in_name) = 0
+    then<br>
+    <font color="#999900">099|</font> ___________in_name:=NUS &amp;
+    UTF.To8(argCF);<br>
+    <font color="#999900">100|</font> ________elsif Length(ut_name) = 0
+    then<br>
+    <font color="#999900">101|</font> ___________ut_name:=NUS &amp;
+    UTF.To8(argCF);<br>
+    <font color="#999900">102|</font> ________else<br>
+    <font color="#999900">103|</font> ___________raise Program_Error
+    with GNAT.Source_Info.Source_Location &amp; " " &amp;
+    GNAT.Source_Info.Enclosing_Entity &amp; ": Unknown arg :" &amp;
+    argCF;<br>
+    <font color="#999900">104|</font> ________end if;<br>
+    <font color="#999900">105|</font> _____end;<br>
+    <font color="#999900">106|</font> _____i:=i+1;<br>
+    <font color="#999900">107|</font> __end loop;<br>
+    <font color="#999900">108|</font> __if Length(in_name) = 0 then<br>
+    <font color="#999900">109|</font> _____raise Program_Error with
+    GNAT.Source_Info.Source_Location &amp; " " &amp;
+    GNAT.Source_Info.Enclosing_Entity &amp; ": No input file";<br>
+    <font color="#999900">110|</font> __end if;<br>
+    <font color="#999900">111|</font> __if Length(ut_name) = 0 then<br>
+    <font color="#999900">112|</font> _____ut_name:=NUS &amp;
+    "chess.lst";<br>
+    <font color="#999900">113|</font> __end if;<br>
+    <font color="#999900">114|</font> __Create (File =&gt; ut,Mode =&gt;
+    Out_File,Name =&gt; To_String(ut_name));<br>
+    <font color="#999900">115|</font> __<br>
+    <font color="#999900">116|</font>
+    __Y2018.Text.Util.InFileUTF8.open(gblk,To_String(in_name));<br>
+    <font color="#999900">117|</font> __while not
+    Y2018.Text.Util.InFileUTF8.eof(gblk) loop<br>
+    <font color="#999900">118|</font> _____r:=Null_CVar;<br>
+    <font color="#999900">119|</font> _____while not
+    Y2018.Text.Util.InFileUTF8.eof(gblk) loop<br>
+    <font color="#999900">120|</font> ________declare<br>
+    <font color="#999900">121|</font> ___________vc:CodePoint;<br>
+    <font color="#999900">122|</font> ___________e:RS_TY;<br>
+    <font color="#999900">123|</font> ___________us:CVar;<br>
+    <font color="#999900">124|</font> ________begin<br>
+    <font color="#999900">125|</font>
+    ___________e:=Y2018.Text.Util.InFileUTF8.read(gblk,us);<br>
+    <font color="#999900">126|</font> ___________declare<br>
+    <font color="#999900">127|</font> ______________v:CFix:=To_CFix(us);<br>
+    <font color="#999900">128|</font> ___________begin<br>
+    <font color="#999900">129|</font> ______________vc:=v(1);<br>
+    <font color="#999900">130|</font> ___________end;<br>
+    <font color="#999900">131|</font> ___________c:=vc;<br>
+    <font color="#999900">132|</font>
+    ___________gc:=Y2018.Text.Core.Str.GET_GC(vc);<br>
+    <font color="#999900">133|</font> ___________if rcy then<br>
+    <font color="#999900">134|</font> ______________if vc &gt;
+    CodePoint'Val(16#FFFF#) then<br>
+    <font color="#999900">135|</font> _________________c:=c_rc;<br>
+    <font color="#999900">136|</font> _________________i_rc:=i_rc + 1;<br>
+    <font color="#999900">137|</font> ______________end if;<br>
+    <font color="#999900">138|</font> ___________end if;<br>
+    <font color="#999900">139|</font> ___________if not (e = RS_NONE)
+    then<br>
+    <font color="#999900">140|</font> ______________c:=c_xx;<br>
+    <font color="#999900">141|</font> ______________warn:=warn + 1;<br>
+    <font color="#999900">142|</font> ___________elsif gc = "Cc"c then<br>
+    <font color="#999900">143|</font> ______________c:=c_cc;<br>
+    <font color="#999900">144|</font> ______________i_cc:=i_cc + 1;<br>
+    <font color="#999900">145|</font> ___________elsif gc = "Cf"c then<br>
+    <font color="#999900">146|</font> ______________c:=c_cf;<br>
+    <font color="#999900">147|</font> ______________i_cf:=i_cf + 1;<br>
+    <font color="#999900">148|</font> ___________elsif gc = "Cs"c then<br>
+    <font color="#999900">149|</font> ______________c:=c_cs;<br>
+    <font color="#999900">150|</font> ______________i_cs:=i_cs + 1;<br>
+    <font color="#999900">151|</font> ___________elsif gc = "Cn"c or gc
+    = " "c then<br>
+    <font color="#999900">152|</font> ______________c:=c_cn;<br>
+    <font color="#999900">153|</font> ______________i_cn:=i_cn + 1;<br>
+    <font color="#999900">154|</font> ___________else<br>
+    <font color="#999900">155|</font> ______________null;<br>
+    <font color="#999900">156|</font> ___________end if;<br>
+    <font color="#999900">157|</font> ___________case vc is<br>
+    <font color="#999900">158|</font> ______________when
+    CodePoint'Val(16#00#) =&gt; -- nul<br>
+    <font color="#999900">159|</font> _________________c:=c_nul;<br>
+    <font color="#999900">160|</font> _________________i_nul:=i_nul + 1;<br>
+    <font color="#999900">161|</font> ______________when
+    CodePoint'Val(16#08#) =&gt; -- \b<br>
+    <font color="#999900">162|</font> _________________c:=c_b;<br>
+    <font color="#999900">163|</font> _________________i_b:=i_b + 1;<br>
+    <font color="#999900">164|</font> ______________when
+    CodePoint'Val(16#0C#) =&gt; -- \f<br>
+    <font color="#999900">165|</font> _________________c:=c_f;<br>
+    <font color="#999900">166|</font> _________________i_f:=i_f + 1;<br>
+    <font color="#999900">167|</font> ______________when
+    CodePoint'Val(16#0A#) =&gt; -- \n<br>
+    <font color="#999900">168|</font> _________________c:=c_n;<br>
+    <font color="#999900">169|</font> _________________i_n:=i_n + 1;<br>
+    <font color="#999900">170|</font> ______________when
+    CodePoint'Val(16#0D#) =&gt;-- \r<br>
+    <font color="#999900">171|</font> _________________c:=c_r; <br>
+    <font color="#999900">172|</font> _________________i_r:=i_r + 1;<br>
+    <font color="#999900">173|</font> ______________when
+    CodePoint'Val(16#09#) =&gt; -- \t<br>
+    <font color="#999900">174|</font> _________________c:=c_t;<br>
+    <font color="#999900">175|</font> _________________i_t:=i_t + 1;<br>
+    <font color="#999900">176|</font> ______________when
+    CodePoint'Val(16#85#) =&gt; -- NEL Next line<br>
+    <font color="#999900">177|</font> _________________c:=c_nel;<br>
+    <font color="#999900">178|</font> _________________i_nel:=i_nel + 1;<br>
+    <font color="#999900">179|</font> ______________when others =&gt;<br>
+    <font color="#999900">180|</font> _________________null;<br>
+    <font color="#999900">181|</font> ___________end case;<br>
+    <font color="#999900">182|</font> ___________--<br>
+    <font color="#999900">183|</font> ___________r:=r &amp; c;<br>
+    <font color="#999900">184|</font> ________end;<br>
+    <font color="#999900">185|</font> ________if Length(r)&gt;=blklen
+    then<br>
+    <font color="#999900">186|</font> ___________exit;<br>
+    <font color="#999900">187|</font> ________end if;<br>
+    <font color="#999900">188|</font> _____end loop;<br>
+    <font color="#999900">189|</font> _____Put_line(ut,"" &amp; r);<br>
+    <font color="#999900">190|</font> _____lncnt:=lncnt + 1;<br>
+    <font color="#999900">191|</font> __end loop;<br>
+    <font color="#999900">192|</font>
+    __Y2018.Text.Util.InFileUTF8.close(gblk);<br>
+    <font color="#999900">193|</font> __close(ut);<br>
+    <font color="#999900">194|</font> __Put_line("input " &amp;
+    To_String(in_name));<br>
+    <font color="#999900">195|</font> __Put_line("output " &amp;
+    To_String(ut_name));<br>
+    <font color="#999900">196|</font> __Put_line("lines" &amp;
+    Integer'Image(lncnt));<br>
+    <font color="#999900">197|</font> __Put_line("null" &amp;
+    Integer'Image(i_nul) &amp; " " &amp; c_nul);<br>
+    <font color="#999900">198|</font> __Put_line("backspace" &amp;
+    Integer'Image(i_b) &amp; " " &amp; c_b);<br>
+    <font color="#999900">199|</font> __Put_line("form_feed" &amp;
+    Integer'Image(i_f) &amp; " " &amp; c_f);<br>
+    <font color="#999900">200|</font> __Put_line("line_feed" &amp;
+    Integer'Image(i_n) &amp; " " &amp; c_n);<br>
+    <font color="#999900">201|</font> __Put_line("horizontal_tabulation"
+    &amp; Integer'Image(i_t) &amp; " " &amp; c_t);<br>
+    <font color="#999900">202|</font> __Put_line("carriage_return" &amp;
+    Integer'Image(i_r) &amp; " " &amp; c_r);<br>
+    <font color="#999900">203|</font> __Put_line("next_line" &amp;
+    Integer'Image(i_nel) &amp; " " &amp; c_nel);<br>
+    <font color="#999900">204|</font> __Put_line("Cc control" &amp;
+    Integer'Image(i_cc) &amp; " " &amp; c_cc);<br>
+    <font color="#999900">205|</font> __Put_line("Cf format" &amp;
+    Integer'Image(i_cf) &amp; " " &amp; c_cf);<br>
+    <font color="#999900">206|</font> __Put_line("Cs surrogate" &amp;
+    Integer'Image(i_cs) &amp; " " &amp; c_cs);<br>
+    <font color="#999900">207|</font> __Put_line("Cn not_assigned" &amp;
+    Integer'Image(i_cn) &amp; " " &amp; c_cn);<br>
+    <font color="#999900">208|</font> __if rcy then<br>
+    <font color="#999900">209|</font> _____Put_line("Replaced " &amp;
+    Integer'Image(i_rc) &amp; " " &amp; c_rc);<br>
+    <font color="#999900">210|</font> __end if;<br>
+    <font color="#999900">211|</font> __if warn &gt; 0 then<br>
+    <font color="#999900">212|</font> _____Put_line(Standard_Error,"**
+    WARNING, not an UTF-8 file**" &amp; Integer'Image(warn) &amp; " "
+    &amp; c_xx);<br>
+    <font color="#999900">213|</font> __end if;<br>
+    <font color="#999900">214|</font> end Chesslist;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

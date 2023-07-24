@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>The Matchpack</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t004.html">Up</a> <a href="y2018_text_jets_matchpack.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>The Matchpack</h1>
+    <i>To use Matchpack we have to see the usage through <a
+        href="t049.html">Patternpack</a></i>.<br>
+    <br>
+    Usually the only statement in the code is the declaration:<br>
+    &nbsp;&nbsp;&nbsp;r:<b>I_A_ARRAY:=MatchPack.getMatch(m)</b>;<br>
+    the result, r variable in our case, is of type I_A_ARRAY, an array
+    of an array of Integer or indexes of the source data which was
+    searched. <br>
+    &nbsp;&nbsp;&nbsp;type I_A is array (1..2) of Integer;<br>
+    contain index of the first and the last codepoint for something wich
+    is found.<br>
+    &nbsp;&nbsp;&nbsp;type I_A_ARRAY is Array(Integer range &lt;&gt;) of
+    I_A;<br>
+    Contain 0..n found objects where the first, at index value zero, is
+    the whole found object and rest are intreset parts of that object
+    which is marked in the regular expression with simple (capturing)
+    parentheses.<br>
+    <br>
+    <b>Mostly this is enough</b> but if you want go deeper then you
+    should start with <i>to understand what Match_TY is we have to
+      study the contents</i><br>
+    <p>The type Match_TY is private because we want to restrict access
+      to theese maps for any other code execept for code in this
+      package.</p>
+    <p>type <font color="#009900">MatchID2RE_ID_Elem_TY</font><br>
+      record<br>
+      ___mid:MatchID; -- Key (duplicate the orginal key, the 'mid')<br>
+      ___re:<a href="t017.html">RE_Elem_AC</a>;<br>
+      ___ .....<br>
+      end record;<br>
+    </p>
+    <p>package <font color="#663366">MatchID2RE_ID_TY</font> is new
+      Ada.Containers.Ordered_Maps(<br>
+      ___Key_Type=&gt; MatchID, -- Key (the 'mid')<br>
+      ___Element_Type=&gt; <font color="#009900">MatchID2RE_ID_Elem_TY</font>,<br>
+      ___....);<br>
+    </p>
+    <p><font color="#990000">private</font> type Match_TY is tagged<br>
+      record<br>
+      ___map:<font color="#663366">MatchID2RE_ID_TY</font>.map;<br>
+      ___id:MatchID; -- the 'mid'<br>
+      end record;</p>
+    <font color="#009900"><u>MatchID2RE_ID_Elem_TY</u></font><br>
+    This is the base for the mapping. Here is the only link to node and
+    range of a row. RE_ID is the key.<br>
+    &nbsp;<br>
+    <font color="#663366"><u>MatchID2RE_ID_TY</u></font>
+    (Ada.Containers.Ordered_Maps) <br>
+    MatchID connection to RE_ID . Used and updated in the compilation
+    process.<br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

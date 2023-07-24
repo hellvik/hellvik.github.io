@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Core.CVarPack</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_core.html">Prev</a> <a href="y2018_text_core_str.html">Next</a> <a href="t020.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Core.CVarPack</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Finalization; use Ada.Finalization;<br>
+    <font color="#999900">002|</font> package Y2018.Text.Core.CVarPack
+    is<br>
+    <font color="#999900">003|</font> __type CVar is private;<br>
+    <font color="#999900">004|</font> __Type CFix_AC is access all CFix;<br>
+    <font color="#999900">005|</font> __Null_CVar : constant CVar; --
+    NUW<br>
+    <font color="#999900">006|</font> __procedure Free (X : in out
+    CFix_AC);<br>
+    <font color="#999900">007|</font> __function Length (Source : CVar)
+    return Natural;<br>
+    <font color="#999900">008|</font> __function
+    "&amp;"(Left:CFix;Right:CVar) return CFix ; -- [02] CVarÅ<br>
+    <font color="#999900">009|</font> __function
+    "&amp;"(Left:CVar;Right:CFix) return CVar ; -- [04] CvarÅ<br>
+    <font color="#999900">010|</font> __function
+    "&amp;"(Left:CVar;Right:CVar) return CVar ; -- [05] CVarÅ<br>
+    <font color="#999900">011|</font> __function
+    "&amp;"(Left:CVar;Right:CodePoint) return CVar ; -- [10] CVarÅ<br>
+    <font color="#999900">012|</font> __function
+    "&amp;"(Left:CodePoint;Right:CVar) return CFix ; -- [14] CVarÅ<br>
+    <font color="#999900">013|</font> __function "&lt;" (Left : CVar;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">014|</font> __function "&lt;" (Left : CVar;
+    Right : CFix) return Boolean;<br>
+    <font color="#999900">015|</font> __function "&lt;" (Left : CFix;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">016|</font> __function "&lt;=" (Left : CVar;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">017|</font> __function "&lt;=" (Left : CVar;
+    Right : CFix) return Boolean;<br>
+    <font color="#999900">018|</font> __function "&lt;=" (Left : CFix;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">019|</font> __function "=" (Left : CVar; Right
+    : CVar) return Boolean;<br>
+    <font color="#999900">020|</font> __function "=" (Left : CVar; Right
+    : CFix) return Boolean;<br>
+    <font color="#999900">021|</font> __function "=" (Left : CFix; Right
+    : CVar) return Boolean;<br>
+    <font color="#999900">022|</font> __function "&gt;" (Left : CVar;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">023|</font> __function "&gt;" (Left : CVar;
+    Right : CFix) return Boolean;<br>
+    <font color="#999900">024|</font> __function "&gt;" (Left : CFix;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">025|</font> __function "&gt;=" (Left : CVar;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">026|</font> __function "&gt;=" (Left : CVar;
+    Right : CFix) return Boolean;<br>
+    <font color="#999900">027|</font> __function "&gt;=" (Left : CFix;
+    Right : CVar) return Boolean;<br>
+    <font color="#999900">028|</font> __function To_CVar (Source : CFix)
+    return CVar;<br>
+    <font color="#999900">029|</font> __function To_CVar (Source :
+    String) return CVar;<br>
+    <font color="#999900">030|</font> __function To_CFix (Source : CVar)
+    return CFix;<br>
+    <font color="#999900">031|</font> __function To_String (Source :
+    CVar) return String;<br>
+    <font color="#999900">032|</font> private<br>
+    <font color="#999900">033|</font> __pragma Inline (Length);<br>
+    <font color="#999900">034|</font> __package AF renames
+    Ada.Finalization;<br>
+    <font color="#999900">035|</font> __Null_CFixA : aliased CFix :=
+    Null_CFix;<br>
+    <font color="#999900">036|</font> __type CVar is new AF.Controlled
+    with record<br>
+    <font color="#999900">037|</font> _____Reference : CFix_AC:=
+    Null_CFixA'Access;<br>
+    <font color="#999900">038|</font> _____Last : Natural:= 0;<br>
+    <font color="#999900">039|</font> __end record;<br>
+    <font color="#999900">040|</font> __pragma Finalize_Storage_Only
+    (CVar);<br>
+    <font color="#999900">041|</font> __procedure Initialize (Object :
+    in out CVar);<br>
+    <font color="#999900">042|</font> __procedure Adjust (Object : in
+    out CVar);<br>
+    <font color="#999900">043|</font> __procedure Finalize (Object : in
+    out CVar);<br>
+    <font color="#999900">044|</font> __Null_CVar : constant CVar
+    :=(AF.Controlled with Reference =&gt;Null_CFixA'Access,Last =&gt;
+    0);<br>
+    <font color="#999900">045|</font> end Y2018.Text.Core.CVarPack;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

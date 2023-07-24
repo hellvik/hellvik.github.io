@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>UrvPack utilities</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t047.html">Up</a> <a href="y2018_text_util_urvpack.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>UrvPack utilities<br>
+    </h1>
+    <p>URV's for Patter call. URV's can be stored in external files and
+      loaded from external files.<br>
+    </p>
+    <blockquote>
+      <hr> <font color="#006600">This is the structure of an element</font><br>
+      type <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Velem
+
+      is<br>
+      record<br>
+      &nbsp; f: Integer; -- first character value of this range<br>
+      &nbsp; l: Integer; -- last character value of this range<br>
+      end record;<br>
+      <br>
+      <font color="#006600">This is the structure refered as a URV_Set.
+        An URV_Set can be stored or loaded from an external file </font><br>
+      package <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Set_TY
+
+      is new Ada.Containers.Ordered_Sets(<br>
+      &nbsp; Element_type =&gt; <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Velem,<br>
+      &nbsp; "&lt;" =&gt; less,<br>
+      &nbsp; "=" =&gt; equal<br>
+      );<br>
+      <br>
+      <font color="#006600">This is the structure for the Pattern call.
+        A 'library' of URV_Sets.</font><br>
+      package <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>UserRangeVectorMap_TY
+
+      is new Ada.Containers.Ordered_Maps(<br>
+      &nbsp; Key_Type=&gt; Unbounded_Wide_Wide_String, -- the name or
+      identifier of an URV_Set<br>
+      &nbsp; Element_Type=&gt; <font color="#999999"><i>(Y2018.Text.Jets.RangeVectorPack.)</i></font>Set_TY.Set,<br>
+      &nbsp; "&lt;"=&gt; lessUR,<br>
+      &nbsp; "="=&gt; equalUR<br>
+      );<br>
+      <br>
+      The <b>MapPool</b> is a private type of Y2018.Text.Util.UrvPack
+      and contains a map of type UserRangeVectorMap_TY.<br>
+      <hr> </blockquote>
+    Copy the urv for a pattern call:<br>
+    function copy_Map(mp:in out <b>MapPool</b>) return <font
+      color="#009900">Jets.RangeVectorPack.UserRangeVectorMap_TY.Map</font><br>
+    <h2>MapPool utilties </h2>
+    <p>A new URV_Set must be created (and named) with the 'insert'
+      function. You cannot create a new URV_Set with 'put_Set'. The
+      URV_Set is 'the library' of elements (<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>).
+
+      MapPool is the private type of UrvPack, and in the same MapPool it
+      is possible to store many named RangeVectorPack.Sets.<br>
+    </p>
+    <b>function copy_Map</b>(mp:in out MapPool) return
+    Jets.RangeVectorPack.Map_TY.Map; -- (<a href="t045.html">ExXsi</a>
+    line <font color="#999900">025</font>)<br>
+    <br>
+    <b>procedure list_Map</b>(mp:in out MapPool;path:String<font
+      color="#999900">:=""</font>;topTitle:String<font color="#999900">:="--
+
+      Top --"</font>;BottomTitle:String<font color="#999900">:="--
+      Bottom --";</font>prefix:String<font color="#999900">:=TAB</font>);
+
+    -- (<a href="t045.html">ExXsi</a> line <font color="#999900">074</font>)<br>
+    <br>
+    <b>function map_Names</b>(mp:in out MapPool) return MapName.Set;<br>
+    <br>
+    <b>function Is_Empty</b>(mp:in out MapPool) return Boolean;<br>
+    <br>
+    <b>function Contains</b>(mp:in out MapPool;key:CVar) return Boolean;<br>
+    <br>
+    <b>function Length</b>(mp:in out MapPool) return Integer;<br>
+    <br>
+    <b>procedure delete</b>(mp:in out MapPool;key:CVar);<br>
+    <br>
+    <b>procedure insert</b>(mp:in out MapPool;key:CVar); -- (<a
+      href="t045.html">ExXsi</a> line <font color="#999900">041</font>)<br>
+    <br>
+    <b>procedure load</b>(mp:in out
+    MapPool;path:String;overwrite:TRINITY<font color="#999900">:=TRI_TRUE</font>);
+
+    -- read from external file (<a href="t045.html">ExXsi</a> line <font
+      color="#999900">059</font>) <br>
+    <br>
+    <b>procedure store</b>(mp:in out MapPool;path:String); -- write to
+    external file (<a href="t045.html">ExXsi</a> line <font
+      color="#999900">038</font>)<br>
+    <br>
+    <b>procedure clear</b>(mp:in out MapPool);<br>
+    <h2>Set utlities </h2>
+    Retreive a named set, key-value, from the pool<br>
+    <b>function get_Set</b>(mp:in out MapPool;key:CVar) return <b>Jets.RangeVectorPack.Set_TY.Set</b>;
+    -- example at line <font color="#999900">007</font> in <a
+      href="t035.html">Classlist</a>.&nbsp; <br>
+    <br>
+    Write a set into the pool and in that named set which is the 'key'
+    (of element in the pool)<br>
+    <b>procedure put_Set</b>(mp:in out MapPool;key:CVar;<b>value:Jets.RangeVectorPack.Set_TY.Set</b>);
+
+    -- (<a href="t045.html">ExXsi</a> line <font color="#999900">024</font>)<br>
+    <br>
+    A quick way to generate a set and populate it with values. The CFix
+    array is considered to have distinct codepoint values for the set.<b><br>
+      function make_Set</b>(s:CFix) return <b>Jets.RangeVectorPack.Set_TY.Set</b>;
+    -- (<a href="t045.html">ExXsi</a> line <font color="#999900">013</font>)<br>
+    <br>
+    List an element to STDOUT or to an external file<br>
+    <b>procedure list_Set</b>(<b>elementSet:Jets.RangeVectorPack.Set_TY.Set</b>;title:CFix;path:String:="";lse:LSE_TY:=LSENONE);
+
+    -- example at line <font color="#999900">008</font> in <a
+      href="t035.html">Classlist</a>&nbsp; <br>
+    <br>
+    &nbsp;&nbsp;&nbsp; LSENONE<br>
+    &nbsp;&nbsp;&nbsp; LSESIZE - number of characters in range<br>
+    &nbsp;&nbsp;&nbsp; LSECOMP - range first .. last value <br>
+    <br>
+    <h2>Element utlities<br>
+    </h2>
+    An element (<font color="#990000">Jets.RangeVectorPack.Set_TY.Set</font>)
+    contains a list of character value ranges.<br>
+    <ul>
+      <li>add - add one element to another<br>
+      </li>
+      <li>sub - remove character ranges which exists in the second
+        element from the first<br>
+      </li>
+      <li>slice - remove character ranges from the first which donnot
+        exists in the second</li>
+      <li>compress - pack the character ranges in the element</li>
+    </ul>
+    Example <a href="t044.html">ExOmikron</a><br>
+    <br>
+    <b>function compress</b>(<font color="#990000">inSet</font>:Jets.RangeVectorPack.Set_TY.Set)
+
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <i>in the example ExOmikron result from code line <font
+        color="#999900">037</font></i><br>
+    <font color="#999900">026|</font> --Beta:Compress--<br>
+    <font color="#999900">027|</font> &gt;______41 .. ______46<br>
+    <br>
+    <b>function add</b>(<font color="#990000">alfaSet</font>:Jets.RangeVectorPack.Set_TY.Set;<font
+      color="#990000">betaSet</font>:Jets.RangeVectorPack.Set_TY.Set)
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <br>
+    <b>function add</b>(<font color="#990000">alfaSet</font>:Jets.RangeVectorPack.Set_TY.Set;<font
+      color="#3333ff">peta</font>:Jets.RangeVectorPack.Velem) return
+    Jets.RangeVectorPack.Set_TY.Set;<br>
+    <i>in the example ExOmikron result</i><i> from code lines <font
+        color="#999900">020</font> and <font color="#999900">022</font></i><br>
+    <font color="#999900">003|</font> --Alfa:One--<br>
+    <font color="#999900">004|</font> &gt;______31 .. ______33<br>
+    <font color="#999900">005|</font> &gt;______35 .. ______37<br>
+    <font color="#999900">006|</font> &gt;______41 .. ______41<br>
+    <br>
+    <b>function sub</b>(<font color="#990000">alfaSet</font>:Jets.RangeVectorPack.Set_TY.Set;<font
+      color="#990000">betaSet</font>:Jets.RangeVectorPack.Set_TY.Set)
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <i>in the example ExOmikron result from code line <font
+        color="#999900">028</font></i><br>
+    <i><font color="#999900">015|</font> --Gamma:Sub alfa--<br>
+      <font color="#999900">016|</font> &gt;______30 .. ______30<br>
+      <font color="#999900">017|</font> &gt;______34 .. ______34<br>
+      <font color="#999900">018|</font> &gt;______38 .. ______39</i><br>
+    <i>(Note the difference between sub and slice applied to the same
+      gammaSet)</i><br>
+    <br>
+    <b>function sub</b>(alfaSet:Jets.RangeVectorPack.Set_TY.Set;<font
+      color="#3333ff">beta</font>:Jets.RangeVectorPack.Velem) return
+    Jets.RangeVectorPack.Set_TY.Set;<br>
+    <br>
+    <b>function slice</b>(<font color="#990000">alfaSet</font>:Jets.RangeVectorPack.Set_TY.Set;<font
+      color="#990000">betaSet</font>:Jets.RangeVectorPack.Set_TY.Set)
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <i>in the example ExOmikron result from code line <font
+        color="#999900">027</font></i><br>
+    <i><font color="#999900">012|</font> --Gamma:Slice alfa--<br>
+      <font color="#999900">013|</font> &gt;______31 .. ______33<br>
+      <font color="#999900">014|</font> &gt;______35 .. ______37</i><br>
+    <i>(Note the difference between sub and slice applied to the same
+      gammaSet)</i><i><br>
+    </i><br>
+    <b>function slice</b>(<font color="#990000">alfaSet</font>:Jets.RangeVectorPack.Set_TY.Set;<font
+      color="#3333ff">beta</font>:Jets.RangeVectorPack.Velem) return
+    Jets.RangeVectorPack.Set_TY.Set;<br>
+    <br>
+    <h2>Scanning unicodedata.txt for elements</h2>
+    The UCD-directory will contain a file named "UnicodeData.txt",&nbsp;
+    this is the input for this utility. All parameters except the first
+    are considered to be regular expressions for fields in the
+    unicodedata.txt (field separator is ';'). Default value is null_CFix
+    which stands for do not consider this field. If the field in
+    unicodedata.txt is a match of the regular expression then this
+    character value is added to the element. Note you should compress
+    the element before use.<br>
+    <br>
+    <b>function UnicodeData</b>(filename:String; <font color="#cc0000">--
+
+      UnicodeData.txt</font><br>
+    &nbsp;&nbsp;&nbsp;Character_name:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;General_Category:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Canonical_Combining:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Bidirectional_Category:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Character_Decomposition:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Decimal_digit:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Digit_value:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Numeric_value:CFix:=null_CFix; <font
+      color="#999900">-- regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Mirrored:CFix:=null_CFix; <font color="#999900">--
+
+      regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Old_name:CFix:=null_CFix; <font color="#999900">--
+
+      regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Comment:CFix:=null_CFix; <font color="#999900">--
+      regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Uppercase:CFix:=null_CFix; <font color="#999900">--
+
+      regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Lowercase:CFix:=null_CFix; <font color="#999900">--
+
+      regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;Titlecase:CFix:=null_CFix; <font color="#999900">--
+
+      regular expression or null_CFix</font><br>
+    &nbsp;&nbsp;&nbsp;ShowLineCount:Integer:=0 <font color="#996633">--
+      show line counter at X number of lines read or for value zero, no
+      line counter</font><br>
+    ) return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <h2>Scanning block.txt for elements</h2>
+    The UCD-directory will contain a file named "Block.txt",&nbsp; this
+    is the input for this utility. All parameters except the first are
+    considered to be regular expressions for fields in the Block.txt
+    (field separator is ';'). Default value is null_CFix which stands
+    for do not consider this field. If the field in block.txt is a match
+    of the regular expression then this character value is added to the
+    element. Note you should compress the element before use.<br>
+    <br>
+    <b>function Block</b>(filename:String; <font color="#cc0000">--
+      Block.txt</font><br>
+    &nbsp;&nbsp;&nbsp;Block_name:CFix:=null_CFix; <font color="#999900">--
+
+      regular expression (or null_CFix ?)</font><br>
+    &nbsp;&nbsp;&nbsp;ShowLineCount:Integer:=0 <font color="#996633">--
+      show line counter at X number of lines read or for value zero, no
+      line counter<br>
+    </font>) return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <h2> Mappool utlity <u>verifyDatFileContents</u><br>
+    </h2>
+    <p> Verify that a given file has the content of a&nbsp; mappool
+      storage:<br>
+      <b>function verifyDatFileContents</b>(path:String) return TRINITY;<br>
+      <br>
+      The function reads the beginning of the file and searches for
+      "JetsData_". The file is a binary file but it starts with these
+      nine bytes with these ASCII values. The ending '.dat' is very
+      commonly used and a check of the content is needed.<br>
+    </p>
+    <ul>
+      <li>TRI_TRUE - file is found and "JetsData_" is found </li>
+      <li> TRI_FALSE - file exists but no "JetsData_" <br>
+      </li>
+      <li>TRI_UNDEF - file cannot be found</li>
+    </ul>
+    .<br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

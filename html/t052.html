@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExKappa</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t054.html">Prev</a> <a href="t051.html">Next</a> <a href="t053.html">Up</a> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExKappa</h1>
+    <p>Example of the <i><b>odd result</b></i> of capturing parentheses
+      which should be repeated twice </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets; <br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">007|</font> --with DSECT;<br>
+    <font color="#999900">008|</font> procedure ExKappa is<br>
+    <font color="#999900">009|</font>
+    __p:PatternPack.Pattern_AC:=PatternPack.compileM("^([\\w]+[\\s]?){2}"c);<br>
+    <font color="#999900">010|</font> __m : MatchPack.Match_TY;<br>
+    <font color="#999900">011|</font> __line:CFix:="Huey Dewey Louie
+    Duck"c;<br>
+    <font color="#999900">012|</font> __nextPos:Integer;<br>
+    <font color="#999900">013|</font> __startPos:Integer:=1;<br>
+    <font color="#999900">014|</font> begin<br>
+    <font color="#999900">015|</font> __while
+    PatternPack.matches(p,startPos,nextPos,line,m) loop<br>
+    <font color="#999900">016|</font> _____Ada.Text_IO.Put_Line ("---"
+    &amp; Integer'image(startPos) &amp; " ---");<br>
+    <font color="#999900">017|</font> _____declare<br>
+    <font color="#999900">018|</font>
+    ________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">019|</font> _____begin<br>
+    <font color="#999900">020|</font> ________for i in r'First(1) ..
+    r'Last(1) loop<br>
+    <font color="#999900">021|</font>
+    ___________Ada.Text_IO.Put_Line(Integer'image(i) &amp; "&gt;" &amp;
+    subIA(line,r(i)));<br>
+    <font color="#999900">022|</font> ________end loop;<br>
+    <font color="#999900">023|</font> _____end;<br>
+    <font color="#999900">024|</font> _____startPos:=nextPos;<br>
+    <font color="#999900">025|</font> __end loop;<br>
+    <font color="#999900">026|</font> __<font color="#999900">Ada.Text_IO.Put_Line
+
+      ("*** Alternative two ***");</font><br>
+    <font color="#999900">027|</font> __startPos:=1;<br>
+    <font color="#999900">028|</font>
+    __p:=PatternPack.compileM("^(?:([\\w]+[\\s]?)){2}"c);<br>
+    <font color="#999900">029|</font> __while
+    PatternPack.matches(p,startPos,nextPos,line,m) loop<br>
+    <font color="#999900">030|</font> _____Ada.Text_IO.Put_Line ("---"
+    &amp; Integer'image(startPos) &amp; " ---");<br>
+    <font color="#999900">031|</font> _____declare<br>
+    <font color="#999900">032|</font>
+    ________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">033|</font> _____begin<br>
+    <font color="#999900">034|</font> ________for i in r'First(1) ..
+    r'Last(1) loop<br>
+    <font color="#999900">035|</font>
+    ___________Ada.Text_IO.Put_Line(Integer'image(i) &amp; "&gt;" &amp;
+    subIA(line,r(i)));<br>
+    <font color="#999900">036|</font> ________end loop;<br>
+    <font color="#999900">037|</font> _____end;<br>
+    <font color="#999900">038|</font> _____startPos:=nextPos;<br>
+    <font color="#999900">039|</font> __end loop;<br>
+    <font color="#999900">040|</font> __<font color="#999900">Ada.Text_IO.Put_Line
+
+      ("*** Alternative three ***");</font><br>
+    <font color="#999900">041|</font> __startPos:=1;<br>
+    <font color="#999900">042|</font>
+    __p:=PatternPack.compileM("^((?:[\\w]+[\\s]?){2})"c);<br>
+    <font color="#999900">043|</font> __while
+    PatternPack.matches(p,startPos,nextPos,line,m) loop<br>
+    <font color="#999900">044|</font> _____Ada.Text_IO.Put_Line ("---"
+    &amp; Integer'image(startPos) &amp; " ---");<br>
+    <font color="#999900">045|</font> _____declare<br>
+    <font color="#999900">046|</font>
+    ________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">047|</font> _____begin<br>
+    <font color="#999900">048|</font> ________for i in r'First(1) ..
+    r'Last(1) loop<br>
+    <font color="#999900">049|</font>
+    ___________Ada.Text_IO.Put_Line(Integer'image(i) &amp; "&gt;" &amp;
+    subIA(line,r(i)));<br>
+    <font color="#999900">050|</font> ________end loop;<br>
+    <font color="#999900">051|</font> _____end;<br>
+    <font color="#999900">052|</font> _____startPos:=nextPos;<br>
+    <font color="#999900">053|</font> __end loop;<br>
+    <font color="#999900">054|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExKappa ***");<br>
+    <font color="#999900">055|</font> end ExKappa;<br>
+    <hr width="100%" size="2">
+    <h2>Result</h2>
+    Running <u>export LD_LIBRARY_PATH=lib;bin/exkappa</u> in TEST
+    directory.<br>
+    Note <i><u>^([\\w]+[\\s]?){2}</u></i> and that "<font
+      color="#009900">Dewey</font>" in the first iteration is in r(0),
+    r(1) and r(2). We have the same result with "<font color="#cc0000">Duck</font>"
+    in the second iteration, although we have only one capturing
+    parentheses in the pattern.<br>
+    <i><br>
+      The question is what do we really want to capture ?</i><br>
+    Alternative <b>two</b> uses non capturing parentheses in the
+    pattern <u><i>^(?:([\\w]+[\\s]?)){2}</i></u> and captures only the
+    inner part.<br>
+    Alternative <b>three</b> uses non capturing parentheses for the
+    whole expression, <u><i>^((?:[\\w]+[\\s]?){2})</i></u><br>
+    <hr width="100%" size="2"><font color="#999900">001|</font> --- 1
+    ---<br>
+    <font color="#999900">002|</font> 0&gt;Huey <font color="#009900">Dewey</font>
+    <br>
+    <font color="#999900">003|</font> 1&gt;Huey <font color="#009900">Dewey</font>
+    <br>
+    <font color="#999900">004|</font> 2&gt;<font color="#009900">Dewey</font>
+    <br>
+    <font color="#999900">005|</font> --- 12 ---<br>
+    <font color="#999900">006|</font> 0&gt;Louie <font color="#ff0000">Duck</font><br>
+    <font color="#999900">007|</font> 1&gt;Louie <font color="#ff0000">Duck</font><br>
+    <font color="#999900">008|</font> 2&gt;<font color="#ff0000">Duck</font><br>
+    <font color="#999900">009|</font> *** Alternative two ***<br>
+    <font color="#999900">010|</font> --- 1 ---<br>
+    <font color="#999900">011|</font> 0&gt;Huey Dewey <br>
+    <font color="#999900">012|</font> 1&gt;Huey <br>
+    <font color="#999900">013|</font> 2&gt;Dewey <br>
+    <font color="#999900">014|</font> --- 12 ---<br>
+    <font color="#999900">015|</font> 0&gt;Louie Duck<br>
+    <font color="#999900">016|</font> 1&gt;Louie <br>
+    <font color="#999900">017|</font> 2&gt;Duck<br>
+    <font color="#999900">018|</font> *** Alternative three ***<br>
+    <font color="#999900">019|</font> --- 1 ---<br>
+    <font color="#999900">020|</font> 0&gt;Huey Dewey <br>
+    <font color="#999900">021|</font> 1&gt;Huey Dewey <br>
+    <font color="#999900">022|</font> --- 12 ---<br>
+    <font color="#999900">023|</font> 0&gt;Louie Duck<br>
+    <font color="#999900">024|</font> 1&gt;Louie Duck<br>
+    <font color="#999900">025|</font> *** End of ExKappa ***<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

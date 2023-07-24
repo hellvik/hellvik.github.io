@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>StripC</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t010.html">Prev</a> <a href="t011.html">Next</a> <a href="t020.html">Up</a> <a href="y2018_text_core_str.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>StripC</h1>
+    Strip or trim the result. Because we are working with 21-bit
+    characters and all indexing is based on theese 21-bit characters. <br>
+    <p><b>function
+        stripC(value:Cfix;left:Cfix:=CFix_Space;right:Cfix:=CFix_Space)</b>
+      <b>return CFix ;</b></p>
+    <p><b>function stripC(value:String;left:String:=" ";right:String:="
+        ") return String ;</b> </p>
+    <p> <b>function
+        stripC(value:CVar;left:CFix:=CFix_Space;right:CFix:=CFix_Space)
+      </b> <b>return CVar;</b></p>
+    <p> Examples:<br>
+      <font color="#999900">001|</font> v10:String:="1234567890";<br>
+      <font color="#999900">002|</font>
+      w:String:=(3=&gt;'3',4=&gt;'4',5=&gt;'5');<br>
+      <font color="#999900">003|</font> x8:String:=" ABC ";<br>
+      <font color="#999900">004|</font> y14:String:="abcdefghijklmn";<br>
+      <font color="#999900">005|</font> y15:String:="abcdefghijklmnU";<br>
+      <font color="#999900">006|</font> z:String(1 .. 0);</p>
+    <hr width="100%" size="2">[1] Ada.Text_IO.Put_Line (
+    "stripC(y14).&gt;" &amp; stripC(y14) &amp; "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">stripC(y14).&gt;abcdefghijklmn&lt;</font>
+    <br>
+    [2] Ada.Text_IO.Put_Line ( "stripC(w,""3"",""5"")&gt;" &amp;
+    stripC(w,"3","5") &amp; "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000"><span style="background:
+        transparent">stripC(w,"3","5")&gt;4&lt;</span></font> <br>
+    &nbsp;&nbsp;<font color="#000000"><span style="background:
+        transparent">“</span></font><font color="#000000"><span
+        style="background: transparent">3” is removed from the beginning
+        and “5” is removed from the end.</span></font> <br>
+    [3] Ada.Text_IO.Put_Line ( "stripC(x8).&gt;" &amp; stripC(x8) &amp;
+    "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">stripC(x8).&gt;ABC&lt;</font>
+    <br>
+    [4] Ada.Text_IO.Put_Line ( "stripC(z).&gt;" &amp; stripC(z) &amp;
+    "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">stripC(z).&gt;&lt;</font>
+    <br>
+    &nbsp;&nbsp;<font color="#000000">Because then string donnot contain
+      any storage units then nothing is ‘stripped’ away</font><font
+      color="#000000">.</font> <br>
+    [5] Ada.Text_IO.Put_Line ( "stripC(x8,right=&gt;"""").&gt; &amp;
+    stripC(x8,right=&gt;"") &amp; “&lt;”); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">stripC(x8,right=&gt;"").&gt;ABC
+      &lt;</font> <br>
+    &nbsp;&nbsp;<font color="#000000">Odd but it is correct. Same as
+      with stripC(x8,” “,””) which explains to result. The notation “” </font>
+    <br>
+    &nbsp;&nbsp;<font color="#000000">specifies that no units are
+      removed.</font> <br>
+    [6] Ada.Text_IO.Put_Line ( "stripC(x8,left=&gt;"""").&gt; &amp;
+    stripC(x8,left=&gt;"") &amp; “&lt;”); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">stripC(x8,left=&gt;"").&gt;
+      ABC&lt;</font> <br>
+    &nbsp;&nbsp;<font color="#000000">Odd but it is correct. Same as
+      with stripC(x8,”“,” ”) which explains to result. The notation “” </font>
+    <br>
+    &nbsp;&nbsp;<font color="#000000">specifies that no units are
+      removed.</font> <br>
+    [7] Ada.Text_IO.Put_Line ( "stripC(v10,""12"",""098"").&gt; &amp;
+    stripC(v10,"12","098") &amp; "&lt;"); <br>
+    &nbsp;&nbsp;result: <font color="#ff8000">stripC(v10,"12","098").&gt;34567&lt;</font>
+    <br>
+    &nbsp;&nbsp;Note that the right-parameter has the storage units in
+    another order than in the v10-string. <br>
+    &nbsp;&nbsp;stripC is closely related to ‘trim’, but this is the
+    solution for package Y2018-Text-Core-Str. <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

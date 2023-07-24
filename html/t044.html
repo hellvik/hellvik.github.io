@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExOmikron</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t045.html">Prev</a> <a href="t041.html">Next</a> <a href="t043.html">Up</a> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExOmikron<br>
+    </h1>
+    <p>Example of usage of UrvPack.add, UrvPack.sub, UrvPack.slice and
+      UrvPack.compress</p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Ada.Containers.Ordered_Sets;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets; <br>
+    <font color="#999900">006|</font> with Y2018.Text.Util; use
+    Y2018.Text.Util;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Util.UrvPack;<br>
+    <font color="#999900">008|</font> with Y2018.Text.TestQ; use
+    Y2018.Text.TestQ;<br>
+    <font color="#999900">009|</font> with
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">010|</font> with Y2018.Text.Util.UrvPack;<br>
+    <font color="#999900">011|</font> --with DSECT;<br>
+    <font color="#999900">012|</font> procedure ExOmikron is<br>
+    <font color="#999900">013|</font>
+    __alfaSet:RangeVectorPack.Set_TY.Set:=UrvPack.make_Set("A"c);<br>
+    <font color="#999900">014|</font>
+    __betaSet:RangeVectorPack.Set_TY.Set:=UrvPack.make_Set("A"c);<br>
+    <font color="#999900">015|</font>
+    __gammaSet:RangeVectorPack.Set_TY.Set:=UrvPack.make_Set("0123456789"c);<br>
+    <font color="#999900">016|</font> __v:RangeVectorPack.Velem;<br>
+    <font color="#999900">017|</font> begin<br>
+    <font color="#999900">018|</font> __<font color="#006600">UrvPack.list_Set</font>(alfaSet,"<font
+      color="#cc0000">--Alfa:Initial--</font>"c);<br>
+    <font color="#999900">019|</font> __v.f:=Codepoint'Pos('1'c);
+    v.l:=Codepoint'Pos('3'c);<br>
+    <font color="#999900">020|</font> __alfaSet:=UrvPack.add(alfaSet,v);<br>
+    <font color="#999900">021|</font> __v.f:=Codepoint'Pos('5'c);
+    v.l:=Codepoint'Pos('7'c);<br>
+    <font color="#999900">022|</font> __alfaSet:=UrvPack.add(alfaSet,v);<br>
+    <font color="#999900">023|</font> __<font color="#006600">UrvPack.list_Set</font>(alfaSet,"--Alfa:One--"c);<br>
+    <font color="#999900">024|</font>
+    __alfaSet:=UrvPack.sub(alfaSet,betaSet);<br>
+    <font color="#999900">025|</font> __<font color="#006600">UrvPack.list_Set</font>(alfaSet,"--Alfa:Two--"c);<br>
+    <font color="#999900">026|</font> __<font color="#006600">UrvPack.list_Set</font>(gammaSet,"<font
+      color="#3366ff">--Gamma:Initial--</font>"c);<br>
+    <font color="#999900">027|</font> __<font color="#006600">UrvPack.list_Set</font>(UrvPack.slice(gammaSet,alfaSet),"--Gamma:Slice
+
+
+
+
+
+
+
+    alfa--"c);<br>
+    <font color="#999900">028|</font> __<font color="#006600">UrvPack.list_Set</font>(UrvPack.sub(gammaSet,alfaSet),"--Gamma:Sub
+
+
+
+
+
+
+
+    alfa--"c);<br>
+    <font color="#999900">029|</font> __<font color="#006600">UrvPack.list_Set</font>(UrvPack.sub(gammaSet,betaSet),"--Gamma:Sub
+
+
+
+
+
+
+
+    beta--"c);<br>
+    <font color="#999900">030|</font> __v.f:=Codepoint'Pos('C'c);
+    v.l:=Codepoint'Pos('D'c);<br>
+    <font color="#999900">031|</font> __betaSet:=UrvPack.add(betaSet,v);<br>
+    <font color="#999900">032|</font> __v.f:=Codepoint'Pos('B'c);
+    v.l:=Codepoint'Pos('B'c);<br>
+    <font color="#999900">033|</font> __betaSet:=UrvPack.add(betaSet,v);<br>
+    <font color="#999900">034|</font> __v.f:=Codepoint'Pos('E'c);
+    v.l:=Codepoint'Pos('F'c);<br>
+    <font color="#999900">035|</font> __betaSet:=UrvPack.add(betaSet,v);<br>
+    <font color="#999900">036|</font> __<font color="#006600">UrvPack.list_Set</font>(betaSet,"--<font
+      color="#993399">Beta:Extended</font>--"c);<br>
+    <font color="#999900">037|</font> __<font color="#006600">UrvPack.list_Set</font>(UrvPack.compress(betaSet),"--Beta:Compress--"c);<br>
+    <font color="#999900">038|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExOmikron ***");<br>
+    <font color="#999900">039|</font> end ExOmikron;<br>
+    <hr width="100%" size="2">
+    <h2>Result</h2>
+    Running <u>export LD_LIBRARY_PATH=lib;bin/exomikron</u> in TEST
+    directory.<br>
+    Published on STDOUT:<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> --<font
+      color="#cc0000">Alfa:Initial</font>--<br>
+    <font color="#999900">002|</font> &gt;______41 .. ______41<br>
+    <font color="#999900">003|</font> --Alfa:One--<br>
+    <font color="#999900">004|</font> &gt;______31 .. ______33<br>
+    <font color="#999900">005|</font> &gt;______35 .. ______37<br>
+    <font color="#999900">006|</font> &gt;______41 .. ______41<br>
+    <font color="#999900">007|</font> --Alfa:Two--<br>
+    <font color="#999900">008|</font> &gt;______31 .. ______33<br>
+    <font color="#999900">009|</font> &gt;______35 .. ______37<br>
+    <font color="#999900">010|</font> --<font color="#3366ff">Gamma:Initial</font>--<br>
+    <font color="#999900">011|</font> &gt;______30 .. ______39<br>
+    <font color="#999900">012|</font> --Gamma:Slice alfa--<br>
+    <font color="#999900">013|</font> &gt;______31 .. ______33<br>
+    <font color="#999900">014|</font> &gt;______35 .. ______37<br>
+    <font color="#999900">015|</font> --Gamma:Sub alfa--<br>
+    <font color="#999900">016|</font> &gt;______30 .. ______30<br>
+    <font color="#999900">017|</font> &gt;______34 .. ______34<br>
+    <font color="#999900">018|</font> &gt;______38 .. ______39<br>
+    <font color="#999900">019|</font> --Gamma:Sub beta--<br>
+    <font color="#999900">020|</font> &gt;______30 .. ______39<br>
+    <font color="#999900">021|</font> --<font color="#993399">Beta:Extended</font>--<br>
+    <font color="#999900">022|</font> &gt;______41 .. ______41<br>
+    <font color="#999900">023|</font> &gt;______42 .. ______42<br>
+    <font color="#999900">024|</font> &gt;______43 .. ______44<br>
+    <font color="#999900">025|</font> &gt;______45 .. ______46<br>
+    <font color="#999900">026|</font> --Beta:Compress--<br>
+    <font color="#999900">027|</font> &gt;______41 .. ______46<br>
+    <font color="#999900">028|</font> *** End of ExOmikron ***<br>
+    <hr width="100%" size="2"><i>Note: the line</i><i><br>
+    </i><i><font color="#999900">029|</font></i><i> __</i><i><font
+        color="#006600">UrvPack.list_Set</font></i><i>(UrvPack.sub(gammaSet,betaSet),"--Gamma:Sub
+
+
+
+
+
+
+
+      beta--"c);</i><i><br>
+    </i><i>is a 'nop', because betaSet values do not appear in gammaSet</i>.
+    <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

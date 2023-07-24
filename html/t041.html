@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExPi</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t044.html">Prev</a> <a href="t040.html">Next</a> <font color="#999999">Up</font> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExPi<br>
+    </h1>
+    Create a mappool from Unicode Blocks.txt.
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Ada.Command_Line;<br>
+    <font color="#999900">003|</font> with Ada.Containers.Ordered_Sets;<br>
+    <font color="#999900">004|</font> with
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">008|</font> with Y2018.Text.Util.UrvPack;<br>
+    <font color="#999900">009|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets;<br>
+    <font color="#999900">010|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">011|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">012|</font> procedure ExPi is<br>
+    <font color="#999900">013|</font>
+    __mp:Y2018.Text.Util.UrvPack.MapPool;<br>
+    <font color="#999900">014|</font>
+    __uval:Y2018.Text.Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">015|</font>
+    __blocksFile:String:="UCDlink/Blocks.txt"; <font color="#990000">--
+      Change path to your UCD-directory</font><br>
+    <font color="#999900">016|</font> __p:PatternPack.Pattern_AC:=new
+    PatternPack.Pattern;<br>
+    <font color="#999900">017|</font> __m:MatchPack.Match_TY;<br>
+    <font color="#999900">018|</font> __nextPos : Integer:=0;<br>
+    <font color="#999900">019|</font> __source_value:CFix:="_<font
+      color="#990000">Å</font> I have been found"c;<br>
+    <font color="#999900">020|</font> begin<br>
+    <font color="#999900">021|</font>
+    __Y2018.Text.Util.UrvPack.insert(mp,null_CVar &amp; "GC1"c);<br>
+    <font color="#999900">022|</font>
+    __uval:=Y2018.Text.Util.UrvPack.Block(blocksFile,"<font
+      color="#3333ff">^.*?Supplement"c</font>);<br>
+    <font color="#999900">023|</font>
+    __uval:=Y2018.Text.Util.UrvPack.Compress(uval);<br>
+    <font color="#999900">024|</font>
+    __Y2018.Text.Util.UrvPack.put_Set(mp,null_CVar &amp; "GC1"c,uval);<br>
+    <font color="#999900">025|</font>
+    __Y2018.Text.Util.UrvPack.list_Map(mp,topTitle=&gt;"-- Top of Map
+    --",BottomTitle=&gt;"-- Bottom of Map --");<br>
+    <font color="#999900">026|</font> <br>
+    <font color="#999900">027|</font>
+__PatternPack.compileM(p,"^.*?(\p{GC1}).*"c,Y2018.Text.Util.UrvPack.copy_Map(mp));<br>
+    <font color="#999900">028|</font> __if
+    patternPack.matches(p,1,nextPos,source_value,m) then<br>
+    <font color="#999900">029|</font> _____declare<br>
+    <font color="#999900">030|</font>
+    ________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">031|</font> _____begin<br>
+    <font color="#999900">032|</font> ________Ada.Text_IO.Put_Line
+    ("zero " &amp; subIA(source_value,r(0)));<br>
+    <font color="#999900">033|</font> ________Ada.Text_IO.Put_Line
+    ("one. " &amp; subIA(source_value,r(1)));<br>
+    <font color="#999900">034|</font> _____end;<br>
+    <font color="#999900">035|</font> __end if;<br>
+    <font color="#999900">036|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExPi ***");<br>
+    <font color="#999900">037|</font> end ExPi; <br>
+    <hr width="100%" size="2">
+    <h2> Result</h2>
+    Running <u>export LD_LIBRARY_PATH=lib;bin/expi</u> in TEST
+    directory.<br>
+    List of the created map and a string with value "_<font
+      color="#990000">Å</font> I have been found"c is searched by
+    pattern <b>^.*?(\p{GC1}).*</b> and the result on lines 005 .. 006.
+    <hr width="100%" size="2"> <font color="#999900">001|</font> -- Top
+    of Map --<br>
+    <font color="#999900">002|</font> __GC1 size= 24<br>
+    <font color="#999900">003|</font> __Number of urvSets 1<br>
+    <font color="#999900">004|</font> -- Bottom of Map --<br>
+    <font color="#999900">005|</font> zero _Å I have been found<br>
+    <font color="#999900">006|</font> one. Å<br>
+    <font color="#999900">007|</font> *** End of ExPi ***<br>
+    <hr width="100%" size="2"> and an output file q___.lst<br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

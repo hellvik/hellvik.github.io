@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExXsi</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t046.html">Prev</a> <a href="t044.html">Next</a> <a href="t043.html">Up</a> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExXsi<br>
+    </h1>
+    <p>UrvPack functions for MapPools<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets; <br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">008|</font> with
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">009|</font> with Y2018.Text.Util; use
+    Y2018.Text.Util;<br>
+    <font color="#999900">010|</font> with Y2018.Text.Util.UrvPack;<br>
+    <font color="#999900">011|</font> --with DSECT;<br>
+    <font color="#999900">012|</font> procedure ExXsi is<br>
+    <font color="#999900">013|</font>
+    __a2fSet:RangeVectorPack.Set_TY.Set:=UrvPack.make_Set("ABCDEF"c);<br>
+    <font color="#999900">014|</font>
+    __j2qSet:RangeVectorPack.Set_TY.Set:=UrvPack.make_Set("JKLMNOPQ"c);<br>
+    <font color="#999900">015|</font>
+    __digitSet:RangeVectorPack.Set_TY.Set:=UrvPack.make_Set("0123456789"c);<br>
+    <font color="#999900">016|</font> __mp:UrvPack.MapPool;<br>
+    <font color="#999900">017|</font> __p:PatternPack.Pattern_AC:=new
+    PatternPack.Pattern;<br>
+    <font color="#999900">018|</font> __m : MatchPack.Match_TY;<br>
+    <font color="#999900">019|</font> __line:CFix:="DEF 01 MNO 02 EFJ
+    03"c;<br>
+    <font color="#999900">020|</font> __startPos:Integer:=1;<br>
+    <font color="#999900">021|</font> __nextPos:Integer;<br>
+    <font color="#999900">022|</font> begin<br>
+    <font color="#999900">023|</font> __UrvPack.<font color="#cc0000">insert</font>(mp,"Alfa"c);<br>
+    <font color="#999900">024|</font> __Urvpack.<font color="#cc0000">put_Set</font>(mp,"Alfa"c,digitSet);<br>
+    <font color="#999900">025|</font>
+    __PatternPack.compileM(p,"^[\s]*(.*?)(\p{Alfa}+)"c,UrvPack.<font
+      color="#cc0000">copy_Map</font>(mp));<br>
+    <font color="#999900">026|</font> __while startPos &lt;= line'length
+    loop<br>
+    <font color="#999900">027|</font> _____if
+    PatternPack.matches(p,startPos,nextPos,line,m) then<br>
+    <font color="#999900">028|</font> ________declare<br>
+    <font color="#999900">029|</font>
+    ___________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">030|</font> ________begin<br>
+    <font color="#999900">031|</font> ___________Ada.Text_IO.Put_Line(<font
+      color="#006600"><b>"! "</b> &amp; subIA(line,r(2)) &amp; ":" &amp;
+      subIA(line,r(1))</font>);<br>
+    <font color="#999900">032|</font> ________end;<br>
+    <font color="#999900">033|</font> ________startPos:=nextPos;<br>
+    <font color="#999900">034|</font> _____else<br>
+    <font color="#999900">035|</font> ________exit;<br>
+    <font color="#999900">036|</font> _____end if;<br>
+    <font color="#999900">037|</font> __end loop;<br>
+    <font color="#999900">038|</font> __Urvpack.<font color="#cc0000">store</font>(mp,"exxsi.dat");<br>
+    <font color="#999900">039|</font> __--
+    ****************************************<br>
+    <font color="#999900">040|</font> __UrvPack.<font color="#cc0000">clear</font>(mp);<br>
+    <font color="#999900">041|</font> __UrvPack.<font color="#cc0000">insert</font>(mp,"Beta"c);<br>
+    <font color="#999900">042|</font> __Urvpack.<font color="#cc0000">put_Set</font>(mp,"Beta"c,a2fSet);<br>
+    <font color="#999900">043|</font> __Urvpack.<font color="#cc0000">put_Set</font>(mp,"Beta"c,j2qSet);<br>
+    <font color="#999900">044|</font>
+    __PatternPack.compileM(p,"^[\s]*(.*?)(\p{Beta}+)"c,UrvPack.<font
+      color="#cc0000">copy_Map</font>(mp));<br>
+    <font color="#999900">045|</font> __startPos:=1;<br>
+    <font color="#999900">046|</font> __while startPos &lt;= line'length
+    loop<br>
+    <font color="#999900">047|</font> _____if
+    PatternPack.matches(p,startPos,nextPos,line,m) then<br>
+    <font color="#999900">048|</font> ________declare<br>
+    <font color="#999900">049|</font>
+    ___________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">050|</font> ________begin<br>
+    <font color="#999900">051|</font> ___________Ada.Text_IO.Put_Line(<font
+      color="#006600"><b>"# "</b> &amp; subIA(line,r(2)) &amp; ":" &amp;
+      subIA(line,r(1))</font>);<br>
+    <font color="#999900">052|</font> ________end;<br>
+    <font color="#999900">053|</font> ________startPos:=nextPos;<br>
+    <font color="#999900">054|</font> _____else<br>
+    <font color="#999900">055|</font> ________exit;<br>
+    <font color="#999900">056|</font> _____end if;<br>
+    <font color="#999900">057|</font> __end loop;<br>
+    <font color="#999900">058|</font> __--
+    ****************************************<br>
+    <font color="#999900">059|</font> __UrvPack.<font color="#cc0000">load</font>(mp,"exxsi.dat",TRI_UNDEF);<br>
+    <font color="#999900">060|</font>
+    __PatternPack.compileM(p,"^(.*?)(\p{Beta}+[\s]*\p{Alfa})"c,UrvPack.<font
+      color="#cc0000">copy_Map</font>(mp));<br>
+    <font color="#999900">061|</font> __startPos:=1;<br>
+    <font color="#999900">062|</font> __while startPos &lt;= line'length
+    loop<br>
+    <font color="#999900">063|</font> _____if
+    PatternPack.matches(p,startPos,nextPos,line,m) then<br>
+    <font color="#999900">064|</font> ________declare<br>
+    <font color="#999900">065|</font>
+    ___________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">066|</font> ________begin<br>
+    <font color="#999900">067|</font> ___________Ada.Text_IO.Put_Line(<font
+      color="#006600"><b>"¤ "</b> &amp; subIA(line,r(2)) &amp; ":" &amp;
+      subIA(line,r(1))</font>);<br>
+    <font color="#999900">068|</font> ________end;<br>
+    <font color="#999900">069|</font> ________startPos:=nextPos;<br>
+    <font color="#999900">070|</font> _____else<br>
+    <font color="#999900">071|</font> ________exit;<br>
+    <font color="#999900">072|</font> _____end if;<br>
+    <font color="#999900">073|</font> __end loop;<br>
+    <font color="#999900">074|</font> __UrvPack.<font color="#cc0000">list_Map</font>(mp);<br>
+    <font color="#999900">075|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExXsi ***");<br>
+    <font color="#999900">076|</font> end ExXsi;<br>
+    <hr width="100%" size="2">
+    <h2> Result</h2>
+    Running <u>export LD_LIBRARY_PATH=lib;bin/exxsi</u> in TEST
+    directory.<br>
+    Three cases<br>
+    <ol>
+      <li>lines <font color="#999900">001</font>..<font color="#999900">003</font>
+        - (starting with '!')<br>
+      </li>
+      <li>lines <font color="#999900">004</font>..<font color="#999900">005</font>
+        - (starting with '#')<br>
+      </li>
+      <li>lines <font color="#999900">006</font>..<font color="#999900">007</font>
+        - (starting with '¤')<br>
+      </li>
+    </ol>
+    At end the list from UrvPack.list_Map of mp-mapPool, lines <font
+      color="#999900">008</font>..<font color="#999900">012</font> <br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> !
+    01:DEF <br>
+    <font color="#999900">002|</font> ! 02:MNO <br>
+    <font color="#999900">003|</font> ! 03:EFJ <br>
+    <font color="#999900">004|</font> # MNO:DEF 01 <br>
+    <font color="#999900">005|</font> # J:02 EF<br>
+    <font color="#999900">006|</font> ¤ MNO 0:DEF 01 <br>
+    <font color="#999900">007|</font> ¤ J 0:2 EF<br>
+    <font color="#999900">008|</font> -- Top --<br>
+    <font color="#999900">009|</font> __Alfa size= 1<br>
+    <font color="#999900">010|</font> __Beta size= 1<br>
+    <font color="#999900">011|</font> __Number of urvSets 2<br>
+    <font color="#999900">012|</font> -- Bottom --<br>
+    <font color="#999900">013|</font> *** End of ExXsi ***<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

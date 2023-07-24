@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CreateURV</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t047.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>CreateURV</h1>
+    <p>Create DAT-files for storing
+      RangeVectorPack.UserRangeVectorMap_TY.Map's.<br>
+    </p>
+    <p>Syntax: <font color="#999900">./createurv &lt;option&gt;
+        &lt;input-file&gt; {&lt;default_output_DATfile&gt;}</font><br>
+    </p>
+    <p>Two options<br>
+    </p>
+    <ul>
+      <li>-v - verbose output<br>
+      </li>
+      <li>-accum - extend or accumulate results<br>
+      </li>
+    </ul>
+    <p>Where &lt;input-file&gt; contains commands and comments. If
+      defined alfamap is at end stored<br>
+      in &lt;default_output_DATfile&gt;, but only if <font
+        color="#cc0000">alfamap</font> is not empty.<br>
+      Option '-accum' donnot erase maps after store command. Option '-v'
+      list DAT-file names<br>
+      at store command.<br>
+      The term <font color="#cc0000">alfamap</font> refers to a default
+      map created at the beginning of the run.<br>
+      Input-file contains commands for the process. A command is one of<br>
+    </p>
+    <ul>
+      <li>ADD &lt;map&gt; <font color="#999900">-- add map to alfamap</font><br>
+      </li>
+      <li>CLEAR <font color="#999900">-- remove all maps except alfamap</font><br>
+      </li>
+      <li>DEL &lt;map&gt; <font color="#999900">-- remove map</font><br>
+      </li>
+      <li>LOAD &lt;DAT-file name&gt; <font color="#999900">-- load all
+          maps from file </font><br>
+      </li>
+      <li>MAP &lt;map&gt; {&lt;element(f)&gt; .. &lt;element(l)&gt;}* <font
+          color="#999900">-- set a new active map (alfamap)</font><br>
+      </li>
+      <li>SLICE &lt;map&gt; <font color="#999900">-- slice alfamap with
+          named map</font><br>
+      </li>
+      <li>STORE &lt;Dat-file name&gt; <font color="#999900">-- store
+          existing maps and alfamap</font><br>
+      </li>
+      <li>SUB &lt;map&gt; <font color="#999900">-- sub alfamap with
+          named map</font><br>
+      </li>
+    </ul>
+    where &lt;element&gt; is '<font color="#999900">&lt;character&gt;</font>'
+    or 16#<font color="#999900">&lt;hexavalue&gt;</font>#<br>
+    and a comment of ADA type can be added after a command.<br>
+    Example a4.conf input-file:
+    <hr width="100%" size="2">-- Start of Example input-file --<br>
+    Map Gorgo<br>
+    'M' .. 'P'<br>
+    Load /home/alfa/u/project/GnatC_te/Tool/a2.dat<br>
+    Add Xeno<br>
+    Del Xeno<br>
+    Store /home/alfa/u/project/GnatC_te/Tool/a4.dat<br>
+    -- End of Example input-file --<br>
+    <hr width="100%" size="2">Running createurv procedure : <font
+      color="#999900">./run.pl ./createurv a4.conf a.dat</font><br>
+    <i>In this case the result is stored at end in </i><i><b>a4.dat</b></i><i>,
+      which results in that </i><i><b>a.dat</b></i><i> is not used. If
+      the store-statement is not at last then </i><i><b>a.dat</b></i><i>
+      file will be used</i>. <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

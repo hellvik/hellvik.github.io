@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExFi.adb</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t038.html">Prev</a> <a href="t026.html">Next</a> <font color="#999999">Up</font> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExFi.adb</h1>
+    Example getting patterns from input file (default file ExFi.prop)
+    and publishing the syntax tree to standard output
+    <hr width="100%" size="2"><font color="#999900">001|</font> with
+    Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Ada.Command_Line;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">005|</font> with Ada.Command_Line;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets; <br>
+    <font color="#999900">008|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">009|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">010|</font> --with DSECT;<br>
+    <font color="#999900">011|</font> procedure ExFi is<br>
+    <font color="#999900">012|</font> __arg:CVar; <br>
+    <font color="#999900">013|</font> __inFile : File_Type;<br>
+    <font color="#999900">014|</font> __patternvalue : CVar;<br>
+    <font color="#999900">015|</font> __sourcevalue : CVar;<br>
+    <font color="#999900">016|</font> __p:PatternPack.Pattern_AC:=new
+    PatternPack.Pattern;<br>
+    <font color="#999900">017|</font> __m : MatchPack.Match_TY;<br>
+    <font color="#999900">018|</font> __cp:PatternPack.Pattern_AC:=new
+    PatternPack.Pattern;<br>
+    <font color="#999900">019|</font> __nextPos : Integer:=0;<br>
+    <font color="#999900">020|</font> __Qmap:CList.map; -- used by
+    MatchPack.updClist<br>
+    <font color="#999900">021|</font> __this:Clist.Cursor; -- used by
+    MatchPack.updClist<br>
+    <font color="#999900">022|</font> __val:Celem; -- used by
+    MatchPack.updClist<br>
+    <font color="#999900">023|</font> begin<br>
+    <font color="#999900">024|</font> __if
+    Ada.Command_Line.Argument_Count = 0 then<br>
+    <font color="#999900">025|</font> _____arg:=Null_CVar &amp;
+    "ExFi.prop";<br>
+    <font color="#999900">026|</font> __else<br>
+    <font color="#999900">027|</font> _____arg:=Null_CVar &amp;
+    Ada.Command_Line.Argument(1);<br>
+    <font color="#999900">028|</font> __end if;<br>
+    <font color="#999900">029|</font> __declare<br>
+    <font color="#999900">030|</font> _____readFrom : String := "" &amp;
+    arg;--"ExFi.prop";<br>
+    <font color="#999900">031|</font> __begin<br>
+    <font color="#999900">032|</font> _____Open (File =&gt; inFile,Mode
+    =&gt; In_File,Name =&gt; readFrom);<br>
+    <font color="#999900">033|</font> __exception<br>
+    <font color="#999900">034|</font> _____when others =&gt;<br>
+    <font color="#999900">035|</font> ________Put_Line
+    (Standard_Error,"Can not open file '" &amp; readFrom &amp; "'.");<br>
+    <font color="#999900">036|</font>
+    ________Ada.Command_Line.Set_Exit_Status(Ada.Command_Line.Failure);<br>
+    <font color="#999900">037|</font> ________return;<br>
+    <font color="#999900">038|</font> __end;<br>
+    <font color="#999900">039|</font>
+    __PatternPack.compileU(cp,"^[\s]*(pattern)[\s]*=(.*)"c);<br>
+    <font color="#999900">040|</font> __while not End_Of_File(inFile)
+    loop<br>
+    <font color="#999900">041|</font> _____declare<br>
+    <font color="#999900">042|</font> ________line:CFix:= ""c &amp;
+    Get_Line(inFile);<br>
+    <font color="#999900">043|</font> _____begin<br>
+    <font color="#999900">044|</font> ________if
+    PatternPack.matches(cp,1,nextPos,line,m) then<br>
+    <font color="#999900">045|</font> ___________declare<br>
+    <font color="#999900">046|</font>
+    ______________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">047|</font>
+    ______________com:CFix:=To_UC(subIA(line,r(1)));<br>
+    <font color="#999900">048|</font> ___________begin<br>
+    <font color="#999900">049|</font> ______________if com = "PATTERN"c
+    then<br>
+    <font color="#999900">050|</font> _________________Put_Line
+    (Standard_Output,"LINE " &amp; line);<br>
+    <font color="#999900">051|</font>
+    _________________patternvalue:=Null_CVar &amp;
+    stripC(subIA(line,r(2)));<br>
+    <font color="#999900">052|</font>
+    _________________PatternPack.compileM(p,To_CFix(patternvalue));<br>
+    <font color="#999900">053|</font>
+    _________________Qmap:=PatternPack.nodeClist(p);<br>
+    <font color="#999900">054|</font>
+    _________________this:=CList.First(Qmap);<br>
+    <font color="#999900">055|</font> _________________while
+    Clist.Has_Element(this) loop<br>
+    <font color="#999900">056|</font>
+    ____________________val:=CList.Element(this);<br>
+    <font color="#999900">057|</font> ____________________Put_Line
+    (Standard_Output,CVarPack.To_String(val.s));<br>
+    <font color="#999900">058|</font>
+    ____________________Clist.Next(this);<br>
+    <font color="#999900">059|</font> _________________end loop;<br>
+    <font color="#999900">060|</font> ______________end if;<br>
+    <font color="#999900">061|</font> ___________end;<br>
+    <font color="#999900">062|</font> ________elsif line'Length(1) &gt;
+    1 and then line(1) = '&gt;'c then<br>
+    <font color="#999900">063|</font> ___________Put_Line
+    (Standard_Output,"" &amp; subC(line,2));<br>
+    <font color="#999900">064|</font> ________end if;<br>
+    <font color="#999900">065|</font> _____end;<br>
+    <font color="#999900">066|</font> __end loop; -- while not
+    End_Of_File(inFile)<br>
+    <font color="#999900">067|</font> __close(inFile);<br>
+    <font color="#999900">068|</font> end ExFi;
+    <hr width="100%" size="2">
+    <p>Input, ExFi.prop-file</p>
+    <hr width="100%" size="2">
+    <p>&gt; -- ExFi 1&nbsp; --<br>
+      pattern=^.*?(ABC)<br>
+      pattern=.*[\d]A<br>
+      pattern=N[\w]B<br>
+      &gt; == BOTTOM ==<br>
+    </p>
+    <hr width="100%" size="2">
+    <h2>Result</h2>
+    <p>Running <u>export </u><u>LD_LIBRARY_PATH=lib;bin/exfi</u><b> </b>in
+      TEST directory.</p>
+    <h2> </h2>
+    <hr width="100%" size="2">&nbsp;-- ExFi 1&nbsp; --<br>
+    LINE pattern=^.*?(ABC)<br>
+    ==&nbsp; 0 REQ_BEGIN[1] right[2] circumflex=TRUE dollar=FALSE
+    left&lt;NULL&gt;<br>
+    ==&nbsp; 0 REQ_PALCAP[2] right&lt;NULL&gt; down[3] min=1 max=1
+    greedy=TRUE up&lt;NULL&gt; left[1]<br>
+    ==&nbsp; 1 REQ_UPDOWN[3] right[4] down&lt;NULL&gt; up[2]
+    left&lt;NULL&gt;<br>
+    ==&nbsp; 1 REQ_PERIOD[4] right[5] min=0 max=1 greedy=FALSE left[3]<br>
+    ==&nbsp; 1 REQ_PALCAP[5] right&lt;NULL&gt; down[6] min=1 max=1
+    greedy=TRUE up&lt;NULL&gt; left[4]<br>
+    ==&nbsp; 2 REQ_UPDOWN[6] right[7] down&lt;NULL&gt; up[5]
+    left&lt;NULL&gt;<br>
+    ==&nbsp; 2 REQ_CHAR[7] right[8] value=A min=1 max=1 greedy=TRUE
+    negative=FALSE left[6]<br>
+    ==&nbsp; 2 REQ_CHAR[8] right[9] value=B min=1 max=1 greedy=TRUE
+    negative=FALSE left[7]<br>
+    ==&nbsp; 2 REQ_CHAR[9] right&lt;NULL&gt; value=C min=1 max=1
+    greedy=TRUE negative=FALSE left[8]<br>
+    LINE pattern=.*[\d]A<br>
+    ==&nbsp; 0 REQ_BEGIN[1] right[2] circumflex=FALSE dollar=FALSE
+    left&lt;NULL&gt;<br>
+    ==&nbsp; 0 REQ_PERIOD[2] right[3] min=0 max=1 greedy=FALSE left[1]<br>
+    ==&nbsp; 0 REQ_PALCAP[3] right&lt;NULL&gt; down[4] min=1 max=1
+    greedy=TRUE up&lt;NULL&gt; left[2]<br>
+    ==&nbsp; 1 REQ_UPDOWN[4] right[5] down&lt;NULL&gt; up[3]
+    left&lt;NULL&gt;<br>
+    ==&nbsp; 1 REQ_PERIOD[5] right[11] min=0 max=1 greedy=TRUE left[4]<br>
+    ==&nbsp; 1 REQ_CHAR[10] right&lt;NULL&gt; value=A min=1 max=1
+    greedy=TRUE negative=FALSE left[11]<br>
+    ==&nbsp; 1 REQ_CLASS[11] right[10] min=1 max=1 greedy=TRUE left[5]<br>
+    REQ_CLASS[ 11].class_pos<br>
+    ______30 .. ______39<br>
+    REQ_CLASS[ 11].class_neg<br>
+    LINE pattern=N[\w]B<br>
+    ==&nbsp; 0 REQ_BEGIN[1] right[2] circumflex=FALSE dollar=FALSE
+    left&lt;NULL&gt;<br>
+    ==&nbsp; 0 REQ_PERIOD[2] right[3] min=0 max=1 greedy=FALSE left[1]<br>
+    ==&nbsp; 0 REQ_PALCAP[3] right&lt;NULL&gt; down[4] min=1 max=1
+    greedy=TRUE up&lt;NULL&gt; left[2]<br>
+    ==&nbsp; 1 REQ_UPDOWN[4] right[5] down&lt;NULL&gt; up[3]
+    left&lt;NULL&gt;<br>
+    ==&nbsp; 1 REQ_CHAR[5] right[11] value=N min=1 max=1 greedy=TRUE
+    negative=FALSE left[4]<br>
+    ==&nbsp; 1 REQ_CHAR[10] right&lt;NULL&gt; value=B min=1 max=1
+    greedy=TRUE negative=FALSE left[11]<br>
+    ==&nbsp; 1 REQ_CLASS[11] right[10] min=1 max=1 greedy=TRUE left[5]<br>
+    REQ_CLASS[ 11].class_pos<br>
+    ______30 .. ______39<br>
+    ______41 .. ______5A<br>
+    ______5F .. ______5F<br>
+    ______61 .. ______7A<br>
+    ______AA .. ______AA<br>
+    ______B2 .. ______B3<br>
+    ______B5 .. ______B5<br>
+    ______B9 .. ______BA<br>
+    ______BC .. ______BE<br>
+    ______C0 .. ______D6<br>
+    REQ_CLASS[ 11].class_neg<br>
+    &nbsp;== BOTTOM ==<br>
+    <hr width="100%" size="2">
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

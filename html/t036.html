@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CreateUnicodeBlock</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t047.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>CreateUnicodeBlock</h1>
+    <p>Create a DAT-file based on which block a codepoint is a member
+      of.</p>
+    <p>Syntax: ./createunicodeblock {&lt;options&gt;} &lt;conf-file&gt;<br>
+      <br>
+      Example of the conf-file, <font color="#6600cc">latin.conf</font>:</p>
+    <hr width="100%" size="2">
+    <p><font color="#999900">blocks_file=/home/alfa/Doc/UCD/Blocks.txt<br>
+        dat_file=/home/alfa/u/project/GnatC_te/Tool/latin.dat<br>
+        urvMap=LATINBLK<br>
+        urvSet=Basic Latin.*<br>
+        urvSet=Latin.*</font><br>
+    </p>
+    <hr width="100%" size="2">of a call : ./createunicodeblock -v <font
+      color="#6600cc">latin.conf</font><br>
+    vhere parameter '-v' specifies verbose output.<br>
+    <ul>
+      <li> blocks_file -- where we find UCD (Unicode data) file
+        Blocks.txt</li>
+      <li> dat_file -- where we store the result</li>
+      <li> urvMap -- name of the only created Map</li>
+      <li> urvSet -- pattern for search of block name </li>
+    </ul>
+    <p>"<font color="#999900">/home/alfa/Doc/UCD/Blocks.txt</font>"
+      refers to the directory Unicode Zip file is unzipped in, in our
+      case it is in directory /home/alfa/Doc/UCD.<br>
+      "<font color="#999900">/home/alfa/u/project/GnatC_te/Tool/latin.dat</font>"
+      is the path where to store the file <u>latin.dat</u>.<br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

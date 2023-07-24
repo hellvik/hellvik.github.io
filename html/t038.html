@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExYpsilon</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t029.html">Prev</a> <a href="t027.html">Next</a> <a href="t049.html">Up</a> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExYpsilon<br>
+    </h1>
+    <p>Example of splitting a row with text<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets; <br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">008|</font> --with DSECT;<br>
+    <font color="#999900">009|</font> procedure ExYpsilon is<br>
+    <font color="#999900">010|</font>
+    __p:PatternPack.Pattern_AC:=PatternPack.compileM("^(.*?),[\\s]*"c);<br>
+    <font color="#999900">011|</font> __m : MatchPack.Match_TY;<br>
+    <font color="#999900">012|</font> __line:CFix:="Huey, Dewey, Louie,
+    Duck"c;<br>
+    <font color="#999900">013|</font> __startPos:Integer:=1;<br>
+    <font color="#999900">014|</font> __nextPos:Integer;<br>
+    <font color="#999900">015|</font> begin<br>
+    <font color="#999900">016|</font> __while startPos &lt;= line'length
+    loop<br>
+    <font color="#999900">017|</font> _____if
+    PatternPack.matches(p,startPos,nextPos,line,m) then<br>
+    <font color="#999900">018|</font> ________declare<br>
+    <font color="#999900">019|</font>
+    ___________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">020|</font> ________begin<br>
+    <font color="#999900">021|</font>
+    ___________Ada.Text_IO.Put_Line("&gt; " &amp; subIA(line,r(1)));<br>
+    <font color="#999900">022|</font> ________end;<br>
+    <font color="#999900">023|</font> ________startPos:=nextPos;<br>
+    <font color="#999900">024|</font> _____else<br>
+    <font color="#999900">025|</font> ________Ada.Text_IO.Put_Line("&gt;
+    " &amp; subC(line,startPos));<br>
+    <font color="#999900">026|</font> ________exit;<br>
+    <font color="#999900">027|</font> _____end if;<br>
+    <font color="#999900">028|</font> __end loop;<br>
+    <font color="#999900">029|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExYpsilon ***");<br>
+    <font color="#999900">030|</font> end ExYpsilon;<br>
+    <hr width="100%" size="2"><br>
+    Note line <font color="#999900">010</font>, pattern 'p' is
+    initiated with a compiled result of the pattern.
+    <h2>Result</h2>
+    <p>Running <u>export </u><u>LD_LIBRARY_PATH=lib;bin/exypsilon</u><b>
+      </b>in TEST directory.</p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> &gt;
+    Huey<br>
+    <font color="#999900">002|</font> &gt; Dewey<br>
+    <font color="#999900">003|</font> &gt; Louie<br>
+    <font color="#999900">004|</font> &gt; Duck<br>
+    <font color="#999900">005|</font> *** End of ExYpsilon ***<br>
+    <hr width="100%" size="2"> <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

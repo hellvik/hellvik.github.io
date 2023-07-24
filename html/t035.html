@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Classlist</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t047.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Classlist</h1>
+    <p>List the content of one or more DAT-files. Call of the procedure
+      is <u><b>./classlist &lt;DAT-file&gt;</b></u> . if no DAT-file is
+      given the procedure list information about the call to the
+      console.</p>
+    <p>In the procedure the 'kernel' of the process is following code</p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font>
+    Y2018.Text.Util.UrvPack.load(<font color="#663366">mp</font>,""
+    &amp; <font color="#cc0000">datFileName</font>);<br>
+    <font color="#999900">002|</font> Ada.Text_IO.Put_Line ("" &amp;
+    "\t=== "c &amp; <font color="#cc0000">datFileName</font> &amp; "
+    ==="c);<br>
+    <font color="#999900">003|</font>
+    lis:=Y2018.Text.Util.UrvPack.map_Names(<font color="#663366">mp</font>);<br>
+    <font color="#999900">004|</font>
+    this:=Y2018.Text.Util.UrvPack.MapName.First(lis);<br>
+    <font color="#999900">005|</font> while
+    Y2018.Text.Util.UrvPack.MapName.Has_Element(this) loop<br>
+    <font color="#999900">006|</font> __urvMap :=
+    Y2018.Text.Util.UrvPack.MapName.Element(this);<br>
+    <font color="#999900">007|</font> __<font color="#3366ff">urvSet</font>:=Y2018.Text.Util.UrvPack.get_Set(<font
+      color="#663366">mp</font>,urvMap);<br>
+    <font color="#999900">008|</font>
+    __Y2018.Text.Util.UrvPack.list_Set(<font color="#3366ff">urvSet</font>,"\t---
+    "c &amp; urvMap &amp; " ---"c);<br>
+    <font color="#999900">009|</font>
+    __Y2018.Text.Util.UrvPack.MapName.Next(this);<br>
+    <font color="#999900">010|</font> end loop;<br>
+    <hr width="100%" size="2">
+    <p>Note lines:<br>
+    </p>
+    <ul>
+      <li>line <font color="#999900">001</font> - load the mappool 'mp'
+        (<a href="t043.html">MapPool utilities</a>)<br>
+      </li>
+      <li>line <font color="#999900">003</font> - retreive set names to
+        Set_TY.Set (Ordered set)</li>
+      <li>line <font color="#999900">005</font> - loop through the set</li>
+      <li>line <font color="#999900">007</font> - get the named set</li>
+      <li>line <font color="#999900">008</font> - list the set to
+        STDOUT<br>
+      </li>
+    </ul>
+    <p>Classlist can be used for listing the content of the DAT-file but
+      also for checking that this is a legal DAT-file.<br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

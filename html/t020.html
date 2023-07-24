@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Text in Y2018.Text.Core</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <a href="t004.html">Next</a> <a href="t014.html">Up</a> <a href="y2018_text_core.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Core</h1>
+    Tasks for merging text handling with these two formats,
+    8-bit/Character and 21-bit/Codepoint &nbsp; <br>
+    <ul>
+      <li>letter case support, convertion to lower, upper or title case
+        <br>
+      </li>
+      <ul>
+        <li><a href="t001.html">operations for character case</a><br>
+        </li>
+      </ul>
+      <li>&amp;-operator, uses packages core.str, core.varpack and basic
+        Ada string suppport<br>
+      </li>
+      <ul>
+        <li><a href="t002.html">overloading &amp; operator</a><br>
+        </li>
+      </ul>
+      <li>handling of hexadecimal, convertion to and from hexadecimal to
+        Integer and examples of covertion<br>
+      </li>
+      <ul>
+        <li><a href="t005.html">hexadecimal support</a><br>
+        </li>
+      </ul>
+      <li>relation operator i.e. =, &lt;, &gt;, &lt;=, &gt;= . A
+        combination of core.str, core.varpack and native Ada <br>
+      </li>
+      <ul>
+        <li><a href="t006.html">relational operators</a><br>
+        </li>
+      </ul>
+      <li>functions<br>
+      </li>
+      <ul>
+        <li><a href="t007.html">subC</a> - get part of the CFix, CVar or
+          String. A part not a slice, the first element has index value
+          1, except for a zero length part. <br>
+        </li>
+        <li><a href="t008.html">rightC</a> - get part of the CFix, CVar
+          or String and shift the result to right. </li>
+        <li><a href="t009.html">leftC</a> - get part of the CFix, CVar
+          or String and shift the result to left. </li>
+        <li><a href="t010.html">centerC</a> get part of the CFix, CVar
+          or String and center the result.</li>
+        <li><a href="t013.html">stripC</a> - strip or trim the result<br>
+        </li>
+        <li><a href="t011.html">reverseC</a> - reverse the order of
+          codepoint entities in the result<br>
+        </li>
+      </ul>
+      <li><a href="t012.html">multirow handling through a CList map</a>
+        - handling of multiple rows in a Ada.Containers.Ordered_Maps </li>
+    </ul>
+    Outside of these we find function <a href="t021.html"><b>Get_GC</b></a>
+    for retrieving General Class for a specific codepoint, and the <a
+      href="y2018_text_core_utf.html">Core.UTF functions</a> for
+    conversions between UTF-8 (bit-8) and Codepoint (bit-21).<br>
+    &nbsp;<br>
+    ADA has Character constants (8-bit) but lacks constants for 21-bit.
+    If we enlarge ADA with 21-bit constant codepoint encoding by writing
+    <font color="#999900">"Ada"c</font> for a CFix constant and <font
+      color="#999900">'A'c</font> for a Codepoint constant it will be
+    much easier to program allthough we have to preprocress the code
+    before we compile it with <u>gnatmake</u>. With the preprocessor we
+    can also get notation for <font color="#999900">\b (BS)</font>, <font
+      color="#999900">\f (FF)</font>, <font color="#999900">\n (LF)</font>,
+    <font color="#999900">\d (CR)</font> and <font color="#999900">\t
+      (HT or TAB)</font> and hexadecimal values in CFix- ('Codepoint'-)
+    strings by writing \xHH, \uHHHH or \vHHHHHH where 'H' stands for a
+    hexadecimal digit (0123456789ABCDEF). But we have to escape
+    backslash (<font color="#999900">\</font>) with an extra backslash.
+    A feature found in many programming languages, C, Java,.. but not in
+    ADA 2012. <br>
+    <ul>
+      <li><a href="t023.html">ExOmega.adb</a> : to create program
+        without the preprocessor </li>
+      <li><a href="t024.html">ExPsi.adb</a> : to create program using
+        the preprocessor. More about preprocessor <a href="t032.html">CCompile</a>.
+      </li>
+    </ul>
+    ADA specification of package <a href="y2018_text_core.html">Y2018.Text.Core</a>
+    .<br>
+    <br>
+    Utility for scanning UTF-8 files to a readable form for an editor, <a
+      href="t028.html">Chesslist</a>, and the code <a href="t030.html">Chesslist.adb</a>.
+    <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

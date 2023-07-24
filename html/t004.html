@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Regular Expression implementation</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t020.html">Prev</a> <a href="t047.html">Next</a> <a href="t014.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Regular Expression implementation<br>
+    </h1>
+    <ul>
+      <li><a href="t019.html">The Matchpack</a></li>
+      <li><a href="t049.html">The Patternpack</a><br>
+      </li>
+      <li>Functions of package <a href="t018.html">JesTool</a></li>
+      <li>Node or type <a href="t017.html">RE_ELEM</a><br>
+      </li>
+    </ul>
+    <p>More specifics about the implementation, <a href="t053.html">grouping
+        and capturing</a>.<br>
+      The Regular expression implementation uses packages</p>
+    <blockquote>
+      <p>with Y2018.Text.Jets; <font color="#ff0000">use
+          Y2018.Text.Jets;<font color="#000000"> -- contain I_A and
+            I_A_Array</font></font><br>
+        with Y2018.Text.Jets.MatchPack;<br>
+        with Y2018.Text.Jets.PatternPack;</p>
+    </blockquote>
+    Variables which has to be defined<br>
+    <blockquote>
+      <p>p: PatternPack.Pattern_AC:=new PatternPack.Pattern<br>
+        startPos:Integer:=1<br>
+        nextPos: Integer<br>
+        m: MatchPack.Match_TY<br>
+      </p>
+    </blockquote>
+    The program pattern to use is<br>
+    <ol>
+      <li>To start the process we have to create the pattern by calling:
+        <font color="#999900">PatternPack.compileM(p,"^.*?(P[\w]*).*"c)</font>.</li>
+      <li>Match the source string to the pattern. If pattern is found
+        the function retrurns TRUE else FALSE: <font color="#999900">PatternPack.matches(p,startPos,nextPos,"Please
+
+          Y"c,m)</font>.</li>
+      <li><font color="#999900"><font color="#000000">If success then we
+            have to retreive the result to a I_A_Array by the call <font
+              color="#999900">r:I_A_ARRAY:=</font></font></font><font
+          color="#999900"><font color="#000000"><font color="#999900">MatchPack.getMatch(m)</font>.
+            I_A_ARRAY is a two dimensional array of Integers pairs (I_A
+            type). In a I_A variable first index is the start point
+            where we found the value we searched for and the second
+            index is the end point of the same searched</font></font></li>
+      <li><font color="#999900"><font color="#000000">In our case we get
+            two I_A values, one for the whole source string and one for
+            the value "Please", without the " Y" part. In I_A_Array
+            index 0 contain the whole string and index 1 the "Please".
+            But we got only index values not these strings</font></font></li>
+      <li><font color="#999900"><font color="#000000">To access strings
+            we use subIA-function. <font color="#999900">subIA(</font></font></font><font
+          color="#999900"><font color="#000000"><font color="#999900">"Please
+
+              Y"c,r(0))</font> return the string "Please Y"c, and </font></font><font
+          color="#999900"><font color="#000000"><font color="#999900"><font
+                color="#000000"><font color="#999900">subIA(</font></font></font><font
+              color="#999900"><font color="#000000"><font
+                  color="#999900">"Please Y"c,r(1))<font color="#000000">
+                    returns "Please"c</font></font></font></font> </font></font></li>
+    </ol>
+    Note this implementation works with codepoint arrays (CFix) not with
+    character arrays. This is the reason for the notation <u>"Please
+      Y"c</u> .<br>
+    Above the starting point for the search, startPos, is set to 1,
+    index for the start of the source string, in our case "Please Y"c.
+    Variable <u>nextPos</u> returns the index for the next search or
+    next matching operation (example <a href="t024.html">ExPsi.adb</a>).<br>
+    Regular expression uses meta character sequences \d, \D, \p, \P, \s,
+    \S, \w, \W for character classes, <a href="t022.html">Meta
+      character sequences</a>. A regular expression 'meta character
+    sequene' starts allways with a backslash ('\'). <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

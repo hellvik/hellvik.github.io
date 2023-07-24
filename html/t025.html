@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExPsi and ExPsi_PSECT</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t024.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>ExPsi and ExPsi_PSECT</h1>
+    <p>Code after precompilation:<br>
+    </p>
+    <hr width="100%" size="2"><font color="#999900">001|</font> with
+    Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core; <br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.UTF;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">008|</font> with Y2018.Text.TestQ; use
+    Y2018.Text.TestQ;<br>
+    <font color="#999900">009|</font> with GNAT.Source_Info;<br>
+    <font color="#999900">010|</font> <br>
+    <font color="#999900">011|</font> with ExPsi_PSECT;<br>
+    <font color="#999900">012|</font> procedure ExPsi is<br>
+    <font color="#999900">013|</font> __patternvalue :
+    CFix:=ExPsi_PSECT.DHHHHH3E9;<br>
+    <font color="#999900">014|</font> __sourcevalue :
+    CFix:=ExPsi_PSECT.DHHHHH3EA;<br>
+    <font color="#999900">015|</font> __m :
+    Y2018.Text.Jets.MatchPack.Match_TY;<br>
+    <font color="#999900">016|</font> __jAC: PatternPack.Pattern_AC;<br>
+    <font color="#999900">017|</font> __nextPos : Integer;<br>
+    <font color="#999900">018|</font> begin<br>
+    <font color="#999900">019|</font> __jAC:=new PatternPack.Pattern;<br>
+    <font color="#999900">020|</font>
+    __PatternPack.compileM(jAC,patternvalue);<br>
+    <font color="#999900">021|</font> __if
+    PatternPack.matches(jAC,1,nextPos,sourcevalue,m) then<br>
+    <font color="#999900">022|</font> _____declare<br>
+    <font color="#999900">023|</font>
+    ________r:Y2018.Text.Jets.I_A_ARRAY(0 .. MatchPack.size(m) - 1);<br>
+    <font color="#999900">024|</font> _____begin<br>
+    <font color="#999900">025|</font> ________MatchPack.getMatch(m,r);<br>
+    <font color="#999900">026|</font> ________for i in r'First(1) ..
+    r'Last(1) loop<br>
+    <font color="#999900">027|</font> ___________Ada.Text_IO.Put_Line
+    (Integer'image(i) &amp; "|" &amp; subIA(sourcevalue,r(i)));<br>
+    <font color="#999900">028|</font> ________end loop;<br>
+    <font color="#999900">029|</font> _____end;<br>
+    <font color="#999900">030|</font> __else<br>
+    <font color="#999900">031|</font> _____Ada.Text_IO.Put_Line
+    ("FAIL");<br>
+    <font color="#999900">032|</font> __end if;<br>
+    <font color="#999900">033|</font> end ExPsi;
+    <hr width="100%" size="2">
+    <p>and corresponding ExPsi_PSECT:<br>
+    </p>
+    <hr width="100%" size="2"><font color="#999900">001|</font> --
+    GENERATED CODE --<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> package ExPsi_PSECT is<br>
+    <font color="#999900">004|</font> DHHHHH3E9:constant
+CFix:=(CodePoint'Val(16#5E#),CodePoint'Val(16#2E#),CodePoint'Val(16#2A#),CodePoint'Val(16#3F#),<br>
+CodePoint'Val(16#28#),CodePoint'Val(16#50#),CodePoint'Val(16#5B#),CodePoint'Val(16#5C#),<br>
+CodePoint'Val(16#77#),CodePoint'Val(16#5D#),CodePoint'Val(16#2A#),CodePoint'Val(16#29#),<br>
+    CodePoint'Val(16#2E#),CodePoint'Val(16#2A#));<br>
+    <font color="#999900">005|</font> DHHHHH3EA:constant
+CFix:=(CodePoint'Val(16#45#),CodePoint'Val(16#78#),CodePoint'Val(16#50#),CodePoint'Val(16#73#),<br>
+CodePoint'Val(16#69#),CodePoint'Val(16#20#),CodePoint'Val(16#70#),CodePoint'Val(16#72#),<br>
+CodePoint'Val(16#6F#),CodePoint'Val(16#63#),CodePoint'Val(16#65#),CodePoint'Val(16#64#),<br>
+    CodePoint'Val(16#75#),CodePoint'Val(16#72#),CodePoint'Val(16#65#));<br>
+    <font color="#999900">006|</font> end ExPsi_PSECT;<br>
+    <hr width="100%" size="2">
+    <hr width="100%" size="2">
+    <p><font color="#cc0000">"ExPsi procedure"c<font color="#000000">
+          corresponds to </font></font>DHHHHH3E9 constant<br>
+      <font color="#cc0000">"^.*?(P[\w]*).*"c</font> corresponds to
+      DHHHHH3EA constant </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

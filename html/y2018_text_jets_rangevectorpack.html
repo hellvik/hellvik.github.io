@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Jets.RangeVectorPack</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_jets_patternpack.html">Prev</a> <a href="y2018_text_testq.html">Next</a> <a href="t016.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Jets.RangeVectorPack</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Containers;<br>
+    <font color="#999900">002|</font> with Ada.Containers.Ordered_Sets;<br>
+    <font color="#999900">003|</font> with Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">004|</font> with Ada.Containers.Ordered_Maps;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Core.Str;<br>
+    <font color="#999900">008|</font> package
+    Y2018.Text.Jets.RangeVectorPack is<br>
+    <font color="#999900">009|</font> __type RangeVector is tagged
+    private;<br>
+    <font color="#999900">010|</font> __type Velem is<br>
+    <font color="#999900">011|</font> __record<br>
+    <font color="#999900">012|</font> __f: Integer;<br>
+    <font color="#999900">013|</font> __l: Integer;<br>
+    <font color="#999900">014|</font> __end record;<br>
+    <font color="#999900">015|</font> __null_velem:constant
+    Velem:=(f=&gt;Integer'First,l=&gt;Integer'First);<br>
+    <font color="#999900">016|</font> __function less(f,l:Velem) return
+    Boolean;<br>
+    <font color="#999900">017|</font> __function equal (f,l:Velem)
+    return Boolean;<br>
+    <font color="#999900">018|</font> __package Set_TY is new
+    Ada.Containers.Ordered_Sets(<br>
+    <font color="#999900">019|</font> _____Element_type =&gt; Velem,<br>
+    <font color="#999900">020|</font> _____"&lt;" =&gt; less,<br>
+    <font color="#999900">021|</font> _____"=" =&gt; equal);<br>
+    <font color="#999900">022|</font> __function
+    lessUR(f,l:Y2018.Text.Core.CVarPack.CVar) return Boolean;<br>
+    <font color="#999900">023|</font> __function equalUR
+    (f,l:Set_TY.Set) return Boolean;<br>
+    <font color="#999900">024|</font> __package Map_TY is new
+    Ada.Containers.Ordered_Maps(<br>
+    <font color="#999900">025|</font> _____Key_Type=&gt;
+    Y2018.Text.Core.CVarPack.CVar,<br>
+    <font color="#999900">026|</font> _____Element_Type=&gt; Set_TY.Set,<br>
+    <font color="#999900">027|</font> _____"&lt;"=&gt; lessUR,<br>
+    <font color="#999900">028|</font> _____"="=&gt; equalUR);<br>
+    <font color="#999900">029|</font> __function verify(rvA:
+    RangeVector) return Boolean;<br>
+    <font color="#999900">030|</font> __procedure putC(rvA:in out
+    RangeVector;f:CodePoint;l:CodePoint);<br>
+    <font color="#999900">031|</font> __procedure putC(rvA:in out
+    RangeVector;val:CodePoint);<br>
+    <font color="#999900">032|</font> __procedure putGC(rvA:in out
+    RangeVector;val:CFix); <br>
+    <font color="#999900">033|</font> __procedure putGC(rvA:in out
+    RangeVector;val:CodePoint); <br>
+    <font color="#999900">034|</font> __procedure putSET(rvA:in out
+    RangeVector;val:Y2018.Text.Core.CVarPack.CVar;urv:RangeVectorPack.Map_TY.Map);
+
+    <br>
+    <font color="#999900">035|</font> __function
+    exists(rvA:RangeVector;val:CodePoint) return Boolean;<br>
+    <font color="#999900">036|</font> __function
+    Is_Empty(rvA:RangeVector) return Boolean;<br>
+    <font color="#999900">037|</font> __function length(rvA:RangeVector)
+    return Integer;<br>
+    <font color="#999900">038|</font> __function clone(rvA:RangeVector)
+    return RangeVector;<br>
+    <font color="#999900">039|</font> __procedure clear(rvA:in out
+    RangeVector);<br>
+    <font color="#999900">040|</font> __procedure To_CList(CMap:in out
+Y2018.Text.Core.Str.CList.map;rvA:RangeVector;head:String:="";cntMax:Integer:=Integer'Last);<br>
+    <font color="#999900">041|</font> __procedure merge(rvA:in out
+    RangeVector);<br>
+    <font color="#999900">042|</font> __function equal (f,l:RangeVector)
+    return Boolean;<br>
+    <font color="#999900">043|</font> __function less (f,l:RangeVector)
+    return Boolean;<br>
+    <font color="#999900">044|</font> __function reserved_urvId(s:CFix)
+    return Boolean;<br>
+    <font color="#999900">045|</font> __function verify(s: Set_TY.Set)
+    return Boolean;<br>
+    <font color="#999900">046|</font> __private type RangeVector is
+    tagged<br>
+    <font color="#999900">047|</font> __record<br>
+    <font color="#999900">048|</font> _____v: Set_TY.Set;<br>
+    <font color="#999900">049|</font> __end record;<br>
+    <font color="#999900">050|</font> end
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

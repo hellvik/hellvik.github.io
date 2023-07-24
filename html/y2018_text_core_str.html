@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.core.STR</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_core_cvarpack.html">Prev</a> <a href="y2018_text_core_utf.html">Next</a> <a href="t020.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.core.STR</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Containers.Ordered_Maps;<br>
+    <font color="#999900">002|</font> with Y2018.Text.core.CVarPack; use
+    Y2018.Text.core.CVarPack; <br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.GC;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.UTF;<br>
+    <font color="#999900">005|</font> with GNAT.Source_Info;<br>
+    <font color="#999900">006|</font> package Y2018.Text.core.STR is<br>
+    <font color="#999900">007|</font> __Type Celem is<br>
+    <font color="#999900">008|</font> _____record<br>
+    <font color="#999900">009|</font> ________n: Integer;<br>
+    <font color="#999900">010|</font> ________s: CVar;<br>
+    <font color="#999900">011|</font> _____end record;<br>
+    <font color="#999900">012|</font> __function
+    cless(Left,Right:Integer) return Boolean;<br>
+    <font color="#999900">013|</font> __function
+    cequal(Left,Right:Celem) return Boolean;<br>
+    <font color="#999900">014|</font> __package CList is new
+    Ada.Containers.Ordered_Maps(<br>
+    <font color="#999900">015|</font> _____Key_Type =&gt; Integer, <br>
+    <font color="#999900">016|</font> _____Element_type =&gt; Celem,<br>
+    <font color="#999900">017|</font> _____"&lt;"=&gt; cless,<br>
+    <font color="#999900">018|</font> _____"="=&gt; cequal);<br>
+    <font color="#999900">019|</font> __procedure Insert(map:in out
+    CList.Map;s:CFix);<br>
+    <font color="#999900">020|</font> __procedure Insert(map:in out
+    CList.Map;s:String);<br>
+    <font color="#999900">021|</font> __procedure Insert(map:in out
+    CList.Map;s:CVar);<br>
+    <font color="#999900">022|</font> __procedure Insert(map:in out
+    CList.Map;sourceMap:CList.Map);<br>
+    <font color="#999900">023|</font> -- STR_case<br>
+    <font color="#999900">024|</font> function To_LC(s:CFix) return CFix
+    ;<br>
+    <font color="#999900">025|</font> function To_LC(s:String) return
+    String ;<br>
+    <font color="#999900">026|</font> function To_LC(s:CVar) return CVar
+    ;<br>
+    <font color="#999900">027|</font> function To_TC(s:CFix) return CFix
+    ;<br>
+    <font color="#999900">028|</font> function To_TC(s:String) return
+    String ;<br>
+    <font color="#999900">029|</font> function To_TC(s:CVar) return CVar
+    ;<br>
+    <font color="#999900">030|</font> function To_UC(s:CFix) return CFix
+    ;<br>
+    <font color="#999900">031|</font> function To_UC(s:String) return
+    String ;<br>
+    <font color="#999900">032|</font> function To_UC(s:CVar) return CVar
+    ;<br>
+    <font color="#999900">033|</font> function Get_GC(c:CodePoint)
+    return CFix ;<br>
+    <font color="#999900">034|</font> function Get_LC(c:CodePoint)
+    return CodePoint ;<br>
+    <font color="#999900">035|</font> function Get_UC(c:CodePoint)
+    return CodePoint ;<br>
+    <font color="#999900">036|</font> function Get_TC(c:CodePoint)
+    return CodePoint ;<br>
+    <font color="#999900">037|</font> -- STR_et<br>
+    <font color="#999900">038|</font> function
+    "&amp;"(left:CFix;right:String) return CFix ; -- [16] &lt;UTF&gt;<br>
+    <font color="#999900">039|</font> function
+    "&amp;"(left:CFix;right:Character) return CFix ; -- [17] &lt;UTF&gt;<br>
+    <font color="#999900">040|</font> function
+    "&amp;"(left:String;right:CFix) return String ; -- [18] &lt;UTF&gt;<br>
+    <font color="#999900">041|</font> function
+    "&amp;"(left:String;right:CVar) return String ; -- [20] &lt;UTF&gt;<br>
+    <font color="#999900">042|</font> function
+    "&amp;"(left:String;right:CodePoint) return String ; -- [22]
+    &lt;UTF&gt;<br>
+    <font color="#999900">043|</font> function
+    "&amp;"(left:CVar;right:String) return CVar ; -- [24] &lt;UTF&gt;<br>
+    <font color="#999900">044|</font> function
+    "&amp;"(left:CVar;right:Character) return CVar ; -- [25] &lt;UTF&gt;<br>
+    <font color="#999900">045|</font> function
+    "&amp;"(left:CodePoint;right:String) return CFix ; -- [28]
+    &lt;UTF&gt;<br>
+    <font color="#999900">046|</font> function
+    "&amp;"(left:CodePoint;right:Character) return CFix ; -- [29]
+    &lt;UTF&gt;<br>
+    <font color="#999900">047|</font> function
+    "&amp;"(left:Character;right:CFix) return String ; -- [30]
+    &lt;UTF&gt;<br>
+    <font color="#999900">048|</font> function
+    "&amp;"(left:Character;right:CVar) return String ; -- [32]
+    &lt;UTF&gt;<br>
+    <font color="#999900">049|</font> function
+    "&amp;"(left:Character;right:CodePoint) return String ; -- [34]
+    &lt;UTF&gt;<br>
+    <font color="#999900">050|</font> -- STR_hex<br>
+    <font color="#999900">051|</font> function CodePoint2Hex8String(v
+    :CodePoint) return String ;<br>
+    <font color="#999900">052|</font> function Character2Hex8String(v
+    :Character) return String ;<br>
+    <font color="#999900">053|</font> function CodePoint2Hex8CFix(v
+    :CodePoint) return CFix ;<br>
+    <font color="#999900">054|</font> function Character2Hex8CFix(v
+    :Character) return CFix ;<br>
+    <font color="#999900">055|</font> function To_Hex8String(v :Integer)
+    return String ;<br>
+    <font color="#999900">056|</font> function To_Hex8CFix(v :Integer)
+    return CFix ;<br>
+    <font color="#999900">057|</font> function
+    Hex2Integer(s:CFix;padding:CFix:=CFix_Space) return Integer;<br>
+    <font color="#999900">058|</font> function
+    Hex2Integer(s:String;padding:String:=" ") return Integer;<br>
+    <font color="#999900">059|</font> function
+    Hex2Integer(s:CVar;padding:CFix:=CFix_Space) return Integer;<br>
+    <font color="#999900">060|</font> -- STR_rel<br>
+    <font color="#999900">061|</font> function
+    "="(first:CFix;second:String) return Boolean ;<br>
+    <font color="#999900">062|</font> function
+    "&lt;"(first:CFix;second:String) return Boolean ;<br>
+    <font color="#999900">063|</font> function
+    "&lt;="(first:CFix;second:String) return Boolean ;<br>
+    <font color="#999900">064|</font> function
+    "&gt;"(first:CFix;second:String) return Boolean ;<br>
+    <font color="#999900">065|</font> function
+    "&gt;="(first:CFix;second:String) return Boolean ;<br>
+    <font color="#999900">066|</font> function
+    "="(first:String;second:CFix) return Boolean ;<br>
+    <font color="#999900">067|</font> function
+    "&lt;"(first:String;second:CFix) return Boolean ;<br>
+    <font color="#999900">068|</font> function
+    "&lt;="(first:String;second:CFix) return Boolean ;<br>
+    <font color="#999900">069|</font> function
+    "&gt;"(first:String;second:CFix) return Boolean ;<br>
+    <font color="#999900">070|</font> function
+    "&gt;="(first:String;second:CFix) return Boolean ;<br>
+    <font color="#999900">071|</font> function
+    "="(first:CVar;second:String) return Boolean ;<br>
+    <font color="#999900">072|</font> function
+    "&lt;"(first:CVar;second:String) return Boolean ;<br>
+    <font color="#999900">073|</font> function
+    "&lt;="(first:CVar;second:String) return Boolean ;<br>
+    <font color="#999900">074|</font> function
+    "&gt;"(first:CVar;second:String) return Boolean ;<br>
+    <font color="#999900">075|</font> function
+    "&gt;="(first:CVar;second:String) return Boolean ;<br>
+    <font color="#999900">076|</font> function
+    "="(first:String;second:CVar) return Boolean ;<br>
+    <font color="#999900">077|</font> function
+    "&lt;"(first:String;second:CVar) return Boolean ;<br>
+    <font color="#999900">078|</font> function
+    "&lt;="(first:String;second:CVar) return Boolean ;<br>
+    <font color="#999900">079|</font> function
+    "&gt;"(first:String;second:CVar) return Boolean ;<br>
+    <font color="#999900">080|</font> function
+    "&gt;="(first:String;second:CVar) return Boolean ;<br>
+    <font color="#999900">081|</font> -- STR-sub<br>
+    <font color="#999900">082|</font> function
+    subC(value:CFix;first:Integer:=Integer'First;length:Integer:=Integer'First;last:Integer:=Integer'First)
+
+    return CFix;<br>
+    <font color="#999900">083|</font> function
+    subC(value:String;first:Integer:=Integer'First;length:Integer:=Integer'First;last:Integer:=Integer'First)
+
+    return String;<br>
+    <font color="#999900">084|</font> function
+    subC(value:CVar;first:Integer:=Integer'First;length:Integer:=Integer'First;last:Integer:=Integer'First)
+
+    return CVar;<br>
+    <font color="#999900">085|</font> function
+    rightC(value:CFix;length:Integer;pad:CFix:=CFix_Space) return CFix;<br>
+    <font color="#999900">086|</font> function
+    rightC(value:String;length:Integer;pad:String:=" ") return String;<br>
+    <font color="#999900">087|</font> function
+    rightC(value:CVar;length:Integer;pad:CFix:=CFix_Space) return CVar;<br>
+    <font color="#999900">088|</font> function
+    leftC(value:CFix;length:Integer;pad:CFix:=CFix_Space) return CFix;<br>
+    <font color="#999900">089|</font> function
+    leftC(value:String;length:Integer;pad:String:=" ") return String;<br>
+    <font color="#999900">090|</font> function
+    leftC(value:CVar;length:Integer;pad:CFix:=CFix_Space) return CVar;<br>
+    <font color="#999900">091|</font> function
+    centerC(value:CFix;length:Integer;pad:CFix:=CFix_Space) return CFix;<br>
+    <font color="#999900">092|</font> function
+    centerC(value:String;length:Integer;pad:String:=" ") return String;<br>
+    <font color="#999900">093|</font> function
+    centerC(value:CVar;length:Integer;pad:CFix:=CFix_Space) return CVar;<br>
+    <font color="#999900">094|</font> function
+    stripC(value:CFix;left:CFix:=CFix_Space;right:CFix:=CFix_Space)
+    return CFix ;<br>
+    <font color="#999900">095|</font> function
+    stripC(value:String;left:String:=" ";right:String:=" ") return
+    String ;<br>
+    <font color="#999900">096|</font> function
+    stripC(value:CVar;left:CFix:=CFix_Space;right:CFix:=CFix_Space)
+    return CVar;<br>
+    <font color="#999900">097|</font> function reverseC(s:CFix) return
+    CFix ;<br>
+    <font color="#999900">098|</font> function reverseC(s:CVar) return
+    CVar ;<br>
+    <font color="#999900">099|</font> function reverseC(s:String) return
+    String ;<br>
+    <font color="#999900">100|</font> end Y2018.Text.core.STR;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

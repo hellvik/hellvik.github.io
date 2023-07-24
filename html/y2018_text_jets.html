@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.text.jets</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_core_utf.html">Prev</a> <a href="y2018_text_jets_compiler.html">Next</a> <a href="t004.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Jets</h1>
+    Jets is the parent package for regular expression handling<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Y2018.Text.Core; use Y2018.Text.Core;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">004|</font> package Y2018.Text.Jets is<br>
+    <font color="#999900">005|</font> __type I_A is array (1..2) of
+    Integer;<br>
+    <font color="#999900">006|</font> __type I_A_ARRAY is Array(Integer
+    range &lt;&gt;) of I_A;<br>
+    <font color="#999900">007|</font> __type MCHAR_AR is Array(Integer
+    range &lt;&gt;) of CodePoint;<br>
+    <font color="#999900">008|</font> __W_BACKSLASH: constant
+    CodePoint:= CodePoint'Val(16#5C#); --\<br>
+    <font color="#999900">009|</font> __I_A_NO_ELEMENT : constant
+    I_A:=(-1,0);<br>
+    <font color="#999900">010|</font> __W_VERTICAL_LINE:constant
+    CodePoint:=CodePoint'Val(16#7C#); --'|'<br>
+    <font color="#999900">011|</font> __W_LEFT_PARENTESIS:constant
+    CodePoint:=CodePoint'Val(16#28#); --'('<br>
+    <font color="#999900">012|</font> __W_LEFT_QUARE_BRACKET:constant
+    CodePoint:=CodePoint'Val(16#5B#); --'['<br>
+    <font color="#999900">013|</font> __W_CIRCUMFLEX_ACCENT:constant
+    CodePoint:=CodePoint'Val(16#5E#); --'^'<br>
+    <font color="#999900">014|</font> __W_DOLLAR_SIGN:constant
+    CodePoint:=CodePoint'Val(16#24#); --'$'<br>
+    <font color="#999900">015|</font> __W_PERIOD:constant
+    CodePoint:=CodePoint'Val(16#2E#); --'.'<br>
+    <font color="#999900">016|</font> __W_RIGHT_PARENTESIS:constant
+    CodePoint:=CodePoint'Val(16#29#); --')'<br>
+    <font color="#999900">017|</font> __W_QUESTION_MARK:constant
+    CodePoint:=CodePoint'Val(16#3F#); --'?'<br>
+    <font color="#999900">018|</font> __W_COLON:constant
+    CodePoint:=CodePoint'Val(16#3A#);--':'<br>
+    <font color="#999900">019|</font> __W_LEFT_CURLY_BRACKET:constant
+    CodePoint:=CodePoint'Val(16#7B#);--'{'<br>
+    <font color="#999900">020|</font> __W_ASTERISK:constant
+    CodePoint:=CodePoint'Val(16#2A#);--'*'<br>
+    <font color="#999900">021|</font> __W_PLUS_SIGN:constant
+    CodePoint:=CodePoint'Val(16#2B#);--'+'<br>
+    <font color="#999900">022|</font> __W_DIGIT_ZERO:constant
+    CodePoint:=CodePoint'Val(16#30#);--'0'<br>
+    <font color="#999900">023|</font> __W_DIGIT_NINE:constant
+    CodePoint:=CodePoint'Val(16#39#);--'9'<br>
+    <font color="#999900">024|</font> __W_RIGHT_SQUARE_BRACKET:constant
+    CodePoint:=CodePoint'Val(16#5D#);--']'<br>
+    <font color="#999900">025|</font> __W_RIGHT_CURLY_BRACKET:constant
+    CodePoint:=CodePoint'Val(16#7D#);--'}'<br>
+    <font color="#999900">026|</font>
+    __W_LATIN_CAPITAL_LETTER_D:constant
+    CodePoint:=CodePoint'Val(16#44#);--'D'<br>
+    <font color="#999900">027|</font> __W_LATIN_SMALL_LETTER_D:constant
+    CodePoint:=CodePoint'Val(16#64#);--'d' <br>
+    <font color="#999900">028|</font>
+    __W_LATIN_CAPITAL_LETTER_P:constant
+    CodePoint:=CodePoint'Val(16#50#);--'P'<br>
+    <font color="#999900">029|</font> __W_LATIN_SMALL_LETTER_P:constant
+    CodePoint:=CodePoint'Val(16#70#);--'p'<br>
+    <font color="#999900">030|</font>
+    __W_LATIN_CAPITAL_LETTER_S:constant
+    CodePoint:=CodePoint'Val(16#53#);--'S'<br>
+    <font color="#999900">031|</font> __W_LATIN_SMALL_LETTER_S:constant
+    CodePoint:=CodePoint'Val(16#73#);--'s'<br>
+    <font color="#999900">032|</font>
+    __W_LATIN_CAPITAL_LETTER_W:constant
+    CodePoint:=CodePoint'Val(16#57#);--'W'<br>
+    <font color="#999900">033|</font> __W_LATIN_SMALL_LETTER_W:constant
+    CodePoint:=CodePoint'Val(16#77#);--'w'<br>
+    <font color="#999900">034|</font> __W_MINUS:constant
+    CodePoint:=CodePoint'Val(16#2D#);--'-'<br>
+    <font color="#999900">035|</font> __MCHAR:constant
+MCHAR_AR:=(W_VERTICAL_LINE,W_LEFT_PARENTESIS,W_RIGHT_PARENTESIS,W_LEFT_QUARE_BRACKET,W_RIGHT_SQUARE_BRACKET,W_LEFT_CURLY_BRACKET,<br>
+    <font color="#999900">036|</font>
+    ______W_RIGHT_CURLY_BRACKET,W_CIRCUMFLEX_ACCENT,W_DOLLAR_SIGN,W_ASTERISK,W_PLUS_SIGN,W_QUESTION_MARK,W_PERIOD);
+
+
+    -- W_MINUS cannot be one of theese<br>
+    <font color="#999900">037|</font> __type REQ_TY is (REQ_BEGIN,
+    REQ_CHAR, REQ_PERIOD, REQ_CLASS_ELEM, REQ_CLASS, <br>
+    <font color="#999900">038|</font> ____________REQ_PALCAP, REQ_PAL,
+    REQ_UPDOWN, REQ_CLASS_CHAR, REQ_CLASS_RANGE, <br>
+    <font color="#999900">039|</font> ____________REQ_CLASS_GC,
+    REQ_CLASS_GCU, REQ_CLASS_SET, REQ_CLASS_OTHER,<br>
+    <font color="#999900">040|</font> ____________REQ_POS, REQ_NEG,
+    REQ_NULL);<br>
+    <font color="#999900">041|</font> __function subIA(value:CFix;a:I_A)
+    return CFix;<br>
+    <font color="#999900">042|</font> __function
+    subIA(value:String;a:I_A) return String;<br>
+    <font color="#999900">043|</font> __function subIA(value:CVar;a:I_A)
+    return CVar;<br>
+    <font color="#999900">044|</font> __function To_String(ia:I_A)
+    return String;<br>
+    <font color="#999900">045|</font> end Y2018.Text.Jets;<br>
+    <font color="#999900">046|</font> __<br>
+    <hr width="100%" size="2">Subpackages:<br>
+    <ul>
+      <li><a href="y2018_text_jets_compiler.html">Y2018.Text.Jets.Compiler</a>
+        - the regular expression compiler implementation<br>
+      </li>
+      <li><a href="y2018_text_jets_jestool.html">Y2018.Text.Jets.Jetstool</a>
+        - tools<br>
+      </li>
+      <li><a href="y2018_text_jets_matchpack.html">Y2018.Text.Jets.Matchpack</a>
+        - match implementation<br>
+      </li>
+      <li><a href="y2018_text_jets_patternpack.html">Y2018.Text.Jets.Patternpack</a>
+        - pattern implementation <br>
+      </li>
+      <li><a href="y2018_text_jets_rangevectorpack.html">Y2018.Text.Jets.Rangevectorpack</a>
+        - codepoint class implementation<br>
+      </li>
+    </ul>
+    Allmost all work is done through the subpackages<br>
+    <ol>
+      <li>Definitions of I_A type and functions and constants based on
+        this type</li>
+      <ul>
+        <li>I_A_NO_ELEMENT, I_A type refers to a part of a codepoint or
+          character string, this constant is used for null length
+          reference<br>
+        </li>
+        <li>an array of a array type I_A_ARRAY</li>
+        <li>subIA, 3 functions <br>
+        </li>
+        <li>to_String - publish the indexes as a 'nice' string<br>
+        </li>
+      </ul>
+      <li>Reserved characters in a regular expression and backslash, ( <font
+          color="#999900">|</font>, <font color="#999900">(</font>, <font
+          color="#999900">)</font>, <font color="#999900">[</font>, <font
+          color="#999900">]</font>, <font color="#999900">{</font>, <font
+          color="#999900">}</font>, <font color="#999900">^</font>, <font
+          color="#999900">$</font>, <font color="#999900">*</font>, <font
+          color="#999900">+</font>, <font color="#999900">?</font>, <font
+          color="#999900">.</font>, <font color="#999900">-</font> , <font
+          color="#999900">\</font> ) and grouping characters when
+        followed by backslash<br>
+      </li>
+      <li>REQ_TY type, used by <a href="t017.html">the type RE_Elem</a>
+        definition as a qualifier of different type of nodes in the
+        syntax tree.</li>
+    </ol>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

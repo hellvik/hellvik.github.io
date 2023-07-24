@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>The PatternPack</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t014.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>The PatternPack<br>
+    </h1>
+    <p>The three mains in the package:<br>
+    </p>
+    <ul>
+      <li>compileM for compiling the regular expression (s-parameter) to
+        a syntax three of <a href="t017.html">RE_ELEM</a> objects<br>
+      </li>
+      <ul>
+        <li>procedure compileM(ptc:in out Pattern_AC;s :
+          CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map);</li>
+        <li>function compileM(s :
+          CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map)
+          return Pattern_AC;</li>
+      </ul>
+      <li>compileU for compiling the regular expression (s-parameter) to
+        a syntax three of <a href="t017.html">RE_ELEM</a> objects <b>but
+
+
+
+
+
+          after converting data to upper case</b>, alltough the
+        s-parameter is input only and the conversion is done only
+        internally.<br>
+      </li>
+      <ul>
+        <li>procedure compileU(ptc:in out Pattern_AC;s :
+          CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map);</li>
+        <li>function compileU(s :
+          CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map)
+          return Pattern_AC;</li>
+      </ul>
+      <li>function
+        matches(pattern:Pattern_AC;startPos:Integer;nextPos:out
+        Integer;c4match : CFix;match: out
+        MatchPack.Match_TY;squ:Integer:=0) return Boolean;</li>
+    </ul>
+    <p>Two versions for the compilation, one as a procedure call and the
+      second as a function. The declaration of the package in the
+      ads-file <a href="y2018_text_jets_patternpack.html">y2018.text.jets.patternpack.html</a>.<br>
+      Function matches is a wrapper for <a href="t019.html">Matchpack</a>
+      for retreiving the results to the Patternpack object.<br>
+    </p>
+    <p>Example when using the <u><i>procedure approach</i></u> <a
+        href="t024.html">ExPsi.adb</a>. The code in ExPsi.adb must be
+      precompiled and compiled.<br>
+      Comments about the code in ExPsi.adb:<br>
+    </p>
+    <ul>
+      <li>Line 019 : call of compileM - we do not use the 'uppercase'
+        version<br>
+      </li>
+      <li>Line 020 : match the text "ExPsi procedure" (sourcevalue).<br>
+      </li>
+      <li>line 022 : create the result array 'r' (I_A_ARRAY(0 ..
+        MatchPack.size(m) - 1);)</li>
+      <li>line 024 : initiate 'r' array from the variable 'm'</li>
+    </ul>
+    Example when using the <u><i>function approach</i></u> <a
+      href="t038.html">ExYpsilon.adb</a>. The code in ExYpsilon.adb must
+    be precompiled and compiled.<br>
+    Comments about the code in ExYpsilon.adb:<br>
+    <ul>
+      <li>Line 010 : call of compileM - we do not use the 'uppercase'
+        version<br>
+      </li>
+      <li>Line 017 : match the text "Huey, Dewey, Louie, Duck" (line).<br>
+      </li>
+      <li>line 019 : create the result array 'r'
+        (I_A_ARRAY:=MatchPack.getMatch(m);)</li>
+    </ul>
+    <i>A shorter version ?</i><i><br>
+    </i><br>
+    What is this default "<i>urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map</i>"
+    ? It says that extending of the <a href="t047.html">'\p'</a> is not
+    used in this compilation, only 'mapPool' which is used is the
+    default with <a href="t003.html">General categories</a> and <a
+      href="t022.html">\d \D, \s \S and \w \W</a> .<br>
+    <h2>What is "squ" ?</h2>
+    <span style="background: #ffff00"> function
+      matches(pattern:Pattern_AC;startPos:Integer;nextPos:out
+      Integer;c4match : CFix;match: out MatchPack.Match_TY;<font
+        color="#993399">squ:Integer:=0</font>) return Boolean;</span><br>
+    In some cases the pattern of a regular expression can still be fit
+    if we decrease found codepoints where a variable amount. Value squ
+    (short for squeeze) says the amount of times we can try. The fitting
+    process is experimental form of <i><b>backtracking</b></i> but can
+    be useful.<br>
+    As an example see <a href="t051.html">ExLamda</a>. In this case we
+    squeeze the value of r(1) with one for a value in r(2), the digit
+    '9'. <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

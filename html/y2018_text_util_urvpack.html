@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Util.UrvPack</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_util_infileutf8.html">Prev</a> <font color="#999999">Next</font> <a href="t043.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Util.UrvPack</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Containers.Ordered_Sets;<br>
+    <font color="#999900">002|</font> with Y2018.Text; use Y2018.Text;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">006|</font> with
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">007|</font> package Y2018.Text.Util.UrvPack is<br>
+    <font color="#999900">008|</font> __type MapPool is tagged private;
+    --limited private;<br>
+    <font color="#999900">009|</font> __type LSE_TY is
+    (LSENONE,LSECOMP,LSESIZE);<br>
+    <font color="#999900">010|</font> __TAB:constant
+    String:=(1=&gt;Character'Val(16#09#)); -- "\t"<br>
+    <font color="#999900">011|</font> __function
+    lessMapName(Left,Right:CVar) return Boolean;<br>
+    <font color="#999900">012|</font> __function
+    equalMapName(Left,Right:CVar) return Boolean;<br>
+    <font color="#999900">013|</font> __package MapName is new
+    Ada.Containers.Ordered_Sets(<br>
+    <font color="#999900">014|</font> _____Element_type =&gt; CVar,<br>
+    <font color="#999900">015|</font> _____"&lt;"=&gt; lessMapName,<br>
+    <font color="#999900">016|</font> _____"="=&gt; equalMapName);<br>
+    <font color="#999900">017|</font> __function copy_Map(mp:in out
+    MapPool) return Jets.RangeVectorPack.Map_TY.Map;<br>
+    <font color="#999900">018|</font> __procedure list_Map(mp:in out
+    MapPool;path:String:="";topTitle:String:="-- Top
+    --";BottomTitle:String:="-- Bottom --";prefix:String:=TAB);<br>
+    <font color="#999900">019|</font> __function map_Names(mp:in out
+    MapPool) return MapName.Set;<br>
+    <font color="#999900">020|</font> __function Is_Empty(mp:in out
+    MapPool) return Boolean;<br>
+    <font color="#999900">021|</font> __function Contains(mp:in out
+    MapPool;key:CVar) return Boolean;<br>
+    <font color="#999900">022|</font> __function Length(mp:in out
+    MapPool) return Integer;<br>
+    <font color="#999900">023|</font> __procedure delete(mp:in out
+    MapPool;key:CVar);<br>
+    <font color="#999900">024|</font> __procedure insert(mp:in out
+    MapPool;key:CVar);<br>
+    <font color="#999900">025|</font> __procedure load(mp:in out
+    MapPool;path:String;overwrite:TRINITY:=TRI_TRUE);<br>
+    <font color="#999900">026|</font> __procedure store(mp:in out
+    MapPool;path:String);<br>
+    <font color="#999900">027|</font> __procedure clear(mp:in out
+    MapPool);<br>
+    <font color="#999900">028|</font> __function Contains(mp:in out
+    MapPool;key:CFix) return Boolean;<br>
+    <font color="#999900">029|</font> __procedure delete(mp:in out
+    MapPool;key:CFix);<br>
+    <font color="#999900">030|</font> __procedure insert(mp:in out
+    MapPool;key:CFix);<br>
+    <font color="#999900">031|</font> __function Contains(mp:in out
+    MapPool;key:String) return Boolean ;<br>
+    <font color="#999900">032|</font> __procedure delete(mp:in out
+    MapPool;key:String) ;<br>
+    <font color="#999900">033|</font> __procedure insert(mp:in out
+    MapPool;key:String) ;<br>
+    <font color="#999900">034|</font> __function get_Set(mp:in out
+    MapPool;key:CVar) return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">035|</font> __procedure put_Set(mp:in out
+    MapPool;key:CVar;value:Jets.RangeVectorPack.Set_TY.Set);<br>
+    <font color="#999900">036|</font> __function make_Set(s:CFix) return
+    Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">037|</font> __procedure
+list_Set(elementSet:Jets.RangeVectorPack.Set_TY.Set;title:CFix;path:String:="";lse:LSE_TY:=LSENONE);<br>
+    <font color="#999900">038|</font> __function get_Set(mp:in out
+    MapPool;key:CFix) return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">039|</font> __procedure put_Set(mp:in out
+    MapPool;key:CFix;value:Jets.RangeVectorPack.Set_TY.Set);<br>
+    <font color="#999900">040|</font> __function get_Set(mp:in out
+    MapPool;key:String) return Jets.RangeVectorPack.Set_TY.Set ;<br>
+    <font color="#999900">041|</font> __procedure put_Set(mp:in out
+    MapPool;key:String;value:Jets.RangeVectorPack.Set_TY.Set) ;<br>
+    <font color="#999900">042|</font> __function
+    compress(inSet:Jets.RangeVectorPack.Set_TY.Set) return
+    Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">043|</font> __function
+    add(alfaSet:Jets.RangeVectorPack.Set_TY.Set;betaSet:Jets.RangeVectorPack.Set_TY.Set)
+
+
+
+
+
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">044|</font> __function
+    add(alfaSet:Jets.RangeVectorPack.Set_TY.Set;peta:Jets.RangeVectorPack.Velem)
+
+
+
+
+
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">045|</font> __function
+    sub(alfaSet:Jets.RangeVectorPack.Set_TY.Set;betaSet:Jets.RangeVectorPack.Set_TY.Set)
+
+
+
+
+
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">046|</font> __function
+    sub(alfaSet:Jets.RangeVectorPack.Set_TY.Set;beta:Jets.RangeVectorPack.Velem)
+
+
+
+
+
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">047|</font> __function
+    slice(alfaSet:Jets.RangeVectorPack.Set_TY.Set;betaSet:Jets.RangeVectorPack.Set_TY.Set)
+
+
+
+
+
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">048|</font> __function
+    slice(alfaSet:Jets.RangeVectorPack.Set_TY.Set;beta:Jets.RangeVectorPack.Velem)
+
+
+
+
+
+    return Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">049|</font> __function
+    UnicodeData(filename:String;<br>
+    <font color="#999900">050|</font>
+    ________Character_name:CFix:=null_CFix;<br>
+    <font color="#999900">051|</font>
+    ________General_Category:CFix:=null_CFix;<br>
+    <font color="#999900">052|</font>
+    ________Canonical_Combining:CFix:=null_CFix;<br>
+    <font color="#999900">053|</font>
+    ________Bidirectional_Category:CFix:=null_CFix;<br>
+    <font color="#999900">054|</font>
+    ________Character_Decomposition:CFix:=null_CFix;<br>
+    <font color="#999900">055|</font>
+    ________Decimal_digit:CFix:=null_CFix;<br>
+    <font color="#999900">056|</font>
+    ________Digit_value:CFix:=null_CFix;<br>
+    <font color="#999900">057|</font>
+    ________Numeric_value:CFix:=null_CFix;<br>
+    <font color="#999900">058|</font> ________Mirrored:CFix:=null_CFix;<br>
+    <font color="#999900">059|</font> ________Old_name:CFix:=null_CFix;<br>
+    <font color="#999900">060|</font> ________Comment:CFix:=null_CFix;<br>
+    <font color="#999900">061|</font> ________Uppercase:CFix:=null_CFix;<br>
+    <font color="#999900">062|</font> ________Lowercase:CFix:=null_CFix;<br>
+    <font color="#999900">063|</font> ________Titlecase:CFix:=null_CFix;<br>
+    <font color="#999900">064|</font> ________ShowLineCount:Integer:=0 <br>
+    <font color="#999900">065|</font> ________) return
+    Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">066|</font> __function Block(filename:String;<br>
+    <font color="#999900">067|</font>
+    ________Block_name:CFix:=null_CFix;<br>
+    <font color="#999900">068|</font> ________ShowLineCount:Integer:=0 <br>
+    <font color="#999900">069|</font> ________) return
+    Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">070|</font> __function
+    verifyDatFileContents(path:String) return TRINITY;<br>
+    <font color="#999900">071|</font> __private type MapPool is tagged<br>
+    <font color="#999900">072|</font> _____record<br>
+    <font color="#999900">073|</font>
+    ________u:Jets.RangeVectorPack.Map_TY.Map;<br>
+    <font color="#999900">074|</font> _____end record;<br>
+    <font color="#999900">075|</font> end Y2018.Text.Util.UrvPack;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

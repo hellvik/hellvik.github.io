@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Overloading et operator</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t001.html">Prev</a> <a href="t005.html">Next</a> <a href="t020.html">Up</a> <a href="y2018_text_core_str.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>Overloading of “&amp;” operator </h1>
+    functions used from <a href="y2018_text_core_str.html"><u>Y2018-Text-Core-Str</u></a>:
+    <br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:CFix;right:String) return CFix ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:CFix;right:Character) return CFix ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:String;right:CFix) return String ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:String;right:CVar) return String ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:String;right:CodePoint) return String ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:CVar;right:String) return CVar ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:CVar;right:Character) return CVar ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:CodePoint;right:String) return CFix ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:CodePoint;right:Character) return CFix ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:Character;right:CFix) return String ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:Character;right:CVar) return String ;</span></b><br>
+    <b><span style="background: #ffff00">function
+        "&amp;"(left:Character;right:CodePoint) return String ;</span></b><br>
+    <p>functions used from <a href="y2018_text_core_cvarpack.html">Y2018-Text-Core-CVarpack</a>:</p>
+    <font color="#000000"><b><span style="background: #ff5429">function
+          "&amp;"(Left:CFix;Right:CVar) return CFix ;</span></b></font><br>
+    <font color="#000000"><b><span style="background: #ff5429">function
+          "&amp;"(Left:CVar;Right:CFix) return CVar ;</span></b></font><br>
+    <font color="#000000"><b><span style="background: #ff5429">function
+          "&amp;"(Left:CVar;Right:CVar) return CVar ;</span></b></font><br>
+    <font color="#000000"><b><span style="background: #ff5429">function
+          "&amp;"(Left:CVar;Right:CodePoint) return CVar ;</span></b></font><br>
+    <font color="#000000"><b><span style="background: #ff5429">function
+          "&amp;"(Left:CodePoint;Right:CVar) return CFix ;</span></b></font><br>
+    <p> Some are supported through package Y2018-Text-Core-Str and
+      Y2018-Text-Core-CVarpack and some by basic Ada.</p>
+    <table border="1" width="288">
+      <colgroup><col width="90"> <col width="120"> <col width="78"> </colgroup><tbody>
+        <tr valign="top">
+          <td>
+            <p><b>First or left</b></p>
+          </td>
+          <td>
+            <p><b>Second or right</b></p>
+          </td>
+          <td>
+            <p><b>Result</b></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p>CFix</p>
+          </td>
+          <td>
+            <p>CFix</p>
+          </td>
+          <td>
+            <p>CFix</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #e16173">CFix</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CFix</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p>CFix</p>
+          </td>
+          <td>
+            <p>CodePoint</p>
+          </td>
+          <td>
+            <p>CFix</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">Character</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p>String</p>
+          </td>
+          <td>
+            <p>String</p>
+          </td>
+          <td>
+            <p>String</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CodePoint</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p>String</p>
+          </td>
+          <td>
+            <p>Character</p>
+          </td>
+          <td>
+            <p>String</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CFix</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CVar</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CodePoint</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">Character</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CVar</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: transparent">CodePoint</span></p>
+          </td>
+          <td>
+            <p><span style="background: transparent">CFix</span></p>
+          </td>
+          <td>
+            <p><span style="background: transparent">CFix</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #e16173">CodePoint</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #e16173">CFix</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">CodePoint</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p>CodePoint</p>
+          </td>
+          <td>
+            <p>CodePoint</p>
+          </td>
+          <td>
+            <p>CFix</p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">CodePoint</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">Character</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">Character</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CFix</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">Character</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CVar</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: transparent">Character</span></p>
+          </td>
+          <td>
+            <p><span style="background: transparent">String</span></p>
+          </td>
+          <td>
+            <p><span style="background: transparent">String</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p><span style="background: #ffff00">Character</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">CodePoint</span></p>
+          </td>
+          <td>
+            <p><span style="background: #ffff00">String</span></p>
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <p>Character</p>
+          </td>
+          <td>
+            <p>Character</p>
+          </td>
+          <td>
+            <p>String</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>The result is always one of String, CFix or CVar type.<br>
+      Example:<br>
+      <font color="#6666cc">declare a:CFix:=a_cfix &amp; b_cvar &amp;
+        "5"; </font><br>
+      i.e. mixing CVar, CFix and String values and assign the result to
+      variable 'a' of type of CFix type.<br>
+      The type of such a mixed expression is defined by the first
+      operator, in this case 'a_CFix'. It is possible to set the type of
+      an expression by inserting at the beginning a null length constant
+      (<font color="#999900">""</font> for String, <font
+        color="#999900">null_CFix</font> or <font color="#999900">""c</font>
+      for CFix and <font color="#999900">null_CVar</font> for CVar ).<br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExRo</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t041.html">Prev</a> <a href="t039.html">Next</a> <font color="#999999">Up</font> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExRo<br>
+    </h1>
+    Building a MapPool from UnicodeData.txt and using the results in a
+    match with \p{} notation.<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO; use Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Ada.Command_Line;<br>
+    <font color="#999900">003|</font> with Ada.Containers.Ordered_Sets;<br>
+    <font color="#999900">004|</font> with
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">008|</font> with Y2018.Text.Util.UrvPack;<br>
+    <font color="#999900">009|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets;<br>
+    <font color="#999900">010|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">011|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">012|</font> --with DSECT;<br>
+    <font color="#999900">013|</font> procedure ExRo is<br>
+    <font color="#999900">014|</font>
+    __mp:Y2018.Text.Util.UrvPack.MapPool;<br>
+    <font color="#999900">015|</font>
+    __uval:Y2018.Text.Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">016|</font>
+    __uval2:Y2018.Text.Jets.RangeVectorPack.Set_TY.Set;<br>
+    <font color="#999900">017|</font> __unicodeDataFile:constant
+    String:="UCDlink/UnicodeData.txt"; <font color="#cc0000">-- Change
+      path to your UCD-directory</font><br>
+    <font color="#999900">018|</font> __p:PatternPack.Pattern_AC:=new
+    PatternPack.Pattern;<br>
+    <font color="#999900">019|</font> __m:MatchPack.Match_TY;<br>
+    <font color="#999900">020|</font> __nextPos : Integer:=0;<br>
+    <font color="#999900">021|</font> __source_value:CFix:="ulf9_bas_"c;<br>
+    <font color="#999900">022|</font> begin<br>
+    <font color="#999900">023|</font>
+    __Y2018.Text.Util.UrvPack.insert(mp,null_CVar &amp; "DIG"c);<br>
+    <font color="#999900">024|</font>
+__uval:=Y2018.Text.Util.UrvPack.UnicodeData(unicodeDataFile,Character_name=&gt;"^DIGIT"c,<font
+      color="#3333ff">ShowLineCount=&gt;1000</font>);<br>
+    <font color="#999900">025|</font>
+    __uval:=Y2018.Text.Util.UrvPack.Compress(uval);<br>
+    <font color="#999900">026|</font>
+    __Y2018.Text.Util.UrvPack.list_Set(uval,"my DIGIT"c,"<font
+      color="#cc0000">exro_DIGIT.lst</font>");<br>
+    <font color="#999900">027|</font>
+    __Y2018.Text.Util.UrvPack.put_Set(mp,null_CVar &amp; "DIG"c,uval);<br>
+    <font color="#999900">028|</font> __Ada.Text_IO.Put_Line ("DIGIT");<br>
+    <font color="#999900">029|</font> __--******************************<br>
+    <font color="#999900">030|</font>
+    __Y2018.Text.Util.UrvPack.insert(mp,null_CVar &amp; "LAT"c);<br>
+    <font color="#999900">031|</font>
+__uval:=Y2018.Text.Util.UrvPack.UnicodeData(unicodeDataFile,Character_name=&gt;"^LATIN"c,<font
+      color="#3333ff">ShowLineCount=&gt;1000</font>);<br>
+    <font color="#999900">032|</font>
+    __uval:=Y2018.Text.Util.UrvPack.Compress(uval);<br>
+    <font color="#999900">033|</font>
+    __Y2018.Text.Util.UrvPack.list_Set(uval,"my LATIN"c,"<font
+      color="#cc0000">exro_LATIN.lst</font>");<br>
+    <font color="#999900">034|</font>
+    __Y2018.Text.Util.UrvPack.put_Set(mp,null_CVar &amp; "LAT"c,uval);<br>
+    <font color="#999900">035|</font> __Ada.Text_IO.Put_Line ("LATIN");<br>
+    <font color="#999900">036|</font> __--******************************<br>
+    <font color="#999900">037|</font>
+    __Y2018.Text.Util.UrvPack.insert(mp,null_CVar &amp; "GRE"c);<br>
+    <font color="#999900">038|</font>
+__uval:=Y2018.Text.Util.UrvPack.UnicodeData(unicodeDataFile,Character_name=&gt;"^GREEK"c,<font
+      color="#3333ff">ShowLineCount=&gt;1000</font>);<br>
+    <font color="#999900">039|</font>
+    __uval:=Y2018.Text.Util.UrvPack.Compress(uval);<br>
+    <font color="#999900">040|</font>
+    __Y2018.Text.Util.UrvPack.list_Set(uval,"my GREEK"c,"<font
+      color="#cc0000">exro_GREEK.lst</font>");<br>
+    <font color="#999900">041|</font>
+    __Y2018.Text.Util.UrvPack.put_Set(mp,null_CVar &amp; "GRE"c,uval);<br>
+    <font color="#999900">042|</font>
+__uval2:=Y2018.Text.Util.UrvPack.UnicodeData(unicodeDataFile,Character_name=&gt;"^COPTIC"c,<font
+      color="#3333ff">ShowLineCount=&gt;1000</font>);<br>
+    <font color="#999900">043|</font>
+    __uval2:=Y2018.Text.Util.UrvPack.Compress(uval2);<br>
+    <font color="#999900">044|</font>
+    __Y2018.Text.Util.UrvPack.list_Set(uval2,"my COPTIC"c,"<font
+      color="#cc0000">exro_COPTIC.lst</font>");<br>
+    <font color="#999900">045|</font>
+    __Y2018.Text.Util.UrvPack.put_Set(mp,null_CVar &amp; "GRE"c,uval2);<br>
+    <font color="#999900">046|</font> __Ada.Text_IO.Put_Line
+    ("GREEK&amp;COPTIC");<br>
+    <font color="#999900">047|</font> __<br>
+    <font color="#999900">048|</font>
+    __Y2018.Text.Util.UrvPack.list_Map(mp,topTitle=&gt;"-- Top of Map
+    --",BottomTitle=&gt;"-- Bottom of Map --");<br>
+    <font color="#999900">049|</font> <br>
+    <font color="#999900">050|</font>
+__PatternPack.compileM(p,"^.*?(\p{DIG}.*?)(\p{LAT}+).*"c,Y2018.Text.Util.UrvPack.copy_Map(mp));<br>
+    <font color="#999900">051|</font> __if
+    patternPack.matches(p,1,nextPos,source_value,m) then<br>
+    <font color="#999900">052|</font> _____declare<br>
+    <font color="#999900">053|</font>
+    ________r:I_A_ARRAY:=MatchPack.getMatch(m);<br>
+    <font color="#999900">054|</font> _____begin<br>
+    <font color="#999900">055|</font> ________Ada.Text_IO.Put_Line
+    ("zero " &amp; subIA(source_value,r(0)));<br>
+    <font color="#999900">056|</font> ________Ada.Text_IO.Put_Line
+    ("one. " &amp; subIA(source_value,r(1)));<br>
+    <font color="#999900">057|</font> ________Ada.Text_IO.Put_Line
+    ("two. " &amp; subIA(source_value,r(2)));<br>
+    <font color="#999900">058|</font> _____end;<br>
+    <font color="#999900">059|</font> __end if;<br>
+    <font color="#999900">060|</font> <br>
+    <font color="#999900">061|</font> __Ada.Text_IO.Put_Line ("*** End
+    of ExRo ***");<br>
+    <font color="#999900">062|</font> end ExRo;<br>
+    <hr width="100%" size="2">
+    <h2> Result</h2>
+    <p>Running <u>export LD_LIBRARY_PATH=lib;bin/exro</u> in TEST
+      directory.<br>
+      Four times file UnicodeData.txt is read through and four listfile
+      is published and the result on the standard out.<br>
+      exro_DIGIT.lst:</p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> my
+    DIGIT<br>
+    <font color="#999900">002|</font> ________30 .. ______39<br>
+    <font color="#999900">003|</font> ______2488 .. ____2490<br>
+    <font color="#999900">004|</font> _____1F100 .. ___1F10A<br>
+    <hr width="100%" size="2">
+    <p>exro_LATIN.lst</p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> my
+    LATIN<br>
+    <font color="#999900">002|</font> ________41 .. ______5A<br>
+    <font color="#999900">003|</font> ________61 .. ______7A<br>
+    <font color="#999900">004|</font> ________C0 .. ______D6<br>
+    <font color="#999900">005|</font> ________D8 .. ______F6<br>
+    <font color="#999900">006|</font> ________F8 .. _____2AF<br>
+    <font color="#999900">007|</font> ______1D00 .. ____1D25<br>
+    <font color="#999900">008|</font> ______1D62 .. ____1D65<br>
+    <font color="#999900">009|</font> ______1D6B .. ____1D77<br>
+    <font color="#999900">010|</font> ______1D79 .. ____1D9A<br>
+    <font color="#999900">011|</font> ______1E00 .. ____1EFF<br>
+    <font color="#999900">012|</font> ______2090 .. ____209C<br>
+    <font color="#999900">013|</font> ______2184 .. ____2184<br>
+    <font color="#999900">014|</font> ______271D .. ____271D<br>
+    <font color="#999900">015|</font> ______2C60 .. ____2C7C<br>
+    <font color="#999900">016|</font> ______2C7E .. ____2C7F<br>
+    <font color="#999900">017|</font> ______A722 .. ____A76F<br>
+    <font color="#999900">018|</font> ______A771 .. ____A787<br>
+    <font color="#999900">019|</font> ______A78B .. ____A7BF<br>
+    <font color="#999900">020|</font> ______A7C2 .. ____A7CA<br>
+    <font color="#999900">021|</font> ______A7F5 .. ____A7F7<br>
+    <font color="#999900">022|</font> ______A7FA .. ____A7FF<br>
+    <font color="#999900">023|</font> ______AB30 .. ____AB5A<br>
+    <font color="#999900">024|</font> ______AB60 .. ____AB64<br>
+    <font color="#999900">025|</font> ______AB66 .. ____AB68<br>
+    <font color="#999900">026|</font> ______FB00 .. ____FB06<br>
+    <hr width="100%" size="2">
+    <p>exro_GREEK.lst</p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> my
+    GREEK<br>
+    <font color="#999900">002|</font> _______370 .. _____377<br>
+    <font color="#999900">003|</font> _______37A .. _____37F<br>
+    <font color="#999900">004|</font> _______384 .. _____38A<br>
+    <font color="#999900">005|</font> _______38C .. _____38C<br>
+    <font color="#999900">006|</font> _______38E .. _____3A1<br>
+    <font color="#999900">007|</font> _______3A3 .. _____3E1<br>
+    <font color="#999900">008|</font> _______3F0 .. _____3FF<br>
+    <font color="#999900">009|</font> ______1D26 .. ____1D2A<br>
+    <font color="#999900">010|</font> ______1D66 .. ____1D6A<br>
+    <font color="#999900">011|</font> ______1F00 .. ____1F15<br>
+    <font color="#999900">012|</font> ______1F18 .. ____1F1D<br>
+    <font color="#999900">013|</font> ______1F20 .. ____1F45<br>
+    <font color="#999900">014|</font> ______1F48 .. ____1F4D<br>
+    <font color="#999900">015|</font> ______1F50 .. ____1F57<br>
+    <font color="#999900">016|</font> ______1F59 .. ____1F59<br>
+    <font color="#999900">017|</font> ______1F5B .. ____1F5B<br>
+    <font color="#999900">018|</font> ______1F5D .. ____1F5D<br>
+    <font color="#999900">019|</font> ______1F5F .. ____1F7D<br>
+    <font color="#999900">020|</font> ______1F80 .. ____1FB4<br>
+    <font color="#999900">021|</font> ______1FB6 .. ____1FC4<br>
+    <font color="#999900">022|</font> ______1FC6 .. ____1FD3<br>
+    <font color="#999900">023|</font> ______1FD6 .. ____1FDB<br>
+    <font color="#999900">024|</font> ______1FDD .. ____1FEF<br>
+    <font color="#999900">025|</font> ______1FF2 .. ____1FF4<br>
+    <font color="#999900">026|</font> ______1FF6 .. ____1FFE<br>
+    <font color="#999900">027|</font> ______AB65 .. ____AB65<br>
+    <font color="#999900">028|</font> _____10140 .. ___1018D<br>
+    <font color="#999900">029|</font> _____101A0 .. ___101A0<br>
+    <font color="#999900">030|</font> _____1D200 .. ___1D241<br>
+    <font color="#999900">031|</font> _____1D245 .. ___1D245<br>
+    <hr width="100%" size="2">
+    <p>exro_COPTIC.lst</p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> my
+    COPTIC<br>
+    <font color="#999900">002|</font> _______3E2 .. _____3EF<br>
+    <font color="#999900">003|</font> ______2C80 .. ____2CF3<br>
+    <font color="#999900">004|</font> ______2CF9 .. ____2CFF<br>
+    <font color="#999900">005|</font> _____102E0 .. ___102FB<br>
+    <hr width="100%" size="2">
+    <p>Listing on STDOUT:</p>
+    <font color="#999900">001|</font> <font color="#3333ff">&gt;</font><br>
+    <font color="#999900">002|</font> <font color="#3333ff">.................................&lt;</font><br>
+    <font color="#999900">003|</font> DIGIT<br>
+    <font color="#999900">004|</font> <font color="#3333ff">&gt;</font><br>
+    <font color="#999900">005|</font> <font color="#3333ff">.................................&lt;</font><br>
+    <font color="#999900">006|</font> LATIN<br>
+    <font color="#999900">007|</font> <font color="#3333ff">&gt;</font><br>
+    <font color="#999900">008|</font> <font color="#3333ff">.................................&lt;</font><br>
+    <font color="#999900">009|</font> <font color="#3333ff">&gt;</font><br>
+    <font color="#999900">010|</font> <font color="#3333ff">.................................&lt;</font><br>
+    <font color="#999900">011|</font> GREEK&amp;COPTIC<br>
+    <font color="#999900">012|</font> -- Top of Map --<br>
+    <font color="#999900">013|</font> __DIG size= 3<br>
+    <font color="#999900">014|</font> __GRE size= 4<br>
+    <font color="#999900">015|</font> __LAT size= 25<br>
+    <font color="#999900">016|</font> __Number of urvSets 3<br>
+    <font color="#999900">017|</font> -- Bottom of Map --<br>
+    <font color="#999900">018|</font> zero ulf9_bas_<br>
+    <font color="#999900">019|</font> one. 9_<br>
+    <font color="#999900">020|</font> two. bas<br>
+    <font color="#999900">021|</font> *** End of ExRo ***<br>
+    <hr width="100%" size="2">
+    <p>The specification of "ShowLineCount=&gt;1000" reults in showing a
+      'line counter' for those of us who are impatient (print a point
+      ('.') after 1000 lines i read).<br>
+    </p>
+    <p>The applied pattern is <font color="#999900"><b>^.*?(\p{DIG}.*?)(\p{LAT}+).*</b></font>
+      to value <b>"ulf9_bas_"c</b> and the shown on lines 018 .. 020.<br>
+      And an output file q____.lst.<br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Classes, Sets and MapPools</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t047.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Classes, Sets and MapPools</h1>
+    <p> Inside \p (or \P) bracket is an identifier for a character
+      group. Note this differs from the solutions in Java or C++. In
+      Y2018-Text regular expression if an identifier is not one of
+      Unicode GC then the identifier must be found in the
+      Jets.RangeVectorPack.Map_TY.Map given in the Pattern call
+      (examples in&nbsp; <a href="t041.html">ExPi.adb</a> and <a
+        href="t040.html">ExRo.adb</a>). The Map_TY.Map of
+      RangeVectorPack looks like a library of groups where the key of
+      the map is this group identifier.<br>
+      The reason for this solution is that contruction of a map item is
+      rather time consuming on a small computer and may involve reading
+      through Unicode UCD data file or files.<br>
+    </p>
+    <p>A class is an entity generated during the compilation of a
+      regular expression. The code is as follows<br>
+    </p>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> when
+    REQ_CLASS =&gt; -- Exists only in RegexPattern<br>
+    <font color="#999900">002|</font> __class_min : Integer; --
+    0:Integer'Last<br>
+    <font color="#999900">003|</font> __class_max : Integer;<br>
+    <font color="#999900">004|</font> __class_maxORG : Integer;<br>
+    <font color="#999900">005|</font> __class_greedy : Boolean;<br>
+    <font color="#999900">006|</font> __class_pos :
+    RangeVectorPack.RangeVector;<br>
+    <font color="#999900">007|</font> __class_neg :
+    RangeVectorPack.RangeVector;<br>
+    <hr width="100%" size="2">
+    <p>In a class we have two RangeVectors, one for positive result and
+      one for negative (i.e. should not contain these codepoints). In a
+      regular expression this corresponds to a \p (positive) and \P
+      (negative) values and if in square brackets ([]) the content is
+      joined.<br>
+    </p>
+    <p>Presentation of <a href="t016.html">RangeVector</a> funtion for
+      function.<br>
+      The implementation structure <a
+        href="y2018_text_jets_rangevectorpack.html">Y2018.Text.Jets.RangeVectorPack</a><br>
+    </p>
+    <p>Presentation of <a href="t043.html">URV funtions</a> for
+      function.<br>
+      The implementatio structure <a
+        href="y2018_text_util_urvpack.html">Y2018.Text.Util.UrvPack</a>.</p>
+    <p> Tools for creating RangeVectorPack.UserRangeVectorMap_TY.Map's
+      in <a href="t037.html">CreateURV</a>.<br>
+    </p>
+    <p> At last <a href="t003.html">General category of Unicode.org</a>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

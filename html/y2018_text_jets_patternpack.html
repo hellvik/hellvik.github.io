@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Jets.PatternPack</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_jets_matchpack.html">Prev</a> <a href="y2018_text_jets_rangevectorpack.html">Next</a> <a href="t049.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Jets.PatternPack</h1>
+    <hr width="100%" size="2"><font color="#999900">001|</font> with
+    Y2018.Text.Jets.RangeVectorPack; --use
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Jets.JetsTool; use
+    Y2018.Text.Jets.JetsTool;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Jets.MatchPack;
+    --use Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Core.STR;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Jets.Compiler; use
+    Y2018.Text.Jets.Compiler;<br>
+    <font color="#999900">008|</font> with Ada.Finalization; use
+    Ada.Finalization;<br>
+    <font color="#999900">009|</font> with Ada.Containers.Ordered_Maps;<br>
+    <font color="#999900">010|</font> package
+    Y2018.Text.Jets.PatternPack is<br>
+    <font color="#999900">011|</font> __type Pattern is tagged private;
+    --limited private;<br>
+    <font color="#999900">012|</font> __type Pattern_AC is access
+    Pattern;<br>
+    <font color="#999900">013|</font> __function queryState(ptc:
+    Pattern_AC) return String;<br>
+    <font color="#999900">014|</font> __function queryTopID(ptc:
+    Pattern_AC) return String;<br>
+    <font color="#999900">015|</font> __procedure compileM(ptc:in out
+    Pattern_AC;s :
+    CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map);<br>
+    <font color="#999900">016|</font> __function compileM(s :
+    CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map)
+    return Pattern_AC;<br>
+    <font color="#999900">017|</font> __procedure compileU(ptc:in out
+    Pattern_AC;s :
+    CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map);<br>
+    <font color="#999900">018|</font> __function compileU(s :
+    CFix;urv:RangeVectorPack.Map_TY.Map:=RangeVectorPack.Map_TY.Empty_Map)
+    return Pattern_AC;<br>
+    <font color="#999900">019|</font> __function
+    matches(pattern:Pattern_AC;startPos:Integer;nextPos:out
+    Integer;c4match : CFix;match: out MatchPack.Match_TY;squ:Integer:=0)
+    return Boolean;<br>
+    <font color="#999900">020|</font> __function
+    nodeCList(pattern:Pattern_AC;cntMax:Integer:=10;extend:Boolean:=FALSE)
+    return CList.map;<br>
+    <font color="#999900">021|</font> __procedure PatternPack_Finalize(p
+    : in out Pattern);<br>
+    <font color="#999900">022|</font> __private type Pattern is tagged
+    -- nonlimited<br>
+    <font color="#999900">023|</font> _____record -- nonlimited tagged
+    type cannot have limited components<br>
+    <font color="#999900">024|</font> ________state: PST_TY;<br>
+    <font color="#999900">025|</font> ________top: RE_Elem_AC;<br>
+    <font color="#999900">026|</font> ________pool:JetsTool.Pool_TY; --
+    RE_Elem_AC node three. Used as storage for the node three.<br>
+    <font color="#999900">027|</font> ________uc:boolean;<br>
+    <font color="#999900">028|</font> _____end record;<br>
+    <font color="#999900">029|</font> end Y2018.Text.Jets.PatternPack;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

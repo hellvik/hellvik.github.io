@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Grouping and capturing</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t004.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Grouping and capturing</h1>
+    <p>Support for grouping and capturing is limited to only two cases<br>
+    </p>
+    <ul>
+      <li>capturing and grouping parentheses (...)<br>
+      </li>
+      <li>grouping only parentheses (?:...)<br>
+      </li>
+      <li><font color="#999999">named capture (?&lt;name&gt;...)</font>
+        <font color="#ff0000">NOT SUPPORTED</font><br>
+      </li>
+      <li><font color="#999999">atomic grouping (?&gt;...) </font><font
+          color="#ff0000">NOT SUPPORTED</font></li>
+      <li><font color="#999999">conditional</font> <font
+          color="#ff0000">NOT SUPPORTED</font></li>
+    </ul>
+    the reason for the limitation is in the implementation itself, the
+    capturing is done in a very late state of the process.<br>
+    <h2>Quantifiers</h2>
+    Two types of quantifiers are supported<br>
+    <ul>
+      <li>greedy quantifiers *, +, ?, <font color="#999900">{&lt;num&gt;{,&lt;num&gt;}}<font
+            color="#000000"> or&nbsp; <font color="#999900">{&lt;num&gt;{:&lt;num&gt;}}</font></font></font><br>
+      </li>
+      <li>lazy quantifiers *?, +?, <font color="#999900">{&lt;num&gt;{,&lt;num&gt;}}?</font><font
+          color="#999900"><font color="#000000"> or&nbsp; <font
+              color="#999900">{&lt;num&gt;{:&lt;num&gt;}}?</font></font></font></li>
+      <li><font color="#999999">possessive quantifiers</font> <font
+          color="#999900">*+, ++, ?+, {&lt;num&gt;,&lt;num&gt;}+ </font><font
+          color="#999900"><font color="#ff0000">NOT SUPPORTED</font></font></li>
+    </ul>
+    (Note both <font color="#999900">{&lt;num&gt;,&lt;num&gt;}</font>
+    and <font color="#999900">{&lt;num&gt;:&lt;num&gt;}</font> means
+    the same the comma is only changed to a colon)<br>
+    Examples of usage <a href="t054.html">ExIota</a> .<br>
+    <h2>Alternation</h2>
+    Alternation is supported in <u><i>capturing and grouping</i></u>
+    and <u><i>grouping only</i></u> parentheses. By writing "<b>^A(B|C)D$</b>"c
+    you get result from "ABD" and "ACD" source strings.<br>
+    <h2>Other issues</h2>
+    <ul>
+      <li> Backtracking exists but in a very different form (<a
+          href="t049.html">The PatternPack / squ</a>) , and not with the
+        use of <i>possessive quantifiers</i>.</li>
+      <li> Example of odd capturing with parentheses when capturing is
+        repeated twice <a href="t052.html">ExKappa</a><br>
+      </li>
+    </ul>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

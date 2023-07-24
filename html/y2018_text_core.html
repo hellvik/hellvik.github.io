@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.text.core</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text.html">Prev</a> <a href="y2018_text_core_cvarpack.html">Next</a> <a href="t020.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Core</h1>
+    Specification<br>
+    <hr width="100%" size="2"><font color="#999900">001|</font> package
+    Y2018.Text.Core is<br>
+    <font color="#999900">002|</font> __type TRINITY is
+    (TRI_TRUE,TRI_FALSE,TRI_UNDEF);<br>
+    <font color="#999900">003|</font> __type CodePoint is range 0 ..
+    2097151;<br>
+    <font color="#999900">004|</font> __for CodePoint'Size use 21;<br>
+    <font color="#999900">005|</font> __type CFix is Array(Positive
+    range &lt;&gt;) of CodePoint;<br>
+    <font color="#999900">006|</font> __CodePoint_Space: constant
+    CodePoint :=CodePoint'Val(16#20#);<br>
+    <font color="#999900">007|</font> __CodePoint_Replacement_Character:
+    constant CodePoint :=CodePoint'Val(16#FFFD#);<br>
+    <font color="#999900">008|</font> __Null_CFixX : CFix(1 .. 0); --
+    used only for defining Null_CFix as a constant<br>
+    <font color="#999900">009|</font> __Null_CFix: constant CFix :=
+    Null_CFixX;<br>
+    <font color="#999900">010|</font> __CFix_Space:constant
+    CFix:=(1=&gt;CodePoint'Val(16#20#));<br>
+    <font color="#999900">011|</font> end Y2018.Text.Core;<br>
+    <hr width="100%" size="2"><i>Types</i><b><br>
+      TRINITY</b> – a boolean like type but for three ‘logical’ values<br>
+    <b>CodePoint</b> – unit for storing and accessing Unicode code point
+    as one (21 bits).<br>
+    <b>CFix</b> – an array type of Codepoint. Looks and works as Ada
+    String<br>
+    <br>
+    <i>Constants</i><br>
+    <u>CodePoint_Space</u> - blank but as codepoint<br>
+    <u>CodePoint_Replacement_Character</u> - replacement character but
+    as codepoint<br>
+    <u>Null_CFix</u> - null length array of codepoints<br>
+    <u>CFix_Space</u> - array of codepoints containing only a blank<br>
+    <h2>Subpackages </h2>
+    <ul>
+      <li>Y2018.Text.Core.C32 - table for converting 8 to 21 bit<br>
+      </li>
+      <li>Y2018.Text.Core.C8 - table for converting 21 to 8 bit<br>
+      </li>
+      <li><a href="y2018_text_core_cvarpack.html">Y2018.Text.Core.CVarpack</a>
+        - a variable length 'CFix' called <b>CVar</b> with supporting
+        functions. <br>
+      </li>
+      <li>Y2018.Text.Core.GC - tables (a and u) for connecting General
+        Code value to codepoint<br>
+      </li>
+      <li><a href="y2018_text_core_str.html">Y2018.Text.Core.Str</a> -
+        package of the string support where a 'string' contains 21-bit
+        entities (CFix) and oveloading of operations between UTF-8
+        (8-bits) and CFix and CVar.<br>
+      </li>
+      <li>Y2018.Text.Core.Ultcase - table for converting between upper,
+        lower and title case<br>
+      </li>
+      <li><a href="y2018_text_core_utf.html">Y2018.Text.Core.UTF</a> -
+        conversion between UTF-8 and Codepoint (21-bit) and support<br>
+      </li>
+    </ul>
+    <br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

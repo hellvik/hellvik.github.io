@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>SubC</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t006.html">Prev</a> <a href="t008.html">Next</a> <a href="t020.html">Up</a> <a href="y2018_text_core_str.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>SubC</h1>
+    <p>SubC works an looks like substring (Java) or substr (PL/I) but we
+      use the name ‘subC’ because we are working with 21-bit characters
+      and all indexing is based on theese 21-bit characters.</p>
+    <b>function subC(value:Cfix;first:Integer:=Integer'First;
+      length:Integer:=Integer'First;last:Integer:=Integer'First) return
+      CFix;<br>
+      <br>
+    </b> <b>function subC(value:String;first:Integer:=Integer'First;
+      length:Integer:=Integer'First;last:Integer:=Integer'First) return
+      String;<br>
+      <br>
+    </b> <b>function subC(value:Cvar;first:Integer:=Integer'First;
+      length:Integer:=Integer'First;last:Integer:=Integer'First) return
+      CVar;</b><br>
+    <p> Examples:</p>
+    <font color="#999900">001|</font> v10:String:="1234567890";<br>
+    <font color="#999900">002|</font>
+    w:String:=(3=&gt;'3',4=&gt;'4',5=&gt;'5');<br>
+    <font color="#999900">003|</font> x8:String:=" ABC ";<br>
+    <font color="#999900">004|</font> y14:String:="abcdefghijklmn";<br>
+    <font color="#999900">005|</font> y15:String:="abcdefghijklmnU";<br>
+    <font color="#999900">006|</font> z:String(1 .. 0);
+    <hr> <font color="#999900">[1]</font> Ada.Text_IO.Put_Line
+    ("subC(v10) .........&gt;" &amp; subC(v10));<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10)
+      .........&gt;1234567890</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameters first, length and last</font><font
+      color="#000000"> </font><font color="#000000">are all defaulted
+      and the result is the same as the value of the ‘value’ parameter.</font><br>
+    <font color="#999900">[2]</font> Ada.Text_IO.Put_Line ("subC(v10,2)
+    .......&gt;" &amp; subC(v10,2));<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,2)
+      .......&gt;234567890</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameters length and last is
+      defaulted and the result is from the ‘2’ to the end of the string.</font><br>
+    <font color="#999900">[3]</font> Ada.Text_IO.Put_Line
+    ("subC(v10,2,3) .....&gt;" &amp; subC(v10,2,3));<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,2,3)
+      .....&gt;234</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter ‘last’ is defaulted and
+      ignored.</font><br>
+    <font color="#999900">[4]</font> Ada.Text_IO.Put_Line
+    ("subC(v10,2,last=&gt;5)&gt;" &amp; subC(v10,2,last=&gt;5));<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,2,last=&gt;5)&gt;2345</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter ‘length’ is defaulted
+      and ignored.</font><br>
+    <font color="#999900">[5]</font> Ada.Text_IO.Put_Line
+    ("subC(v10,2,8,6) ...&gt;" &amp; subC(v10,2,8,6));<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,2,8,6)
+      ...&gt;23456</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter ‘length’ and ‘last’ is
+      both given. The result is the shortest version.</font><br>
+    <font color="#999900">[6]</font> Ada.Text_IO.Put_Line
+    ("subC(v10,length=&gt;5)&gt;" &amp; subC(v10,length=&gt;5));<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,length=&gt;5)&gt;12345</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter</font><font
+      color="#000000">s</font><font color="#000000"> ‘</font><font
+      color="#000000">first’ and ‘last’ are defulted</font><font
+      color="#000000">.</font><br>
+    <font color="#999900">[7]</font> Ada.Text_IO.Put_Line
+    ("subC(v10,2,0) .....&gt;" &amp; subC(v10,2,0) &amp; "&lt; zero
+    length");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,2,0)
+      .....&gt;&lt; zero length</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter </font><font
+      color="#000000">length has a value of zero</font><font
+      color="#000000">.</font><br>
+    <font color="#999900">[8]</font> Ada.Text_IO.Put_Line
+    ("subC(v10,2,last=&gt;1)&gt;" &amp; subC(v10,2,last=&gt;1) &amp;
+    "&lt; zero length");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,2,last=&gt;1)&gt;&lt;
+      zero length</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter </font><font
+      color="#000000">last has a value one smaller than first</font><font
+      color="#000000">.</font><br>
+    <font color="#999900">[9]</font> Ada.Text_IO.Put_Line
+    ("subC(v10,2,0,8) ...&gt;" &amp; subC(v10,2,0,8) &amp; "&lt; zero
+    length");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(v10,2,0,8)
+      ...&gt;&lt; zero length</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter </font><font
+      color="#000000">length has a value of zero and a zero length
+      result is the shortest solution</font><font color="#000000">.</font><br>
+    <font color="#999900">[10]</font> Ada.Text_IO.Put_Line
+    ("subC(w,3,6,2) ...&gt;" &amp; subC(w,3,6,2) &amp; "&lt; zero
+    length");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(w,3,6,2) ...&gt;&lt;
+      zero length</font><br>
+    &nbsp;&nbsp;<font color="#000000">Parameter ‘</font><font
+      color="#000000">last</font><font color="#000000">’</font><font
+      color="#000000"> has a value smaller than first and a zero length
+      result is the shortest solution</font><font color="#000000">.</font><br>
+    <font color="#999900">[11]</font> Ada.Text_IO.Put_Line
+    ("subC(w,length=&gt;0)&gt;" &amp; subC(w,length=&gt;0) &amp; "&lt;
+    zero length");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(w,length=&gt;0)&gt;&lt;
+      zero length</font><br>
+    <font color="#999900">[12]</font> Ada.Text_IO.Put_Line ("subC(z)
+    .........&gt;" &amp; subC(z) &amp; "&lt; zero length");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(z) .........&gt;&lt;
+      zero length</font><br>
+    <font color="#999900">[13]</font> Ada.Text_IO.Put_Line
+    ("subC(z,length=&gt;0)&gt;" &amp; subC(z,length=&gt;0) &amp; "&lt;
+    zero length");<br>
+    &nbsp;&nbsp;result: <font color="#ff8000">subC(z,length=&gt;0)&gt;&lt;
+     zero length</font><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>The p</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t004.html">Prev</a> <a href="t015.html">Next</a> <a href="t014.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>The '\p'</h1>
+    <p>All about how '\p' is supported and implemented.<br>
+    </p>
+    <ul>
+      <li>What is a <a href="t016.html">RangeVector</a> - A RangeVector
+        har as a private structure Ada.Containers.Ordered_Sets Set with
+        rows of Velem type. In both Integer variables of a row a
+        CodePoint’value is stored<br>
+      </li>
+      <li>Classes, Sets and <a href="t042.html">MapPools</a> - a class
+        corresponds to a '\p{}' notation in Regular expression. A set is
+        group of codepoint ranges. A MapPool is a library like structure
+        with named sets.</li>
+      <li>UrvPack <a href="t043.html">utilities</a> - Tools for working
+        with Mappools, Sets, codepoint ranges, also called Elements, and
+        how to create these from Unicode.org file UnicodeData.txt and
+        Block.txt.<br>
+      </li>
+    </ul>
+    <p>To understand how a regular expression is implemented as a syntax
+      tree (<a href="t017.html">RE_ELEM</a>) and '\p{}' for Unicode.org
+      <a href="t003.html">General category</a>. In code the General
+      category for any codepoint is returned by function <a
+        href="t021.html">Get_GC</a>. In coding Meta character sequences
+      is used, some sequences is only used by the preprocessor some are
+      part of regular expression (<a href="t022.html">META</a> character
+      sequences).<br>
+    </p>
+    <h2>Tools for working with the '\p'</h2>
+    <h2> </h2>
+    <ol>
+      <li>The <a href="t034.html">CmakeGC_URV</a> tools make General
+        Category mappools from Unicodedata.txt. and store these in a
+        mappool storage (DAT-file). The idea is to give as input only a
+        part of the Unicodedata.txt not the whole file.</li>
+      <li>The <a href="t036.html">CreateUnicodeBlock</a> tool for
+        making and storing codepoint sequences from Block.txt to a
+        mappool storage (DAT-file). The idea is to make a specific
+        choise and store it. Can be used for characters in the Coptic
+        block or Greek block.</li>
+      <li>Create mappool storage (DAT-files) for storing
+        RangeVectorPack.UserRangeVectorMap_TY.Map's with the tool <a
+          href="t037.html">CreateURV</a>. Contain operation for loading,
+        storing and combiding content of mappools.</li>
+      <li>Utility <a href="t035.html">Classlist</a> list the contents
+        of a mappool storage (DAT-file) <br>
+      </li>
+    </ol>
+    .<br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

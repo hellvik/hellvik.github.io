@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ExTau</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t039.html">Prev</a> <a href="t038.html">Next</a> <font color="#999999">Up</font> <font color="#999999">Down</font> <a href="t050.html">TEST</a> <br>
+<hr width="100%" size="2">
+    <h1>ExTau<br>
+    </h1>
+    An example of how the preprocessor changes code and what the change
+    looks like<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Text_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Jets.MatchPack;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Jets.PatternPack;<br>
+    <font color="#999900">007|</font> --with DSECT;<br>
+    <font color="#999900">008|</font> procedure ExTau is<br>
+    <font color="#999900">009|</font> __y:CVar;<br>
+    <font color="#999900">010|</font> __function h(s:CVar) return CVar
+    is<br>
+    <font color="#999900">011|</font> _____t:CFix:=""c &amp; s;<br>
+    <font color="#999900">012|</font> _____r:CVar:=null_CVar;<br>
+    <font color="#999900">013|</font> __begin<br>
+    <font color="#999900">014|</font> _____for i in t'First(1) ..
+    t'Last(1) loop<br>
+    <font color="#999900">015|</font> ________r:=r &amp; "_" &amp;
+    CodePoint2Hex8CFix(t(i));<br>
+    <font color="#999900">016|</font> _____end loop;<br>
+    <font color="#999900">017|</font> _____return r;<br>
+    <font color="#999900">018|</font> __end h;<br>
+    <font color="#999900">019|</font> begin<br>
+    <font color="#999900">020|</font> __y:=null_CVar &amp;"\a"c;<br>
+    <font color="#999900">021|</font> __Ada.Text_IO.Put_Line("a&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">022|</font> __y:=null_CVar &amp;"\A"c;<br>
+    <font color="#999900">023|</font> __Ada.Text_IO.Put_Line("A&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">024|</font> __y:=null_CVar &amp;"\b"c;<br>
+    <font color="#999900">025|</font> __Ada.Text_IO.Put_Line("b&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">026|</font> __y:=null_CVar &amp;"\B"c;<br>
+    <font color="#999900">027|</font> __Ada.Text_IO.Put_Line("B&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">028|</font> __y:=null_CVar &amp;"\c9"c;<br>
+    <font color="#999900">029|</font> __Ada.Text_IO.Put_Line("c&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">030|</font> __y:=null_CVar &amp;"\d"c;<br>
+    <font color="#999900">031|</font> __Ada.Text_IO.Put_Line("d&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">032|</font> __y:=null_CVar &amp;"\D"c;<br>
+    <font color="#999900">033|</font> __Ada.Text_IO.Put_Line("D&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">034|</font> __y:=null_CVar &amp;"\e"c;<br>
+    <font color="#999900">035|</font> __Ada.Text_IO.Put_Line("e&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">036|</font> __y:=null_CVar &amp;"\E"c;<br>
+    <font color="#999900">037|</font> __Ada.Text_IO.Put_Line("E&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">038|</font> __y:=null_CVar &amp;"\f"c;<br>
+    <font color="#999900">039|</font> __Ada.Text_IO.Put_Line("f&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">040|</font> __y:=null_CVar &amp;"\F"c;<br>
+    <font color="#999900">041|</font> __Ada.Text_IO.Put_Line("F&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">042|</font> __y:=null_CVar &amp;"\g"c;<br>
+    <font color="#999900">043|</font> __Ada.Text_IO.Put_Line("g&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">044|</font> __y:=null_CVar &amp;"\G"c;<br>
+    <font color="#999900">045|</font> __Ada.Text_IO.Put_Line("G&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">046|</font> __y:=null_CVar &amp;"\h"c;<br>
+    <font color="#999900">047|</font> __Ada.Text_IO.Put_Line("h&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">048|</font> __y:=null_CVar &amp;"\H"c;<br>
+    <font color="#999900">049|</font> __Ada.Text_IO.Put_Line("H&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">050|</font> __y:=null_CVar &amp;"\k"c;<br>
+    <font color="#999900">051|</font> __Ada.Text_IO.Put_Line("k&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">052|</font> __y:=null_CVar &amp;"\n"c;<br>
+    <font color="#999900">053|</font> __Ada.Text_IO.Put_Line("n&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">054|</font> __y:=null_CVar &amp;"\N"c;<br>
+    <font color="#999900">055|</font> __Ada.Text_IO.Put_Line("N&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">056|</font> __y:=null_CVar &amp;"\p{L}"c;<br>
+    <font color="#999900">057|</font> __Ada.Text_IO.Put_Line("p&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">058|</font> __y:=null_CVar &amp;"\P{L}"c;<br>
+    <font color="#999900">059|</font> __Ada.Text_IO.Put_Line("P&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">060|</font> __y:=null_CVar &amp;"\q"c;<br>
+    <font color="#999900">061|</font> __Ada.Text_IO.Put_Line("q&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">062|</font> __y:=null_CVar &amp;"\Q"c;<br>
+    <font color="#999900">063|</font> __Ada.Text_IO.Put_Line("Q&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">064|</font> __y:=null_CVar &amp;"\r"c; -- will
+    generate carrige return CR<br>
+    <font color="#999900">065|</font> __Ada.Text_IO.Put_Line("r&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">066|</font> __y:=null_CVar &amp;"\R"c;<br>
+    <font color="#999900">067|</font> __Ada.Text_IO.Put_Line("R&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">068|</font> __y:=null_CVar &amp;"\s"c;<br>
+    <font color="#999900">069|</font> __Ada.Text_IO.Put_Line("s&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">070|</font> __y:=null_CVar &amp;"\S"c;<br>
+    <font color="#999900">071|</font> __Ada.Text_IO.Put_Line("S&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">072|</font> __y:=null_CVar &amp;"\t"c;<br>
+    <font color="#999900">073|</font> __Ada.Text_IO.Put_Line("t&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">074|</font> __y:=null_CVar &amp;"\T"c;<br>
+    <font color="#999900">075|</font> __Ada.Text_IO.Put_Line("T&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">076|</font> __y:=null_CVar &amp;"\u2654"c; --
+    WHITE KING<br>
+    <font color="#999900">077|</font> __Ada.Text_IO.Put_Line("u&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">078|</font> __y:=null_CVar &amp;"\U2654"c; --
+    WHITE KING<br>
+    <font color="#999900">079|</font> __Ada.Text_IO.Put_Line("U&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">080|</font> __y:=null_CVar &amp;"\v002655"c;
+    -- WHITE QUEEN<br>
+    <font color="#999900">081|</font> __Ada.Text_IO.Put_Line("v&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">082|</font> __y:=null_CVar &amp;"\V002655"c;
+    -- WHITE QUEEN<br>
+    <font color="#999900">083|</font> __Ada.Text_IO.Put_Line("V&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">084|</font> __y:=null_CVar &amp;"\w"c;<br>
+    <font color="#999900">085|</font> __Ada.Text_IO.Put_Line("w&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">086|</font> __y:=null_CVar &amp;"\W"c;<br>
+    <font color="#999900">087|</font> __Ada.Text_IO.Put_Line("W&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">088|</font> __y:=null_CVar &amp;"\x3F"c; -- ?
+    question mark<br>
+    <font color="#999900">089|</font> __Ada.Text_IO.Put_Line("x&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">090|</font> __y:=null_CVar &amp;"\X3F"c; -- ?
+    question mark<br>
+    <font color="#999900">091|</font> __Ada.Text_IO.Put_Line("X&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">092|</font> __y:=null_CVar &amp;"\z"c;<br>
+    <font color="#999900">093|</font> __Ada.Text_IO.Put_Line("z&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">094|</font> __y:=null_CVar &amp;"\Z"c;<br>
+    <font color="#999900">095|</font> __Ada.Text_IO.Put_Line("Z&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">096|</font> __y:=null_CVar &amp;"\o123"c;<br>
+    <font color="#999900">097|</font> __Ada.Text_IO.Put_Line("o&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">098|</font> __y:=null_CVar &amp;"\O123"c;<br>
+    <font color="#999900">099|</font> __Ada.Text_IO.Put_Line("O&gt;"
+    &amp; y &amp; "&lt;" &amp; h(y) );<br>
+    <font color="#999900">100|</font> __y:=null_CVar &amp;"\\\"c;<br>
+    <font color="#999900">101|</font>
+    __Ada.Text_IO.Put_Line("(backslash)&gt;" &amp; y &amp; "&lt;" &amp;
+    h(y) );<br>
+    <font color="#999900">102|</font> end ExTau;<br>
+    <hr width="100%" size="2">
+    <h2> Result</h2>
+    Running <u>export LD_LIBRARY_PATH=lib;bin/extau</u><b> </b>in TEST
+    directory.<br>
+    Procedure <font color="#3333ff">CodePoint2Hex8CFix(t(i))</font> is
+    used for the translation to hexadecimal for every codepoint. Value
+    '_______5C' is hexadecimal for '\' (backslash).<br>
+    <hr width="100%" size="2"> <font color="#999900">001|</font>
+    a&gt;\a&lt;_______5C_______61<br>
+    <font color="#999900">002|</font> A&gt;\A&lt;_______5C_______41<br>
+    <font color="#999900">003|</font> <font color="#cc0000">b&gt;&lt;________8</font><br>
+    <font color="#999900">004|</font> B&gt;\B&lt;_______5C_______42<br>
+    <font color="#999900">005|</font>
+    c&gt;\c9&lt;_______5C_______63_______39<br>
+    <font color="#999900">006|</font> d&gt;\d&lt;_______5C_______64<br>
+    <font color="#999900">007|</font> D&gt;\D&lt;_______5C_______44<br>
+    <font color="#999900">008|</font> e&gt;\e&lt;_______5C_______65<br>
+    <font color="#999900">009|</font> E&gt;\E&lt;_______5C_______45<br>
+    <font color="#999900">010|</font> <font color="#cc0000">f&gt;&lt;________C</font><br>
+    <font color="#999900">011|</font> F&gt;\F&lt;_______5C_______46<br>
+    <font color="#999900">012|</font> g&gt;\g&lt;_______5C_______67<br>
+    <font color="#999900">013|</font> G&gt;\G&lt;_______5C_______47<br>
+    <font color="#999900">014|</font> h&gt;\h&lt;_______5C_______68<br>
+    <font color="#999900">015|</font> H&gt;\H&lt;_______5C_______48<br>
+    <font color="#999900">016|</font> k&gt;\k&lt;_______5C_______6B<br>
+    <font color="#999900">017|</font> <font color="#cc0000">n&gt;</font><br>
+    <font color="#999900">018|</font> <font color="#cc0000">&lt;________A</font><br>
+    <font color="#999900">019|</font> N&gt;\N&lt;_______5C_______4E<br>
+    <font color="#999900">020|</font>
+    p&gt;\p{L}&lt;_______5C_______70_______7B_______4C_______7D<br>
+    <font color="#999900">021|</font>
+    P&gt;\P{L}&lt;_______5C_______50_______7B_______4C_______7D<br>
+    <font color="#999900">022|</font> q&gt;\q&lt;_______5C_______71<br>
+    <font color="#999900">023|</font> Q&gt;\Q&lt;_______5C_______51<br>
+    <font color="#999900">024|</font><font color="#cc0000"> r&gt;
+      &lt;________D</font><br>
+    <font color="#999900">025|</font> R&gt;\R&lt;_______5C_______52<br>
+    <font color="#999900">026|</font> s&gt;\s&lt;_______5C_______73<br>
+    <font color="#999900">027|</font> S&gt;\S&lt;_______5C_______53<br>
+    <font color="#999900">028|</font> t&gt; &lt;________9<br>
+    <font color="#999900">029|</font> T&gt;\T&lt;_______5C_______54<br>
+    <font color="#999900">030|</font> <font color="#cc0000">u&gt;♔&lt;_____2654</font><br>
+    <font color="#999900">031|</font>
+    U&gt;\U2654&lt;_______5C_______55_______32_______36_______35_______34<br>
+    <font color="#999900">032|</font><font color="#cc0000">
+      v&gt;♕&lt;_____2655</font><br>
+    <font color="#999900">033|</font>
+V&gt;\V002655&lt;_______5C_______56_______30_______30_______32_______36_______35_______35<br>
+    <font color="#999900">034|</font> w&gt;\w&lt;_______5C_______77<br>
+    <font color="#999900">035|</font> W&gt;\W&lt;_______5C_______57<br>
+    <font color="#999900">036|</font> <font color="#cc0000">x&gt;?&lt;_______3F</font><br>
+    <font color="#999900">037|</font>
+    X&gt;\X3F&lt;_______5C_______58_______33_______46<br>
+    <font color="#999900">038|</font> z&gt;\z&lt;_______5C_______7A<br>
+    <font color="#999900">039|</font> Z&gt;\Z&lt;_______5C_______5A<br>
+    <font color="#999900">040|</font>
+    o&gt;\o123&lt;_______5C_______6F_______31_______32_______33<br>
+    <font color="#999900">041|</font>
+    O&gt;\O123&lt;_______5C_______4F_______31_______32_______33<br>
+    <font color="#999900">042|</font> <font color="#cc0000">(backslash)&gt;\\&lt;_______5C_______5C</font><br>
+    <hr width="100%" size="2">Rows in red:<br>
+    <font color="#999900">003</font> : backspace<br>
+    <font color="#999900">010</font> : form feed<br>
+    <font color="#999900">017</font> and <font color="#999900">018</font>
+    : line feed (test on a Linux platform)<br>
+    <font color="#999900">024</font> : cariage return<br>
+    <font color="#999900">030</font> : hexadecimal value of WHITE KING<br>
+    <font color="#999900">032</font> : hexadecimal value of WHITE QUEEN<br>
+    <font color="#999900">036</font> : hexadecimal value of question
+    mark<br>
+    <font color="#999900">042</font> : three backslashes changes to two,
+    first two is a backslash pair and the third is not folled by one of
+    the reserved characters<br>
+    <p>This test also shows that one backslash can be used as is if it
+      is not folled by any of characters 'b', 'f', 'n', 'r', 'u', 'v',
+      'x' and '\'.<br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

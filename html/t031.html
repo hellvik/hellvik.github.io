@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CodeReWrite</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <a href="t015.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>CodeReWrite</h1>
+    Utility for rewriting source code when changing code from TEST to
+    Quality Assurance (QA).<br>
+    Syntax: CodeReWrite <font color="#3333ff">{</font>-conf <font
+      color="#ff0000">&lt;conf-file&gt;</font><font color="#3333ff">}</font>
+    <font color="#3333ff">{</font>-lst <font color="#ff0000">&lt;list-file&gt;</font><font
+      color="#3333ff">}</font> <font color="#ff0000">&lt;input-file&gt;</font>
+    <font color="#ff0000">&lt;output-file&gt;</font><br>
+    <ul>
+      <li>conf-file - a text file configurating the process. Default no
+        configuration file<br>
+      </li>
+      <li>list-file - an output file to which list results are appended.
+        Default no list file<br>
+      </li>
+      <li>input-file - the input ADA source file, with suffix '.adb' or
+        '.ads'<br>
+      </li>
+      <li>output-file - the new changed ADA source file<br>
+      </li>
+    </ul>
+    Contents of (possible) Conf-file (a.conf):<br>
+    <hr width="100%" size="2"> <code>#</code><code><br>
+    </code><code>fnk = Qinit</code><code><br>
+    </code><code>fnk = Qblock</code><code><br>
+    </code><code>fnk = Qappend</code><code><br>
+    </code><code>fnk = Qappend_alt</code><code><br>
+    </code><code>rm = with[\s]+Y2018\.Text\.TestQ </code><code><br>
+    </code><code></code>
+    <hr width="100%" size="2">in use with package <a
+      href="y2018_text_testq.html">Y2018.Text.TestQ</a> and usage see <a
+      href="t015.html">Procedures for debug purpose in Y2018-Text code</a>
+    <ul>
+      <li>fnk - remove a function call in the beginning of a row with
+        this call. Remove also a comment line beginning with this call<br>
+      </li>
+      <li>rm - remove a line starting with this pattern</li>
+    </ul>
+    In both cases blanks can preceed the text, but nothing else.<br>
+    if a row starts with <b>"--(BLK"</b> (an ADA comment) then this row
+    and all following lines are removed until a row starts with <b>"--)BLK"</b>
+    comment, which is also removed. This feature exists even if we
+    donnot give a Conf-file.<br>
+    <br>
+    Note CodeReWrite is very line oriented and if used ADA code must be
+    written in a specific <i><u>CodeReWrite</u></i> style. Some caveats
+    exists<br>
+    <ul>
+      <li>if - then - else - end if : at least a null-statement must
+        exists in the then- and else-part of the statement. CodeReWrite
+        may change the if-then-else construction to invalid</li>
+      <li>a '--(BLK' without corresponding '--)BLK' may delete more
+        source lines than expected</li>
+      <li>a call to a Conf-file function (e.g. Qappend) but the call is
+        precede by something else may result in compilation errors</li>
+      <li>source code after a Conf-file function (e.g. Qappend) on the
+        same row</li>
+      <li>a Conf-file function (e.g. Qappend) cannot exceed one line<br>
+      </li>
+    </ul>
+    It is also possible to write your own Qappend function but it is
+    important that the definition is inside a '--(BLK', '--)BLK' block.<br>
+    <br>
+    To the list-file is appended<br>
+    <ul>
+      <ol>
+        <li>A timestamp of CodeReWrite call<br>
+        </li>
+        <li>Listing of the content of the conf-file</li>
+        <li>Listing of every removed line. A removed line is a line in
+          the input-file but which is not written to the output file.</li>
+        <li>Statistics of CodeReWrite<br>
+        </li>
+      </ol>
+    </ul>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

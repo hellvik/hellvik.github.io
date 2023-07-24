@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Jets.JetsTool</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_jets_compiler.html">Prev</a> <a href="y2018_text_jets_matchpack.html">Next</a> <a href="t018.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Jets.JetsTool</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Containers.Vectors;<br>
+    <font color="#999900">002|</font> with Ada.Finalization; use
+    Ada.Finalization;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Jets; use
+    Y2018.Text.Jets;<br>
+    <font color="#999900">004|</font> with
+    Y2018.Text.Jets.RangeVectorPack;<br>
+    <font color="#999900">005|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">006|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">007|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">008|</font> package Y2018.Text.Jets.JetsTool
+    is<br>
+    <font color="#999900">009|</font> __subtype RE_ID is Integer range 0
+    .. Integer'Last;<br>
+    <font color="#999900">010|</font> __NO_RE_ID: constant RE_ID := 0;<br>
+    <font color="#999900">011|</font> __FIRST_RE_ID: constant RE_ID :=
+    1;<br>
+    <font color="#999900">012|</font> __type RE_Elem;<br>
+    <font color="#999900">013|</font> __type RE_Elem_AC is access
+    RE_Elem;<br>
+    <font color="#999900">014|</font> __type RE_ARR is array(Integer
+    range &lt;&gt;) of RE_Elem_AC;<br>
+    <font color="#999900">015|</font> __package
+    CHAR_PERIOD_CLASS_Vector_TY is new
+    Ada.Containers.Vectors(Natural,RE_Elem_AC);<br>
+    <font color="#999900">016|</font> __type RE_Elem (V : REQ_TY) is<br>
+    <font color="#999900">017|</font> __record<br>
+    <font color="#999900">018|</font> _____id : RE_ID;<br>
+    <font color="#999900">019|</font> _____left : RE_Elem_AC;<br>
+    <font color="#999900">020|</font> _____right : RE_Elem_AC;<br>
+    <font color="#999900">021|</font>
+    _____char_period_class_vector:CHAR_PERIOD_CLASS_Vector_TY.Vector; --
+    default CHAR_PERIOD_CLASS_Vector_TY.Empty_Vector, contains nodes of
+    type REQ_CHAR. REQ_PERIOD, REQ_CLASS<br>
+    <font color="#999900">022|</font> _____case V is<br>
+    <font color="#999900">023|</font> ________when REQ_BEGIN =&gt;<br>
+    <font color="#999900">024|</font> ___________begin_circumflex :
+    Boolean;<br>
+    <font color="#999900">025|</font> ___________begin_dollar : Boolean;<br>
+    <font color="#999900">026|</font> ________when REQ_CHAR =&gt;<br>
+    <font color="#999900">027|</font> ___________char_value : CodePoint;<br>
+    <font color="#999900">028|</font> ___________char_negative :
+    Boolean;<br>
+    <font color="#999900">029|</font> ___________char_min : Integer; --
+    0:Integer'Last<br>
+    <font color="#999900">030|</font> ___________char_max : Integer;<br>
+    <font color="#999900">031|</font> ___________char_maxORG : Integer;<br>
+    <font color="#999900">032|</font> ___________char_greedy : Boolean;<br>
+    <font color="#999900">033|</font> ________when REQ_PERIOD =&gt;<br>
+    <font color="#999900">034|</font> ___________period_min : Integer;
+    -- 0:Integer'Last<br>
+    <font color="#999900">035|</font> ___________period_max : Integer;<br>
+    <font color="#999900">036|</font> ___________period_maxORG :
+    Integer;<br>
+    <font color="#999900">037|</font> ___________period_greedy :
+    Boolean;<br>
+    <font color="#999900">038|</font> ________when REQ_CLASS_ELEM =&gt;
+    -- Do not exists in RegexPattern<br>
+    <font color="#999900">039|</font> ___________class_elem_min :
+    Integer; -- 0:Integer'Last<br>
+    <font color="#999900">040|</font> ___________class_elem_max :
+    Integer;<br>
+    <font color="#999900">041|</font> ___________class_elem_greedy :
+    Boolean;<br>
+    <font color="#999900">042|</font> ___________class_elem_pos :
+    RE_Elem_AC;<br>
+    <font color="#999900">043|</font> ___________class_elem_neg :
+    RE_Elem_AC;<br>
+    <font color="#999900">044|</font> ________when REQ_CLASS =&gt; --
+    Exists only in RegexPattern<br>
+    <font color="#999900">045|</font> ___________class_min : Integer; --
+    0:Integer'Last<br>
+    <font color="#999900">046|</font> ___________class_max : Integer;<br>
+    <font color="#999900">047|</font> ___________class_maxORG : Integer;<br>
+    <font color="#999900">048|</font> ___________class_greedy : Boolean;<br>
+    <font color="#999900">049|</font> ___________class_pos :
+    RangeVectorPack.RangeVector;<br>
+    <font color="#999900">050|</font> ___________class_neg :
+    RangeVectorPack.RangeVector;<br>
+    <font color="#999900">051|</font> ________when REQ_CLASS_CHAR =&gt;
+    -- Do not exists in RegexPattern <br>
+    <font color="#999900">052|</font> ___________class_char_negative :
+    Boolean;<br>
+    <font color="#999900">053|</font> ___________class_char_value :
+    CodePoint; -- no meta characters<br>
+    <font color="#999900">054|</font> ________when REQ_CLASS_RANGE =&gt;
+    -- Do not exists in RegexPattern<br>
+    <font color="#999900">055|</font> ___________class_range_negative :
+    Boolean;<br>
+    <font color="#999900">056|</font> ___________class_range_first :
+    CodePoint;<br>
+    <font color="#999900">057|</font> ___________class_range_last :
+    CodePoint;<br>
+    <font color="#999900">058|</font> ________when REQ_CLASS_GC =&gt; --
+    Do not exists in RegexPattern<br>
+    <font color="#999900">059|</font> ___________class_gc_negative :
+    Boolean;<br>
+    <font color="#999900">060|</font> ___________class_gc_value :
+    CFix(1..2);<br>
+    <font color="#999900">061|</font> ________when REQ_CLASS_GCU =&gt;
+    -- Do not exists in RegexPattern<br>
+    <font color="#999900">062|</font> ___________class_gcu_negative :
+    Boolean;<br>
+    <font color="#999900">063|</font> ___________class_gcu_value :
+    CodePoint;<br>
+    <font color="#999900">064|</font> ________when REQ_CLASS_SET =&gt;
+    -- Do not exists in RegexPattern<br>
+    <font color="#999900">065|</font> ___________class_set_negative :
+    Boolean;<br>
+    <font color="#999900">066|</font> ___________class_set_value : CVar;<br>
+    <font color="#999900">067|</font> ________when REQ_CLASS_OTHER =&gt;
+    -- Do not exists in RegexPattern<br>
+    <font color="#999900">068|</font> ___________class_other_negative :
+    Boolean;<br>
+    <font color="#999900">069|</font> ___________class_other_value :
+    CodePoint;<br>
+    <font color="#999900">070|</font> ________when REQ_PALCAP =&gt; -- (
+    )<br>
+    <font color="#999900">071|</font> ___________palcap_min : Integer;
+    -- 0:Integer'Last<br>
+    <font color="#999900">072|</font> ___________palcap_max : Integer;<br>
+    <font color="#999900">073|</font> ___________palcap_greedy :
+    Boolean;<br>
+    <font color="#999900">074|</font> ___________palcap_up : RE_Elem_AC;
+    -- null if on base line<br>
+    <font color="#999900">075|</font> ___________palcap_down :
+    RE_Elem_AC;<br>
+    <font color="#999900">076|</font> ___________palcap_ia:I_A;<br>
+    <font color="#999900">077|</font> ________when REQ_PAL =&gt; -- (?:
+    )<br>
+    <font color="#999900">078|</font> ___________pal_dummy: Boolean;<br>
+    <font color="#999900">079|</font> ___________pal_min : Integer; --
+    0:Integer'Last<br>
+    <font color="#999900">080|</font> ___________pal_max : Integer;<br>
+    <font color="#999900">081|</font> ___________pal_greedy : Boolean;<br>
+    <font color="#999900">082|</font> ___________pal_up : RE_Elem_AC; --
+    null if on base line<br>
+    <font color="#999900">083|</font> ___________pal_down : RE_Elem_AC;<br>
+    <font color="#999900">084|</font> ________when REQ_UPDOWN =&gt;<br>
+    <font color="#999900">085|</font> ___________updown_up : RE_Elem_AC;
+    -- null if on base line<br>
+    <font color="#999900">086|</font> ___________updown_down :
+    RE_Elem_AC;<br>
+    <font color="#999900">087|</font> ________when REQ_POS =&gt;<br>
+    <font color="#999900">088|</font> ___________pos_up : RE_Elem_AC; --
+    null if on base line<br>
+    <font color="#999900">089|</font> ___________pos_down : RE_Elem_AC;<br>
+    <font color="#999900">090|</font> ________when REQ_NEG =&gt;<br>
+    <font color="#999900">091|</font> ___________neg_up : RE_Elem_AC; --
+    null if on base line<br>
+    <font color="#999900">092|</font> ___________neg_down : RE_Elem_AC;<br>
+    <font color="#999900">093|</font> ________when REQ_NULL =&gt; -- **
+    Do not exists **<br>
+    <font color="#999900">094|</font> ___________null_dummy: Boolean;<br>
+    <font color="#999900">095|</font> _____end case;<br>
+    <font color="#999900">096|</font> __end record;<br>
+    <font color="#999900">097|</font> __type Pool_TY is new Controlled
+    with<br>
+    <font color="#999900">098|</font> _____record<br>
+    <font color="#999900">099|</font> ________root: RE_Elem_AC;<br>
+    <font color="#999900">100|</font> _____end record;<br>
+    <font color="#999900">101|</font> __procedure JesTool_Finalize(pool
+    : in out Pool_TY);<br>
+    <font color="#999900">102|</font> __procedure RE_ELEM_FreeNode(y:in
+    out RE_Elem_AC);<br>
+    <font color="#999900">103|</font> __subtype MatchID is Integer range
+    0 .. Integer'Last;<br>
+    <font color="#999900">104|</font> __NO_MatchID: constant MatchID
+    :=Integer'Last;<br>
+    <font color="#999900">105|</font> __function CREATE_RE(id:in out
+    RE_ID;reqv: REQ_TY) return RE_ELEM_AC;<br>
+    <font color="#999900">106|</font> __function CREATE_RE(id:in out
+    RE_ID;reqv: REQ_TY;vleft:RE_Elem_AC) return RE_ELEM_AC;<br>
+    <font color="#999900">107|</font> __function CREATE_RE(id:in out
+    RE_ID;reqv: REQ_TY;vleft:RE_Elem_AC;vup:RE_Elem_AC) return
+    RE_ELEM_AC;<br>
+    <font color="#999900">108|</font> __procedure Init_RE(y :in out
+    RE_ELEM_AC);<br>
+    <font color="#999900">109|</font> __function
+    getMin(this:RE_Elem_AC;default:Boolean:=FALSE) return Integer;<br>
+    <font color="#999900">110|</font> __function
+    getMax(this:RE_Elem_AC;default:Boolean:=FALSE) return Integer;<br>
+    <font color="#999900">111|</font> __function
+    getGreedy(this:RE_Elem_AC) return TRINITY;<br>
+    <font color="#999900">112|</font> __function
+    New_RangeVector(actual:RE_Elem_AC;urv:RangeVectorPack.Map_TY.Map)
+    return RangeVectorPack.RangeVector;<br>
+    <font color="#999900">113|</font> __function To_String(currRE:
+    RE_Elem_AC) return String;<br>
+    <font color="#999900">114|</font> __procedure To_CList(Qmap:in out
+    CList.map;y: RE_Elem_AC;cntMax:Integer:=10;extend:Boolean:=FALSE);<br>
+    <font color="#999900">115|</font> __function Who(currRE: RE_Elem_AC)
+    return String;<br>
+    <font color="#999900">116|</font> __function To_CVar(s :
+    CFix;Low:Integer;High:Integer) return CVar;<br>
+    <font color="#999900">117|</font> __function isInMCHAR(c:CodePoint)
+    return Boolean;<br>
+    <font color="#999900">118|</font> __function ParseStringM(s:CFix)
+    return Integer; -- not needed in Jets. Based on single back-slash <br>
+    <font color="#999900">119|</font> __function QuoteMetaM(s:CFix)
+    return CFix; -- not needed in Jets.<br>
+    <font color="#999900">120|</font> end Y2018.Text.Jets.JetsTool;<br>
+    <hr width="100%" size="2"><br>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

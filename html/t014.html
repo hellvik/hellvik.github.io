@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Features of Y2018-Text</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <font color="#999999">Prev</font> <font color="#999999">Next</font> <font color="#999999">Up</font> <a href="y2018_text.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>Features of Y2018-Text</h1>
+    <hr width="100%" size="2">
+    <h2>21-bit character encoding</h2>
+    <p>To make 21-bit (Unicode codepoint) text handling workable in a
+      ADA programming language. The solution is to implement types<br>
+    </p>
+    <ul>
+      <li>Codepoint - a scalar type with a range 0 .. 2097151 to present
+        all Unicode codepoints<br>
+      </li>
+      <li>CFix - an array of Codepoints</li>
+      <li>CVar - a <u><i>variable length array</i></u> of codepoints,
+        which is a type from a package and works in similar way as
+        Ada.Strings.Unbounded.Unbounded_String, but with a much shorter
+        name "CVar" than the "Unbounded_String".<br>
+      </li>
+    </ul>
+    <p>Function for handling types above <a href="t020.html">Text in
+        Y2018.Text.Core</a><br>
+    </p>
+    To scan a ASCII file as hexadecimal or as text has been done since
+    the 50-ties but to get view of a possible UTF-8 coded file more
+    problematic. It may be a UTF-8 coded file but it is possible that
+    the file also contains non-UTF-8 'characters'. <br>
+    <hr width="100%" size="2">
+    <h2>Regular expression </h2>
+    <p>The <a href="t004.html">implementation</a>.</p>
+    <p>For text handling we have <u>Regular Expression</u> like what is
+      found in Perl language but this is ADA not Perl. We are not
+      following ICU standard of Unicode.org in our solution or C++ or
+      Java regular expression implementations. The regular expression is
+      implemented in package Y2018.Text.Jets and it's subpackages and
+      works with an index pair (<font color="#999900">type I_A is array
+        (1..2) of Integer</font>). Where the first value refers to the
+      starting point and the second to the endpoint of an array of type
+      CFix. Only existing option is the posibility to search for strings
+      independent of case.<br>
+    </p>
+    <hr width="100%" size="2">
+    <p> </p>
+    <h2>GC, RangeVector, MapPools &amp; features made from Unicode files<br>
+    </h2>
+    <p>The <a href="t047.html">'\p'</a> implementation.</p>
+    <p> In this regular expression the '\p{}' notation holds many
+      features that is not obvious but is central for the support. The
+      '\p{}' notation is much more restricted than in Java or C++
+      (Unicode.org ICU).<br>
+    </p>
+    <hr width="100%" size="2">
+    <p> </p>
+    <h2>Debug and test support </h2>
+    <p>Functions for <a href="t015.html">testing and debugging</a> and
+      support for the change from <i><u>TEST</u></i> to <u><i>Quality
+          Assurance</i></u> environments (by removing debug code from
+      ads- and adb-files). </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

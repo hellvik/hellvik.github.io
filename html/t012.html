@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CList</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t011.html">Prev</a> <font color="#999999">Next</font> <a href="t020.html">Up</a> <a href="y2018_text_core_str.html">Down</a> <br>
+<hr width="100%" size="2">
+    <h1>The CList</h1>
+    <p>Standard Ada.Containers.Ordered_Maps definition for <u><font
+          color="#999900">package CList</font></u>:<br>
+      Type Celem is<br>
+      ____record<br>
+      _____n: Integer;<br>
+      _____s: CVar;<br>
+      _____end record;</p>
+    <p>function cless(Left,Right:Integer) return Boolean; <font
+        color="#999900">-- support function (&lt;)</font><br>
+      function cequal(Left,Right:Celem) return Boolean; <font
+        color="#999900">-- support function (=)</font><br>
+    </p>
+    <p>package CList is new Ada.Containers.Ordered_Maps(<br>
+      _____Key_Type =&gt; Integer, <br>
+      _____Element_type =&gt; Celem,<br>
+      _____"&lt;"=&gt; cless,<br>
+      _____"="=&gt; cequal);<br>
+    </p>
+    <p>Nothing stange about this and standard
+      Ada.Containers.Ordered_Maps support can be used.<br>
+      But why is Ordered_Maps used and not Vectors, the reason is the
+      possiblity to remove a line or lines without changing the indexing
+      of the CList and also the possiblity to insert a line at a
+      specific index value. <i>These reasons are questionable at least</i>.&nbsp;
+      <br>
+    </p>
+    <h2>Insert or append a line as last line</h2>
+    Insert is overloaded for CFix, String and CVar but the line is
+    stored as CVar
+    <ul>
+      <li>procedure Insert(map:in out CList.Map;s:CFix) m </li>
+      <li>procedure Insert(map:in out CList.Map;s:String) m </li>
+      <li>procedure Insert(map:in out CList.Map;s:CVar) m </li>
+    </ul>
+    <h2>procedure Insert(map:in out CList.Map;sourceMap:CList.Map)</h2>
+    <p>Append another CList map to a CList map<br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

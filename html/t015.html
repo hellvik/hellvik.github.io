@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--?xml version="1.0" ?-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Debug publishing</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="t047.html">Prev</a> <font color="#999999">Next</font> <a href="t014.html">Up</a> <a href="y2018_text_testq.html">Down</a> <br>
+<hr width="100%" size="2">
+    <p>The change from <u><b>TEST</b></u> to <u><b>Quality Assurance</b></u>
+      involves a process to remove debug code from the source code. this
+      process is described in <a href="t031.html">CodeReWrite</a>.<br>
+    </p>
+    <p>Tables GC and ULTcase is dependent on the evolution of the
+      Unicode and when new characters is added,then these tables has to
+      change. But if this is done the whole package Y2018-Text has to be
+      reassembled. Tools for generating <a href="t033.html">GC and
+        ULTcase</a> here.<br>
+    </p>
+    <h1 style="line-height: 100%; margin-bottom: 0in">Procedures for
+      debug purpose in Y2018-Text code</h1>
+    <p>All debug is published to the active path (PWD) during the run to
+      files named</p>
+    <ol>
+      <li> “q” &amp;
+        Ada.Task_Identification.Image(Ada.Task_Identification.Current_Task)
+        &amp; ".lst" </li>
+      <li> “q” &amp;
+        Ada.Task_Identification.Image(Ada.Task_Identification.Current_Task)
+        &amp; "_alt.lst" </li>
+    </ol>
+    <p>The prefix”q” is used for making it eazier to spot debug files.</p>
+    <p>This debug is built for use in a multi-process environment and
+      the name must contain the name of the current task.<br>
+      (<a href="y2018_text_testq.html">Y2018.Text.TestQ</a>)<br>
+    </p>
+    <p><b>Qinit(s:String)</b> – will remove all regular files in the
+      active path with a name beginning with ‘q’ and with the suffix
+      ‘.lst’. After the removing of files a call of Qblock(s) is
+      executed.</p>
+    <p><b>Qblock(s:String)</b> – publish a box to the debug file with
+      the parameter</p>
+    <p>Type ANKA is used for prefixing a debug row</p>
+    <ul>
+      <li> KALLE (or all calls without the ANKA type) – No prefix </li>
+      <li> FNATTE – insert one TAB as prefix </li>
+      <li> KNATTE – insert two TABs as prefix </li>
+      <li> TJATTE – insert three TABs as prefix </li>
+      <li> KAJSA – mark this row as important with <u>"!]" &amp; TAB </u><span
+          style="text-decoration: none"> as prefix</span> </li>
+      <li> KNASE – mark this row as temporary with "<u>.]" &amp; TAB</u>
+        as prefix </li>
+      <li> BITTAN – donnot publish anything to any debug. Open and
+        closes the debug file but donnot print anything. </li>
+    </ul>
+    <p>When a new debug file is created it is ‘stamped’ with this
+      command </p>
+    <p><font color="#663300"><i>Put_Line(fileOut,"TIMESTAMP " &amp;
+          GNAT.Time_Stamp.Current_Time)</i></font></p>
+    <p>to make it sure that the contents is from this run. Note that a
+      new debug file is also created when the debug is in a new thread.</p>
+    <p><b>Qappend</b> or <b>Qappend_alt</b> procedure calls prints to
+      the actual debug file. Structure of the call </p>
+    <ol>
+      <li> ANKA type value for prefixing (optional) </li>
+      <li> String type value, except CList maps </li>
+      <li> (other parameters)</li>
+    </ol>
+    All variations of the procedure call. Note Qappend_alt can be
+    substituted for Qappend.<br>
+    <ul>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;i1:Integer);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;i1:Integer;i2:Integer);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;b:Boolean);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;i1:Integer;s1:String);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;i1:Integer;i2:Integer;s2:String);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;wws:CFix);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;c:CodePoint;wws:CFix;f:Integer;l:Integer);</li>
+      <li>procedure Qappend(<font color="#999900">a:ANKA;</font>s:String;c:CodePoint);</li>
+    </ul>
+    <br>
+    <ol>
+    </ol>
+    <h2 style="line-height: 100%; margin-bottom: 0in"><b>Qappend</b> and
+      <b>Qappend_alt</b> with <b>CList</b> maps</h2>
+    <p>procedure Qappend(map:in out
+Y2018.Text.Core.Str.Clist.Map;startRow:String:="";endRow:String:="";rowPrefix:String:="";keep:Boolean:=FALSE);<br>
+      procedure Qappend(a:ANKA;map:in out
+Y2018.Text.Core.Str.Clist.Map;startRow:String:="";endRow:String:="";rowPrefix:String:="";keep:Boolean:=FALSE);<br>
+      <br>
+    </p>
+    <font color="#999900">map</font> – maps to list<br>
+    <font color="#999900">startRow</font> – row on the list before any
+    map rows (default no start row)<br>
+    <font color="#999900">endRow</font> – row on the list after last map
+    row (default no end row)<br>
+    <font color="#999900">rowPrefix</font> – a second prefix for map
+    rows<br>
+    <font color="#999900">keep</font> - if true donnot remove items from
+    CList map<br>
+    <p>Example <a href="t048.html">ExMy</a> of output to a q____.lst
+      file from Qappend's and Qinit.<br>
+    </p>
+    <p><b>Sometimes it is important to publish debug to another file,
+        and this is the reason for the ‘_alt’ procedures.</b></p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>

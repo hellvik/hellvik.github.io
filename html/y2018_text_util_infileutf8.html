@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Y2018.Text.Util.InFileUTF8</title>
+<style>.footer{position:fixed;right:0;bottom:0;background-color:white;color:black;text-align:right;}</style>
+  </head>
+  <body>
+<a href="../index.html">Top</a> <a href="y2018_text_util.html">Prev</a> <a href="y2018_text_util_urvpack.html">Next</a> <a href="t047.html">Up</a> <font color="#999999">Down</font> <br>
+<hr width="100%" size="2">
+    <h1>Y2018.Text.Util.InFileUTF8</h1>
+    <hr width="100%" size="2"> <font color="#999900">001|</font> with
+    Ada.Direct_IO;<br>
+    <font color="#999900">002|</font> with Y2018.Text.Core; use
+    Y2018.Text.Core;<br>
+    <font color="#999900">003|</font> with Y2018.Text.Core.Str; use
+    Y2018.Text.Core.Str;<br>
+    <font color="#999900">004|</font> with Y2018.Text.Core.CVarPack; use
+    Y2018.Text.Core.CVarPack;<br>
+    <font color="#999900">005|</font> package Y2018.Text.Util.InFileUTF8
+    is<br>
+    <font color="#999900">006|</font> __type self is tagged limited
+    private;<br>
+    <font color="#999900">007|</font> __package DirectTY is new
+    Ada.Direct_IO(Character);<br>
+    <font color="#999900">008|</font> __procedure open(base:in out
+    Y2018.Text.Util.InFileUTF8.self;infilename:String);<br>
+    <font color="#999900">009|</font> __function read(base:in out
+    Y2018.Text.Util.InFileUTF8.self;result:out
+    CVar;replace:CodePoint:=CodePoint'Val(16#FFFD#);action:Boolean:=FALSE)
+    return RS_TY;<br>
+    <font color="#999900">010|</font> __procedure close(base:in out
+    Y2018.Text.Util.InFileUTF8.self);<br>
+    <font color="#999900">011|</font> __function
+    eof(base:Y2018.Text.Util.InFileUTF8.self) return Boolean;<br>
+    <font color="#999900">012|</font> __function reason(base:in out
+    Y2018.Text.Util.InFileUTF8.self) return RS_TY;<br>
+    <font color="#999900">013|</font> __function utf8cnt(base:in out
+    Y2018.Text.Util.InFileUTF8.self) return Long_Long_Integer;<br>
+    <font color="#999900">014|</font> __function bytecnt(base:in out
+    Y2018.Text.Util.InFileUTF8.self) return Long_Long_Integer;<br>
+    <font color="#999900">015|</font> __procedure Finalize(base: in out
+    Y2018.Text.Util.InFileUTF8.self);<br>
+    <font color="#999900">016|</font> __procedure Initialize(base: in
+    out Y2018.Text.Util.InFileUTF8.self);<br>
+    <font color="#999900">017|</font> __private type self is tagged
+    limited<br>
+    <font color="#999900">018|</font> __record<br>
+    <font color="#999900">019|</font> _____infile:DirectTY.File_Type;<br>
+    <font color="#999900">020|</font> _____utf8cnt:Long_Long_Integer;<br>
+    <font color="#999900">021|</font> _____bytecnt:Long_Long_Integer;<br>
+    <font color="#999900">022|</font> _____reason:RS_TY;<br>
+    <font color="#999900">023|</font> __end record;<br>
+    <font color="#999900">024|</font> end Y2018.Text.Util.InFileUTF8;<br>
+    <hr width="100%" size="2">Action taken by procedures or functions in
+    the package:
+    <p><b>procedure open(<font color="#3465a4">base:in out
+          Y2018.Text.Util.InFileUTF8.self</font>;infilename:String);</b></p>
+    <p style="font-weight: normal; line-height: 100%; margin-bottom:
+      0in"> Open file.</p>
+    <p><b>function read(<font color="#3465a4">base:in out
+          Y2018.Text.Util.InFileUTF8.self</font>;result:out CVar;
+        replace:CodePoint:=CodePoint'Val(16#FFFD#);action:Boolean:=FALSE)
+        return RS_TY;</b></p>
+    <p style="line-height: 100%; margin-bottom: 0in"><font
+        color="#8d281e">Read </font><font color="#8d281e">only</font><font
+        color="#8d281e"> </font><font color="#8d281e">one</font><font
+        color="#8d281e"> codepoint</font> from the file. Result if any
+      exists in parameter ‘result’. If problem specify what to do,
+      return reason value or replace codepoint value with replace
+      codepoint value. </p>
+    <p><b>procedure close(<font color="#3465a4">base:in out
+          Y2018.Text.Util.InFileUTF8.self</font>);</b></p>
+    <p style="line-height: 100%; margin-bottom: 0in">Close file.</p>
+    <p><b>function eof(<font color="#3465a4">base:Y2018.Text.Util.InFileUTF8.self</font>)
+        return Boolean;</b></p>
+    <p style="line-height: 100%; margin-bottom: 0in">Query if we have
+      got end of file.</p>
+    <p><b>function reason(<font color="#3465a4">base:in out
+          Y2018.Text.Util.InFileUTF8.self</font>) return RS_TY;</b></p>
+    <p style="line-height: 100%; margin-bottom: 0in">Return reson state.</p>
+    <p><b>function utf8cnt(<font color="#3465a4">base:in out
+          Y2018.Text.Util.InFileUTF8.self</font>) return
+        Long_Long_Integer;</b></p>
+    <p style="line-height: 100%; margin-bottom: 0in">Return number of
+      codepoint read.</p>
+    <p style="line-height: 100%; margin-bottom: 0in">The file maybe
+      long, that is the reason for using Long_Long_Integer.</p>
+    <p><b>function bytecnt(<font color="#3465a4">base:in out
+          Y2018.Text.Util.InFileUTF8.self</font>) return
+        Long_Long_Integer;</b></p>
+    <p style="font-weight: normal; line-height: 100%; margin-bottom:
+      0in"> Return number of bytes read. The file maybe long, that is
+      the reason for using Long_Long_Integer.<br>
+    </p>
+    <p style="font-weight: normal; line-height: 100%; margin-bottom:
+      0in">RS_TY defined in parent package Util (RS_NONE, RS_MISS,
+      RS_ILLEGAL, RS_EOF)<br>
+    </p>
+<div class="footer"><small><a rel="license" href="license.html">license</a>Y2018-Text-project 2.5.0 Last change 2023-07-23.</small></div>
+  </body>
+</html>
